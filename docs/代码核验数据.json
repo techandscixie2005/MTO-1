@@ -1,0 +1,715 @@
+{
+  "passed": true,
+  "time_utc": "2026-09-15T07:55:19.769135+00:00",
+  "protocol_id": "40c19f675e3b3e45d0ac0b8e3cd16e9942ff2a206d9789422af6c8eef4c03aa5",
+  "checkpoint_count": 20,
+  "mto_gradient_checks": 10,
+  "gradient_sample_train_ids": [
+    48,
+    219
+  ],
+  "optimizer_steps_in_audit": 0,
+  "model_source_sha256": "ff68ba8d22ad9f23f6f6e582417ac7f55f46eab8f44cf16f1f844d33bef50de6",
+  "records": [
+    {
+      "scale": "1k",
+      "seed": 11,
+      "arm": "baseline",
+      "source_hashes_match": true,
+      "checkpoint_strict_load": true,
+      "checkpoint_sha256": "bff7d6fdf0cbf5a25ecab41e5059272cd7f2d153eb2c1fae10e5854cf164b7b9"
+    },
+    {
+      "scale": "1k",
+      "seed": 11,
+      "arm": "mto",
+      "source_hashes_match": true,
+      "checkpoint_strict_load": true,
+      "checkpoint_sha256": "edc6be66959f571fcaf9af0453706cb1115a981127f75f79205632a4e4e64265",
+      "physical_identities_passed": true,
+      "gradient_intermediates": {
+        "energy_eV": 0.17511166632175446,
+        "C": 1.0599570274353027,
+        "A": 4.674328804016113,
+        "f": 8.436477661132812
+      },
+      "gradient_modules": {
+        "backbone": 15.312933323955804,
+        "state_MTO": 26.310583390295506,
+        "reference_CG": 0.14094598591327667,
+        "energy_head": 1.3273049853742123,
+        "beta_head": 5.835804298520088,
+        "tensor_gate": 0.2523720972239971
+      },
+      "min_A_eigenvalue": 2.678569324541425e-07,
+      "cg_paths": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "saved_all_intermediates": true
+    },
+    {
+      "scale": "1k",
+      "seed": 23,
+      "arm": "baseline",
+      "source_hashes_match": true,
+      "checkpoint_strict_load": true,
+      "checkpoint_sha256": "08f90a54504c480258e95609b5a57dde5fb3138127823a431c3997c3c96da6d9"
+    },
+    {
+      "scale": "1k",
+      "seed": 23,
+      "arm": "mto",
+      "source_hashes_match": true,
+      "checkpoint_strict_load": true,
+      "checkpoint_sha256": "eadf9777b988e790bb67fba7bb465a9128c1a4e3c78af68a8bf3096a996d6a07",
+      "physical_identities_passed": true,
+      "gradient_intermediates": {
+        "energy_eV": 0.331885427236557,
+        "C": 2.3120460510253906,
+        "A": 7.241542816162109,
+        "f": 12.666050910949707
+      },
+      "gradient_modules": {
+        "backbone": 27.48232224979438,
+        "state_MTO": 52.89564820379019,
+        "reference_CG": 0.58048415184021,
+        "energy_head": 2.177246095612645,
+        "beta_head": 10.023224830627441,
+        "tensor_gate": 1.1984596587717533
+      },
+      "min_A_eigenvalue": 7.890679138663891e-07,
+      "cg_paths": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "saved_all_intermediates": true
+    },
+    {
+      "scale": "1k",
+      "seed": 37,
+      "arm": "baseline",
+      "source_hashes_match": true,
+      "checkpoint_strict_load": true,
+      "checkpoint_sha256": "35af39c29ae7b428841bea8a0a56e7cc0cbf91d0964774f27b28b1bb79245e9f"
+    },
+    {
+      "scale": "1k",
+      "seed": 37,
+      "arm": "mto",
+      "source_hashes_match": true,
+      "checkpoint_strict_load": true,
+      "checkpoint_sha256": "22bd348714df3caa3b0daf83a004b45e4a103663df35e00fae148783b6d9b57c",
+      "physical_identities_passed": true,
+      "gradient_intermediates": {
+        "energy_eV": 0.33158695697784424,
+        "C": 1.8775720596313477,
+        "A": 6.626407623291016,
+        "f": 11.675771713256836
+      },
+      "gradient_modules": {
+        "backbone": 32.900499023224256,
+        "state_MTO": 75.92769387364388,
+        "reference_CG": 0.3004453182220459,
+        "energy_head": 2.192025452386588,
+        "beta_head": 13.241982281208038,
+        "tensor_gate": 1.1132589615881443
+      },
+      "min_A_eigenvalue": 3.956551980182612e-05,
+      "cg_paths": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "saved_all_intermediates": true
+    },
+    {
+      "scale": "1k",
+      "seed": 53,
+      "arm": "baseline",
+      "source_hashes_match": true,
+      "checkpoint_strict_load": true,
+      "checkpoint_sha256": "73b08757b4d02c5a4a6ba13669ea04eb3a31b0f255b1dd89f179c1ccfe6af856"
+    },
+    {
+      "scale": "1k",
+      "seed": 53,
+      "arm": "mto",
+      "source_hashes_match": true,
+      "checkpoint_strict_load": true,
+      "checkpoint_sha256": "f12b6250b691523fcab588aaab0e1755fadb12b818b72d378f516e2e7a8b7e35",
+      "physical_identities_passed": true,
+      "gradient_intermediates": {
+        "energy_eV": 0.36652496457099915,
+        "C": 2.055121898651123,
+        "A": 6.520447254180908,
+        "f": 11.371387481689453
+      },
+      "gradient_modules": {
+        "backbone": 87.36287296935916,
+        "state_MTO": 142.84189403057098,
+        "reference_CG": 0.9122060537338257,
+        "energy_head": 2.7810662165284157,
+        "beta_head": 18.59312069416046,
+        "tensor_gate": 1.851866327226162
+      },
+      "min_A_eigenvalue": 8.468265482614423e-07,
+      "cg_paths": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "saved_all_intermediates": true
+    },
+    {
+      "scale": "1k",
+      "seed": 71,
+      "arm": "baseline",
+      "source_hashes_match": true,
+      "checkpoint_strict_load": true,
+      "checkpoint_sha256": "27b5b8eda497e143d0be4dfc70fdc3759b87e167b49110dcefd37817d704e018"
+    },
+    {
+      "scale": "1k",
+      "seed": 71,
+      "arm": "mto",
+      "source_hashes_match": true,
+      "checkpoint_strict_load": true,
+      "checkpoint_sha256": "1c017ddd4b2edb12ccc544951cf85d02143bd2156434ff7a2bd10fe3e923e950",
+      "physical_identities_passed": true,
+      "gradient_intermediates": {
+        "energy_eV": 0.23157282173633575,
+        "C": 2.005290985107422,
+        "A": 5.81488037109375,
+        "f": 10.463262557983398
+      },
+      "gradient_modules": {
+        "backbone": 44.9006250340899,
+        "state_MTO": 87.56700149178505,
+        "reference_CG": 1.6055431365966797,
+        "energy_head": 3.439583569765091,
+        "beta_head": 8.95046716928482,
+        "tensor_gate": 8.80795294046402
+      },
+      "min_A_eigenvalue": 7.368495837405029e-08,
+      "cg_paths": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "saved_all_intermediates": true
+    },
+    {
+      "scale": "10k",
+      "seed": 11,
+      "arm": "baseline",
+      "source_hashes_match": true,
+      "checkpoint_strict_load": true,
+      "checkpoint_sha256": "7326e3b50cdefbff72bee0876042acc94123e91040b857891b6e9ef32db17b49"
+    },
+    {
+      "scale": "10k",
+      "seed": 11,
+      "arm": "mto",
+      "source_hashes_match": true,
+      "checkpoint_strict_load": true,
+      "checkpoint_sha256": "ef80e3c9318a3581df7f76ad453968703c3e38bf6f063d7f001005817b64baec",
+      "physical_identities_passed": true,
+      "gradient_intermediates": {
+        "energy_eV": 0.2674024999141693,
+        "C": 1.9909982681274414,
+        "A": 8.3270845413208,
+        "f": 14.249643325805664
+      },
+      "gradient_modules": {
+        "backbone": 65.11080979632425,
+        "state_MTO": 69.70181648433208,
+        "reference_CG": 0.9816048741340637,
+        "energy_head": 2.3334834277629852,
+        "beta_head": 5.799263924360275,
+        "tensor_gate": 2.2926710695028305
+      },
+      "min_A_eigenvalue": 1.852288005357623e-06,
+      "cg_paths": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "saved_all_intermediates": true
+    },
+    {
+      "scale": "10k",
+      "seed": 23,
+      "arm": "baseline",
+      "source_hashes_match": true,
+      "checkpoint_strict_load": true,
+      "checkpoint_sha256": "e2d05b7d2b2f50cbe5f6385d05069224196fd7b8b5f26db6aa8030e6a7b847e2"
+    },
+    {
+      "scale": "10k",
+      "seed": 23,
+      "arm": "mto",
+      "source_hashes_match": true,
+      "checkpoint_strict_load": true,
+      "checkpoint_sha256": "73b029bd2dd46a21dfed3e10e1cafc36e16e1cf5ba6197108d9930d2848a5845",
+      "physical_identities_passed": true,
+      "gradient_intermediates": {
+        "energy_eV": 0.2845189869403839,
+        "C": 1.5667343139648438,
+        "A": 6.517210006713867,
+        "f": 10.956701278686523
+      },
+      "gradient_modules": {
+        "backbone": 44.096595232360414,
+        "state_MTO": 52.49883060902357,
+        "reference_CG": 0.7983750700950623,
+        "energy_head": 3.099060133099556,
+        "beta_head": 4.337975762784481,
+        "tensor_gate": 2.0350343473255634
+      },
+      "min_A_eigenvalue": 4.571451141155079e-06,
+      "cg_paths": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "saved_all_intermediates": true
+    },
+    {
+      "scale": "10k",
+      "seed": 37,
+      "arm": "baseline",
+      "source_hashes_match": true,
+      "checkpoint_strict_load": true,
+      "checkpoint_sha256": "71184414f6a31a31c10c144175183b69f54cfa8a55cace23dfbaccca398da3fe"
+    },
+    {
+      "scale": "10k",
+      "seed": 37,
+      "arm": "mto",
+      "source_hashes_match": true,
+      "checkpoint_strict_load": true,
+      "checkpoint_sha256": "00430091227cb79bfc860fa364993fff82c9b5dac135882f675017a0a342a4eb",
+      "physical_identities_passed": true,
+      "gradient_intermediates": {
+        "energy_eV": 0.29188281297683716,
+        "C": 3.402414321899414,
+        "A": 11.260011672973633,
+        "f": 18.742860794067383
+      },
+      "gradient_modules": {
+        "backbone": 93.50420213077814,
+        "state_MTO": 128.1037339270115,
+        "reference_CG": 2.406799793243408,
+        "energy_head": 1.4675163999199867,
+        "beta_head": 20.96721488237381,
+        "tensor_gate": 7.1762900203466415
+      },
+      "min_A_eigenvalue": 2.8574016591079948e-05,
+      "cg_paths": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "saved_all_intermediates": true
+    },
+    {
+      "scale": "10k",
+      "seed": 53,
+      "arm": "baseline",
+      "source_hashes_match": true,
+      "checkpoint_strict_load": true,
+      "checkpoint_sha256": "f8ba6d1a9c5df8a1795adbd173615b38dee7916f1a15a7675ad31727226ad0b0"
+    },
+    {
+      "scale": "10k",
+      "seed": 53,
+      "arm": "mto",
+      "source_hashes_match": true,
+      "checkpoint_strict_load": true,
+      "checkpoint_sha256": "88f255cb034809a2f21bc38d28988705bb2a8ea6817e0c20320df33140d7ec40",
+      "physical_identities_passed": true,
+      "gradient_intermediates": {
+        "energy_eV": 0.21651028096675873,
+        "C": 1.5579299926757812,
+        "A": 5.972037315368652,
+        "f": 10.216804504394531
+      },
+      "gradient_modules": {
+        "backbone": 37.199872865323414,
+        "state_MTO": 45.564076006412506,
+        "reference_CG": 1.4015660285949707,
+        "energy_head": 1.012359507381916,
+        "beta_head": 3.482104070484638,
+        "tensor_gate": 5.061833158135414
+      },
+      "min_A_eigenvalue": 0.00010497296801421357,
+      "cg_paths": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "saved_all_intermediates": true
+    },
+    {
+      "scale": "10k",
+      "seed": 71,
+      "arm": "baseline",
+      "source_hashes_match": true,
+      "checkpoint_strict_load": true,
+      "checkpoint_sha256": "21f8b9c663bf62e5c79e45c1d846a38998c905c86276a8009d596d3713f47fd0"
+    },
+    {
+      "scale": "10k",
+      "seed": 71,
+      "arm": "mto",
+      "source_hashes_match": true,
+      "checkpoint_strict_load": true,
+      "checkpoint_sha256": "6fb51c14ba225460bd8136910177581988148eeaf664349e1da32b29496ec290",
+      "physical_identities_passed": true,
+      "gradient_intermediates": {
+        "energy_eV": 0.3545011579990387,
+        "C": 2.6841883659362793,
+        "A": 10.587650299072266,
+        "f": 17.993261337280273
+      },
+      "gradient_modules": {
+        "backbone": 75.38925771913273,
+        "state_MTO": 108.27404162287712,
+        "reference_CG": 1.225595235824585,
+        "energy_head": 5.989105939865112,
+        "beta_head": 23.30344009399414,
+        "tensor_gate": 1.2474479787051678
+      },
+      "min_A_eigenvalue": 7.704392812384329e-07,
+      "cg_paths": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "saved_all_intermediates": true
+    }
+  ]
+}

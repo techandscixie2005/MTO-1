@@ -50,8 +50,12 @@ python audit/parameter_breakdown.py
 
 本仓库保留已运行的代码和冻结配置。Slurm 脚本、数据准备与部分审计脚本保留原集群路径；不是开箱即用的跨机器调度配置。迁移运行前，应在独立工作目录配置数据路径、Slurm 分区和 Python 环境，并生成新的冻结协议，保留本次原始协议以便追溯。`protocol.py` 校验源码、数据路径、大小及修改时间，直接使用另一台机器的数据文件不会通过原协议校验。
 
-大体积 QM9S 数据、模型检查点和逐分子预测文件不随 Git 提交；模型实现的所有源代码均提交。运行训练仍需准备 `data/qm9s_full.npz`，数据校验值见冻结配置及数据清单。
+模型实现的所有源代码、三个规模的完整实验结果、最佳及末次模型检查点、逐分子预测和训练日志均随 Git 提交。原始 QM9S 数据集不随 Git 提交。运行训练仍需准备 `data/qm9s_full.npz`，数据校验值见冻结配置及数据清单。
 
 ## 第三方代码
 
 DetaNet 第三方代码的许可证保留在 `src/detanet_backbone/LICENSE`，来源及适配记录见 `backbone_provenance.json`。
+
+
+归档完整性可独立验证，无需 PyTorch：`python audit/verify_archive.py`。它核对冻结源码和服务器结果文件的 SHA-256。
+

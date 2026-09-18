@@ -1,0 +1,16 @@
+/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+Evaluated 10k 11 baseline
+Evaluated 10k 11 mto
+Evaluated 10k 23 baseline
+Evaluated 10k 23 mto
+Evaluated 10k 37 baseline
+Evaluated 10k 37 mto
+Evaluated 10k 53 baseline
+Evaluated 10k 53 mto
+Evaluated 10k 71 baseline
+Evaluated 10k 71 mto
+/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+Atomic assembly exports completed 10k
+STAGE COMPLETE {"passed": true, "scale": "10k", "seeds": [11, 23, 37, 53, 71], "protocol_id": "40c19f675e3b3e45d0ac0b8e3cd16e9942ff2a206d9789422af6c8eef4c03aa5", "job_id": "1290657", "elapsed_seconds": 6903.940188407898, "completed_unix": 1789457769.1287897, "previous": "1k"}

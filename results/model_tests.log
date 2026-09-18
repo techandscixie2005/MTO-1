@@ -1,0 +1,15 @@
+/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+test_exact_assembly (__main__.ModelTests) ... ok
+test_full_cg_paths (__main__.ModelTests) ... ok
+test_parameter_match_and_initialization (__main__.ModelTests) ... PARAMETERS {'mto': 178972, 'baseline': 179057, 'backbone': 77056, 'mto_head_hidden': 128, 'baseline_head_hidden': 229, 'relative_gap': 0.0004749346266455088}
+ok
+test_permutation_and_batching (__main__.ModelTests) ... ok
+test_psd_units_broadening_and_orientation_trace (__main__.ModelTests) ... ok
+test_rotations_reflections_covariance (__main__.ModelTests) ... ok
+test_spectrum_only_loss_reaches_every_module (__main__.ModelTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 4.916s
+
+OK

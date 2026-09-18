@@ -1,0 +1,12 @@
+/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+test_actual_model_state_dicts (__main__.RestoreTests) ... baseline empty buffers validated: ['backbone.core.blocks.0.update.outt.bias', 'backbone.core.blocks.0.update.uattn.lq.bias', 'backbone.core.blocks.0.update.uattn.lk.bias', 'backbone.core.blocks.0.update.uattn.lv.bias', 'backbone.core.blocks.0.update.uattn.tp1.weight', 'backbone.core.blocks.1.update.outt.bias', 'backbone.core.blocks.1.update.uattn.lq.bias', 'backbone.core.blocks.1.update.uattn.lk.bias', 'backbone.core.blocks.1.update.uattn.lv.bias', 'backbone.core.blocks.1.update.uattn.tp1.weight', 'backbone.core.blocks.2.update.outt.bias', 'backbone.core.blocks.2.update.uattn.lq.bias', 'backbone.core.blocks.2.update.uattn.lk.bias', 'backbone.core.blocks.2.update.uattn.lv.bias', 'backbone.core.blocks.2.update.uattn.tp1.weight']
+mto empty buffers validated: ['backbone.core.blocks.0.update.outt.bias', 'backbone.core.blocks.0.update.uattn.lq.bias', 'backbone.core.blocks.0.update.uattn.lk.bias', 'backbone.core.blocks.0.update.uattn.lv.bias', 'backbone.core.blocks.0.update.uattn.tp1.weight', 'backbone.core.blocks.1.update.outt.bias', 'backbone.core.blocks.1.update.uattn.lq.bias', 'backbone.core.blocks.1.update.uattn.lk.bias', 'backbone.core.blocks.1.update.uattn.lv.bias', 'backbone.core.blocks.1.update.uattn.tp1.weight', 'backbone.core.blocks.2.update.outt.bias', 'backbone.core.blocks.2.update.uattn.lq.bias', 'backbone.core.blocks.2.update.uattn.lk.bias', 'backbone.core.blocks.2.update.uattn.lv.bias', 'backbone.core.blocks.2.update.uattn.tp1.weight']
+ok
+test_empty_and_nonempty_values (__main__.RestoreTests) ... ok
+test_empty_shape_is_still_checked (__main__.RestoreTests) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 4.075s
+
+OK

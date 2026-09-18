@@ -1,0 +1,29 @@
+/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+test_exact_assembly (__main__.ModelTests) ... ok
+test_full_cg_paths (__main__.ModelTests) ... ok
+test_parameter_match_and_initialization (__main__.ModelTests) ... PARAMETERS {'mto': 178972, 'baseline': 179057, 'backbone': 77056, 'mto_head_hidden': 128, 'baseline_head_hidden': 229, 'relative_gap': 0.0004749346266455088}
+ok
+test_permutation_and_batching (__main__.ModelTests) ... ok
+test_psd_units_broadening_and_orientation_trace (__main__.ModelTests) ... ok
+test_rotations_reflections_covariance (__main__.ModelTests) ... ok
+test_spectrum_only_loss_reaches_every_module (__main__.ModelTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 4.383s
+
+OK
+baseline {'step': 25, 'mse': 0.22912952303886414}
+baseline {'step': 50, 'mse': 0.07243999093770981}
+baseline {'step': 75, 'mse': 0.05998888611793518}
+baseline {'step': 100, 'mse': 0.024520212784409523}
+Traceback (most recent call last):
+  File "/data/run01/sczc698/xxy/MTO_fullarch_20260914/scripts/preflight.py", line 92, in <module>
+    if __name__=='__main__':main()
+  File "/data/run01/sczc698/xxy/MTO_fullarch_20260914/scripts/preflight.py", line 63, in main
+    max_error=max(float((v-expected[k]).abs().max()) for k,v in model.state_dict().items() if v.is_floating_point())
+  File "/data/run01/sczc698/xxy/MTO_fullarch_20260914/scripts/preflight.py", line 63, in <genexpr>
+    max_error=max(float((v-expected[k]).abs().max()) for k,v in model.state_dict().items() if v.is_floating_point())
+RuntimeError: max(): Expected reduction dim to be specified for input.numel() == 0. Specify the reduction dim with the 'dim' argument.

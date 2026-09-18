@@ -1,0 +1,3935 @@
+/data/run01/sczc698/czl/shuju-323-527-fuwuqi/323/shuju/GNN-SMI2Sp_uv_train and picture.ipynb 
+ import os
+import torch
+import torch.nn.functional as F
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib import rcParams
+from torch_geometric.loader import DataLoader
+from scipy.stats import pearsonr
+from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.metrics import mean_squared_error
+from scipy.stats import pearsonr
+from scipy.ndimage import gaussian_filter1d
+from scipy.interpolate import interp1d
+from matplotlib.patches import Rectangle
+from matplotlib.ticker import FuncFormatter
+
+# -------------------------
+# 全局设置
+# -------------------------
+from matplotlib import rcParams
+
+
+rcParams['font.family'] = 'serif'               
+rcParams['font.serif'] = ['Times New Roman']    
+rcParams['xtick.direction'] = 'in'
+rcParams['ytick.direction'] = 'in'
+
+# ====================
+# 保存路径
+# ====================
+save_dir = r"/data/run01/sczc698/czl/shuju-323-527-fuwuqi/new-pictrue/2D/UV"
+os.makedirs(save_dir, exist_ok=True)
+
+# ====================
+# 模型加载
+# ====================
+model = GNN_Model(
+    num_atom_features=99,
+    num_bond_features=23,
+    num_hidden_features=256,
+    num_layers=3,
+    activation=nn.SiLU(),
+    output_size=701,
+    readout='mean',
+    aggr='mean',
+    last_activation=True,
+    use_layer_norm=True,
+    dropout=0.1
+)
+
+model.load_state_dict(torch.load(
+    r"/data/run01/sczc698/czl/shuju-323-527-fuwuqi/model_save/3/time140400.pth"
+))
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+model.to(device).eval()
+# -------------------------
+# 数据加载
+# -------------------------
+batch_size = 64
+test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
+
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+model.to(device)
+
+# -------------------------
+# 存储指标容器
+# -------------------------
+rmse_list = []
+cosine_list = []
+pearson_list = []
+
+# -------------------------
+# 一次遍历计算所有指标
+# -------------------------
+with torch.no_grad():
+    for batch in test_loader:
+        target = batch['spectra'].to(device).reshape(batch['spectra'].shape[0], -1)
+
+        out = model(node_attr=batch.x.to(device),
+                    edge_index=batch.edge_index.to(device),
+                    edge_attr=batch.edge_attr.to(device),
+                    batch=batch.batch.to(device)).reshape(target.shape)
+
+        out = torch.clamp(out, min=0.0)
+
+        mse_per_sample = F.mse_loss(out, target, reduction='none').mean(dim=1)
+        rmse_batch = torch.sqrt(mse_per_sample).cpu().numpy().astype(float)
+        rmse_list.extend(rmse_batch.tolist())
+
+        out_cpu = out.cpu().numpy()
+        target_cpu = target.cpu().numpy()
+        for i in range(out_cpu.shape[0]):
+            pred = out_cpu[i].astype(float)
+            true = target_cpu[i].astype(float)
+
+            try:
+                cos_sim = float(cosine_similarity([pred], [true])[0][0])
+                if np.isnan(cos_sim):
+                    cos_sim = 0.0
+            except Exception:
+                cos_sim = 0.0
+            cosine_list.append(cos_sim)
+
+            try:
+                pr, _ = pearsonr(pred, true)
+                pr = 0.0 if np.isnan(pr) else float(pr)
+            except Exception:
+                pr = 0.0
+            pearson_list.append(pr)
+
+# 转为 NumPy
+rmse_array = np.array(rmse_list, dtype=float)
+cosine_array = np.array(cosine_list, dtype=float)
+pearson_array = np.array(pearson_list, dtype=float)
+
+# -------------------------
+# 简单统计（打印 mean / median）
+# -------------------------
+def safe_mean_median(arr):
+    if arr.size == 0:
+        return 0.0, 0.0
+    return float(np.nanmean(arr)), float(np.nanmedian(arr))
+
+rmse_mean, rmse_median = safe_mean_median(rmse_array)
+cosine_mean, cosine_median = safe_mean_median(cosine_array)
+pearson_mean, pearson_median = safe_mean_median(pearson_array)
+
+print(f"RMSE   - mean: {rmse_mean:.6f}, median: {rmse_median:.6f}")
+print(f"Cosine - mean: {cosine_mean:.6f}, median: {cosine_median:.6f}")
+print(f"Pearson- mean: {pearson_mean:.6f}, median: {pearson_median:.6f}")
+
+# ====================
+# 直方图 -> 平滑百分比曲线 函数
+# ====================
+def hist_to_percent_curve(values, bins, sigma=2.0, dense_pts=1200):
+    v = np.asarray(values)
+    v = v[~np.isnan(v)]
+    if v.size == 0:
+        x_dense = np.linspace(bins[0], bins[-1], dense_pts)
+        return x_dense, np.zeros_like(x_dense)
+    centers = (bins[:-1] + bins[1:]) / 2.0
+    hist, _ = np.histogram(v, bins=bins)
+    total = hist.sum()
+    pct = (hist / total * 100.0) if total > 0 else np.zeros_like(hist, dtype=float)
+    x_dense = np.linspace(bins[0], bins[-1], dense_pts)
+    y_dense = interp1d(centers, pct, kind='linear', bounds_error=False, fill_value=0.0)(x_dense)
+    y_smooth = gaussian_filter1d(y_dense, sigma=sigma)
+    return x_dense, np.clip(y_smooth, 0.0, None)
+
+# ====================
+# 视觉参数
+# ====================
+COLORS = {
+    "RMSE": ("#00796b", "#b2dfdb"),        # teal
+    "Cosine": ("#e65100", "#ffcc80"),      # orange
+    "Pearson": ("#fdd835", "#fff59d")      # yellow / light yellow
+}
+LINEWIDTH
+/data/run01/sczc698/czl/shuju-323-527-fuwuqi/323/shuju/GNN-SMI2Sp_uv_train and picture.ipynb 
+ import os
+import torch
+import torch.nn.functional as F
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib import rcParams
+from torch_geometric.loader import DataLoader
+from scipy.stats import pearsonr
+from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.metrics import mean_squared_error
+from scipy.stats import pearsonr
+from scipy.ndimage import gaussian_filter1d
+from scipy.interpolate import interp1d
+from matplotlib.patches import Rectangle
+from matplotlib.ticker import FuncFormatter
+
+
+rcParams['font.family'] = 'serif'               
+rcParams['font.serif'] = ['Times New Roman']    
+rcParams['xtick.direction'] = 'in'
+rcParams['ytick.direction'] = 'in'
+
+# ====================
+# 保存路径
+# ====================
+save_dir = r"/data/run01/sczc698/czl/shuju-323-527-fuwuqi/new-pictrue/2D/UV"
+os.makedirs(save_dir, exist_ok=True)
+
+# ====================
+# 模型加载
+# ====================
+model = GNN_Model(
+    num_atom_features=99,
+    num_bond_features=23,
+    num_hidden_features=256,
+    num_layers=3,
+    activation=nn.SiLU(),
+    output_size=701,
+    readout='mean',
+    aggr='mean',
+    last_activation=True,
+    use_layer_norm=True,
+    dropout=0.1
+)
+
+model.load_state_dict(torch.load(
+    r"/data/run01/sczc698/czl/shuju-323-527-fuwuqi/model_save/3/time140400.pth"
+))
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+model.to(device).eval()
+# -------------------------
+# 数据加载
+# -------------------------
+batch_size = 64
+test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
+
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+model.to(device)
+
+# -------------------------
+# 存储指标容器
+# -------------------------
+rmse_list = []
+pearson_list = []
+
+# -------------------------
+# 一次遍历计算所有指标
+# -------------------------
+with torch.no_grad():
+    for batch in test_loader:
+        target = batch['spectra'].to(device).reshape(batch['spectra'].shape[0], -1)
+
+        out = model(node_attr=batch.x.to(device),
+                    edge_index=batch.edge_index.to(device),
+                    edge_attr=batch.edge_attr.to(device),
+                    batch=batch.batch.to(device)).reshape(target.shape)
+
+        out = torch.clamp(out, min=0.0)
+
+        mse_per_sample = F.mse_loss(out, target, reduction='none').mean(dim=1)
+        rmse_batch = torch.sqrt(mse_per_sample).cpu().numpy().astype(float)
+        rmse_list.extend(rmse_batch.tolist())
+
+        out_cpu = out.cpu().numpy()
+        target_cpu = target.cpu().numpy()
+        for i in range(out_cpu.shape[0]):
+            pred = out_cpu[i].astype(float)
+            true = target_cpu[i].astype(float)
+            try:
+                pr, _ = pearsonr(pred, true)
+                pr = 0.0 if np.isnan(pr) else float(pr)
+            except Exception:
+                pr = 0.0
+            pearson_list.append(pr)
+
+# 转为 NumPy
+rmse_array = np.array(rmse_list, dtype=float)
+pearson_array = np.array(pearson_list, dtype=float)
+
+# -------------------------
+# 简单统计（打印 mean / median）
+# -------------------------
+def safe_mean_median(arr):
+    if arr.size == 0:
+        return 0.0, 0.0
+    return float(np.nanmean(arr)), float(np.nanmedian(arr))
+
+rmse_mean, rmse_median = safe_mean_median(rmse_array)
+pearson_mean, pearson_median = safe_mean_median(pearson_array)
+
+print(f"RMSE   - mean: {rmse_mean:.6f}, median: {rmse_median:.6f}")
+print(f"Pearson- mean: {pearson_mean:.6f}, median: {pearson_median:.6f}")
+
+# ====================
+# 直方图 -> 平滑百分比曲线 函数
+# ====================
+def hist_to_percent_curve(values, bins, sigma=2.0, dense_pts=1200):
+    v = np.asarray(values)
+    v = v[~np.isnan(v)]
+    if v.size == 0:
+        x_dense = np.linspace(bins[0], bins[-1], dense_pts)
+        return x_dense, np.zeros_like(x_dense)
+    centers = (bins[:-1] + bins[1:]) / 2.0
+    hist, _ = np.histogram(v, bins=bins)
+    total = hist.sum()
+    pct = (hist / total * 100.0) if total > 0 else np.zeros_like(hist, dtype=float)
+    x_dense = np.linspace(bins[0], bins[-1], dense_pts)
+    y_dense = interp1d(centers, pct, kind='linear', bounds_error=False, fill_value=0.0)(x_dense)
+    y_smooth = gaussian_filter1d(y_dense, sigma=sigma)
+    return x_dense, np.clip(y_smooth, 0.0, None)
+
+# ====================
+# 视觉参数（改为红蓝配色）
+# ====================
+COLORS = {
+    "RMSE": ("#ff0000", "#ff0000"),       # 纯红 / 纯红
+    "Pearson": ("#0000ff", "#0000ff")     # 纯蓝 / 纯蓝
+}
+LINEWIDTH = 1.6
+ALPHA_FILL = 0.28
+GAUSS_SIGMA = 2.0
+
+# 映射到 [0,1]（用于横轴分布显示）
+# RMSE 仍按原样 clip 到 [0,1]（如需其他规范可以再调整）
+rmse_mapped = rmse_array.clip(0.0, 1.0)
+pear_mapped = ((pearson_array + 1.0) / 2.0).clip(0.0, 1.0)
+
+bins = np.linspace(0.0, 1.0, 60)
+x_r, y_r = hist_to_percent_curve(rmse_mapped, bins, sigma=GAUSS_SIGMA)
+x_p, y_p = hist_to_percent_curve(pear_mapped, bins, sigma=GAUSS_SIGMA)
+
+# ====================
+# 绘图：主轴（RMSE，左） + 右轴（Pearson）
+# ====================
+fig, ax_l = plt.subplots(figsize=(6, 4))
+
+# RMSE（左轴，红色）
+ax_l.plot(x_r, y_r, color=COLORS["RMSE"][0], linewidth=LINEWIDTH, linestyle='-', zorder=4)
+ax_l.fill_bet
+/data/run01/sczc698/czl/shuju-323-527-fuwuqi/323/shuju/GNN-SMI2Sp_uv_train and picture.ipynb 
+ import os
+import torch
+import torch.nn.functional as F
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib import rcParams
+from torch_geometric.loader import DataLoader
+from scipy.stats import pearsonr
+from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.metrics import mean_squared_error
+from scipy.stats import pearsonr
+from scipy.ndimage import gaussian_filter1d
+from scipy.interpolate import interp1d
+from matplotlib.patches import Rectangle
+from matplotlib.ticker import FuncFormatter
+
+
+rcParams['font.family'] = 'serif'               
+rcParams['font.serif'] = ['Times New Roman']    
+rcParams['xtick.direction'] = 'in'
+rcParams['ytick.direction'] = 'in'
+
+# ====================
+# 保存路径
+# ====================
+save_dir = r"/data/run01/sczc698/czl/shuju-323-527-fuwuqi/new-pictrue/2D/UV"
+os.makedirs(save_dir, exist_ok=True)
+
+# ====================
+# 模型加载
+# ====================
+model = GNN_Model(
+    num_atom_features=99,
+    num_bond_features=23,
+    num_hidden_features=256,
+    num_layers=3,
+    activation=nn.SiLU(),
+    output_size=701,
+    readout='mean',
+    aggr='mean',
+    last_activation=True,
+    use_layer_norm=True,
+    dropout=0.1
+)
+
+model.load_state_dict(torch.load(
+    r"/data/run01/sczc698/czl/shuju-323-527-fuwuqi/model_save/3/time140400.pth"
+))
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+model.to(device).eval()
+# -------------------------
+# 数据加载
+# -------------------------
+batch_size = 64
+test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
+
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+model.to(device)
+
+# -------------------------
+# 存储指标容器
+# -------------------------
+rmse_list = []
+pearson_list = []
+
+# -------------------------
+# 一次遍历计算所有指标
+# -------------------------
+with torch.no_grad():
+    for batch in test_loader:
+        target = batch['spectra'].to(device).reshape(batch['spectra'].shape[0], -1)
+
+        out = model(node_attr=batch.x.to(device),
+                    edge_index=batch.edge_index.to(device),
+                    edge_attr=batch.edge_attr.to(device),
+                    batch=batch.batch.to(device)).reshape(target.shape)
+
+        out = torch.clamp(out, min=0.0)
+
+        mse_per_sample = F.mse_loss(out, target, reduction='none').mean(dim=1)
+        rmse_batch = torch.sqrt(mse_per_sample).cpu().numpy().astype(float)
+        rmse_list.extend(rmse_batch.tolist())
+
+        out_cpu = out.cpu().numpy()
+        target_cpu = target.cpu().numpy()
+        for i in range(out_cpu.shape[0]):
+            pred = out_cpu[i].astype(float)
+            true = target_cpu[i].astype(float)
+            try:
+                pr, _ = pearsonr(pred, true)
+                pr = 0.0 if np.isnan(pr) else float(pr)
+            except Exception:
+                pr = 0.0
+            pearson_list.append(pr)
+
+# 转为 NumPy
+rmse_array = np.array(rmse_list, dtype=float)
+pearson_array = np.array(pearson_list, dtype=float)
+
+# -------------------------
+# 简单统计（打印 mean / median）
+# -------------------------
+def safe_mean_median(arr):
+    if arr.size == 0:
+        return 0.0, 0.0
+    return float(np.nanmean(arr)), float(np.nanmedian(arr))
+
+rmse_mean, rmse_median = safe_mean_median(rmse_array)
+pearson_mean, pearson_median = safe_mean_median(pearson_array)
+
+print(f"RMSE   - mean: {rmse_mean:.6f}, median: {rmse_median:.6f}")
+print(f"Pearson- mean: {pearson_mean:.6f}, median: {pearson_median:.6f}")
+
+# -------------------------
+# 简单统计（打印 mean / median）
+# -------------------------
+def safe_mean_median(arr):
+    if arr.size == 0:
+        return 0.0, 0.0
+    return float(np.nanmean(arr)), float(np.nanmedian(arr))
+
+rmse_mean, rmse_median = safe_mean_median(rmse_array)
+pearson_mean, pearson_median = safe_mean_median(pearson_array)
+
+print(f"RMSE   - mean: {rmse_mean:.6f}, median: {rmse_median:.6f}")
+print(f"Pearson- mean: {pearson_mean:.6f}, median: {pearson_median:.6f}")
+
+# ====================
+# 直方图 -> 平滑百分比曲线 函数
+# ====================
+def hist_to_percent_curve(values, bins, sigma=2.0, dense_pts=1200):
+    v = np.asarray(values)
+    v = v[~np.isnan(v)]
+    if v.size == 0:
+        x_dense = np.linspace(bins[0], bins[-1], dense_pts)
+        return x_dense, np.zeros_like(x_dense)
+    centers = (bins[:-1] + bins[1:]) / 2.0
+    hist, _ = np.histogram(v, bins=bins)
+    total = hist.sum()
+    pct = (hist / total * 100.0) if total > 0 else np.zeros_like(hist, dtype=float)
+    x_dense = np.linspace(bins[0], bins[-1], dense_pts)
+    y_dense = interp1d(centers, pct, kind='linear', bounds_error=False, fill_value=0.0)(x_dense)
+    y_smooth = gaussian_filter1d(y_dense, sigma=sigma)
+    return x_dense, np.clip(y_smooth, 0.0, None)
+
+# ====================
+# 视觉参数（改为红蓝配色）
+# ====================
+COLORS = {
+    "RMSE": ("#ff0000", "#ff0000"),       # 纯红 / 纯红
+    "Pearson": ("#0000ff", "#0000ff")     # 纯蓝 / 纯蓝
+}
+LINEWIDTH = 1.6
+ALPHA_FILL = 0.28
+GAUSS_SIGMA = 2.0
+
+# 映射到 [0,1]（用于横轴分布显示）
+# RMSE 仍按原样 clip 到 [0,1]（如需其他规范可以再调整）
+rmse_mapped = rmse_array.clip(0.0, 1
+/data/run01/sczc698/czl/shuju-323-527-fuwuqi/323/shuju/GNN-SMI2Sp_uv_train and picture.ipynb 
+ import os
+import torch
+import torch.nn.functional as F
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib import rcParams
+from torch_geometric.loader import DataLoader
+from scipy.stats import pearsonr
+from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.metrics import mean_squared_error
+from scipy.stats import pearsonr
+from scipy.ndimage import gaussian_filter1d
+from scipy.interpolate import interp1d
+from matplotlib.patches import Rectangle
+from matplotlib.ticker import FuncFormatter
+
+
+rcParams['font.family'] = 'serif'               
+rcParams['font.serif'] = ['Times New Roman']    
+rcParams['xtick.direction'] = 'in'
+rcParams['ytick.direction'] = 'in'
+
+# ====================
+# 保存路径
+# ====================
+save_dir = r"/data/run01/sczc698/czl/shuju-323-527-fuwuqi/new-pictrue/2D/UV"
+os.makedirs(save_dir, exist_ok=True)
+
+# ====================
+# 模型加载
+# ====================
+model = GNN_Model(
+    num_atom_features=99,
+    num_bond_features=23,
+    num_hidden_features=256,
+    num_layers=3,
+    activation=nn.SiLU(),
+    output_size=701,
+    readout='mean',
+    aggr='mean',
+    last_activation=True,
+    use_layer_norm=True,
+    dropout=0.1
+)
+
+model.load_state_dict(torch.load(
+    r"/data/run01/sczc698/czl/shuju-323-527-fuwuqi/model_save/3/time140400.pth"
+))
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+model.to(device).eval()
+# -------------------------
+# 数据加载
+# -------------------------
+batch_size = 64
+test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
+
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+model.to(device)
+
+# -------------------------
+# 存储指标容器
+# -------------------------
+rmse_list = []
+pearson_list = []
+
+# -------------------------
+# 一次遍历计算所有指标
+# -------------------------
+with torch.no_grad():
+    for batch in test_loader:
+        target = batch['spectra'].to(device).reshape(batch['spectra'].shape[0], -1)
+
+        out = model(node_attr=batch.x.to(device),
+                    edge_index=batch.edge_index.to(device),
+                    edge_attr=batch.edge_attr.to(device),
+                    batch=batch.batch.to(device)).reshape(target.shape)
+
+        out = torch.clamp(out, min=0.0)
+
+        mse_per_sample = F.mse_loss(out, target, reduction='none').mean(dim=1)
+        rmse_batch = torch.sqrt(mse_per_sample).cpu().numpy().astype(float)
+        rmse_list.extend(rmse_batch.tolist())
+
+        out_cpu = out.cpu().numpy()
+        target_cpu = target.cpu().numpy()
+        for i in range(out_cpu.shape[0]):
+            pred = out_cpu[i].astype(float)
+            true = target_cpu[i].astype(float)
+            try:
+                pr, _ = pearsonr(pred, true)
+                pr = 0.0 if np.isnan(pr) else float(pr)
+            except Exception:
+                pr = 0.0
+            pearson_list.append(pr)
+
+# 转为 NumPy
+rmse_array = np.array(rmse_list, dtype=float)
+pearson_array = np.array(pearson_list, dtype=float)
+
+# -------------------------
+# 简单统计（打印 mean / median）
+# -------------------------
+def safe_mean_median(arr):
+    if arr.size == 0:
+        return 0.0, 0.0
+    return float(np.nanmean(arr)), float(np.nanmedian(arr))
+
+rmse_mean, rmse_median = safe_mean_median(rmse_array)
+pearson_mean, pearson_median = safe_mean_median(pearson_array)
+
+print(f"RMSE   - mean: {rmse_mean:.6f}, median: {rmse_median:.6f}")
+print(f"Pearson- mean: {pearson_mean:.6f}, median: {pearson_median:.6f}")
+
+# -------------------------
+# 简单统计（打印 mean / median）
+# -------------------------
+def safe_mean_median(arr):
+    if arr.size == 0:
+        return 0.0, 0.0
+    return float(np.nanmean(arr)), float(np.nanmedian(arr))
+
+rmse_mean, rmse_median = safe_mean_median(rmse_array)
+pearson_mean, pearson_median = safe_mean_median(pearson_array)
+
+print(f"RMSE   - mean: {rmse_mean:.6f}, median: {rmse_median:.6f}")
+print(f"Pearson- mean: {pearson_mean:.6f}, median: {pearson_median:.6f}")
+
+from matplotlib.patches import Rectangle, FancyBboxPatch
+# ====================
+# 直方图 -> 平滑百分比曲线 函数
+# ====================
+def hist_to_percent_curve(values, bins, sigma=2.0, dense_pts=1200):
+    v = np.asarray(values)
+    v = v[~np.isnan(v)]
+    if v.size == 0:
+        x_dense = np.linspace(bins[0], bins[-1], dense_pts)
+        return x_dense, np.zeros_like(x_dense)
+    centers = (bins[:-1] + bins[1:]) / 2.0
+    hist, _ = np.histogram(v, bins=bins)
+    total = hist.sum()
+    pct = (hist / total * 100.0) if total > 0 else np.zeros_like(hist, dtype=float)
+    x_dense = np.linspace(bins[0], bins[-1], dense_pts)
+    y_dense = interp1d(centers, pct, kind='linear', bounds_error=False, fill_value=0.0)(x_dense)
+    y_smooth = gaussian_filter1d(y_dense, sigma=sigma)
+    return x_dense, np.clip(y_smooth, 0.0, None)
+
+# ====================
+# 视觉参数（改为红蓝配色）
+# ====================
+COLORS = {
+    "RMSE": ("#ff0000", "#ff0000"),       # 纯红 / 纯红
+    "Pearson": ("#0000ff", "#0000ff")     # 纯蓝 / 纯蓝
+}
+LINEWIDTH = 1.6
+ALPHA_FILL = 0.28
+GAUSS_SIGMA = 2.0
+
+# 映射到 [0,1]（用于横轴分布显示）
+rmse_mapped = rms
+/data/run01/sczc698/czl/shuju-323-527-fuwuqi/323/shuju/GNN-SMI2Sp_uv_train and picture.ipynb 
+ import os
+import torch
+import torch.nn.functional as F
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib import rcParams
+from torch_geometric.loader import DataLoader
+from scipy.stats import pearsonr
+from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.metrics import mean_squared_error
+from scipy.stats import pearsonr
+from scipy.ndimage import gaussian_filter1d
+from scipy.interpolate import interp1d
+from matplotlib.patches import Rectangle
+from matplotlib.ticker import FuncFormatter
+
+
+rcParams['font.family'] = 'serif'               
+rcParams['font.serif'] = ['Times New Roman']    
+rcParams['xtick.direction'] = 'in'
+rcParams['ytick.direction'] = 'in'
+
+# ====================
+# 保存路径
+# ====================
+save_dir = r"/data/run01/sczc698/czl/shuju-323-527-fuwuqi/new-pictrue/2D/UV"
+os.makedirs(save_dir, exist_ok=True)
+
+# ====================
+# 模型加载
+# ====================
+model = GNN_Model(
+    num_atom_features=99,
+    num_bond_features=23,
+    num_hidden_features=256,
+    num_layers=3,
+    activation=nn.SiLU(),
+    output_size=701,
+    readout='mean',
+    aggr='mean',
+    last_activation=True,
+    use_layer_norm=True,
+    dropout=0.1
+)
+
+model.load_state_dict(torch.load(
+    r"/data/run01/sczc698/czl/shuju-323-527-fuwuqi/model_save/3/time140400.pth"
+))
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+model.to(device).eval()
+# -------------------------
+# 数据加载
+# -------------------------
+batch_size = 64
+test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
+
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+model.to(device)
+
+# -------------------------
+# 存储指标容器
+# -------------------------
+rmse_list = []
+pearson_list = []
+
+# -------------------------
+# 一次遍历计算所有指标
+# -------------------------
+with torch.no_grad():
+    for batch in test_loader:
+        target = batch['spectra'].to(device).reshape(batch['spectra'].shape[0], -1)
+
+        out = model(node_attr=batch.x.to(device),
+                    edge_index=batch.edge_index.to(device),
+                    edge_attr=batch.edge_attr.to(device),
+                    batch=batch.batch.to(device)).reshape(target.shape)
+
+        out = torch.clamp(out, min=0.0)
+
+        mse_per_sample = F.mse_loss(out, target, reduction='none').mean(dim=1)
+        rmse_batch = torch.sqrt(mse_per_sample).cpu().numpy().astype(float)
+        rmse_list.extend(rmse_batch.tolist())
+
+        out_cpu = out.cpu().numpy()
+        target_cpu = target.cpu().numpy()
+        for i in range(out_cpu.shape[0]):
+            pred = out_cpu[i].astype(float)
+            true = target_cpu[i].astype(float)
+            try:
+                pr, _ = pearsonr(pred, true)
+                pr = 0.0 if np.isnan(pr) else float(pr)
+            except Exception:
+                pr = 0.0
+            pearson_list.append(pr)
+
+# 转为 NumPy
+rmse_array = np.array(rmse_list, dtype=float)
+pearson_array = np.array(pearson_list, dtype=float)
+
+# -------------------------
+# 简单统计（打印 mean / median）
+# -------------------------
+def safe_mean_median(arr):
+    if arr.size == 0:
+        return 0.0, 0.0
+    return float(np.nanmean(arr)), float(np.nanmedian(arr))
+
+rmse_mean, rmse_median = safe_mean_median(rmse_array)
+pearson_mean, pearson_median = safe_mean_median(pearson_array)
+
+print(f"RMSE   - mean: {rmse_mean:.6f}, median: {rmse_median:.6f}")
+print(f"Pearson- mean: {pearson_mean:.6f}, median: {pearson_median:.6f}")
+
+
+
+from matplotlib.patches import Rectangle, FancyBboxPatch
+
+# ====================
+# 直方图 -> 平滑百分比曲线 函数
+# ====================
+def hist_to_percent_curve(values, bins, sigma=2.0, dense_pts=1200):
+    v = np.asarray(values)
+    v = v[~np.isnan(v)]
+    if v.size == 0:
+        x_dense = np.linspace(bins[0], bins[-1], dense_pts)
+        return x_dense, np.zeros_like(x_dense)
+    centers = (bins[:-1] + bins[1:]) / 2.0
+    hist, _ = np.histogram(v, bins=bins)
+    total = hist.sum()
+    pct = (hist / total * 100.0) if total > 0 else np.zeros_like(hist, dtype=float)
+    x_dense = np.linspace(bins[0], bins[-1], dense_pts)
+    y_dense = interp1d(centers, pct, kind='linear', bounds_error=False, fill_value=0.0)(x_dense)
+    y_smooth = gaussian_filter1d(y_dense, sigma=sigma)
+    return x_dense, np.clip(y_smooth, 0.0, None)
+
+# ====================
+# 视觉参数（改为红蓝配色）
+# ====================
+COLORS = {
+    "RMSE": ("#ff0000", "#ff0000"),       
+    "Pearson": ("#0000ff", "#0000ff")     
+}
+LINEWIDTH = 1.6
+ALPHA_FILL = 0.28
+GAUSS_SIGMA = 2.0
+
+# 映射到 [0,1]（用于横轴分布显示）
+rmse_mapped = rmse_array.clip(0.0, 1.0)
+pear_mapped = ((pearson_array + 1.0) / 2.0).clip(0.0, 1.0)
+
+bins = np.linspace(0.0, 1.0, 60)
+x_r, y_r = hist_to_percent_curve(rmse_mapped, bins, sigma=GAUSS_SIGMA)
+x_p, y_p = hist_to_percent_curve(pear_mapped, bins, sigma=GAUSS_SIGMA)
+
+# ====================
+# 计算纵坐标最大值（比最大概率值大5）
+# ====================
+max_y_value = max(np.max(y_r), np.max(y_p)) + 5
+
+# ====================
+# 绘图：主轴（RMSE，左） + 右轴（Pearson）
+# ====================
+fig, ax_l = plt.subplots(figsize=(6, 4))
+/data/run01/sczc698/czl/shuju-323-527-fuwuqi/323/shuju/GNN-SMI2Sp_uv_train and picture.ipynb 
+ import os
+import torch
+import torch.nn.functional as F
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib import rcParams
+from torch_geometric.loader import DataLoader
+from scipy.stats import pearsonr
+from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.metrics import mean_squared_error
+from scipy.stats import pearsonr
+from scipy.ndimage import gaussian_filter1d
+from scipy.interpolate import interp1d
+from matplotlib.patches import Rectangle
+from matplotlib.ticker import FuncFormatter
+
+
+rcParams['font.family'] = 'serif'               
+rcParams['font.serif'] = ['Times New Roman']    
+rcParams['xtick.direction'] = 'in'
+rcParams['ytick.direction'] = 'in'
+
+# ====================
+# 保存路径
+# ====================
+save_dir = r"/data/run01/sczc698/czl/shuju-323-527-fuwuqi/new-pictrue/2D/UV"
+os.makedirs(save_dir, exist_ok=True)
+
+# ====================
+# 模型加载
+# ====================
+model = GNN_Model(
+    num_atom_features=99,
+    num_bond_features=23,
+    num_hidden_features=256,
+    num_layers=3,
+    activation=nn.SiLU(),
+    output_size=701,
+    readout='mean',
+    aggr='mean',
+    last_activation=True,
+    use_layer_norm=True,
+    dropout=0.1
+)
+
+model.load_state_dict(torch.load(
+    r"/data/run01/sczc698/czl/shuju-323-527-fuwuqi/model_save/3/time134100.pth"
+))
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+model.to(device).eval()
+# -------------------------
+# 数据加载
+# -------------------------
+batch_size = 64
+test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
+
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+model.to(device)
+
+# -------------------------
+# 存储指标容器
+# -------------------------
+rmse_list = []
+pearson_list = []
+
+# -------------------------
+# 一次遍历计算所有指标
+# -------------------------
+with torch.no_grad():
+    for batch in test_loader:
+        target = batch['spectra'].to(device).reshape(batch['spectra'].shape[0], -1)
+
+        out = model(node_attr=batch.x.to(device),
+                    edge_index=batch.edge_index.to(device),
+                    edge_attr=batch.edge_attr.to(device),
+                    batch=batch.batch.to(device)).reshape(target.shape)
+
+        out = torch.clamp(out, min=0.0)
+
+        mse_per_sample = F.mse_loss(out, target, reduction='none').mean(dim=1)
+        rmse_batch = torch.sqrt(mse_per_sample).cpu().numpy().astype(float)
+        rmse_list.extend(rmse_batch.tolist())
+
+        out_cpu = out.cpu().numpy()
+        target_cpu = target.cpu().numpy()
+        for i in range(out_cpu.shape[0]):
+            pred = out_cpu[i].astype(float)
+            true = target_cpu[i].astype(float)
+            try:
+                pr, _ = pearsonr(pred, true)
+                pr = 0.0 if np.isnan(pr) else float(pr)
+            except Exception:
+                pr = 0.0
+            pearson_list.append(pr)
+
+# 转为 NumPy
+rmse_array = np.array(rmse_list, dtype=float)
+pearson_array = np.array(pearson_list, dtype=float)
+
+# -------------------------
+# 简单统计（打印 mean / median）
+# -------------------------
+def safe_mean_median(arr):
+    if arr.size == 0:
+        return 0.0, 0.0
+    return float(np.nanmean(arr)), float(np.nanmedian(arr))
+
+rmse_mean, rmse_median = safe_mean_median(rmse_array)
+pearson_mean, pearson_median = safe_mean_median(pearson_array)
+
+print(f"RMSE   - mean: {rmse_mean:.6f}, median: {rmse_median:.6f}")
+print(f"Pearson- mean: {pearson_mean:.6f}, median: {pearson_median:.6f}")
+
+
+
+from matplotlib.patches import Rectangle, FancyBboxPatch
+
+# ====================
+# 直方图 -> 平滑百分比曲线 函数
+# ====================
+def hist_to_percent_curve(values, bins, sigma=2.0, dense_pts=1200):
+    v = np.asarray(values)
+    v = v[~np.isnan(v)]
+    if v.size == 0:
+        x_dense = np.linspace(bins[0], bins[-1], dense_pts)
+        return x_dense, np.zeros_like(x_dense)
+    centers = (bins[:-1] + bins[1:]) / 2.0
+    hist, _ = np.histogram(v, bins=bins)
+    total = hist.sum()
+    pct = (hist / total * 100.0) if total > 0 else np.zeros_like(hist, dtype=float)
+    x_dense = np.linspace(bins[0], bins[-1], dense_pts)
+    y_dense = interp1d(centers, pct, kind='linear', bounds_error=False, fill_value=0.0)(x_dense)
+    y_smooth = gaussian_filter1d(y_dense, sigma=sigma)
+    return x_dense, np.clip(y_smooth, 0.0, None)
+
+# ====================
+# 视觉参数（改为红蓝配色）
+# ====================
+COLORS = {
+    "RMSE": ("#ff0000", "#ff0000"),       
+    "Pearson": ("#0000ff", "#0000ff")     
+}
+LINEWIDTH = 1.6
+ALPHA_FILL = 0.28
+GAUSS_SIGMA = 2.0
+
+# 映射到 [0,1]（用于横轴分布显示）
+rmse_mapped = rmse_array.clip(0.0, 1.0)
+pear_mapped = ((pearson_array + 1.0) / 2.0).clip(0.0, 1.0)
+
+bins = np.linspace(0.0, 1.0, 60)
+x_r, y_r = hist_to_percent_curve(rmse_mapped, bins, sigma=GAUSS_SIGMA)
+x_p, y_p = hist_to_percent_curve(pear_mapped, bins, sigma=GAUSS_SIGMA)
+
+# ====================
+# 计算纵坐标最大值（比最大概率值大5）
+# ====================
+max_y_value = max(np.max(y_r), np.max(y_p)) + 5
+
+# ====================
+# 绘图：主轴（RMSE，左） + 右轴（Pearson）
+# ====================
+fig, ax_l = plt.subplots(figsize=(6, 4))
+/data/run01/sczc698/czl/shuju-323-527-fuwuqi/323/shuju/Transformer-SMILE-uv-vis.ipynb 
+ import re
+import numpy as np
+import random
+import pandas as pd
+import torch
+from rdkit import Chem
+from sklearn.preprocessing import MinMaxScaler
+
+# **1. 固定随机种子**
+SEED = 42
+torch.manual_seed(SEED)
+torch.cuda.manual_seed_all(SEED)
+np.random.seed(SEED)
+random.seed(SEED)
+
+# **2. 读取 SMILES 数据**
+def load_smiles(txt_file):
+    with open(txt_file, "r") as f:
+        smiles_list = [line.strip() for line in f.readlines()]
+    return smiles_list
+
+# **3. 转换 SMILES 为凯库勒式**
+def smiles_to_kekule(smiles):
+    mol = Chem.MolFromSmiles(smiles)
+    if mol is not None:
+        kekule_smiles = Chem.MolToSmiles(mol, kekuleSmiles=True)
+        return kekule_smiles
+    return None
+
+# **4. 解析 SMILES 并构建 SMILES_VOCAB**
+def tokenize_smiles(smiles_list):
+    # SMILES 正则表达式（确保 Cl 和 Br 作为单独 token）
+    pattern = r"(\[[^\]]+]|Br?|Cl?|N|O|S|P|F|I|b|c|n|o|s|p|\(|\)|\.|=|#|-|\+|\\|\/|:|~|@|\?|>|\*|\$|\%[0-9]{2}|[0-9])"
+
+    tokenized_smiles = []
+    vocab_set = set()
+
+    for smiles in smiles_list:
+        # 转换为凯库勒式
+        kekule_smiles = smiles_to_kekule(smiles)
+        if kekule_smiles is None:
+            continue  # 忽略无法解析的 SMILES
+
+        # 使用正则表达式进行拆分
+        tokens = re.findall(pattern, kekule_smiles)
+        tokenized_smiles.append(tokens)
+
+        # 记录所有独特的 token
+        vocab_set.update(tokens)
+
+    return tokenized_smiles, vocab_set
+
+# **5. 运行解析**
+smiles_file = r"/home/huwei24/czl/specgnn/qm9s2.txt" # 替换为你的文件路径
+smiles_list = load_smiles(smiles_file)
+
+# 获取 tokenized SMILES 和 SMILES_VOCAB
+tokenized_smiles, vocab_set = tokenize_smiles(smiles_list)
+
+# 构建 SMILES_VOCAB，确保包含 <PAD> 以用于填充
+SMILES_VOCAB = ['<PAD>'] + sorted(vocab_set)
+
+# **6. 构建 token2idx**
+token2idx = {token: idx for idx, token in enumerate(SMILES_VOCAB)}
+PAD_IDX = token2idx['<PAD>']  # 0 作为填充索引
+MAX_LEN = 36  # 统一长度
+
+# **7. 转换 tokenized SMILES 为索引格式**
+def smiles_to_idx(smiles_tokens):
+    indices = [token2idx[token] for token in smiles_tokens if token in token2idx]  # 转换允许的 token
+    while len(indices) < MAX_LEN:  # 右侧填充 <PAD>
+        indices.append(PAD_IDX)
+    return indices[:MAX_LEN]  # 截断超长的 SMILES
+
+# **8. 读取光谱数据**
+def load_spectra(csv_file):
+    df = pd.read_csv(csv_file, header=None)  # 不将第一行作为列名
+    spectra = df.values  # 获取数值部分 (N, 3000)
+    return spectra
+
+# **9. Normalize each spectrum individually and set values below 1e-5 to 1e-5**
+def normalize_spectra_individual(spectra):
+    # Normalize each spectrum independently
+    normalized_spectra = []
+    for spectrum in spectra:
+        min_val = np.min(spectrum)
+        max_val = np.max(spectrum)
+        
+        # Ensure min_val != max_val to avoid division by zero
+        if max_val != min_val:
+            normalized_spectrum = (spectrum - min_val) / (max_val - min_val)
+        else:
+            normalized_spectrum = spectrum  # In case all values are the same
+
+        # Set small values to 1e-5
+        normalized_spectrum[normalized_spectrum < 1e-5] = 1e-5
+        normalized_spectra.append(normalized_spectrum)
+
+    return np.array(normalized_spectra)
+
+# **10. 数据集划分**
+def split_dataset(smiles_tokens, spectra):
+    # 根据 dataset_index % 10 进行划分
+    smiles_train, smiles_val, smiles_test = [], [], []
+    spectra_train, spectra_val, spectra_test = [], [], []
+    
+    for idx in range(len(smiles_tokens)):
+        # 这里根据 dataset_index % 10 的余数来划分
+        if idx % 10 < 8:  # 训练集
+            smiles_train.append(smiles_tokens[idx])
+            spectra_train.append(spectra[idx])
+        elif idx % 10 == 8:  # 验证集
+            smiles_val.append(smiles_tokens[idx])
+            spectra_val.append(spectra[idx])
+        else:  # 测试集
+            smiles_test.append(smiles_tokens[idx])
+            spectra_test.append(spectra[idx])
+
+    return smiles_train, smiles_val, smiles_test, spectra_train, spectra_val, spectra_test
+
+# **11. 读取数据并划分**
+spectra_file = pd.read_csv(r"/home/huwei24/czl/specgnn/1.5-13.5ev-uvis.csv",header=None,skiprows=1).iloc[:, 1:].values
+spectra = normalize_spectra_individual(spectra_file)
+
+# **13. 数据划分**
+smiles_train, smiles_val, smiles_test, spectra_train, spectra_val, spectra_test = split_dataset(tokenized_smiles, spectra)
+
+# **14. 转换 SMILES token 为索引**
+smiles_train_idx = torch.tensor([smiles_to_idx(tokens) for tokens in smiles_train], dtype=torch.long)
+smiles_val_idx = torch.tensor([smiles_to_idx(tokens) for tokens in smiles_val], dtype=torch.long)
+smiles_test_idx = torch.tensor([smiles_to_idx(tokens) for tokens in smiles_test], dtype=torch.long)
+
+spectra_train = torch.tensor(spectra_train, dtype=torch.float32)
+spectra_val = torch.tensor(spectra_val, dtype=torch.float32)
+spectra_test = torch.tensor(spectra_test, dtype=torch.float32)
+
+# **15. 输出结果**
+print(f"最长的 SMILES token 长度: {MAX_LEN}")
+print(f"SMILES_VOCAB: {SMILES_VOCAB}")
+print("训练集大小:", smiles_train_idx.shape, spectra_train.shape)
+print("验证集大小:", smiles_val_idx.shape, spectra_val.shape)
+print("测试集大小:", smiles_test_idx.shape, spectra_test.shape)
+
+/data/run01/sczc698/czl/shuju-323-527-fuwuqi/323/shuju/GNN -train-SMILE-nmr.ipynb 
+ import os
+import torch
+import numpy as np
+import pandas as pd
+from torch_geometric.loader import DataLoader
+import torch.nn as nn
+from scipy.stats import pearsonr
+from sklearn.metrics.pairwise import cosine_similarity
+
+# -----------------------------
+# 模型（按你提供）
+# -----------------------------
+model = GNN_Model(
+    num_atom_features=99,
+    num_bond_features=23,
+    num_hidden_features=256,
+    num_layers=4,
+    activation=nn.LeakyReLU(0.1),
+    output_size=1,
+    readout='atom',
+    aggr='mean',
+    use_norm='layer',
+    use_residual=True,
+    dropout=0.0,
+    init_method='glorot'
+)
+
+state = torch.load(r'/data/run01/sczc698/czl/shuju-323-527-fuwuqi/323/shuju/pth/GNN-qm9s-best-nmr-1.pth', map_location='cpu')
+model.load_state_dict(state)
+model.eval()
+
+# -----------------------------
+# loader & device
+# -----------------------------
+batch_size = 64
+test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
+
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+model.to(device)
+
+# -----------------------------
+# 保存路径
+# -----------------------------
+SAVE_DIR = r"/data/run01/sczc698/czl/shuju-323-527-fuwuqi/new-pictrue/2D/NMR"
+os.makedirs(SAVE_DIR, exist_ok=True)
+
+PRED_STR_CSV = os.path.join(SAVE_DIR, "predicted_shifts.csv")
+TRUE_STR_CSV = os.path.join(SAVE_DIR, "true_shifts.csv")
+PRED_COLS_CSV = os.path.join(SAVE_DIR, "predicted_shifts_columns.csv")
+TRUE_COLS_CSV = os.path.join(SAVE_DIR, "true_shifts_columns.csv")
+METRICS_CSV = os.path.join(SAVE_DIR, "per_sample_metrics.csv")
+
+# -----------------------------
+# 辅助函数
+# -----------------------------
+def fmt_shifts_as_bracket_string(arr, precision=3):
+    a = np.asarray(arr).ravel()
+    formatted = " ".join(f"{float(x):.{precision}f}" for x in a)
+    return f"[ {formatted} ]"
+
+def pad_row(arr, length):
+    if len(arr) < length:
+        return list(arr) + [np.nan] * (length - len(arr))
+    else:
+        return list(arr)
+
+# -----------------------------
+# 收集按样本的 pred/true
+# -----------------------------
+sample_ids = []
+pred_per_sample = []   # 每项为 list of floats（一个样本）
+true_per_sample = []
+
+auto_counter = 0
+
+model.eval()
+with torch.no_grad():
+    for batch in test_loader:
+        # case A: loader returns (inputs, targets)
+        if isinstance(batch, (list, tuple)) and len(batch) == 2:
+            inputs, targets = batch
+            outputs = model(inputs.to(device))
+            out_np = outputs.detach().cpu().numpy()
+            target_np = targets.detach().cpu().numpy()
+
+            # assume out_np shape (B, L) and target_np (B, L)
+            for i in range(out_np.shape[0]):
+                pred_per_sample.append(np.asarray(out_np[i]).ravel().tolist())
+                true_per_sample.append(np.asarray(target_np[i]).ravel().tolist())
+                sample_ids.append(f"sample_{auto_counter}")
+                auto_counter += 1
+            continue
+
+        # case B: PyG Data/Batch
+        # 找 target tensor：优先 nst_iso -> y -> spectra
+        if hasattr(batch, 'nst_iso'):
+            t_tensor = getattr(batch, 'nst_iso')
+        elif isinstance(batch, dict) and 'nst_iso' in batch:
+            t_tensor = batch['nst_iso']
+        elif hasattr(batch, 'y'):
+            t_tensor = getattr(batch, 'y')
+        elif hasattr(batch, 'spectra'):
+            t_tensor = getattr(batch, 'spectra')
+        else:
+            raise RuntimeError("找不到目标字段 (nst_iso / y / spectra)。")
+
+        # 有时 target 是 per-node (N_nodes, 1) 或 已经按-sample reshape (B, L)
+        # 准备模型输入
+        x = batch.x.to(device) if hasattr(batch, 'x') else None
+        edge_index = batch.edge_index.to(device) if hasattr(batch, 'edge_index') else None
+        edge_attr = batch.edge_attr.to(device) if hasattr(batch, 'edge_attr') else None
+        batch_idx = batch.batch.to(device) if hasattr(batch, 'batch') else None
+
+        out = model(node_attr=x, edge_index=edge_index, edge_attr=edge_attr, batch=batch_idx)
+        out = out.detach()
+
+        # 将 target 拉到 device 并为后续对齐做准备
+        t = t_tensor.detach()
+        # 如果 t 是 shape (N_nodes, ) 或 (N_nodes,1) 并且 batch.batch 存在 -> per-node case
+        per_node_case = False
+        if hasattr(batch, 'batch'):
+            # normalize shapes
+            if t.dim() == 2 and t.shape[1] == 1:
+                t_flat = t.view(-1)
+            else:
+                t_flat = t.view(-1) if t.dim() == 1 else None
+
+            # out 也可能是 (N_nodes,1) or (N_nodes,)
+            # 判断 out 是否按 node 输出： out.shape[0] == len(batch.batch)
+            try:
+                batch_map = batch.batch.detach().cpu().numpy()
+                if out.shape[0] == batch_map.shape[0]:
+                    per_node_case = True
+            except Exception:
+                per_node_case = False
+
+        # 处理 per-node 输出（需要按 sample grouping）
+        if per_node_case:
+            out_np = out.detach().cpu().numpy().ravel()      # shape (N_nodes,)
+            # target may be per-node too
+            try:
+                target_np = t_tensor.detach().cpu().numpy().ravel()
+            ex
+/data/run01/sczc698/czl/shuju-323-527-fuwuqi/323/shuju/GNN -train-SMILE-nmr.ipynb 
+ import os
+import numpy as np
+import pandas as pd
+from scipy.stats import pearsonr
+from sklearn.metrics.pairwise import cosine_similarity
+import matplotlib.pyplot as plt
+from matplotlib import rcParams
+import torch
+import torch.nn.functional as F
+from sklearn.metrics import mean_squared_error
+from scipy.stats import pearsonr
+from scipy.ndimage import gaussian_filter1d
+from scipy.interpolate import interp1d
+from matplotlib.ticker import FuncFormatter
+
+rcParams['font.family'] = 'serif'               
+rcParams['font.serif'] = ['Times New Roman']    
+rcParams['xtick.direction'] = 'in'
+rcParams['ytick.direction'] = 'in'
+
+# -------------------------
+# 保存路径
+# -------------------------
+SAVE_DIR = r"/data/run01/sczc698/czl/shuju-323-527-fuwuqi/new-pictrue/2D/NMR"
+os.makedirs(SAVE_DIR, exist_ok=True)
+
+# -------------------------
+# 读取数据
+# -------------------------
+pred_file = r"/data/run01/sczc698/czl/shuju-323-527-fuwuqi/new-pictrue/2D/NMR/predicted_shifts.csv"
+true_file = r"/data/run01/sczc698/czl/shuju-323-527-fuwuqi/new-pictrue/2D/NMR/true_shifts.csv"
+
+pred_df = pd.read_csv(pred_file)
+true_df = pd.read_csv(true_file)
+
+# -------------------------
+# 将 Shifts 列从字符串解析为浮点数数组
+# -------------------------
+def parse_shifts(s):
+    s = s.strip()[1:-1]
+    return np.array([float(x) for x in s.split()])
+
+pred_list = [parse_shifts(s) for s in pred_df['Shifts']]
+true_list = [parse_shifts(s) for s in true_df['Shifts']]
+
+# -------------------------
+# 计算每个样本的 RMSE, Pearson, Cosine
+# -------------------------
+# -------------------------
+# 计算每个样本的 RMSE, Pearson, Cosine
+# -------------------------
+rmse_list = []
+pearson_list = []
+
+for y_pred, y_true in zip(pred_list, true_list):
+    # 截取最短长度
+    min_len = min(len(y_pred), len(y_true))
+    y_pred_cut = y_pred[:min_len]
+    y_true_cut = y_true[:min_len]
+    
+    # RMSE
+    rmse = np.sqrt(np.mean((y_pred_cut - y_true_cut)**2))
+    rmse_list.append(rmse)
+    
+    # Pearson
+    if np.std(y_pred_cut) == 0 or np.std(y_true_cut) == 0:
+        pearson = np.nan
+    else:
+        pearson, _ = pearsonr(y_true_cut, y_pred_cut)
+    pearson_list.append(pearson)
+
+rmse_array = np.array(rmse_list)
+pearson_array = np.array(pearson_list)
+
+# ====================
+# 统计量计算（新增部分）
+# ====================
+pearson_mean, pearson_median = float(np.nanmean(pearson_array)), float(np.nanmedian(pearson_array))
+rmse_mean, rmse_median = float(np.nanmean(rmse_array)), float(np.nanmedian(rmse_array))
+
+print(f"平均 RMSE: {rmse_mean:.6f}   中位数: {rmse_median:.6f}")
+print(f"平均 Pearson: {pearson_mean:.4f}   中位数: {pearson_median:.4f}")
+# ====================
+# 直方图 -> 平滑百分比曲线 函数
+# ====================
+def hist_to_percent_curve(values, bins, sigma=2.0, dense_pts=1200):
+    v = np.asarray(values)
+    v = v[~np.isnan(v)]
+    if v.size == 0:
+        x_dense = np.linspace(bins[0], bins[-1], dense_pts)
+        return x_dense, np.zeros_like(x_dense)
+    centers = (bins[:-1] + bins[1:]) / 2.0
+    hist, _ = np.histogram(v, bins=bins)
+    total = hist.sum()
+    pct = (hist / total * 100.0) if total > 0 else np.zeros_like(hist, dtype=float)
+    x_dense = np.linspace(bins[0], bins[-1], dense_pts)
+    y_dense = interp1d(centers, pct, kind='linear', bounds_error=False, fill_value=0.0)(x_dense)
+    y_smooth = gaussian_filter1d(y_dense, sigma=sigma)
+    return x_dense, np.clip(y_smooth, 0.0, None)
+
+# ====================
+# 视觉参数（改为红蓝配色）
+# ====================
+COLORS = {
+    "RMSE": ("#ff0000", "#ff0000"),       # 纯红 / 纯红
+    "Pearson": ("#0000ff", "#0000ff")     # 纯蓝 / 纯蓝
+}
+LINEWIDTH = 1.6
+ALPHA_FILL = 0.28
+GAUSS_SIGMA = 2.0
+
+# ====================
+# 数据处理 - 使用实际范围（不映射）
+# ====================
+# RMSE: 使用实际范围0-10
+rmse_bins = np.linspace(0, 10, 60)
+x_r, y_r = hist_to_percent_curve(rmse_array, rmse_bins, sigma=GAUSS_SIGMA)
+
+# Pearson: 使用实际范围0-1
+pearson_bins = np.linspace(0, 1, 60)
+x_p, y_p = hist_to_percent_curve(pearson_array, pearson_bins, sigma=GAUSS_SIGMA)
+
+# ====================
+# 绘图：双x轴设置
+# ====================
+fig, ax_rmse = plt.subplots(figsize=(6, 4))  # 增加高度
+
+# RMSE曲线（底部x轴，红色）
+ax_rmse.plot(x_r, y_r, color=COLORS["RMSE"][0], linewidth=LINEWIDTH, linestyle='-', zorder=4)
+ax_rmse.fill_between(x_r, y_r, color=COLORS["RMSE"][1], alpha=ALPHA_FILL, zorder=1)
+ax_rmse.set_xlim(0, 10)  # 改为0-10
+ax_rmse.set_ylim(0.0, 105.0)  # 延长y轴到110
+ax_rmse.set_xlabel("RMSE", fontsize=20, fontfamily='Times New Roman', color=COLORS["RMSE"][0])
+ax_rmse.set_ylabel("Percentage", fontsize=20, fontfamily='Times New Roman', color='black')
+ax_rmse.tick_params(axis='y', colors='black', labelsize=16)
+ax_rmse.tick_params(axis='x', colors=COLORS["RMSE"][0], labelsize=16)
+ax_rmse.xaxis.label.set_color(COLORS["RMSE"][0])
+ax_rmse.yaxis.set_label_coords(-0.060, 0.5)
+
+# 设置RMSE的x轴刻度 - 显示一位小数，全部红色
+rmse_ticks = np.arange(0, 11, 1)  # 0-10
+rmse_labels = [f'{x:.1f}' for x in rmse_ticks]  # 显示一位小数
+
+ax_rmse.set_xticks(rmse_ticks)
+ax_rmse.set_xticklabels(rmse_labels)
+
+# 所有RMSE刻度都设为红色
+for tick in ax_rmse.xaxis.get_major_ticks():
+    tick.label1.set_color(COLORS["RMSE"][0])
+
+# 调整RMSE标签与坐标轴的距离
+a
+/data/run01/sczc698/czl/shuju-323-527-fuwuqi/323/shuju/make picture nist.ipynb 
+ import os
+import numpy as np
+import pandas as pd
+import torch
+import torch.nn.functional as F
+from scipy.stats import pearsonr
+from sklearn.metrics import mean_squared_error
+
+# =========================
+# 参数
+# =========================
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+csv_save_path = "/data/run01/sczc698/czl/原子个数的peason和consine/NIST-Pearson/3D_NIST_pearson.csv"
+
+# =========================
+# 加载模型
+# =========================
+model.load_state_dict(
+    torch.load(
+        r"/data/run01/sczc698/czl/shuju-323-527-fuwuqi/323/shuju/pth/detanet-nist.pth",
+        map_location=device,
+    )
+)
+
+model = model.to(device)
+model.eval()
+
+# =========================
+# 统计每个样本
+# =========================
+records = []
+
+with torch.no_grad():
+
+    for i in range(len(test_datasets)):
+
+        data = test_datasets[i]
+
+        z = data.z.to(device)
+        pos = data.pos.to(device)
+        target = data.nist.to(device)
+
+        pred = model(z, pos)
+
+        target = target.reshape(pred.shape)
+
+        pred_np = pred.cpu().numpy().flatten()
+        target_np = target.cpu().numpy().flatten()
+
+        # 原子数
+        atom_count = int(z.shape[0])
+
+        # Pearson
+        pearson_val, _ = pearsonr(pred_np, target_np)
+
+        if np.isnan(pearson_val):
+            pearson_val = 0.0
+
+        # Cosine
+        cosine_val = F.cosine_similarity(
+            pred.flatten(),
+            target.flatten(),
+            dim=0
+        ).item()
+
+        # RMSE
+        rmse_val = np.sqrt(
+            mean_squared_error(target_np, pred_np)
+        )
+
+        records.append(
+            {
+                "sample_id": i,
+                "atom_count": atom_count,
+                "pearson": pearson_val,
+                "cosine": cosine_val,
+                "rmse": rmse_val,
+            }
+        )
+
+# =========================
+# 每个样本结果
+# =========================
+sample_df = pd.DataFrame(records)
+
+sample_df.to_csv(
+    "/data/run01/sczc698/czl/原子个数的peason和consine/NIST-Pearson/3D_NIST_metrics.csv",
+    index=False
+)
+
+print("保存:")
+print("all_samples_metrics.csv")
+
+# =========================
+# 按原子数统计平均 Pearson
+# =========================
+atom_df = (
+    sample_df
+    .groupby("atom_count")
+    .agg(
+        sample_num=("pearson", "count"),
+        mean_pearson=("pearson", "mean"),
+        median_pearson=("pearson", "median"),
+        std_pearson=("pearson", "std"),
+    )
+    .reset_index()
+)
+
+atom_df = atom_df.sort_values("atom_count")
+
+atom_df.to_csv(
+    csv_save_path,
+    index=False
+)
+
+print("\n保存:")
+print(csv_save_path)
+
+# =========================
+# 打印结果
+# =========================
+print("\nAtom Count vs Pearson:")
+print(atom_df.head(20))
+
+# =========================
+# 全局统计
+# =========================
+print("\nOverall Pearson Mean:",
+      sample_df["pearson"].mean())
+
+print("Overall Pearson Median:",
+      sample_df["pearson"].median())
+/data/run01/sczc698/czl/shuju-323-527-fuwuqi/323/shuju/make picture nist.ipynb 
+ import os
+import numpy as np
+import pandas as pd
+import torch
+from scipy.stats import pearsonr
+
+# ==========================================
+# Device
+# ==========================================
+device = torch.device(
+    "cuda" if torch.cuda.is_available() else "cpu"
+)
+
+# ==========================================
+# 保存路径
+# ==========================================
+csv_save_path = (
+    "/data/run01/sczc698/czl/原子个数的peason和consine/"
+    "NIST-Pearson/3D_NIST_mean_pearson.csv"
+)
+
+# ==========================================
+# 加载训练好的模型
+# ==========================================
+model.load_state_dict(
+    torch.load(
+        "/data/run01/sczc698/czl/shuju-323-527-fuwuqi/323/shuju/pth/detanet-nist.pth",
+        map_location=device
+    )
+)
+
+model = model.to(device)
+model.eval()
+
+# ==========================================
+# 存储
+# ==========================================
+atom_counts = []
+pearsons = []
+
+# ==========================================
+# 测试集预测
+# ==========================================
+with torch.no_grad():
+
+    for data in test_datasets:
+
+        z = data.z.to(device)
+        pos = data.pos.to(device)
+        target = data.nist.to(device)
+
+        pred = model(z, pos)
+
+        target = target.reshape(pred.shape)
+
+        pred_np = pred.cpu().numpy().flatten()
+        target_np = target.cpu().numpy().flatten()
+
+        # 原子数
+        atom_count = int(z.shape[0])
+
+        # Pearson
+        try:
+            pearson_value, _ = pearsonr(
+                pred_np,
+                target_np
+            )
+
+            if np.isnan(pearson_value):
+                pearson_value = 0.0
+
+        except Exception:
+            pearson_value = 0.0
+
+        atom_counts.append(atom_count)
+        pearsons.append(float(pearson_value))
+
+# ==========================================
+# DataFrame
+# ==========================================
+df = pd.DataFrame({
+    "atom_count": atom_counts,
+    "pearson": pearsons
+})
+
+# ==========================================
+# 按原子数求平均 Pearson
+# ==========================================
+result_df = (
+    df.groupby("atom_count")["pearson"]
+      .mean()
+      .reset_index()
+)
+
+result_df.columns = [
+    "atom_count",
+    "mean_pearson"
+]
+
+result_df = result_df.sort_values(
+    by="atom_count"
+)
+
+# ==========================================
+# 保存
+# ==========================================
+result_df.to_csv(
+    csv_save_path,
+    index=False
+)
+
+print("保存成功：")
+print(csv_save_path)
+
+print("\n前20行结果：")
+print(result_df.head(20))
+
+print("\n总体平均Pearson：")
+print(df["pearson"].mean())
+/data/run01/sczc698/czl/shuju-323-527-fuwuqi/323/shuju/make dataset2.ipynb 
+ import argparse
+import pandas as pd
+import numpy as np
+from sklearn.preprocessing import (
+    QuantileTransformer,
+    RobustScaler,
+    PowerTransformer
+)
+
+def load_data(file_path, skiprows=1, usecols=None):
+    """加载CSV文件并跳过指定行列"""
+    try:
+        if usecols:
+            df = pd.read_csv(file_path, skiprows=skiprows, usecols=usecols)
+        else:
+            df = pd.read_csv(file_path, skiprows=skiprows)
+        return df
+    except FileNotFoundError:
+        print(f"错误：文件 {file_path} 未找到")
+        exit(1)
+    except Exception as e:
+        print(f"加载数据时发生错误：{str(e)}")
+        exit(1)
+
+def preprocess_data(data, method='quantile'):
+    """数据预处理函数"""
+    try:
+        if method == 'quantile':
+            # 分位数归一化（保留0值）
+            transformer = QuantileTransformer(output_distribution='normal', random_state=42)
+            processed = transformer.fit_transform(data)
+            # 保持原始0值位置
+            processed[data == 0] = 0
+            
+        elif method == 'log':
+            # 对数变换（加极小值处理0值）
+            processed = np.log1p(data)
+            
+        elif method == 'robust':
+            # RobustScaler缩放
+            scaler = RobustScaler()
+            processed = scaler.fit_transform(data)
+            
+        elif method == 'power':
+            # Box-Cox变换（需要正值）
+            transformer = PowerTransformer(method='box-cox')
+            processed = transformer.fit_transform(data)
+            
+        else:
+            raise ValueError("无效的预处理方法")
+            
+        return processed
+    
+    except Exception as e:
+        print(f"数据预处理失败：{str(e)}")
+        exit(1)
+
+def save_data(data, output_file):
+    """保存处理后的数据"""
+    try:
+        pd.DataFrame(data).to_csv(output_file, index=False)
+        print(f"处理后的数据已保存至 {output_file}")
+    except Exception as e:
+        print(f"保存数据时发生错误：{str(e)}")
+        exit(1)
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='CSV数据预处理工具')
+    parser.add_argument('r"D:\czl\1.5-13.5ev-uvis.csv"', type=str, required=True, help='输入CSV文件路径')
+    parser.add_argument('r"D:\czl\best-uv.csv"', type=str, default='processed.csv', help='输出文件路径')
+    parser.add_argument('--skiprows', type=int, default=1, help='跳过的行数（默认跳过首行）')
+    parser.add_argument('--skipcols', type=int, default=1, help='跳过的列数（默认跳过首列）')
+    parser.add_argument('--method', type=str, 
+                      choices=['quantile', 'log', 'robust', 'power'],
+                      default='quantile', 
+                      help='预处理方法选择')
+    
+    args = parser.parse_args()
+    
+    # 加载数据
+    df = load_data(args.input, skiprows=args.skiprows)
+    
+    # 处理列选择
+    if args.skipcols > 0:
+        usecols = list(range(args.skipcols, len(df.columns)))
+    else:
+        usecols = None
+    
+    data = df.iloc[:, usecols].values
+    
+    # 数据预处理
+    processed = preprocess_data(data, method=args.method)
+    
+    # 保存结果
+    save_data(processed, args.output)
+/data/run01/sczc698/czl/shuju-323-527-fuwuqi/323/shuju/make dataset2.ipynb 
+ import pandas as pd
+import numpy as np
+from sklearn.preprocessing import (
+    QuantileTransformer,
+    RobustScaler,
+    PowerTransformer
+)
+
+def process_spectra(
+    input_path: str = r"D:\czl\output\split_0003.csv",
+    output_path: str =r"D:\czl\output\split_110003.csv",
+    method: str = "quantile",
+    skiprows: int = 1,
+    skipcols: int = 1
+):
+    """
+    完整的数据处理流程（直接调用即可使用）
+    
+    参数：
+    input_path : str    输入文件路径（默认：当前目录/input.csv）
+    output_path : str   输出文件路径（默认：当前目录/processed.csv）
+    method : str        预处理方法（quantile/log/robust/power）
+    skiprows : int      跳过的行数（默认跳过首行）
+    skipcols : int      跳过的列数（默认跳过首列）
+    """
+    
+    try:
+        # 加载数据
+        print(f"[INFO] 正在加载数据：{input_path}")
+        df = pd.read_csv(input_path, skiprows=skiprows)
+        
+        # 处理列选择
+        usecols = list(range(skipcols, len(df.columns)))
+        if not usecols:
+            raise ValueError("没有需要处理的列")
+            
+        data = df.iloc[:, usecols].values
+        
+        # 数据预处理
+        print(f"[INFO] 使用 {method} 方法进行预处理")
+        if method == "quantile":
+            transformer = QuantileTransformer(output_distribution='normal', random_state=42)
+            processed = transformer.fit_transform(data)
+            processed[data == 0] = 0
+            
+        elif method == "log":
+            processed = np.log1p(data)
+            
+        elif method == "robust":
+            scaler = RobustScaler()
+            processed = scaler.fit_transform(data)
+            
+        elif method == "power":
+            if (data <= 0).any():
+                raise ValueError("Box-Cox变换要求所有值为正数")
+            transformer = PowerTransformer(method='box-cox')
+            processed = transformer.fit_transform(data)
+            
+        else:
+            raise ValueError(f"无效方法：{method}")
+            
+        # 保存结果
+        print(f"[INFO] 正在保存至：{output_path}")
+        pd.DataFrame(processed).to_csv(output_path, index=False)
+        print("[SUCCESS] 处理完成！")
+        
+        return processed
+    
+    except FileNotFoundError:
+        print(f"[ERROR] 文件未找到：{input_path}")
+    except Exception as e:
+        print(f"[ERROR] 处理失败：{str(e)}")
+
+# 直接调用示例（使用默认参数）
+if __name__ == "__main__":
+    process_spectra()
+/data/run01/sczc698/czl/shuju-323-527-fuwuqi/323/shuju/make dataset2.ipynb 
+ import pandas as pd
+import numpy as np
+from sklearn.preprocessing import (
+    QuantileTransformer,
+    RobustScaler,
+    PowerTransformer
+)
+
+def process_spectra(
+    input_path: str = r"D:\czl\output\split_0003.csv",
+    output_path: str = r"D:\czl\output\split_110003.csv",
+    method: str = "quantile",
+    skiprows: int = 0,
+    skipcols: int = 0
+):
+    """
+    完整的数据处理流程（直接调用即可使用）
+    
+    参数：
+    input_path : str    输入文件路径（默认：当前目录/input.csv）
+    output_path : str   输出文件路径（默认：当前目录/processed.csv）
+    method : str        预处理方法（quantile/log/robust/power）
+    skiprows : int      跳过的行数（默认不跳过）
+    skipcols : int      跳过的列数（默认不跳过）
+    """
+    
+    try:
+        # 加载数据
+        print(f"[INFO] 正在加载数据：{input_path}")
+        df = pd.read_csv(input_path, skiprows=skiprows)
+        
+        # 列选择优化（始终使用数值索引）
+        total_cols = len(df.columns)
+        if skipcols > total_cols:
+            raise ValueError(f"跳过列数({skipcols})超过总列数({total_cols})")
+            
+        # 生成数值索引列表
+        usecols = list(range(skipcols, total_cols))  # 始终使用整数索引
+        
+        if not usecols:
+            raise ValueError("没有需要处理的列")
+            
+        data = df.iloc[:, usecols].values  # 正确使用数值索引
+        
+        # 数据预处理
+        print(f"[INFO] 使用 {method} 方法进行预处理")
+        if method == "quantile":
+            transformer = QuantileTransformer(output_distribution='normal', random_state=42)
+            processed = transformer.fit_transform(data)
+            processed = np.where(data == 0, 0, processed)  # 仅恢复原始零值
+            
+        elif method == "log":
+            processed = np.log1p(data)
+            
+        elif method == "robust":
+            scaler = RobustScaler()
+            processed = scaler.fit_transform(data)
+            
+        elif method == "power":
+            if (data <= 0).any():
+                raise ValueError("Box-Cox变换要求所有值为正数")
+            transformer = PowerTransformer(method='box-cox')
+            processed = transformer.fit_transform(data)
+            
+        else:
+            raise ValueError(f"无效方法：{method}")
+            
+        # 保存结果
+        print(f"[INFO] 正在保存至：{output_path}")
+        pd.DataFrame(processed).to_csv(output_path, index=False)
+        print("[SUCCESS] 处理完成！")
+        
+        return processed
+    
+    except FileNotFoundError:
+        print(f"[ERROR] 文件未找到：{input_path}")
+    except Exception as e:
+        print(f"[ERROR] 处理失败：{str(e)}")
+
+# 直接调用示例
+if __name__ == "__main__":
+    process_spectra()
+/data/run01/sczc698/czl/shuju-323-527-fuwuqi/323/shuju/make dataset2.ipynb 
+ import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from pathlib import Path
+
+def analyze_spectra_columns(
+    file_path: str,
+    delimiter: str = ',',
+    plot_histogram: bool = True,
+    output_report: str = 'spectra_analysis_report.txt'
+):
+    """
+    分析CSV文件中每个光谱数据列的数值范围
+    
+    参数：
+    file_path : str    CSV文件路径
+    delimiter : str    列分隔符（默认逗号）
+    plot_histogram : bool 是否绘制分布直方图（默认True）
+    output_report : str  分析报告保存路径（默认spectra_analysis_report.txt）
+    """
+    
+    try:
+        # 读取数据并验证
+        print(f"[INFO] 正在读取文件: {file_path}")
+        df = pd.read_csv(file_path, delimiter=delimiter)
+        
+        if df.empty:
+            raise ValueError("文件内容为空")
+            
+        # 提取光谱数据列（假设第一列为标识列）
+        spectral_columns = df.columns[1:]
+        if len(spectral_columns) < 1:
+            raise ValueError("至少需要包含1个光谱数据列")
+            
+        # 初始化结果存储
+        analysis_results = {}
+        
+        # 遍历每个光谱列进行分析
+        for col in spectral_columns:
+            print(f"[分析] 正在处理列: {col}")
+            data = df[col].dropna().astype(float)  # 去除空值并转换类型
+            
+            # 计算统计指标
+            stats = {
+                'min': np.min(data),
+                'max': np.max(data),
+                'mean': np.mean(data),
+                'std': np.std(data),
+                'median': np.median(data),
+                'iqr': np.percentile(data, 75) - np.percentile(data, 25),
+                'unique_count': len(np.unique(data)),
+                'valid_count': len(data)
+            }
+            
+            # 确定有效范围（基于IQR方法）
+            q1 = np.percentile(data, 25)
+            q3 = np.percentile(data, 75)
+            lower_bound = q1 - 1.5 * stats['iqr']
+            upper_bound = q3 + 1.5 * stats['iqr']
+            clean_data = data[(data >= lower_bound) & (data <= upper_bound)]
+            
+            stats['clean_min'] = np.min(clean_data) if len(clean_data) > 0 else np.nan
+            stats['clean_max'] = np.max(clean_data) if len(clean_data) > 0 else np.nan
+            stats['clean_range'] = stats['clean_max'] - stats['clean_min']
+            
+            # 保存结果
+            analysis_results[col] = stats
+            
+            # 可视化
+            if plot_histogram:
+                plt.figure(figsize=(10, 4))
+                plt.subplot(121)
+                plt.hist(data, bins=50, color='skyblue', edgecolor='black', alpha=0.7)
+                plt.axvline(lower_bound, color='red', linestyle='--', label='Lower Bound')
+                plt.axvline(upper_bound, color='green', linestyle='--', label='Upper Bound')
+                plt.title(f"{col} 数值分布")
+                plt.xlabel("强度值")
+                plt.ylabel("频次")
+                plt.legend()
+                
+                plt.subplot(122)
+                plt.boxplot(data, vert=False, patch_artist=True)
+                plt.title(f"{col} 箱线图")
+                plt.xlabel("强度值")
+                plt.tight_layout()
+                plt.show()
+        
+        # 生成分析报告
+        with open(output_report, 'w') as f:
+            f.write(f"光谱列分析报告 ({Path(file_path).name})\n")
+            f.write("="*50 + "\n\n")
+            
+            for col, stats in analysis_results.items():
+                f.write(f"[列名: {col}]\n")
+                f.write(f"原始数据范围: {stats['min']:.4f} ~ {stats['max']:.4f}\n")
+                f.write(f"清洗后范围: {stats['clean_min']:.4f} ~ {stats['clean_max']:.4f}\n")
+                f.write(f"平均值 ± 标准差: {stats['mean']:.4f} ± {stats['std']:.4f}\n")
+                f.write(f"中位数: {stats['median']:.4f}\n")
+                f.write(f"有效数据占比: {stats['valid_count']/len(df):.2%}\n")
+                f.write(f"唯一值数量: {stats['unique_count']}\n\n")
+        
+        print(f"[SUCCESS] 分析完成！报告已保存至: {output_report}")
+        return analysis_results
+    
+    except FileNotFoundError:
+        print(f"[ERROR] 文件未找到: {file_path}")
+    except pd.errors.EmptyDataError:
+        print("[ERROR] 文件内容为空")
+    except Exception as e:
+        print(f"[ERROR] 处理失败: {str(e)}")
+
+if __name__ == "__main__":
+    # 使用示例
+    results = analyze_spectra_columns(
+        file_path=r"D:\czl\1.5-13.5ev-uvis.csv",
+        delimiter=',',
+        plot_histogram=True,
+        output_report='spectral_analysis.txt'
+    )
+    
+    # 示例输出查看
+    if results:
+        print("前3个光谱列的关键指标:")
+        for col, stats in list(results.items())[:3]:
+            print(f"{col}:")
+            print(f"  有效范围: {stats['clean_min']:.2f} ~ {stats['clean_max']:.2f}")
+            print(f"  中位数: {stats['median']:.2f}")
+            print(f"  有效数据占比: {stats['valid_count']/len(df):.1%}")
+/data/run01/sczc698/czl/shuju-323-527-fuwuqi/323/shuju/make pictrue qm9s RM.ipynb 
+ 
+import os
+import numpy as np
+import torch
+import torch.nn.functional as F
+from sklearn.metrics import mean_squared_error
+from scipy.stats import pearsonr
+from scipy.ndimage import gaussian_filter1d
+from scipy.interpolate import interp1d
+import matplotlib.pyplot as plt
+from matplotlib import rcParams
+from matplotlib.ticker import FuncFormatter
+
+# ====================
+# 参数设置
+# ====================
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+save_dir = r"/data/run01/sczc698/czl/shuju-323-527-fuwuqi/new-pictrue/3D/RM/"
+os.makedirs(save_dir, exist_ok=True)
+
+# matplotlib 全局样式
+rcParams['font.family'] = 'serif'
+rcParams['font.serif'] = ['Times New Roman']
+rcParams['xtick.direction'] = 'in'
+rcParams['ytick.direction'] = 'in'
+
+# ====================
+# 模型加载（请确保 model 已定义）
+# ====================
+# model = YourModel(...)
+model.load_state_dict(torch.load(
+    r"/data/run01/sczc698/czl/shuju-323-527-fuwuqi/323/shuju/pth/detanet-qm9s-rm.pth",
+    map_location=device
+))
+model = model.to(device)
+model.eval()
+
+# ====================
+# 指标计算（仅 RMSE 和 Pearson）
+# ====================
+pearson_list = []
+rmse_list = []
+
+for i in range(len(test_datasets)):
+    z = test_datasets[i].z.to(device)
+    pos = test_datasets[i].pos.to(device)
+    rm = test_datasets[i].rm.to(device)
+
+    pred = model(z, pos)
+    rm = rm.reshape(pred.shape)
+
+    pred_np = pred.detach().cpu().numpy().flatten()
+    rm_np = rm.detach().cpu().numpy().flatten()
+
+    # Pearson 相关性
+    try:
+        pearson_corr, _ = pearsonr(pred_np, rm_np)
+    except Exception:
+        pearson_corr = 0.0
+    if np.isnan(pearson_corr):
+        pearson_corr = 0.0
+    pearson_list.append(pearson_corr)
+
+    # RMSE
+    rmse = np.sqrt(mean_squared_error(pred_np, rm_np))
+    rmse_list.append(rmse)
+
+# ====================
+# 统计量
+# ====================
+pearson_array = np.array(pearson_list)
+rmse_array = np.array(rmse_list)
+
+pearson_mean, pearson_median = float(np.nanmean(pearson_array)), float(np.nanmedian(pearson_array))
+rmse_mean, rmse_median = float(np.nanmean(rmse_array)), float(np.nanmedian(rmse_array))
+
+print(f"平均 RMSE: {rmse_mean:.6f}   中位数: {rmse_median:.6f}")
+print(f"平均 Pearson: {pearson_mean:.4f}   中位数: {pearson_median:.4f}")
+
+# -------------------------
+# 简单统计（打印 mean / median）
+# -------------------------
+def safe_mean_median(arr):
+    if arr.size == 0:
+        return 0.0, 0.0
+    return float(np.nanmean(arr)), float(np.nanmedian(arr))
+
+rmse_mean, rmse_median = safe_mean_median(rmse_array)
+pearson_mean, pearson_median = safe_mean_median(pearson_array)
+
+print(f"RMSE   - mean: {rmse_mean:.6f}, median: {rmse_median:.6f}")
+print(f"Pearson- mean: {pearson_mean:.6f}, median: {pearson_median:.6f}")
+
+
+from matplotlib.patches import Rectangle, FancyBboxPatch
+
+# ====================
+# 直方图 -> 平滑百分比曲线 函数
+# ====================
+def hist_to_percent_curve(values, bins, sigma=2.0, dense_pts=1200):
+    v = np.asarray(values)
+    v = v[~np.isnan(v)]
+    if v.size == 0:
+        x_dense = np.linspace(bins[0], bins[-1], dense_pts)
+        return x_dense, np.zeros_like(x_dense)
+    centers = (bins[:-1] + bins[1:]) / 2.0
+    hist, _ = np.histogram(v, bins=bins)
+    total = hist.sum()
+    pct = (hist / total * 100.0) if total > 0 else np.zeros_like(hist, dtype=float)
+    x_dense = np.linspace(bins[0], bins[-1], dense_pts)
+    y_dense = interp1d(centers, pct, kind='linear', bounds_error=False, fill_value=0.0)(x_dense)
+    y_smooth = gaussian_filter1d(y_dense, sigma=sigma)
+    return x_dense, np.clip(y_smooth, 0.0, None)
+
+# ====================
+# 视觉参数（改为红蓝配色）
+# ====================
+COLORS = {
+    "RMSE": ("#ff0000", "#ff0000"),       
+    "Pearson": ("#0000ff", "#0000ff")     
+}
+LINEWIDTH = 1.6
+ALPHA_FILL = 0.28
+GAUSS_SIGMA = 2.0
+
+# 映射到 [0,1]（用于横轴分布显示）
+rmse_mapped = rmse_array.clip(0.0, 1.0)
+pear_mapped = ((pearson_array + 1.0) / 2.0).clip(0.0, 1.0)
+
+bins = np.linspace(0.0, 1.0, 60)
+x_r, y_r = hist_to_percent_curve(rmse_mapped, bins, sigma=GAUSS_SIGMA)
+x_p, y_p = hist_to_percent_curve(pear_mapped, bins, sigma=GAUSS_SIGMA)
+
+# ====================
+# 计算纵坐标最大值（比最大概率值大5）
+# ====================
+max_y_value = max(np.max(y_r), np.max(y_p)) + 5
+
+# ====================
+# 绘图：主轴（RMSE，左） + 右轴（Pearson）
+# ====================
+fig, ax_l = plt.subplots(figsize=(6, 4))
+
+# RMSE（左轴，红色）
+ax_l.plot(x_r, y_r, color=COLORS["RMSE"][0], linewidth=LINEWIDTH, linestyle='-', zorder=4)
+ax_l.fill_between(x_r, y_r, color=COLORS["RMSE"][1], alpha=ALPHA_FILL, zorder=1)
+ax_l.set_xlim(0.0, 1.0)
+ax_l.set_ylim(0.0, max_y_value)
+ax_l.set_xlabel("Value", fontsize=22, fontfamily='Times New Roman', color='black')
+ax_l.set_ylabel("RMSE", fontsize=22, fontfamily='Times New Roman', color=COLORS["RMSE"][0])
+ax_l.tick_params(axis='y', colors=COLORS["RMSE"][0], labelsize=22)
+ax_l.tick_params(axis='x', colors='black', labelsize=22)
+ax_l.yaxis.label.set_color(COLORS["RMSE"][0])
+ax_l.xaxis.set_major_formatter(FuncFormatter(lambda x, _: f"{x:.2f}"))
+
+# 设置边框颜色：左边红色，上下黑色
+ax_l.spines['left'].set_color(COLORS["RMSE"][0])
+ax_l.spines['le
+/data/run01/sczc698/czl/shuju-323-527-fuwuqi/323/shuju/make picture qm9s IR.ipynb 
+ import os
+import torch
+import numpy as np
+import pandas as pd
+import time
+from tqdm import tqdm  # 进度条
+
+# 设置设备
+DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+print(f"使用设备: {DEVICE}")
+
+# 模型参数和数据集路径
+WEIGHTS_PATH = r"/data/run01/sczc698/czl/shuju-323-527-fuwuqi/323/shuju/pth/detanet-qm9s-ir.pth"
+DATASET_PATH = r"/data/run01/sczc698/czl/dataset-train-qme14s-400-4000-3000/qme14s/qme14-ir.pt"
+OUTPUT_CSV = "原子数_推断时间.csv"
+
+# 导入模型
+from model import DetaNet
+
+# ======================
+# 1. 加载和准备模型
+# ======================
+print("1. 加载模型...")
+model = DetaNet(
+    num_features=128,
+    act='swish',
+    maxl=3,
+    num_block=3,
+    radial_type='trainable_bessel',
+    num_radial=32,
+    attention_head=8,
+    rc=5.0,
+    dropout=0.0,
+    use_cutoff=False,
+    max_atomic_number=35,
+    atom_ref=None,
+    scale=1.0,
+    scalar_outsize=3000,
+    irreps_out=None,
+    summation=False,
+    mean=True,
+    norm=False,
+    out_type='scalar',
+    grad_type=None,
+    device=DEVICE
+)
+
+# 加载权重
+state = torch.load(WEIGHTS_PATH, map_location=DEVICE)
+if isinstance(state, dict) and 'model_state_dict' in state:
+    model.load_state_dict(state['model_state_dict'])
+else:
+    model.load_state_dict(state)
+model = model.to(DEVICE)
+model.eval()
+print("✅ 模型加载完成")
+
+# ======================
+# 2. 加载数据集
+# ======================
+print(f"\n2. 加载数据集: {DATASET_PATH}")
+test_datasets = torch.load(DATASET_PATH, map_location='cpu')
+
+# 转换为列表格式
+if isinstance(test_datasets, list):
+    dataset_list = test_datasets
+elif hasattr(test_datasets, '__len__'):
+    # 如果是PyG Dataset或其他可迭代对象
+    dataset_list = [test_datasets[i] for i in range(len(test_datasets))]
+else:
+    dataset_list = list(test_datasets)
+
+print(f"✅ 数据集加载完成，共 {len(dataset_list)} 个样本")
+
+# ======================
+# 3. 预热模型（可选）
+# ======================
+print("\n3. 预热模型...")
+if len(dataset_list) > 0:
+    first_data = dataset_list[0]
+    if hasattr(first_data, 'z') and hasattr(first_data, 'pos'):
+        z = first_data.z.to(DEVICE)
+        pos = first_data.pos.to(DEVICE)
+        batch = torch.zeros(z.shape[0], dtype=torch.long, device=DEVICE)
+        with torch.no_grad():
+            _ = model(z=z, pos=pos, batch=batch)
+print("✅ 预热完成")
+
+# ======================
+# 4. 主要处理函数
+# ======================
+def process_single_sample(data, model, device):
+    """
+    处理单个样本，提取原子数并计算推断时间
+    
+    Args:
+        data: 单个样本数据
+        model: 训练好的模型
+        device: 计算设备
+    
+    Returns:
+        dict: 包含原子数和推断时间的结果
+    """
+    result = {
+        '原子数': -1,
+        '推断时间_秒': 0.0,
+        '推断时间_毫秒': 0.0,
+        '状态': '失败'
+    }
+    
+    try:
+        # 1. 提取原子数（从z属性）
+        if hasattr(data, 'z'):
+            # z是原子序数数组，长度就是原子数
+            num_atoms = data.z.shape[0]
+            result['原子数'] = num_atoms
+            
+            # 可选：记录原子类型分布
+            atom_types = data.z.tolist()
+            unique_atoms = set(atom_types)
+            result['原子类型'] = str(sorted(list(unique_atoms)))
+        else:
+            result['状态'] = '缺少z属性'
+            return result
+        
+        # 2. 准备输入数据
+        z = data.z.to(device)
+        pos = data.pos.to(device)
+        batch = torch.zeros(z.shape[0], dtype=torch.long, device=device)
+        
+        # 3. 计时推断
+        if torch.cuda.is_available():
+            torch.cuda.synchronize()
+        
+        start_time = time.perf_counter()
+        
+        with torch.no_grad():
+            pred = model(z=z, pos=pos, batch=batch)
+            # 确保预测值非负
+            pred = torch.clamp(pred, min=0.0)
+        
+        if torch.cuda.is_available():
+            torch.cuda.synchronize()
+        
+        infer_time = time.perf_counter() - start_time
+        
+        # 4. 记录结果
+        result['推断时间_秒'] = infer_time
+        result['推断时间_毫秒'] = infer_time * 1000
+        result['状态'] = '成功'
+        
+        # 可选：记录预测光谱的统计信息
+        pred_np = pred.detach().cpu().numpy().flatten()
+        result['光谱长度'] = len(pred_np)
+        result['光谱均值'] = float(np.mean(pred_np))
+        result['光谱最大值'] = float(np.max(pred_np))
+        
+    except Exception as e:
+        result['状态'] = f'错误: {str(e)[:50]}'
+        # 如果开始计时但出错了，仍然记录时间
+        if 'start_time' in locals():
+            if torch.cuda.is_available():
+                torch.cuda.synchronize()
+            infer_time = time.perf_counter() - start_time
+            result['推断时间_秒'] = infer_time
+            result['推断时间_毫秒'] = infer_time * 1000
+    
+    return result
+
+# ======================
+# 5. 批量处理所有样本
+# ======================
+print(f"\n4. 开始处理 {len(dataset_list)} 个样本...")
+print("=" * 60)
+
+all_results = []
+success_count = 0
+fail_count = 0
+
+# 使用tqdm显示进度条
+for idx, data in enumerate(tqdm(dataset_list, desc="处理进度", unit="样本")):
+    result = process_single_sample(data, model, DEVICE)
+    
+    # 添加样本ID
+    result['样本ID'] = idx
+    
+    all_results.append(result)
+    
+    if result['状态'] == '成功':
+        success_count += 1
+    else:
+        fail_count += 1
+    
+    # 每100个样本显示一次进度
+    if (idx + 1) % 100 == 0:
+        print(f"  已处理 {idx+1}/{len(dataset_list)}
+/data/run01/sczc698/czl/shuju-323-527-fuwuqi/323/shuju/make picture qm9s IR.ipynb 
+ import pandas as pd
+import numpy as np
+
+# 读取CSV文件
+csv_path = "/data/run01/sczc698/czl/dft-times.csv"
+
+# 尝试不同的列名读取方式
+try:
+    # 方法1: 假设有列名
+    df = pd.read_csv(csv_path)
+    print("数据列名:", df.columns.tolist())
+    
+except Exception as e1:
+    try:
+        # 方法2: 无列名，指定列名
+        df = pd.read_csv(csv_path, header=None)
+        # 根据列数设置列名
+        if len(df.columns) >= 2:
+            df.columns = ['原子数', '时间'] + [f'col{i}' for i in range(2, len(df.columns))]
+        print("数据已加载，无列名")
+        
+    except Exception as e2:
+        print(f"读取文件失败: {e2}")
+        # 尝试其他编码
+        try:
+            df = pd.read_csv(csv_path, header=None, encoding='utf-8', engine='python')
+            if len(df.columns) >= 2:
+                df.columns = ['原子数', '时间'] + [f'col{i}' for i in range(2, len(df.columns))]
+        except:
+            print("无法读取文件，请检查路径和文件格式")
+            exit()
+
+# 显示数据基本信息
+print("\n数据基本信息:")
+print(f"数据形状: {df.shape}")
+print(f"前5行数据:")
+print(df.head())
+
+# 检查时间列
+time_columns = ['时间', 'Time', '耗时', '推断时间', 'elapsed_time', 'seconds', 'time']
+found_time_column = None
+
+for col in time_columns:
+    if col in df.columns:
+        found_time_column = col
+        break
+
+if found_time_column is None:
+    # 尝试第二列
+    if len(df.columns) >= 2:
+        found_time_column = df.columns[1]
+        print(f"未找到标准时间列名，使用第二列: {found_time_column}")
+    else:
+        print("错误: 找不到时间列")
+        print("可用列:", df.columns.tolist())
+        exit()
+
+# 计算平均时间
+print(f"\n使用时间列: {found_time_column}")
+print(f"时间数据类型: {df[found_time_column].dtype}")
+
+# 确保时间列是数值类型
+try:
+    df[found_time_column] = pd.to_numeric(df[found_time_column], errors='coerce')
+except:
+    print("无法转换时间列为数值类型")
+
+# 移除无效值
+valid_df = df.dropna(subset=[found_time_column])
+print(f"有效数据行数: {len(valid_df)}/{len(df)}")
+
+if len(valid_df) > 0:
+    # 计算平均时间
+    avg_time = valid_df[found_time_column].mean()
+    min_time = valid_df[found_time_column].min()
+    max_time = valid_df[found_time_column].max()
+    std_time = valid_df[found_time_column].std()
+    
+    print("\n📊 时间统计结果:")
+    print("=" * 40)
+    print(f"平均时间: {avg_time:.6f}")
+    print(f"最短时间: {min_time:.6f}")
+    print(f"最长时间: {max_time:.6f}")
+    print(f"时间标准差: {std_time:.6f}")
+    print(f"中位数: {valid_df[found_time_column].median():.6f}")
+    print(f"时间总和: {valid_df[found_time_column].sum():.6f}")
+    
+    # 按原子数分组统计
+    if '原子数' in df.columns or df.columns[0] in ['原子数', 'atoms', 'num_atoms']:
+        atom_col = '原子数' if '原子数' in df.columns else df.columns[0]
+        
+        # 确保原子数列是数值
+        try:
+            valid_df[atom_col] = pd.to_numeric(valid_df[atom_col], errors='coerce')
+            valid_df = valid_df.dropna(subset=[atom_col])
+        except:
+            pass
+        
+        if len(valid_df) > 0:
+            print(f"\n📈 按原子数分组统计:")
+            
+            # 检查是否有足够的原子数数据
+            if atom_col in valid_df.columns:
+                atom_stats = valid_df.groupby(atom_col)[found_time_column].agg([
+                    'count', 'mean', 'min', 'max', 'std'
+                ]).round(6)
+                
+                atom_stats.columns = ['样本数', '平均时间', '最短时间', '最长时间', '时间标准差']
+                print(atom_stats.head(20))  # 显示前20个原子数
+                
+                if len(atom_stats) > 20:
+                    print(f"... (共 {len(atom_stats)} 种不同的原子数)")
+                
+                # 保存分组统计结果
+                atom_stats.to_csv("/data/run01/sczc698/czl/dft-times-grouped.csv", 
+                                 encoding='utf-8-sig')
+                print(f"\n分组统计已保存到: dft-times-grouped.csv")
+    
+    # 时间单位分析
+    print(f"\n⏱️  时间单位分析:")
+    time_values = valid_df[found_time_column]
+    
+    # 判断可能的时间单位
+    if time_values.mean() < 0.01:  # 平均小于0.01
+        print("  可能单位: 秒 (数值较小)")
+        print(f"  转换为毫秒: 平均 {avg_time*1000:.2f} ms")
+        print(f"  转换为微秒: 平均 {avg_time*1_000_000:.2f} μs")
+    elif time_values.mean() < 1:  # 平均小于1
+        print("  可能单位: 秒")
+        print(f"  转换为毫秒: 平均 {avg_time*1000:.2f} ms")
+    elif time_values.mean() < 60:  # 平均小于60
+        print("  可能单位: 秒")
+        print(f"  转换为分钟: 平均 {avg_time/60:.2f} min")
+    else:
+        print("  可能单位: 秒 (数值较大)")
+        print(f"  转换为分钟: 平均 {avg_time/60:.2f} min")
+        print(f"  转换为小时: 平均 {avg_time/3600:.2f} h")
+    
+else:
+    print("没有有效的时间数据")
+/data/run01/sczc698/czl/shuju-323-527-fuwuqi/323/shuju/make picture qm9s IR.ipynb 
+ import os
+import numpy as np
+import pandas as pd
+import torch
+from scipy.stats import pearsonr
+from tqdm import tqdm
+
+# ==========================================
+# Device
+# ==========================================
+device = torch.device(
+    "cuda" if torch.cuda.is_available() else "cpu"
+)
+
+# ==========================================
+# 保存路径
+# ==========================================
+save_dir = (
+    "/data/run01/sczc698/czl/原子个数的peason和consine/IR-Pearson/"
+)
+
+os.makedirs(save_dir, exist_ok=True)
+
+sample_csv = os.path.join(
+    save_dir,
+    "3D-IR-sample_pearson.csv"
+)
+
+atom_csv = os.path.join(
+    save_dir,
+    "3D-IR_mean_pearson.csv"
+)
+
+# ==========================================
+# 加载模型
+# ==========================================
+model.load_state_dict(
+    torch.load(
+        "/data/run01/sczc698/czl/shuju-323-527-fuwuqi/323/shuju/pth/detanet-qm9s-ir.pth",
+        map_location=device
+    )
+)
+
+model = model.to(device)
+model.eval()
+
+print("Model loaded.")
+
+# ==========================================
+# 统计 Pearson
+# ==========================================
+results = []
+
+with torch.no_grad():
+
+    for idx in tqdm(
+        range(len(test_datasets)),
+        desc="Calculating Pearson"
+    ):
+
+        data = test_datasets[idx]
+
+        z = data.z.to(device)
+        pos = data.pos.to(device)
+
+        target = data.ir.to(device)
+
+        pred = model(z, pos)
+
+        target = target.reshape(pred.shape)
+
+        pred_np = (
+            pred.detach()
+            .cpu()
+            .numpy()
+            .flatten()
+        )
+
+        target_np = (
+            target.detach()
+            .cpu()
+            .numpy()
+            .flatten()
+        )
+
+        # ----------------------
+        # Pearson
+        # ----------------------
+        try:
+            pearson_value, _ = pearsonr(
+                pred_np,
+                target_np
+            )
+
+            if np.isnan(pearson_value):
+                pearson_value = 0.0
+
+        except Exception:
+            pearson_value = 0.0
+
+        # ----------------------
+        # Atom Count
+        # ----------------------
+        atom_count = int(z.shape[0])
+
+        results.append(
+            {
+                "sample_id": idx,
+                "atom_count": atom_count,
+                "pearson": pearson_value,
+            }
+        )
+
+# ==========================================
+# 每个样本保存
+# ==========================================
+sample_df = pd.DataFrame(results)
+
+sample_df.to_csv(
+    sample_csv,
+    index=False
+)
+
+print(f"\n保存样本结果:")
+print(sample_csv)
+
+# ==========================================
+# 按原子数统计平均 Pearson
+# ==========================================
+atom_df = (
+    sample_df
+    .groupby("atom_count")
+    .agg(
+        sample_num=("pearson", "count"),
+        mean_pearson=("pearson", "mean"),
+        median_pearson=("pearson", "median"),
+        std_pearson=("pearson", "std"),
+    )
+    .reset_index()
+)
+
+atom_df = atom_df.sort_values(
+    "atom_count"
+)
+
+# ==========================================
+# 保存原子数统计
+# ==========================================
+atom_df.to_csv(
+    atom_csv,
+    index=False
+)
+
+print(f"\n保存原子数统计:")
+print(atom_csv)
+
+# ==========================================
+# 全局统计
+# ==========================================
+print("\n========================")
+print("Overall Statistics")
+print("========================")
+
+print(
+    f"Mean Pearson   : "
+    f"{sample_df['pearson'].mean():.6f}"
+)
+
+print(
+    f"Median Pearson : "
+    f"{sample_df['pearson'].median():.6f}"
+)
+
+print(
+    f"Max Pearson    : "
+    f"{sample_df['pearson'].max():.6f}"
+)
+
+print(
+    f"Min Pearson    : "
+    f"{sample_df['pearson'].min():.6f}"
+)
+
+print("\n前20行：")
+print(atom_df.head(20))
+/data/run01/sczc698/czl/shuju-323-527-fuwuqi/323/shuju/Detanet picture nmr.ipynb 
+ import os
+import numpy as np
+import torch
+import torch.nn.functional as F
+from sklearn.metrics import mean_squared_error
+from scipy.stats import pearsonr
+from scipy.ndimage import gaussian_filter1d
+from scipy.interpolate import interp1d
+import matplotlib.pyplot as plt
+from matplotlib import rcParams
+from matplotlib.ticker import FuncFormatter
+from matplotlib.patches import Rectangle, FancyBboxPatch
+# ====================
+# 参数设置
+# ====================
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+SAVE_DIR = r"/data/run01/sczc698/czl/shuju-323-527-fuwuqi/new-pictrue/3D/NMR/"
+os.makedirs(SAVE_DIR, exist_ok=True)
+
+# matplotlib 全局样式
+rcParams['font.family'] = 'serif'
+rcParams['font.serif'] = ['Times New Roman']
+rcParams['xtick.direction'] = 'in'
+rcParams['ytick.direction'] = 'in'
+
+# ====================
+# 模型加载（请确保 model 已定义）
+# ====================
+# model = YourModel(...)
+model.load_state_dict(torch.load(
+    r"/data/run01/sczc698/czl/shuju-323-527-fuwuqi/fuwuqi/detanet-fuwuqi/trained_param/detanet-best-nmr-2.pth",
+    map_location=device
+))
+model = model.to(device)
+model.eval()
+
+# ====================
+# 指标计算（仅 RMSE 和 Pearson）
+# ====================
+pearson_list = []
+rmse_list = []
+
+for i in range(len(test_datasets)):
+    z = test_datasets[i].z.to(device)
+    pos = test_datasets[i].pos.to(device)
+    nst_iso = test_datasets[i].nst_iso.to(device)
+
+    pred = model(z, pos)
+    nst_iso = nst_iso.reshape(pred.shape)
+
+    pred_np = pred.detach().cpu().numpy().flatten()
+    nst_iso_np = nst_iso.detach().cpu().numpy().flatten()
+
+    # Pearson 相关性
+    try:
+        pearson_corr, _ = pearsonr(pred_np, nst_iso_np)
+    except Exception:
+        pearson_corr = 0.0
+    if np.isnan(pearson_corr):
+        pearson_corr = 0.0
+    pearson_list.append(pearson_corr)
+
+    # RMSE
+    rmse = np.sqrt(mean_squared_error(pred_np, nst_iso_np))
+    rmse_list.append(rmse)
+
+# ====================
+# 统计量
+# ====================
+pearson_array = np.array(pearson_list)
+rmse_array = np.array(rmse_list)
+
+pearson_mean, pearson_median = float(np.nanmean(pearson_array)), float(np.nanmedian(pearson_array))
+rmse_mean, rmse_median = float(np.nanmean(rmse_array)), float(np.nanmedian(rmse_array))
+
+print(f"平均 RMSE: {rmse_mean:.6f}   中位数: {rmse_median:.6f}")
+print(f"平均 Pearson: {pearson_mean:.4f}   中位数: {pearson_median:.4f}")
+
+
+
+# -------------------------
+# 简单统计（打印 mean / median）
+# -------------------------
+def safe_mean_median(arr):
+    if arr.size == 0:
+        return 0.0, 0.0
+    return float(np.nanmean(arr)), float(np.nanmedian(arr))
+
+rmse_mean, rmse_median = safe_mean_median(rmse_array)
+pearson_mean, pearson_median = safe_mean_median(pearson_array)
+
+print(f"RMSE   - mean: {rmse_mean:.6f}, median: {rmse_median:.6f}")
+print(f"Pearson- mean: {pearson_mean:.6f}, median: {pearson_median:.6f}")
+
+print(f"所有样本统计量:")
+print(f"平均 RMSE: {rmse_mean:.6f}   中位数: {rmse_median:.6f}")
+print(f"平均 Pearson: {pearson_mean:.4f}   中位数: {pearson_median:.4f}")
+
+# 创建掩码，只保留 rmse_array * 0.1 <= 1.0 的样本（用于绘图）
+valid_mask = (rmse_array * 0.1) <= 1.0
+
+# 应用过滤（仅用于绘图）
+rmse_filtered = rmse_array[valid_mask]
+pearson_filtered = pearson_array[valid_mask]
+
+print(f"\n绘图样本信息:")
+print(f"原始样本数量: {len(rmse_array)}")
+print(f"绘图样本数量: {len(rmse_filtered)}")
+print(f"过滤掉的样本数量: {len(rmse_array) - len(rmse_filtered)}")
+print(f"过滤比例: {(len(rmse_array) - len(rmse_filtered)) / len(rmse_array) * 100:.2f}%")
+
+# 诊断被过滤样本的RMSE范围
+if len(rmse_array) > len(rmse_filtered):
+    invalid_rmse = rmse_array[~valid_mask]
+    print(f"被过滤样本的RMSE范围: {invalid_rmse.min():.4f} ~ {invalid_rmse.max():.4f}")
+
+
+# ====================
+# 直方图 -> 平滑百分比曲线 函数
+# ====================
+def hist_to_percent_curve(values, bins, sigma=2.0, dense_pts=1200):
+    v = np.asarray(values)
+    v = v[~np.isnan(v)]
+    if v.size == 0:
+        x_dense = np.linspace(bins[0], bins[-1], dense_pts)
+        return x_dense, np.zeros_like(x_dense)
+    centers = (bins[:-1] + bins[1:]) / 2.0
+    hist, _ = np.histogram(v, bins=bins)
+    total = hist.sum()
+    pct = (hist / total * 100.0) if total > 0 else np.zeros_like(hist, dtype=float)
+    x_dense = np.linspace(bins[0], bins[-1], dense_pts)
+    y_dense = interp1d(centers, pct, kind='linear', bounds_error=False, fill_value=0.0)(x_dense)
+    y_smooth = gaussian_filter1d(y_dense, sigma=sigma)
+    return x_dense, np.clip(y_smooth, 0.0, None)
+
+# ====================
+# 视觉参数
+# ====================
+COLORS = {
+    "RMSE": ("#ff0000", "#ff0000"),
+    "Pearson": ("#0000ff", "#0000ff")
+}
+LINEWIDTH = 1.6
+ALPHA_FILL = 0.28
+GAUSS_SIGMA = 2.0
+
+# ====================
+# 使用过滤后的数据进行映射
+# ====================
+rmse_mapped = (rmse_filtered * 0.1).clip(0.0, 1.0)  # 现在不会出现截断到1.0的情况
+pear_mapped = ((pearson_filtered + 1.0) / 2.0).clip(0.0, 1.0)
+
+bins = np.linspace(0.0, 1.0, 60)
+x_r, y_r = hist_to_percent_curve(rmse_mapped, bins, sigma=GAUSS_SIGMA)
+x_p, y_p = hist_to_percent_curve(pear_mapped, bins, sigma=GAUSS_SIGMA)
+
+# ====================
+# 计算纵坐标最大值（比最大概率值大5）
+# ====================
+max_y_value = max(np.max(y_r), np.ma
+/data/run01/sczc698/czl/shuju-323-527-fuwuqi/323/shuju/GNN -picture-SMILE-nmr.ipynb 
+ import os
+import numpy as np
+import torch
+import matplotlib.pyplot as plt
+from scipy.stats import norm
+
+# ========== 配置 ==========
+save_dir = r"/data/run01/sczc698/czl/shuju-323-527-fuwuqi/323/GNN-nmr"
+os.makedirs(save_dir, exist_ok=True)
+
+ref_c = 187.653
+ref_h = 31.757
+width_c = 1.0
+width_h = 0.1
+device = "cuda" if torch.cuda.is_available() else "cpu"
+model.to(device)
+model.eval()
+
+# ========== Z 推断 ==========
+def infer_Z_from_data(data):
+    z = getattr(data, "z", None)
+    if z is not None:
+        return z.detach().cpu().numpy().astype(int)
+    x = getattr(data, "x", None)
+    if x is not None:
+        x_arr = x.detach().cpu().numpy()
+        cand = np.round(x_arr[:, 0] * 100).astype(int)
+        return cand
+    return None
+
+# ========== shielding → shift ==========
+def compute_shifts_from_data(shielding, data, ref_c, ref_h):
+    shielding = shielding.detach().cpu().numpy().astype(float).reshape(-1)
+    Z = infer_Z_from_data(data)
+    if Z is None: return np.array([]), np.array([])
+    L = min(len(Z), len(shielding))
+    Z = Z[:L]; shielding = shielding[:L]
+    mask_c = (Z == 6)
+    mask_h = (Z == 1)
+    shift_c = (ref_c - shielding[mask_c]) if mask_c.any() else np.array([])
+    shift_h = (ref_h - shielding[mask_h]) if mask_h.any() else np.array([])
+    return shift_c, shift_h
+
+# ========== Gaussian 模拟谱 ==========
+def gaussian_spectrum(x, shifts, width):
+    y = np.zeros_like(x)
+    for s in shifts:
+        y += norm.pdf(x, loc=s, scale=width)
+    if y.max() > 0: y /= y.max()
+    return y
+
+# ========== 绘图函数（格式完全匹配示例图） ==========
+def plot_and_save_nmr(shift_pred, shift_true, nucleus, tag, save_dir, width):
+    if nucleus == 'C':
+        x = np.linspace(0, 220, 2000)
+        title = f"SpecGNN model ¹³C NMR — {tag}"
+    else:
+        x = np.linspace(0, 12, 2000)
+        title = f"SpecGNN model ¹H NMR — {tag}"
+
+    y_pred = gaussian_spectrum(x, shift_pred, width)
+    y_true = gaussian_spectrum(x, shift_true, width)
+
+    plt.figure(figsize=(8, 4))
+    plt.fill_between(x, y_true, color='lightgray', label="DFT ", alpha=0.5)
+    plt.plot(x, y_pred, 'r--', linewidth=2.2, label="Predicted")
+
+    plt.gca().invert_xaxis()
+    plt.title(title, fontsize=20)
+    plt.xlabel("Chemical Shift (ppm)")
+    plt.ylabel("Intensity (a.u.)")
+    leg = plt.legend(frameon=True)
+    leg.get_frame().set_edgecolor('k')
+    leg.get_frame().set_linewidth(1)
+    plt.tight_layout()
+
+    out_path = os.path.join(save_dir, f"{tag}.png")
+    plt.savefig(out_path, dpi=300)
+    plt.close()
+    print("Saved:", out_path)
+    return out_path
+
+# ========== 遍历验证集 ==========
+C_scores, H_scores = [], []
+
+with torch.no_grad():
+    for idx, data in enumerate(val_dataset):
+        try:
+            data = data.to(device)
+            pred = model(data.x, data.edge_index, data.edge_attr, data.batch)
+            if isinstance(pred, (tuple, list)): pred = pred[0]
+            pred = pred.view(-1)
+            true = getattr(data, "nst_iso", None)
+            if true is None: continue
+            true = true.view(-1).to(device)
+
+            pred_c, pred_h = compute_shifts_from_data(pred, data, ref_c, ref_h)
+            true_c, true_h = compute_shifts_from_data(true, data, ref_c, ref_h)
+
+            if len(pred_c) and len(true_c):
+                mse_c = np.mean((pred_c - true_c[:len(pred_c)])**2)
+                mae_c = np.mean(np.abs(pred_c - true_c[:len(pred_c)]))
+                C_scores.append((idx, mse_c + mae_c, pred_c, true_c))
+            if len(pred_h) and len(true_h):
+                mse_h = np.mean((pred_h - true_h[:len(pred_h)])**2)
+                mae_h = np.mean(np.abs(pred_h - true_h[:len(pred_h)]))
+                H_scores.append((idx, mse_h + mae_h, pred_h, true_h))
+        except Exception as e:
+            print(f"Skip {idx}: {e}")
+            continue
+
+# ========== 挑选 best/mid/worst ==========
+def pick_three(scores):
+    scores = sorted(scores, key=lambda x: x[1])
+    if not scores: return None
+    return scores[0], scores[len(scores)//2], scores[-1]
+
+C_best, C_mid, C_worst = pick_three(C_scores)
+H_best, H_mid, H_worst = pick_three(H_scores)
+
+# ========== 绘图保存 ==========
+if H_best:  plot_and_save_nmr(H_best[2], H_best[3], 'H', "H_Best", save_dir, width_h)
+if H_mid:   plot_and_save_nmr(H_mid[2], H_mid[3], 'H', "H_Middle", save_dir, width_h)
+if H_worst: plot_and_save_nmr(H_worst[2], H_worst[3], 'H', "H_Worst", save_dir, width_h)
+if C_best:  plot_and_save_nmr(C_best[2], C_best[3], 'C', "C_Best", save_dir, width_c)
+if C_mid:   plot_and_save_nmr(C_mid[2], C_mid[3], 'C', "C_Middle", save_dir, width_c)
+if C_worst: plot_and_save_nmr(C_worst[2], C_worst[3], 'C', "C_Worst", save_dir, width_c)
+
+/data/run01/sczc698/czl/shuju-323-527-fuwuqi/323/shuju/GNN -picture-SMILE-nmr.ipynb 
+ import os
+import numpy as np
+import torch
+import matplotlib.pyplot as plt
+from scipy.stats import norm
+
+# ========== 配置 ==========
+save_dir = r"/data/run01/sczc698/czl/shuju-323-527-fuwuqi/323/GNN-nmr"
+os.makedirs(save_dir, exist_ok=True)
+
+ref_c = 187.653
+ref_h = 31.757
+width_c = 1.0    # 13C 高斯展宽宽度 (ppm)
+width_h = 0.5    # 1H 高斯展宽宽度 (ppm) — 建议比 0.1 大，避免峰太窄看不清
+device = "cuda" if torch.cuda.is_available() else "cpu"
+
+# 假设 model 已定义并加载好权重！（此处不重复定义，你需要自己保证 model 正确）
+# model = YourModel().to(device)
+# model.load_state_dict(torch.load("your_model_path.pth"))
+model.to(device)
+model.eval()
+
+# ========== 辅助函数：从 data 推断原子序数 Z ==========
+def infer_Z_from_data(data):
+    z = getattr(data, "z", None)
+    if z is not None:
+        return z.detach().cpu().numpy().astype(int)
+    x = getattr(data, "x", None)
+    if x is not None:
+        x_arr = x.detach().cpu().numpy()
+        cand = np.round(x_arr[:, 0] * 100).astype(int)  # 假设 x[:,0] 是原子类型编码
+        return cand
+    return None
+
+# ========== 从 shielding 和 data 推导化学位移 ==========
+def compute_shifts_from_data(shielding, data, ref_c, ref_h):
+    shielding = shielding.detach().cpu().numpy().astype(float).reshape(-1)
+    Z = infer_Z_from_data(data)
+    if Z is None: 
+        return np.array([]), np.array([])
+    L = min(len(Z), len(shielding))
+    Z = Z[:L]
+    shielding = shielding[:L]
+    mask_c = (Z == 6)
+    mask_h = (Z == 1)
+    shift_c = (ref_c - shielding[mask_c]) if mask_c.any() else np.array([])
+    shift_h = (ref_h - shielding[mask_h]) if mask_h.any() else np.array([])
+    return shift_c, shift_h
+
+# ========== 高斯展宽生成谱图 ==========
+def gaussian_spectrum(x, shifts, sigma):
+    y = np.zeros_like(x)
+    for s in shifts:
+        y += norm.pdf(x, loc=s, scale=sigma)
+    if y.max() > 0:
+        y = y / y.max()  # 归一化
+    return y
+
+# ========== 绘图函数（格式与标准格式完全一致） ==========
+def plot_and_save_nmr(shift_pred, shift_true, nucleus, tag, save_dir, width):
+    # 设置坐标范围和文件名
+    if nucleus == 'C':
+        x_range = (0, 220)
+        title = f"Transformer Model ¹³C NMR — {tag}"
+        filename = f"{tag}_13CNMR.png"
+    else:  # 'H'
+        x_range = (0, 12)
+        title = f"Transformer Model ¹H NMR — {tag}"
+        filename = f"{tag}_1HNMR.png"
+
+    # 横坐标轴
+    x = np.arange(x_range[0], x_range[1], 0.01)  # 分辨率 0.01 ppm
+
+    # 生成真实和预测的高斯展宽谱
+    y_true = gaussian_spectrum(x, shift_true, sigma=width)
+    y_pred = gaussian_spectrum(x, shift_pred, sigma=width)
+
+    # 绘图
+    plt.figure(figsize=(8, 4))
+    plt.fill_between(x, y_true, color='gray', alpha=0.5, label='DFT')  # 真实谱
+    plt.plot(x, y_pred, 'r--', label='Predicted')  # 预测谱
+
+    plt.title(title)
+    plt.xlabel("Chemical Shift (ppm)")
+    plt.ylabel("Intensity (a.u.)")
+    plt.legend()
+    plt.gca().invert_xaxis()  # 重要！化学位移左大右小
+    plt.tight_layout()
+    plt.grid(False)  # 不显示网格
+
+    # 保存图像
+    os.makedirs(save_dir, exist_ok=True)
+    out_path = os.path.join(save_dir, filename)
+    plt.savefig(out_path, dpi=300)
+    plt.close()
+    print(f"✅ Saved: {out_path}")
+    return out_path
+
+# ========== 主流程：遍历验证集，计算 C/H shifts，评估误差，选最优/最差/中等样本 ==========
+C_scores, H_scores = [], []
+
+# 假设 val_dataset 已定义并正确传入！（请确保 val_dataset 是你的 PyG 数据集合）
+# for idx, data in enumerate(val_dataset):
+for idx, data in enumerate(val_dataset):  # 请确保 val_dataset 是可遍历的 PyG Dataset
+    try:
+        data = data.to(device)
+        # 假设模型输入为 data.x, data.edge_index, data.edge_attr, data.batch
+        pred = model(data.x, data.edge_index, data.edge_attr, data.batch)
+        if isinstance(pred, (tuple, list)):
+            pred = pred[0]  # 如果模型返回多输出，取第一个
+        pred = pred.view(-1)  # 展平
+        true = getattr(data, "nst_iso", None)  # 假定数据中有 nst_iso 作为真实值
+        if true is None:
+            continue
+        true = true.view(-1).to(device)
+
+        # 计算 C 和 H 的预测和真实化学位移
+        pred_c, pred_h = compute_shifts_from_data(pred, data, ref_c, ref_h)
+        true_c, true_h = compute_shifts_from_data(true, data, ref_c, ref_h)
+
+        # 计算损失并存储
+        if len(pred_c) > 0 and len(true_c) > 0:
+            mse_c = np.mean((pred_c - true_c[:len(pred_c)]) **2)
+            mae_c = np.mean(np.abs(pred_c - true_c[:len(pred_c)]))
+            C_scores.append((idx, mse_c + mae_c, pred_c, true_c))  # (idx, score, pred, true)
+        if len(pred_h) > 0 and len(true_h) > 0:
+            mse_h = np.mean((pred_h - true_h[:len(pred_h)]) ** 2)
+            mae_h = np.mean(np.abs(pred_h - true_h[:len(pred_h)]))
+            H_scores.append((idx, mse_h + mae_h, pred_h, true_h))
+    except Exception as e:
+        print(f"Skip sample {idx}: {e}")
+        continue
+
+# ========== 挑选 Best / Middle / Worst 样本 ==========
+def pick_three(scores):
+    if not scores:
+        return None
+    sorted_scores = sorted(scores, key=lambda x: x[1])  # 按 score (mse+mae) 排序
+    return sorted_scores[0], sorted_scores[len(sorted_scores)//2], sorted_scores[-1]
+
+C_best, C_mid, C_worst = pick_three(C_scores)
+H_best, H_mid, H_worst = pick_three(H_scores)
+
+# ========== 绘图并保存 ==========
+if H_best:  plot_and_save_nmr(H_best[2]
+/data/run01/sczc698/czl/shuju-323-527-fuwuqi/323/shuju/GNN -picture-SMILE-nmr.ipynb 
+ import os
+import numpy as np
+import torch
+import matplotlib.pyplot as plt
+from scipy.stats import norm
+
+# ========== 配置 ==========
+save_dir = r"/data/run01/sczc698/czl/shuju-323-527-fuwuqi/323/GNN-nmr"
+os.makedirs(save_dir, exist_ok=True)
+
+ref_c = 187.653
+ref_h = 31.757
+width_c = 1.0    # 13C 高斯展宽宽度 (ppm)
+width_h = 0.1    # 1H 高斯展宽宽度 (ppm) — 建议比 0.1 大，避免峰太窄看不清
+device = "cuda" if torch.cuda.is_available() else "cpu"
+
+# 假设 model 已定义并加载好权重！（此处不重复定义，你需要自己保证 model 正确）
+# model = YourModel().to(device)
+# model.load_state_dict(torch.load("your_model_path.pth"))
+model.to(device)
+model.eval()
+
+# ========== 辅助函数：从 data 推断原子序数 Z ==========
+def infer_Z_from_data(data):
+    z = getattr(data, "z", None)
+    if z is not None:
+        return z.detach().cpu().numpy().astype(int)
+    x = getattr(data, "x", None)
+    if x is not None:
+        x_arr = x.detach().cpu().numpy()
+        cand = np.round(x_arr[:, 0] * 100).astype(int)  # 假设 x[:,0] 是原子类型编码
+        return cand
+    return None
+
+# ========== 从 shielding 和 data 推导化学位移 ==========
+def compute_shifts_from_data(shielding, data, ref_c, ref_h):
+    shielding = shielding.detach().cpu().numpy().astype(float).reshape(-1)
+    Z = infer_Z_from_data(data)
+    if Z is None: 
+        return np.array([]), np.array([])
+    L = min(len(Z), len(shielding))
+    Z = Z[:L]
+    shielding = shielding[:L]
+    mask_c = (Z == 6)
+    mask_h = (Z == 1)
+    shift_c = (ref_c - shielding[mask_c]) if mask_c.any() else np.array([])
+    shift_h = (ref_h - shielding[mask_h]) if mask_h.any() else np.array([])
+    return shift_c, shift_h
+
+# ========== 高斯展宽生成谱图 ==========
+def gaussian_spectrum(x, shifts, sigma):
+    y = np.zeros_like(x)
+    for s in shifts:
+        y += norm.pdf(x, loc=s, scale=sigma)
+    if y.max() > 0:
+        y = y / y.max()  # 归一化
+    return y
+
+# ========== 绘图函数（格式与标准格式完全一致） ==========
+def plot_and_save_nmr(shift_pred, shift_true, nucleus, tag, save_dir, width):
+    # 设置坐标范围和文件名
+    if nucleus == 'C':
+        x_range = (0, 220)
+        title = f"SpecGNN Model ¹³C NMR — {tag}"
+        filename = f"{tag}_13CNMR.png"
+    else:  # 'H'
+        x_range = (0, 12)
+        title = f"SpecGNN Model ¹H NMR — {tag}"
+        filename = f"{tag}_1HNMR.png"
+
+    # 横坐标轴
+    x = np.arange(x_range[0], x_range[1], 0.01)  # 分辨率 0.01 ppm
+
+    # 生成真实和预测的高斯展宽谱
+    y_true = gaussian_spectrum(x, shift_true, sigma=width)
+    y_pred = gaussian_spectrum(x, shift_pred, sigma=width)
+
+    # 绘图
+    plt.figure(figsize=(8, 4))
+    plt.fill_between(x, y_true, color='gray', alpha=0.5, label='DFT')  # 真实谱
+    plt.plot(x, y_pred, 'r--', label='Predicted')  # 预测谱
+
+    plt.title(title)
+    plt.xlabel("Chemical Shift (ppm)")
+    plt.ylabel("Intensity (a.u.)")
+    plt.legend()
+    plt.gca().invert_xaxis()  # 重要！化学位移左大右小
+    plt.tight_layout()
+    plt.grid(False)  # 不显示网格
+
+    # 保存图像
+    os.makedirs(save_dir, exist_ok=True)
+    out_path = os.path.join(save_dir, filename)
+    plt.savefig(out_path, dpi=300)
+    plt.close()
+    print(f"✅ Saved: {out_path}")
+    return out_path
+
+# ========== 主流程：遍历验证集，计算 C/H shifts，评估误差，选最优/最差/中等样本 ==========
+C_scores, H_scores = [], []
+
+# 假设 val_dataset 已定义并正确传入！（请确保 val_dataset 是你的 PyG 数据集合）
+# for idx, data in enumerate(val_dataset):
+for idx, data in enumerate(val_dataset):  # 请确保 val_dataset 是可遍历的 PyG Dataset
+    try:
+        data = data.to(device)
+        # 假设模型输入为 data.x, data.edge_index, data.edge_attr, data.batch
+        pred = model(data.x, data.edge_index, data.edge_attr, data.batch)
+        if isinstance(pred, (tuple, list)):
+            pred = pred[0]  # 如果模型返回多输出，取第一个
+        pred = pred.view(-1)  # 展平
+        true = getattr(data, "nst_iso", None)  # 假定数据中有 nst_iso 作为真实值
+        if true is None:
+            continue
+        true = true.view(-1).to(device)
+
+        # 计算 C 和 H 的预测和真实化学位移
+        pred_c, pred_h = compute_shifts_from_data(pred, data, ref_c, ref_h)
+        true_c, true_h = compute_shifts_from_data(true, data, ref_c, ref_h)
+
+        # 计算损失并存储
+        if len(pred_c) > 0 and len(true_c) > 0:
+            mse_c = np.mean((pred_c - true_c[:len(pred_c)]) **2)
+            mae_c = np.mean(np.abs(pred_c - true_c[:len(pred_c)]))
+            C_scores.append((idx, mse_c + mae_c, pred_c, true_c))  # (idx, score, pred, true)
+        if len(pred_h) > 0 and len(true_h) > 0:
+            mse_h = np.mean((pred_h - true_h[:len(pred_h)]) ** 2)
+            mae_h = np.mean(np.abs(pred_h - true_h[:len(pred_h)]))
+            H_scores.append((idx, mse_h + mae_h, pred_h, true_h))
+    except Exception as e:
+        print(f"Skip sample {idx}: {e}")
+        continue
+
+# ========== 挑选 Best / Middle / Worst 样本 ==========
+def pick_three(scores):
+    if not scores:
+        return None
+    sorted_scores = sorted(scores, key=lambda x: x[1])  # 按 score (mse+mae) 排序
+    return sorted_scores[0], sorted_scores[len(sorted_scores)//2], sorted_scores[-1]
+
+C_best, C_mid, C_worst = pick_three(C_scores)
+H_best, H_mid, H_worst = pick_three(H_scores)
+
+# ========== 绘图并保存 ==========
+if H_best:  plot_and_save_nmr(H_best[2], H_best
+/data/run01/sczc698/czl/shuju-323-527-fuwuqi/323/shuju/GNN -picture-SMILE-nmr.ipynb 
+ import os
+import numpy as np
+import pandas as pd
+from scipy.stats import pearsonr
+from sklearn.metrics.pairwise import cosine_similarity
+import matplotlib.pyplot as plt
+from matplotlib import rcParams
+import torch
+import torch.nn.functional as F
+from sklearn.metrics import mean_squared_error
+from scipy.stats import pearsonr
+from scipy.ndimage import gaussian_filter1d
+from scipy.interpolate import interp1d
+from matplotlib.ticker import FuncFormatter
+
+rcParams['font.family'] = 'serif'               
+rcParams['font.serif'] = ['Times New Roman']    
+rcParams['xtick.direction'] = 'in'
+rcParams['ytick.direction'] = 'in'
+
+# -------------------------
+# 保存路径
+# -------------------------
+SAVE_DIR = r"/data/run01/sczc698/czl/shuju-323-527-fuwuqi/new-pictrue/2D/NMR"
+os.makedirs(SAVE_DIR, exist_ok=True)
+
+# -------------------------
+# 读取数据
+# -------------------------
+pred_file = r"/data/run01/sczc698/czl/shuju-323-527-fuwuqi/new-pictrue/2D/NMR/predicted_shifts.csv"
+true_file = r"/data/run01/sczc698/czl/shuju-323-527-fuwuqi/new-pictrue/2D/NMR/true_shifts.csv"
+
+pred_df = pd.read_csv(pred_file)
+true_df = pd.read_csv(true_file)
+
+# -------------------------
+# 将 Shifts 列从字符串解析为浮点数数组
+# -------------------------
+def parse_shifts(s):
+    s = s.strip()[1:-1]
+    return np.array([float(x) for x in s.split()])
+
+pred_list = [parse_shifts(s) for s in pred_df['Shifts']]
+true_list = [parse_shifts(s) for s in true_df['Shifts']]
+
+# -------------------------
+# 计算每个样本的 RMSE, Pearson, Cosine
+# -------------------------
+# -------------------------
+# 计算每个样本的 RMSE, Pearson, Cosine
+# -------------------------
+rmse_list = []
+pearson_list = []
+
+for y_pred, y_true in zip(pred_list, true_list):
+    # 截取最短长度
+    min_len = min(len(y_pred), len(y_true))
+    y_pred_cut = y_pred[:min_len]
+    y_true_cut = y_true[:min_len]
+    
+    # RMSE
+    rmse = np.sqrt(np.mean((y_pred_cut - y_true_cut)**2))
+    rmse_list.append(rmse)
+    
+    # Pearson
+    if np.std(y_pred_cut) == 0 or np.std(y_true_cut) == 0:
+        pearson = np.nan
+    else:
+        pearson, _ = pearsonr(y_true_cut, y_pred_cut)
+    pearson_list.append(pearson)
+
+rmse_array = np.array(rmse_list)
+pearson_array = np.array(pearson_list)
+
+# ====================
+# 统计量计算（新增部分）
+# ====================
+pearson_mean, pearson_median = float(np.nanmean(pearson_array)), float(np.nanmedian(pearson_array))
+rmse_mean, rmse_median = float(np.nanmean(rmse_array)), float(np.nanmedian(rmse_array))
+
+print(f"平均 RMSE: {rmse_mean:.6f}   中位数: {rmse_median:.6f}")
+print(f"平均 Pearson: {pearson_mean:.4f}   中位数: {pearson_median:.4f}")
+# -------------------------
+# 简单统计（打印 mean / median）
+# -------------------------
+def safe_mean_median(arr):
+    if arr.size == 0:
+        return 0.0, 0.0
+    return float(np.nanmean(arr)), float(np.nanmedian(arr))
+
+rmse_mean, rmse_median = safe_mean_median(rmse_array)
+pearson_mean, pearson_median = safe_mean_median(pearson_array)
+
+print(f"RMSE   - mean: {rmse_mean:.6f}, median: {rmse_median:.6f}")
+print(f"Pearson- mean: {pearson_mean:.6f}, median: {pearson_median:.6f}")
+
+# ====================
+# 直方图 -> 平滑百分比曲线 函数
+# ====================
+def hist_to_percent_curve(values, bins, sigma=2.0, dense_pts=1200):
+    v = np.asarray(values)
+    v = v[~np.isnan(v)]
+    if v.size == 0:
+        x_dense = np.linspace(bins[0], bins[-1], dense_pts)
+        return x_dense, np.zeros_like(x_dense)
+    centers = (bins[:-1] + bins[1:]) / 2.0
+    hist, _ = np.histogram(v, bins=bins)
+    total = hist.sum()
+    pct = (hist / total * 100.0) if total > 0 else np.zeros_like(hist, dtype=float)
+    x_dense = np.linspace(bins[0], bins[-1], dense_pts)
+    y_dense = interp1d(centers, pct, kind='linear', bounds_error=False, fill_value=0.0)(x_dense)
+    y_smooth = gaussian_filter1d(y_dense, sigma=sigma)
+    return x_dense, np.clip(y_smooth, 0.0, None)
+
+# ====================
+# 视觉参数（改为红蓝配色）
+# ====================
+COLORS = {
+    "RMSE": ("#ff0000", "#ff0000"),       # 纯红 / 纯红
+    "Pearson": ("#0000ff", "#0000ff")     # 纯蓝 / 纯蓝
+}
+LINEWIDTH = 1.6
+ALPHA_FILL = 0.28
+GAUSS_SIGMA = 2.0
+
+# ====================
+# 关键修改：RMSE 乘以 0.1 来映射到 [0,1] 范围
+# ====================
+rmse_mapped = (rmse_array * 0.1).clip(0.0, 1.0)  # RMSE 乘以 0.1
+pear_mapped = ((pearson_array + 1.0) / 2.0).clip(0.0, 1.0)
+
+bins = np.linspace(0.0, 1.0, 60)
+x_r, y_r = hist_to_percent_curve(rmse_mapped, bins, sigma=GAUSS_SIGMA)
+x_p, y_p = hist_to_percent_curve(pear_mapped, bins, sigma=GAUSS_SIGMA)
+
+# ====================
+# 计算纵坐标最大值（比最大概率值大5）
+# ====================
+max_y_value = max(np.max(y_r), np.max(y_p)) + 5
+
+# ====================
+# 绘图：主轴（RMSE，左） + 右轴（Pearson）
+# ====================
+fig, ax_l = plt.subplots(figsize=(6, 4))
+
+# RMSE（左轴，红色）
+ax_l.plot(x_r, y_r, color=COLORS["RMSE"][0], linewidth=LINEWIDTH, linestyle='-', zorder=4)
+ax_l.fill_between(x_r, y_r, color=COLORS["RMSE"][1], alpha=ALPHA_FILL, zorder=1)
+ax_l.set_xlim(0.0, 1.0)
+ax_l.set_ylim(0.0, max_y_value)
+ax_l.set_xlabel("Value", fontsize=20, fontfamily='Times New Roman', color='black')
+ax_l.set_ylabel("RMSE(*0.1)", fontsiz
+/data/run01/sczc698/czl/shuju-323-527-fuwuqi/323/shuju/GNN -picture-SMILE-nmr.ipynb 
+ import os
+import numpy as np
+import pandas as pd
+from scipy.stats import pearsonr
+from sklearn.metrics.pairwise import cosine_similarity
+import matplotlib.pyplot as plt
+from matplotlib import rcParams
+from sklearn.metrics import mean_squared_error
+from scipy.stats import pearsonr
+from scipy.ndimage import gaussian_filter1d
+from scipy.interpolate import interp1d
+from matplotlib.ticker import FuncFormatter
+from matplotlib.patches import Rectangle, FancyBboxPatch
+
+
+rcParams['font.family'] = 'serif'               
+rcParams['font.serif'] = ['Times New Roman']    
+rcParams['xtick.direction'] = 'in'
+rcParams['ytick.direction'] = 'in'
+
+# -------------------------
+# 保存路径
+# -------------------------
+SAVE_DIR = r"/data/run01/sczc698/czl/shuju-323-527-fuwuqi/new-pictrue/2D/NMR"
+os.makedirs(SAVE_DIR, exist_ok=True)
+
+# -------------------------
+# 读取数据
+# -------------------------
+pred_file = r"/data/run01/sczc698/czl/shuju-323-527-fuwuqi/new-pictrue/2D/NMR/predicted_shifts.csv"
+true_file = r"/data/run01/sczc698/czl/shuju-323-527-fuwuqi/new-pictrue/2D/NMR/true_shifts.csv"
+
+pred_df = pd.read_csv(pred_file)
+true_df = pd.read_csv(true_file)
+
+# -------------------------
+# 将 Shifts 列从字符串解析为浮点数数组
+# -------------------------
+def parse_shifts(s):
+    s = s.strip()[1:-1]
+    return np.array([float(x) for x in s.split()])
+
+pred_list = [parse_shifts(s) for s in pred_df['Shifts']]
+true_list = [parse_shifts(s) for s in true_df['Shifts']]
+
+# -------------------------
+# 计算每个样本的 RMSE, Pearson, Cosine
+# -------------------------
+# -------------------------
+# 计算每个样本的 RMSE, Pearson, Cosine
+# -------------------------
+rmse_list = []
+pearson_list = []
+
+for y_pred, y_true in zip(pred_list, true_list):
+    # 截取最短长度
+    min_len = min(len(y_pred), len(y_true))
+    y_pred_cut = y_pred[:min_len]
+    y_true_cut = y_true[:min_len]
+    
+    # RMSE
+    rmse = np.sqrt(np.mean((y_pred_cut - y_true_cut)**2))
+    rmse_list.append(rmse)
+    
+    # Pearson
+    if np.std(y_pred_cut) == 0 or np.std(y_true_cut) == 0:
+        pearson = np.nan
+    else:
+        pearson, _ = pearsonr(y_true_cut, y_pred_cut)
+    pearson_list.append(pearson)
+
+rmse_array = np.array(rmse_list)
+pearson_array = np.array(pearson_list)
+
+# ====================
+# 统计量计算（新增部分）
+# ====================
+pearson_mean, pearson_median = float(np.nanmean(pearson_array)), float(np.nanmedian(pearson_array))
+rmse_mean, rmse_median = float(np.nanmean(rmse_array)), float(np.nanmedian(rmse_array))
+
+print(f"平均 RMSE: {rmse_mean:.6f}   中位数: {rmse_median:.6f}")
+print(f"平均 Pearson: {pearson_mean:.4f}   中位数: {pearson_median:.4f}")
+# -------------------------
+# 简单统计（打印 mean / median）
+# -------------------------
+def safe_mean_median(arr):
+    if arr.size == 0:
+        return 0.0, 0.0
+    return float(np.nanmean(arr)), float(np.nanmedian(arr))
+
+rmse_mean, rmse_median = safe_mean_median(rmse_array)
+pearson_mean, pearson_median = safe_mean_median(pearson_array)
+
+print(f"RMSE   - mean: {rmse_mean:.6f}, median: {rmse_median:.6f}")
+print(f"Pearson- mean: {pearson_mean:.6f}, median: {pearson_median:.6f}")
+
+print(f"所有样本统计量:")
+print(f"平均 RMSE: {rmse_mean:.6f}   中位数: {rmse_median:.6f}")
+print(f"平均 Pearson: {pearson_mean:.4f}   中位数: {pearson_median:.4f}")
+
+# 创建掩码，只保留 rmse_array * 0.1 <= 1.0 的样本（用于绘图）
+valid_mask = (rmse_array * 0.1) <= 1.0
+
+# 应用过滤（仅用于绘图）
+rmse_filtered = rmse_array[valid_mask]
+pearson_filtered = pearson_array[valid_mask]
+
+print(f"\n绘图样本信息:")
+print(f"原始样本数量: {len(rmse_array)}")
+print(f"绘图样本数量: {len(rmse_filtered)}")
+print(f"过滤掉的样本数量: {len(rmse_array) - len(rmse_filtered)}")
+print(f"过滤比例: {(len(rmse_array) - len(rmse_filtered)) / len(rmse_array) * 100:.2f}%")
+
+# 诊断被过滤样本的RMSE范围
+if len(rmse_array) > len(rmse_filtered):
+    invalid_rmse = rmse_array[~valid_mask]
+    print(f"被过滤样本的RMSE范围: {invalid_rmse.min():.4f} ~ {invalid_rmse.max():.4f}")
+
+# ====================
+# 直方图 -> 平滑百分比曲线 函数
+# ====================
+def hist_to_percent_curve(values, bins, sigma=2.0, dense_pts=1200):
+    v = np.asarray(values)
+    v = v[~np.isnan(v)]
+    if v.size == 0:
+        x_dense = np.linspace(bins[0], bins[-1], dense_pts)
+        return x_dense, np.zeros_like(x_dense)
+    centers = (bins[:-1] + bins[1:]) / 2.0
+    hist, _ = np.histogram(v, bins=bins)
+    total = hist.sum()
+    pct = (hist / total * 100.0) if total > 0 else np.zeros_like(hist, dtype=float)
+    x_dense = np.linspace(bins[0], bins[-1], dense_pts)
+    y_dense = interp1d(centers, pct, kind='linear', bounds_error=False, fill_value=0.0)(x_dense)
+    y_smooth = gaussian_filter1d(y_dense, sigma=sigma)
+    return x_dense, np.clip(y_smooth, 0.0, None)
+
+# ====================
+# 视觉参数
+# ====================
+COLORS = {
+    "RMSE": ("#ff0000", "#ff0000"),
+    "Pearson": ("#0000ff", "#0000ff")
+}
+LINEWIDTH = 1.6
+ALPHA_FILL = 0.28
+GAUSS_SIGMA = 2.0
+
+# ====================
+# 使用过滤后的数据进行映射
+# ====================
+rmse_mapped = (rmse_filtered * 0.1).clip(0.0, 1.0)  # 现在不会出现截断到1.0的情况
+pear_mapped = ((pearson_filtered + 1.0) / 2.0).clip(0.0, 1.0)
+
+bins = np.linspace(0.0, 1.0, 60)
+x_r, y_r = hist_
+/data/run01/sczc698/czl/shuju-323-527-fuwuqi/323/shuju/GNN -picture-SMILE-nmr.ipynb 
+ import os
+import numpy as np
+import pandas as pd
+from scipy.stats import pearsonr
+from sklearn.metrics.pairwise import cosine_similarity
+import matplotlib.pyplot as plt
+from matplotlib import rcParams
+from sklearn.metrics import mean_squared_error
+from scipy.stats import pearsonr
+from scipy.ndimage import gaussian_filter1d
+from scipy.interpolate import interp1d
+from matplotlib.ticker import FuncFormatter
+from matplotlib.patches import Rectangle, FancyBboxPatch
+
+
+rcParams['font.family'] = 'serif'               
+rcParams['font.serif'] = ['Times New Roman']    
+rcParams['xtick.direction'] = 'in'
+rcParams['ytick.direction'] = 'in'
+
+# -------------------------
+# 保存路径
+# -------------------------
+SAVE_DIR = r"/data/run01/sczc698/czl/shuju-323-527-fuwuqi/new-pictrue/2D/NMR"
+os.makedirs(SAVE_DIR, exist_ok=True)
+
+# -------------------------
+# 读取数据
+# -------------------------
+pred_file = r"/data/run01/sczc698/czl/shuju-323-527-fuwuqi/new-pictrue/2D/NMR/predicted_shifts.csv"
+true_file = r"/data/run01/sczc698/czl/shuju-323-527-fuwuqi/new-pictrue/2D/NMR/true_shifts.csv"
+
+pred_df = pd.read_csv(pred_file)
+true_df = pd.read_csv(true_file)
+
+# -------------------------
+# 将 Shifts 列从字符串解析为浮点数数组
+# -------------------------
+def parse_shifts(s):
+    s = s.strip()[1:-1]
+    return np.array([float(x) for x in s.split()])
+
+pred_list = [parse_shifts(s) for s in pred_df['Shifts']]
+true_list = [parse_shifts(s) for s in true_df['Shifts']]
+
+# -------------------------
+# 计算每个样本的 RMSE, Pearson, Cosine
+# -------------------------
+# -------------------------
+# 计算每个样本的 RMSE, Pearson, Cosine
+# -------------------------
+rmse_list = []
+pearson_list = []
+
+for y_pred, y_true in zip(pred_list, true_list):
+    # 截取最短长度
+    min_len = min(len(y_pred), len(y_true))
+    y_pred_cut = y_pred[:min_len]
+    y_true_cut = y_true[:min_len]
+    
+    # RMSE
+    rmse = np.sqrt(np.mean((y_pred_cut - y_true_cut)**2))
+    rmse_list.append(rmse)
+    
+    # Pearson
+    if np.std(y_pred_cut) == 0 or np.std(y_true_cut) == 0:
+        pearson = np.nan
+    else:
+        pearson, _ = pearsonr(y_true_cut, y_pred_cut)
+    pearson_list.append(pearson)
+
+rmse_array = np.array(rmse_list)
+pearson_array = np.array(pearson_list)
+
+# ====================
+# 统计量计算（新增部分）
+# ====================
+pearson_mean, pearson_median = float(np.nanmean(pearson_array)), float(np.nanmedian(pearson_array))
+rmse_mean, rmse_median = float(np.nanmean(rmse_array)), float(np.nanmedian(rmse_array))
+
+print(f"平均 RMSE: {rmse_mean:.6f}   中位数: {rmse_median:.6f}")
+print(f"平均 Pearson: {pearson_mean:.4f}   中位数: {pearson_median:.4f}")
+# -------------------------
+# 简单统计（打印 mean / median）
+# -------------------------
+def safe_mean_median(arr):
+    if arr.size == 0:
+        return 0.0, 0.0
+    return float(np.nanmean(arr)), float(np.nanmedian(arr))
+
+rmse_mean, rmse_median = safe_mean_median(rmse_array)
+pearson_mean, pearson_median = safe_mean_median(pearson_array)
+
+print(f"RMSE   - mean: {rmse_mean:.6f}, median: {rmse_median:.6f}")
+print(f"Pearson- mean: {pearson_mean:.6f}, median: {pearson_median:.6f}")
+
+print(f"所有样本统计量:")
+print(f"平均 RMSE: {rmse_mean:.6f}   中位数: {rmse_median:.6f}")
+print(f"平均 Pearson: {pearson_mean:.4f}   中位数: {pearson_median:.4f}")
+
+# 创建掩码，只保留 rmse_array * 0.1 <= 1.0 的样本（用于绘图）
+valid_mask = (rmse_array * 0.1) <= 1.0
+
+# 应用过滤（仅用于绘图）
+rmse_filtered = rmse_array[valid_mask]
+pearson_filtered = pearson_array[valid_mask]
+
+print(f"\n绘图样本信息:")
+print(f"原始样本数量: {len(rmse_array)}")
+print(f"绘图样本数量: {len(rmse_filtered)}")
+print(f"过滤掉的样本数量: {len(rmse_array) - len(rmse_filtered)}")
+print(f"过滤比例: {(len(rmse_array) - len(rmse_filtered)) / len(rmse_array) * 100:.2f}%")
+
+# 诊断被过滤样本的RMSE范围
+if len(rmse_array) > len(rmse_filtered):
+    invalid_rmse = rmse_array[~valid_mask]
+    print(f"被过滤样本的RMSE范围: {invalid_rmse.min():.4f} ~ {invalid_rmse.max():.4f}")
+
+
+# ====================
+# 直方图 -> 平滑百分比曲线 函数
+# ====================
+def hist_to_percent_curve(values, bins, sigma=2.0, dense_pts=1200):
+    v = np.asarray(values)
+    v = v[~np.isnan(v)]
+    if v.size == 0:
+        x_dense = np.linspace(bins[0], bins[-1], dense_pts)
+        return x_dense, np.zeros_like(x_dense)
+    centers = (bins[:-1] + bins[1:]) / 2.0
+    hist, _ = np.histogram(v, bins=bins)
+    total = hist.sum()
+    pct = (hist / total * 100.0) if total > 0 else np.zeros_like(hist, dtype=float)
+    x_dense = np.linspace(bins[0], bins[-1], dense_pts)
+    y_dense = interp1d(centers, pct, kind='linear', bounds_error=False, fill_value=0.0)(x_dense)
+    y_smooth = gaussian_filter1d(y_dense, sigma=sigma)
+    return x_dense, np.clip(y_smooth, 0.0, None)
+
+# ====================
+# 视觉参数
+# ====================
+COLORS = {
+    "RMSE": ("#ff0000", "#ff0000"),
+    "Pearson": ("#0000ff", "#0000ff")
+}
+LINEWIDTH = 1.6
+ALPHA_FILL = 0.28
+GAUSS_SIGMA = 2.0
+
+# ====================
+# 使用过滤后的数据进行映射
+# ====================
+rmse_mapped = (rmse_filtered * 0.1).clip(0.0, 1.0)  # 现在不会出现截断到1.0的情况
+pear_mapped = ((pearson_filtered + 1.0) / 2.0).clip(0.0, 1.0)
+
+bins = np.linspace(0.0, 1.0, 60)
+x_r, y_r = hist
+/data/run01/sczc698/czl/shuju-323-527-fuwuqi/323/shuju/GNN -picture-SMILE-nmr.ipynb 
+ import os
+import numpy as np
+import pandas as pd
+from scipy.stats import pearsonr
+from sklearn.metrics.pairwise import cosine_similarity
+import matplotlib.pyplot as plt
+from matplotlib import rcParams
+from sklearn.metrics import mean_squared_error
+from scipy.stats import pearsonr
+from scipy.ndimage import gaussian_filter1d
+from scipy.interpolate import interp1d
+from matplotlib.ticker import FuncFormatter
+from matplotlib.patches import Rectangle, FancyBboxPatch
+
+
+rcParams['font.family'] = 'serif'               
+rcParams['font.serif'] = ['Times New Roman']    
+rcParams['xtick.direction'] = 'in'
+rcParams['ytick.direction'] = 'in'
+
+# -------------------------
+# 保存路径
+# -------------------------
+SAVE_DIR = r"/data/run01/sczc698/czl/shuju-323-527-fuwuqi/new-pictrue/2D/NMR"
+os.makedirs(SAVE_DIR, exist_ok=True)
+
+# -------------------------
+# 读取数据
+# -------------------------
+pred_file = r"/data/run01/sczc698/czl/shuju-323-527-fuwuqi/new-pictrue-1/2D/NMR/predicted_shifts.csv"
+true_file = r"/data/run01/sczc698/czl/shuju-323-527-fuwuqi/new-pictrue-1/2D/NMR/true_shifts.csv"
+
+pred_df = pd.read_csv(pred_file)
+true_df = pd.read_csv(true_file)
+
+# -------------------------
+# 将 Shifts 列从字符串解析为浮点数数组
+# -------------------------
+def parse_shifts(s):
+    s = s.strip()[1:-1]
+    return np.array([float(x) for x in s.split()])
+
+pred_list = [parse_shifts(s) for s in pred_df['Shifts']]
+true_list = [parse_shifts(s) for s in true_df['Shifts']]
+
+# -------------------------
+# 计算每个样本的 RMSE, Pearson, Cosine
+# -------------------------
+# -------------------------
+# 计算每个样本的 RMSE, Pearson, Cosine
+# -------------------------
+rmse_list = []
+pearson_list = []
+
+for y_pred, y_true in zip(pred_list, true_list):
+    # 截取最短长度
+    min_len = min(len(y_pred), len(y_true))
+    y_pred_cut = y_pred[:min_len]
+    y_true_cut = y_true[:min_len]
+    
+    # RMSE
+    rmse = np.sqrt(np.mean((y_pred_cut - y_true_cut)**2))
+    rmse_list.append(rmse)
+    
+    # Pearson
+    if np.std(y_pred_cut) == 0 or np.std(y_true_cut) == 0:
+        pearson = np.nan
+    else:
+        pearson, _ = pearsonr(y_true_cut, y_pred_cut)
+    pearson_list.append(pearson)
+
+rmse_array = np.array(rmse_list)
+pearson_array = np.array(pearson_list)
+
+# ====================
+# 统计量计算（新增部分）
+# ====================
+pearson_mean, pearson_median = float(np.nanmean(pearson_array)), float(np.nanmedian(pearson_array))
+rmse_mean, rmse_median = float(np.nanmean(rmse_array)), float(np.nanmedian(rmse_array))
+
+print(f"平均 RMSE: {rmse_mean:.6f}   中位数: {rmse_median:.6f}")
+print(f"平均 Pearson: {pearson_mean:.4f}   中位数: {pearson_median:.4f}")
+# -------------------------
+# 简单统计（打印 mean / median）
+# -------------------------
+def safe_mean_median(arr):
+    if arr.size == 0:
+        return 0.0, 0.0
+    return float(np.nanmean(arr)), float(np.nanmedian(arr))
+
+rmse_mean, rmse_median = safe_mean_median(rmse_array)
+pearson_mean, pearson_median = safe_mean_median(pearson_array)
+
+print(f"RMSE   - mean: {rmse_mean:.6f}, median: {rmse_median:.6f}")
+print(f"Pearson- mean: {pearson_mean:.6f}, median: {pearson_median:.6f}")
+
+print(f"所有样本统计量:")
+print(f"平均 RMSE: {rmse_mean:.6f}   中位数: {rmse_median:.6f}")
+print(f"平均 Pearson: {pearson_mean:.4f}   中位数: {pearson_median:.4f}")
+
+# 创建掩码，只保留 rmse_array * 0.1 <= 1.0 的样本（用于绘图）
+valid_mask = (rmse_array * 0.1) <= 1.0
+
+# 应用过滤（仅用于绘图）
+rmse_filtered = rmse_array[valid_mask]
+pearson_filtered = pearson_array[valid_mask]
+
+print(f"\n绘图样本信息:")
+print(f"原始样本数量: {len(rmse_array)}")
+print(f"绘图样本数量: {len(rmse_filtered)}")
+print(f"过滤掉的样本数量: {len(rmse_array) - len(rmse_filtered)}")
+print(f"过滤比例: {(len(rmse_array) - len(rmse_filtered)) / len(rmse_array) * 100:.2f}%")
+
+# 诊断被过滤样本的RMSE范围
+if len(rmse_array) > len(rmse_filtered):
+    invalid_rmse = rmse_array[~valid_mask]
+    print(f"被过滤样本的RMSE范围: {invalid_rmse.min():.4f} ~ {invalid_rmse.max():.4f}")
+
+
+# ====================
+# 直方图 -> 平滑百分比曲线 函数
+# ====================
+def hist_to_percent_curve(values, bins, sigma=2.0, dense_pts=1200):
+    v = np.asarray(values)
+    v = v[~np.isnan(v)]
+    if v.size == 0:
+        x_dense = np.linspace(bins[0], bins[-1], dense_pts)
+        return x_dense, np.zeros_like(x_dense)
+    centers = (bins[:-1] + bins[1:]) / 2.0
+    hist, _ = np.histogram(v, bins=bins)
+    total = hist.sum()
+    pct = (hist / total * 100.0) if total > 0 else np.zeros_like(hist, dtype=float)
+    x_dense = np.linspace(bins[0], bins[-1], dense_pts)
+    y_dense = interp1d(centers, pct, kind='linear', bounds_error=False, fill_value=0.0)(x_dense)
+    y_smooth = gaussian_filter1d(y_dense, sigma=sigma)
+    return x_dense, np.clip(y_smooth, 0.0, None)
+
+# ====================
+# 视觉参数
+# ====================
+COLORS = {
+    "RMSE": ("#ff0000", "#ff0000"),
+    "Pearson": ("#0000ff", "#0000ff")
+}
+LINEWIDTH = 1.6
+ALPHA_FILL = 0.28
+GAUSS_SIGMA = 2.0
+
+# ====================
+# 使用过滤后的数据进行映射
+# ====================
+rmse_mapped = (rmse_filtered * 0.1).clip(0.0, 1.0)  # 现在不会出现截断到1.0的情况
+pear_mapped = ((pearson_filtered + 1.0) / 2.0).clip(0.0, 1.0)
+
+bins = np.linspace(0.0, 1.0, 60)
+x_r, y_r = 

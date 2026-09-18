@@ -1,0 +1,207 @@
+{
+  "counts": {
+    "mto": 178972,
+    "baseline": 179057,
+    "backbone": 77056,
+    "mto_head_hidden": 128,
+    "baseline_head_hidden": 229,
+    "relative_gap": 0.0004749346266455088
+  },
+  "models": {
+    "baseline": {
+      "modules": {
+        "backbone": 77056,
+        "readout": 0,
+        "decoder": 102001
+      },
+      "decoder": {
+        "energy_offset": {
+          "shape": [
+            10
+          ],
+          "count": 10
+        },
+        "trunk.0.weight": {
+          "shape": [
+            102
+          ],
+          "count": 102
+        },
+        "trunk.0.bias": {
+          "shape": [
+            102
+          ],
+          "count": 102
+        },
+        "trunk.1.weight": {
+          "shape": [
+            229,
+            102
+          ],
+          "count": 23358
+        },
+        "trunk.1.bias": {
+          "shape": [
+            229
+          ],
+          "count": 229
+        },
+        "energy_head.weight": {
+          "shape": [
+            10,
+            229
+          ],
+          "count": 2290
+        },
+        "energy_head.bias": {
+          "shape": [
+            10
+          ],
+          "count": 10
+        },
+        "beta_head.weight": {
+          "shape": [
+            10,
+            229
+          ],
+          "count": 2290
+        },
+        "beta_head.bias": {
+          "shape": [
+            10
+          ],
+          "count": 10
+        },
+        "tensor_gate.weight": {
+          "shape": [
+            320,
+            229
+          ],
+          "count": 73280
+        },
+        "tensor_gate.bias": {
+          "shape": [
+            320
+          ],
+          "count": 320
+        }
+      },
+      "backbone": {
+        "Embedding": 1952,
+        "Radial": 32,
+        "blocks": 75072
+      }
+    },
+    "mto": {
+      "modules": {
+        "backbone": 77056,
+        "readout": 54160,
+        "coupling": 28672,
+        "decoder": 19084
+      },
+      "decoder": {
+        "energy_offset": {
+          "shape": [
+            10
+          ],
+          "count": 10
+        },
+        "trunk.0.weight": {
+          "shape": [
+            112
+          ],
+          "count": 112
+        },
+        "trunk.0.bias": {
+          "shape": [
+            112
+          ],
+          "count": 112
+        },
+        "trunk.1.weight": {
+          "shape": [
+            128,
+            112
+          ],
+          "count": 14336
+        },
+        "trunk.1.bias": {
+          "shape": [
+            128
+          ],
+          "count": 128
+        },
+        "energy_head.weight": {
+          "shape": [
+            1,
+            128
+          ],
+          "count": 128
+        },
+        "energy_head.bias": {
+          "shape": [
+            1
+          ],
+          "count": 1
+        },
+        "beta_head.weight": {
+          "shape": [
+            1,
+            128
+          ],
+          "count": 128
+        },
+        "beta_head.bias": {
+          "shape": [
+            1
+          ],
+          "count": 1
+        },
+        "tensor_gate.weight": {
+          "shape": [
+            32,
+            128
+          ],
+          "count": 4096
+        },
+        "tensor_gate.bias": {
+          "shape": [
+            32
+          ],
+          "count": 32
+        }
+      },
+      "backbone": {
+        "Embedding": 1952,
+        "Radial": 32,
+        "blocks": 75072
+      }
+    }
+  },
+  "mto_assembly": {
+    "project.0e.weight": 512,
+    "project.1o.weight": 512,
+    "project.2e.weight": 512,
+    "query.weight": 352,
+    "router.0.weight": 29440,
+    "router.0.bias": 128,
+    "router.2.weight": 16384,
+    "router.2.bias": 128,
+    "router.4.weight": 6144,
+    "router.4.bias": 48
+  },
+  "backbone_blocks": [
+    {
+      "message": 12416,
+      "update": 12608
+    },
+    {
+      "message": 12416,
+      "update": 12608
+    },
+    {
+      "message": 12416,
+      "update": 12608
+    }
+  ]
+}

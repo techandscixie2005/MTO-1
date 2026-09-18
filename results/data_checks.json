@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "database_sha256": "b40241e1ad26b9e4df7e63af14795987a505729b53a968da594dd54de98a5070",
+  "nested_splits_verified": true,
+  "scales": {
+    "1k": {
+      "train": 800,
+      "validation": 100,
+      "test": 100
+    },
+    "10k": {
+      "train": 8000,
+      "validation": 1000,
+      "test": 1000
+    },
+    "full": {
+      "train": 103785,
+      "validation": 12973,
+      "test": 12974
+    }
+  }
+}

@@ -6,13 +6,5 @@ __pycache__/
 .env.*
 *.pem
 *.key
-*.npz
-*.npy
-*.pt
-*.pth
-*.ckpt
-*.zip
-*.tar*
-runs/
-logs/
-*.log
+/data/*.npz
+/data/*.npy

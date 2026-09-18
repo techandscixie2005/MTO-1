@@ -1,0 +1,55 @@
+/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+test_exact_assembly (__main__.ModelTests) ... ok
+test_full_cg_paths (__main__.ModelTests) ... ok
+test_parameter_match_and_initialization (__main__.ModelTests) ... PARAMETERS {'mto': 178972, 'baseline': 179057, 'backbone': 77056, 'mto_head_hidden': 128, 'baseline_head_hidden': 229, 'relative_gap': 0.0004749346266455088}
+ok
+test_permutation_and_batching (__main__.ModelTests) ... ok
+test_psd_units_broadening_and_orientation_trace (__main__.ModelTests) ... ok
+test_rotations_reflections_covariance (__main__.ModelTests) ... ok
+test_spectrum_only_loss_reaches_every_module (__main__.ModelTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 4.419s
+
+OK
+baseline {'step': 25, 'mse': 0.22696280479431152}
+baseline {'step': 50, 'mse': 0.08136406540870667}
+baseline {'step': 75, 'mse': 0.05527091398835182}
+baseline {'step': 100, 'mse': 0.02305149845778942}
+mto {'step': 25, 'mse': 0.9472381472587585}
+mto {'step': 50, 'mse': 0.5224119424819946}
+mto {'step': 75, 'mse': 0.3832116425037384}
+mto {'step': 100, 'mse': 0.22115318477153778}
+mto {'step': 125, 'mse': 0.18693074584007263}
+mto {'step': 150, 'mse': 0.06380098313093185}
+/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+{"scale": "1k", "seed": 11, "arm": "baseline", "epoch": 1, "train_mse": 1.3901815116405487, "validation": {"mse": 0.5487426563631743, "rmse": 0.7049345746636391, "mae": 0.4591229404322803, "cosine": 0.48499437468126416, "pearson": 0.32565074478043243}, "elapsed_seconds": 1.7333600521087646, "lr": 0.0002, "optimizer_steps": 2}
+Checkpoint saved; restart identical command to resume
+/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+{"scale": "1k", "seed": 11, "arm": "baseline", "epoch": 2, "train_mse": 1.300031065940857, "validation": {"mse": 0.7176895400043577, "rmse": 0.8016930003650486, "mae": 0.472557142842561, "cosine": 0.6093951049260795, "pearson": 0.5143609297811054}, "elapsed_seconds": 3.4852397441864014, "lr": 0.0004, "optimizer_steps": 4}
+{"scale": "1k", "seed": 11, "arm": "baseline", "epoch": 3, "train_mse": 1.0017934739589691, "validation": {"mse": 0.46519817621447146, "rmse": 0.6343689258210361, "mae": 0.37102204840630293, "cosine": 0.6077680769376457, "pearson": 0.5104827446630225}, "elapsed_seconds": 3.8005239963531494, "lr": 0.0006, "optimizer_steps": 6}
+{"scale": "1k", "seed": 11, "arm": "mto", "epoch": 1, "train_mse": 1.4161924719810486, "validation": {"mse": 0.5647581033408642, "rmse": 0.6855371780693531, "mae": 0.42625350086018443, "cosine": 0.3083018232136965, "pearson": 0.047410885454155505}, "elapsed_seconds": 0.5348799228668213, "lr": 0.0002, "optimizer_steps": 2}
+{"scale": "1k", "seed": 11, "arm": "mto", "epoch": 2, "train_mse": 1.3331669867038727, "validation": {"mse": 0.5172788471681997, "rmse": 0.6313961213454604, "mae": 0.3533637437503785, "cosine": 0.31062554265372455, "pearson": 0.050863971904618666}, "elapsed_seconds": 1.3967559337615967, "lr": 0.0004, "optimizer_steps": 4}
+{"scale": "1k", "seed": 11, "arm": "mto", "epoch": 3, "train_mse": 1.3235859870910645, "validation": {"mse": 0.5118948345771059, "rmse": 0.6218791706487536, "mae": 0.3316569805610925, "cosine": 0.3154099527746439, "pearson": 0.05772055246052332}, "elapsed_seconds": 1.8568508625030518, "lr": 0.0006, "optimizer_steps": 6}
+PREFLIGHT PASSED
+/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+Evaluated 1k 11 baseline
+Evaluated 1k 11 mto
+Evaluated 1k 23 baseline
+Evaluated 1k 23 mto
+Evaluated 1k 37 baseline
+Evaluated 1k 37 mto
+Evaluated 1k 53 baseline
+Evaluated 1k 53 mto
+Evaluated 1k 71 baseline
+Evaluated 1k 71 mto
+/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+Atomic assembly exports completed 1k
+STAGE COMPLETE {"passed": true, "scale": "1k", "seeds": [11, 23, 37, 53, 71], "protocol_id": "40c19f675e3b3e45d0ac0b8e3cd16e9942ff2a206d9789422af6c8eef4c03aa5", "job_id": "1290656", "elapsed_seconds": 682.8608114719391, "completed_unix": 1789450860.0898824, "previous": null}

@@ -1,0 +1,79 @@
+/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+test_all_scale_evaluation_and_reports (__main__.WorkflowTests) ... Evaluated 1k 11 baseline
+Evaluated 1k 11 mto
+Evaluated 1k 23 baseline
+Evaluated 1k 23 mto
+Evaluated 1k 37 baseline
+Evaluated 1k 37 mto
+Evaluated 1k 53 baseline
+Evaluated 1k 53 mto
+Evaluated 1k 71 baseline
+Evaluated 1k 71 mto
+Evaluated 10k 11 baseline
+Evaluated 10k 11 mto
+Evaluated 10k 23 baseline
+Evaluated 10k 23 mto
+Evaluated 10k 37 baseline
+Evaluated 10k 37 mto
+Evaluated 10k 53 baseline
+Evaluated 10k 53 mto
+Evaluated 10k 71 baseline
+Evaluated 10k 71 mto
+Evaluated full 11 baseline
+Evaluated full 11 mto
+Evaluated full 23 baseline
+Evaluated full 23 mto
+Evaluated full 37 baseline
+Evaluated full 37 mto
+ok
+test_submission_dependencies_and_release (__main__.WorkflowTests) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 10.582s
+
+OK
+{
+  "created_utc": "2026-09-14T12:07:08.072696+00:00",
+  "remote_root": "/tmp/tmpwqzvdhqn",
+  "protocol_id": "fixture",
+  "stages": {
+    "1k": {
+      "job_id": "101",
+      "afterok": null,
+      "includes": [
+        "all paired training",
+        "test evaluation",
+        "tensor diagnostics",
+        "reports"
+      ],
+      "gpus": 2,
+      "time_limit": "12:00:00"
+    },
+    "10k": {
+      "job_id": "102",
+      "afterok": "101",
+      "includes": [
+        "all paired training",
+        "test evaluation",
+        "tensor diagnostics",
+        "reports"
+      ],
+      "gpus": 2,
+      "time_limit": "2-00:00:00"
+    },
+    "full": {
+      "job_id": "103",
+      "afterok": "102",
+      "includes": [
+        "all paired training",
+        "test evaluation",
+        "tensor diagnostics",
+        "reports"
+      ],
+      "gpus": 2,
+      "time_limit": "7-00:00:00"
+    }
+  },
+  "released": true
+}
