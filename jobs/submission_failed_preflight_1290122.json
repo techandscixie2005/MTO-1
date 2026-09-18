@@ -1,0 +1,44 @@
+{
+  "created_utc": "2026-09-14T12:09:34.903943+00:00",
+  "remote_root": "/data/run01/sczc698/xxy/MTO_fullarch_20260914",
+  "protocol_id": "8a9484a9edb1a0539feae5ca3822d081c1e76bbc7722689a4ef1d66f387493a6",
+  "stages": {
+    "1k": {
+      "job_id": "1290122",
+      "afterok": null,
+      "includes": [
+        "all paired training",
+        "test evaluation",
+        "tensor diagnostics",
+        "reports"
+      ],
+      "gpus": 2,
+      "time_limit": "12:00:00"
+    },
+    "10k": {
+      "job_id": "1290123",
+      "afterok": "1290122",
+      "includes": [
+        "all paired training",
+        "test evaluation",
+        "tensor diagnostics",
+        "reports"
+      ],
+      "gpus": 2,
+      "time_limit": "2-00:00:00"
+    },
+    "full": {
+      "job_id": "1290124",
+      "afterok": "1290123",
+      "includes": [
+        "all paired training",
+        "test evaluation",
+        "tensor diagnostics",
+        "reports"
+      ],
+      "gpus": 2,
+      "time_limit": "7-00:00:00"
+    }
+  },
+  "released": true
+}

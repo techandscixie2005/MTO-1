@@ -1,0 +1,13 @@
+{
+  "time_utc": "2026-09-15T03:30:01.494602+00:00",
+  "failed_job": "1290122",
+  "failure": "Diagnostic max() reduction on a legitimate empty e3nn buffer",
+  "changed_files": [
+    "scripts/preflight.py",
+    "tests/test_preflight.py"
+  ],
+  "model_and_training_config_unchanged": true,
+  "formal_fits_started": 0,
+  "old_protocol_id": "8a9484a9edb1a0539feae5ca3822d081c1e76bbc7722689a4ef1d66f387493a6",
+  "new_protocol_id": "40c19f675e3b3e45d0ac0b8e3cd16e9942ff2a206d9789422af6c8eef4c03aa5"
+}

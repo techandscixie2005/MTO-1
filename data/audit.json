@@ -1,0 +1,439 @@
+{
+  "source_records": 129817,
+  "eligible_unique_molecules": 129732,
+  "exclusions": [
+    {
+      "source_index": 897,
+      "canonical_smiles": "Cc1cnccn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 905,
+      "canonical_smiles": "Nc1cnccn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 915,
+      "canonical_smiles": "Oc1cnccn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 4054,
+      "canonical_smiles": "Fc1cnccn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 4388,
+      "canonical_smiles": "Cc1cnc(N)cn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 4391,
+      "canonical_smiles": "Cc1cnc(O)cn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 5107,
+      "canonical_smiles": "C#Cc1cnccn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 5117,
+      "canonical_smiles": "N#Cc1cnccn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 5127,
+      "canonical_smiles": "O=Cc1cnccn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 5148,
+      "canonical_smiles": "CCc1cnccn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 5157,
+      "canonical_smiles": "CNc1cnccn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 5167,
+      "canonical_smiles": "COc1cnccn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 5176,
+      "canonical_smiles": "OCc1cnccn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 20865,
+      "canonical_smiles": "Nc1cnnc(O)c1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 20904,
+      "canonical_smiles": "Nc1cnnc(O)n1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 20917,
+      "canonical_smiles": "Nc1cnc(O)nn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 22881,
+      "canonical_smiles": "Cc1cnc(F)cn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 22959,
+      "canonical_smiles": "Nc1cnnc(F)c1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 22961,
+      "canonical_smiles": "Nc1cnnc(F)n1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 22962,
+      "canonical_smiles": "Nc1cnc(F)nn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 23188,
+      "canonical_smiles": "C#CCc1cnccn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 23198,
+      "canonical_smiles": "N#CCc1cnccn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 23771,
+      "canonical_smiles": "c1cnc(C2CC2)cn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 23780,
+      "canonical_smiles": "c1cnc(N2CC2)cn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 23790,
+      "canonical_smiles": "c1cnc(C2CN2)cn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 23800,
+      "canonical_smiles": "c1cnc(C2CO2)cn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 24549,
+      "canonical_smiles": "N=CNc1cnccn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 24566,
+      "canonical_smiles": "O=CCc1cnccn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 24583,
+      "canonical_smiles": "O=COc1cnccn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 24838,
+      "canonical_smiles": "CC(=O)c1cnccn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 24849,
+      "canonical_smiles": "NC(=O)c1cnccn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 25236,
+      "canonical_smiles": "CC(C)c1cnccn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 25246,
+      "canonical_smiles": "CC(O)c1cnccn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 25254,
+      "canonical_smiles": "CN(C)c1cnccn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 27471,
+      "canonical_smiles": "Cc1cnc(C=O)cn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 27478,
+      "canonical_smiles": "Nc1cnc(C=O)cn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 27482,
+      "canonical_smiles": "O=Cc1cnc(O)cn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 27493,
+      "canonical_smiles": "C#Cc1cnc(C)cn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 27494,
+      "canonical_smiles": "Cc1cnc(C#N)cn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 27507,
+      "canonical_smiles": "C#Cc1cnc(N)cn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 27508,
+      "canonical_smiles": "N#Cc1cnc(N)cn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 27519,
+      "canonical_smiles": "C#Cc1cnc(O)cn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 27520,
+      "canonical_smiles": "N#Cc1cnc(O)cn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 29276,
+      "canonical_smiles": "NC=Nc1cnccn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 30431,
+      "canonical_smiles": "Cc1cnc(CO)cn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 30446,
+      "canonical_smiles": "CCc1cnc(C)cn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 30449,
+      "canonical_smiles": "CCc1cnc(N)cn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 30452,
+      "canonical_smiles": "CCc1cnc(O)cn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 30467,
+      "canonical_smiles": "CNc1cnc(C)cn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 30470,
+      "canonical_smiles": "CNc1cnc(N)cn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 30473,
+      "canonical_smiles": "CNc1cnc(O)cn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 30488,
+      "canonical_smiles": "COc1cnc(C)cn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 30491,
+      "canonical_smiles": "COc1cnc(N)cn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 30494,
+      "canonical_smiles": "COc1cnc(O)cn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 30501,
+      "canonical_smiles": "Nc1cnc(CO)cn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 30508,
+      "canonical_smiles": "OCc1cnc(O)cn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 31568,
+      "canonical_smiles": "CCCc1cnccn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 31577,
+      "canonical_smiles": "CCNc1cnccn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 31587,
+      "canonical_smiles": "CCOc1cnccn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 31599,
+      "canonical_smiles": "COCc1cnccn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 31609,
+      "canonical_smiles": "OCCc1cnccn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 121638,
+      "canonical_smiles": "Cc1c(O)cnnc1N",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 121640,
+      "canonical_smiles": "Cc1c(O)cnnc1O",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 125900,
+      "canonical_smiles": "Nc1c(O)cnnc1O",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 126289,
+      "canonical_smiles": "Nc1nncc(O)c1O",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 128685,
+      "canonical_smiles": "O=Cc1cnc(F)cn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 128698,
+      "canonical_smiles": "C#Cc1cnc(F)cn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 128699,
+      "canonical_smiles": "N#Cc1cnc(F)cn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 129003,
+      "canonical_smiles": "CCc1cnc(F)cn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 129010,
+      "canonical_smiles": "CNc1cnc(F)cn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 129017,
+      "canonical_smiles": "COc1cnc(F)cn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 129024,
+      "canonical_smiles": "OCc1cnc(F)cn1",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 129108,
+      "canonical_smiles": "Cc1c(F)cnnc1N",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 129116,
+      "canonical_smiles": "Cc1c(F)cnnc1O",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 129117,
+      "canonical_smiles": "Cc1c(O)cnnc1F",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 129118,
+      "canonical_smiles": "Cc1c(F)cnnc1F",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 129275,
+      "canonical_smiles": "Nc1c(F)cnnc1O",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 129276,
+      "canonical_smiles": "Nc1c(O)cnnc1F",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 129277,
+      "canonical_smiles": "Nc1c(F)cnnc1F",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 129312,
+      "canonical_smiles": "Nc1nncc(F)c1N",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 129313,
+      "canonical_smiles": "Nc1nncc(O)c1F",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 129314,
+      "canonical_smiles": "Nc1nncc(F)c1O",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 129315,
+      "canonical_smiles": "Nc1nncc(F)c1F",
+      "reason": "duplicate_canonical_identity"
+    },
+    {
+      "source_index": 13998,
+      "reason": "empty_spectrum"
+    },
+    {
+      "source_index": 14000,
+      "reason": "empty_spectrum"
+    }
+  ],
+  "all_source_alignment_checks": 129817,
+  "source_geometry_bytes": 2876992905,
+  "source_geometry_mtime_ns": 1776304331000000000,
+  "source_spectrum_sha256": "304ff92437e2693a609f5559f4fd0fd5e5d82e10060bd96e996bf8e0885a37ba",
+  "source_spectrum_raw_file_sha256": "086440bcf658d8d97508373196ba2605edbf82cd3dab213439e0e59b4a645eb1",
+  "legacy_spectrum_hash_encoding": "UTF-8 text with universal newlines (LF), matching original 1k preparation",
+  "data_sha256": "b40241e1ad26b9e4df7e63af14795987a505729b53a968da594dd54de98a5070",
+  "data_bytes": 376162456,
+  "historical_split_checks": 1000,
+  "common_fresh_test_count": 12874
+}

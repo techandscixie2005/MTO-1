@@ -1,0 +1,18 @@
+{
+  "experiment": "QM9S full MTO-UV-T architecture, spectrum-only supervision, v1 20260914",
+  "seeds": [11,23,37,53,71],
+  "scales": ["1k","10k","full"],
+  "configs": [{"name":"fullarch_c32_s10", "features":32,"blocks":3,"lr":0.001,
+    "mto_channels":16,"states":10,"query_dim":32,"router_hidden":128,"head_hidden":128,
+    "bins":601,"energy_min_eV":1.5,"energy_max_eV":13.5,"sigma_eV":0.2,
+    "initial_energy_min_eV":3.0,"initial_energy_max_eV":12.0}],
+  "shared_training": {"max_epochs":180,"min_epochs":40,"patience":30,"batch_size":32,
+    "optimizer":"AdamW","weight_decay":0.0001,"gradient_clip":5.0,"warmup_epochs":5,
+    "scheduler":"cosine with 0.05 floor","mixed_precision":false,"pretrained":false},
+  "loss":"MSE(predicted_source_spectrum / train_RMS, source_spectrum / train_RMS); no E, A, f or rank loss",
+  "selection_rule":"Full architecture frozen before opening new test predictions. Per-scale checkpoint uses validation spectrum MSE only. No later scale retuning on earlier test results.",
+  "sigma_scope":"Fixed Gaussian standard deviation 0.2 eV from plan, not a claim about source CSV generation. Source width and absolute oscillator units may differ; exported state factors are latent under spectrum-only supervision.",
+  "baseline":"DetaNet invariant sum pooling with matched active parameter count, same E/A/f/Gaussian physics decoder and train-only RMS. No MTO assembly or reference CG.",
+  "uncertainty":"Paired seed statistics and molecule bootstrap conditional on fixed fitted models; historical 1k/10k tests have already been viewed for previous architecture.",
+  "budget":"Same max epochs, batch, optimizer and early stopping in each pair; measured time, steps and memory. No equal-FLOP claim."
+}

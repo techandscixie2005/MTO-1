@@ -1,0 +1,7 @@
+{
+  "seeds_by_scale":{"1k":[11,23,37,53,71],"10k":[11,23,37,53,71],"full":[11,23,37]},
+  "strict_order":["1k","10k","full"],
+  "gpu_workers_per_stage":2,
+  "completion_rule":"All seed pairs, frozen test evaluations, tensor diagnostics and reports must succeed before next scale starts.",
+  "old_cancelled_jobs":["1290071","1289965"]
+}

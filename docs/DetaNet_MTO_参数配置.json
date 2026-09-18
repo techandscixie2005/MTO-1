@@ -1,0 +1,378 @@
+{
+  "schema_version": "1.0",
+  "description": "当前实验参数配置与实际解析后的模型结构；配置归档文件，不是新的训练入口。",
+  "source_config": "D:\\MTO大纲\\完整架构实验\\source\\configs\\grid.json",
+  "training_config": {
+    "experiment": "QM9S full MTO-UV-T architecture, spectrum-only supervision, v1 20260914",
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "scales": [
+      "1k",
+      "10k",
+      "full"
+    ],
+    "configs": [
+      {
+        "name": "fullarch_c32_s10",
+        "features": 32,
+        "blocks": 3,
+        "lr": 0.001,
+        "mto_channels": 16,
+        "states": 10,
+        "query_dim": 32,
+        "router_hidden": 128,
+        "head_hidden": 128,
+        "bins": 601,
+        "energy_min_eV": 1.5,
+        "energy_max_eV": 13.5,
+        "sigma_eV": 0.2,
+        "initial_energy_min_eV": 3.0,
+        "initial_energy_max_eV": 12.0
+      }
+    ],
+    "shared_training": {
+      "max_epochs": 180,
+      "min_epochs": 40,
+      "patience": 30,
+      "batch_size": 32,
+      "optimizer": "AdamW",
+      "weight_decay": 0.0001,
+      "gradient_clip": 5.0,
+      "warmup_epochs": 5,
+      "scheduler": "cosine with 0.05 floor",
+      "mixed_precision": false,
+      "pretrained": false
+    },
+    "loss": "MSE(predicted_source_spectrum / train_RMS, source_spectrum / train_RMS); no E, A, f or rank loss",
+    "selection_rule": "Full architecture frozen before opening new test predictions. Per-scale checkpoint uses validation spectrum MSE only. No later scale retuning on earlier test results.",
+    "sigma_scope": "Fixed Gaussian standard deviation 0.2 eV from plan, not a claim about source CSV generation. Source width and absolute oscillator units may differ; exported state factors are latent under spectrum-only supervision.",
+    "baseline": "DetaNet invariant sum pooling with matched active parameter count, same E/A/f/Gaussian physics decoder and train-only RMS. No MTO assembly or reference CG.",
+    "uncertainty": "Paired seed statistics and molecule bootstrap conditional on fixed fitted models; historical 1k/10k tests have already been viewed for previous architecture.",
+    "budget": "Same max epochs, batch, optimizer and early stopping in each pair; measured time, steps and memory. No equal-FLOP claim."
+  },
+  "resolved_models": {
+    "baseline": {
+      "name": "DetaNet + pooled physical decoder",
+      "backbone_features": 32,
+      "backbone_blocks": 3,
+      "pooled_input_dim": 102,
+      "decoder_hidden_dim": 229,
+      "target_states": 10,
+      "energy_output_dim": 10,
+      "beta_output_dim": 10,
+      "tensor_gate_output_dim": 320,
+      "tensor_channels_per_state": 32,
+      "decoder_weights_shared_across_states": false,
+      "total_trainable_parameters": 179057
+    },
+    "mto": {
+      "name": "DetaNet + state-conditioned MTO + reference-target CG + physical decoder",
+      "backbone_features": 32,
+      "backbone_blocks": 3,
+      "mto_channels_per_irrep": 16,
+      "irreps": [
+        "0e",
+        "1o",
+        "2e"
+      ],
+      "reference_states": 1,
+      "target_states": 10,
+      "query_dim": 32,
+      "router_dims": [
+        230,
+        128,
+        128,
+        48
+      ],
+      "scalar_input_dim_per_state": 112,
+      "decoder_hidden_dim": 128,
+      "energy_output_dim_per_state": 1,
+      "beta_output_dim_per_state": 1,
+      "tensor_gate_output_dim_per_state": 32,
+      "decoder_weights_shared_across_states": true,
+      "cg_scalar_paths": 3,
+      "cg_tensor_paths": 4,
+      "cg_parameters_per_path": 4096,
+      "total_trainable_parameters": 178972
+    }
+  },
+  "parameter_matching": {
+    "enabled": true,
+    "baseline_hidden_width_rule": "Select integer h minimizing abs((77610 + 443*h) - 178972)",
+    "resolved_baseline_hidden_width": 229,
+    "absolute_parameter_gap": 85,
+    "mto_change_percent_relative_to_baseline": -0.04747091708226989,
+    "explanation": "229 是隐藏层神经元数，不是 MLP 数。对照头按总参数匹配加宽；两组解码器的逐态权重共享方式也不同，不属于严格仅插入 MTO 的消融。",
+    "unrun_baseline_hidden128_total": 134314,
+    "unrun_baseline_hidden128_note": "仅为结构参数计算，不代表新增已完成实验。"
+  },
+  "physics": {
+    "energy": "softplus(raw_energy + learned_state_offset)",
+    "strength_tensor": "C = beta/sqrt(3)*I + Q; A = C*C^T",
+    "oscillator_strength": "f = (2/3)*(energy_eV/27.211386245988)*trace(A)",
+    "broadening": "Gaussian",
+    "sigma_eV": 0.2,
+    "trainable_broadening_parameters": 0,
+    "spectrum_bins": 601,
+    "spectrum_min_eV": 1.5,
+    "spectrum_max_eV": 13.5,
+    "supervision": "Spectrum MSE only, normalized by training-set RMS",
+    "note": "固定展宽宽度是模型假设；仅光谱监督下逐态物理因子属于潜变量。"
+  },
+  "measured_parameter_breakdown": {
+    "counts": {
+      "mto": 178972,
+      "baseline": 179057,
+      "backbone": 77056,
+      "mto_head_hidden": 128,
+      "baseline_head_hidden": 229,
+      "relative_gap": 0.0004749346266455088
+    },
+    "models": {
+      "baseline": {
+        "modules": {
+          "backbone": 77056,
+          "readout": 0,
+          "decoder": 102001
+        },
+        "decoder": {
+          "energy_offset": {
+            "shape": [
+              10
+            ],
+            "count": 10
+          },
+          "trunk.0.weight": {
+            "shape": [
+              102
+            ],
+            "count": 102
+          },
+          "trunk.0.bias": {
+            "shape": [
+              102
+            ],
+            "count": 102
+          },
+          "trunk.1.weight": {
+            "shape": [
+              229,
+              102
+            ],
+            "count": 23358
+          },
+          "trunk.1.bias": {
+            "shape": [
+              229
+            ],
+            "count": 229
+          },
+          "energy_head.weight": {
+            "shape": [
+              10,
+              229
+            ],
+            "count": 2290
+          },
+          "energy_head.bias": {
+            "shape": [
+              10
+            ],
+            "count": 10
+          },
+          "beta_head.weight": {
+            "shape": [
+              10,
+              229
+            ],
+            "count": 2290
+          },
+          "beta_head.bias": {
+            "shape": [
+              10
+            ],
+            "count": 10
+          },
+          "tensor_gate.weight": {
+            "shape": [
+              320,
+              229
+            ],
+            "count": 73280
+          },
+          "tensor_gate.bias": {
+            "shape": [
+              320
+            ],
+            "count": 320
+          }
+        },
+        "backbone": {
+          "Embedding": 1952,
+          "Radial": 32,
+          "blocks": 75072
+        }
+      },
+      "mto": {
+        "modules": {
+          "backbone": 77056,
+          "readout": 54160,
+          "coupling": 28672,
+          "decoder": 19084
+        },
+        "decoder": {
+          "energy_offset": {
+            "shape": [
+              10
+            ],
+            "count": 10
+          },
+          "trunk.0.weight": {
+            "shape": [
+              112
+            ],
+            "count": 112
+          },
+          "trunk.0.bias": {
+            "shape": [
+              112
+            ],
+            "count": 112
+          },
+          "trunk.1.weight": {
+            "shape": [
+              128,
+              112
+            ],
+            "count": 14336
+          },
+          "trunk.1.bias": {
+            "shape": [
+              128
+            ],
+            "count": 128
+          },
+          "energy_head.weight": {
+            "shape": [
+              1,
+              128
+            ],
+            "count": 128
+          },
+          "energy_head.bias": {
+            "shape": [
+              1
+            ],
+            "count": 1
+          },
+          "beta_head.weight": {
+            "shape": [
+              1,
+              128
+            ],
+            "count": 128
+          },
+          "beta_head.bias": {
+            "shape": [
+              1
+            ],
+            "count": 1
+          },
+          "tensor_gate.weight": {
+            "shape": [
+              32,
+              128
+            ],
+            "count": 4096
+          },
+          "tensor_gate.bias": {
+            "shape": [
+              32
+            ],
+            "count": 32
+          }
+        },
+        "backbone": {
+          "Embedding": 1952,
+          "Radial": 32,
+          "blocks": 75072
+        }
+      }
+    },
+    "mto_assembly": {
+      "project.0e.weight": 512,
+      "project.1o.weight": 512,
+      "project.2e.weight": 512,
+      "query.weight": 352,
+      "router.0.weight": 29440,
+      "router.0.bias": 128,
+      "router.2.weight": 16384,
+      "router.2.bias": 128,
+      "router.4.weight": 6144,
+      "router.4.bias": 48
+    },
+    "backbone_blocks": [
+      {
+        "message": 12416,
+        "update": 12608
+      },
+      {
+        "message": 12416,
+        "update": 12608
+      },
+      {
+        "message": 12416,
+        "update": 12608
+      }
+    ]
+  },
+  "execution_config": {
+    "seeds_by_scale": {
+      "1k": [
+        11,
+        23,
+        37,
+        53,
+        71
+      ],
+      "10k": [
+        11,
+        23,
+        37,
+        53,
+        71
+      ],
+      "full": [
+        11,
+        23,
+        37
+      ]
+    },
+    "strict_order": [
+      "1k",
+      "10k",
+      "full"
+    ],
+    "gpu_workers_per_stage": 2,
+    "completion_rule": "All seed pairs, frozen test evaluations, tensor diagnostics and reports must succeed before next scale starts.",
+    "old_cancelled_jobs": [
+      "1290071",
+      "1289965"
+    ]
+  },
+  "shared_backbone": {
+    "num_features": 32,
+    "num_block": 3,
+    "maxl": 2,
+    "num_radial": 16,
+    "attention_head": 4,
+    "cutoff": 5.0,
+    "max_atomic_number": 9,
+    "trainable_parameters": 77056
+  }
+}

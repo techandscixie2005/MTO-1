@@ -1,0 +1,166 @@
+[
+  {
+    "path": "configs/execution.json",
+    "sha256": "551460eac395840578877c8ef99e574c5f70afa2854447dd48b9fa53d5148739"
+  },
+  {
+    "path": "configs/grid.json",
+    "sha256": "6dd3d2cf4f449b52f42ebdd4d9449950e4b726be187b9d9b7c196773bd39403c"
+  },
+  {
+    "path": "data/manifest_10k.json",
+    "sha256": "b9e5b5f6b702ed60e5a9a95934b384aa35ac348bb78a3f3a3847849434d9911e"
+  },
+  {
+    "path": "data/manifest_1k.json",
+    "sha256": "06ab4b9ecf14aee963b0fc41a52f8106ecbf443eefdd30a3518da7d43065213b"
+  },
+  {
+    "path": "data/manifest_full.json",
+    "sha256": "7e7fc4cb889a5892edc74455f248749df531c51eda1ad13c414078d1c1cff1b5"
+  },
+  {
+    "path": "data/splits_10k.json",
+    "sha256": "5af53bfa5338d60e28d2cc85989461dbce55eb08bd1aa07a15c6d2c2263af2ee"
+  },
+  {
+    "path": "data/splits_1k.json",
+    "sha256": "52c40db5a0cb9e0cd1e3d93d51f675a459263c793048a33ced1515896208688d"
+  },
+  {
+    "path": "data/splits_full.json",
+    "sha256": "42ea641cca73d30bfcc1759a2889ac6dd7ca97544611e4b5951ffbae40c07593"
+  },
+  {
+    "path": "scripts/evaluate_scale.py",
+    "sha256": "dc046c0fad9f2cf3f34049167913b1943c5eb730083ac15f4dc53cfb2fa76c50"
+  },
+  {
+    "path": "scripts/export_mto_examples.py",
+    "sha256": "0f3ccd7bae95d0bff1d302d0a66142b39e492d2696816b63d7570041a0e054f7"
+  },
+  {
+    "path": "scripts/inspect_source_notebooks.py",
+    "sha256": "2be572eeedc2059f12bc6bbc2983b47c92154099b7e7579d9e1315290d4e488c"
+  },
+  {
+    "path": "scripts/preflight.py",
+    "sha256": "ae6ccab957997a0ffdd2cf6a6b1d8e88720c7053a7ddf9d92145d0149a5990b2"
+  },
+  {
+    "path": "scripts/prepare_data.py",
+    "sha256": "41d11085c0bf4a4e806ab95dd94f89c12873118b2dca3581cf52b51bf536a913"
+  },
+  {
+    "path": "scripts/protocol.py",
+    "sha256": "44cbc80aad3ebf5ab93743a6c3070c75df488d1474bd2ccea9ca3e2ae9798057"
+  },
+  {
+    "path": "scripts/report_scale.py",
+    "sha256": "5b76b38e5e339d870f295cec721b59d5df2bbe782dc6778730ebc014c4325101"
+  },
+  {
+    "path": "scripts/stage.slurm",
+    "sha256": "37a60c74f443369f5d550b71489f78f902fe3d4c8151b61d451f97be56bd2b37"
+  },
+  {
+    "path": "scripts/stage_runner.py",
+    "sha256": "fa903c120c8e192ba3d94821e7a2c96b5cccd597933a1bde42ce0ada1fc6fc21"
+  },
+  {
+    "path": "scripts/status.py",
+    "sha256": "9075f5c3b964bc91a494f697dbfc3ea19f5de75bb56fa3175cdccfefeb38358b"
+  },
+  {
+    "path": "scripts/submit_ordered.py",
+    "sha256": "a4446447c2744660f138164bf4f81ae42c84697f0df64bbd70d93f09d9c9c591"
+  },
+  {
+    "path": "scripts/train_scale.py",
+    "sha256": "6d7adf323c7e0cf0e9348e96c3e18c0af06e6b9c190c957c17fe47e1b9e261e7"
+  },
+  {
+    "path": "src/dataset.py",
+    "sha256": "f06a538777d4894808e88720a80bf665ea022c58b40f73139173b8afd349ae98"
+  },
+  {
+    "path": "src/detanet_backbone/__init__.py",
+    "sha256": "2ad4e8f0b8d4d148b86a8a6e0ee19f8d70f132a36947476aa76601f76466033f"
+  },
+  {
+    "path": "src/detanet_backbone/constant.py",
+    "sha256": "40459466563772cea6a8c2178a784e2c7398f618af99ce9cb687885aab32c50a"
+  },
+  {
+    "path": "src/detanet_backbone/detanet.py",
+    "sha256": "8cd68414fd884c113a19f3aa1422990dc8ee9c66b37423f7a94ae90a7a81f6b7"
+  },
+  {
+    "path": "src/detanet_backbone/metrics.py",
+    "sha256": "746d5b6949dc24dbecf6d85294690d72f5fb19b6c794744bf8f4db8a9ecbd313"
+  },
+  {
+    "path": "src/detanet_backbone/model_loader.py",
+    "sha256": "e1e43bb8e01fdf87019b4c634c5f0b28f360756770f8a16492b3bbd17d32b63b"
+  },
+  {
+    "path": "src/detanet_backbone/modules/__init__.py",
+    "sha256": "749291b0bd0a6290de7579f25c6ce6e2a5788df3109540cc391fc01f57cdc092"
+  },
+  {
+    "path": "src/detanet_backbone/modules/acts.py",
+    "sha256": "e12c7465da80234543b67617a2df37c9fbd830cb6cab55982b3a3087922eea94"
+  },
+  {
+    "path": "src/detanet_backbone/modules/block.py",
+    "sha256": "d73d02094b1580987b521b9d2101f8985b1135fb31621e6a461ab3f507b7df5a"
+  },
+  {
+    "path": "src/detanet_backbone/modules/edge_attention.py",
+    "sha256": "f1209e1a2d6bca270c249ad90f99ee2436ca48bae52527b764ccd3a6e2879481"
+  },
+  {
+    "path": "src/detanet_backbone/modules/embedding.py",
+    "sha256": "1312a00bd37bd5790d77f6c71016ca212c26f1b58a69ca51ed2ff8cbbf063ec8"
+  },
+  {
+    "path": "src/detanet_backbone/modules/message.py",
+    "sha256": "505a95f9f33b23119051f78b135cf66d35b8b2857dccf43172fa80b7f473b784"
+  },
+  {
+    "path": "src/detanet_backbone/modules/multilayer_perceptron.py",
+    "sha256": "adb034ff9948a787ac5118ed6adc95987ea2dfb13e42371358442e0c824dccf9"
+  },
+  {
+    "path": "src/detanet_backbone/modules/radial_basis.py",
+    "sha256": "94157e7395ea25e6567e5d3e155fcc1b7dbf6ed96908c95dde46cc9788cf2aa7"
+  },
+  {
+    "path": "src/detanet_backbone/modules/update.py",
+    "sha256": "c8c2fbab6017e207c369b6717eefacd12f07d5ac7e2cdcf3bceb60fea23d72a6"
+  },
+  {
+    "path": "src/detanet_backbone/spectra_simulator.py",
+    "sha256": "a672fdf68011f1926f1817bb4357114440b1efa695a0fdf33186587bcef024a2"
+  },
+  {
+    "path": "src/models.py",
+    "sha256": "ff68ba8d22ad9f23f6f6e582417ac7f55f46eab8f44cf16f1f844d33bef50de6"
+  },
+  {
+    "path": "src/scale_dataset.py",
+    "sha256": "8c0e3836a96c15a3d1c9ea486d6aba7e80fb88d7416b4355448e1efcb3c7a1e5"
+  },
+  {
+    "path": "tests/test_models.py",
+    "sha256": "fa8b1ace870986182726e6ca6b4be296892a4efc69528903e96eda7980141777"
+  },
+  {
+    "path": "tests/test_preflight.py",
+    "sha256": "488a933b0c44b2a70eb4232f46fda7e5d7fa39e1176555e91b7ee14496c385de"
+  },
+  {
+    "path": "tests/test_workflow.py",
+    "sha256": "71dee51aefe35cf98ffc99a5b5198a36136e2473828d0dd7e2d3421ec34b9a96"
+  }
+]
