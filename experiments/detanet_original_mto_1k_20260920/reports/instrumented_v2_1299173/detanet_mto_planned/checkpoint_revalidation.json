@@ -1,0 +1,29 @@
+{
+  "initial": {
+    "step": 0,
+    "recorded_loss": 0.9325631260871887,
+    "recomputed_loss": 0.932563066482544,
+    "abs_difference": 5.960464477539063e-08,
+    "strict_model_and_optimizer_restore": true,
+    "checkpoint_sha256": "957c08a50a3d7b418526ba2439c2cab59039d2031aca521187a0fc1bed3631c0",
+    "model_hash": "73aefa66cb6ef6deae0a20c505a7829f50b8e277ace7303b6d781afe3e99a113"
+  },
+  "best": {
+    "step": 170,
+    "recorded_loss": 0.07572288066148758,
+    "recomputed_loss": 0.07572285830974579,
+    "abs_difference": 2.2351741790771484e-08,
+    "strict_model_and_optimizer_restore": true,
+    "checkpoint_sha256": "567530c0d38572093e8f22c46fd95ed282b80f3ad40bf1c2847980e6809355f3",
+    "model_hash": "672749e7912f7383ddd1b1f4d65ea55c13538b63c5c68cf59b4c380d167b650c"
+  },
+  "last": {
+    "step": 170,
+    "recorded_loss": 0.07572285830974579,
+    "recomputed_loss": 0.07572287321090698,
+    "abs_difference": 1.4901161193847656e-08,
+    "strict_model_and_optimizer_restore": true,
+    "checkpoint_sha256": "64a6e8bf683b59d4f3568212756239363320dd5f3bc71150d1f8c2136659d81d",
+    "model_hash": "672749e7912f7383ddd1b1f4d65ea55c13538b63c5c68cf59b4c380d167b650c"
+  }
+}

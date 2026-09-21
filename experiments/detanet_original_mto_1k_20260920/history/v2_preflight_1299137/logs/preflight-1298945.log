@@ -1,0 +1,23 @@
+/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+Traceback (most recent call last):
+  File "/data/run01/sczc698/xxy/MTO/experiments/detanet_original_mto_1k_20260920/preflight.py", line 165, in <module>
+    try:main()
+  File "/data/run01/sczc698/xxy/MTO/experiments/detanet_original_mto_1k_20260920/preflight.py", line 157, in main
+    cpu_gpu_and_resume(cfg,data,info,'cuda')
+  File "/data/run01/sczc698/xxy/MTO/experiments/detanet_original_mto_1k_20260920/preflight.py", line 95, in cpu_gpu_and_resume
+    compare_tree(final,dict(model=model.state_dict(),opt=opt.state_dict(),scheduler=scheduler.state_dict()),atol=1e-6,rtol=1e-5)
+  File "/data/run01/sczc698/xxy/MTO/experiments/detanet_original_mto_1k_20260920/preflight.py", line 66, in compare_tree
+    for k in a:compare_tree(a[k],b[k],path+'/'+str(k),atol,rtol)
+  File "/data/run01/sczc698/xxy/MTO/experiments/detanet_original_mto_1k_20260920/preflight.py", line 66, in compare_tree
+    for k in a:compare_tree(a[k],b[k],path+'/'+str(k),atol,rtol)
+  File "/data/run01/sczc698/xxy/MTO/experiments/detanet_original_mto_1k_20260920/preflight.py", line 66, in compare_tree
+    for k in a:compare_tree(a[k],b[k],path+'/'+str(k),atol,rtol)
+  [Previous line repeated 1 more time]
+  File "/data/run01/sczc698/xxy/MTO/experiments/detanet_original_mto_1k_20260920/preflight.py", line 63, in compare_tree
+    if torch.is_tensor(a):torch.testing.assert_close(a,b,atol=atol,rtol=rtol,msg=path)
+  File "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/testing/_comparison.py", line 1523, in assert_close
+    raise error_metas[0].to_error(msg)
+AssertionError: root/opt/state/2/exp_avg

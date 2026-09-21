@@ -1,0 +1,13 @@
+{
+  "upstream_url": "https://github.com/WeiHuQLU/DetaNet",
+  "commit": "4f92e643ab64651b91c4a1392cf389ddfd0d89f0",
+  "archive_doi": "10.24433/CO.5808137.v3",
+  "archive_status": "unavailable through browser; not verified byte-for-byte identical to paper archive",
+  "vendor_algorithm_patch_count": 0,
+  "adapter_whitelist": [
+    "Embedding.elec: nonpersistent buffer",
+    "mass: nonpersistent buffer"
+  ],
+  "reference_check": "independent Python package namespace; untouched source files",
+  "author_checkpoint_usage": "equivalence only; never training initialization"
+}

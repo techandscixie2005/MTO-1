@@ -1,0 +1,649 @@
+nature computational science
+
+Brief Communication             https://doi.org/10.1038/s43588-023-00550-y
+
+
+
+
+A deep learning model for predicting
+selected organic molecular spectra
+In the format provided by the
+authors and unedited
+Supplementary Information
+Contents
+ Supplementary Section 1. Error Metrics.                                    2
+ Supplementary Section 2. Vibration Spectra Prediction Details.             2
+ Supplementary Section 3. UV-Vis Prediction Details.                        3
+ Supplementary Section 4. NMR Prediction Details.                           4
+ Supplementary Section 5. Transferability Test on DetaNet.                  4
+ Supplementary Section 6 Molecular Properties Calculation Examples.         6
+ Supplementary Section 7. Effect of Cutoff Radius Values.                   6
+ Supplementary Section 8. Comparison of DetaNet with other MPNN models      7
+ Supplementary Section 9. Simulating flexible molecules using DetaNet       7
+ Supplementary Section 10. Possible Pitfalls of DetaNet.                    7
+ Supplementary Section 11. Details of the DetaNet code implementation    8-12
+ Supplementary Table 1-5                                                 13-15
+ Supplementary Figure 1-8                                                16-20
+ Supplementary References                                                  21
+
+
+
+
+                                              1
+Supplementary Section 1. Error Metrics.
+The mean squared error (MSE) used as the loss function for training molecular properties is defined as:
+                                                       �
+                                                 1                          2
+                                          �� =              ���� − ����
+                                                 �
+                                                     �=1
+
+where ���� and ���� represent the results of DetaNet’s output and the reference values. � is the number
+of molecules in a training batch.
+  The MSE for atomic properties (such as charge) is defined by:
+                                                       �
+                                               1                            2
+                                          �� =              ���� − ����
+                                               �
+                                                     �=1
+
+Where � is the number of atoms in a training batch.
+  The coefficient of determination1 (�2 ) is used to assess accuracy:
+                                                 �                      ��� 2
+                                                             ����
+                                                              � − ��
+                                      �2 = 1 −                                   2
+                                                                  1    �
+                                                 �=1       ����
+                                                            � −           ����
+                                                                       �=1 �
+                                                                  �
+  The Spearman coefficient2 ( �� ) indicates the accuracy of the DetaNet-predicted vibrational spectra
+compared to the DFT result; For two sets of data �� and �� , �� is defined as:
+                                                          �
+                                                            6�2
+                                                          �=1 �
+                                              �� = 1 −
+                                                       � �2 − 1
+where �� is the difference in magnitude between �� and �� , � is an index and � the total number of
+spectral data.
+
+
+Supplementary Section 2. Vibration Spectra Prediction Details.
+We used the chain rule to calculate infrared and Raman intensities. To be specific, the IR intensities and
+Raman activities are calculated as:
+                                               ��                     ��
+                                                     = � �� ×
+                                               ���                    ���
+                                               ��                     ��
+                                                     = � �� ×
+                                               ���                    ���
+where �� represents the normal coordinates that can be obtained by diagonalizing the Hessian matrix, �
+the Cartesian displacement, �� stands for the Cartesian coordinate vector. After multiplying by a scaling
+factor of 0.965, the IR and Raman spectra are obtained by Lorentz broadening:
+                                             �            1
+                                    �� � =      ×       2           × ��
+                                             2�   � − �� + 0.25 × �
+
+
+
+                                                             2
+where � represents the half-width of the peak, which is set to 15 cm-1 for the infrared spectra and 10 cm-1
+for the Raman spectra. �� and �� represents the calculated wavenumber and the IR/Raman intensity of
+the ��ℎ vibrational mode, � is any wavenumber of the vibrational spectra. Both IR and Raman spectra
+have been normalized to facilitate comparison with experimental spectra.
+
+
+Supplementary Section 3. UV-Vis Prediction Details.
+As listed in Supplementary Table 2, we have tried many strategies to simulate the UV-Vis spectra.
+Firstly, we train the 10 excitation energies and the corresponding oscillator strengths at the same time.
+This strategy results an accuracy of R2=0.95 and R2=0.13 for the excitation energy and the oscillator
+strength. Then we adopted another strategy and separately train the excitation energies and the oscillator
+strength with the 10 values packed together. We found the accuracy is still low (R2=0.28) for the
+oscillator strength even though the excitation energy can be well predicted (R2=0.991). As listed in
+Supplementary Table 2, the one-by-one training on the 10 values of the oscillator strength can’t increase
+the prediction accuracy. Instead of directly predicting the oscillator strength, we also trained the transition
+dipole vectors for the 10 excited states. Unfortunately, the transition dipole vectors can’t be well
+reproduced (R2=0.28), resulting the subsequently calculated oscillator strength can’t be well predicted.
+Furthermore, we tried the phase-less loss function3,4 developed by J Westermayr et al (J. Chem. Phys.,
+2020 153, 154112), but the accuracy is still low (R2=0.41).
+     Through the above test, we found the transition dipole moment and oscillator strength can’t be well
+learned. This can be attributed to the fact that the transition dipole moment depends on the wave functions
+of the excited and ground states. Similar conclusion5 has been obtained by Ye et al. (PNAS, 2019, 116,
+11612-11617), where they selected the Coulomb matrix that including more chemical information as the
+descriptors to predict the transition dipole moment. As a result, we tried directly train the Gaussian
+broaden UV-Vis spectra and found the prediction accuracy could reach 92% for oscillator strength. To be
+specific, the UV-Vis spectra are obtained as Gaussian broadening:
+                                               ��        �−�� 2      �
+                                                     −
+                                      � � =          �    2�2 � =
+                                              � 2�                  2 ��2
+where � is the half-width of the Gaussian broadening and is set to 0.5 ev. �� and �� is the calculated
+wavelength and oscillator strength of the ��ℎ excited states. � is any wavelength of the UV-Vis spectra.
+The spectra were broadened at 0.05 ev intervals in the range of 1.5 eV-13.5 eV; these adjusted data were
+used as the targets for training.
+
+
+
+
+                                                         3
+Supplementary Section 4. NMR Prediction Details.
+It is well known that NMR spectra depend on the isotropic part of the shielding tensor. In this work, we
+compared two strategies to simulate NMR spectra. The first strategy is predicting the shielding tensors
+first and then calculating the isotropic parts. The second one is predicting the isotropic part of the
+shielding tensor directly. Taking carbon atoms as an example. we found that the second strategy
+(MAE=0.5332) performs better than the first one (MAE=2.4281). As a result, we first pre-trained a model
+to predict the isotropic part of the shielding tensor for all atoms. Then separate models were trained to
+predict the isotropic part of the shielding tensor for the four kinds of elements (H, C, N, O).
+  After predicting the isotropic part of the shielding tensors for carbon and hydrogen, we subtracted the
+reference values (C: 187.653, H: 31.751) from tetramethylsilane under the same calculation level
+(mpw1pw91/6-311+g(2d,p)) to obtain the NMR shifts. Finally, we summerized the 13C and 1H NMR
+shifts for the same chemical environment. The halfwidth used in the Lorentzian broadening was set to
+F=0.5 ppm for 13C NMR and F=0.05 ppm for 1H NMR.
+  In addition, we studied the performance of DetaNet in predicting NMR spectra for molecules in various
+solvent environments. As shown in Supplementary Table 3, the prediction error of the 13C NMR spectra
+increases only about 0.00-0.03 ppm and 1H NMR about 0.00-0.01 ppm compared to the gas phase,
+indicating the high accuracy and good transferability of DetaNet in describing the NMR spectra of
+molecules in solvents.
+
+
+Supplementary Section 5. Transferability Test on DetaNet.
+We assessed DetaNet’s transferability by varying molecular types, sizes and geometries (Supplementary
+Fig. 1a). To do so, we randomly selected 5500 organic molecules (not included in QM9S) from the
+PubChem6 database and performed geometrical optimization and spectra simulations. The average
+Spearman coefficients between DetaNet- and DFT-predicted IR and Raman spectra is 0.9879 and 0.9854,
+respectively, demonstrating that DetaNet achieves good transferability to molecules not included in the
+QM9S dataset. More importantly, DetaNet consistently produced precise spectra for a variety of
+molecular sizes. As shown in Supplementary Fig. 1b, the Spearman coefficients of infrared and Raman
+only decreased by 0.003 and 0.007 when the molecular size increased from 20 to 49 atoms. Here we
+illustruated the DetaNet and DFT predicted IR and Raman spectra for lactulose that contains 45 atoms
+(shown in Supplementary Fig. 1c-d). The almost identical results demonstrate DetaNet’s transferability
+to larger molecules even though it was trained on QM9S, a dataset containing molecules with at most 20
+atoms.
+  Then, we adopted both implicit and explicit models to reproduce molecular distortion and test
+DetaNet’s transferability. For the implicit model, we considered five kinds of external environments
+
+                                                       4
+including electric fields of 0.01 or 0.02 a.u., and the polarizable continuum effect with water, ethanol or
+dimethyl sulfoxide as the solvent. One of these five implicit environments was randomly applied to 5500
+molecules; the molecular distortion degree ���� so induced is calculated as
+                                          1           ∆�     1
+                               ���� =                    +                     ��� ∆�
+                                        2� �           �   2� �
+                                               � �                       � �
+
+where � and � are the bond lengths and angles, respectively; ∆� and ∆� are the changes in bond
+lengths and angles induced by the external environment. Our findings indicate that a molecular distortion
+degree of 0.3 results in only a slight decrease of 0.011 and 0.004 in the accuracy of DetaNet for IR and
+Raman spectra, respectively (Supplementary Fig. 1e). Furthermore, the average accuracy of DetaNet for
+IR and Raman simulations was 98.30% and 98.38%, respectively, for all distorted molecules,
+demonstrating its strong transferability. The IR and Raman spectra of the 5500 organic molecules
+randomly selected from PubChem is available at figshare: https://doi.org/10.6084/m9.figshare.24235333.
+  For the explicit environments, we firstly performed geometrical optimization for ether associated with
+10 water molecules or adsorbed on a gold surface. The geometrical optimization of the molecules
+adsorbed on surface were performed using the periodic boundary condition7 (PBC) model implemented in
+VASP8 package. Then we simulated the IR and Raman spectra of ether by removing all solvent water
+molecules and substrate. The IR and Raman intensities are calculated as:
+                                                                 ��� 2
+                                                     ��� ∝       ��
+                                                     �−�in 4 ∂��� 2      1
+                                     ������ ∝          �
+                                                            ( �� )         −ℎ��
+                                                                    1−���
+                                                                                  ��
+
+Here we only consider the �� and ��� for adsorption situations because the electric field is mainly
+along the z direction of the surface. As shown in Supplementary Fig. 1f-g, DFT and DetaNet reproduced
+the observed decreases in IR and Raman intensity of the methene C-H stretching mode (~2859 cm-1) and
+the red shift of the C-O stretching mode (~1102 cm-1) caused by solvent effect or surface adsorption
+compared to the gas phase. Even though a small discrepancy was found in the predicted frequency for
+surface adsorption, DetaNet still provided reasonably-precise peak positions and relative intensities for
+both IR and Raman spectra of ether in aqueous solution and adsorbtion on a gold surface.
+  To further verify the DetaNet’s applicability to surface adsorption, more adsorbed molecules
+(formamide and urea) and substrates (gold and silver) are investigated. We can see from Supplementary
+Fig. 2 that the DetaNet- and DFT-predicted IR and Raman spectra are almost identical, indicating the
+DetaNet is applicable to the various surface adsorption.
+
+
+
+
+                                                             5
+Supplementary Section 6. Molecular Properties Calculations Examples. Taking the water molecule as
+an example, here we illustrate how to calculate the total dipole moment. As shown in Supplementary Fig.
+3, we firstly predicted the local and non-local dipole moment for every atom. Then the total dipole
+moment of the H2O molecule can be obtained by summarizing the local and non-local dipole
+contributions.
+  It is noted that DetaNet is orientation sensitive because of it is rotational equivariant. This means that
+the geometrical rotation of the molecule will cause the rotation of equivariant properties such as the
+dipole moment and polarizability tensors. Here we have taken the water molecule for example to illustrate
+how the DetaNet is sensitive to orientation. As shown in Supplementary Fig. 4, rotating the H2O
+molecule will not change the norm of the dipole moment. However, the three components will change
+accordingly.
+  It is well known that the first hyperpolarizability is crucial for the development of optical data storage
+devices, and it determines the efficiency of a molecular switch in responding to an applied electric field or
+light. Here we taking enol-keto tautomer as example to test the accuracy of DetaNet in predicting the first
+hyperpolarizability. We found the DetaNet predicted first hyperpolarizability for 3-Methyl-2-butanone
+and 3-Methyl-2-buten-2-ol molecule is 380.9 and 481.5, compared to the value of 380.6       and 481.2 from
+DFT simulations. The small deviation of 0.03% and 0.04% between DetaNet and DFT simulations
+indicates the high preciseness of DetaNet and its broad application scenarios, as shown in
+Supplementary Fig. 5.
+
+
+Supplementary Section 7. Effect of Cutoff Radius Values. The cutoff radius of 5.0 Å ensures the
+influence of the first-, second- and third-order neighboring atoms taken into account. Taking the NMR
+spectrum of the benzene molecule as an example, we did a contrast experiment by setting �� =1.5, 2.5,
+3.5 and 5.0 Å to consider the different-order neighbors. As shown in Supplementary Fig. 6., the �� of
+1.5 Å only takes the 1st-order neighbors into account, while �� =2.5 Å considers the 1st- and 2nd-order
+neighbors. The �� =3.5 Å takes the 1st-, 2nd and 3rd-order neighbors into account, while �� =5.0 Å may
+include 4th-order neighbors. We can see the predicted error of DetaNet compared to DFT is 10.6128,
+2.2612, 0.0747 and 0.0747 ppm if the cut off value set to 1.5, 2.5, 3.5 and 5.0 Å. As a result, we can
+conclude that a cutoff radius of 5.0 Å is sufficient in the DetaNet model.
+
+
+
+
+                                                       6
+Supplementary Section 8. Comparison of DetaNet with Other MPNN Models. We trained and
+evaluated 4 advanced MPNNs model (on the QM9S dataset): Schnet9, DimeNet++10, PaiNN11 and
+Nequip12. Four molecular properties including NPA charge, dipole moment, polarizability and first
+hyperpolarizability were considered. From the computational time listed in Supplementary Table 5, we
+can see that the efficiency of DetaNet is comparable or worse than the other methods. This can be
+attributed to the fact DetaNet passes not only scalar but also tensor messages. However, our model is
+much faster than both Nequip using tensors and DimeNet++ using angle features. This is because we
+simplified the tensor product and replaced the expensive feature cross product with linear layer operations.
+On the other hand, DetaNet achieves state-of-art performance in predicting the invariant scalars.
+Furthermore, DetaNet performs better than other MPNNs in reproducing the equivariant vectors or
+tensors.
+
+
+Supplementary Section 9. IR/Raman Spectra Simulation of Flexible Molecules.
+Taking the molecule 2-amino-3-(3,5-dioxo-1,2,4-oxadiazolidin-2-yl) propanoic acid as example, we
+tested the accuracy and transferability of the DetaNet in describing the flexible compounds. We firstly
+searched and optimized 6 different conformers for this molecule using Gaussian 16 package. Then both
+DFT and DetaNet are used to simulate the molecular properties and vibrational spectra for every
+conformer. As shown in Supplementary Fig. 7, we can see that the MAE of DetaNet in predicting the
+energy, dipole moment and polarizability is 0.029 ev, 0.16 Debye and 0.607 a.u. Furthermore, the DetaNet
+and DFT obtained almost identical IR and Raman spectra, indicating the DetaNet’s ability to distinguish
+different conformers.”
+
+
+Supplementary Section 10. Possible Pitfalls of DetaNet. By simulating the IR and Raman spectra of the
+5500 organic molecules extracted from the PubChem database and evaluation set of QM9S, we found two
+possible pitfalls of DetaNet. Firstly, DetaNet can’t well reproduce the IR spectra for very small molecules
+with less than 5 atoms. As shown in Supplementary Fig. 8 a-c, the Spearman correlation between the
+DetaNet- and DFT-predicted IR spectra for ammonia, acetylene and formaldehyde molecule is 0.9813,
+0.9605 and 0.9650, respectively. The underlying reason is that the Hessian matrix for very small
+molecules can’t be well predicted. Secondly, As shown in Supplementary Fig. 8 d-f, DetaNet could not
+well reproduce the non-local vibrational modes of the six-membered cyclic aromatic hydrocarbons that
+usually located at around 700-800 cm-1, that is, the rocking vibration of C-H perpendicular to the ring
+surface. This is cumulative effect because 10-12 atoms are involved in this vibration and the
+diagonalization of the Hessian matrix must bring big errors.
+
+
+                                                      7
+Supplementary Section 11. Details of the DetaNet code implementation.
+11.1 Running environment.
+  Python 3.8.5 with python-libraries:
+  e3nn 0.4.4;
+  Matplotlib 3.3.4;
+  Numpy 1.20.1;
+  Torch 1.10.0;
+  torch-geometric 2.0.2;
+  torch_scatter 2.0.9;
+  torch_cluster 1.5.9;
+  torch_sparse 0.6.12;
+  torch_spline_conv 1.2.1.
+11.2   Train the DetaNet model.
+11.2.1 load the dataset
+
+
+
+
+where the cartesian coordinates, atomic numbers, edge indices and various properties of each molecule
+packaged in the geometric.data.Data file.
+
+
+
+
+11.2.2 Divide the dataset into 5% testing and 95% training set:
+
+
+
+
+11.2.3 Convert the dataset into a batch of 64 molecules of training:
+
+
+
+
+11.2.4 Construct an untrained model:
+
+
+                                                         8
+11.2.5 Define the trainer and the parameters for training:
+
+
+
+
+11.2.6 Modify the data type and device type:
+
+                                                         9
+11.2.7 Train 20 times from a 5e-4 learning rate and AdamW optimizer:
+
+
+
+
+11.2.8 Save and load the trained parameters:
+
+
+
+
+11.3 Simulate the molecular properties and spectra using trained DetaNet.
+11.3.1 Import relevant libraries from the trained DetaNet model:
+
+
+
+11.3.2 Formulate the device and data type:
+
+
+
+
+                                                       10
+11.3.3 Import the cartesian coordinates:
+
+
+
+
+11.3.4 Load the trained DetaNet models:
+
+
+
+
+11.3.5 Calculate the NPA charge:
+
+
+
+
+11.3.6 Calculate the IR intensities and Raman activities:
+
+
+
+
+                                                        11
+11.3.7 Simulate the NMR Shift:
+
+
+
+
+11.3.8 Simulate the UV-Vis spectra:
+
+
+
+
+                                      12
+Supplementary Tables
+Supplementary Table 1. Different molecular properties predicted by DetaNet. The QM9S, QM9-NMR,
+QM9 and QM7-X dataset are used as the reference data to enable DetaNet to predict the spectra-related,
+NMR-related, energy-related, and MD-related molecular properties. Here MAE, RMSE and R2 represent the
+mean absolute errors, the root mean square errors and the coefficients of determination, respectively.
+  Dataset              Property              Symbol       Unit       MAE           RMSE           R2
+               Natural population charge      ����
+                                               �           �         0.0011        0.0017       0.99998
+                   Dipole Moment               �           �         0.0088        0.1280       0.99994
+                 Polarizability Tensor         �          �0 3       0.1374        0.2227       0.99996
+               First Hyperpolarizability       �          �. �.      2.0373        2.8950       0.99398
+                 Quadrupole Moment             �          �∙Å        0.3834        0.6258       0.99945
+  QM9S            Octupole Moment              O         � ∙ Å2      6.2442        13.116       0.97030
+(130K data)      Derivatives of Dipole       � � ���      � Å        0.0181        0.0268       0.99943
+              Derivatives of Polarizablity   � � ���     �0 3 Å      0.2012        0.3087       0.99710
+                   Hessian (atomic)            ��        �� Å2       0.0731        0.1341       0.99937
+                Hessian (inter-atomic)         ���       �� Å2       0.0699        0.1145       0.99944
+                  Transition Energy            ∆�          ��        0.0768        0.1043       0.99138
+                 UV-Vis (1.5-13.5ev)           ��         �. �.      0.0025        0.0073       0.92026
+                Shielding Isotropic All       ����        ���        0.4938        1.1322       0.99983
+                Shielding Isotropic (H)       ����
+                                               �          ���        0.0543        0.0778       0.99846
+QM9-NMR
+                Shielding Isotropic (O)       ����
+                                               �          ���        1.6982        2.7342       0.99983
+(130K data)
+                Shielding Isotropic (N)       ����
+                                               �          ���        0.9866        1.7183       0.99979
+                Shielding Isotropic (C)       ����
+                                               �          ���        0.5203        0.8822       0.99971
+                     Homo energy              �ℎ���        ��        0.0278        0.0452       0.99643
+                     Lumo energy              �����        ��        0.0169        0.0251       0.99963
+                      Gap energy              ����         ��        0.0323        0.0501       0.99902
+   QM9        Zero point vibration energy     ����         ��        0.0012        0.0019       0.99999
+(134K data)          Free energy               �           ��        0.0076        0.0124       0.99999
+                       Enthalpy                �           ��        0.0087        0.0141       0.99999
+               Electronic spatial extent       �2         �0 2       0.0680        0.1217       0.99999
+                     Heat capacity             ��      ��� ��� ∙ �   0.0021        0.0035       0.99998
+                        Energy                 �           ev        0.0293       0.04019       0.99998
+  Partial           Atomic Force               ��        �� Å        0.0341       0.05164       0.99905
+  QM7-X            Hirshfeld charges           ��
+                                                �          �         0.0011        0.0017       0.99998
+(144K data)     Atomic C6 Coefficient          �6       �ℎ ∙ �0 6    5.6112        8.3795       0.99984
+               Moment of Inertia Tensor         �       ��� ∙ Å2     0.0958        0.1630       0.99999
+
+
+
+
+                                                          13
+Supplementary Table 2. Prediction accuracy for excitation energy and oscillator strength using different
+strategies. All the methods that separately predict the excitation energies and the corresponding oscillator
+strengths (or transition dipole vectors) falls in reproducing the UV-Vis spectra. Alternatively, we tried
+directly train the Gaussian broaden UV-Vis spectra and found the prediction accuracy could reach 92%
+for oscillator strength. Here the R2 represent the coefficients of determination.
+                             Prediction methods                           Prediction R2 for the           Prediction R2 for the
+                                                                          Excitation energy               oscillator strength
+    Simultaneous training on the 10 excitation energies and the                  0.956                           0.134
+                            oscillator strengths
+    Separate training on the excitation energies and the oscillator              0.991                           0.276
+                    strength (10 values packed together)
+   Separate training on the excitation energies and the transition               0.991                           0.279
+            dipole vectors (10 values packed together)
+    Separate training on the excitation energies and the oscillator              0.992                           0.284
+                      strength (10 values one by one)
+  Using the phase-less loss function to predict dipole developed by              0.991                           0.417
+                            J Westermayr et al
+      Direct training on the Gaussian broaden UV-Vis spectra                                      0.920
+
+
+
+Supplementary Table 3. Comparison of the prediction errors for NMR shifts using DetaNet for
+molecules in 6 different environments. The tetrachloromethane (CCl4), tetrahydrofuran (THF), toluene,
+ethanol and dimethyl sulfoxide (DMSO) with different dielectric constants ( � ) were selected as the
+solvent. The prediction error (MAE) for the 13C NMR and 1H NMR spectra in various solvent
+environments increases only about 0.00-0.03 and 0.00-0.01 ppm compared to the gas phase.
+
+
+     Solvent                    Gas                CCl4           THF            Toluene            Ethanol              DMSO
+        �                         0                2.228         7.426            20.493            32.613                46.826
+ MAE(NMR H)    1
+                               0.0543              0.0545        0.0551           0.0550            0.0547                0.0557
+ MAE(NMR C)    13
+                               0.5203              0.5339        0.5452           0.5298            0.5396                0.5547
+
+
+
+Supplementary Table 4. Electronic features of the seven common elements. Here we used the number
+of the paired and the single electrons of every electron subshell (1s, 2s, 2p, 3s, 3p) to construct the
+electronic features for element H, C, N, O, F, S and Cl. These features provide the detailed information of
+every subshell, as well as the spin and charge information. The electronic features were normalized and
+fed into the linear layer. Here ��� and ��� represent the number of the paired and the unpaired electrons on
+every electronic subshell.
+
+                                                                  14
+                                   1s                   2s                    2p                   3s                   3p
+                 Element                                                 2�         2�                             3�         3�
+                             �1�
+                              ��        �1�
+                                         ��   �2�
+                                               ��            �2�
+                                                              ��      ���          ���      �3�
+                                                                                             ��         �3�
+                                                                                                         ��      ���         ���
+
+                    H         0          1      0             0          0          0        0           0        0           0
+                    C         2          0      2             0          0          2        0           0        0           0
+                    N         2          0      2             0          0          3        0           0        0           0
+                    O         2          0      2             0          2          2        0           0        0           0
+                    F         2          0      2             0          4          1        0           0        0           0
+                    S         2          0      2             0          6          0        2           0        2           2
+                    Cl        2          0      2             0          6          0        2           0        4           1
+
+
+
+Supplementary Table 5. Comparison of DetaNet with the previously developed methods: Schnet,
+DimeNet++, PaiNN and Nequip (time is evaluated by training a batch of 64 molecules on an RTX 3080Ti
+device). Both the prediction error (MAE) for different properties and the computational time were listed.
+The unit of the NPA charge ( � ), dipole moment ( � ), polarizability ( � ), first hyperpolarizability ( � ) and
+computational time (t) is electron (e), Deby (D), �30 , a.u. and second (s), respectively. Here NRBF and
+NSHBF represents the number of radial basis and the number of spherical harmonic basis function,
+respctively. For the DetaNet and Nequip, e/o is the even/odd parity and 0,1,2,3 is the degree of irreps
+feature.
+                  MAE          MAE             MAE                   MAE                 Time
+   Model          (�)          (�)              (�)                  (�)                  (t)                      Parameter setting
+                 Unit: e      Unit: D         Unit: a03            Unit: a.u.            Unit: s
+                                                                                                               Number of features = 128;
+                                                                                                                        NRBF = 200;
+   SchNet        0.0034       0.0790                /                    /               0.006
+                                                                                                         Number of interaction layers = 6.
+                                                                                                                 NRBF = 16; NSHBF = 7;
+                                                                                                               Number of features = 64;
+ DimeNet++       0.0014       0.0246                /                    /               0.268
+                                                                                                         Number of interaction layers = 4
+                                                                                                                        NRBF = 16;
+                                                                                                         Number of interaction layers = 4;
+   Painn         0.0011       0.0102          0.1536                     /               0.015                 Number of features = 128;
+                                                                                                                Vector_feature = 3x128.
+                                                                                                                        NRBF = 16;
+                                                                                                         Number of interaction layers = 3;
+   Nequip        0.0012       0.0124          0.1925                3.3050               0.408                           Feature =
+                                                                                                         64x(0e+0o+1e+1o+2e+2o+3e+3o)
+                                                                                                                         NRBF=16
+                                                                                                         Number of interaction layers = 3
+  DetaNet        0.0011       0.0089          0.1367                2.0373               0.027
+                                                                                                              Feature=128x(0e+1o+2e+3o)
+
+
+                                                                    15
+Supplementary Figures
+
+
+
+
+Supplementary Fig. 1|Transferability of DetaNet predictions to molecules of various sizes and novel
+external environments. a Schematic structures of selected molecules for testing the transferability of
+DetaNet: lactulose not included in the QM9S, ether molecules in gas phase, in aqueous solution and
+adsorbed on a gold surface. b Spearman correlation coefficients between DetaNet and DFT predictions
+for IR and Raman spectra of molecules of different sizes. c Comparison of DetaNet predicted- and
+DFT-simulated IR and Raman spectra of lactulose (45 atoms), a molecule not in the QM9S database. d
+Comparison of DetaNet predicted- and DFT-simulated Raman spectra of lactulose. e Spearman
+correlation coefficients between DetaNet and DFT predictions for IR and Raman spectra as a function of
+degree of molecular deformation induced by an external environment. f Comparison of DetaNet
+predicted- and DFT-simulated IR spectra for ether in the gas phase, in aqueous solution and adsorbed on a
+gold surface. g Comparison of DetaNet predicted- and DFT-simulated Raman spectra for ether in the gas
+phase, in aqueous solution and adsorbed on a gold surface.
+
+
+
+
+                                                    16
+Supplementary Fig. 2| Various examples of different organic molecules adsorbed on metal surfaces. a
+Structure of urea and formamide molecules adsorbed on Ag(111) and Au(111) surface. b Comparison of
+DetaNet- and DFT-predicted IR spectra for the structures shown above in a. c Comparison of DetaNet- and
+DFT-predicted Raman spectra for the structures shown above in a.
+
+
+
+
+Supplementary Fig. 3|Schematic diagram of calculating the total dipole moment for a H2O molecule
+based on the local and non-local contributions. The local dipole moment for the oxygen, right and left
+hydrogen is [0.0, 0.9401, 0.0], [0.6243, 0.4847, 0.0] and [-0.6243, 0.4847, 0.0], while the non-local local parts
+is [0.0, -0.0105, 0.0], [0.1762, 0.1200, 0.0] and [-0.1762, 0.1200, 0.0]. Summarizing all components up
+produces the total dipole moment for water is [0.0, 2.1390, 0.0].
+
+
+
+
+                                                        17
+Supplementary Fig. 4|Schematic diagram for the orientation sensitivity of DetaNet. The
+three-dimensional dipole moment vector of molecules also undergoes corresponding rotation after
+molecular rotation. MAE represent the mean absolute errors.
+
+
+
+
+Supplementary Fig. 5| Comparison between the DetaNet and DFT calculated first hyperpolarizability
+(�) for enol-keto tautomers. Taking the 3-Methyl-2-butanone and 3-Methyl-2-buten-2-ol molecule for
+example, we found the DetaNet and DFT obtains almost the same first hyperpolarizability with a small
+deviation of 0.03% and 0.04%.
+
+
+
+
+                                                   18
+Supplementary Fig. 6| Comparison between the DFT calculated chemical shift (NMRC) for C atom in
+benzene molecule and DetaNet calculated result with different cutoff radius ( �� ). A contrast experiment
+on cutoff was performed by setting �� =1.5, 2.5, 3.5 and 5.0 Å. The set of �� =5.0 Å indicates the
+inclusion of the 1st-, 2nd-, 3rd- and 4th-order neighbors and makes the predicted error of DetaNet is only
+0.05% compared to DFT.
+
+
+
+
+Supplementary Fig. 7| Performance of DetaNet in simulating flexible molecules. a Comparison of the
+DetaNet- and DFT- predicted energy. b Comparison of the DetaNet- and DFT- predicted dipole moment. c
+Comparison of the DetaNet- and DFT- predicted polarizability. d Comparison of the DetaNet- and DFT-
+predicted infrared spectra. e Comparison of the DetaNet- and DFT- predicted Raman spectra. The inset
+molecules named as 1-6 in d are the six different conformers of 2-amino-3-(3,5-dioxo-1,2,4-oxadiazolidin-2-yl)
+propanoic acid. MAE represent the mean absolute errors.
+
+
+
+
+                                                      19
+Supplementary Fig. 8| Illustrated possible pitfalls of DetaNet. a Comparison of DetaNet- and
+DFT-predicted IR spectra for ammonia. b Comparison of DetaNet- and DFT-predicted IR spectra for acetylene.
+c Comparison of DetaNet- and DFT-predicted IR spectra for formaldehyde. d Comparison of DetaNet- and
+DFT-predicted IR spectra for Benzene. e Comparison of DetaNet- and DFT-predicted IR spectra for
+naphthalene. f Comparison of DetaNet- and DFT-predicted IR spectra for benzoin. Spearman coefficients is
+used to assess the similarity between the DetaNet- and DFT-predicted spectra.
+
+
+
+
+                                                    20
+References
+1     Nagelkerke, N. J. A note on a general definition of the coefficient of determination. Biometrika 78, 691-692
+      (1991).
+2     Zar, J. H. Significance testing of the Spearman rank correlation coefficient. Journal of the American
+      Statistical Association 67, 578-580 (1972).
+3     Westermayr, J., Gastegger, M. & Marquetand, P. Combining SchNet and SHARC: The SchNarc machine
+      learning approach for excited-state dynamics. The journal of physical chemistry letters 11, 3828-3834
+      (2020).
+4     Westermayr, J. & Marquetand, P. Deep learning for UV absorption spectra with SchNarc: First steps toward
+      transferability in chemical compound space. The Journal of Chemical Physics 153 (2020).
+5     Ye, S. et al. A neural network protocol for electronic excitations of N-methylacetamide. Proceedings of the
+      National Academy of Sciences 116, 11612-11617 (2019).
+6     Wang, Y. et al. PubChem: a public information system for analyzing bioactivities of small molecules.
+      Nucleic acids research 37, W623-W633 (2009).
+7     Makov, G. & Payne, M. C. Periodic boundary conditions in ab initio calculations. Physical Review B 51,
+      4014 (1995).
+8     Hafner, J. Ab‐initio simulations of materials using VASP: Density‐functional theory and beyond. Journal of
+      computational chemistry 29, 2044-2078 (2008).
+9     Schütt, K. T., Sauceda, H. E., Kindermans, P.-J., Tkatchenko, A. & Müller, K.-R. Schnet–a deep learning
+      architecture for molecules and materials. The Journal of Chemical Physics 148 (2018).
+10    Gasteiger, J., Giri, S., Margraf, J. T. & Günnemann, S. Fast and uncertainty-aware directional message
+      passing for non-equilibrium molecules. arXiv preprint arXiv:2011.14115 (2020).
+11    Schütt, K., Unke, O. & Gastegger, M. in International Conference on Machine Learning. 9377-9388
+      (PMLR).
+12    Batzner, S. et al. E (3)-equivariant graph neural networks for data-efficient and accurate interatomic
+      potentials. Nature communications 13, 2453 (2022).
+
+
+
+
+                                                       21
+

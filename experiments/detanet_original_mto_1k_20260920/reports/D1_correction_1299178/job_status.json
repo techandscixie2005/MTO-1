@@ -1,0 +1,17 @@
+{
+  "job_id": 1299178,
+  "status": "COMPLETED",
+  "scope": "DIAGNOSTIC_ONLY",
+  "intervention": "D1 only, 300 steps from immutable step600",
+  "code_sha": "e15e3a8869bf848a151ffe3a1d81f14b0a00974d",
+  "command": "sbatch --parsable jobs/diagnostic_D1_correction.slurm",
+  "submitted_utc": "2026-09-20T16:10:14.698125+00:00",
+  "exit_code": "0:0",
+  "elapsed": "00:01:15",
+  "node": "g0024",
+  "optimizer_steps_executed": 300,
+  "source_optimizer_step_start": 600,
+  "actual_first_step": 601,
+  "actual_last_step": 900,
+  "observed_utc": "2026-09-20T16:15:03.841728+00:00"
+}

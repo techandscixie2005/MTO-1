@@ -1,0 +1,29 @@
+{
+  "variant": "detanet_original_uv",
+  "backbone_constructor": {
+    "num_features": 128,
+    "maxl": 3,
+    "num_block": 3,
+    "radial_type": "trainable_bessel",
+    "num_radial": 32,
+    "attention_head": 8,
+    "rc": 5.0,
+    "act": "swish",
+    "dropout": 0.0,
+    "use_cutoff": false,
+    "max_atomic_number": 9,
+    "atom_ref": null,
+    "scale": 1.0,
+    "scalar_outsize": 240,
+    "irreps_out": null,
+    "summation": true,
+    "norm": false,
+    "out_type": "scalar",
+    "grad_type": null
+  },
+  "mto_global_gate": false,
+  "common_protocol": "../protocol.json",
+  "data_manifest": "../data/frozen.json",
+  "initialization": "fresh; paired backbone; B/C full equality",
+  "head": "original atomwise MLP"
+}

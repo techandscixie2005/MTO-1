@@ -1,0 +1,31 @@
+{
+  "new_archive": {
+    "exit_code": 0,
+    "result": {
+      "scope": "ARCHIVE_INTEGRITY_ONLY",
+      "passed": true,
+      "files_checked": 508,
+      "bytes_checked": 1663093261,
+      "stage_complete": false,
+      "formal_training_submitted": 0,
+      "errors": []
+    },
+    "stderr": ""
+  },
+  "historical_archive": {
+    "exit_code": 0,
+    "result": {
+      "checked": 329,
+      "passed": true,
+      "failures": []
+    },
+    "stderr": ""
+  },
+  "syntax": {
+    "python_files_parsed": 115,
+    "passed": true,
+    "method": "ast.parse; no model training rerun"
+  },
+  "scope": "Publication integrity checks only; historical scientific logs preserved unchanged",
+  "timestamp_utc": "2026-09-21T04:06:15.122189+00:00"
+}

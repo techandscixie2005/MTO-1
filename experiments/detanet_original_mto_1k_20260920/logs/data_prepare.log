@@ -1,0 +1,40 @@
+/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+{
+  "count": 1000,
+  "splits": {
+    "train": 800,
+    "validation": 100,
+    "test": 100
+  },
+  "n_ref": 18.0,
+  "train_rms": 0.024564612974391966,
+  "source_broadening_status": "unknown",
+  "target_units": "source CSV units; absolute units unverified",
+  "sigma_eV": 0.2,
+  "sigma_status": "planning initial assumption; not source alignment",
+  "grid_source": "author calculation notebook cell 16: torch.linspace(1.5,13.5,240)",
+  "interpolation": "numpy.interp; piecewise linear; no extrapolation",
+  "roundtrip_mse_mean": 2.2870697470653257e-09,
+  "roundtrip_mse_max": 7.485278694017513e-08,
+  "min_pair_distance_range": [
+    0.9617041643332465,
+    1.2077638940168813
+  ],
+  "coordinates": "original QM9S coordinates; Angstrom per author rc documentation; no rescaling",
+  "geometry_alignment": "inherited audited source row/canonical identity; rechecked identities and payload hash",
+  "native_target_status": "see audit/native_schema.json; no guessed target coordinates",
+  "examples": [
+    19441,
+    114196,
+    43669,
+    122349
+  ],
+  "oracle_ids": [
+    20983,
+    103070,
+    71681,
+    69573
+  ],
+  "test_history": "same historical 1k test; not claimed untouched"
+}

@@ -1,0 +1,41 @@
+{
+  "detanet_original_uv": {
+    "cpu_gpu_max_abs": 4.291534423828125e-06,
+    "batch64_forward_backward_peak_bytes": 1163688960,
+    "adam_replay_roundoff_error": [
+      0.03125,
+      0.03125
+    ],
+    "next_backward_gradient_max_abs_difference": 0.0009765625,
+    "loaded_optimizer_model_scheduler_bitwise_equal": true,
+    "optimizer_scheduler_rng_resume": true,
+    "trainer_mid_epoch_resume": true,
+    "trainer_replay_device": "cpu"
+  },
+  "detanet_mto_planned": {
+    "cpu_gpu_max_abs": 9.872019290924072e-08,
+    "batch64_forward_backward_peak_bytes": 1256348160,
+    "adam_replay_roundoff_error": [
+      2.9802322387695312e-08,
+      5.960464477539063e-08
+    ],
+    "next_backward_gradient_max_abs_difference": 2.384185791015625e-07,
+    "loaded_optimizer_model_scheduler_bitwise_equal": true,
+    "optimizer_scheduler_rng_resume": true,
+    "trainer_mid_epoch_resume": true,
+    "trainer_replay_device": "cpu"
+  },
+  "detanet_mto_global_gate": {
+    "cpu_gpu_max_abs": 1.341104507446289e-07,
+    "batch64_forward_backward_peak_bytes": 1278045184,
+    "adam_replay_roundoff_error": [
+      2.9802322387695312e-08,
+      2.9802322387695312e-08
+    ],
+    "next_backward_gradient_max_abs_difference": 2.384185791015625e-07,
+    "loaded_optimizer_model_scheduler_bitwise_equal": true,
+    "optimizer_scheduler_rng_resume": true,
+    "trainer_mid_epoch_resume": true,
+    "trainer_replay_device": "cpu"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "timestamp_utc": "2026-09-20T16:01:20.483131+00:00",
+  "scope": "DIAGNOSTIC_ONLY bug; main smoke unaffected",
+  "cause": "optimizer.load_state_dict may share CPU step tensors with the passed dictionary. D0 mutated the cached source step from 600 to 900 before D1 loaded it.",
+  "evidence": {
+    "D0_first_step": 601,
+    "invalid_D1_first_step": 901,
+    "invalid_D1_last_step": 1200,
+    "required_D1_first_step": 601
+  },
+  "unaffected": [
+    "main A/B/C trajectories and checkpoints",
+    "SVD diagnostics",
+    "D0",
+    "D2"
+  ],
+  "correction": "Fresh load from immutable on-disk main step600 for each diagnostic; deep copy optimizer state; assert preserved source and step. Rerun only invalid D1 for 300 steps.",
+  "invalid_results_preserved": "/data/run01/sczc698/xxy/MTO/experiments/detanet_original_mto_1k_20260920/reports/instrumented_v2_1299173/invalidated_D1_attempt_1299173"
+}

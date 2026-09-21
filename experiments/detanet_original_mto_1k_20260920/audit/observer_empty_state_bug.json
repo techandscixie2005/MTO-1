@@ -1,0 +1,6 @@
+{
+  "status": "FAILED_BEFORE_ANY_D1_OPTIMIZER_STEP",
+  "cause": "A has unused parameters. The first observer added empty optimizer-state dictionary entries by defaultdict lookup; the new counter guard must skip empty entries. Empty entries carry no moments and do not affect numerical updates.",
+  "fix": "Observer now uses state.get() without insertion; preserved checkpoints remain readable, counter checks only populated state; add unused-parameter regression test.",
+  "main_optimization_affected": false
+}

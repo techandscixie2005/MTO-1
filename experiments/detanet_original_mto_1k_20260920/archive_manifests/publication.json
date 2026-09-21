@@ -1,0 +1,67 @@
+{
+  "scope": "Complete existing experiment archive; no new scientific runs during publication",
+  "publication_date_local": "2026-09-21",
+  "timezone": "Asia/Shanghai",
+  "repository": "https://github.com/techandscixie2005/MTO-1",
+  "local_repository_base_sha": "cb40413b58ce01ae61bf42185ed1de16ace43f0b",
+  "remote_workspace": "/data/run01/sczc698/xxy/MTO/experiments/detanet_original_mto_1k_20260920",
+  "remote_snapshot_sha": "15af391115fb5179521397ea7f75b59153dac482",
+  "author_repository": "https://github.com/WeiHuQLU/DetaNet",
+  "author_sha": "4f92e643ab64651b91c4a1392cf389ddfd0d89f0",
+  "paper_archive_byte_identity_verified": false,
+  "executed_versions": {
+    "instrumented_main": "30d2a1a0142dd9de18820e9424240833c3916c7f",
+    "first_D1_isolation_fix": "c4c2cde911d61bc2111d0b3710683a0802c7535e",
+    "valid_D1_correction": "e15e3a8869bf848a151ffe3a1d81f14b0a00974d"
+  },
+  "payload_count": 508,
+  "payload_bytes": 1663093261,
+  "payload_inventory": "archive_manifests/remote_sha256.json",
+  "excluded_containers_or_runtime": [
+    ".git/",
+    "env/",
+    "__pycache__/",
+    ".pytest_cache/",
+    "deliverables/ (ZIP/tar packaging duplicates; payloads expanded and hashes retained)"
+  ],
+  "original_bundle_sha256": {
+    "evidence.zip": "d2ec17d3cae93f1c1e134ce8ca48281236064e2d33c59384cb82d2f79643919e",
+    "checkpoints.zip": "c4510a5edbff3139a0505490bced21b821c693edf1871a221571b47ab3865b96",
+    "github_supplement_20260921.tar.gz": "6a8729232fe14e64bbd273a5e9b3cc6dc1123a7e85f055d7769d8f475868560c"
+  },
+  "main_smoke": {
+    "detanet_original_uv": {
+      "best_normalized_mse": 0.25962525606155396,
+      "steps": 2000,
+      "passed": false
+    },
+    "detanet_mto_planned": {
+      "best_normalized_mse": 0.07572288066148758,
+      "steps": 170,
+      "passed": true
+    },
+    "detanet_mto_global_gate": {
+      "best_normalized_mse": 0.07499337941408157,
+      "steps": 160,
+      "passed": true
+    }
+  },
+  "formal_1k": {
+    "planned_fits": 15,
+    "submitted": 0,
+    "completed": 0,
+    "pending": 0,
+    "test_evaluated": false
+  },
+  "stage_complete": false,
+  "invalid_D1_weights_preserved": true,
+  "valid_D1_directory": "reports/D1_correction_1299178/D1",
+  "historical_root_results_same_protocol": false,
+  "scientific_limitations": [
+    "source_broadening_status=unknown",
+    "shared target grid adapted from 601 to 240",
+    "sigma=0.2 eV is an assumption",
+    "A failed required main smoke gate",
+    "training subset diagnostics do not establish generalization advantage"
+  ]
+}

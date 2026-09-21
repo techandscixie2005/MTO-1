@@ -1,0 +1,5 @@
+{
+  "traceback": "Traceback (most recent call last):\n  File \"/data/run01/sczc698/xxy/MTO/experiments/detanet_original_mto_1k_20260920/preflight.py\", line 225, in <module>\n    try:main()\n  File \"/data/run01/sczc698/xxy/MTO/experiments/detanet_original_mto_1k_20260920/preflight.py\", line 219, in main\n    assert not failures,'Formal training blocked by '+','.join(failures)\nAssertionError: Formal training blocked by smoke\n",
+  "job_id": "1298973",
+  "formal_training_allowed": false
+}

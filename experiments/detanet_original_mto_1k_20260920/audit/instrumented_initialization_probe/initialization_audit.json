@@ -1,0 +1,5522 @@
+{
+  "seed": 11,
+  "fresh_author_constructor_no_state_dict_loading": true,
+  "every_fresh_A_state_tensor_equal": true,
+  "constructor_rng_equal": true,
+  "initialization_call_sequence_equal": true,
+  "actual_initialization_calls": [
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/sparse.py",
+      "line": 153
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "normal_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 151
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/embedding.py",
+      "line": 65
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/sparse.py",
+      "line": 153
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "normal_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 151
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/radial_basis.py",
+      "line": 70
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/radial_basis.py",
+      "line": 70
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/edge_attention.py",
+      "line": 24
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/update.py",
+      "line": 34
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/update.py",
+      "line": 63
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/edge_attention.py",
+      "line": 24
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/update.py",
+      "line": 34
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/update.py",
+      "line": 63
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/edge_attention.py",
+      "line": 24
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/update.py",
+      "line": 34
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/update.py",
+      "line": 63
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_original_uv",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/sparse.py",
+      "line": 153
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "normal_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 151
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/embedding.py",
+      "line": 65
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/sparse.py",
+      "line": 153
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "normal_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 151
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/radial_basis.py",
+      "line": 70
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/radial_basis.py",
+      "line": 70
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/edge_attention.py",
+      "line": 24
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/update.py",
+      "line": 34
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/update.py",
+      "line": 63
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/edge_attention.py",
+      "line": 24
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/update.py",
+      "line": 34
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/update.py",
+      "line": 63
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/edge_attention.py",
+      "line": 24
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/update.py",
+      "line": 34
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/update.py",
+      "line": 63
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/sparse.py",
+      "line": 153
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "normal_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 151
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "normal_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 151
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "normal_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 151
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/normalization.py",
+      "line": 194
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "zeros_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 237
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "normal_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 151
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "normal_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 151
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "normal_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 151
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "zeros_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 237
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_planned",
+      "function": "normal_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 151
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/sparse.py",
+      "line": 153
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "normal_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 151
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/embedding.py",
+      "line": 65
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/sparse.py",
+      "line": 153
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "normal_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 151
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/radial_basis.py",
+      "line": 70
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/radial_basis.py",
+      "line": 70
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/edge_attention.py",
+      "line": 24
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/update.py",
+      "line": 34
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/update.py",
+      "line": 63
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/edge_attention.py",
+      "line": 24
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/update.py",
+      "line": 34
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/update.py",
+      "line": 63
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/edge_attention.py",
+      "line": 24
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/update.py",
+      "line": 34
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/update.py",
+      "line": 63
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/sparse.py",
+      "line": 153
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "normal_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 151
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "normal_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 151
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "normal_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 151
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/normalization.py",
+      "line": 194
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "zeros_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 237
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "normal_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 151
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "normal_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 151
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "normal_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 151
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "zeros_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 237
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "stage": "detanet_mto_global_gate",
+      "function": "normal_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 151
+    }
+  ],
+  "reference_A_calls": [
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/sparse.py",
+      "line": 153
+    },
+    {
+      "function": "normal_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 151
+    },
+    {
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/embedding.py",
+      "line": 65
+    },
+    {
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/sparse.py",
+      "line": 153
+    },
+    {
+      "function": "normal_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 151
+    },
+    {
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/radial_basis.py",
+      "line": 70
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/radial_basis.py",
+      "line": 70
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/edge_attention.py",
+      "line": 24
+    },
+    {
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/update.py",
+      "line": 34
+    },
+    {
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/update.py",
+      "line": 63
+    },
+    {
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/edge_attention.py",
+      "line": 24
+    },
+    {
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/update.py",
+      "line": 34
+    },
+    {
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/update.py",
+      "line": 63
+    },
+    {
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/edge_attention.py",
+      "line": 24
+    },
+    {
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/update.py",
+      "line": 34
+    },
+    {
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/update.py",
+      "line": 63
+    },
+    {
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "reset_parameters",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/modules/linear.py",
+      "line": 105
+    },
+    {
+      "function": "kaiming_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 406
+    },
+    {
+      "function": "uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 124
+    },
+    {
+      "function": "xavier_uniform_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 334
+    },
+    {
+      "function": "reset_parameters",
+      "file": "detanet_model/modules/acts.py",
+      "line": 17
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    },
+    {
+      "function": "constant_",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/nn/init.py",
+      "line": 208
+    }
+  ],
+  "common_backbone_equal": true,
+  "full_B_C_initial_state_equal": true,
+  "model_hashes": {
+    "detanet_original_uv": "a2ddcf17c14fb0b1159ffc48fb7305e1d1d9222e9a9c8c00859c7d516b7b63c9",
+    "detanet_mto_planned": "73aefa66cb6ef6deae0a20c505a7829f50b8e277ace7303b6d781afe3e99a113",
+    "detanet_mto_global_gate": "73aefa66cb6ef6deae0a20c505a7829f50b8e277ace7303b6d781afe3e99a113"
+  },
+  "source_hashes": {
+    "models.py": "b94b0825461cce313bf5938470958b3430408e9fc50b9de1ccfb590e1a37fee9",
+    "train.py": "3055d03b609de0c5bf07e129990a31a93722059e21bd2342b428b4952ed92811",
+    "protocol.json": "a547956946c895476e8807740d627f89e2c6ca523876eeae316203190b47d0ce"
+  },
+  "note": "Upstream constructors already perform resets/Xavier initialization after torch defaults; these are preserved. No project-wide apply(init) is added. MTO-specific initialization is unchanged."
+}

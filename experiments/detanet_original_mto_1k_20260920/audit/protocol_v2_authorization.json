@@ -1,0 +1,15 @@
+{
+  "timestamp_utc": "2026-09-20T15:14:46.210404+00:00",
+  "authorization": "User: 启动吧。 In context, activate proposed common 2000-step smoke and proceed to formal 1k only if every gate passes.",
+  "old_version": "detanet_original_mto_1k_v1",
+  "new_version": "detanet_original_mto_1k_v2_smoke2000",
+  "changes": {
+    "smoke_max_steps": [
+      600,
+      2000
+    ]
+  },
+  "unchanged": "architecture, initialization, optimizer, thresholds, 32 fixed TRAIN molecules, and all formal 1k settings",
+  "policy": "One fresh-initialization bounded attempt. Any failed arm blocks formal training; do not extend again.",
+  "previous_results": "/data/run01/sczc698/xxy/MTO/experiments/detanet_original_mto_1k_20260920/history/v1_preflight_1298973"
+}

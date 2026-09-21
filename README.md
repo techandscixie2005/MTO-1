@@ -1,5 +1,20 @@
 # MTO-1
 
+## 最新归档：原版 DetaNet UV–Vis / 规划 MTO / global-gate（2026-09-20～21）
+
+本次使用作者 **原版 DetaNet UV–Vis 模型**作为 A：128 通道、maxl=3、3 个 block、32 个 trainable Bessel 径向基、8 个 attention head；保留原版逐原子 `128→128→240` MLP、初始化与原子求和读出。B/C 共用同一完整骨干，分别接规划 MTO 和 global-gate 诊断消融。作者源码固定于 `4f92e643ab64651b91c4a1392cf389ddfd0d89f0`，许可证、独立 reference、数值等价日志和严格 checkpoint 加载记录均已归档。
+
+**当前是工程验收与训练子集冒烟/诊断结果，不是已完成的 1k 泛化对照。** 同一 32 个训练分子、seed=11、最多 2000 步主冒烟：A 最佳归一化 MSE **0.2596253（未过门槛）**，B **0.0757229（通过）**，C **0.0749934（通过）**。正式五种子 × 三分支 **0 次提交、0 次完成**；无本轮正式测试结果，无 `STAGE_COMPLETE`。不能据此声称 MTO 的泛化性能更好。
+
+- [本次完整说明、模型/协议/结果与文件导航](experiments/detanet_original_mto_1k_20260920/README.md)
+- [诊断结论与真实作业状态](experiments/detanet_original_mto_1k_20260920/DIAGNOSTIC_CONCLUSIONS.md)
+- [原版来源、兼容适配和逐层等价审计](experiments/detanet_original_mto_1k_20260920/SOURCE_AND_MODEL_AUDIT.md)
+- [主冒烟与优化器诊断曲线](experiments/detanet_original_mto_1k_20260920/reports/instrumented_v2_1299173/DIAGNOSTIC_REPORT.md)
+
+源目标经过共同 601→240 网格适配，源展宽尚未证实，MTO 的 sigma=0.2 eV 是披露的假设；作者 GitHub 版本与论文归档尚未验证逐字一致。因此本次称“原版模型代码/架构等价、目标网格适配”，不称论文全过程复现。下列旧实验的模型、参数量和完成标记仅适用于历史版本，与本次不同口径。
+
+## 历史归档：旧模型及 1k / 10k / full 结果
+
 QM9S 光谱预测：DetaNet 与状态条件化 MTO 的完整模型和实验代码。
 
 ## 模型

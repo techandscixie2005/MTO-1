@@ -1,0 +1,695 @@
+{
+  "sha": "4f92e643ab64651b91c4a1392cf389ddfd0d89f0",
+  "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/trees/4f92e643ab64651b91c4a1392cf389ddfd0d89f0",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82f927558a3dff0ea8c20858856e70779fd02c93",
+      "size": 3139,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/82f927558a3dff0ea8c20858856e70779fd02c93"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "541ad7130f7f2ee2eb394276af4d6eb20b305c7f",
+      "size": 1063,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/541ad7130f7f2ee2eb394276af4d6eb20b305c7f"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "945aabbca60053cddeeab2e885056c438c61d375",
+      "size": 1687,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/945aabbca60053cddeeab2e885056c438c61d375"
+    },
+    {
+      "path": "detanet.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0a65544b84ef2b009c5a877134eb3db17f380fb",
+      "size": 6566488,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/d0a65544b84ef2b009c5a877134eb3db17f380fb"
+    },
+    {
+      "path": "detanet_model",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "818f75001abec866bd871f1177a7decd963a546b",
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/trees/818f75001abec866bd871f1177a7decd963a546b"
+    },
+    {
+      "path": "detanet_model/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f68b2db540b256ec70342b2f81f0823924c3e004",
+      "size": 235,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/f68b2db540b256ec70342b2f81f0823924c3e004"
+    },
+    {
+      "path": "detanet_model/__pycache__",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0ad28303414b41f3a66ddf6b9c0d0065ca6a16e3",
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/trees/0ad28303414b41f3a66ddf6b9c0d0065ca6a16e3"
+    },
+    {
+      "path": "detanet_model/__pycache__/__init__.cpython-311.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3dd190ccd3cd1626a33851c2138e251f2e11e243",
+      "size": 533,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/3dd190ccd3cd1626a33851c2138e251f2e11e243"
+    },
+    {
+      "path": "detanet_model/__pycache__/__init__.cpython-38.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19ea9a06eb52dbc195dde9d6036e844b96402d6c",
+      "size": 431,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/19ea9a06eb52dbc195dde9d6036e844b96402d6c"
+    },
+    {
+      "path": "detanet_model/__pycache__/constant.cpython-311.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08acc0b55a93534a9c8e69ff1c2fdb9263f2ee9b",
+      "size": 2490,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/08acc0b55a93534a9c8e69ff1c2fdb9263f2ee9b"
+    },
+    {
+      "path": "detanet_model/__pycache__/constant.cpython-38.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc3b56ea8ca7e4e6ababc0c8f2f5291fc1f30895",
+      "size": 2546,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/cc3b56ea8ca7e4e6ababc0c8f2f5291fc1f30895"
+    },
+    {
+      "path": "detanet_model/__pycache__/detanet.cpython-311.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b2ea9ef3e1ed0faf9c34a83ece2ce49321b8602",
+      "size": 23282,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/3b2ea9ef3e1ed0faf9c34a83ece2ce49321b8602"
+    },
+    {
+      "path": "detanet_model/__pycache__/detanet.cpython-38.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fad4cd4d62b8bfb8a480948ebf7e79dc39fa7da8",
+      "size": 16015,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/fad4cd4d62b8bfb8a480948ebf7e79dc39fa7da8"
+    },
+    {
+      "path": "detanet_model/__pycache__/metrics.cpython-311.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d7e9ae0a800d88ff863a7896b040bafe4b45bb4c",
+      "size": 2674,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/d7e9ae0a800d88ff863a7896b040bafe4b45bb4c"
+    },
+    {
+      "path": "detanet_model/__pycache__/metrics.cpython-38.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e5d11abca5146a08e5083901beb564d6fa98aea",
+      "size": 1796,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/2e5d11abca5146a08e5083901beb564d6fa98aea"
+    },
+    {
+      "path": "detanet_model/__pycache__/model_loader.cpython-311.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5dee826191163fe4113ba2d562906a78cfd0d06",
+      "size": 11192,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/b5dee826191163fe4113ba2d562906a78cfd0d06"
+    },
+    {
+      "path": "detanet_model/__pycache__/model_loader.cpython-38.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f401a5ac8de67f483ff0a9dbc53d3cda5b523a1",
+      "size": 5111,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/1f401a5ac8de67f483ff0a9dbc53d3cda5b523a1"
+    },
+    {
+      "path": "detanet_model/__pycache__/spectra_simulator.cpython-311.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8460d167f4fbe747d970cd576da0353167c94004",
+      "size": 14898,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/8460d167f4fbe747d970cd576da0353167c94004"
+    },
+    {
+      "path": "detanet_model/__pycache__/spectra_simulator.cpython-38.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87aa554053d5b57980530ed2196dbf2fa775fa08",
+      "size": 8777,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/87aa554053d5b57980530ed2196dbf2fa775fa08"
+    },
+    {
+      "path": "detanet_model/constant.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfa7e558dbd44b2c824a03a7bc09e02527afba81",
+      "size": 3241,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/cfa7e558dbd44b2c824a03a7bc09e02527afba81"
+    },
+    {
+      "path": "detanet_model/detanet.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5bf440200b539a66beacc91c1ebaf7c266f46f6",
+      "size": 20754,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/a5bf440200b539a66beacc91c1ebaf7c266f46f6"
+    },
+    {
+      "path": "detanet_model/metrics.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa00acaf33239b403d30967684e0a135a04c1017",
+      "size": 1386,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/aa00acaf33239b403d30967684e0a135a04c1017"
+    },
+    {
+      "path": "detanet_model/model_loader.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9fc4767e1370057edff0d5eef78aecdc8970a08e",
+      "size": 12371,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/9fc4767e1370057edff0d5eef78aecdc8970a08e"
+    },
+    {
+      "path": "detanet_model/modules",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1a059ab6f578e79d73793ba599bb0ad2e1beed29",
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/trees/1a059ab6f578e79d73793ba599bb0ad2e1beed29"
+    },
+    {
+      "path": "detanet_model/modules/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1a0732bb96250885d9ba22a9a8b7c3269f1aa05",
+      "size": 306,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/b1a0732bb96250885d9ba22a9a8b7c3269f1aa05"
+    },
+    {
+      "path": "detanet_model/modules/__pycache__",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7a503cddda93cffdb79c18e73b0f89c475dd2bd9",
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/trees/7a503cddda93cffdb79c18e73b0f89c475dd2bd9"
+    },
+    {
+      "path": "detanet_model/modules/__pycache__/__init__.cpython-311.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30eb5ddfb8c20b4da77f030fbe02c3958d0a375b",
+      "size": 678,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/30eb5ddfb8c20b4da77f030fbe02c3958d0a375b"
+    },
+    {
+      "path": "detanet_model/modules/__pycache__/__init__.cpython-38.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8bb2637aac2ee76dc9d31cee172bfa8990509d1f",
+      "size": 557,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/8bb2637aac2ee76dc9d31cee172bfa8990509d1f"
+    },
+    {
+      "path": "detanet_model/modules/__pycache__/acts.cpython-311.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f9b67f861b2a9a2dcd186431a02793b1d150339",
+      "size": 4865,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/1f9b67f861b2a9a2dcd186431a02793b1d150339"
+    },
+    {
+      "path": "detanet_model/modules/__pycache__/acts.cpython-38.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1332a456504be134227f7b791357cbdb5f5207f4",
+      "size": 2833,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/1332a456504be134227f7b791357cbdb5f5207f4"
+    },
+    {
+      "path": "detanet_model/modules/__pycache__/block.cpython-311.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6cc0222eaedb16bbad78ca80ebe6e44af294f525",
+      "size": 1798,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/6cc0222eaedb16bbad78ca80ebe6e44af294f525"
+    },
+    {
+      "path": "detanet_model/modules/__pycache__/block.cpython-38.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "329edef6470a0b907e62984aa395d19052ec57c7",
+      "size": 1223,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/329edef6470a0b907e62984aa395d19052ec57c7"
+    },
+    {
+      "path": "detanet_model/modules/__pycache__/datas.cpython-38.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8cbe2377a2902e32f20216fdd8fc4bbdd5a78515",
+      "size": 1237,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/8cbe2377a2902e32f20216fdd8fc4bbdd5a78515"
+    },
+    {
+      "path": "detanet_model/modules/__pycache__/edge_attention.cpython-311.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33322de76ebb09de8c52cfedecfdd6720f92dc1d",
+      "size": 5480,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/33322de76ebb09de8c52cfedecfdd6720f92dc1d"
+    },
+    {
+      "path": "detanet_model/modules/__pycache__/edge_attention.cpython-38.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d813c03535868bef395119368f4c3d8ffd9bcf4c",
+      "size": 2358,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/d813c03535868bef395119368f4c3d8ffd9bcf4c"
+    },
+    {
+      "path": "detanet_model/modules/__pycache__/embedding.cpython-311.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb936ff4f6fec5a89067f573ba19a878bea52d3f",
+      "size": 7304,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/cb936ff4f6fec5a89067f573ba19a878bea52d3f"
+    },
+    {
+      "path": "detanet_model/modules/__pycache__/embedding.cpython-38.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "431208495e66d8d6afc05ededd5710a5afa9b1cc",
+      "size": 3299,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/431208495e66d8d6afc05ededd5710a5afa9b1cc"
+    },
+    {
+      "path": "detanet_model/modules/__pycache__/message.cpython-311.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f4ef642e8a8e69f6d46138e83f95d47be75e3ba",
+      "size": 2428,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/2f4ef642e8a8e69f6d46138e83f95d47be75e3ba"
+    },
+    {
+      "path": "detanet_model/modules/__pycache__/message.cpython-38.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "69b5c403252b4761b43a05744495ac7bf74e730b",
+      "size": 1466,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/69b5c403252b4761b43a05744495ac7bf74e730b"
+    },
+    {
+      "path": "detanet_model/modules/__pycache__/multilayer_perceptron.cpython-311.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41b91c89574e5239e67766073f0d8b017ea36079",
+      "size": 4620,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/41b91c89574e5239e67766073f0d8b017ea36079"
+    },
+    {
+      "path": "detanet_model/modules/__pycache__/multilayer_perceptron.cpython-38.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8976b7ebea992726395e6c5ebc334aa2e06c69a3",
+      "size": 2401,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/8976b7ebea992726395e6c5ebc334aa2e06c69a3"
+    },
+    {
+      "path": "detanet_model/modules/__pycache__/output.cpython-38.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9cd3a62f343197257dfe71c11d0ad181e9be3005",
+      "size": 3584,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/9cd3a62f343197257dfe71c11d0ad181e9be3005"
+    },
+    {
+      "path": "detanet_model/modules/__pycache__/radial_basis.cpython-311.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da425259a828954a7642c48193c18527484588d6",
+      "size": 8021,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/da425259a828954a7642c48193c18527484588d6"
+    },
+    {
+      "path": "detanet_model/modules/__pycache__/radial_basis.cpython-38.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b4c1f9aac685fed76db005d1ec2a230366a018a",
+      "size": 4221,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/6b4c1f9aac685fed76db005d1ec2a230366a018a"
+    },
+    {
+      "path": "detanet_model/modules/__pycache__/update.cpython-311.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9eca8b03a2d6053da8456663edca7650886dc03",
+      "size": 6230,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/f9eca8b03a2d6053da8456663edca7650886dc03"
+    },
+    {
+      "path": "detanet_model/modules/__pycache__/update.cpython-38.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6da5b7d41eb489203647fe828cb2f1802dcc39fe",
+      "size": 2992,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/6da5b7d41eb489203647fe828cb2f1802dcc39fe"
+    },
+    {
+      "path": "detanet_model/modules/acts.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "242f2d670fa2887bd94b1ef0b9e8607ff0fabb34",
+      "size": 1889,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/242f2d670fa2887bd94b1ef0b9e8607ff0fabb34"
+    },
+    {
+      "path": "detanet_model/modules/block.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eaf06583a3dca2324dbad2a69bcf90605f2f7171",
+      "size": 1008,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/eaf06583a3dca2324dbad2a69bcf90605f2f7171"
+    },
+    {
+      "path": "detanet_model/modules/edge_attention.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ccf686b30ce7dd05f5f7d86d7ddcabeac2633088",
+      "size": 2754,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/ccf686b30ce7dd05f5f7d86d7ddcabeac2633088"
+    },
+    {
+      "path": "detanet_model/modules/embedding.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05353663ed2075185f9ce637094d73585b74acba",
+      "size": 4311,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/05353663ed2075185f9ce637094d73585b74acba"
+    },
+    {
+      "path": "detanet_model/modules/message.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2266970e5dae98d112dbff57244c5bae3961ecc7",
+      "size": 2020,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/2266970e5dae98d112dbff57244c5bae3961ecc7"
+    },
+    {
+      "path": "detanet_model/modules/multilayer_perceptron.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b14a8da13600134a5f7bad0d768cbe8f7e8a3988",
+      "size": 2237,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/b14a8da13600134a5f7bad0d768cbe8f7e8a3988"
+    },
+    {
+      "path": "detanet_model/modules/radial_basis.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83791d599dcb11d87dbba20039df7da48964dca4",
+      "size": 4178,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/83791d599dcb11d87dbba20039df7da48964dca4"
+    },
+    {
+      "path": "detanet_model/modules/update.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "642c893f8319bd74152e6f9dfdf85474a8be24b9",
+      "size": 3719,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/642c893f8319bd74152e6f9dfdf85474a8be24b9"
+    },
+    {
+      "path": "detanet_model/spectra_simulator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e39e40d8672cbeb7642903ab5c24b9de1a120268",
+      "size": 9886,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/e39e40d8672cbeb7642903ab5c24b9de1a120268"
+    },
+    {
+      "path": "detanet_supp.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eee636387777a461148b15869a357253190da493",
+      "size": 3628324,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/eee636387777a461148b15869a357253190da493"
+    },
+    {
+      "path": "example_calculate_properties_and_spectra.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "701b494a9ba307bafa18528dbc48d5b6f302dd31",
+      "size": 315319,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/701b494a9ba307bafa18528dbc48d5b6f302dd31"
+    },
+    {
+      "path": "example_fig_1.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "628dbed8db13bbda045e4e0862ead9389c458959",
+      "size": 4286675,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/628dbed8db13bbda045e4e0862ead9389c458959"
+    },
+    {
+      "path": "example_fig_2.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b0ff0d1069e33a3ce7271c797f868ff33e06f4e",
+      "size": 4319602,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/0b0ff0d1069e33a3ce7271c797f868ff33e06f4e"
+    },
+    {
+      "path": "example_load_dataset_and_training_model.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61991b2cc8100f680a0beff6b9c94716f1cafb20",
+      "size": 268559,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/61991b2cc8100f680a0beff6b9c94716f1cafb20"
+    },
+    {
+      "path": "trained_param",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "15ccdb9cadb3efd0f978b0c8c6428123dfc20012",
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/trees/15ccdb9cadb3efd0f978b0c8c6428123dfc20012"
+    },
+    {
+      "path": "trained_param/qm7x",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7c53010f390e7a1d79002e97f6d992c063d56bbd",
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/trees/7c53010f390e7a1d79002e97f6d992c063d56bbd"
+    },
+    {
+      "path": "trained_param/qm7x/c6.pth",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4da090a0020edef926ef498018c62ea9351a182a",
+      "size": 5751499,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/4da090a0020edef926ef498018c62ea9351a182a"
+    },
+    {
+      "path": "trained_param/qm7x/energy.pth",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd4a64d5cddb88053fed61463e1a27a07143e439",
+      "size": 5751499,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/cd4a64d5cddb88053fed61463e1a27a07143e439"
+    },
+    {
+      "path": "trained_param/qm7x/force.pth",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "191f5cdd7ecca17d51294d9ae10beccab0e1dd81",
+      "size": 5751499,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/191f5cdd7ecca17d51294d9ae10beccab0e1dd81"
+    },
+    {
+      "path": "trained_param/qm7x/hcharge.pth",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a20ed63a0632b9d081b6d43cb033d1de7fd59b1",
+      "size": 5751499,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/5a20ed63a0632b9d081b6d43cb033d1de7fd59b1"
+    },
+    {
+      "path": "trained_param/qm7x/inertia_tensor.pth",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ef9bdd13488c0e3f3f9415a6690c1a43eb9c72a",
+      "size": 5822527,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/6ef9bdd13488c0e3f3f9415a6690c1a43eb9c72a"
+    },
+    {
+      "path": "trained_param/qm9nmr",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e4f69179cf8da1431e9257a8bbee9242232a77f7",
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/trees/e4f69179cf8da1431e9257a8bbee9242232a77f7"
+    },
+    {
+      "path": "trained_param/qm9nmr/shield_iso.pth",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d50e9ca670304f8eadb573afb377e61b8b9a4c6f",
+      "size": 5747403,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/d50e9ca670304f8eadb573afb377e61b8b9a4c6f"
+    },
+    {
+      "path": "trained_param/qm9nmr/shield_iso_c.pth",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ee67180da8cc1d68dc30a392820912dc8563520",
+      "size": 5747403,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/6ee67180da8cc1d68dc30a392820912dc8563520"
+    },
+    {
+      "path": "trained_param/qm9nmr/shield_iso_h.pth",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5e6c698a5a11918f95da4774b4468f5675eb3f8",
+      "size": 5747403,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/e5e6c698a5a11918f95da4774b4468f5675eb3f8"
+    },
+    {
+      "path": "trained_param/qm9nmr/shield_iso_n.pth",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5f34b3642b4ebf8d88ca0242a241c66dd0c61a5",
+      "size": 5747403,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/d5f34b3642b4ebf8d88ca0242a241c66dd0c61a5"
+    },
+    {
+      "path": "trained_param/qm9nmr/shield_iso_o.pth",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c96f3b19af096814a8494849fe2c845e07a612ce",
+      "size": 5747403,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/c96f3b19af096814a8494849fe2c845e07a612ce"
+    },
+    {
+      "path": "trained_param/qm9spectra",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "54e44414ca59ceec897c8d573e6a53e036e6541b",
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/trees/54e44414ca59ceec897c8d573e6a53e036e6541b"
+    },
+    {
+      "path": "trained_param/qm9spectra/Hi.pth",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae13c4feac40ff7a9e32d0ebde936e178ad70713",
+      "size": 5747403,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/ae13c4feac40ff7a9e32d0ebde936e178ad70713"
+    },
+    {
+      "path": "trained_param/qm9spectra/Hij.pth",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee79b9276460708b40d60555e7d5c7d09e10828b",
+      "size": 5747403,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/ee79b9276460708b40d60555e7d5c7d09e10828b"
+    },
+    {
+      "path": "trained_param/qm9spectra/borden_os.pth",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7adf03ed51e8645060c2869dc3d0e625343b3efb",
+      "size": 5870731,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/7adf03ed51e8645060c2869dc3d0e625343b3efb"
+    },
+    {
+      "path": "trained_param/qm9spectra/dedipole.pth",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aac7bcdcdc53aeb66f1ae691181c9a3436d15c66",
+      "size": 5816895,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/aac7bcdcdc53aeb66f1ae691181c9a3436d15c66"
+    },
+    {
+      "path": "trained_param/qm9spectra/depolar.pth",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfbe03524c9db057e2a35a0b4f6a6a0d8b998055",
+      "size": 5818431,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/dfbe03524c9db057e2a35a0b4f6a6a0d8b998055"
+    },
+    {
+      "path": "trained_param/qm9spectra/dipole.pth",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "686bf34d4c9c3ca04389714b94ea81d722e1beb9",
+      "size": 5816895,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/686bf34d4c9c3ca04389714b94ea81d722e1beb9"
+    },
+    {
+      "path": "trained_param/qm9spectra/hyperpolar.pth",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40448a11d5a8b9dff33a6afbccbc8f54f5c24784",
+      "size": 5887039,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/40448a11d5a8b9dff33a6afbccbc8f54f5c24784"
+    },
+    {
+      "path": "trained_param/qm9spectra/npacharge.pth",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c38155d9ff3b4e8f2575b786a28cdf58881bc8a",
+      "size": 5747403,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/7c38155d9ff3b4e8f2575b786a28cdf58881bc8a"
+    },
+    {
+      "path": "trained_param/qm9spectra/octapole.pth",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1aaa1c842b06843fa26a66660ca8b454d3ef3b0d",
+      "size": 5887039,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/1aaa1c842b06843fa26a66660ca8b454d3ef3b0d"
+    },
+    {
+      "path": "trained_param/qm9spectra/polar.pth",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4827dce634367bb8060aaa37377eb5b7f86037c",
+      "size": 5818431,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/a4827dce634367bb8060aaa37377eb5b7f86037c"
+    },
+    {
+      "path": "trained_param/qm9spectra/quadrupole.pth",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27defd63941d62e57f61fe37beb7deb2c070d789",
+      "size": 5818431,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/27defd63941d62e57f61fe37beb7deb2c070d789"
+    },
+    {
+      "path": "trained_param/qm9spectra/tran_dipole.pth",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48546296569c946d15efdf2bceb5a6de55cd4f32",
+      "size": 5826175,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/48546296569c946d15efdf2bceb5a6de55cd4f32"
+    },
+    {
+      "path": "trained_param/qm9spectra/tran_energy.pth",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "811ac0e4602954b92d4cf8323073d730b666080e",
+      "size": 5752011,
+      "url": "https://api.github.com/repos/WeiHuQLU/DetaNet/git/blobs/811ac0e4602954b92d4cf8323073d730b666080e"
+    }
+  ],
+  "truncated": false
+}

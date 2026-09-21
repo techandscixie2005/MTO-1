@@ -1,0 +1,12 @@
+/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+Traceback (most recent call last):
+  File "/data/run01/sczc698/xxy/MTO/experiments/detanet_original_mto_1k_20260920/audit/rerun_D1_isolated.py", line 26, in <module>
+    result=optimizer_diagnostics(models[VARIANTS[0]],cfg,data['train'][:32],info,'cuda',source,out,modes=('D1',))
+  File "/data/run01/sczc698/xxy/MTO/experiments/detanet_original_mto_1k_20260920/smoke_diagnostics.py", line 380, in optimizer_diagnostics
+    if mode!='D2':assert all(float(s['step'])==600 for s in after['state'].values())
+  File "/data/run01/sczc698/xxy/MTO/experiments/detanet_original_mto_1k_20260920/smoke_diagnostics.py", line 380, in <genexpr>
+    if mode!='D2':assert all(float(s['step'])==600 for s in after['state'].values())
+KeyError: 'step'

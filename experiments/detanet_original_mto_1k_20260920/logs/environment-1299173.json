@@ -1,0 +1,45 @@
+{
+  "python": "3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:45:41) [GCC 13.3.0]",
+  "executable": "/data/run01/sczc698/xxy/MTO/experiments/detanet_original_mto_1k_20260920/env/bin/python",
+  "node": "g0056",
+  "job_id": "1299173",
+  "cuda": "12.1",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "tf32_matmul": false,
+  "tf32_cudnn": false,
+  "tensor_product_signature": "(irreps_in1: e3nn.o3._irreps.Irreps, irreps_in2: e3nn.o3._irreps.Irreps, irreps_out: e3nn.o3._irreps.Irreps, instructions: List[tuple], in1_var: Union[List[float], torch.Tensor, NoneType] = None, in2_var: Union[List[float], torch.Tensor, NoneType] = None, out_var: Union[List[float], torch.Tensor, NoneType] = None, irrep_normalization: str = None, path_normalization: str = None, internal_weights: Optional[bool] = None, shared_weights: Optional[bool] = None, compile_left_right: bool = True, compile_right: bool = False, normalization=None, _specialized_code: Optional[bool] = None, _optimize_einsums: Optional[bool] = None)",
+  "packages": {
+    "torch": {
+      "version": "2.3.0+cu121",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch/__init__.py"
+    },
+    "e3nn": {
+      "version": "0.4.4",
+      "file": "/data/run01/sczc698/xxy/MTO/experiments/detanet_original_mto_1k_20260920/env/lib/python3.10/site-packages/e3nn/__init__.py"
+    },
+    "torch_geometric": {
+      "version": "2.6.1",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch_geometric/__init__.py"
+    },
+    "torch_scatter": {
+      "version": "2.1.2+pt23cu121",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch_scatter/__init__.py"
+    },
+    "torch_cluster": {
+      "version": "1.6.3+pt23cu121",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/torch_cluster/__init__.py"
+    },
+    "numpy": {
+      "version": "2.2.6",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/numpy/__init__.py"
+    },
+    "scipy": {
+      "version": "1.15.2",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/scipy/__init__.py"
+    },
+    "rdkit": {
+      "version": "2024.03.2",
+      "file": "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/rdkit/__init__.py"
+    }
+  }
+}

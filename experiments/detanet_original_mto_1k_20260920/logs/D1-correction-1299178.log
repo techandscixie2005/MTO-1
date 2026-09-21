@@ -1,0 +1,8 @@
+/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+INSTRUMENTED DIAGNOSTIC_ONLY D1 700 0.6119624376296997 0.6119624376296997
+INSTRUMENTED DIAGNOSTIC_ONLY D1 800 0.5297335386276245 0.5297335386276245
+INSTRUMENTED DIAGNOSTIC_ONLY D1 900 0.475651353597641 0.47195297479629517
+CORRECTED_D1_COMPLETE /data/run01/sczc698/xxy/MTO/experiments/detanet_original_mto_1k_20260920/reports/D1_correction_1299178 BEST 0.47195297479629517 LAST {'raw_mse': 0.00028701766622422144, 'normalized_mse': 0.47565139713757865, 'prediction_rms': 0.01938937571431006, 'target_rms': 0.021570587161766405, 'scaling_identity_abs_error': 1.1102230246251565e-16, 'trainer_normalized_mse_fp32': 0.47565141320228577}

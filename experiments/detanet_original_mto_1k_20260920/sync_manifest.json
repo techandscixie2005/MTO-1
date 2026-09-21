@@ -1,0 +1,142 @@
+[
+  {
+    "Path": "planning\\EXPERIMENT_PLAN.md",
+    "Bytes": 7232,
+    "SHA256": "0a3b2fe9aaf6547296c550b97f8041aac8cc400642779666bf3dcc47e2d45982"
+  },
+  {
+    "Path": "planning\\MTO_核心思想与数学基础.md",
+    "Bytes": 6565,
+    "SHA256": "ac228b84bb032bc11a983c5250c440847f97b664aa6e444782cfc02d18636014"
+  },
+  {
+    "Path": "planning\\MTO-UV_课题总纲_化学期刊定位版_2026-09-10.md",
+    "Bytes": 85246,
+    "SHA256": "b3008dd2d570cfa6fa23064edd8328a4d1f8ba043ee89a646830dfdf8b241896"
+  },
+  {
+    "Path": "planning\\prior_fullarch_models.py",
+    "Bytes": 11554,
+    "SHA256": "ff68ba8d22ad9f23f6f6e582417ac7f55f46eab8f44cf16f1f844d33bef50de6"
+  },
+  {
+    "Path": "reference\\COMMIT_SHA",
+    "Bytes": 42,
+    "SHA256": "715a4c7d7aff2fe249075b60a1b53b064db8ee3dc4a42eaf768a4a28eb5f37a1"
+  },
+  {
+    "Path": "reference\\detanet_supp.pdf",
+    "Bytes": 3628324,
+    "SHA256": "f3f50679b5d3a768dd78f801812ceb56ab335b29b0fd1712df7fe8fcff580c72"
+  },
+  {
+    "Path": "reference\\detanet.pdf",
+    "Bytes": 6566488,
+    "SHA256": "6e278016c6798c618328ada7ca978c9b9c7113bf081fe196275f27a9bf0172e2"
+  },
+  {
+    "Path": "reference\\example_calculate_properties_and_spectra.ipynb",
+    "Bytes": 315319,
+    "SHA256": "f4825ac2eee1e534e6051947e3d0a2059b925e2dc9854daa9f4850c406df6077"
+  },
+  {
+    "Path": "reference\\example_load_dataset_and_training_model.ipynb",
+    "Bytes": 268559,
+    "SHA256": "2af17b56c27a97a1e2b2024e4e63d31a30159c181264f295f889f9f00d5b3ac2"
+  },
+  {
+    "Path": "reference\\git-tree.json",
+    "Bytes": 27378,
+    "SHA256": "0d13ad257d70f944c129255f701664bb20ac76818b9c35bf67f5c11e301534cb"
+  },
+  {
+    "Path": "reference\\LICENSE",
+    "Bytes": 1063,
+    "SHA256": "7be03b0862ebaa2bc1bb7e858ee97973038993e3c1acf347100acc5b27bc1a52"
+  },
+  {
+    "Path": "reference\\README.md",
+    "Bytes": 1687,
+    "SHA256": "b8f330437c96fd330a8b6d3106949b955131cfb9ea57dfa20f7c397ee21c5223"
+  },
+  {
+    "Path": "reference\\detanet_model\\__init__.py",
+    "Bytes": 235,
+    "SHA256": "8fe70f55031182c1d0012945907181ecc85278f7849599e15e3a16939fae67f1"
+  },
+  {
+    "Path": "reference\\detanet_model\\constant.py",
+    "Bytes": 3241,
+    "SHA256": "1c3a8f9058ba6890c2f6730241136b35a552235b41f812288ce9cbdcc42ec856"
+  },
+  {
+    "Path": "reference\\detanet_model\\detanet.py",
+    "Bytes": 20754,
+    "SHA256": "4083382f2d615d1573b9dbc2d2c456d00f9895d4dae144b6c62b26feff6eebcd"
+  },
+  {
+    "Path": "reference\\detanet_model\\metrics.py",
+    "Bytes": 1386,
+    "SHA256": "677630dd1b97c7474c2f8a4cdda81d7e0f2a56a12dfd4b02bbb869329af4fec2"
+  },
+  {
+    "Path": "reference\\detanet_model\\model_loader.py",
+    "Bytes": 12371,
+    "SHA256": "85507209b15efea567e686f4d99cf3be53dbf3779607d4b33e295d52c44505b3"
+  },
+  {
+    "Path": "reference\\detanet_model\\spectra_simulator.py",
+    "Bytes": 9886,
+    "SHA256": "cb36131b7dc855cd2c528d532f4d7742fc2da757d078e8732142dbeab4f0b67e"
+  },
+  {
+    "Path": "reference\\detanet_model\\modules\\__init__.py",
+    "Bytes": 306,
+    "SHA256": "032b99150e38283d3695b394175d792c370be7dbbe38b58b94971143de9446de"
+  },
+  {
+    "Path": "reference\\detanet_model\\modules\\acts.py",
+    "Bytes": 1889,
+    "SHA256": "6bcd255ac95b33e6ef6a982d87c8dd6b39c2f1a41996f2425c5ada1f0fe8256c"
+  },
+  {
+    "Path": "reference\\detanet_model\\modules\\block.py",
+    "Bytes": 1008,
+    "SHA256": "38eb81b385fded74ac4ff3950ee2cbe6e7c7e7cc0873ec57ede64ef758460e35"
+  },
+  {
+    "Path": "reference\\detanet_model\\modules\\edge_attention.py",
+    "Bytes": 2754,
+    "SHA256": "48a69aa9a83cfe225f8e55eeea4bab65120955aee2dc7ad02d414aef7b4e2fea"
+  },
+  {
+    "Path": "reference\\detanet_model\\modules\\embedding.py",
+    "Bytes": 4311,
+    "SHA256": "07eff3330b5709fec463563d4ef53f857525ae85f55b8a3ab1e7c9ffb3c70ee8"
+  },
+  {
+    "Path": "reference\\detanet_model\\modules\\message.py",
+    "Bytes": 2020,
+    "SHA256": "a76bae58dbb92447d6fb05230d7db826dc9defc929706e6f2c88c067ee5918cf"
+  },
+  {
+    "Path": "reference\\detanet_model\\modules\\multilayer_perceptron.py",
+    "Bytes": 2237,
+    "SHA256": "5628a4cebadbbc493058edae808a64370ee2834fa4ccacc041f820bf9afb4d42"
+  },
+  {
+    "Path": "reference\\detanet_model\\modules\\radial_basis.py",
+    "Bytes": 4178,
+    "SHA256": "cbbbf125bdb4b64e21a4d58ddb175bde489bb7a640375847f416f137881307ca"
+  },
+  {
+    "Path": "reference\\detanet_model\\modules\\update.py",
+    "Bytes": 3719,
+    "SHA256": "65cda1be8fd5daa491779211ba37ec9c23b73e4a2da81444d21534584c0028a6"
+  },
+  {
+    "Path": "reference\\trained_param\\qm9spectra\\borden_os.pth",
+    "Bytes": 5870731,
+    "SHA256": "2a692db7acc4e208e1b57e79dea1b2b69cdd9eb473159d8c3d7bed293556226b"
+  }
+]

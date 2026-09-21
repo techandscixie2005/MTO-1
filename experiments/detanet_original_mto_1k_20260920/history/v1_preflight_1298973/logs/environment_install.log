@@ -1,0 +1,12 @@
+Collecting e3nn==0.4.4
+  Downloading e3nn-0.4.4-py3-none-any.whl (387 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 387.7/387.7 kB 1.1 MB/s eta 0:00:00
+Installing collected packages: e3nn
+  Attempting uninstall: e3nn
+    Found existing installation: e3nn 0.5.6
+    Not uninstalling e3nn at /data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages, outside environment /data/run01/sczc698/xxy/MTO/experiments/detanet_original_mto_1k_20260920/env
+    Can't uninstall 'e3nn'. No files were found to uninstall.
+Successfully installed e3nn-0.4.4
+
+[notice] A new release of pip is available: 23.0.1 -> 26.2.1
+[notice] To update, run: /data/run01/sczc698/xxy/MTO/experiments/detanet_original_mto_1k_20260920/env/bin/python -m pip install --upgrade pip

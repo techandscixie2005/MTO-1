@@ -1,0 +1,45 @@
+{
+  "workspace": "/data/run01/sczc698/xxy/MTO/experiments/detanet_original_mto_1k_20260920",
+  "ssh_alias": "bjhpc",
+  "preflight_attempts": [
+    {
+      "job_id": 1298912,
+      "status": "FAILED",
+      "exit_code": "1:0",
+      "node": "g0041",
+      "reason": "test assumption on upstream CUDA radius neighbor boundary; original model unchanged"
+    },
+    {
+      "job_id": 1298941,
+      "status": "FAILED",
+      "command": "sbatch --parsable jobs/preflight.slurm",
+      "exit_code": "1:0",
+      "node": "g0024",
+      "reason": "FP32 distance-reference self-loop assumption; six model tests and GPU64 passed"
+    },
+    {
+      "job_id": 1298945,
+      "status": "FAILED",
+      "command": "sbatch --parsable jobs/preflight.slurm",
+      "node": "g0045",
+      "observed_at": "2026-09-20T13:43:30.288589+00:00",
+      "exit_code": "1:0",
+      "reason": "GPU model tests passed; post-step optimizer moment equality failed, now separated from exact checkpoint restoration and checked against actual Adam gradients"
+    },
+    {
+      "job_id": 1298973,
+      "status": "FAILED",
+      "node": "g0006",
+      "command": "sbatch --parsable jobs/preflight.slurm",
+      "observed_at": "2026-09-20T13:52:45.049698+00:00",
+      "exit_code": "1:0",
+      "elapsed": "00:07:25",
+      "reason": "Only smoke gate failed: A best normalized MSE 0.748221 > 0.1 after 600 steps; B/C passed; resume/oracle/model tests passed"
+    }
+  ],
+  "formal_training_jobs": [],
+  "maximum_gpus": 2,
+  "formal_fits_completed": 0,
+  "test_evaluations": 0,
+  "stage_complete": false
+}

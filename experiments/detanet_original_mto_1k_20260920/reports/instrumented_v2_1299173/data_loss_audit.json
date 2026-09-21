@@ -1,0 +1,60 @@
+{
+  "ids": [
+    20983,
+    103070,
+    71681,
+    69573,
+    6549,
+    40049,
+    92896,
+    90098,
+    63735,
+    33096,
+    63152,
+    131250,
+    20522,
+    62248,
+    54436,
+    69843,
+    17937,
+    133358,
+    43301,
+    121762,
+    39141,
+    117029,
+    12577,
+    40096,
+    127790,
+    110262,
+    131161,
+    26447,
+    56748,
+    103101,
+    120179,
+    64675
+  ],
+  "target_shape": [
+    32,
+    240
+  ],
+  "target_sha256": "84955eba9650e806379046b9b466eb86239fbe337a971d4326deebbbe81e9ac4",
+  "targets_equal_ordered_stack": true,
+  "train_count": 800,
+  "train_rms": 0.024564612974391966,
+  "train_rms_recomputed_float64": 0.024564612974391966,
+  "zero_spectrum": {
+    "raw_mse": 0.00046529023050336166,
+    "normalized_mse": 0.771088243887035,
+    "prediction_rms": 0.0,
+    "target_rms": 0.021570587161766405,
+    "scaling_identity_abs_error": 1.1102230246251565e-16
+  },
+  "pointwise_common_mean_spectrum": {
+    "raw_mse": 0.000279611066763257,
+    "normalized_mse": 0.46337703288679427,
+    "prediction_rms": 0.013626414192299624,
+    "target_rms": 0.021570587161766405,
+    "scaling_identity_abs_error": 0.0
+  },
+  "interpretation": "Both trivial baselines fit/evaluate only the same 32 TRAIN molecules; zero normalized MSE is not assumed to be 1."
+}

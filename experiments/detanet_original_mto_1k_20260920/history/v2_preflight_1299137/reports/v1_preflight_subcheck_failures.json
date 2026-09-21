@@ -1,0 +1,3 @@
+{
+  "smoke": "Traceback (most recent call last):\n  File \"/data/run01/sczc698/xxy/MTO/experiments/detanet_original_mto_1k_20260920/preflight.py\", line 214, in main\n    try:fn()\n  File \"/data/run01/sczc698/xxy/MTO/experiments/detanet_original_mto_1k_20260920/preflight.py\", line 213, in <lambda>\n    ('smoke',lambda:smoke(cfg,data,info,'cuda'))]:\n  File \"/data/run01/sczc698/xxy/MTO/experiments/detanet_original_mto_1k_20260920/preflight.py\", line 199, in smoke\n    assert all(v['passed'] for v in results.values()),'32-molecule smoke gate failed; formal training forbidden'\nAssertionError: 32-molecule smoke gate failed; formal training forbidden\n"
+}

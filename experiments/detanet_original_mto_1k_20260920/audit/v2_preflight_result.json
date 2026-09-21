@@ -1,0 +1,88 @@
+{
+  "protocol": "detanet_original_mto_1k_v2_smoke2000",
+  "job": {
+    "job_id": 1299137,
+    "status": "FAILED",
+    "protocol": "detanet_original_mto_1k_v2_smoke2000",
+    "command": "sbatch --parsable jobs/preflight.slurm",
+    "submitted_utc": "2026-09-20T15:16:01.838841+00:00",
+    "fresh_initialization": true,
+    "common_smoke_max_steps": 2000,
+    "node": "g0017",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "code_sha": "9bf982df5bf03551fc3faf8ce878a9634fd59fd7",
+    "log": "logs/preflight-1299137.log",
+    "observed_utc": "2026-09-20T15:27:12.910790+00:00",
+    "exit_code": "1:0",
+    "elapsed": "00:09:20",
+    "reason": "Only A failed the authorized 2000-step smoke: best normalized MSE 0.2664241493 > 0.1. B and C passed. CPU/GPU numerical tests, oracle, resume and batch64 checks passed."
+  },
+  "acceptance": {
+    "cpu_float64": {
+      "success": true,
+      "tests": 7,
+      "seconds": 17.865312814712524,
+      "sha256": "4e43ed9882ce6ea0ccd748944047ef66a0a67bca0751be3c8efabf5ca930d350"
+    },
+    "cuda_float64": {
+      "success": true,
+      "tests": 7,
+      "seconds": 29.81156301498413,
+      "sha256": "a602a4061560c1d9319ad4b4f8c6ebbecdc5f2d512e0677e3e9d400c347c1ef5"
+    },
+    "cuda_float32": {
+      "success": true,
+      "tests": 7,
+      "seconds": 23.443078756332397,
+      "sha256": "f0a386084470f5ed012fa26ab3833d9aaf77dc2a5bf5704477f35497fc1fb213"
+    }
+  },
+  "smoke": {
+    "detanet_original_uv": {
+      "initial": 33109.1953125,
+      "best": 0.26642414927482605,
+      "ratio": 8.046832511638862e-06,
+      "steps": 2000,
+      "passed": false,
+      "seconds": 101.57219005003572
+    },
+    "detanet_mto_planned": {
+      "initial": 0.932563066482544,
+      "best": 0.09824815392494202,
+      "ratio": 0.10535282540784716,
+      "steps": 170,
+      "passed": true,
+      "seconds": 12.087822198867798,
+      "diagnostics": {
+        "gate_saturation": 0.0,
+        "energy_range": [
+          3.1558997631073,
+          14.496000289916992
+        ],
+        "effective_states": 9.5,
+        "tensor_rms": 0.03726176172494888,
+        "beta_rms": 0.16871488094329834
+      }
+    },
+    "detanet_mto_global_gate": {
+      "initial": 0.922178328037262,
+      "best": 0.09906617552042007,
+      "ratio": 0.10742626725057582,
+      "steps": 150,
+      "passed": true,
+      "seconds": 10.941977497190237,
+      "diagnostics": {
+        "gate_saturation": 0.0,
+        "energy_range": [
+          1.890212059020996,
+          13.3316650390625
+        ],
+        "effective_states": 9.0,
+        "tensor_rms": 0.04385880380868912,
+        "beta_rms": 0.1609916239976883
+      }
+    }
+  },
+  "formal_training_submitted": false,
+  "stage_complete": false
+}

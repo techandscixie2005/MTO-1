@@ -1,0 +1,38 @@
+{
+  "initial": {
+    "step": 0,
+    "recorded_loss": 33109.1953125,
+    "recomputed_loss": 33109.1953125,
+    "abs_difference": 0.0,
+    "strict_model_and_optimizer_restore": true,
+    "checkpoint_sha256": "401df1f22dce9a57520bb5bac44ac36a6e9ef59db05b62f4800ba928d14cca40",
+    "model_hash": "a2ddcf17c14fb0b1159ffc48fb7305e1d1d9222e9a9c8c00859c7d516b7b63c9"
+  },
+  "step600": {
+    "step": 600,
+    "recorded_loss": 0.7488481402397156,
+    "recomputed_loss": 0.7488482594490051,
+    "abs_difference": 1.1920928955078125e-07,
+    "strict_model_and_optimizer_restore": true,
+    "checkpoint_sha256": "9f8c191d2bbeb0aa48ed50957ee20be0ce369c90505ec7d992ad76598b3da422",
+    "model_hash": "76699386a8820c73faf8ecac4e3327359b237c170914506c0a815c7b67c32b38"
+  },
+  "best": {
+    "step": 2000,
+    "recorded_loss": 0.25962525606155396,
+    "recomputed_loss": 0.25962522625923157,
+    "abs_difference": 2.9802322387695312e-08,
+    "strict_model_and_optimizer_restore": true,
+    "checkpoint_sha256": "c2f37855dc7beb795b1e6e41ccc9a3bc8a8506d873f8e9f90145041cfc866e09",
+    "model_hash": "c9786ef35e86632d5f615088dd6ce861ebe09df95df5bc255a3136e01938bdbd"
+  },
+  "last": {
+    "step": 2000,
+    "recorded_loss": 0.25962522625923157,
+    "recomputed_loss": 0.25962522625923157,
+    "abs_difference": 0.0,
+    "strict_model_and_optimizer_restore": true,
+    "checkpoint_sha256": "eef086d5128c52cf3ee99a4d3e5d8aa80fefa9c84a7f2aa2d1f053fc56b9d62b",
+    "model_hash": "c9786ef35e86632d5f615088dd6ce861ebe09df95df5bc255a3136e01938bdbd"
+  }
+}

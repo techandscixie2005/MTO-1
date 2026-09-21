@@ -1,0 +1,16 @@
+env/
+__pycache__/
+**/__pycache__/
+logs/
+runs/
+reports/
+data/*.gz
+data/*.npy
+reference/trained_param/
+reference/*.png
+reference/*.txt
+*.tmp.*
+
+history/
+
+deliverables/

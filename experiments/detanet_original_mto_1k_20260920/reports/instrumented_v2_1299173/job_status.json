@@ -1,0 +1,18 @@
+{
+  "job_id": 1299173,
+  "status": "FAILED",
+  "protocol": "detanet_original_mto_1k_v2_smoke2000",
+  "kind": "instrumented_main_smoke_plus_DIAGNOSTIC_ONLY",
+  "command": "sbatch --parsable jobs/preflight_instrumented.slurm",
+  "code_sha": "30d2a1a0142dd9de18820e9424240833c3916c7f",
+  "submitted_utc": "2026-09-20T15:47:49.096792+00:00",
+  "log": "logs/instrumented-1299173.log",
+  "node": "g0056",
+  "observed_utc": "2026-09-20T16:00:22.653890+00:00",
+  "exit_code": "1:0",
+  "elapsed": "00:10:21",
+  "reason": "All engineering and bounded diagnostics completed; main A best MSE 0.259625256 > 0.1 after 2000 steps, so formal training remains blocked.",
+  "diagnostics_completed": true,
+  "diagnostics_directory": "/data/run01/sczc698/xxy/MTO/experiments/detanet_original_mto_1k_20260920/reports/instrumented_v2_1299173",
+  "max_rss_KiB": 5446636
+}

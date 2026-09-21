@@ -1,0 +1,829 @@
+nature computational science
+
+Brief Communication                                                                                  https://doi.org/10.1038/s43588-023-00550-y
+
+
+A deep learning model for predicting
+selected organic molecular spectra
+
+Received: 27 May 2023                              Zihan Zou1, Yujin Zhang         1
+                                                                                         , Lijun Liang2, Mingzhi Wei1, Jiancai Leng1,
+                                                   Jun Jiang 3,4 , Yi Luo          4,5
+                                                                                           & Wei Hu 1
+Accepted: 6 October 2023
+
+Published online: xx xx xxxx
+                                                   Accurate and efficient molecular spectra simulations are crucial for
+   Check for updates                               substance discovery and structure identification. However, the conventional
+                                                   approach of relying on the quantum chemistry is cost intensive, which
+                                                   hampers efficiency. Here we develop DetaNet, a deep-learning model
+                                                   combining E(3)-equivariance group and self-attention mechanism to
+                                                   predict molecular spectra with improved efficiency and accuracy. By passing
+                                                   high-order geometric tensorial messages, DetaNet is able to generate a wide
+                                                   variety of molecular properties, including scalars, vectors, and second- and
+                                                   third-order tensors—all at the accuracy of quantum chemistry calculations.
+                                                   Based on this we developed generalized modules to predict four important
+                                                   types of molecular spectra, namely infrared, Raman, ultraviolet–visible, and
+                                                   1
+                                                    H and 13C nuclear magnetic resonance, taking the QM9S dataset containing
+                                                   130,000 molecular species as an example. By speeding up the prediction
+                                                   of molecular spectra at quantum chemical accuracy, DetaNet could help
+                                                   progress toward real-time structural identification using spectroscopic
+                                                   measurements.
+
+
+Molecular spectroscopy, a collection of techniques for capturing the         structure–property and structure–spectroscopic relationships from
+electronic or vibrational ‘fingerprint’ of molecules, is widely used in      reference data without invoking computationally demanding elec-
+many scientific fields including physics, chemistry, biology, materi-        tronic structure calculations. For instance, a multilayer perceptron
+als, medicine, food, environmental studies, astronomy, meteorology,          and convolutional neural network model has been developed3 for
+chemical engineering and substance discovery. Usually, rapid and             predicting molecular electronic-excitation spectra. A machine learn-
+accurate theoretical prediction plays an important role in identifying       ing protocol that uses structural descriptors to rapidly predict amide
+molecular structure from such experimentally measured spectroscopic          infrared (IR), ultraviolet–visible (UV-Vis) and electronic circular dichro-
+fingerprints. Until now, quantum chemical simulations have given the         ism spectra of various proteins has also been presented4. A machine
+most accurate spectral predictions. However, this method requires            learning framework has been developed5 to probe the electronic state
+extensive electronic structure calculations on hundreds of thousands of      properties based on molecular orbital image. A deep learning approach
+‘trial’ molecules, thus limiting the usefulness of quantum chemistry in      has been used6 to study the complex spectroscopic changes that occur
+applications requiring real-time spectral identification. A cost-effective   in cross-linked polyethylene pipe. An evolutional deep-learning algo-
+theoretical approach that can precisely predict molecular spectra is         rithm (HDNNP)7, whereby the local (within a cutoff radius, Rc) chemical
+highly desirable.                                                            environment has been used in a neural network to predict molecular
+      Deep-learning methods have gained increasing popularity for            properties from atomic contributions. Recently, message-passing neu-
+predicting molecular properties1,2, by learning and later predicting         ral networks8–12 (MPNNs) have been developed that have the advantage
+
+
+1
+ School of Chemistry and Chemical Engineering, Qilu University of Technology (Shandong Academy of Science), Jinan, China. 2College of Automation,
+Hangzhou Dianzi University, Hangzhou, China. 3Key Laboratory of Precision and Intelligent Chemistry, School of Chemistry and Materials Science,
+University of Science and Technology of China, Hefei, China. 4Hefei National Laboratory, University of Science and Technology of China, Hefei, China.
+5
+  Hefei National Research Center for Physical Sciences at the Microscale, University of Science and Technology of China, Hefei, China.
+   e-mail: zhangyujin@qlu.edu.cn; jiangj1@ustc.edu.cn; yiluo@ustc.edu.cn; weihu@qlu.edu.cn
+
+
+Nature Computational Science
+Brief Communication                                                                                 https://doi.org/10.1038/s43588-023-00550-y
+
+of permutation invariance. They treat atoms and bonds (or interatomic       forces, but with poor accuracy and at high cost. Here we propose an
+distances) as graphs and propagate messages of atoms and chemical           algorithm for calculating Hessian matrices. As shown in Fig. 1a, the
+environments in combination. The tensor field neural network model13        Hessian matrix is divided into an atomic tensor Hi and an interatomic ten-
+uses inter-atomic position vectors as features to predict vector prop-      sor Hij, for which training and prediction are conducted separately, and are
+erties (for instance, atomic forces) at low computational cost while        calculated as:
+maintaining rotational and translational equivariance.
+      Here, we developed a deep equivariant tensor attention network                                            ∂2 si                      ∂2 si
+                                                                                                Hi = ∑          ⇀    ⇀
+                                                                                                                               Hij =      ⇀ ⇀
+                                                                                                                                                                                 (1)
+                                                                                                          j
+(DetaNet, Extended Data Figs. 1 and 2) based on the E(3)-equivariant                                          ∂ r j ∂ r Ti               ∂ r j ∂ r Ti
+MPNN framework14,15, to describe molecular properties that are invari-
+ant and equivariant to rotation, translation and reflection. By pass-              ⇀        ⇀
+ing higher order tensorial messages between atoms, DetaNet uses             where r i and r j represent the coordinates of central atoms i and neigh-
+structural features to rapidly predict scalars (for example, energy         boring atoms j involved in the interaction layers, si is the output scalar
+and partial charges), vectors (for example, electric dipole and atomic      properties and T represents the transpose operation.
+forces), second-order tensors (for example, Hessian matrix, quadru-              Figure 1b compares DetaNet predictions with DFT calculations
+pole moment and polarizability) and third-order tensors (for example,       for the Hessian matrices. The absolute error of Hessian matrix values
+octupole moment and first hyperpolarizability) with high accuracy.          is only 0.073 eV Å−2, achieving an accuracy
+                                                                                                                      ⇀
+                                                                                                                         of 99.94%. The vibrational
+Derived from these, DetaNet includes modules to predict IR absorp-          frequencies ω and normal coordinates P are calculated by diagonal-
+tion, Raman scattering, UV-Vis absorption, and 1H and 13C nuclear           izing the Hessian matrix. Further, the IR and Raman intensities can be
+magnetic resonance (NMR) spectra. Based on the widely used QM9              calculated based on the partial derivatives of the dipole moment μ and
+(ref. 16) dataset consisting of 130,000 organic molecules, DetaNet          polarizability tensor α with respect to the normal coordinates:
+predicted UV-Vis spectra with high (92%) accuracy, and IR, Raman,
+                                                                                            2                                        2                    2
+and NMR spectra with over 99% accuracy. Importantly, this method                       ∂μ             (ω−ωin )
+                                                                                                                4
+                                                                                                                             ∂αiso             ∂αaniso              1
+                                                                               IIR ∝ ( ⇀ ) IRaman ∝                 (45(       ⇀     ) + 7(        ⇀     ) )            −hcω
+improves the prediction efficiency of spectra by three to five orders                  ∂P                ω                   ∂P                  ∂P            1−exp(
+                                                                                                                                                                         KT
+                                                                                                                                                                             )
+of magnitude compared with traditional quantum chemical methods                                                                                                              (2)
+employing density functional theory (DFT). Moreover, the results
+demonstrate transferability both to molecules with different size           where ωin and ω represents the frequency of the incident and scatter-
+and when considering varying environments such as applied electric          ing light in cm−1, h and K are the Planck and Boltzmann constants,
+fields, solvents and surface adsorption, which will further expand the      respectively, T is the temperature and c is the speed of light; ɑiso and
+real-time application of DetaNet in various spectra.                        ɑaniso are the isotropic and anisotropic parts of the polarizability. The
+                                                                            whole process of calculating the vibrational spectra is illustrated in
+Results and discussion                                                      Extended Data Fig. 5. As shown in Fig. 1c,d, the derivatives of the dipole
+Property prediction                                                         moment and polarizability predicted by DetaNet agree very well with
+Based on 130,000 organic molecules extracted from the QM9 dataset,          the DFT reference data.
+we performed geometrical re-optimization and spectral simulations                 Taking cyclohexanone and 2-methylpyrazine from the evalua-
+to construct the QM9S dataset (see ‘Reference data’ section in Meth-        tion set and caffeine from the QM9S dataset as examples (Fig. 1e), we
+ods). Combining QM9S with the partial QM7-X17 dataset (20 randomly          tested the performance of DetaNet’s calculations of their IR and Raman
+selected configurations for each molecule from the dynamic sam-             spectra. As shown in Fig. 1f,g, the IR and Raman spectra predicted by
+pling), we tested the accuracy with which DetaNet predicts molecular        DetaNet are almost identical to the results of the DFT calculations
+equivariant and invariant properties. Note that an ablation experi-         and fit the experimental spectra well. Spearman coefficients were
+ment should be performed first to test the impact of each module and        calculated to assess the accuracy of DetaNet’s reproduction of the DFT-
+obtain the optimal parameters for DetaNet (Extended Data Fig. 3). We        simulated vibration spectra. For the 6,500 molecules in the evaluation
+then calculated mean absolute error (MAE) and the root mean square          sets, average Spearman coefficients for the IR and Raman spectra were
+error (RMSE) to assess the error between DetaNet and the reference          99.42% and 99.14%, respectively, demonstrating the high accuracy
+data; coefficient of determination (R2) was used to indicate prediction     of DetaNet.
+accuracy. As shown in Extended Data Fig. 4, DetaNet achieves extremely
+high accuracy for scalars (energy and natural population charge),           UV-Vis and NMR spectroscopy
+vectorial properties (atomic forces and electric dipole moment) and         The standard algorithm for simulating UV-Vis spectra requires estima-
+second-order tensorial properties (electric quadrupole and polar-           tion of absorption energies and transition dipole moments. We found
+izability), with R2 greater than 99.9%. The energy and atomic forces        DetaNet performs well in predicting absorption energies, but poorly
+were learned from the QM7-X dataset because these properties play           in oscillator strength as it is based only on ground state structures
+important roles in geometrical optimization and molecular dynamics.         (Supplementary Section 4). As a result, we used an alternative method
+Furthermore, we predicted the third-order tensorial properties electric     to directly predict the broad UV-Vis spectra over the range 1.5–13.5 eV
+octupole and first hyperpolarizability with R2 accuracies of 97.03% and     (92–827 nm). As shown in Fig. 2e, the DetaNet-predicted UV-Vis spectra
+99.40%, respectively. Many other typical quantum chemical properties        of five representative molecules (cyclohexanone, 2-methylpyrazine,
+were also predicted precisely by DetaNet using QM9 and QM7-X data           hepta-3,5-diyn-2-one, aniline and 5-methoxy-1,3-oxazole-2-carbalde-
+(Supplementary Table 1).                                                    hyde; structures are shown in Fig. 2d) are almost identical to the DFT
+                                                                            results. Moreover, we found the MAE for the DetaNet-predicted absorp-
+Vibrational spectroscopy                                                    tion strengths compared to DFT results was less than 0.012 a.u., with an
+Combining the precise equivariant property-prediction capabilities          R2 of approximately 92.04% (Fig. 2a), demonstrating DetaNet’s accuracy
+of DetaNet with the harmonic oscillator approximation, we developed         for simulating UV-Vis spectra.
+standard approaches to predict molecular vibrational spectra. The                 For NMR spectra, we predicted the isotropic magnetic shielding
+training and prediction of a Hessian matrix in deep learning is difficult   tensors for hydrogen, carbon, nitrogen and oxygen atoms and the
+because calculating second-order cross-partial derivatives in exist-        corresponding chemical shift values. As shown in Fig. 2f,g, the DetaNet-
+ing frameworks is computationally expensive. Alternatively, a few           predicted 13C and 1H NMR spectra of the five representative molecules
+previous studies18,19 predicted the Hessian matrix by training atomic       were extremely close to the DFT reference data. Notably, the MAE of
+
+
+Nature Computational Science
+Brief Communication                                                                                                                                                                                                                        https://doi.org/10.1038/s43588-023-00550-y
+
+
+ a                                                                                    b                                                                                                c                                                                                              d
+                                                                                                                                      Interatomic part
+                          H             O               H                                                                150          Atomic part
+                                                                                                                                                                                                             10
+                                                                                                                                                                                                                                                                                                    200
+
+
+
+
+                                                                                                                                                                                                                                                                      DetaNet predictions (a0 Å )
+                                                                                          DetaNet predictions (eV Å )
+
+
+
+
+                                                                                                                                                                                                                                                                     –1
+                                                                                                                                                                                DetaNet predictions (D Å )
+                                                                                      –2
+                          y              y
+
+
+
+
+                                                                                                                                                                                –1
+                      x        z   x           z    x   y   z
+                                                                                                                        100
+
+
+
+
+                                                                                                                                                                                                                                                                     3
+                  x                                                                                                                                                                                                                                                                                  100
+                                                                                                                                                                                                              5
+    H y                                                                                                                  50
+                  z                                                                                                                                                                                                                                                                                   0
+                                                                                                                                                                                                              0
+                  x                                                                                                       0
+   O y                                                            Interatomic part
+                                                                                                                                                                                                             –5                                                                                     –100
+                  z                                                                                                     –50                                                                                                                                                                                                                        3     –1
+                                                                                                                                                                           –2                                                          MAE = 0.01811 (D Å )
+                                                                                                                                                                                                                                                               –1
+                                                                                                                                                                                                                                                                                                                              MAE = 0.20127 (a0 Å )
+                                                                                                                                                MAE = 0.07296 (eV Å )
+      x                                                                                                                                                             –2
+                                                                                                                                                                                                                                                         –1
+                                                                                                                                                                                                                                      RMSE = 0.02675 (D Å )
+                                                                                                                                                                                                                                                                                                                                                3 –1
+                                                                                                                                                                                                                                                                                                                             RMSE = 0.30870 (a0 Å )
+                                                                                                                                                RMSE = 0.12311 (eV Å )                                                                                                                              –200
+    H y                                                                                                                 –100
+                                                                                                                                                      2
+                                                                                                                                                                                                             –10
+                                                                                                                                                                                                                                            2
+                                                                                                                                                                                                                                           R = 0.99943
+                                                                                                                                                                                                                                                                                                                                    2
+                                                                                                                                                                                                                                                                                                                                  R = 0.99710
+                                                                                                                                                    R = 0.99940
+                  z
+                                                                                                                               –100    –50      0      50    100     150                                              –10       –5     0         5        10                                                  –200     –100      0     100         200
+                              Hessian matrix                            Atomic part
+                                                                                                                                                                                                                                                     –1                                                                                 3     –1
+                                                                                                                                      DFT references (eV Å )
+                                                                                                                                                              –2
+                                                                                                                                                                                                                              DFT references (D Å )                                                                  DFT references (a0 Å )
+
+ e
+                                                                                                                                                                                                                                                                                                                                                   H
+
+                                                                                                                                                                                                                                                                                                                                                   C
+                                                                                                                                                                                                                                                                                                                                                   N
+
+                                                                                                                                                                                                                                                                                                                                                   O
+
+
+  f
+                                                                                                                                                                                                                                                                                                                                        DFT
+                                                                                                                                                                                                                                                                                                                                        DetaNet
+                                                                                                                                                                                                                                                                                                                                        Exp.
+IR intensity
+
+
+
+
+           500            1,000        1,500        2,000       2,500     3,000   3,500                                 4,000 500       1,000       1,500    2,000     2,500                                  3,000         3,500    4,000 500        1,000         1,500                             2,000      2,500        3,000   3,500        4,000
+                                                                    –1                                                                                                                   –1                                                                                                                             –1
+                                                   Frequency (cm )                                                                                          Frequency (cm )                                                                                                                          Frequency (cm )
+
+g
+                                                                                                                                                                                                                                                                                                                                        DFT
+                                                                                                                                                                                                                                                                                                                                        DetaNet
+                                                                                                                                                                                                                                                                                                                                        Exp.
+Raman intensity
+
+
+
+
+           500            1,000        1,500        2,000       2,500     3,000   3,500                                 4,000 500       1,000       1,500    2,000         2,500                              3,000         3,500    4,000 500        1,000         1,500                             2,000      2,500        3,000   3,500        4,000
+                                                                    –1                                                                                                                    –1                                                                                                                            –1
+                                                   Frequency (cm )                                                                                          Frequency (cm )                                                                                                                          Frequency (cm )
+
+Fig. 1 | DetaNet-predicted IR and Raman spectra and their comparison with                                                                                                  structures of cyclohexanone (left), 2-methylpyrazine (middle) and caffeine
+DFT reference and experimental data. a, Schematic diagram for calculating                                                                                                  (right). f, Comparison of the DetaNet-predicted IR spectra to DFT simulations
+the Hessian matrix taking water as an example, where x, y and z represent                                                                                                  and experimental observations for the molecules shown in e. g, Comparison
+the Cartersian coordinates of each atom. b, Regression plots of the DetaNet-                                                                                               of the DetaNet-predicted Raman spectra to DFT simulations and experimental
+predicted atomic and interatomic parts of the Hessian matrix. c, Regression                                                                                                observations at a temperature of 298 K and Raman excitation at 500 nm for
+plots of the DetaNet-predicted derivatives of dipole moment. d, Regression                                                                                                 cyclohexanone (left), 2-methylpyrazine (middle) and Raman excitation at 532 nm
+plots of the DetaNet-predicted derivatives of polarizability. e, Schematic                                                                                                 for caffeine (right).
+
+
+
+
+the DetaNet-predicted 13C NMR shift was 0.5203 ppm (R2 = 0.9997),                                                                                                      Transferability
+much better than the MAE of 1.92 ppm produced previously by FCHL20.                                                                                                    We tested DetaNet’s transferability by varying molecular types, sizes
+Moreover, DetaNet also precisely simulated 1H NMR spectra, with an                                                                                                     and geometries. We randomly selected 5,500 organic molecules
+MAE of 0.054 ppm (R2 = 0.9985; Fig. 2b). Calculation of t-distributed                                                                                                  from the PubChem database22 and found DetaNet and DFT obtain
+stochastic neighbor embedding (t-SNE)21 of the 128-dimensional latent                                                                                                  almost identical IR and Raman spectra even for large molecules
+space into a 2D space for hydrogen atoms in different chemical environ-                                                                                                not included in QM9S. Moreover, we used both implicit (such
+ments provides a visual assessment of DetaNet’s ability to learn NMR                                                                                                   as electric field or polarizable continuum) and explicit models
+spectra. The well-separated and tight clusters shown in Fig. 2c for the                                                                                                (such as explicit water environment or adsorbed on metal
+100,000 hydrogen atoms with the eight different hydrogen environ-                                                                                                      surface) to introduce molecular deformation and found DetaNet
+ments demonstrate that DetaNet can accurately and faithfully simulate                                                                                                  could also reproduce the IR/Raman spectra of distorted molecules
+the chemical environment and thus precisely predict NMR spectra.                                                                                                       (Supplementary Section 5).
+
+
+Nature Computational Science
+Brief Communication                                                                                                                                                              https://doi.org/10.1038/s43588-023-00550-y
+
+
+   a                                                                                                                                            c
+                                0.018
+                                                                                                                             MAE
+Strength error (a.u.)
+
+
+
+
+                                                                                                                             RMSE                                                                                               R                          O
+                                                                                                                        2
+                                0.012                                                                                  R = 0.9203
+                                                                                                                                                                                                                        R       CH                   R     CH
+
+                                                                                                                                                                                                                                R
+                           0.006
+
+
+                                                                                                                                                                                                                                R
+                                       0
+                                                                                                                                                                                                                                                     R         NH
+                                                                                                                                                                                                                        R       CH
+                                           100             200               300                  400                  500
+                                                                            Wavelength (nm)
+   b
+                                   2.5
+                                                                                                                                   MAE
+                                                                                                                                                                                                                        R       CH                       ROH
+                 NMR error (ppm)
+
+
+
+
+                                                                                                                                   RMSE
+                                   2.0
+
+                                   1.5
+
+                                   1.0                                                                                                                                                                                          OH
+
+                                                                                                                                                                                                                                                     R     NH
+                                   0.5                                                                                                                                                                                  R       CH
+
+                                                                                                                                                                                                                                                           R
+                                                                                                                                                                                                                                R
+
+                                                      H                C                 N              O                All
+
+   d                                                                                                                                                                                                                                                           H
+
+                                                                                                                                                                                                                                                               C
+
+                                                                                                                                                                                                                                                               N
+
+                                                                                                                                                                                                                                                               O
+
+   e
+  Strength (a.u.)
+
+
+
+
+                              0.4
+
+
+                              0.2
+
+
+                                   0
+                                       100        200           300        400     100        200           300          400       100     200            300        400   100    200           300        400   100    200               300        400
+                                                                                                                                           Wavelength (nm)
+
+   f
+                                   3
+              C NMR intensity
+
+
+
+
+                                   2
+
+
+                                   1
+            13
+
+
+
+
+                                   0
+                                       0         50       100        150   200     0         50       100        150         200   0      50        100        150   200   0     50       100        150   200   0     50           100        150       200
+
+                                                                                                                                           NMR shift (ppm)
+
+   g
+                                   4
+            H NMR intensity
+
+
+
+
+                                   3
+
+                                   2
+
+                                   1
+          1
+
+
+
+
+                                   0
+                                       0              4          8          12     0              4          8                12   0            4          8          12   0          4          8          12   0          4              8              12
+                                                                                                                                               NMR shift (ppm)
+
+Fig. 2 | Performance of DetaNet in predicting UV-Vis and NMR spectra.                                                                               3,5-diyn-2-one, aniline and 5-methoxy-1,3-oxazole-2-carbaldehyde. e, Comparison
+a, Absorption strength prediction error as a function of wavelength. b, Prediction                                                                  of the DetaNet-predicted (red) UV-Vis spectra with reference data (blue) for the
+error of NMR shielding for different elements. c, Visualization of feature                                                                          molecules shown in d. f, Comparison of the DetaNet-predicted 13C NMR spectra
+vectors of hydrogen atoms in different chemical environments created with t-SNE.                                                                    with reference data for the molecules shown in d. g, Comparison of the DetaNet-
+d, Left to right, schematic structures of cyclohexanone, 2-methylpyrazine, hepta-                                                                   predicted 1H NMR spectra with reference data for the molecules shown in d.
+
+
+
+
+Computational efficiency                                                                                                                            used in DetaNet greatly accelerates simulation efficiency. For example,
+We tested the computational efficiency of DetaNet on both a CPU                                                                                     the average times for simulating one vibrational spectrum in a batch
+(Intel-i7 8700K) and a GPU (NVIDIA RTX 3080Ti). As shown in Extended                                                                                of 16 are 0.23 s and 0.059 s on the CPU and GPU devices, respectively;
+Data Fig. 6a, the average prediction times for vibrational, UV-Vis and                                                                              these times are fourfold and eightfold faster than the simulation time
+NMR spectra using DetaNet on a CPU device were 0.98 s, 0020 s and                                                                                   for a single molecule. Moreover, the time consumed by DetaNet is
+0.029 s, respectively; these are about 103, 105 and 104 times faster than                                                                           merely linearly proportional to the number of atoms contained in
+the traditional DFT (Gaussian 16 B.01; ref. 23) calculations. DetaNet                                                                               the molecule (shown as the blue line in Extended Data Fig. 6b). By
+efficiency is improved further when the GPU is used, as shown in                                                                                    contrast, the computational cost of a conventional DFT calculation
+Extended Data Fig. 6a. Furthermore, the batch prediction strategy                                                                                   scales cubically with the number of electrons. Thus, DetaNet has a
+
+
+Nature Computational Science
+Brief Communication                                                                                     https://doi.org/10.1038/s43588-023-00550-y
+
+great advantage when simulating spectra of large molecules compared          where xm  l,p
+                                                                                           ∈ ℝ(2l+1)×Fin is any input feature with degree l and parity p; ℝ
+with DFT calculations.                                                       is the set of real numbers; W, Wl,p ∈ ℝFin ×Fout and b ∈ ℝFout are the learnable
+     Overall, DetaNet accelerates the property calculation and spectra       weight matrices and biases; φ is a non-linear activation function; and
+simulations by three to five orders compared with traditional quantum        Fin and Fout are the dimensions of the input and output features. Wl,p
+chemistry, indicating its potential application in high-throughput           varies depending on the degree l and parity p, while sharing the weight
+screening processes such as catalyst design and drug discovery. How-         matrices of different order m of the same degree l and parity p. The bias
+ever, the usage of DFT results as the benchmark also limits the accuracy     b and activation function φ are non-equivariant and act only on scalar
+of DetaNet. Moreover, DetaNet predicts molecular properties and              but not on irreps features. Further, the first layer of the embedding and
+spectra based on the static geometries and harmonic approximation,           radial embedding modules does not use bias and activation functions
+resulting the anharmonic effects are ignored. Even though, the vector        and is only used to map feature dimensions.
+and high-order tensor prediction capability of DetaNet allow to develop           A multilayer perceptron (MLP) was used at the end of the model
+the deep-learning models to simulate some other spectra such as x-ray        to obtain the molecular property outputs:
+spectra, electronic circular dichroism, phosphorescence and fluo-
+rescence spectra. Furthermore, we could also develop deep-learning                                       MLP (x) = LNl ( ⋯ L2 (L1 (x)) )                       (7)
+methods for the molecular geometrical optimization, transition state
+search and molecular dynamic simulations based on the DetaNet-               where Nl is the number of linear layers in the MLP. The last layer of
+predicted energy, atomic force and Hessian matrix.                           the MLP is used for output properties; thus no bias or activations are
+                                                                             included.
+Methods
+Reference data                                                               DetaNet architecture
+We constructed the QM9S dataset using 130,000 organic molecules              DetaNet takes as inputs atomic numbers {Z1 , ⋯ ZN |Zi ∈ℕ} and
+                                                                                                       ⇀       ⇀ ⇀
+based on the QM9 dataset. First, we re-optimized molecular geometries        Cartesian coordinates { r 1 , ⋯ r N | r i ∈ ℝ3 } specifying the element identity
+using the Gaussian16 package (B.01 version)23 at the B3LYP/def-TZVP          and position of each atom in a molecule. Similar to previous MPNNs,
+level of theory24,25. Then the molecular properties including scalars        DetaNet builds structure–property relationships using interaction
+(for example, energy, partial charges), vectors (for example, electric       layers that are defined in terms of ResNet-style message functions and
+dipole), second-order tensors (for example, Hessian matrix, quadru-          update functions (Extended Data Fig. 1a). Unlike most previous MPNNs,
+pole moment, polarizability) and third-order tensors (for example,           DetaNet’s atomic feature for node i at hidden state n is expressed as an
+octupole moment, first hyperpolarizability) were calculated at the           irreducible representation (irreps) tensor Tn,m         i,l,p
+                                                                                                                                           , where the integers
+same level. The frequency analysis and time-dependent DFT were car-          l ∈ 0, 1, 2, 3 ⋯ and m ∈ [−l.l] specify the rotation degree and order of the
+ried out at the same level to obtain the IR, Raman and UV-Vis spectra.       irreps tensor, and p ∈ [−1, 1] indicates even or odd parity. The special
+All these calculated molecular properties and spectra are collected in       case when l = 0 and p = 1 represents the scalar features S0i that are
+the QM9S dataset.                                                            treated separately in DetaNet. Initially the atomic irreps features T0,m        i,l,p
+      Apart from the QM9S, we used other reference data from the             are set to zero and the initial scalar features S0i are obtained from the
+literature and databases. For example, we the QM9-NMR dataset26              embedding layer (Extended Data Fig. 1b):
+developed to train the 1H and 13C NMR prediction module. The QM7-X17
+dataset including molecular dynamics sampling structures for 7,211                                    S0i = Lemb (Lz (O(Zi )) + LQ (Q(Zi )))                   (8)
+molecules was used to enable DetaNet to accurately learn the geom-
+etries that deviate from global or local minima. Here only 20 configu-       where O(Zi) is the commonly used one-hot feature, representing
+rations randomly selected from the molecular dynamics sampling are           nuclear types. Q(Zi ) represents the inherent electronic structure of an
+used for each molecule. For every dataset, we selected 90%, 5% and           isolated atom (Supplementary Table 3). The learnable linear layers Lz
+5% of molecules as the training, test and evaluation sets, respectively.     and LQ map the nuclear and electronic features to the F-dimensional
+                                                                             atomic features, while Lemb integrates the two parts.
+E(3) equivariance                                                                 As shown in Extended Data Fig. 1c, the message module generates
+Given a set of transformations that act on a vector space X as Tg ∶ X → X    the atomic message for atom i using the Sni from the upper layer and
+                                                                                                   ⇀    ⇀     ⇀
+to which we associate an abstract group G, a function ϕe ∶ X → Y is said     the position vector r ij = r j − r i of all neighboring atoms j within an Rc.
+                                                                                                                              ⇀
+to be equivariant with respect to G if                                       To be specific, the absolute distance r = ‖ r ij ‖ is embedded as two dif-
+                                                                             ferent radial weights wk and wv (Extended Data Fig. 1d) for the next
+                  ϕe (Tg (x)) = Sg (ϕe (x))    g ∈ G, x ∈ X           (4)    self-attention module. Then the edge features eij are constructed
+                                                                             through a self-attention mechanism27 (Extended Data Fig. 1e):
+where Sg ∶ Y → Y is an equivalent transformation on the output space.
+                                                                                         Mq = LMq (Sni )    Mk = LMk (Snj ) ⋅ wk     Mv = LMv (Snj ) ⋅ wv
+By contrast, if the function has non-transformation on its output space
+as follows:                                                                                                                          T                         (9)
+                                                                                                                            Mq×Mk
+                                                                                                    eij = Lout (Softmax (                ) × Mv)
+                                                                                                                             √ℱ Mq
+                    ϕe (Tg (x)) = ϕe (x)      g ∈ G, x ∈ X            (5)
+                                                                             where Mq, Mk and Mv represent the query, key and value features of
+we say that the function is invariant to G. In this work, we focus on        the self-attention mechanism; LMq, LMk, LMv and Lout are learnable linear
+the equivariance and invariance in 3D Euclidean space of operations,         layers; and FMq is the dimension of Mq. The self-attention mechanism
+namely rotations, translations and reflections, that form the E(3) group.    module reinforces the feature of the central atom Sni and the radial
+                                                                             interaction from neighboring atoms in the form of a continuous filter10
+                                                                                          ⇀
+Equivariant linear layer                                                     L(Snj ) ⋅ w(‖ r ij ‖) . Subsequently, the output of the message layer is
+All linear layers used in DetaNet are equivariant and can be expressed as:   obtained by invariant and equivariant convolution:
+                             φ (Wx + b)    l = 0, p = 1 (scalar)                                                                                    ⇀
+                                                                                                                                                     r
+               L (xm   )={         m                                  (6)                 ΔM Sni = LS (∑j eij )   ΔM Tn,m
+                                                                                                                      i,l,p
+                                                                                                                            = LT (∑j eij ⊗ Ym
+                                                                                                                                            l,p
+                                                                                                                                                ( ⇀ij ))      (10)
+                   l,p
+                             Wl,p xl,p                    else                                                                                     ‖ r ij ‖
+
+
+
+
+Nature Computational Science
+Brief Communication                                                                                              https://doi.org/10.1038/s43588-023-00550-y
+
+where ΔM Sni and ΔM Tn,m
+                     i,l,p
+                           represent the residuals for the Sni and Tn,m
+                                                                    i,l,p
+                                                                          fea-       molecular energy is calculated from single-atom contributions
+                                                                   m
+tures of the upper layer, and LS and LT indicate linear layers. Yl,p   is the        as: E = ∑i Ei .
+spherical harmonic function that maps vectors into primitives of the             (2) Vectorial properties. Vector properties that relate to the whole
+irreps tensor and performs a tensor product with edge feature eij to                 molecule are predicted by considering both local and non-local
+produce the irreps features. After passing the interatomic message, an               contributions.
+                                                                                     ⇀
+                                                                                                     For example, the dipole moment is calculated as:
+                                                                                                       ⇀           ⇀     ⇀     ⇀
+equivariant update module is used to describe the interaction between                μ = ∑i tm + si × r ia, where r ia = r i − r a represents the vector
+                                                                                              i,1,−1                                     ⇀
+the features with different degrees and parity. Similarly, we use the                from the center-of-mass to atom i and the si × r ia represent
+                                                                                                                       m
+attention mechanism to obtain the residuals of equivariant and invari-               non-local contributions; each ti,1,−1 can be regarded as the local
+ant features (Extended Data Fig. 1f):                                                dipole moment contributed by the redistribution of electrons
+                                                                                     near that atom28. The atomic force vector is obtained by taking
+                          A = La (∑l=0,p=1 Uq ⊗ Uk)                                  the first-order derivative of the predicted energy with respect
+                                                                          (11)                                             ∂E
+         ΔU Sni = Softmax(A) ⋅ Uv(S)         n,m                                     to the atomic coordinates18: fi = − ⇀ .
+                                          U Ti,l,p = Softmax(A) ⊗ Uv(T)                                                                  ∂ri
+
+                                                                                 (3) Second-order tensorial properties. According to the group of
+where Uq, Uk and Uv(T) are generated by adding Tn,m     and ΔM Tn,m   from           theory, a second-order Cartesian tensor in 3D space can be
+                                                  i,l,p         i,l,p
+the message layer via linear layers. Uv(S) is generated by adding Sni                generated from the 0th-order subspace (the tensor trace) and
+and ΔM Sni from the message layer via a linear layer. A is an attention              the second-degree subspace (termed the traceless tensor). For
+feature produced as a scalar obtained by the tensor product of two                   example, we calculated polarizability as:
+                                                                                             (1)                  (2)          ⇀
+linear combinations of irreps features through the softmax function.                 α = ∑i si ⊕ (tm  i,2,1
+                                                                                                             + si × Ym   2,1
+                                                                                                                             ( r ia )). Here ⊕ denotes direct sum.
+The residual result of the update process is obtained by multiplying                 The learnable s(1)   i
+                                                                                                               represents the trace of the tensor (the
+the attention features with the linear combination of the irreps and                 isotropic component). The second-degree irreps tensor tm                                i,2,1
+                                                                                                                                                                                   can
+scalar feature.                                                                      be regarded as consisting of local contributions to the traceless
+     After reaching the maximum interaction layer N, an MLP is used                  tensor from every single atom. The other learnable s(2)                            i
+                                                                                                                                                                          together
+                                                                                                                                          ⇀
+to output the properties:                                                            with the spherical harmonics Ym                 2,1
+                                                                                                                                         ( r ia ) form the non-local
+                                                                                     traceless tensor. Expressions for calculating the quadrupole
+                      si = MLP(SNi )   tm              N,m
+                                              = MLP (Ti,l,p )                        moment and inertia tensor moment were generated similarly.
+                                        i,l,p
+                                                                          (12)   (4) Third-order tensorial properties. According to the group of
+                                               m
+                              y = ∑i ϕ (si , ti,l,p )                                theory, third-order tensors in 3D space can be generated from
+                                                                                     the first-degree and third-degree subspaces. For example, the
+where ϕ is an output function that produces a particular molecular                   first-order hyperpolarizability is predicted as:
+                                                                                                         (1)      ⇀                        (2)            ⇀
+property.                                                                            β = ∑i (tm
+                                                                                              i,1,−1
+                                                                                                     + si × r ia ) ⊕ (tm     i,3,−1
+                                                                                                                                     + si × Y m     3,−1
+                                                                                                                                                         ( r ia )). Here the
+                                                                                                          m              m
+                                                                                     irreps tensors ti,1,−1 and ti,3,−1 represent local contributions.
+Translation equivariant radial embedding module                                      Scalars together with spherical harmonics of center-of-mass
+The radial embedding module (Extended Data Fig. 1d) takes the abso-                  vector generate the non-local part. A similar strategy is
+                     ⇀
+lute distances r = ‖ r ij ‖ between each atom i and its neighbouring                 performed to create an expression for the octupole moment.
+atoms j as inputs. Then radial basis functions map distance r to high-           (5) NMR. The shielding tensor σi is an asymmetric tensor that
+dimensional sparse features B(r) scaled between [0,1]. Finally, the radial           represents the chemical environment around each atom and is
+weights wk and wv used in the self-attention mechanism are generated                 calculated as: σi = si ⊕ tm      i,1,1
+                                                                                                                            ⊕ tm  i,2,1
+                                                                                                                                        . Here the trace si and traceless
+                                                                                              m
+from the learnable linear layers. All interatomic distances share the                tensor ti,2,1 form the symmetric part of the tensor and the
+same linear layer; consequently the module is 2D translation equivari-               pseudo-vector tm       i,1,1
+                                                                                                                  forms the asymmetric part. Since the NMR
+ant. To express the B(r) features, we modified the learnable Bessel radial           shifts are determined only by the isotropic values of the
+function12 as:                                                                       shielding tensor, it is also possible to obtain the NMR shifts by
+                                                                                     directly predicting the traces of the tensor σiso                      i
+                                                                                                                                                                 = si .
+                                            sin (
+                                                    b⋅π⋅r
+                                                            )                    (6) Dipole and polarizability derivatives. DetaNet provides a direct
+                                     2               Rc
+                                                                                     calculation module for position-related derivative
+                          B(r) =        ×                                 (13)                                                                                      ⇀ properties.
+                                   √ Rc         a⋅r                                                                                                                ∂μ
+                                                                                     For example, derivatives of the dipole moment ⇀ and
+                                                                                                                                                             ∂ri
+                                                                                                               ∂α
+                                                                                       polarizabilities ⇀ are derived from the output dipole moments
+                                                                                                              ∂ri
+where r is the distance between two atoms, Rc is the cut-off radius to                 ⇀                                                                                          ⇀
+ensure the radial basis decays smoothly to 0 as the distance increases,                μ and polarizabilities α with respect to the input coordinates r i .
+a and b are learnable parameters initially set to 2.0, and [1, 2 … , Nb ] (Nb
+is the number of radial basis functions). Since the Bessel function              Activations
+contains Rc itself, we do not use any additional cut-off functions.              The learnable sigmoid linear unit29 (also known as Swish) was selected
+                                                                                 as the non-linear activation function to learn the non-linear mapping
+Property prediction functions                                                    between feature spaces, defined as:
+DetaNet applies various functions to predict molecular properties.                                                                       γ1 x
+We have demonstrated through ablation experiments that these func-                                                    Swish(x) =                                                (14)
+                                                                                                                                      1 + e−γ2 x
+tions are precise for the prediction of molecular properties (Extended
+Data Figs. 3 and 4). The strategies for predicting these properties can          where γ1, γ2 ∈ ℝFin are learnable parameters and were initially set to 1.0
+be summarized as:                                                                and 1.702 according to SpookyNet11 and other previous works.
+(1) Scalar properties. Each single-atom scalar property is                           The softmax activation function in the attention mechanism was
+    calculated directly from the appropriate scalar feature,                     defined as:
+    while whole-molecule scalar properties are predicted by                                                                             exp(x)
+    summing up single-atom contributions. For example,                                                              Softmax(x) =                                                (15)
+                                                                                                                                       ∑ exp(x)
+    atomic charges are predicted from their scalar outputs and
+
+
+Nature Computational Science
+Brief Communication                                                                                     https://doi.org/10.1038/s43588-023-00550-y
+
+Training hyperparameters                                                         10. Schütt, K. T., Sauceda, H. E., Kindermans, P.-J., Tkatchenko, A. &
+All DetaNet models in this work use N = 3 interaction layers, F = 128                Müller, K.-R. SchNet—a deep learning architecture for molecules
+features of each order m (total 2,048 features) and Rc = 5.0 Å, unless               and materials. J. Chem. Phys. 148, 241722 (2018).
+otherwise specified. The degree of the irreps features is set to l = 1, 2, 3 .   11. Unke, O. T. et al. SpookyNet: learning force fields with electronic
+A Bessel function with Nb = 32 is used as the radial basis function                  degrees of freedom and nonlocal effects. Nat. Commun. 12, 7273
+(Extended Data Fig. 2).                                                              (2021).
+     We optimized DetaNet with Adam30 and the AMSGrad31 variant                  12. Gasteiger, J., Groß, J. & Günnemann, S. Directional message
+implemented in PyTorch32. The dataset was divided into batches                       passing for molecular graphs. Preprint at https://doi.org/
+(64 molecules for normal properties and 16 molecules for the deriva-                 10.48550/arXiv.2003.03123 (2020).
+tive properties) with the initial learning rate set to 10−3. Tests were          13. Thomas, N. et al. Tensor field networks: rotation-and translation-
+performed every 50 epochs of training and the learning rate was                      equivariant neural networks for 3D point clouds. Preprint at
+reduced by 50% if the loss did not decrease. Training ended when the                 https://doi.org/10.48550/arXiv.1802.08219 (2018).
+loss dropped to 10−5 or upon reaching 1,000,000 epochs. All training             14. Batzner, S. et al. E(3)-equivariant graph neural networks for data-
+was performed using the mean squared error (also known as l2loss) as                 efficient and accurate interatomic potentials. Nat. Commun. 13,
+the loss function. For training of the NMR shift, we first pre-trained a             2453 (2022).
+model including all chemical elements at once and then subsequently              15. Atz, K., Grisoni, F. & Schneider, G. Geometric deep learning on
+trained by including only one of the elements H, C, N or O at a time.                molecular representations. Nat. Mach. Intell. 3, 1023–1032 (2021).
+                                                                                 16. Ramakrishnan, R., Dral, P. O., Rupp, M. & Von Lilienfeld, O. A.
+Data availability                                                                    Quantum chemistry structures and properties of 134 kilo
+All datasets used in this document are publicly available. The QM9S                  molecules. Sci. Data 1, 140022 (2014).
+dataset including optimized structures, various properties, and IR,              17. Hoja, J. et al. QM7-X, a comprehensive dataset of quantum-
+Raman, and UV-Vis spectra of the 133,885 molecules is available at fig-              mechanical properties spanning the chemical space of small
+share33: https://doi.org/10.6084/m9.figshare.24235333 or code ocean                  organic molecules. Sci. Data 8, 43 (2021).
+for reference34: https://doi.org/10.24433/CO.5808137.v3. The original            18. Zubatyuk, R., Smith, J. S., Leszczynski, J. & Isayev, O. Accurate
+QM9 dataset16 is available from http://quantum-machine.org/datasets/.                and transferable multitask prediction of chemical properties with
+We used both the gas and solvent phase NMR dataset26 obtained at                     an atoms-in-molecules neural network. Sci. Adv. 5, eaav6490
+mPW1PW91/6-311 + G(2d,p) level, which is available at https://moldis.                (2019).
+tifrh.res.in/data/QM9NMR. The QM7-X dataset17 is available from                  19. Chen, W.-K., Zhang, Y., Jiang, B., Fang, W.-H. & Cui, G. Efficient
+https://zenodo.org/record/3905361. Infrared and Raman experimental                   construction of excited-state Hessian matrices with machine
+spectra for comparison are from Spectral Database for Organic Com-                   learning accelerated multilayer energy-based fragment method.
+pounds35 (SDBS) at https://sdbs.db.aist.go.jp. The experimental Raman                J. Phys. Chem. A 124, 5684–5695 (2020).
+spectrum of caffeine comes from rruff database36 at https://rruff.info/          20. Christensen, A. S., Bratholm, L. A., Faber, F. A. & Anatole von
+Ca/D120006. Source data are provided with this paper.                                Lilienfeld, O. FCHL revisited: faster and more accurate quantum
+                                                                                     machine learning. J. Chem. Phys. 152, 044107 (2020).
+Code availability                                                                21. Van der Maaten, L. & Hinton, G. Visualizing data using t-SNE.
+The DetaNet model and trained parameters are available from Code                     J. Mach. Learn. Res. 9, 106005 (2008).
+Ocean34. The program used for spectrum prediction based on Deta-                 22. Kim, S. et al. PubChem 2023 update. Nucleic Acids Res. 51,
+Net is also included in the code. All code is written using the PYG37 and            D1373–D1380 (2023).
+e3nn38 libraries on Python 3.9.                                                  23. Frisch, M. et al. Gaussian 16, Revision B. 01 (Gaussian, 2016).
+                                                                                 24. Perdew, J. P., Burke, K. & Ernzerhof, M. Generalized gradient
+References                                                                           approximation made simple. Phys. Rev. Lett. 77, 3865 (1996).
+1.   Chen, D., Wang, Z., Guo, D., Orekhov, V. & Qu, X. Review and                25. Schäfer, A., Huber, C. & Ahlrichs, R. Fully optimized contracted
+     prospect: deep learning in nuclear magnetic resonance                           Gaussian basis sets of triple zeta valence quality for atoms Li to Kr.
+     spectroscopy. Chem. Eur. J. 26, 10391–10401 (2020).                             J. Chem. Phys. 100, 5829–5835 (1994).
+2.   Qu, X. et al. Accelerated nuclear magnetic resonance spectroscopy           26. Gupta, A., Chakraborty, S. & Ramakrishnan, R. Revving up 13C NMR
+     with deep learning. Angew. Chem. 132, 10383–10386 (2020).                       shielding predictions across chemical space: benchmarks for
+3.   Ghosh, K. et al. Deep learning spectroscopy: neural networks for                atoms-in-molecules kernel machine learning with new data for
+     molecular excitation spectra. Adv. Sci. 6, 1801367 (2019).                      134 kilo molecules. Mach. Learn. Sci. Technol. 2, 035010 (2021).
+4.   Ye, S. et al. A machine learning protocol for predicting protein            27. Vaswani, A. et al. Attention is all you need. In Advances in Neural
+     infrared spectra. J. Am. Chem. Soc. 142, 19071–19077 (2020).                    Information Processing Systems Vol. 30 (2017).
+5.   Chen, Z. & Yam, V. W.-W. Machine-learned electronically excited             28. Veit, M., Wilkins, D. M., Yang, Y., DiStasio, R. A. Jr. & Ceriotti, M.
+     states with the MolOrbImage generated from the molecular                        Predicting molecular dipole moments by combining atomic
+     ground state. J. Phys. Chem. Lett. 14, 1955–1961 (2023).                        partial charges and atomic dipoles. J. Chem. Phys. 153, 024113
+6.   Grossutti, M. et al. Deep learning and infrared spectroscopy:                   (2020).
+     representation learning with a β-variational autoencoder. J. Phys.          29. Elfwing, S., Uchibe, E. & Doya, K. Sigmoid-weighted linear units
+     Chem. Lett. 13, 5787–5793 (2022).                                               for neural network function approximation in reinforcement
+7.   Behler, J. Atom-centered symmetry functions for constructing                    learning. Neural Networks 107, 3–11 (2018).
+     high-dimensional neural network potentials. J. Chem. Phys. 134,             30. Kingma, D. P. & Ba, J. Adam: a method for stochastic optimization.
+     074106 (2011).                                                                  Preprint at https://doi.org/10.48550/arXiv.1412.6980 (2014).
+8.   Schütt, K. T., Arbabzadah, F., Chmiela, S., Müller, K. R. &                 31. Reddi, S. J., Kale, S. & Kumar, S. On the convergence of adam and
+     Tkatchenko, A. Quantum-chemical insights from deep tensor                       beyond. Preprint at https://doi.org/10.48550/arXiv.1904.09237
+     neural networks. Nat. Commun. 8, 13890 (2017).                                  (2019).
+9.   Schütt, K., Unke, O. & Gastegger, M. Equivariant message passing            32. Paszke, A. et al. PyTorch: an imperative style, high-performance
+     for the prediction of tensorial properties and molecular spectra.               deep learning library. In Advances in Neural Information
+     In Int. Conf. Machine Learning 9377–9388 (PMLR, 2021).                          Processing Systems Vol. 32 (2019).
+
+
+Nature Computational Science
+Brief Communication                                                                                https://doi.org/10.1038/s43588-023-00550-y
+
+33. Zihan Zou, W. H. QM9S dataset. Figshare https://doi.org/10.6084/       Competing interests
+    m9.figshare.24235333 (2023).                                           The authors declare no competing interests.
+34. Deep equivariant tensor attention Network(DetaNet). Code Ocean
+    https://doi.org/10.24433/CO.5808137.v3 (2023).                         Additional information
+35. Saito, T. et al. Spectral Database for Organic Compounds               Extended data is available for this paper at
+    (SDBS) (National Institute of Advanced Industrial Science and          https://doi.org/10.1038/s43588-023-00550-y.
+    Technology, 2006).
+36. Lafuente, B., Downs, R. T., Yang, H. & Stone, N. in Highlights in      Supplementary information The online version
+    Mineralogical Crystallography (eds. Armbruster, T. & Danisi, R. M.)    contains supplementary material available at
+    Ch. 1, 1–30 (De Gruyter, 2015).                                        https://doi.org/10.1038/s43588-023-00550-y.
+37. Fey, M. & Lenssen, J. E. Fast graph representation learning
+    with PyTorch Geometric. Preprint at https://doi.org/10.48550/          Correspondence and requests for materials should be addressed to
+    arXiv.1903.02428 (2019).                                               Yujin Zhang, Jun Jiang, Yi Luo or Wei Hu.
+38. Geiger, M. & Smidt, T. e3nn: Euclidean neural networks. Preprint
+    at https://doi.org/10.48550/arXiv.2207.09453 (2022).                   Peer review information Nature Computational Science thanks
+                                                                           Conrard Tetsassi Feugmo, Feng Wang and the other, anonymous,
+Acknowledgements                                                           reviewer(s) for their contribution to the peer review of this work.
+We acknowledge grants from the National Natural Science                    Primary Handling Editor: Kaitlin McCardle, in collaboration with the
+Foundation of China (22073053 (W.H.), 22025304 (J.J.), 22033007            Nature Computational Science team.
+(J.J.)), the Young Taishan Scholar Program of Shandong Province
+(tsqn201909139 (W.H.)), the Natural Science Foundation of Shandong         Reprints and permissions information is available at
+Province (ZR2023MA089 (Y.Z)), the Program of New Collegiate 20             www.nature.com/reprints.
+Items in Jinan (2021GXRC042 (W.H.), 202228031 (Y.Z.)) and the Qilu
+University of Technology (Shandong Academy of Sciences) Basic              Publisher’s note Springer Nature remains neutral with regard to
+Research Project of Science, Education and Industry Integration Pilot      jurisdictional claims in published maps and institutional affiliations.
+(2023PY046 (Y.Z.)). The funders had no role in study design, data
+collection and analysis, decision to publish or preparation of the         Springer Nature or its licensor (e.g. a society or other partner)
+manuscript.                                                                holds exclusive rights to this article under a publishing agreement
+                                                                           with the author(s) or other rightsholder(s); author self-archiving
+Author contributions                                                       of the accepted manuscript version of this article is solely
+Z.Z. and W.H. conceived the research, designed the DetaNet model           governed by the terms of such publishing agreement and
+and performed all data analysis. W.H., Y.L., J.J. and Y.Z. jointly         applicable law.
+supervised the work from the model design to data analysis. Y.Z.,
+L.L., M.W. and J.L. interpreted the data. All authors contributed to the   © The Author(s), under exclusive licence to Springer Nature America,
+writing of the manuscript.                                                 Inc. 2023
+
+
+
+
+Nature Computational Science
+Brief Communication                                                                                                https://doi.org/10.1038/s43588-023-00550-y
+
+
+
+
+Extended Data Fig. 1 | Schematic diagram of DetaNet’s architecture with a              Lz, LQ and Lemb are linear layers to integrate a F-dimensional atomic features.
+color-coded view of individual components. a. Architecture overview.                   c. Message module architecture. Ym     l,p
+                                                                                                                                  is the spherical harmonic function. ΔM Sni and
+                                            n,m                                              n,m
+Irreducible representation features ( Ti,l,p) and scalar features ( Sni) are used as   ΔM Ti,l,p represent the corresponding residuals. d. A radial embedding module to
+messages in the interaction layer, where n, p, i, l and m represent the orfer of the   generate the key (wk) and the value (wv) weights for the next self-attention
+passing interaction layer, the even/odd parity, the atomic number, the rotation        module. e. A radial self-attention module. Mq, Mk and Mv represents the query,
+                          ⇀
+degree and order. N and r ij is the maximum interaction layer and the position         key and value features. FMq and eij represent the dimension of Mq and the output
+vector from atom j to i. tm
+                          i,l,p
+                                and si is output irreps tensor and scalar. b. Atomic   edge features. f. Atomwise self-attention update module. Uq, Uk, and Uv(T) are
+embedding module based on nuclear and electronic features, where O(Zi) and             query, key and value features of the update module. All symbol of L with subscript
+Q(Zi) represent the nuclear types and the inherent atomic electronic structure.        indicate the learnable linear layers.
+
+
+
+
+Nature Computational Science
+Brief Communication                                                                                              https://doi.org/10.1038/s43588-023-00550-y
+
+
+
+
+Extended Data Fig. 2 | Schematic diagram for how the sub modules operate                                       n,m
+                                                                                       function. ΔM Sni and ΔM Ti,l,p represent the corresponding residuals. d. Matrix
+using the matrix representations, taking water as a example. a. Illustration of        representation for the radial embedding module, where wk and the wv are the
+H2O molecule and the definition of central (i) and neighboring (j) atom. b. Matrix     weight corresponding key and value e. Matrix representation for the radial
+representation for the sub module of the atomic embedding. O(Zi) and Q(Zi)             attention module, where Mq, Mk and Mv are the corresponding query, key and
+represent the nuclear types and the inherent atomic electronic structure. ( S0i ) is   value features. f. Matrix representation for the atomwise attention update
+the generated scalar properties. c. Matrix representation for the message                         n,m
+        ⇀
+                                                                                       module. Ti,l,p and Sni are the irreps and scalar features.
+module. r ij is position vector from atom j to i. Ym
+                                                   l,p
+                                                       is the spherical harmonic
+
+
+
+
+Nature Computational Science
+Brief Communication                                                                                       https://doi.org/10.1038/s43588-023-00550-y
+
+
+
+
+Extended Data Fig. 3 | Ablation studies of DetaNet. Ablation experiments were   lmax = 3, when excluding the cutoff function while keeping the electronic features,
+performed to test the impact of each module on the model. We list the MAE of    the radial self-attention module, the update module and the local part in the
+the dipole moment vectors and polarizability tensors if we exclude any given    output function. N and lmax are the maximum interaction layers and the maximum
+module. The model has the best performance with parameter values of N = 3,      degrees, respectively.
+
+
+
+
+Nature Computational Science
+Brief Communication                                                                                     https://doi.org/10.1038/s43588-023-00550-y
+
+
+
+
+Extended Data Fig. 4 | Error distributions and regression plots of DetaNet’s   f. First hyperpolarizability learned from QM9S datasets. g. Electric quadrupole
+predictions for eight properties. a. Energy learned from partial QM7-X         moment learned from QM9S datasets. h. Electric octupole moment learned from
+datasets. b. Atomic forces learned from partial QM7-X datasets. c. Natural     QM9S datasets. The MAE, RMSE and R2 represent the mean absolute errors, the
+Population Charge learned from QM9S datasets. d. Electric dipole Moment        root mean square errors and the coefficients of determination.
+learned from QM9S datasets. e. Polarizability learned from QM9S datasets.
+
+
+
+
+Nature Computational Science
+Brief Communication                                                                                            https://doi.org/10.1038/s43588-023-00550-y
+
+
+
+
+Extended Data Fig. 5 | Complete program for predicting infrared and Raman             derivatives of the polarizability and dipole moment with respect to the normal
+                                                                                                                              ⇀
+spectra using DetaNet. We firstly performed the frequency analysis by                 coordinates using the chain rule. Here r i is the atomic position and Zi is the
+diagonalizing the DetaNet-predicted Hessian matrix to obtain the vibrational          atomic number. ω represents the frequency of the adsorption/scattering light
+                                                                                          ⇀
+frequencies and the corresponding normal coordinates. Then the infrared               and P is the normal coordinates. μ and α are the dipole moment and polarizability
+adsorption intensities and Raman scattering activities were calculated as the first   tensor, respectively.
+
+
+
+
+Nature Computational Science
+Brief Communication                                                                                          https://doi.org/10.1038/s43588-023-00550-y
+
+
+
+
+Extended Data Fig. 6 | Computational efficiency of DetaNet. a. Comparison           using DFT and DetaNet (CPU) with increasing molecular size. Here DFT and
+of average times in seconds for the prediction of the vibrational, UV-Vis and NMR   DetaNet (CPU) indicates the time consumed on an Intel-i7 8700 K device, while
+spectra. b. Average computational times for prediction of vibrational spectra       DetaNet (GPU) on NVIDIA RTX 3080Ti.
+
+
+
+
+Nature Computational Science
+

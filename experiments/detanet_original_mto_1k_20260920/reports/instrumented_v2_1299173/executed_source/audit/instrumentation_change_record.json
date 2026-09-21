@@ -1,0 +1,37 @@
+{
+  "timestamp_utc": "2026-09-20T15:47:21.968836+00:00",
+  "status": "INSTRUMENTATION_ADDED",
+  "previous_commit": "9b5169b8d9d1146cf9268b8dcd5509a54256aba8",
+  "main_protocol_unchanged_from_authorized_v2": true,
+  "model_train_protocol_byte_identical": true,
+  "source_files_added": [
+    "smoke_diagnostics.py",
+    "tests/test_smoke_diagnostics.py",
+    "jobs/preflight_instrumented.slurm"
+  ],
+  "source_files_modified": [
+    "preflight.py: smoke delegates to instrumented runner"
+  ],
+  "intervention_scope": "DIAGNOSTIC_ONLY",
+  "smoke_checkpoint_policy": [
+    "initial",
+    "step600 if reached",
+    "best",
+    "last"
+  ],
+  "state_diagnostics": {
+    "source": "fresh main trajectory step600",
+    "steps_each": 300,
+    "D0": "retain all state",
+    "D1": "only max_exp_avg_sq <- exp_avg_sq; nonstandard diagnostic",
+    "D2": "new same-config AMSGrad"
+  },
+  "last_linear": {
+    "device": "cpu",
+    "dtype": "float64",
+    "solver": "SVD pseudoinverse with rank cutoff max(m,n)*eps*smax",
+    "X": "[sum_i h_i, N] shape [32,129]"
+  },
+  "budget_note": "600 was a human-set engineering budget, not an author-paper requirement; v2 remains 2000 with original thresholds and early exit.",
+  "observed_training_engineering_bug": "none established before this diagnostic run; instrumentation is recorded separately from the policy change"
+}
