@@ -1,6 +1,24 @@
 # MTO-1
 
-## 最新归档：原版 DetaNet UV–Vis / 规划 MTO / global-gate（2026-09-20～21）
+## 最新完成实验：原版 DetaNet / planned MTO，1k → 10k → 全量（seed=11，2026-09-21～22）
+
+**6次正式训练、三个规模的测试与报告均已完成。** 使用完整原版DetaNet骨干；每个规模A/B各从头训练一次；没有global-gate或额外种子。三个规模MTO相对测试MSE改善分别为 **10.28%、31.58%、30.62%**。这是单种子初步比较，不是显著性或跨种子稳定性结论。
+
+| 规模 | A 测试MSE | B 测试MSE | MTO改善 |
+|---|---:|---:|---:|
+| 1k | 0.000288303 | 0.000258655 | 10.28% |
+| 10k | 0.000294281 | 0.000201357 | 31.58% |
+| 全量 | 0.000111857 | 0.0000776071 | 30.62% |
+
+- [完整实验归档、配置与文件导航](experiments/detanet_original_mto_scales_seed11_20260921/README.md)
+- [三规模总报告](experiments/detanet_original_mto_scales_seed11_20260921/reports/summary.md) · [综合分析](experiments/detanet_original_mto_scales_seed11_20260921/ANALYSIS_REPORT.md)
+- [同分子跨规模预测谱图](experiments/detanet_original_mto_scales_seed11_20260921/analysis/spectrum_comparison/README.md)
+- [独立完整性校验工具](experiments/detanet_original_mto_scales_seed11_20260921/publication/verify_archive.py)
+
+归档包含12个best/last checkpoint、全测试集预测、训练日志/曲线、全部准备后的240点数据、冻结划分/统计及真实完成记录。大目标数组以可校验的无损gzip分块保存，其他权重/结果直接随Git提交。以下各节为此前独立实验的历史记录，其状态与结论保留原意。
+
+
+## 历史归档：原版 DetaNet UV–Vis / 规划 MTO / global-gate（2026-09-20～21）
 
 本次使用作者 **原版 DetaNet UV–Vis 模型**作为 A：128 通道、maxl=3、3 个 block、32 个 trainable Bessel 径向基、8 个 attention head；保留原版逐原子 `128→128→240` MLP、初始化与原子求和读出。B/C 共用同一完整骨干，分别接规划 MTO 和 global-gate 诊断消融。作者源码固定于 `4f92e643ab64651b91c4a1392cf389ddfd0d89f0`，许可证、独立 reference、数值等价日志和严格 checkpoint 加载记录均已归档。
 

@@ -1,0 +1,25 @@
+{
+  "source": "/data/run01/sczc698/xxy/MTO/experiments/detanet_original_mto_1k_20260920",
+  "commit": "15af391115fb5179521397ea7f75b59153dac482",
+  "preexisting_status": "",
+  "sha256": {
+    "models.py": "b94b0825461cce313bf5938470958b3430408e9fc50b9de1ccfb590e1a37fee9",
+    "train.py": "3055d03b609de0c5bf07e129990a31a93722059e21bd2342b428b4952ed92811",
+    "protocol.json": "a547956946c895476e8807740d627f89e2c6ca523876eeae316203190b47d0ce",
+    "vendor/detanet_model/__init__.py": "8fe70f55031182c1d0012945907181ecc85278f7849599e15e3a16939fae67f1",
+    "vendor/detanet_model/constant.py": "1c3a8f9058ba6890c2f6730241136b35a552235b41f812288ce9cbdcc42ec856",
+    "vendor/detanet_model/detanet.py": "4083382f2d615d1573b9dbc2d2c456d00f9895d4dae144b6c62b26feff6eebcd",
+    "vendor/detanet_model/metrics.py": "677630dd1b97c7474c2f8a4cdda81d7e0f2a56a12dfd4b02bbb869329af4fec2",
+    "vendor/detanet_model/model_loader.py": "85507209b15efea567e686f4d99cf3be53dbf3779607d4b33e295d52c44505b3",
+    "vendor/detanet_model/spectra_simulator.py": "cb36131b7dc855cd2c528d532f4d7742fc2da757d078e8732142dbeab4f0b67e",
+    "vendor/detanet_model/modules/__init__.py": "032b99150e38283d3695b394175d792c370be7dbbe38b58b94971143de9446de",
+    "vendor/detanet_model/modules/embedding.py": "07eff3330b5709fec463563d4ef53f857525ae85f55b8a3ab1e7c9ffb3c70ee8",
+    "vendor/detanet_model/modules/radial_basis.py": "cbbbf125bdb4b64e21a4d58ddb175bde489bb7a640375847f416f137881307ca",
+    "vendor/detanet_model/modules/update.py": "65cda1be8fd5daa491779211ba37ec9c23b73e4a2da81444d21534584c0028a6",
+    "vendor/detanet_model/modules/acts.py": "6bcd255ac95b33e6ef6a982d87c8dd6b39c2f1a41996f2425c5ada1f0fe8256c",
+    "vendor/detanet_model/modules/block.py": "38eb81b385fded74ac4ff3950ee2cbe6e7c7e7cc0873ec57ede64ef758460e35",
+    "vendor/detanet_model/modules/edge_attention.py": "48a69aa9a83cfe225f8e55eeea4bab65120955aee2dc7ad02d414aef7b4e2fea",
+    "vendor/detanet_model/modules/message.py": "a76bae58dbb92447d6fb05230d7db826dc9defc929706e6f2c88c067ee5918cf",
+    "vendor/detanet_model/modules/multilayer_perceptron.py": "5628a4cebadbbc493058edae808a64370ee2834fa4ccacc041f820bf9afb4d42"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "workspace": "/data/run01/sczc698/xxy/MTO/experiments/detanet_original_mto_scales_seed11_20260921",
+  "nodes": {
+    "prepare": {
+      "job_id": "1299664",
+      "afterok": null,
+      "kind": "prepare",
+      "scale": null
+    },
+    "1k_train": {
+      "job_id": "1299665",
+      "afterok": "1299664",
+      "kind": "train",
+      "scale": "1k"
+    },
+    "1k_report": {
+      "job_id": "1299743",
+      "afterok": null,
+      "kind": "report",
+      "scale": "1k"
+    },
+    "10k_train": {
+      "job_id": "1299667",
+      "afterok": "1299743",
+      "kind": "train",
+      "scale": "10k"
+    },
+    "10k_report": {
+      "job_id": "1299744",
+      "afterok": "1299667",
+      "kind": "report",
+      "scale": "10k"
+    },
+    "full_train": {
+      "job_id": "1299669",
+      "afterok": "1299744",
+      "kind": "train",
+      "scale": "full"
+    },
+    "full_report": {
+      "job_id": "1299745",
+      "afterok": "1299669",
+      "kind": "report",
+      "scale": "full"
+    }
+  },
+  "history": [
+    {
+      "node": "1k_report",
+      "job_id": "1299666",
+      "afterok": "1299665",
+      "kind": "report",
+      "scale": "1k"
+    },
+    {
+      "node": "10k_report",
+      "job_id": "1299668",
+      "afterok": "1299667",
+      "kind": "report",
+      "scale": "10k"
+    },
+    {
+      "node": "full_report",
+      "job_id": "1299670",
+      "afterok": "1299669",
+      "kind": "report",
+      "scale": "full"
+    }
+  ]
+}

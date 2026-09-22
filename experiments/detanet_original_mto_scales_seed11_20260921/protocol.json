@@ -1,0 +1,53 @@
+{
+  "version": "detanet_original_mto_scales_seed11_20260921",
+  "seeds": [
+    11
+  ],
+  "variants": [
+    "detanet_original_uv",
+    "detanet_mto_planned"
+  ],
+  "mto_channels": 16,
+  "states": 10,
+  "query_dim": 32,
+  "router_hidden": 128,
+  "head_hidden": 128,
+  "initial_energy_min_eV": 2.0,
+  "initial_energy_max_eV": 13.0,
+  "energy_scale_eV": 1.0,
+  "sigma_eV": 0.2,
+  "optimizer": "Adam",
+  "amsgrad": true,
+  "lr": 0.001,
+  "weight_decay": 0,
+  "effective_batch_size": 64,
+  "micro_batch_size": 64,
+  "dtype": "float32",
+  "amp": false,
+  "tf32": false,
+  "loss": "mean(((pred_source-target_source)/train_RMS)^2)",
+  "scheduler": "ReduceLROnPlateau",
+  "factor": 0.5,
+  "patience": 50,
+  "scheduler_threshold": 0.0001,
+  "scheduler_threshold_mode": "rel",
+  "min_lr": 1e-06,
+  "max_epochs": 1000,
+  "min_epochs": 200,
+  "early_stopping_patience": 150,
+  "early_stop_min_actual_lr_reductions": 2,
+  "early_stop_epochs_after_last_reduction": 50,
+  "pretraining": "none",
+  "maximum_simultaneous_gpus": 2,
+  "training_scale": "existing 1k, 10k, full splits",
+  "test_gate": "both fits complete for this scale",
+  "scales": [
+    "1k",
+    "10k",
+    "full"
+  ],
+  "preflight_policy": "data validity plus short finite forward/backward; no overfit performance gate",
+  "model_source": "/data/run01/sczc698/xxy/MTO/experiments/detanet_original_mto_1k_20260920",
+  "source_commit": "15af391115fb5179521397ea7f75b59153dac482",
+  "checkpoint_initialization": "fresh build_pair at seed=11 separately for every scale; resume only own last.pt"
+}

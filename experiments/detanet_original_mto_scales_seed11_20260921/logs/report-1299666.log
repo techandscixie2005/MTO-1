@@ -1,0 +1,10 @@
+/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/site-packages/requests/__init__.py:92: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+Traceback (most recent call last):
+  File "/data/run01/sczc698/xxy/MTO/experiments/detanet_original_mto_scales_seed11_20260921/report.py", line 119, in <module>
+    report(args.scale)
+  File "/data/run01/sczc698/xxy/MTO/experiments/detanet_original_mto_scales_seed11_20260921/report.py", line 91, in report
+    (out/'comparison.md').write_text('\n'.join(text)+'\n');artifacts.append(out/'comparison.md')
+  File "/data/run01/sczc698/.conda/envs/cheng/lib/python3.10/pathlib.py", line 1155, in write_text
+    return f.write(data)
+UnicodeEncodeError: 'ascii' codec can't encode character '\xb2' in position 845: ordinal not in range(128)

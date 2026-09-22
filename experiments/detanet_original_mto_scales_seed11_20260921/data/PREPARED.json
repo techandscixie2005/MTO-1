@@ -1,0 +1,25 @@
+{
+  "source_sha256": "b40241e1ad26b9e4df7e63af14795987a505729b53a968da594dd54de98a5070",
+  "counts": {
+    "1k": {
+      "train": 800,
+      "validation": 100,
+      "test": 100
+    },
+    "10k": {
+      "train": 8000,
+      "validation": 1000,
+      "test": 1000
+    },
+    "full": {
+      "train": 103785,
+      "validation": 12973,
+      "test": 12974
+    }
+  },
+  "frozen": {
+    "1k": "8a20746b3fc6fae7070f3d85f61800b6da7e7ee0096dff44ad698ca7d1a53a65",
+    "10k": "8af43b8ee2a288233881f3a0e2c758477cb9ba09443ef3440a95226793de35da",
+    "full": "c1af3f3c5f1a8feaedf7d1a405450abca849c9a2f5604ca5822dbb0a7005171d"
+  }
+}
