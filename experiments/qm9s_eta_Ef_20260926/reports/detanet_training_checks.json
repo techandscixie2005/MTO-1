@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "actual_training_not_started": true,
+  "scratch_steps_only": 2,
+  "initial_hash": "2ffe623ad1c2ad19ba79c6b123b4d6b6aba12a99e9d03a8866e342b33f25eee4",
+  "checkpoint_restores_model_optimizer_scheduler_RNG_cursor": true,
+  "continued_loss_abs_diff": 0.0,
+  "continued_parameter_max_abs_diff": 2.384185791015625e-07,
+  "full_validation_seconds": 3.813160939142108,
+  "full_validation_molecules": 6686,
+  "full_validation_finite": true,
+  "scheduler_fallback_test_passed": true,
+  "training_scope": "A fresh process reconstructs seed=11; never loads scratch weights"
+}

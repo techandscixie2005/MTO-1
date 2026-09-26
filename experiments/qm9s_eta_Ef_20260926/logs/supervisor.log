@@ -1,0 +1,13 @@
+LAUNCHED mto_eta0 159334 1
+LAUNCHED mto_eta01 159335 2
+LAUNCHED mto_eta1 159336 4
+Traceback (most recent call last):
+  File "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/supervisor.py", line 56, in <module>
+    try:main()
+  File "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/supervisor.py", line 54, in main
+    time.sleep(30)
+KeyboardInterrupt
+LAUNCHED mto_eta0 160019 1
+LAUNCHED mto_eta01 160020 2
+LAUNCHED mto_eta1 160021 4
+LAUNCHED detanet_ef 164031 6

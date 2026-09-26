@@ -1,0 +1,221 @@
+{
+  "mto_commit": "bcf67d2a80b1d5ba35706582387f528537b5283c",
+  "detanet_commit": "4f92e643ab64651b91c4a1392cf389ddfd0d89f0",
+  "files": [
+    {
+      "path": "experiments/qm9s_full_EA_20260925/README_execution.md",
+      "git_blob": "02fde4a79800bc7e9df2dbd9b33f115fa0dd8904",
+      "sha256": "39face7fceb56b9b22e2f178658e7bc08fff9bcecd146e6116e6af22e1f86410"
+    },
+    {
+      "path": "experiments/qm9s_full_EA_20260925/configs/mto_reference.json",
+      "git_blob": "2ceaca8d355412b7dc89042c96718cb589b2eebf",
+      "sha256": "96621b5e7e03dad0ad2acfab0f8b575bd794f8347588fadb93081486e69ebbcd"
+    },
+    {
+      "path": "experiments/qm9s_full_EA_20260925/data/hashes.json",
+      "git_blob": "9585def723788d909b3ed9a2e50a10a1f4102a67",
+      "sha256": "ee33f69ef8de4dd917574f5df131103ba58638033f42abcb083b56205873314d"
+    },
+    {
+      "path": "experiments/qm9s_full_EA_20260925/data/normalization.json",
+      "git_blob": "a0d866fe4504baacbd265d5e4d18639d5eaf1c70",
+      "sha256": "812a7b80d6259eb6106a5a534a8358a626713ec7ee53ad992fff6fcbabe59452"
+    },
+    {
+      "path": "experiments/qm9s_full_EA_20260925/data_ea.py",
+      "git_blob": "73dc86c2b5c0aa8adfb166664efe620900887411",
+      "sha256": "8027dc8695b2ade12aac64c3e894a075b4d98ca667a24053129a951001b6e943"
+    },
+    {
+      "path": "experiments/qm9s_full_EA_20260925/models_ea.py",
+      "git_blob": "44983ba7ad8da0e3423b69dadf193749f6ddf31f",
+      "sha256": "b47d50b8b32313d1c3e1f19f3e64e6f02ce42e91736e6da00f896f68965250b0"
+    },
+    {
+      "path": "experiments/qm9s_full_EA_20260925/train_ea.py",
+      "git_blob": "c1f5329b35639e0cc96d8c3ce357a600c2c193d9",
+      "sha256": "7c7b4d49db539566abd8c76da6fe3b7eabf96eaac3ac495997c5f074a49085dd"
+    },
+    {
+      "path": "experiments/qm9s_full_EA_20260925/upstream/models.py",
+      "git_blob": "4f4ba35d660d522916aa893a203ab71715e019d0",
+      "sha256": "a8d7bf8a8d89839f687a773f59f02b2a5d75abd6f47a59406e9eb3d1a40f4771"
+    },
+    {
+      "path": "experiments/qm9s_full_EA_20260925/upstream/vendor/LICENSE",
+      "git_blob": "541ad7130f7f2ee2eb394276af4d6eb20b305c7f",
+      "sha256": "7be03b0862ebaa2bc1bb7e858ee97973038993e3c1acf347100acc5b27bc1a52"
+    },
+    {
+      "path": "experiments/qm9s_full_EA_20260925/upstream/vendor/detanet_model/__init__.py",
+      "git_blob": "f68b2db540b256ec70342b2f81f0823924c3e004",
+      "sha256": "8fe70f55031182c1d0012945907181ecc85278f7849599e15e3a16939fae67f1"
+    },
+    {
+      "path": "experiments/qm9s_full_EA_20260925/upstream/vendor/detanet_model/constant.py",
+      "git_blob": "cfa7e558dbd44b2c824a03a7bc09e02527afba81",
+      "sha256": "1c3a8f9058ba6890c2f6730241136b35a552235b41f812288ce9cbdcc42ec856"
+    },
+    {
+      "path": "experiments/qm9s_full_EA_20260925/upstream/vendor/detanet_model/detanet.py",
+      "git_blob": "a5bf440200b539a66beacc91c1ebaf7c266f46f6",
+      "sha256": "4083382f2d615d1573b9dbc2d2c456d00f9895d4dae144b6c62b26feff6eebcd"
+    },
+    {
+      "path": "experiments/qm9s_full_EA_20260925/upstream/vendor/detanet_model/metrics.py",
+      "git_blob": "aa00acaf33239b403d30967684e0a135a04c1017",
+      "sha256": "677630dd1b97c7474c2f8a4cdda81d7e0f2a56a12dfd4b02bbb869329af4fec2"
+    },
+    {
+      "path": "experiments/qm9s_full_EA_20260925/upstream/vendor/detanet_model/model_loader.py",
+      "git_blob": "9fc4767e1370057edff0d5eef78aecdc8970a08e",
+      "sha256": "85507209b15efea567e686f4d99cf3be53dbf3779607d4b33e295d52c44505b3"
+    },
+    {
+      "path": "experiments/qm9s_full_EA_20260925/upstream/vendor/detanet_model/modules/__init__.py",
+      "git_blob": "b1a0732bb96250885d9ba22a9a8b7c3269f1aa05",
+      "sha256": "032b99150e38283d3695b394175d792c370be7dbbe38b58b94971143de9446de"
+    },
+    {
+      "path": "experiments/qm9s_full_EA_20260925/upstream/vendor/detanet_model/modules/acts.py",
+      "git_blob": "242f2d670fa2887bd94b1ef0b9e8607ff0fabb34",
+      "sha256": "6bcd255ac95b33e6ef6a982d87c8dd6b39c2f1a41996f2425c5ada1f0fe8256c"
+    },
+    {
+      "path": "experiments/qm9s_full_EA_20260925/upstream/vendor/detanet_model/modules/block.py",
+      "git_blob": "eaf06583a3dca2324dbad2a69bcf90605f2f7171",
+      "sha256": "38eb81b385fded74ac4ff3950ee2cbe6e7c7e7cc0873ec57ede64ef758460e35"
+    },
+    {
+      "path": "experiments/qm9s_full_EA_20260925/upstream/vendor/detanet_model/modules/edge_attention.py",
+      "git_blob": "ccf686b30ce7dd05f5f7d86d7ddcabeac2633088",
+      "sha256": "48a69aa9a83cfe225f8e55eeea4bab65120955aee2dc7ad02d414aef7b4e2fea"
+    },
+    {
+      "path": "experiments/qm9s_full_EA_20260925/upstream/vendor/detanet_model/modules/embedding.py",
+      "git_blob": "05353663ed2075185f9ce637094d73585b74acba",
+      "sha256": "07eff3330b5709fec463563d4ef53f857525ae85f55b8a3ab1e7c9ffb3c70ee8"
+    },
+    {
+      "path": "experiments/qm9s_full_EA_20260925/upstream/vendor/detanet_model/modules/message.py",
+      "git_blob": "2266970e5dae98d112dbff57244c5bae3961ecc7",
+      "sha256": "a76bae58dbb92447d6fb05230d7db826dc9defc929706e6f2c88c067ee5918cf"
+    },
+    {
+      "path": "experiments/qm9s_full_EA_20260925/upstream/vendor/detanet_model/modules/multilayer_perceptron.py",
+      "git_blob": "b14a8da13600134a5f7bad0d768cbe8f7e8a3988",
+      "sha256": "5628a4cebadbbc493058edae808a64370ee2834fa4ccacc041f820bf9afb4d42"
+    },
+    {
+      "path": "experiments/qm9s_full_EA_20260925/upstream/vendor/detanet_model/modules/radial_basis.py",
+      "git_blob": "83791d599dcb11d87dbba20039df7da48964dca4",
+      "sha256": "cbbbf125bdb4b64e21a4d58ddb175bde489bb7a640375847f416f137881307ca"
+    },
+    {
+      "path": "experiments/qm9s_full_EA_20260925/upstream/vendor/detanet_model/modules/update.py",
+      "git_blob": "642c893f8319bd74152e6f9dfdf85474a8be24b9",
+      "sha256": "65cda1be8fd5daa491779211ba37ec9c23b73e4a2da81444d21534584c0028a6"
+    },
+    {
+      "path": "experiments/qm9s_full_EA_20260925/upstream/vendor/detanet_model/spectra_simulator.py",
+      "git_blob": "e39e40d8672cbeb7642903ab5c24b9de1a120268",
+      "sha256": "cb36131b7dc855cd2c528d532f4d7742fc2da757d078e8732142dbeab4f0b67e"
+    },
+    {
+      "path": "LICENSE",
+      "git_blob": "541ad7130f7f2ee2eb394276af4d6eb20b305c7f",
+      "sha256": "7be03b0862ebaa2bc1bb7e858ee97973038993e3c1acf347100acc5b27bc1a52"
+    },
+    {
+      "path": "README.md",
+      "git_blob": "945aabbca60053cddeeab2e885056c438c61d375",
+      "sha256": "b8f330437c96fd330a8b6d3106949b955131cfb9ea57dfa20f7c397ee21c5223"
+    },
+    {
+      "path": "detanet_model/__init__.py",
+      "git_blob": "f68b2db540b256ec70342b2f81f0823924c3e004",
+      "sha256": "8fe70f55031182c1d0012945907181ecc85278f7849599e15e3a16939fae67f1"
+    },
+    {
+      "path": "detanet_model/constant.py",
+      "git_blob": "cfa7e558dbd44b2c824a03a7bc09e02527afba81",
+      "sha256": "1c3a8f9058ba6890c2f6730241136b35a552235b41f812288ce9cbdcc42ec856"
+    },
+    {
+      "path": "detanet_model/detanet.py",
+      "git_blob": "a5bf440200b539a66beacc91c1ebaf7c266f46f6",
+      "sha256": "4083382f2d615d1573b9dbc2d2c456d00f9895d4dae144b6c62b26feff6eebcd"
+    },
+    {
+      "path": "detanet_model/metrics.py",
+      "git_blob": "aa00acaf33239b403d30967684e0a135a04c1017",
+      "sha256": "677630dd1b97c7474c2f8a4cdda81d7e0f2a56a12dfd4b02bbb869329af4fec2"
+    },
+    {
+      "path": "detanet_model/model_loader.py",
+      "git_blob": "9fc4767e1370057edff0d5eef78aecdc8970a08e",
+      "sha256": "85507209b15efea567e686f4d99cf3be53dbf3779607d4b33e295d52c44505b3"
+    },
+    {
+      "path": "detanet_model/modules/__init__.py",
+      "git_blob": "b1a0732bb96250885d9ba22a9a8b7c3269f1aa05",
+      "sha256": "032b99150e38283d3695b394175d792c370be7dbbe38b58b94971143de9446de"
+    },
+    {
+      "path": "detanet_model/modules/acts.py",
+      "git_blob": "242f2d670fa2887bd94b1ef0b9e8607ff0fabb34",
+      "sha256": "6bcd255ac95b33e6ef6a982d87c8dd6b39c2f1a41996f2425c5ada1f0fe8256c"
+    },
+    {
+      "path": "detanet_model/modules/block.py",
+      "git_blob": "eaf06583a3dca2324dbad2a69bcf90605f2f7171",
+      "sha256": "38eb81b385fded74ac4ff3950ee2cbe6e7c7e7cc0873ec57ede64ef758460e35"
+    },
+    {
+      "path": "detanet_model/modules/edge_attention.py",
+      "git_blob": "ccf686b30ce7dd05f5f7d86d7ddcabeac2633088",
+      "sha256": "48a69aa9a83cfe225f8e55eeea4bab65120955aee2dc7ad02d414aef7b4e2fea"
+    },
+    {
+      "path": "detanet_model/modules/embedding.py",
+      "git_blob": "05353663ed2075185f9ce637094d73585b74acba",
+      "sha256": "07eff3330b5709fec463563d4ef53f857525ae85f55b8a3ab1e7c9ffb3c70ee8"
+    },
+    {
+      "path": "detanet_model/modules/message.py",
+      "git_blob": "2266970e5dae98d112dbff57244c5bae3961ecc7",
+      "sha256": "a76bae58dbb92447d6fb05230d7db826dc9defc929706e6f2c88c067ee5918cf"
+    },
+    {
+      "path": "detanet_model/modules/multilayer_perceptron.py",
+      "git_blob": "b14a8da13600134a5f7bad0d768cbe8f7e8a3988",
+      "sha256": "5628a4cebadbbc493058edae808a64370ee2834fa4ccacc041f820bf9afb4d42"
+    },
+    {
+      "path": "detanet_model/modules/radial_basis.py",
+      "git_blob": "83791d599dcb11d87dbba20039df7da48964dca4",
+      "sha256": "cbbbf125bdb4b64e21a4d58ddb175bde489bb7a640375847f416f137881307ca"
+    },
+    {
+      "path": "detanet_model/modules/update.py",
+      "git_blob": "642c893f8319bd74152e6f9dfdf85474a8be24b9",
+      "sha256": "65cda1be8fd5daa491779211ba37ec9c23b73e4a2da81444d21534584c0028a6"
+    },
+    {
+      "path": "detanet_model/spectra_simulator.py",
+      "git_blob": "e39e40d8672cbeb7642903ab5c24b9de1a120268",
+      "sha256": "cb36131b7dc855cd2c528d532f4d7742fc2da757d078e8732142dbeab4f0b67e"
+    },
+    {
+      "path": "example_calculate_properties_and_spectra.ipynb",
+      "git_blob": "701b494a9ba307bafa18528dbc48d5b6f302dd31",
+      "sha256": "f4825ac2eee1e534e6051947e3d0a2059b925e2dc9854daa9f4850c406df6077"
+    },
+    {
+      "path": "example_load_dataset_and_training_model.ipynb",
+      "git_blob": "61991b2cc8100f680a0beff6b9c94716f1cafb20",
+      "sha256": "2af17b56c27a97a1e2b2024e4e63d31a30159c181264f295f889f9f00d5b3ac2"
+    }
+  ]
+}

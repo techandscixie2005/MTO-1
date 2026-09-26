@@ -1,0 +1,13 @@
+{
+  "time": 1790413984.9500737,
+  "gpu": {
+    "uuid": "GPU-2431a641-8045-a10b-4aa0-2769010e0708",
+    "volatile": 0,
+    "aggregate": 0,
+    "memory_MiB": 10
+  },
+  "configuration_sha256": "c884a041e004204c3c8853c48b7594028e4b06b7f924e1a4c03f0bf57b3b1d61",
+  "reason_for_gpu_6": "GPU5 recorded one corrected DRAM ECC during preflight, no uncorrectable errors; use idle GPU6 with zero ECC history for the formal run",
+  "interpretation": "Paper settings take precedence; see detanet_protocol.md",
+  "user_confirmation": "detanet_confirmation.json"
+}
