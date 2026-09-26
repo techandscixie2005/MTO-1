@@ -1,0 +1,14 @@
+{
+  "event": "FIT_COMPLETE",
+  "epochs": 226,
+  "best_epoch": 23,
+  "best_val": 0.5378911513751615,
+  "seconds": 33164.463335188106,
+  "steps": 425106,
+  "parameters": {
+    "total": 1552092,
+    "backbone": 1371840
+  },
+  "reason": "early_stop",
+  "time": 1790381509.1083307
+}

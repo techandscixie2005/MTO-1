@@ -1,0 +1,25 @@
+{
+  "selected_mto": "mto_reference",
+  "criterion": "minimum validation LE+LA",
+  "validation_best": {
+    "detanet_reference": 0.5765265817953161,
+    "mto_reference": 0.5233464622939735,
+    "mto_lr3e4": 0.5378911513751615,
+    "mto_lr3e3": 0.5399122191445399,
+    "mto_channels32": 0.5318217367031886,
+    "mto_batch128": 0.53043719986189
+  },
+  "selection_pool": [
+    "detanet_reference",
+    "mto_reference",
+    "mto_lr3e4",
+    "mto_lr3e3",
+    "mto_channels32",
+    "mto_batch128"
+  ],
+  "excluded_runs": [
+    "mto_seed23"
+  ],
+  "protocol_deviation": "test set opened without all fits complete",
+  "time": 1790395334.0364733
+}

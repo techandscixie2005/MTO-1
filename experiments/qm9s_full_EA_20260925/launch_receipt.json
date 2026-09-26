@@ -1,0 +1,43 @@
+{
+  "started": 1790348336.4978304,
+  "pids": {
+    "detanet_reference": {
+      "pid": 59119,
+      "gpu": 0
+    },
+    "mto_reference": {
+      "pid": 59120,
+      "gpu": 1
+    },
+    "mto_lr3e4": {
+      "pid": 59121,
+      "gpu": 2
+    },
+    "mto_lr3e3": {
+      "pid": 59122,
+      "gpu": 4
+    },
+    "mto_channels32": {
+      "pid": 59123,
+      "gpu": 5
+    },
+    "mto_batch128": {
+      "pid": 59124,
+      "gpu": 6
+    },
+    "mto_seed23": {
+      "pid": 59125,
+      "gpu": 7
+    }
+  },
+  "initial_ecc": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 187,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 0
+  }
+}

@@ -1,6 +1,18 @@
 # MTO-1
 
-## 最新完成实验：原版 DetaNet / planned MTO，1k → 10k → 全量（seed=11，2026-09-21～22）
+## 最新归档：QM9S 全量 E+A 监督（2026-09-25～26，无 checkpoint）
+
+**完整 DetaNet 与完整 MTO：6组训练正常完成，1个MTO重复种子因CUDA错误中断。** 使用实际TD-B3LYP/TZVP逐态标签，133727条有效记录，90/5/5分组划分，按训练集固定全局尺度监督E和A。
+
+参考MTO的测试E+A损失比DetaNet低2.87%，但配对置信区间跨零；辅助光谱MSE高约11.0%，不能认定稳定全面领先。验证集选出的主配置是mto_reference。失败种子和六组测试的收尾协议偏离均保留。
+
+- [完整归档与数据恢复](experiments/qm9s_full_EA_20260925/README.md)
+- [实验设计与超参数](experiments/qm9s_full_EA_20260925/HYPERPARAMETER_DESIGN.md) · [七组实际配置](experiments/qm9s_full_EA_20260925/configs/)
+- [详细结果分析](experiments/qm9s_full_EA_20260925/ANALYSIS_REVIEWED_ZH.md) · [诊断图](experiments/qm9s_full_EA_20260925/reports/results_diagnostics.png)
+
+本次包含代码、全部准备后的输入/标签（可校验无损分块）、冻结划分/归一化、训练日志、全测试集预测、结果和环境审计。**本轮所有15个checkpoint文件均排除**，仅留审计哈希；仓库以前实验的权重保持原状。
+
+## 历史完成实验：原版 DetaNet / planned MTO，1k → 10k → 全量（seed=11，2026-09-21～22）
 
 **6次正式训练、三个规模的测试与报告均已完成。** 使用完整原版DetaNet骨干；每个规模A/B各从头训练一次；没有global-gate或额外种子。三个规模MTO相对测试MSE改善分别为 **10.28%、31.58%、30.62%**。这是单种子初步比较，不是显著性或跨种子稳定性结论。
 

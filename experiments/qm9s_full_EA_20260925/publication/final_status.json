@@ -1,0 +1,31 @@
+{
+  "archive_date": "2026-09-26",
+  "experiment": "qm9s_full_EA_20260925",
+  "completed": [
+    "detanet_reference",
+    "mto_reference",
+    "mto_lr3e4",
+    "mto_lr3e3",
+    "mto_channels32",
+    "mto_batch128"
+  ],
+  "failed": [
+    "mto_seed23"
+  ],
+  "failed_run_error": "CUDA error: unrecognized error code\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n",
+  "failed_run_completed_epochs": 194,
+  "failed_run_tested": false,
+  "test_evaluated_runs": [
+    "detanet_reference",
+    "mto_reference",
+    "mto_lr3e4",
+    "mto_lr3e3",
+    "mto_channels32",
+    "mto_batch128"
+  ],
+  "selected_mto": "mto_reference",
+  "checkpoints_published": false,
+  "protocol_deviation": "Six completed fits evaluated; seed23 failed and was excluded. Original seven-fit test gate not satisfied.",
+  "source_repository_commit": "8e1e0a871c65ff982d6d991855b983082727820b",
+  "independent_metrics_audit": "reports/independent_analysis.json"
+}

@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+env/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+data/dataset.npz
+dataset-restore-*

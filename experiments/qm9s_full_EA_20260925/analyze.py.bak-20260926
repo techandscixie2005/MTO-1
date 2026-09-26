@@ -1,0 +1,99 @@
+"""Evaluate all frozen best checkpoints only after every fit is complete."""
+import json,math,pathlib,time
+import numpy as np
+import torch
+from data_ea import Data,ROOT
+from models_ea import build
+from train_ea import setup,atomic_json
+
+def metric_arrays(E,A,Et,At,stats):
+    de=E-Et;da=A-At
+    le=np.mean(de**2,axis=1)/stats['sE2'];la=np.mean(np.sum(da**2,axis=(-2,-1)),axis=1)/stats['sA2']
+    trace=np.trace(A,axis1=-2,axis2=-1);tracet=np.trace(At,axis1=-2,axis2=-1)
+    f=2/3*(E/27.211386245988)*trace;ft=2/3*(Et/27.211386245988)*tracet
+    eig=np.linalg.eigvalsh(A);traceless=da-np.trace(da,axis1=-2,axis2=-1)[...,None,None]*np.eye(3)/3
+    grid=np.linspace(0.,21.,1051);sp_err=[];sp_mae=[];sp_rel_num=0.;sp_rel_den=0.
+    for start in range(0,len(E),128):
+        def sp(e,w):return np.sum(w[...,None]*np.exp(-.5*((grid-e[...,None])/.2)**2)/(.2*np.sqrt(2*np.pi)),axis=1)
+        a=sp(E[start:start+128],f[start:start+128]);b=sp(Et[start:start+128],ft[start:start+128]);d=a-b
+        sp_err.extend(np.mean(d*d,axis=1));sp_mae.extend(np.mean(abs(d),axis=1));sp_rel_num+=np.sum(d*d);sp_rel_den+=np.sum(b*b)
+    clusters=[]
+    for e,ap,at in zip(Et,A,At):
+        cuts=np.r_[0,np.where(np.diff(e)>1e-4)[0]+1,10]
+        for lo,hi in zip(cuts[:-1],cuts[1:]):
+            if hi-lo>1:clusters.append(float(np.sum((ap[lo:hi].sum(0)-at[lo:hi].sum(0))**2)))
+    m=dict(L=float(np.mean(le+la)),LE=float(np.mean(le)),LA=float(np.mean(la)),E_MAE_eV=float(np.mean(abs(de))),E_RMSE_eV=float(np.sqrt(np.mean(de**2))),
+        E_MAE_by_state_eV=np.mean(abs(de),axis=0).tolist(),E_RMSE_by_state_eV=np.sqrt(np.mean(de**2,axis=0)).tolist(),
+        A_Frobenius_RMSE_au2=float(np.sqrt(np.mean(np.sum(da**2,axis=(-2,-1))))),A_Frobenius_RMSE_by_state_au2=np.sqrt(np.mean(np.sum(da**2,axis=(-2,-1)),axis=0)).tolist(),
+        A_trace_MAE_au2=float(np.mean(abs(trace-tracet))),A_traceless_Frobenius_RMSE_au2=float(np.sqrt(np.mean(np.sum(traceless**2,axis=(-2,-1))))),
+        f_MAE=float(np.mean(abs(f-ft))),f_RMSE=float(np.sqrt(np.mean((f-ft)**2))),
+        minimum_A_eigenvalue=float(eig.min()),A_non_rank1_fraction_trace_mean=float(np.mean(np.maximum(eig[...,:2].sum(-1),0)/np.maximum(trace,1e-12))),
+        energy_root_inversion_fraction=float(np.mean(np.diff(E,axis=1)<0)),
+        near_degenerate_cluster_count=len(clusters),near_degenerate_sum_A_RMSE_au2=float(np.sqrt(np.mean(clusters))) if clusters else None,
+        spectrum_MSE=float(np.mean(sp_err)),spectrum_MAE=float(np.mean(sp_mae)),spectrum_relative_L2=float(np.sqrt(sp_rel_num/max(sp_rel_den,1e-30))),
+        spectrum_grid_eV=[0.,21.,.02],sigma_eV=.2,predicted_transition_outside_grid_count=int(np.sum((E<0)|(E>21))),
+        caveat='Spectrum uses derived f from E and A; finite 0-21 eV grid with sigma=0.2 eV Gaussian, evaluation convention only.')
+    return m,le+la
+
+@torch.no_grad()
+def predict(model,data,indices,batch):
+    ep=[];ap=[];model.eval()
+    for start in range(0,len(indices),batch):
+        x,_=data.batch(indices[start:start+batch]);e,a=model(**x);ep.append(e.cpu().numpy());ap.append(a.cpu().numpy())
+    return np.concatenate(ep),np.concatenate(ap)
+
+def run():
+    campaign=json.loads((ROOT/'campaign.json').read_text());names=campaign['runs']
+    fits={name:json.loads((ROOT/'runs'/name/'FIT_COMPLETE.json').read_text()) for name in names}
+    mto=[n for n in names if n.startswith('mto_')]
+    selected=min(mto,key=lambda n:fits[n]['best_val'])
+    selection=dict(selected_mto=selected,criterion='minimum validation LE+LA',validation_best={n:fits[n]['best_val'] for n in names},time=time.time())
+    atomic_json(selection,ROOT/'reports/selection_before_test.json')
+    setup(20260925);data=Data();metrics={};per_molecule={}
+    idx=data.parts['test'];Et=data.E[idx].cpu().numpy().astype('float64');At=data.A[idx].cpu().numpy().astype('float64')
+    for name in names:
+        cfg=json.loads((ROOT/'configs'/f'{name}.json').read_text());out=ROOT/'runs'/name
+        ck=torch.load(out/'best.pt',map_location='cpu',weights_only=False);assert ck['epoch']==fits[name]['best_epoch']
+        model=build(cfg,data.stats).cuda();model.load_state_dict(ck['model'])
+        E,A=predict(model,data,idx,cfg['batch_size']);metrics[name],per_molecule[name]=metric_arrays(E.astype('float64'),A.astype('float64'),Et,At,data.stats)
+        np.savez_compressed(out/'test_predictions.npz',molecule_id=data.ids[idx],E_true=Et,A_true=At,E_pred=E,A_pred=A)
+        atomic_json(metrics[name],out/'test_metrics.json');del model,ck;torch.cuda.empty_cache()
+    # Group bootstrap keeps records with the same inferred molecular identity together.
+    identities=json.loads((ROOT/'data/identity_audit_v2.json').read_text());groups={}
+    for j,i in enumerate(idx):groups.setdefault(identities[int(i)][1],[]).append(j)
+    grouped=list(groups.values());rng=np.random.default_rng(20260925);comparisons={}
+    baseline=per_molecule['detanet_reference']
+    for name in ['mto_reference',selected]:
+        diff=per_molecule[name]-baseline;sums=np.array([diff[g].sum() for g in grouped]);counts=np.array([len(g) for g in grouped]);boot=[]
+        for _ in range(2000):
+            draw=rng.integers(0,len(grouped),len(grouped));boot.append(sums[draw].sum()/counts[draw].sum())
+        comparisons[name]=dict(delta_test_L=float(diff.mean()),group_bootstrap_95pct_CI=np.quantile(boot,[.025,.975]).tolist(),
+            relative_L_reduction=float(1-metrics[name]['L']/metrics['detanet_reference']['L']),negative_delta_favors_mto=True)
+    result=dict(selection=selection,test=metrics,comparisons=comparisons,fits=fits,seed_repeat_test_L=[metrics[n]['L'] for n in ['mto_reference','mto_seed23']],
+        limitations=['Only one DetaNet seed. Hyperparameter configurations are not independent seed replicates.',
+        '278 unresolved chemical-identity records were retained in training only; see split audit.',
+        'Near-degenerate root-resolved A is basis sensitive; cluster-sum diagnostic is included.',
+        'Bootstrap quantifies test-group sampling uncertainty conditional on trained models, not full training uncertainty.'])
+    atomic_json(result,ROOT/'reports/results.json')
+    lines=['# QM9S 全量 E+A 实验结果','',f'验证集选出的 MTO 配置：`{selected}`。所有测试结果均在七个训练结束后计算。','',
+        '| 实验 | 最佳 epoch | 验证 L | 测试 L | E MAE / eV | A Frobenius RMSE / au² |',
+        '|---|---:|---:|---:|---:|---:|']
+    for name in names:
+        m=metrics[name];f=fits[name];lines.append(f"| {name} | {f['best_epoch']} | {f['best_val']:.6g} | {m['L']:.6g} | {m['E_MAE_eV']:.6g} | {m['A_Frobenius_RMSE_au2']:.6g} |")
+    lines+=['','同配置结构对照使用 detanet_reference 与 mto_reference；调参选择仅依据验证集。']
+    for name,c in comparisons.items():lines.append(f"\n{name} 相对 DetaNet 的测试总损失下降 {100*c['relative_L_reduction']:.2f}%；配对差值 {c['delta_test_L']:.6g}，分子组 bootstrap 95% 区间 {c['group_bootstrap_95pct_CI']}。")
+    lines+=['','DetaNet 只有一个随机种子，不能据此声称跨随机种子的统计显著优势。MTO 的不同超参数不能作为重复种子计算均值和标准差。',
+        '',f"参考 MTO 的两个种子测试 L：{result['seed_repeat_test_L']}。",'',
+        '数据划分为 120355/6686/6686，按推断分子身份分组；278 条身份未解决的记录仅进入训练集。完整逐态、张量、振子强度及光谱指标见 results.json。']
+    (ROOT/'reports/analysis.md').write_text('\n'.join(lines))
+    import matplotlib
+    matplotlib.use('Agg')
+    import matplotlib.pyplot as plt
+    fig,axes=plt.subplots(1,3,figsize=(18,5))
+    for name in names:
+        rows=[json.loads(line) for line in (ROOT/'runs'/name/'history.jsonl').read_text().splitlines()]
+        for j in range(3):axes[j].plot([r['epoch'] for r in rows],[r['val'][j] for r in rows],label=name)
+    for ax,title in zip(axes,['Validation L','Validation LE','Validation LA']):ax.set(title=title,xlabel='Epoch',yscale='log');ax.grid(alpha=.2)
+    axes[0].legend(fontsize=7);fig.tight_layout();fig.savefig(ROOT/'reports/learning_curves.png',dpi=180);plt.close(fig)
+    atomic_json(dict(status='ANALYSIS_COMPLETE',selected_mto=selected,time=time.time()),ROOT/'reports/ANALYSIS_COMPLETE.json')
+if __name__=='__main__':run()

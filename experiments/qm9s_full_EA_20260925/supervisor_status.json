@@ -1,0 +1,47 @@
+{
+  "time": 1790384850.8723447,
+  "runs": {
+    "detanet_reference": {
+      "pid": 59119,
+      "gpu": 0,
+      "returncode": 0,
+      "fit_complete": true
+    },
+    "mto_reference": {
+      "pid": 59120,
+      "gpu": 1,
+      "returncode": null,
+      "fit_complete": false
+    },
+    "mto_lr3e4": {
+      "pid": 59121,
+      "gpu": 2,
+      "returncode": 0,
+      "fit_complete": true
+    },
+    "mto_lr3e3": {
+      "pid": 59122,
+      "gpu": 4,
+      "returncode": 0,
+      "fit_complete": true
+    },
+    "mto_channels32": {
+      "pid": 59123,
+      "gpu": 5,
+      "returncode": 0,
+      "fit_complete": true
+    },
+    "mto_batch128": {
+      "pid": 59124,
+      "gpu": 6,
+      "returncode": 0,
+      "fit_complete": true
+    },
+    "mto_seed23": {
+      "pid": 59125,
+      "gpu": 7,
+      "returncode": 1,
+      "fit_complete": false
+    }
+  }
+}

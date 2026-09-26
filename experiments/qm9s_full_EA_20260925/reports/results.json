@@ -1,0 +1,526 @@
+{
+  "selection": {
+    "selected_mto": "mto_reference",
+    "criterion": "minimum validation LE+LA",
+    "validation_best": {
+      "detanet_reference": 0.5765265817953161,
+      "mto_reference": 0.5233464622939735,
+      "mto_lr3e4": 0.5378911513751615,
+      "mto_lr3e3": 0.5399122191445399,
+      "mto_channels32": 0.5318217367031886,
+      "mto_batch128": 0.53043719986189
+    },
+    "selection_pool": [
+      "detanet_reference",
+      "mto_reference",
+      "mto_lr3e4",
+      "mto_lr3e3",
+      "mto_channels32",
+      "mto_batch128"
+    ],
+    "excluded_runs": [
+      "mto_seed23"
+    ],
+    "protocol_deviation": "test set opened without all fits complete",
+    "time": 1790395334.0364733
+  },
+  "test": {
+    "detanet_reference": {
+      "L": 0.5727712458739852,
+      "LE": 0.03710834148738075,
+      "LA": 0.5356629043866044,
+      "E_MAE_eV": 0.10380352066727837,
+      "E_RMSE_eV": 0.14126964755342275,
+      "E_MAE_by_state_eV": [
+        0.1202041606613522,
+        0.1254530665120642,
+        0.12301361521596221,
+        0.1140182687606492,
+        0.10532629967734303,
+        0.09764175546265562,
+        0.09170892835554875,
+        0.0875742910438193,
+        0.08698316673087104,
+        0.08611165425251815
+      ],
+      "E_RMSE_by_state_eV": [
+        0.16742794219905754,
+        0.16625525589457685,
+        0.16615809234477813,
+        0.15237686783723675,
+        0.1410097361490492,
+        0.13036365278115802,
+        0.12162684728415843,
+        0.11833639142823761,
+        0.11751698077230995,
+        0.11655782175344048
+      ],
+      "A_Frobenius_RMSE_au2": 0.2663401117580071,
+      "A_Frobenius_RMSE_by_state_au2": [
+        0.16717221662411239,
+        0.2343402903202004,
+        0.2476395566453929,
+        0.2597908968888684,
+        0.266934002259295,
+        0.26733172872954625,
+        0.27117360656170675,
+        0.3092995126478368,
+        0.3258924954998057,
+        0.28207219416631024
+      ],
+      "A_trace_MAE_au2": 0.11441249526544715,
+      "A_traceless_Frobenius_RMSE_au2": 0.22323712556562397,
+      "f_MAE": 0.01839742797325545,
+      "f_RMSE": 0.03979077026167198,
+      "minimum_A_eigenvalue": -2.1690249686967038e-09,
+      "A_non_rank1_fraction_trace_mean": 0.24766879448279497,
+      "energy_root_inversion_fraction": 0.0009140160202080633,
+      "near_degenerate_cluster_count": 11,
+      "near_degenerate_sum_A_RMSE_au2": 1.0590765961377469,
+      "spectrum_MSE": 0.000917231864038949,
+      "spectrum_MAE": 0.005856577468448908,
+      "spectrum_relative_L2": 0.5317953827934524,
+      "spectrum_grid_eV": [
+        0.0,
+        21.0,
+        0.02
+      ],
+      "sigma_eV": 0.2,
+      "predicted_transition_outside_grid_count": 0,
+      "caveat": "Spectrum uses derived f from E and A; finite 0-21 eV grid with sigma=0.2 eV Gaussian, evaluation convention only."
+    },
+    "mto_reference": {
+      "L": 0.5563271743773406,
+      "LE": 0.035507743078411126,
+      "LA": 0.5208194312989294,
+      "E_MAE_eV": 0.10253334766977602,
+      "E_RMSE_eV": 0.13818936583575078,
+      "E_MAE_by_state_eV": [
+        0.11741819003367902,
+        0.12159137068984396,
+        0.11791242206663634,
+        0.11146833709068651,
+        0.1045503127442981,
+        0.09800703818663273,
+        0.09276655944849323,
+        0.08896875830777848,
+        0.08635672216389731,
+        0.08629376596581462
+      ],
+      "E_RMSE_by_state_eV": [
+        0.1579369069343232,
+        0.16045657998507074,
+        0.15711528750422207,
+        0.14822477259586403,
+        0.13965599097911802,
+        0.1327478877299647,
+        0.12398624384214652,
+        0.11851193225225326,
+        0.11578804555371824,
+        0.11690378580366674
+      ],
+      "A_Frobenius_RMSE_au2": 0.2626239815702072,
+      "A_Frobenius_RMSE_by_state_au2": [
+        0.14682124224526702,
+        0.2189479719518364,
+        0.24070947250115776,
+        0.2556309452114008,
+        0.2605656631061484,
+        0.26786808897575126,
+        0.31696127933759166,
+        0.2882299538199532,
+        0.2978394305008076,
+        0.29160516445919277
+      ],
+      "A_trace_MAE_au2": 0.1060039949739937,
+      "A_traceless_Frobenius_RMSE_au2": 0.2206096216678444,
+      "f_MAE": 0.01710522805254956,
+      "f_RMSE": 0.03905969933678543,
+      "minimum_A_eigenvalue": -5.44500389436755e-09,
+      "A_non_rank1_fraction_trace_mean": 0.2795977591660544,
+      "energy_root_inversion_fraction": 0.0029082327915711105,
+      "near_degenerate_cluster_count": 11,
+      "near_degenerate_sum_A_RMSE_au2": 0.5350142147329925,
+      "spectrum_MSE": 0.0010181802996187307,
+      "spectrum_MAE": 0.00552954022975729,
+      "spectrum_relative_L2": 0.560295765843766,
+      "spectrum_grid_eV": [
+        0.0,
+        21.0,
+        0.02
+      ],
+      "sigma_eV": 0.2,
+      "predicted_transition_outside_grid_count": 0,
+      "caveat": "Spectrum uses derived f from E and A; finite 0-21 eV grid with sigma=0.2 eV Gaussian, evaluation convention only."
+    },
+    "mto_lr3e4": {
+      "L": 0.6914393308233215,
+      "LE": 0.04054955481801465,
+      "LA": 0.6508897760053071,
+      "E_MAE_eV": 0.10912550567439527,
+      "E_RMSE_eV": 0.14767471272796043,
+      "E_MAE_by_state_eV": [
+        0.12738684667572445,
+        0.13423860829068343,
+        0.12970132774982915,
+        0.11825503077722402,
+        0.11001493450841467,
+        0.10176884714372494,
+        0.09761043055628789,
+        0.09147782494056877,
+        0.09103887551136798,
+        0.08976233059012743
+      ],
+      "E_RMSE_by_state_eV": [
+        0.171544696012559,
+        0.17699583018959134,
+        0.17247896304785584,
+        0.15788971437207486,
+        0.14759800579176807,
+        0.13783398021326682,
+        0.13042968419358802,
+        0.12265979044625464,
+        0.12261544724272645,
+        0.12153063206831184
+      ],
+      "A_Frobenius_RMSE_au2": 0.2935922022877475,
+      "A_Frobenius_RMSE_by_state_au2": [
+        0.16459717410905875,
+        0.23711102671432974,
+        0.24566305999536442,
+        0.25893836408110654,
+        0.2612525758386687,
+        0.25825686654569574,
+        0.47949559455935775,
+        0.2953262634587298,
+        0.33994769674564634,
+        0.2891417423598007
+      ],
+      "A_trace_MAE_au2": 0.11348316188218543,
+      "A_traceless_Frobenius_RMSE_au2": 0.24552851285616442,
+      "f_MAE": 0.01829671841333799,
+      "f_RMSE": 0.043958565370933296,
+      "minimum_A_eigenvalue": -1.9950174162100205e-08,
+      "A_non_rank1_fraction_trace_mean": 0.2907761058333209,
+      "energy_root_inversion_fraction": 0.0025758633296772693,
+      "near_degenerate_cluster_count": 11,
+      "near_degenerate_sum_A_RMSE_au2": 0.8605471367341011,
+      "spectrum_MSE": 0.0011533182769066824,
+      "spectrum_MAE": 0.005845961334777153,
+      "spectrum_relative_L2": 0.5963202848290643,
+      "spectrum_grid_eV": [
+        0.0,
+        21.0,
+        0.02
+      ],
+      "sigma_eV": 0.2,
+      "predicted_transition_outside_grid_count": 0,
+      "caveat": "Spectrum uses derived f from E and A; finite 0-21 eV grid with sigma=0.2 eV Gaussian, evaluation convention only."
+    },
+    "mto_lr3e3": {
+      "L": 0.551157544901464,
+      "LE": 0.03520313467190213,
+      "LA": 0.5159544102295619,
+      "E_MAE_eV": 0.10135864600106838,
+      "E_RMSE_eV": 0.137595350209725,
+      "E_MAE_by_state_eV": [
+        0.11205173496211535,
+        0.11848784006536987,
+        0.12016451301740166,
+        0.11197242000806913,
+        0.10435613172338852,
+        0.09712605735979642,
+        0.0922908429931175,
+        0.08650879220908322,
+        0.08548581040337026,
+        0.0851423172689718
+      ],
+      "E_RMSE_by_state_eV": [
+        0.15572044990994569,
+        0.15660392425275238,
+        0.16182945038504107,
+        0.15017969107657717,
+        0.14082145290521356,
+        0.12997518375996173,
+        0.12288579909978722,
+        0.11591697180396265,
+        0.11549097456655746,
+        0.11492774507216276
+      ],
+      "A_Frobenius_RMSE_au2": 0.2613945065789702,
+      "A_Frobenius_RMSE_by_state_au2": [
+        0.1544021021452289,
+        0.2249358319322801,
+        0.24132934994340605,
+        0.24624660935848683,
+        0.24456421802747227,
+        0.2577127719959618,
+        0.3049727964748597,
+        0.30358111448102937,
+        0.3126730632596987,
+        0.28424570632001955
+      ],
+      "A_trace_MAE_au2": 0.10677834157031288,
+      "A_traceless_Frobenius_RMSE_au2": 0.21978252360654385,
+      "f_MAE": 0.017316417815461543,
+      "f_RMSE": 0.038803284396017636,
+      "minimum_A_eigenvalue": -1.9438244558805655e-08,
+      "A_non_rank1_fraction_trace_mean": 0.27964246874394894,
+      "energy_root_inversion_fraction": 0.0015621364709010536,
+      "near_degenerate_cluster_count": 11,
+      "near_degenerate_sum_A_RMSE_au2": 0.46421234066919226,
+      "spectrum_MSE": 0.0009853811018426897,
+      "spectrum_MAE": 0.005548482034919897,
+      "spectrum_relative_L2": 0.5511973362019047,
+      "spectrum_grid_eV": [
+        0.0,
+        21.0,
+        0.02
+      ],
+      "sigma_eV": 0.2,
+      "predicted_transition_outside_grid_count": 0,
+      "caveat": "Spectrum uses derived f from E and A; finite 0-21 eV grid with sigma=0.2 eV Gaussian, evaluation convention only."
+    },
+    "mto_channels32": {
+      "L": 0.5501369771949627,
+      "LE": 0.028960883342959872,
+      "LA": 0.5211760938520028,
+      "E_MAE_eV": 0.09288565883406828,
+      "E_RMSE_eV": 0.12480126617937475,
+      "E_MAE_by_state_eV": [
+        0.09462261084058204,
+        0.1081744861788212,
+        0.1068776634471915,
+        0.10169491456220366,
+        0.09817814630838771,
+        0.09033623738022148,
+        0.08694036193069427,
+        0.08148502297933466,
+        0.08067778723702758,
+        0.07986935747621875
+      ],
+      "E_RMSE_by_state_eV": [
+        0.13200131421349937,
+        0.14280618700571485,
+        0.14283620059569374,
+        0.13419012273575986,
+        0.13104000584591274,
+        0.1204163067632186,
+        0.11556312783093303,
+        0.10833490595296462,
+        0.10699221951868773,
+        0.10637783459004028
+      ],
+      "A_Frobenius_RMSE_au2": 0.26271388999469847,
+      "A_Frobenius_RMSE_by_state_au2": [
+        0.1460687872416878,
+        0.21074908112363025,
+        0.2228747335172746,
+        0.24819392377908467,
+        0.25073913778526624,
+        0.2680916564416669,
+        0.3294567388098161,
+        0.2885675350709286,
+        0.31981874052354486,
+        0.2903807848573764
+      ],
+      "A_trace_MAE_au2": 0.10486841823700749,
+      "A_traceless_Frobenius_RMSE_au2": 0.22037900496773719,
+      "f_MAE": 0.017013494604555954,
+      "f_RMSE": 0.03943415126954055,
+      "minimum_A_eigenvalue": -5.148837831082595e-09,
+      "A_non_rank1_fraction_trace_mean": 0.2758477082988409,
+      "energy_root_inversion_fraction": 0.003805630338684482,
+      "near_degenerate_cluster_count": 11,
+      "near_degenerate_sum_A_RMSE_au2": 0.6868839509260704,
+      "spectrum_MSE": 0.0010224070333398566,
+      "spectrum_MAE": 0.005315691752916988,
+      "spectrum_relative_L2": 0.5614575288044338,
+      "spectrum_grid_eV": [
+        0.0,
+        21.0,
+        0.02
+      ],
+      "sigma_eV": 0.2,
+      "predicted_transition_outside_grid_count": 0,
+      "caveat": "Spectrum uses derived f from E and A; finite 0-21 eV grid with sigma=0.2 eV Gaussian, evaluation convention only."
+    },
+    "mto_batch128": {
+      "L": 0.6102816820920131,
+      "LE": 0.0390451737022479,
+      "LA": 0.5712365083897651,
+      "E_MAE_eV": 0.10800068636087469,
+      "E_RMSE_eV": 0.14490947032862878,
+      "E_MAE_by_state_eV": [
+        0.12189566613028159,
+        0.1295580419636828,
+        0.12832457374535097,
+        0.12207317519893983,
+        0.11218654774207396,
+        0.10117526857431441,
+        0.09567403900313085,
+        0.09183095323800541,
+        0.0892863768572726,
+        0.08800222115569438
+      ],
+      "E_RMSE_by_state_eV": [
+        0.16522887232079078,
+        0.16918551027685005,
+        0.16848526160744973,
+        0.16093911575621933,
+        0.1476881685891632,
+        0.13524829137560515,
+        0.12802620998717484,
+        0.12191103926190243,
+        0.11814691086662794,
+        0.12024535944355054
+      ],
+      "A_Frobenius_RMSE_au2": 0.27504184316270613,
+      "A_Frobenius_RMSE_by_state_au2": [
+        0.16630566533755708,
+        0.2292812770040838,
+        0.25229921216791173,
+        0.26204517688301393,
+        0.24927668812662002,
+        0.26113450005992594,
+        0.37806872932036545,
+        0.30118769943595874,
+        0.3119394238115949,
+        0.28747837576576357
+      ],
+      "A_trace_MAE_au2": 0.11090364338493373,
+      "A_traceless_Frobenius_RMSE_au2": 0.23098896245370903,
+      "f_MAE": 0.01787317413284206,
+      "f_RMSE": 0.04089099779793623,
+      "minimum_A_eigenvalue": -8.527849415198255e-09,
+      "A_non_rank1_fraction_trace_mean": 0.29713246771558505,
+      "energy_root_inversion_fraction": 0.0021271645561205836,
+      "near_degenerate_cluster_count": 11,
+      "near_degenerate_sum_A_RMSE_au2": 0.7418178255559504,
+      "spectrum_MSE": 0.0010992643098233549,
+      "spectrum_MAE": 0.005769945701542892,
+      "spectrum_relative_L2": 0.5821783615758953,
+      "spectrum_grid_eV": [
+        0.0,
+        21.0,
+        0.02
+      ],
+      "sigma_eV": 0.2,
+      "predicted_transition_outside_grid_count": 0,
+      "caveat": "Spectrum uses derived f from E and A; finite 0-21 eV grid with sigma=0.2 eV Gaussian, evaluation convention only."
+    }
+  },
+  "comparisons": {
+    "mto_reference": {
+      "delta_test_L": -0.016444071496644605,
+      "group_bootstrap_95pct_CI": [
+        -0.05368016040611086,
+        0.028418805540953003
+      ],
+      "relative_L_reduction": 0.028709666581730686,
+      "negative_delta_favors_mto": true
+    }
+  },
+  "fits": {
+    "detanet_reference": {
+      "event": "FIT_COMPLETE",
+      "epochs": 259,
+      "best_epoch": 107,
+      "best_val": 0.5765265817953161,
+      "seconds": 36110.27915453538,
+      "steps": 487179,
+      "parameters": {
+        "total": 1408872,
+        "backbone": 1371840
+      },
+      "reason": "early_stop",
+      "time": 1790384455.0633056
+    },
+    "mto_reference": {
+      "event": "FIT_COMPLETE",
+      "epochs": 248,
+      "best_epoch": 45,
+      "best_val": 0.5233464622939735,
+      "seconds": 36539.6179652717,
+      "steps": 466488,
+      "parameters": {
+        "total": 1552092,
+        "backbone": 1371840
+      },
+      "reason": "early_stop",
+      "time": 1790384886.5500104
+    },
+    "mto_lr3e4": {
+      "event": "FIT_COMPLETE",
+      "epochs": 226,
+      "best_epoch": 23,
+      "best_val": 0.5378911513751615,
+      "seconds": 33164.463335188106,
+      "steps": 425106,
+      "parameters": {
+        "total": 1552092,
+        "backbone": 1371840
+      },
+      "reason": "early_stop",
+      "time": 1790381509.1083307
+    },
+    "mto_lr3e3": {
+      "event": "FIT_COMPLETE",
+      "epochs": 227,
+      "best_epoch": 75,
+      "best_val": 0.5399122191445399,
+      "seconds": 33310.32983816415,
+      "steps": 426987,
+      "parameters": {
+        "total": 1552092,
+        "backbone": 1371840
+      },
+      "reason": "early_stop",
+      "time": 1790381655.1408062
+    },
+    "mto_channels32": {
+      "event": "FIT_COMPLETE",
+      "epochs": 244,
+      "best_epoch": 92,
+      "best_val": 0.5318217367031886,
+      "seconds": 35898.284750564024,
+      "steps": 458964,
+      "parameters": {
+        "total": 1783820,
+        "backbone": 1371840
+      },
+      "reason": "early_stop",
+      "time": 1790384245.704084
+    },
+    "mto_batch128": {
+      "event": "FIT_COMPLETE",
+      "epochs": 236,
+      "best_epoch": 33,
+      "best_val": 0.53043719986189,
+      "seconds": 19674.570577153936,
+      "steps": 222076,
+      "parameters": {
+        "total": 1552092,
+        "backbone": 1371840
+      },
+      "reason": "early_stop",
+      "time": 1790368019.3496344
+    }
+  },
+  "seed_repeat_test_L": {
+    "mto_reference": 0.5563271743773406
+  },
+  "excluded_runs": [
+    "mto_seed23"
+  ],
+  "seed_repeat_unavailable": [
+    "mto_seed23"
+  ],
+  "limitations": [
+    "Only one DetaNet seed. Hyperparameter configurations are not independent seed replicates.",
+    "278 unresolved chemical-identity records were retained in training only; see split audit.",
+    "Near-degenerate root-resolved A is basis sensitive; cluster-sum diagnostic is included.",
+    "Bootstrap quantifies test-group sampling uncertainty conditional on trained models, not full training uncertainty.",
+    "PROTOCOL DEVIATION (2026-09-26): the test set was opened without all fits completing, because mto_seed23 aborted at epoch 194 on a CUDA error and never produced FIT_COMPLETE.json. Excluded run(s): ['mto_seed23']. Its seed repeat is unavailable, so the two-seed stability observation is incomplete."
+  ]
+}

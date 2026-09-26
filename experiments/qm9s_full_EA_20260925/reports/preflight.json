@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "normalized_baselines": {
+    "energy_state_mean": 0.9999999999468693,
+    "zero_A": 1.0000000001185425
+  },
+  "checks": [
+    {
+      "name": "detanet",
+      "parameters": 1408872,
+      "backbone": 1371840,
+      "errors": {
+        "rotation": {
+          "E_max_abs": 4.76837158203125e-07,
+          "A_max_abs": 1.6763806343078613e-08
+        },
+        "reflection": {
+          "E_max_abs": 0.0,
+          "A_max_abs": 1.6763806343078613e-08
+        }
+      },
+      "initial_loss": 62.3094596862793,
+      "three_steps_seconds": 3.382474170997739,
+      "peak_memory_bytes": 1145668608
+    },
+    {
+      "name": "mto",
+      "parameters": 1552092,
+      "backbone": 1371840,
+      "errors": {
+        "rotation": {
+          "E_max_abs": 4.76837158203125e-07,
+          "A_max_abs": 1.30385160446167e-08
+        },
+        "reflection": {
+          "E_max_abs": 4.76837158203125e-07,
+          "A_max_abs": 1.30385160446167e-08
+        },
+        "upstream_property_path": {
+          "E_max_abs": 4.76837158203125e-07,
+          "A_max_abs": 3.725290298461914e-09
+        }
+      },
+      "initial_loss": 62.32008361816406,
+      "three_steps_seconds": 1.1125692259520292,
+      "peak_memory_bytes": 1184998912
+    },
+    {
+      "name": "mto32",
+      "parameters": 1783820,
+      "backbone": 1371840,
+      "errors": {
+        "rotation": {
+          "E_max_abs": 0.0,
+          "A_max_abs": 7.450580596923828e-09
+        },
+        "reflection": {
+          "E_max_abs": 0.0,
+          "A_max_abs": 7.450580596923828e-09
+        },
+        "upstream_property_path": {
+          "E_max_abs": 0.0,
+          "A_max_abs": 3.725290298461914e-09
+        }
+      },
+      "initial_loss": 62.29651641845703,
+      "three_steps_seconds": 3.03961786814034,
+      "peak_memory_bytes": 1201164288
+    }
+  ],
+  "time": 1790348184.269948
+}

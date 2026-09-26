@@ -1,0 +1,377 @@
+{
+  "schema_version": "1.0",
+  "source_directory": "E:\\DATA\\QM9S\\tdlog1-20000",
+  "created_utc": "2026-09-25T09:51:37Z",
+  "source_log_count": 133885,
+  "source_bytes": 8215252694,
+  "observed_id_range": [
+    1,
+    133885
+  ],
+  "missing_ids_within_range": [],
+  "duplicate_ids": [],
+  "observed_state_count_distribution": {
+    "10": 133727,
+    "0": 158
+  },
+  "route_section_distribution": {
+    "#p td=(nstates=10) b3lyp/TZVP nosymm geom=check guess=read": 133885
+  },
+  "program_version_distribution": {
+    "ES64L-G16RevB.01 20-Dec-2017": 133885
+  },
+  "rpa_flag_distribution": {
+    "T": 133727
+  },
+  "coordinate_frame_distribution": {
+    "Input": 133727,
+    "None": 158
+  },
+  "molecules_by_atomic_number": {
+    "1": 133677,
+    "6": 133724,
+    "7": 82742,
+    "8": 113813,
+    "9": 2155
+  },
+  "normal_termination_count": 133727,
+  "response_convergence_reported_count": 133727,
+  "unambiguous_single_calculation_count": 133727,
+  "complete_geometry_count": 133727,
+  "scalar_label_count": 1337270,
+  "vector_label_count": 1337270,
+  "transition_dipole_source_distribution": {
+    "electronic_transition_elements_rows_2_3_4_validated_against_electric_table": 1337270
+  },
+  "warnings": {
+    "not_exactly_one_electric_dipole_table": 158,
+    "no_final_normal_termination": 158,
+    "response_convergence_marker_absent": 158,
+    "no_excited_state_labels": 158,
+    "missing_or_incomplete_geometry": 158
+  },
+  "energy_eV": {
+    "count": 1337270,
+    "min": 0.3111,
+    "max": 18.9494,
+    "mean": 6.818049354804939,
+    "p50": 6.9949,
+    "p99": 8.476431000000005
+  },
+  "oscillator_strength": {
+    "count": 1337270,
+    "min": 0.0,
+    "max": 3.7643,
+    "mean": 0.023347727384896093,
+    "p50": 0.0085,
+    "p99": 0.2408
+  },
+  "f_absolute_residual": {
+    "count": 1337270,
+    "min": 0.0,
+    "max": 7.498808266692691e-05,
+    "mean": 2.4865487175549464e-05,
+    "p50": 2.4840616140542815e-05,
+    "p99": 4.951328958654084e-05
+  },
+  "f_absolute_residual_weak_f_below_1e_minus_3": {
+    "count": 153758,
+    "min": 0.0,
+    "max": 5.000440161773709e-05,
+    "mean": 2.3778668302810815e-05,
+    "p50": 2.3467356667048032e-05,
+    "p99": 4.950760249231515e-05
+  },
+  "f_absolute_residual_strong": {
+    "count": 1183512,
+    "min": 6.000089314284196e-12,
+    "max": 7.498808266692691e-05,
+    "mean": 2.5006683121373878e-05,
+    "p50": 2.5002947617401745e-05,
+    "p99": 4.95138960374004e-05
+  },
+  "f_relative_residual_strong": {
+    "count": 1183512,
+    "min": 6.993111088909319e-11,
+    "max": 0.05000505651978266,
+    "mean": 0.004385887633551816,
+    "p50": 0.001940339147721241,
+    "p99": 0.03250433222086264
+  },
+  "units": {
+    "positions": "angstrom",
+    "energy": "eV",
+    "wavelength": "nm",
+    "transition_dipole": "atomic units",
+    "A": "atomic units squared",
+    "oscillator_strength": "dimensionless"
+  },
+  "label_policy": "All observed labeled roots retained in printed order. No predefined number of states, broadening, train/test split, or sample exclusion.",
+  "coordinate_policy": "Last Standard orientation before labels, otherwise last available orientation. Multiple geometry tables are flagged by unambiguous_single_calculation=False.",
+  "connectivity": "Not supplied by extraction; no bonds or SMILES inferred. Geometry optimization protocol not inferred from TD geom=check.",
+  "derived_fields": {
+    "A_au2": "outer product of transition_dipole_au",
+    "oscillator_strength_from_E_mu": "(2/3)*(energy_eV/27.211386245988)*sum(mu**2)"
+  },
+  "precision_policy": "Retain electric table verbatim numerically. Use electronic transition elements rows 2,3,4 only when every component agrees with the labeled electric table within 0.000051 au. Energy and f remain from Excited State lines.",
+  "references": [
+    "https://pyscf.org/user/tddft.html",
+    "https://pyscf.org/_modules/pyscf/gw/bse.html"
+  ],
+  "shards": [
+    {
+      "name": "part-00000",
+      "records": 5000,
+      "first_id": 1,
+      "last_id": 5000,
+      "max_atoms": 23,
+      "max_observed_states": 10
+    },
+    {
+      "name": "part-00001",
+      "records": 5000,
+      "first_id": 5001,
+      "last_id": 10000,
+      "max_atoms": 26,
+      "max_observed_states": 10
+    },
+    {
+      "name": "part-00002",
+      "records": 5000,
+      "first_id": 10001,
+      "last_id": 15000,
+      "max_atoms": 26,
+      "max_observed_states": 10
+    },
+    {
+      "name": "part-00003",
+      "records": 5000,
+      "first_id": 15001,
+      "last_id": 20000,
+      "max_atoms": 24,
+      "max_observed_states": 10
+    },
+    {
+      "name": "part-00004",
+      "records": 5000,
+      "first_id": 20001,
+      "last_id": 25000,
+      "max_atoms": 24,
+      "max_observed_states": 10
+    },
+    {
+      "name": "part-00005",
+      "records": 5000,
+      "first_id": 25001,
+      "last_id": 30000,
+      "max_atoms": 22,
+      "max_observed_states": 10
+    },
+    {
+      "name": "part-00006",
+      "records": 5000,
+      "first_id": 30001,
+      "last_id": 35000,
+      "max_atoms": 22,
+      "max_observed_states": 10
+    },
+    {
+      "name": "part-00007",
+      "records": 5000,
+      "first_id": 35001,
+      "last_id": 40000,
+      "max_atoms": 25,
+      "max_observed_states": 10
+    },
+    {
+      "name": "part-00008",
+      "records": 5000,
+      "first_id": 40001,
+      "last_id": 45000,
+      "max_atoms": 27,
+      "max_observed_states": 10
+    },
+    {
+      "name": "part-00009",
+      "records": 5000,
+      "first_id": 45001,
+      "last_id": 50000,
+      "max_atoms": 23,
+      "max_observed_states": 10
+    },
+    {
+      "name": "part-00010",
+      "records": 5000,
+      "first_id": 50001,
+      "last_id": 55000,
+      "max_atoms": 25,
+      "max_observed_states": 10
+    },
+    {
+      "name": "part-00011",
+      "records": 5000,
+      "first_id": 55001,
+      "last_id": 60000,
+      "max_atoms": 29,
+      "max_observed_states": 10
+    },
+    {
+      "name": "part-00012",
+      "records": 5000,
+      "first_id": 60001,
+      "last_id": 65000,
+      "max_atoms": 29,
+      "max_observed_states": 10
+    },
+    {
+      "name": "part-00013",
+      "records": 5000,
+      "first_id": 65001,
+      "last_id": 70000,
+      "max_atoms": 25,
+      "max_observed_states": 10
+    },
+    {
+      "name": "part-00014",
+      "records": 5000,
+      "first_id": 70001,
+      "last_id": 75000,
+      "max_atoms": 25,
+      "max_observed_states": 10
+    },
+    {
+      "name": "part-00015",
+      "records": 5000,
+      "first_id": 75001,
+      "last_id": 80000,
+      "max_atoms": 27,
+      "max_observed_states": 10
+    },
+    {
+      "name": "part-00016",
+      "records": 5000,
+      "first_id": 80001,
+      "last_id": 85000,
+      "max_atoms": 25,
+      "max_observed_states": 10
+    },
+    {
+      "name": "part-00017",
+      "records": 5000,
+      "first_id": 85001,
+      "last_id": 90000,
+      "max_atoms": 27,
+      "max_observed_states": 10
+    },
+    {
+      "name": "part-00018",
+      "records": 5000,
+      "first_id": 90001,
+      "last_id": 95000,
+      "max_atoms": 27,
+      "max_observed_states": 10
+    },
+    {
+      "name": "part-00019",
+      "records": 5000,
+      "first_id": 95001,
+      "last_id": 100000,
+      "max_atoms": 29,
+      "max_observed_states": 10
+    },
+    {
+      "name": "part-00020",
+      "records": 5000,
+      "first_id": 100001,
+      "last_id": 105000,
+      "max_atoms": 29,
+      "max_observed_states": 10
+    },
+    {
+      "name": "part-00021",
+      "records": 5000,
+      "first_id": 105001,
+      "last_id": 110000,
+      "max_atoms": 27,
+      "max_observed_states": 10
+    },
+    {
+      "name": "part-00022",
+      "records": 5000,
+      "first_id": 110001,
+      "last_id": 115000,
+      "max_atoms": 27,
+      "max_observed_states": 10
+    },
+    {
+      "name": "part-00023",
+      "records": 5000,
+      "first_id": 115001,
+      "last_id": 120000,
+      "max_atoms": 29,
+      "max_observed_states": 10
+    },
+    {
+      "name": "part-00024",
+      "records": 5000,
+      "first_id": 120001,
+      "last_id": 125000,
+      "max_atoms": 29,
+      "max_observed_states": 10
+    },
+    {
+      "name": "part-00025",
+      "records": 5000,
+      "first_id": 125001,
+      "last_id": 130000,
+      "max_atoms": 21,
+      "max_observed_states": 10
+    },
+    {
+      "name": "part-00026",
+      "records": 3885,
+      "first_id": 130001,
+      "last_id": 133885,
+      "max_atoms": 21,
+      "max_observed_states": 10
+    }
+  ],
+  "complete_successful_scalar_records": 133727,
+  "complete_successful_vector_records": 133727,
+  "charge_multiplicity_distribution": {
+    "(0, 1)": 133727,
+    "(None, None)": 158
+  },
+  "state_symmetry_distribution": {
+    "Singlet-?Sym": 1337270
+  },
+  "atom_count_distribution": {
+    "5": 5,
+    "4": 4,
+    "3": 2,
+    "8": 69,
+    "6": 12,
+    "7": 21,
+    "11": 1146,
+    "9": 193,
+    "10": 525,
+    "14": 7090,
+    "12": 2330,
+    "17": 17381,
+    "15": 10629,
+    "13": 4243,
+    "0": 158,
+    "16": 14251,
+    "18": 17817,
+    "20": 12592,
+    "19": 18319,
+    "21": 13178,
+    "23": 6355,
+    "22": 4480,
+    "26": 59,
+    "24": 712,
+    "25": 1923,
+    "27": 356,
+    "29": 35
+  }
+}

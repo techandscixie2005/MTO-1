@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "all_test_labels_match_extracted_source": 6686,
+  "code_and_data_manifest_match_checkpoint": {
+    "detanet_reference": "PASS",
+    "mto_reference": "PASS",
+    "mto_lr3e4": "PASS",
+    "mto_lr3e3": "PASS",
+    "mto_channels32": "PASS",
+    "mto_batch128": "PASS"
+  },
+  "outlier_source_checks": [
+    {
+      "id": 14633,
+      "E7": 6.3061,
+      "trace_A7": 24.364993546362495,
+      "printed_f7": 3.7643,
+      "derived_f7": 3.764308671224474,
+      "atoms": 14
+    },
+    {
+      "id": 57742,
+      "E7": 6.2271,
+      "trace_A7": 19.823518021399998,
+      "printed_f7": 3.0243,
+      "derived_f7": 3.024298430447417,
+      "atoms": 17
+    },
+    {
+      "id": 97471,
+      "E7": 6.1492,
+      "trace_A7": 20.477597568562246,
+      "printed_f7": 3.085,
+      "derived_f7": 3.0850037512555,
+      "atoms": 17
+    }
+  ]
+}

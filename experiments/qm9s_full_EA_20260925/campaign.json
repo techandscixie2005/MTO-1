@@ -1,0 +1,28 @@
+{
+  "runs": [
+    "detanet_reference",
+    "mto_reference",
+    "mto_lr3e4",
+    "mto_lr3e3",
+    "mto_channels32",
+    "mto_batch128",
+    "mto_seed23"
+  ],
+  "gpu_excluded": [
+    3
+  ],
+  "split": [
+    0.9,
+    0.05,
+    0.05
+  ],
+  "selection": "minimum best validation LE+LA; test evaluated only after ALL fits complete",
+  "matched_comparison": [
+    "detanet_reference",
+    "mto_reference"
+  ],
+  "repeat_seed": [
+    "mto_reference",
+    "mto_seed23"
+  ]
+}
