@@ -1,0 +1,113 @@
+{
+  "initialization_equal": {
+    "G1": "b8c02a4156a58acef633146fc34a60515e027c882b8a1d26da9e4aa541660d50",
+    "G2": "b8c02a4156a58acef633146fc34a60515e027c882b8a1d26da9e4aa541660d50",
+    "G3": "47c26cf62eb76f8273990e7a1a73d1f9ef2a2d38b65dd2c2023f0afe337fc5cd",
+    "G4": "47c26cf62eb76f8273990e7a1a73d1f9ef2a2d38b65dd2c2023f0afe337fc5cd"
+  },
+  "all_1000_epoch_orders_equal": true,
+  "G1_reference_equivalence": {
+    "torch.float32": {
+      "forward_max_abs": 4.76837158203125e-07,
+      "pinned_gradient_max_abs": 9.5367431640625e-07,
+      "full_A_loss_difference": 0.0,
+      "absolute_and_relative_tolerance": 2e-05
+    },
+    "torch.float64": {
+      "forward_max_abs": 6.938893903907228e-18,
+      "pinned_gradient_max_abs": 3.552713678800501e-15,
+      "full_A_loss_difference": 7.105427357601002e-15,
+      "absolute_and_relative_tolerance": 1e-10
+    }
+  },
+  "trace_not_diagonal_MSE_mask_NaN_empty_and_valid_zero_labels": true,
+  "G2_energy_label_gradient_independence_and_frozen_head": {
+    "passed": true,
+    "gradient_max_abs_difference": 5.960464477539063e-08,
+    "frozen_parameters": [
+      "decoder.energy_offset",
+      "decoder.energy_head.weight",
+      "decoder.energy_head.bias"
+    ]
+  },
+  "G4_energy_label_gradient_independence_and_frozen_head": {
+    "passed": true,
+    "gradient_max_abs_difference": 2.7939677238464355e-09,
+    "frozen_parameters": [
+      "decoder.energy_offset",
+      "decoder.energy_head.weight",
+      "decoder.energy_head.bias"
+    ]
+  },
+  "centrosymmetric_geometry": {
+    "mu_max_abs": 7.594297252968374e-17,
+    "A_max_abs": 5.7673350766442994e-33,
+    "limitation": "Ordinary polar 1o head forced to zero by inversion; nonzero transition intensity cannot be represented. No samples removed."
+  },
+  "P_only_equivariance": {
+    "rotations_and_inversion": [
+      {
+        "det": 1.0,
+        "mu_error": 2.281189993846855e-12,
+        "A_error": 4.638419504173971e-14
+      },
+      {
+        "det": 1.0,
+        "mu_error": 2.2958093759406495e-12,
+        "A_error": 6.828695595095802e-14
+      },
+      {
+        "det": 1.0,
+        "mu_error": 2.5210736276370938e-12,
+        "A_error": 1.098292463919126e-13
+      },
+      {
+        "det": -1.0,
+        "mu_error": 4.861904597151905e-17,
+        "A_error": 3.7947076036992655e-19
+      }
+    ],
+    "permutation_mu_error": 5.920817211333703e-17,
+    "minimum_eigenvalue": -2.986148373277515e-20,
+    "rank_at_most_one": true,
+    "decoder_only_P": true
+  },
+  "FP32_gradient_and_resume": {
+    "G1": {
+      "batch_size": 64,
+      "first_loss": 10.63014030456543,
+      "next_loss": 1.4152015447616577,
+      "resumed_loss": 1.4152015447616577,
+      "model_max_abs_difference": 1.1920928955078125e-07,
+      "optimizer_steps": 2
+    },
+    "G2": {
+      "batch_size": 64,
+      "first_loss": 0.5991367101669312,
+      "next_loss": 0.16476747393608093,
+      "resumed_loss": 0.16476747393608093,
+      "model_max_abs_difference": 5.960464477539063e-08,
+      "optimizer_steps": 2
+    },
+    "G3": {
+      "batch_size": 64,
+      "first_loss": 10.605062484741211,
+      "next_loss": 2725.095947265625,
+      "resumed_loss": 2725.09619140625,
+      "model_max_abs_difference": 1.8104910850524902e-06,
+      "optimizer_steps": 2
+    },
+    "G4": {
+      "batch_size": 64,
+      "first_loss": 0.6405225992202759,
+      "next_loss": 110276.5078125,
+      "resumed_loss": 110276.5078125,
+      "model_max_abs_difference": 2.4586915969848633e-07,
+      "optimizer_steps": 2
+    }
+  },
+  "passed": true,
+  "time": 1790517121.0455298,
+  "scratch_training_discarded": true,
+  "formal_runs_load_frozen_initial_files": true
+}

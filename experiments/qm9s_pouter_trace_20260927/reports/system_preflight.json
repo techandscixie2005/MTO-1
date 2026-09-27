@@ -1,0 +1,26 @@
+{
+  "G1": {
+    "first_cursor": 64,
+    "resumed_cursor": 128,
+    "optimizer_steps": 2,
+    "order_sha256": "0788b3c2011664345ebdea86325e4a7bdf095389a8265754c9cf7aefa052a973",
+    "production_checkpoint_roundtrip": true
+  },
+  "G4": {
+    "first_cursor": 64,
+    "resumed_cursor": 128,
+    "optimizer_steps": 2,
+    "order_sha256": "0788b3c2011664345ebdea86325e4a7bdf095389a8265754c9cf7aefa052a973",
+    "production_checkpoint_roundtrip": true
+  },
+  "evaluation": {
+    "R2_is_1_minus_SSE_over_SST": true,
+    "oracle_label": "\u4f7f\u7528\u771f\u5b9e\u80fd\u91cf\u7684\u8bca\u65ad",
+    "true_E_used_only_for_oracle": true,
+    "G1_common_energy_scale_checked": true,
+    "no_G2_G4_native_metrics": true,
+    "zero_labels_retained": true,
+    "exact_spectrum_MSE": 0
+  },
+  "passed": true
+}

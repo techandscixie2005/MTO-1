@@ -1,0 +1,13 @@
+{
+  "name": "qm9s_pouter_trace_20260927",
+  "reference_commit": "71e575f573cfc94c7f0a301b663b0169290ce9bd",
+  "seed": 11,
+  "groups": ["G1", "G2", "G3", "G4"],
+  "gpu_pool": [1, 2, 4, 6],
+  "max_formal_groups": 4,
+  "classification": "Single-seed additional exploratory experiment; cannot attribute effects separately to bypass removal or rank-one constraint. Old test set was previously analyzed.",
+  "selection": "Each group selects best by its own full-validation training objective. Different total objectives are not ranked across groups.",
+  "evaluation": "Freeze all four selected checkpoint hashes before test; G1 selected best provides common E_ref only for evaluation.",
+  "spectrum": {"min_eV": 0, "max_eV": 21, "step_eV": 0.02, "sigma_eV": 0.2, "unit_integral_gaussian": true},
+  "known_limitation": "An ordinary equivariant polar 1o vector is forced to zero when the molecular symmetry group has no invariant polar vector, including centrosymmetric geometries. Nonzero transition intensity at such geometries cannot be represented by this head. Samples are retained unchanged."
+}

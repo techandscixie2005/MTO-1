@@ -1,0 +1,163 @@
+{
+  "time": 1790517451.169512,
+  "passed": true,
+  "formal_worker_count": 4,
+  "runs": {
+    "G1": {
+      "state": "RUNNING",
+      "pid": 365739,
+      "gpu": 1,
+      "gpu_uuid": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+      "status": {
+        "event": "TRAIN",
+        "epoch": 2,
+        "cursor": 38336,
+        "train_count": 120355,
+        "steps": 2480,
+        "loss": [
+          0.6906442642211914,
+          0.06885220110416412,
+          0.18078888952732086,
+          0.4410031735897064
+        ],
+        "lr": 0.001,
+        "grad_norm": 1.6262080669403076,
+        "time": 1790517450.0394669,
+        "seconds_this_epoch": 49.292171474546194
+      },
+      "last_checkpoint_epoch": 2,
+      "last_checkpoint_cursor": 0,
+      "last_checkpoint_steps": 1881,
+      "checkpoint_age_seconds": 50.20020341873169,
+      "initial_state_sha256": "b8c02a4156a58acef633146fc34a60515e027c882b8a1d26da9e4aa541660d50",
+      "order": {
+        "epoch": 2,
+        "sha256": "4ca3f9f6face0fa3031d611477ee27faa4269965928781db461b44837c2ec172"
+      },
+      "log": "/home/inspur/MTO-1/experiments/qm9s_pouter_trace_20260927/logs/G1.log",
+      "best_exists": true
+    },
+    "G2": {
+      "state": "RUNNING",
+      "pid": 365745,
+      "gpu": 2,
+      "gpu_uuid": "GPU-cb4dc1ea-9ea3-e426-bdeb-df0bef8a23fa",
+      "status": {
+        "event": "TRAIN",
+        "epoch": 2,
+        "cursor": 16576,
+        "train_count": 120355,
+        "steps": 2140,
+        "loss": [
+          0.2374124526977539,
+          0.0,
+          0.2374124526977539,
+          0.0
+        ],
+        "lr": 0.001,
+        "grad_norm": 0.6053102612495422,
+        "time": 1790517449.9626293,
+        "seconds_this_epoch": 23.345504108816385
+      },
+      "last_checkpoint_epoch": 2,
+      "last_checkpoint_cursor": 0,
+      "last_checkpoint_steps": 1881,
+      "checkpoint_age_seconds": 24.38771343231201,
+      "initial_state_sha256": "b8c02a4156a58acef633146fc34a60515e027c882b8a1d26da9e4aa541660d50",
+      "order": {
+        "epoch": 2,
+        "sha256": "4ca3f9f6face0fa3031d611477ee27faa4269965928781db461b44837c2ec172"
+      },
+      "log": "/home/inspur/MTO-1/experiments/qm9s_pouter_trace_20260927/logs/G2.log",
+      "best_exists": true
+    },
+    "G3": {
+      "state": "RUNNING",
+      "pid": 365754,
+      "gpu": 4,
+      "gpu_uuid": "GPU-e212aefc-f1d6-cc7a-5594-e87abeaf1184",
+      "status": {
+        "event": "TRAIN",
+        "epoch": 2,
+        "cursor": 19136,
+        "train_count": 120355,
+        "steps": 2180,
+        "loss": [
+          0.8206833004951477,
+          0.07594860345125198,
+          0.23270642757415771,
+          0.5120282769203186
+        ],
+        "lr": 0.001,
+        "grad_norm": 1.5167921781539917,
+        "time": 1790517450.7529163,
+        "seconds_this_epoch": 24.786277445033193
+      },
+      "last_checkpoint_epoch": 2,
+      "last_checkpoint_cursor": 0,
+      "last_checkpoint_steps": 1881,
+      "checkpoint_age_seconds": 25.059330463409424,
+      "initial_state_sha256": "47c26cf62eb76f8273990e7a1a73d1f9ef2a2d38b65dd2c2023f0afe337fc5cd",
+      "order": {
+        "epoch": 2,
+        "sha256": "4ca3f9f6face0fa3031d611477ee27faa4269965928781db461b44837c2ec172"
+      },
+      "log": "/home/inspur/MTO-1/experiments/qm9s_pouter_trace_20260927/logs/G3.log",
+      "best_exists": true
+    },
+    "G4": {
+      "state": "RUNNING",
+      "pid": 365765,
+      "gpu": 6,
+      "gpu_uuid": "GPU-2431a641-8045-a10b-4aa0-2769010e0708",
+      "status": {
+        "event": "TRAIN",
+        "epoch": 2,
+        "cursor": 26816,
+        "train_count": 120355,
+        "steps": 2300,
+        "loss": [
+          0.23053956031799316,
+          0.0,
+          0.23053956031799316,
+          0.0
+        ],
+        "lr": 0.001,
+        "grad_norm": 3.306753635406494,
+        "time": 1790517449.4191113,
+        "seconds_this_epoch": 34.86275910027325
+      },
+      "last_checkpoint_epoch": 2,
+      "last_checkpoint_cursor": 0,
+      "last_checkpoint_steps": 1881,
+      "checkpoint_age_seconds": 36.502397775650024,
+      "initial_state_sha256": "47c26cf62eb76f8273990e7a1a73d1f9ef2a2d38b65dd2c2023f0afe337fc5cd",
+      "order": {
+        "epoch": 2,
+        "sha256": "4ca3f9f6face0fa3031d611477ee27faa4269965928781db461b44837c2ec172"
+      },
+      "log": "/home/inspur/MTO-1/experiments/qm9s_pouter_trace_20260927/logs/G4.log",
+      "best_exists": true
+    }
+  },
+  "workers": [
+    {
+      "pid": 365739,
+      "cmd": "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/bin/python trainer.py G1 "
+    },
+    {
+      "pid": 365745,
+      "cmd": "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/bin/python trainer.py G2 "
+    },
+    {
+      "pid": 365754,
+      "cmd": "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/bin/python trainer.py G3 "
+    },
+    {
+      "pid": 365765,
+      "cmd": "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/bin/python trainer.py G4 "
+    }
+  ],
+  "supervisor_pid": 365730,
+  "test_not_started": true
+}
