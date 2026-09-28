@@ -1,0 +1,98 @@
+{
+  "classification": "Completed retained_residual arm audit only; no matched-control or promotion claim",
+  "time": 1790613127.9431195,
+  "arm": "retained_residual",
+  "gpu": 5,
+  "fit_complete": true,
+  "fit_reason": "fixed 20 epochs",
+  "source_files_verified": 44,
+  "preflight_sha256": "dfbd34b440cd948a19ae52b773aa074afdd1f9b38d7578c57d412b6e2b250b8f",
+  "execution_review_sha256": "2ac6ac27ae0435a2c2a64f6f17fe21b27fa0930abe81b658dda98bd82a88ef45",
+  "terminal_marker_sha256": "bb8bff434f1e698315a0a553f14087446a4303c11076018bb2c80df727cc1070",
+  "run_manifest_sha256": "c47e2235660f12404a9b32fdd3f1e32bd6c55fd9f6cf33f2528f592ae89c631f",
+  "launch_receipt_sha256": "cdd224fe97c469c54a81ba4cf60b8b4885fa3cd81e0112d2b2504950bd670daf",
+  "history_sha256": "13d8984af9986f2bc37347c864345bcd5cba7ea2b413a6f77f007b855ad4b7de",
+  "last_checkpoint_sha256": "c96f850f10e739632c90f8cc870990de92fa79dbeed9cfc3e1958d349122ed41",
+  "selected_checkpoint_sha256": "3150c707636a63e6f3a4c2e8af1ec0e574f3f7b81d3adee376871842a9c739cd",
+  "selected_val_predictions_sha256": "80ec0d7f19d10c641a898c2e4c0c607d7f372bec6d45a864e4830029a165925c",
+  "baseline_eta0_val_predictions_sha256": "25acae64bb4e3e541048a8705045f7f639d1113d537dbbef71672752e8065890",
+  "numerical_microcheck": {
+    "passed": true,
+    "cuda_name": "NVIDIA A800 80GB PCIe",
+    "exact_roundtrip_32MiB": true,
+    "three_matmul_outputs_bitwise_equal": true,
+    "matmul_max_abs_error_vs_CPU_FP64": 5.7220458984375e-05,
+    "matmul_relative_L2_error_vs_CPU_FP64": 2.617523477965733e-07,
+    "finite_gradient": true
+  },
+  "gpu5_ecc_unchanged_all_21_validations_and_after_exit": true,
+  "gpu5_existing_corrected_dram_count": 1,
+  "raw_label_index_id_mask_and_metric_alignment": true,
+  "selected_epoch": 0,
+  "epoch_metrics": {
+    "epoch0": {
+      "epoch": 0,
+      "raw_native_f_r2": 0.4052941297965861,
+      "raw_native_f_sse": 94.2051191147633,
+      "raw_native_f_mae": 0.017785608293909485,
+      "raw_native_f_rmse": 0.03753652506095708,
+      "energy_mae": 0.09138826571914417,
+      "common_objective": 0.5893125358613494
+    },
+    "selected_best": {
+      "epoch": 0,
+      "raw_native_f_r2": 0.4052941297965861,
+      "raw_native_f_sse": 94.2051191147633,
+      "raw_native_f_mae": 0.017785608293909485,
+      "raw_native_f_rmse": 0.03753652506095708,
+      "energy_mae": 0.09138826571914417,
+      "common_objective": 0.5893125358613494
+    },
+    "final20": {
+      "epoch": 20,
+      "raw_native_f_r2": 0.3049378537297114,
+      "raw_native_f_sse": 110.1021791817176,
+      "raw_native_f_mae": 0.017538633461120626,
+      "raw_native_f_rmse": 0.040580254954330985,
+      "energy_mae": 0.09241639339997315,
+      "common_objective": 0.6847918833796222
+    }
+  },
+  "eta0_frozen_validation_reference": {
+    "sse": 94.20512092938401,
+    "sst": 158.4062371581119,
+    "r2": 0.4052941183410983,
+    "mae": 0.017785608345899415,
+    "rmse": 0.037536525422479664
+  },
+  "selected_minus_eta0_r2": 1.1455487780587248e-08,
+  "final_minus_epoch0_r2": -0.1003562760668747,
+  "f_r2_curve": [
+    0.4052941297965861,
+    0.39740878186277584,
+    0.3799849800052507,
+    0.37130414239743126,
+    0.36287908394319723,
+    0.3531434799813238,
+    0.34183830059810116,
+    0.33952899947533366,
+    0.33826853095129705,
+    0.32857395859390437,
+    0.3285733072501005,
+    0.3294622273462593,
+    0.31986165709825454,
+    0.3236164725024956,
+    0.31407916757234133,
+    0.30984671395769825,
+    0.304610852402883,
+    0.3136046262326495,
+    0.3042510971028033,
+    0.3121367203273536,
+    0.3049378537297114
+  ],
+  "limitations": [
+    "The matched architecture original control has not completed; no within-round promotion claim is possible.",
+    "The selected best prediction array is independently checked; epoch20 predictions were not saved separately, so final metrics are cross-checked against committed history, status, and last checkpoint state.",
+    "The historical eta0 validation split has informed model design; scores are exploratory. No test prediction was opened."
+  ]
+}

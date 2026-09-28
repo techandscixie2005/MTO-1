@@ -7,7 +7,7 @@
     "last": "f437e1ee9a0f569cc6b788e5df12ad3278d28fa867853e5067fca7f71dce7cfa",
     "best": "1894f778b2d98a99cc390237c0516d98279375f140ad4b5ea72ac8d08012bd1a"
   },
-  "exclusions": "No checkpoint files, optimizer states, raw arrays, caches or runtime tensors. Dynamic queue_status omitted because it changed during transfer.",
+  "exclusions": "No checkpoints, NPZ arrays, raw predictions, optimizer states, caches, or runtime tensors. Historical test not accessed; whole architecture screen remains incomplete.",
   "files": [
     {
       "path": "round02_continuation_amendment/g2_retire.py",
@@ -77,15 +77,81 @@
     },
     {
       "path": "RESEARCH_STATUS.md",
-      "source_archive": "latest verified USTC-A800 research coordinator revision; D archive coordination/revision_after_G2_admin_stop/RESEARCH_STATUS.md",
-      "bytes": 8848,
-      "sha256": "a04465ce4f2db0614455059a26eb52870068066a34479a4405ddc8649be29a10"
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round04_partial_completion\\RESEARCH_STATUS.md",
+      "bytes": 11427,
+      "sha256": "65652aa780d1454f1257f45460b6e34f3484179be7d1dbdd934edf43225f56c4"
     },
     {
       "path": "coordinator_state.json",
-      "source_archive": "latest verified USTC-A800 research coordinator revision; D archive coordination/revision_after_G2_admin_stop/coordinator_state.json",
-      "bytes": 7521,
-      "sha256": "6a5448c5c73ecf10838f8938094ea1de06ba1cdaf936ac2536f6f98fdef44911"
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round04_partial_completion\\coordinator_state.json",
+      "bytes": 11289,
+      "sha256": "f43d97cce19596521a2cd4011bd666bc44f92cea021d8044e950a9b78b618f0b"
+    },
+    {
+      "path": "round04_partial_completion/ARCHIVE_MANIFEST_ADDENDUM.json",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round04_partial_completion\\ARCHIVE_MANIFEST_ADDENDUM.json",
+      "bytes": 793,
+      "sha256": "41d73510d082c4066d5fea5b767635cff18f111cd47aa2988e9a5c6c2569d83a"
+    },
+    {
+      "path": "round04_partial_completion/coordinator_state.json",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round04_partial_completion\\coordinator_state.json",
+      "bytes": 11289,
+      "sha256": "f43d97cce19596521a2cd4011bd666bc44f92cea021d8044e950a9b78b618f0b"
+    },
+    {
+      "path": "round04_partial_completion/DETANET_SCALED_BASELINE_FEASIBILITY.md",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round04_partial_completion\\DETANET_SCALED_BASELINE_FEASIBILITY.md",
+      "bytes": 8091,
+      "sha256": "05b55326e47320c2676bf4a08484d3abd7787dba57c8c333d8996041ad7eba4a"
+    },
+    {
+      "path": "round04_partial_completion/MANIFEST.sha256.json",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round04_partial_completion\\MANIFEST.sha256.json",
+      "bytes": 3081,
+      "sha256": "8cc23cb0badcb0eebf2dde578de28cd0a5ad75445f7a5cec275f1d2cd5b6ae13"
+    },
+    {
+      "path": "round04_partial_completion/RESEARCH_STATUS.md",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round04_partial_completion\\RESEARCH_STATUS.md",
+      "bytes": 11427,
+      "sha256": "65652aa780d1454f1257f45460b6e34f3484179be7d1dbdd934edf43225f56c4"
+    },
+    {
+      "path": "round04_partial_completion/completion_receipts/ARCHIVE_MANIFEST.json",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round04_partial_completion\\completion_receipts\\ARCHIVE_MANIFEST.json",
+      "bytes": 1496,
+      "sha256": "275e4ee72c38a4e64c2c36db626f4b853513bb08989851486982f9162d5dd4a5"
+    },
+    {
+      "path": "round04_partial_completion/completion_receipts/G1_COMPLETION_REASSIGNMENT.json",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round04_partial_completion\\completion_receipts\\G1_COMPLETION_REASSIGNMENT.json",
+      "bytes": 1615,
+      "sha256": "6296dca8265a9e7b87075e9d2bca22ffa85726548d5914b5bd1462382e61386b"
+    },
+    {
+      "path": "round04_partial_completion/completion_receipts/retained_residual_audit.py",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round04_partial_completion\\completion_receipts\\retained_residual_audit.py",
+      "bytes": 10428,
+      "sha256": "8e3071e1c8f3ddc23bd4eccd5fc0a8dde60ff3852234eaf214bfd369c289ae94"
+    },
+    {
+      "path": "round04_partial_completion/completion_receipts/RETAINED_RESIDUAL_COMPLETION.json",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round04_partial_completion\\completion_receipts\\RETAINED_RESIDUAL_COMPLETION.json",
+      "bytes": 4042,
+      "sha256": "8c2709a1b27022647853f67b597a66bb579780e69abc431d5d95b1f2cc3f3ee8"
+    },
+    {
+      "path": "round04_partial_completion/completion_receipts/RETAINED_RESIDUAL_COMPLETION.md",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round04_partial_completion\\completion_receipts\\RETAINED_RESIDUAL_COMPLETION.md",
+      "bytes": 1201,
+      "sha256": "03a9e3f6d5118a68eb689327727674db054fedd28f2b191db4224bbe4046798c"
+    },
+    {
+      "path": "round04_partial_completion/completion_receipts/RETAINED_RESIDUAL_SCIENTIFIC_INTERPRETATION.md",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round04_partial_completion\\completion_receipts\\RETAINED_RESIDUAL_SCIENTIFIC_INTERPRETATION.md",
+      "bytes": 9750,
+      "sha256": "2046a1aed4ecb6466e15c39945a4e9d1324a86affdca57792d98873858ce3303"
     }
   ]
 }

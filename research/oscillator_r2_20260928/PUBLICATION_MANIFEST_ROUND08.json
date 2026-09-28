@@ -1,0 +1,108 @@
+{
+  "purpose": "Reviewed partial-completion receipts for retained-residual and G1, with live coordinator snapshot",
+  "base_published_commit": "38cbaf2781dbee4e6f3859ef82e44a32cb6e7db4",
+  "whole_architecture_screen": "RUNNING/incomplete; no matched-arm conclusion",
+  "test_evaluation": "none",
+  "source": "Verified D: archive copies of remote lightweight files and D: manifests",
+  "files": [
+    {
+      "path": "round04_partial_completion/completion_receipts/ARCHIVE_MANIFEST.json",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/completion_receipts/ARCHIVE_MANIFEST.json",
+      "bytes": 1496,
+      "sha256": "275e4ee72c38a4e64c2c36db626f4b853513bb08989851486982f9162d5dd4a5",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round04_partial_completion\\completion_receipts\\ARCHIVE_MANIFEST.json"
+    },
+    {
+      "path": "round04_partial_completion/completion_receipts/retained_residual_audit.py",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/completion_receipts/retained_residual_audit.py",
+      "bytes": 10428,
+      "sha256": "8e3071e1c8f3ddc23bd4eccd5fc0a8dde60ff3852234eaf214bfd369c289ae94",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round04_partial_completion\\completion_receipts\\retained_residual_audit.py"
+    },
+    {
+      "path": "round04_partial_completion/completion_receipts/RETAINED_RESIDUAL_COMPLETION.json",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/completion_receipts/RETAINED_RESIDUAL_COMPLETION.json",
+      "bytes": 4042,
+      "sha256": "8c2709a1b27022647853f67b597a66bb579780e69abc431d5d95b1f2cc3f3ee8",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round04_partial_completion\\completion_receipts\\RETAINED_RESIDUAL_COMPLETION.json"
+    },
+    {
+      "path": "round04_partial_completion/completion_receipts/RETAINED_RESIDUAL_COMPLETION.md",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/completion_receipts/RETAINED_RESIDUAL_COMPLETION.md",
+      "bytes": 1201,
+      "sha256": "03a9e3f6d5118a68eb689327727674db054fedd28f2b191db4224bbe4046798c",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round04_partial_completion\\completion_receipts\\RETAINED_RESIDUAL_COMPLETION.md"
+    },
+    {
+      "path": "round04_partial_completion/completion_receipts/G1_COMPLETION_REASSIGNMENT.json",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/completion_receipts/G1_COMPLETION_REASSIGNMENT.json",
+      "bytes": 1615,
+      "sha256": "6296dca8265a9e7b87075e9d2bca22ffa85726548d5914b5bd1462382e61386b",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round04_partial_completion\\completion_receipts\\G1_COMPLETION_REASSIGNMENT.json"
+    },
+    {
+      "path": "round04_partial_completion/completion_receipts/RETAINED_RESIDUAL_SCIENTIFIC_INTERPRETATION.md",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/completion_receipts/RETAINED_RESIDUAL_SCIENTIFIC_INTERPRETATION.md",
+      "bytes": 9750,
+      "sha256": "2046a1aed4ecb6466e15c39945a4e9d1324a86affdca57792d98873858ce3303",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round04_partial_completion\\completion_receipts\\RETAINED_RESIDUAL_SCIENTIFIC_INTERPRETATION.md"
+    },
+    {
+      "path": "round04_partial_completion/DETANET_SCALED_BASELINE_FEASIBILITY.md",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/DETANET_SCALED_BASELINE_FEASIBILITY.md",
+      "bytes": 8091,
+      "sha256": "05b55326e47320c2676bf4a08484d3abd7787dba57c8c333d8996041ad7eba4a",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round04_partial_completion\\DETANET_SCALED_BASELINE_FEASIBILITY.md"
+    },
+    {
+      "path": "round04_partial_completion/coordinator_state.json",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/coordinator_state.json",
+      "bytes": 11289,
+      "sha256": "f43d97cce19596521a2cd4011bd666bc44f92cea021d8044e950a9b78b618f0b",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round04_partial_completion\\coordinator_state.json"
+    },
+    {
+      "path": "round04_partial_completion/RESEARCH_STATUS.md",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/RESEARCH_STATUS.md",
+      "bytes": 11427,
+      "sha256": "65652aa780d1454f1257f45460b6e34f3484179be7d1dbdd934edf43225f56c4",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round04_partial_completion\\RESEARCH_STATUS.md"
+    },
+    {
+      "path": "round04_partial_completion/MANIFEST.sha256.json",
+      "remote_source": "D: archive manifest",
+      "bytes": 3081,
+      "sha256": "c129032047888a51723f94523df83dd875f110f42e14e60693e0066bce8cd1f0",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round04_partial_completion\\MANIFEST.sha256.json"
+    },
+    {
+      "path": "round04_partial_completion/ARCHIVE_MANIFEST_ADDENDUM.json",
+      "remote_source": "D: archive manifest",
+      "bytes": 793,
+      "sha256": "41d73510d082c4066d5fea5b767635cff18f111cd47aa2988e9a5c6c2569d83a",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round04_partial_completion\\ARCHIVE_MANIFEST_ADDENDUM.json"
+    },
+    {
+      "path": "RESEARCH_STATUS.md",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/RESEARCH_STATUS.md",
+      "bytes": 11427,
+      "sha256": "65652aa780d1454f1257f45460b6e34f3484179be7d1dbdd934edf43225f56c4",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round04_partial_completion\\RESEARCH_STATUS.md"
+    },
+    {
+      "path": "coordinator_state.json",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/coordinator_state.json",
+      "bytes": 11289,
+      "sha256": "f43d97cce19596521a2cd4011bd666bc44f92cea021d8044e950a9b78b618f0b",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round04_partial_completion\\coordinator_state.json"
+    },
+    {
+      "path": "PUBLICATION_MANIFEST_ADDENDUM.json",
+      "remote_source": "D: revised publication manifest",
+      "bytes": 8550,
+      "sha256": "e1a80c56d16e2ab61ebddcf879322d390cd74f5c27d55333917feb9f11bffde9",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round04_partial_completion\\PUBLICATION_MANIFEST_ADDENDUM.json"
+    }
+  ],
+  "excludes": "Checkpoints, NPZ/raw arrays, optimizer states, caches and runtime tensors"
+}

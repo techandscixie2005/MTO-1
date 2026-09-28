@@ -1,0 +1,62 @@
+{
+  "purpose": "D: archive of completed architecture-arm evidence and scientific context",
+  "source": "USTC-A800:/home/inspur/MTO-1",
+  "verification": "All listed payload files SHA-256 match the remote source.",
+  "excluded": "No checkpoints, NPZ arrays, raw predictions, optimizer states, caches or runtime tensors.",
+  "files": [
+    {
+      "path": "completion_receipts\\ARCHIVE_MANIFEST.json",
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/completion_receipts/ARCHIVE_MANIFEST.json",
+      "bytes": 1496,
+      "sha256": "275e4ee72c38a4e64c2c36db626f4b853513bb08989851486982f9162d5dd4a5"
+    },
+    {
+      "path": "completion_receipts\\retained_residual_audit.py",
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/completion_receipts/retained_residual_audit.py",
+      "bytes": 10428,
+      "sha256": "8e3071e1c8f3ddc23bd4eccd5fc0a8dde60ff3852234eaf214bfd369c289ae94"
+    },
+    {
+      "path": "completion_receipts\\RETAINED_RESIDUAL_COMPLETION.json",
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/completion_receipts/RETAINED_RESIDUAL_COMPLETION.json",
+      "bytes": 4042,
+      "sha256": "8c2709a1b27022647853f67b597a66bb579780e69abc431d5d95b1f2cc3f3ee8"
+    },
+    {
+      "path": "completion_receipts\\RETAINED_RESIDUAL_COMPLETION.md",
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/completion_receipts/RETAINED_RESIDUAL_COMPLETION.md",
+      "bytes": 1201,
+      "sha256": "03a9e3f6d5118a68eb689327727674db054fedd28f2b191db4224bbe4046798c"
+    },
+    {
+      "path": "completion_receipts\\G1_COMPLETION_REASSIGNMENT.json",
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/completion_receipts/G1_COMPLETION_REASSIGNMENT.json",
+      "bytes": 1615,
+      "sha256": "6296dca8265a9e7b87075e9d2bca22ffa85726548d5914b5bd1462382e61386b"
+    },
+    {
+      "path": "completion_receipts\\RETAINED_RESIDUAL_SCIENTIFIC_INTERPRETATION.md",
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/completion_receipts/RETAINED_RESIDUAL_SCIENTIFIC_INTERPRETATION.md",
+      "bytes": 9750,
+      "sha256": "2046a1aed4ecb6466e15c39945a4e9d1324a86affdca57792d98873858ce3303"
+    },
+    {
+      "path": "DETANET_SCALED_BASELINE_FEASIBILITY.md",
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/DETANET_SCALED_BASELINE_FEASIBILITY.md",
+      "bytes": 8091,
+      "sha256": "05b55326e47320c2676bf4a08484d3abd7787dba57c8c333d8996041ad7eba4a"
+    },
+    {
+      "path": "coordinator_state.json",
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/coordinator_state.json",
+      "bytes": 11289,
+      "sha256": "f43d97cce19596521a2cd4011bd666bc44f92cea021d8044e950a9b78b618f0b"
+    },
+    {
+      "path": "RESEARCH_STATUS.md",
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/RESEARCH_STATUS.md",
+      "bytes": 11427,
+      "sha256": "65652aa780d1454f1257f45460b6e34f3484179be7d1dbdd934edf43225f56c4"
+    }
+  ]
+}

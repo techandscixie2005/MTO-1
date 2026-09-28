@@ -1,0 +1,39 @@
+{
+  "classification": "lightweight remote-to-D archive manifest for completed-arm audits",
+  "created": 1790613198.3410866,
+  "remote_root": "/home/inspur/MTO-1/research/oscillator_r2_20260928/completion_receipts",
+  "approved_files": [
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/completion_receipts/retained_residual_audit.py",
+      "size_bytes": 10428,
+      "sha256": "8e3071e1c8f3ddc23bd4eccd5fc0a8dde60ff3852234eaf214bfd369c289ae94"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/completion_receipts/RETAINED_RESIDUAL_COMPLETION.json",
+      "size_bytes": 4042,
+      "sha256": "8c2709a1b27022647853f67b597a66bb579780e69abc431d5d95b1f2cc3f3ee8"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/completion_receipts/RETAINED_RESIDUAL_COMPLETION.md",
+      "size_bytes": 1201,
+      "sha256": "03a9e3f6d5118a68eb689327727674db054fedd28f2b191db4224bbe4046798c"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/completion_receipts/G1_COMPLETION_REASSIGNMENT.json",
+      "size_bytes": 1615,
+      "sha256": "6296dca8265a9e7b87075e9d2bca22ffa85726548d5914b5bd1462382e61386b"
+    }
+  ],
+  "exclude": [
+    "last.pt",
+    "best_native_f.pt",
+    "best_common_objective.pt",
+    "best_native_f_val.npz",
+    "selections/",
+    "optimizer states",
+    "raw prediction arrays",
+    "__pycache__"
+  ],
+  "matched_architecture_control_pending": true,
+  "no_test_evaluation": true
+}

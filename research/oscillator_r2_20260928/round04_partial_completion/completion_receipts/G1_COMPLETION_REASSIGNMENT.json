@@ -1,0 +1,29 @@
+{
+  "classification": "targeted G1 natural-completion/GPU1 reassignment receipt; no new evaluation",
+  "time": 1790613184.8364155,
+  "G1": {
+    "completed_epoch": 227,
+    "reason": "early_stop",
+    "best_epoch": 75,
+    "best_validation_objective": 0.4876234199502958,
+    "native_f_validation_r2_from_prior_audit": 0.4052545406625945,
+    "former_pid": 566461,
+    "former_process_absent": true,
+    "gpu": 1,
+    "file_sha256": {
+      "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/runs/G1/FIT_COMPLETE.json": "a24e6b48043a68c0dc22584528ed4024e8c9b02ba950fc8784ad76872b8c0330",
+      "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/configs/G1.json": "5cf899eec31cc3a7316e406a68911b2a23768a62fcf34cb168d4b1229809cc78",
+      "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/runs/G1/launch_receipt.json": "dd48f6d406079434f6566fa1753ad4174a0cfa3d281414677cabb7d09859e6b7",
+      "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/runs/G1/best.pt": "3718c223eb40cc6a40d710bd3b9086b5a3209b6d0eb440f7265f1444510e153f",
+      "/home/inspur/MTO-1/research/oscillator_r2_20260928/chan64_validation_only.json": "cc9a40af9e1ba3a1b9200cbe25514b5b35e7cabf1e8642e991d59282707899de"
+    }
+  },
+  "architecture_independent_trace": {
+    "pid": 799963,
+    "gpu": 1,
+    "gpu_uuid": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+    "launch_receipt_sha256": "c0e781595b4c7759394b103eaf05a26ef0b69f95298e265d67b895f7044c5cc9",
+    "launch_receipt_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/runs/independent_trace/queue_launch_receipt.json"
+  },
+  "no_test_or_new_inference": true
+}
