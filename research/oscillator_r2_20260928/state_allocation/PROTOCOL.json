@@ -1,0 +1,74 @@
+{
+  "classification": "Exploratory validation-only diagnostic; protocol frozen after eta0 feasibility check, before multi-model analysis",
+  "created": 1790611698.4360113,
+  "models": [
+    "mto_eta0",
+    "mto_eta01",
+    "mto_eta1",
+    "equal_three"
+  ],
+  "primary": "unchanged ordered pooled raw-native-f R2",
+  "gap_cuts_eV": [
+    0.0425,
+    0.53737
+  ],
+  "gap_boundary_tolerance_eV": 1e-12,
+  "brightness": "pair true raw-f sum; pooled validation q50 and q90; fixed across models and offsets",
+  "state_pairs": "all nine adjacent pairs separately, physical states1..10",
+  "disjoint_offsets": {
+    "offset0": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        9,
+        10
+      ]
+    ],
+    "offset1": [
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        8,
+        9
+      ]
+    ]
+  },
+  "oracle": "Independent local swaps within each fixed disjoint offset; never combine offsets; no claimed attainable R2",
+  "bootstrap": {
+    "unit": "existing connectivity group, all molecules/states together",
+    "replicates": 2000,
+    "seed": 20260929,
+    "intervals": "conditional on frozen selected model predictions; not checkpoint/arm-selection or seed uncertainty"
+  },
+  "resources": {
+    "cpu_threads": 1,
+    "wall_seconds": 600,
+    "address_space_bytes": 2147483648
+  },
+  "test_access": false,
+  "training": false
+}

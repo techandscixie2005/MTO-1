@@ -1,0 +1,64 @@
+{
+  "purpose": "Reviewed validation-only state-allocation diagnostic and deferred decision notes",
+  "base_published_commit": "f4f033c3760f15357933eb644557837af3cb3039",
+  "source": "Hash-verified D: archive copies of manifest-allowlisted USTC-A800 files",
+  "files": [
+    {
+      "path": "state_allocation/ARCHIVE_MANIFEST.json",
+      "bytes": 1978,
+      "sha256": "78059bde9b85a5eee58e5095f4ceab84ea50dfddd6e04dc8a99e3882bd47a44b",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_state_allocation\\ARCHIVE_MANIFEST.json",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/state_allocation/ARCHIVE_MANIFEST.json"
+    },
+    {
+      "path": "state_allocation/INDEPENDENT_REVIEW.json",
+      "bytes": 2612,
+      "sha256": "09e64066f877d270faab8f5594278e75d8f1663667fbfba3c0cb5a992440abc0",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_state_allocation\\INDEPENDENT_REVIEW.json",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/state_allocation/INDEPENDENT_REVIEW.json"
+    },
+    {
+      "path": "state_allocation/INDEPENDENT_REVIEW.md",
+      "bytes": 1144,
+      "sha256": "b4a17be65f87f9d1a8e7be18662b5a1a962c04a4ab73fbf65d44120b7b257784",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_state_allocation\\INDEPENDENT_REVIEW.md",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/state_allocation/INDEPENDENT_REVIEW.md"
+    },
+    {
+      "path": "state_allocation/INTERPRETATION.md",
+      "bytes": 2336,
+      "sha256": "c16d3acfce26a88225b79c93ce4d68e9d3eb0bb45f9bc7d85409fa7bb150d8f6",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_state_allocation\\INTERPRETATION.md",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/state_allocation/INTERPRETATION.md"
+    },
+    {
+      "path": "state_allocation/PROTOCOL.json",
+      "bytes": 1533,
+      "sha256": "ee7fdd4646dd320c0d31490c5481a2636f80124cfacf0bb296ef5888b6e703a3",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_state_allocation\\PROTOCOL.json",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/state_allocation/PROTOCOL.json"
+    },
+    {
+      "path": "state_allocation/RESULTS.json",
+      "bytes": 252803,
+      "sha256": "ef47580b3b216901938de560adac7782e9cf125402d1aeb652f2ad3baf5c021e",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_state_allocation\\RESULTS.json",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/state_allocation/RESULTS.json"
+    },
+    {
+      "path": "state_allocation/RESULTS.md",
+      "bytes": 2400,
+      "sha256": "0f02c5933b4fa60b28a6e5c10216cf4aac13d23c24c39b4d9e98af8ff8b5b45b",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_state_allocation\\RESULTS.md",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/state_allocation/RESULTS.md"
+    },
+    {
+      "path": "state_allocation/analyze.py",
+      "bytes": 13184,
+      "sha256": "832c8e4d68c1f3cd986ca2943153ff4200203931ef9d058d2904cd0c0113c907",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_state_allocation\\analyze.py",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/state_allocation/analyze.py"
+    }
+  ],
+  "excludes": "Raw prediction NPZ, training checkpoints, optimizer states, feature caches, and test inference"
+}

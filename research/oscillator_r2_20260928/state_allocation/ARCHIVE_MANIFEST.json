@@ -1,0 +1,50 @@
+{
+  "classification": "lightweight remote-to-D archive manifest",
+  "created": 1790612216.523028,
+  "remote_root": "/home/inspur/MTO-1/research/oscillator_r2_20260928/state_allocation",
+  "approved_files": [
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/state_allocation/PROTOCOL.json",
+      "size_bytes": 1533,
+      "sha256": "ee7fdd4646dd320c0d31490c5481a2636f80124cfacf0bb296ef5888b6e703a3"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/state_allocation/analyze.py",
+      "size_bytes": 13184,
+      "sha256": "832c8e4d68c1f3cd986ca2943153ff4200203931ef9d058d2904cd0c0113c907"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/state_allocation/RESULTS.json",
+      "size_bytes": 252803,
+      "sha256": "ef47580b3b216901938de560adac7782e9cf125402d1aeb652f2ad3baf5c021e"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/state_allocation/RESULTS.md",
+      "size_bytes": 2400,
+      "sha256": "0f02c5933b4fa60b28a6e5c10216cf4aac13d23c24c39b4d9e98af8ff8b5b45b"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/state_allocation/INTERPRETATION.md",
+      "size_bytes": 2336,
+      "sha256": "c16d3acfce26a88225b79c93ce4d68e9d3eb0bb45f9bc7d85409fa7bb150d8f6"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/state_allocation/INDEPENDENT_REVIEW.json",
+      "size_bytes": 2612,
+      "sha256": "09e64066f877d270faab8f5594278e75d8f1663667fbfba3c0cb5a992440abc0"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/state_allocation/INDEPENDENT_REVIEW.md",
+      "size_bytes": 1144,
+      "sha256": "b4a17be65f87f9d1a8e7be18662b5a1a962c04a4ab73fbf65d44120b7b257784"
+    }
+  ],
+  "exclude": [
+    "all raw validation prediction NPZ files",
+    "training checkpoints",
+    "optimizer states",
+    "feature caches",
+    "__pycache__"
+  ],
+  "no_test_or_training_artifacts": true
+}

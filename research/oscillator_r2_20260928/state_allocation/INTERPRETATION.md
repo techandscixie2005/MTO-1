@@ -1,0 +1,11 @@
+# Scientific interpretation
+
+The equal-three ensemble lowers separate-state low-gap SSE by7.8% in offset0 and11.7% in offset1. Connectivity bootstrap95% intervals are[-0.31%,16.25%] and[5.47%,17.15%], respectively. It improves low-gap prediction error, with stronger evidence in offset1.
+
+It does not clearly remove the adjacent-error cancellation pattern. Low-gap pair-sum/separate-state SSE ratios move from0.773 to0.716 and0.680 to0.666, while adjacent error correlations become more negative (-0.229 to-0.287 and-0.323 to-0.336). Both ratio-change intervals cross zero. This means the ensemble's general variance reduction does not demonstrate that state-allocation ambiguity is solved. The fixed-offset oracle swap fractions remain substantial at20.3% and25.3% of the respective pair SSE, but those truth-informed quantities are diagnostic bounds only.
+
+The fully stratified tables temper the aggregate pattern. As a descriptive readability check,17 state-pair/brightness strata have at least30 examples in both low-gap and high-gap bins. Eta0 has stronger low-gap cancellation in only10 of17, although its oracle swap fraction is larger at low gaps in15 of17. Equal-three gives10 of17 and14 of17, respectively. Several low-brightness strata show the opposite cancellation direction. The minimum-count screen is a post-analysis summary of already predefined cells, not a prespecified significance test; sparse high-state/high-gap cells remain in the JSON. Do not claim a uniform near-degeneracy mechanism from these aggregates.
+
+Predicted-energy ordering inversions fall from83 for eta0 to17 for the ensemble among60174 adjacent transitions. Counts alone do not establish how much oscillator-strength SSE those inversions cause. Most neighboring pairs already have ordered predicted energies, so simply sorting the outputs is not justified.
+
+The evidence warrants retaining state-coupled or energy-conditioned intensity prediction as a plausible next hypothesis if the ongoing loss/readout screens leave a meaningful gap. It does not justify immediately launching another architecture, swapping labels, using true energies at inference, or claiming that an oracle bound is attainable. First integrate the current matched single-model experiments and their low-gap diagnostics. The descriptor-training alternative remains deferred.

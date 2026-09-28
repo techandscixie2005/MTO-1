@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "reviewer": "independent_execution_audit",
+  "time": 1790612216.522281,
+  "classification": "Validation-only independent review; no training or test files opened",
+  "files": {
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/state_allocation/PROTOCOL.json": "ee7fdd4646dd320c0d31490c5481a2636f80124cfacf0bb296ef5888b6e703a3",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/state_allocation/analyze.py": "832c8e4d68c1f3cd986ca2943153ff4200203931ef9d058d2904cd0c0113c907",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/state_allocation/RESULTS.json": "ef47580b3b216901938de560adac7782e9cf125402d1aeb652f2ad3baf5c021e",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/state_allocation/RESULTS.md": "0f02c5933b4fa60b28a6e5c10216cf4aac13d23c24c39b4d9e98af8ff8b5b45b",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/state_allocation/INTERPRETATION.md": "c16d3acfce26a88225b79c93ce4d68e9d3eb0bb45f9bc7d85409fa7bb150d8f6"
+  },
+  "fix_during_review": "Added dtype-aware exact raw_labels.npz f/E/mask alignment at frozen validation indices for each model, plus raw-label SHA. Re-ran script with unchanged scientific metrics.",
+  "checks": [
+    "Frozen protocol timestamp predates multi-model result; initial eta0 feasibility is disclosed.",
+    "All three val arrays align exactly to frozen validation indices, unique IDs, raw f/E labels, and all masks; equal-three averages the three native f arrays.",
+    "True energy gaps are in eV, true pair-strength sums define fixed brightness bins; physical state-pair columns1..10 are correct.",
+    "Offset0 and offset1 separately contain nonoverlapping adjacent pairs; their gap bins partition all6686\u00d75 and6686\u00d74 pairs respectively.",
+    "Independent eta0 offset1 low-gap reproduction: 2673 pairs, SSE7.3472594604, pair-sum ratio0.6795052154, error correlation-0.3229513109, oracle local-swap fraction0.3027078899.",
+    "Independent 2000-draw connectivity bootstrap exactly reproduced ordered ensemble-minus-eta0 \u0394R\u00b2 CI [0.0253173997,0.0445021358,0.0621523010]; groups6671, repeated15, largest2.",
+    "Interpretation 17 eligible state-pair/brightness strata and mixed 10/15 eta0,10/14 ensemble counts reproduced; no sorting or physical-mixing conclusion claimed."
+  ],
+  "limitations": [
+    "Protocol followed an eta0 feasibility inspection, so this is exploratory.",
+    "Oracle swap uses true labels and is a diagnostic bound, not an inference rule or attainable R\u00b2.",
+    "Group bootstrap conditions on selected checkpoints; no seed or checkpoint-selection uncertainty."
+  ]
+}
