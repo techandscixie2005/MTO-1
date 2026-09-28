@@ -1,0 +1,197 @@
+{
+  "archive": "round02_loss_pilot_complete",
+  "verified_at": "2026-09-29T02:48:07.5223413+08:00",
+  "source": "/home/inspur/MTO-1/research/oscillator_r2_20260928",
+  "file_count": 36,
+  "total_bytes": 331724.0,
+  "transfer": "SCP remote-to-D local; SHA-256 verified against source",
+  "exclusions": [
+    "all .pt checkpoints",
+    "all .npz predictions and raw arrays",
+    "optimizer states",
+    "runtime caches",
+    "datasets"
+  ],
+  "files": [
+    {
+      "path": "CODE_REVIEW.json",
+      "sha256": "2c23812fb71666ed081d5437b24066042bb91b165a9383ab5bbbdd778c21e301",
+      "bytes": 1950
+    },
+    {
+      "path": "CODE_REVIEW.md",
+      "sha256": "4db880823aebcc44048d07c6c16cbf9bbf09e239d701bfc2c9e0ec9c7c0f714b",
+      "bytes": 1870
+    },
+    {
+      "path": "G2_ADMIN_STOPPED.json",
+      "sha256": "ce5ac336fdc05d1121b5b01a4fdc1bde017080ddb7c10d3dcfc4d811d66014a2",
+      "bytes": 3866
+    },
+    {
+      "path": "g2_retire.py",
+      "sha256": "07703406550e383e0c4d4bb90c4a50c7f6a41cd7e55014f3f05b078a2f6ca76e",
+      "bytes": 12401
+    },
+    {
+      "path": "G2_RETIREMENT_AMENDMENT_REVIEW.json",
+      "sha256": "e6b398df958f62e87f40298dc2c7c21745c42a7c567d58be0e148967ae642f1a",
+      "bytes": 2300
+    },
+    {
+      "path": "G2_RETIREMENT_AMENDMENT_REVIEW.md",
+      "sha256": "03d7eb2391803a11f90fa6f77ed4d686b9a35eadbbe8c20f35f4fbb8b9435ef6",
+      "bytes": 1273
+    },
+    {
+      "path": "G2_RETIREMENT.md",
+      "sha256": "cc19739adc0bb47995526b625dab5a3ce2dc4a7f0f611b542517ee24a7bb116c",
+      "bytes": 1612
+    },
+    {
+      "path": "loss_pilot_completion_audit.json",
+      "sha256": "39e6c03a299f9bb46ef1140c5560f69f64eb6c96f743151a3018bf45ca8bf57d",
+      "bytes": 3975
+    },
+    {
+      "path": "loss_pilot_completion_audit.md",
+      "sha256": "eb113a3742ac2b7d92d506cda92387bdcb76a6fe5465a2dc97060f476884b968",
+      "bytes": 1209
+    },
+    {
+      "path": "pilot_config.json",
+      "sha256": "c4afc1c1fc1b0bd31595c2a93c6dd4799bc2924c3587de3ea7538e773dee623b",
+      "bytes": 1098
+    },
+    {
+      "path": "pilot_objective.py",
+      "sha256": "7277cc096b5b387f382c2954f3be31f7ab779ccaf5022fd3161efa7e01c7b065",
+      "bytes": 1339
+    },
+    {
+      "path": "pilot_queue_admin.py",
+      "sha256": "f0a13e9e55a79c4a35b42d390fd3f51203db5a3624635b6d8fe30f09dcd2a07b",
+      "bytes": 10100
+    },
+    {
+      "path": "pilot_queue.py",
+      "sha256": "5796866183c00ee7ae22b1f8e7c6c7e0d3ce0130c4bce8a6c16b508781cefdc3",
+      "bytes": 7864
+    },
+    {
+      "path": "pilot_summary.json",
+      "sha256": "4c109a0f017f518b445671b4b136f28d10f5aefe62facf8137e29d36b0bd2c78",
+      "bytes": 4983
+    },
+    {
+      "path": "PILOT_SUMMARY.md",
+      "sha256": "73e6ce4fc8e431b352d900fad299979673c916d67ce193879a9e18d966916833",
+      "bytes": 805
+    },
+    {
+      "path": "preflight_results.json",
+      "sha256": "3742173e5f9cc8df11f5dd62da06ab6f2d37a12e97a4875e955273ab26e17532",
+      "bytes": 7011
+    },
+    {
+      "path": "preflight.py",
+      "sha256": "602b1c582846227441398ef8dba58e2d0acc47da055a50049d39e70f49c80906",
+      "bytes": 6044
+    },
+    {
+      "path": "queue_status.json",
+      "sha256": "a101adb565376e19cf8ee0f6107f44b83c01cad641eb0d98dce378c669b02f96",
+      "bytes": 162
+    },
+    {
+      "path": "SCIENTIFIC_AUDIT_AND_PROTOCOL.md",
+      "sha256": "437d21eb939f28d6d68da1c1e41ffcc44d21a71bf83794881c41d9f60ebd91f3",
+      "bytes": 10389
+    },
+    {
+      "path": "summarize.py",
+      "sha256": "2cb9cc45a41d3ea7977fd59cfae9657acb0d8c416f9b846eed0e277af905afe3",
+      "bytes": 5224
+    },
+    {
+      "path": "train.py",
+      "sha256": "001b888dacd9b27f1f7ebd5eace2eb816e56ccc1ff417cdec789af27909496a3",
+      "bytes": 13560
+    },
+    {
+      "path": "runs/control/FIT_COMPLETE.json",
+      "sha256": "56503c84fd970907ae8eac7ceacedce23cb7d99b10e013bf163bdba7574a9591",
+      "bytes": 6119
+    },
+    {
+      "path": "runs/control/history.jsonl",
+      "sha256": "600602668d08d1c05da901fb08d4bc2f41db5afe534c87e83b6de7b7494b3d29",
+      "bytes": 54164
+    },
+    {
+      "path": "runs/control/queue_launch_receipt.json",
+      "sha256": "4ea0ad777f13bad122f0ebba522f7f8db3e69a1daf1ab3876b4481d26097e76e",
+      "bytes": 6489
+    },
+    {
+      "path": "runs/control/run_manifest.json",
+      "sha256": "aab76d525d96ddefa493b303f58df8101c2f22f44eba2a3385c34f64233ba84d",
+      "bytes": 7223
+    },
+    {
+      "path": "runs/control/status.json",
+      "sha256": "117a299915ac18cc51826247b8d169f7882bdd68084306a7988315e826dcdd0d",
+      "bytes": 3607
+    },
+    {
+      "path": "runs/direct_f_matched/FIT_COMPLETE.json",
+      "sha256": "310c89e749d5bb44b2e459857b9f6651e102c0b407ae7a995c37e83d2b1f6f9c",
+      "bytes": 6127
+    },
+    {
+      "path": "runs/direct_f_matched/history.jsonl",
+      "sha256": "19130c00ce2f2bf410fb347d3dfa9dc3a3c0633675b296e9855a6465cba95b43",
+      "bytes": 54125
+    },
+    {
+      "path": "runs/direct_f_matched/queue_launch_receipt.json",
+      "sha256": "4ff90d338f1a069e297a7cb9daa42c148f740327386505f777194ea9d1aa6448",
+      "bytes": 6498
+    },
+    {
+      "path": "runs/direct_f_matched/run_manifest.json",
+      "sha256": "e15af0fedb0567bebc06c164edb1692e4c8afd14457414b3bfe10b22ce41e41d",
+      "bytes": 7232
+    },
+    {
+      "path": "runs/direct_f_matched/status.json",
+      "sha256": "d7e47e78d46e27d14eebef591de8dc50a15c384f72f8a30322bae892caa6df43",
+      "bytes": 3598
+    },
+    {
+      "path": "runs/weighted/FIT_COMPLETE.json",
+      "sha256": "1c47d5c99c51b07ab4b58533f0749cbbc9f82c038470dafe65a482f3689ff27e",
+      "bytes": 6118
+    },
+    {
+      "path": "runs/weighted/history.jsonl",
+      "sha256": "d93727241424f49521a0e31a186aca1e35dbeff50feb603001d8254fa5813059",
+      "bytes": 54078
+    },
+    {
+      "path": "runs/weighted/queue_launch_receipt.json",
+      "sha256": "9ce4afdcce5b8aa2a6b1129d93df2b2e1c1fc93e7f55341777217cacf55fd416",
+      "bytes": 6490
+    },
+    {
+      "path": "runs/weighted/run_manifest.json",
+      "sha256": "5a5004351922c3075b50604b31ee86c9a79704a45f0c28b5224c2116ad3016e9",
+      "bytes": 7223
+    },
+    {
+      "path": "runs/weighted/status.json",
+      "sha256": "0ff1e3f8794a59d592cc0c93cf5b0380bff0b612a177e0b1bf128fb594aca806",
+      "bytes": 3598
+    }
+  ]
+}

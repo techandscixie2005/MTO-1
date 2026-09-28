@@ -1,0 +1,5 @@
+# Read-only report encoding audit
+
+The two active seed workers write checkpoint, history and terminal JSON using json.dumps with ASCII escaping; their training/terminal paths contain no non-ASCII string literal or Markdown report writer. The separate post-completion summarize.py has one Markdown header with Unicode squared/delta characters. Under the remote shell's ASCII locale, its default Path.write_text would fail after RESULTS.json is produced, as happened in the Gram probe.
+
+No active sealed source was edited. After both FIT_COMPLETE receipts pass integrity review, invoke the already reviewed summarize.py once with PYTHONUTF8=1 and a UTF-8 locale environment. This changes only the Python text encoding for the post-run report, not model, data, selection or metrics. Record the command/environment and resulting RESULTS.json and RESULTS.md hashes in a lightweight post-run report receipt. If it still fails, preserve its failure and use a separately reviewed additive report recovery without rerunning training or model inference.

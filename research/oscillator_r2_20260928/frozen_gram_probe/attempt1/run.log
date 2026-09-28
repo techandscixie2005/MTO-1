@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/run.py", line 240, in <module>
+    try:main()
+  File "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/run.py", line 215, in main
+    train=build_gram("train",model,gpu,baseline,gpu_health,source,code)
+  File "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/run.py", line 65, in build_gram
+    compare_cached(cache,a,b,live)
+  File "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/features.py", line 98, in compare_cached
+    raise AssertionError(f"Frozen cache mismatch {key} max={diff}")
+AssertionError: Frozen cache mismatch h max=2.384185791015625e-06

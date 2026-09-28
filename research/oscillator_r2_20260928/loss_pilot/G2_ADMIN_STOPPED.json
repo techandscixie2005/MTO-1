@@ -1,0 +1,101 @@
+{
+  "event": "ADMIN_STOPPED",
+  "classification": "intentional incomplete G2 training",
+  "time": 1790610110.9030538,
+  "reason": "G2 validation plateau after epoch41; third LR reduction at194 delays natural stop to at least244; native-f deployable score unavailable for unsupervised E",
+  "g2_pid": 566514,
+  "g2_start_ticks": 1242573409,
+  "g2_process_exited": true,
+  "waiter_pid": 762340,
+  "waiter_start_ticks": 1245485483,
+  "waiter_exited_before_G2_signal": true,
+  "gpu": 2,
+  "gpu_uuid": "GPU-cb4dc1ea-9ea3-e426-bdeb-df0bef8a23fa",
+  "before": {
+    "last_pt_sha256": "dcc4d949bada15eabe9d3d9b486f15892e1629b156222e7ed3aeeefb4be257dd",
+    "best_pt_sha256": "1894f778b2d98a99cc390237c0516d98279375f140ad4b5ea72ac8d08012bd1a",
+    "last_state": {
+      "epoch": 215,
+      "cursor": 0,
+      "steps": 402534,
+      "best": 0.12957936948799922,
+      "best_epoch": 41,
+      "bad_epochs": 173,
+      "lr_reductions": 3,
+      "last_reduction": 194,
+      "total_seconds": 31912.691772425547,
+      "history_count": 214,
+      "history_last_epoch": 214,
+      "has_order": false,
+      "resumable_rng_optimizer_scheduler": true
+    },
+    "best_checkpoint": {
+      "epoch": 41,
+      "validation_objective": 0.12957936948799922,
+      "config_fingerprint_match": true
+    },
+    "status": {
+      "event": "TRAIN",
+      "epoch": 215,
+      "cursor": 96384,
+      "train_count": 120355,
+      "steps": 404040,
+      "loss": [
+        0.007514906581491232,
+        0.0,
+        0.007514906581491232,
+        0.0
+      ],
+      "lr": 0.000125,
+      "grad_norm": 0.05431747809052467,
+      "time": 1790610086.2246137,
+      "seconds_this_epoch": 98.65851580351591
+    }
+  },
+  "after": {
+    "last_pt_sha256": "f437e1ee9a0f569cc6b788e5df12ad3278d28fa867853e5067fca7f71dce7cfa",
+    "best_pt_sha256": "1894f778b2d98a99cc390237c0516d98279375f140ad4b5ea72ac8d08012bd1a",
+    "last_state": {
+      "epoch": 215,
+      "cursor": 114496,
+      "steps": 404323,
+      "best": 0.12957936948799922,
+      "best_epoch": 41,
+      "bad_epochs": 173,
+      "lr_reductions": 3,
+      "last_reduction": 194,
+      "total_seconds": 32034.128087526187,
+      "history_count": 214,
+      "history_last_epoch": 214,
+      "has_order": true,
+      "resumable_rng_optimizer_scheduler": true
+    },
+    "status": {
+      "event": "STOPPED_CHECKPOINTED",
+      "epoch": 215,
+      "cursor": 114496,
+      "time": 1790610109.0502598
+    }
+  },
+  "g2_fit_complete_absent": true,
+  "pilot_workers_absent": true,
+  "stop_boundary": "within_epoch",
+  "architecture_seal_before": {
+    "preflight_sha256": "dfbd34b440cd948a19ae52b773aa074afdd1f9b38d7578c57d412b6e2b250b8f",
+    "execution_review_sha256": "2ac6ac27ae0435a2c2a64f6f17fe21b27fa0930abe81b658dda98bd82a88ef45",
+    "source_file_count": 44
+  },
+  "architecture_seal_after": {
+    "preflight_sha256": "dfbd34b440cd948a19ae52b773aa074afdd1f9b38d7578c57d412b6e2b250b8f",
+    "execution_review_sha256": "2ac6ac27ae0435a2c2a64f6f17fe21b27fa0930abe81b658dda98bd82a88ef45",
+    "source_file_count": 44
+  },
+  "source_hashes": {
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/g2_retire.py": "07703406550e383e0c4d4bb90c4a50c7f6a41cd7e55014f3f05b078a2f6ca76e",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/pilot_queue_admin.py": "f0a13e9e55a79c4a35b42d390fd3f51203db5a3624635b6d8fe30f09dcd2a07b",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/pilot_queue.py": "5796866183c00ee7ae22b1f8e7c6c7e0d3ce0130c4bce8a6c16b508781cefdc3",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/train.py": "001b888dacd9b27f1f7ebd5eace2eb816e56ccc1ff417cdec789af27909496a3",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/pilot_config.json": "c4afc1c1fc1b0bd31595c2a93c6dd4799bc2924c3587de3ea7538e773dee623b"
+  },
+  "amendment_review_sha256": "e6b398df958f62e87f40298dc2c7c21745c42a7c567d58be0e148967ae642f1a"
+}

@@ -1,0 +1,42 @@
+{
+  "study": "frozen_eta0_invariant_gram_linear_probe",
+  "protocol_sha256": "c7f6f6ede884e663d5af579e6add91f49552128ff39ce7dc0bdb73088777fa32",
+  "source_eta0_checkpoint_sha256": "9f1963267cd0e5e35212baca6b4080cf986e73aed6e1662c4cb720afb9a4c136",
+  "initial_retained_residual_checkpoint_sha256": "ae29b2a7c657fec8566e3e230b55a70c385377b36dd37e08c0dcca873f3c7a8d",
+  "cache_train_sha256": "948f14528a222613cc3a590d3d8e710586374be28dc0826d43afde461de48b3b",
+  "cache_val_sha256": "f8f47fabcb00b0c03a99fa3d684a74294ff74fb0e9087f2301953802a6263848",
+  "f_std_train": 0.050109692115345626,
+  "ridge_lambda_mean_mse": 0.001,
+  "states_per_molecule": 10,
+  "train_molecules": 120355,
+  "val_molecules": 6686,
+  "tensor_channels": 32,
+  "tensor_irrep_dim": 5,
+  "gram_coordinates": 528,
+  "common_columns": 129,
+  "expanded_columns": 657,
+  "feature_batch_molecules": 64,
+  "moment_batch_molecules": 1024,
+  "pred_batch_molecules": 1024,
+  "num_cpu_threads": 2,
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 20260928,
+  "validation_q90": 0.0546,
+  "validation_q99": 0.2377,
+  "allowed_gpu_clean": [
+    1,
+    4,
+    6
+  ],
+  "allow_test": false,
+  "allow_validation_refit": false,
+  "pinned_direct_dependencies_sha256": {
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/common.py": "8d10d17157164eb45173325fa2afe839438fa1cf082c76d80ed6e2d4a4400631",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/config.json": "2ba4fbd592898d0717362f4bbe9812d25a4b1e1b35a2f13395f359a7572f3d38",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/analysis_addendum/validation_comparison_addendum.py": "3e723f56039ef670e43a73936c5775a33fb0c5b90a77e53c591a7941025c3b00",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/identity_audit_v2.json": "9d384425a90dd88fbc68f8b609a303872910bb21c69e0d0a19bcccaee49cb3c4",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta0/val_predictions.npz": "25acae64bb4e3e541048a8705045f7f639d1113d537dbbef71672752e8065890",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta01/val_predictions.npz": "9edffb5cd617469c78c8d83da7901ac90add69d89f27de7e8196a8736ae85500",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta1/val_predictions.npz": "a3808b9ad425abf4f6fcfed840d0ed8d1ff6fcf1557037a4e01932c734dc68bb"
+  }
+}

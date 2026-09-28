@@ -1,0 +1,129 @@
+{
+  "classification": "Prespecified16 evenly spaced full64 TRAIN batches plus final35, two frozen forwards each on clean GPU2; no fit/val/test",
+  "created": 1790620575.6754189,
+  "gpu": 2,
+  "starts": [
+    0,
+    8000,
+    16064,
+    24064,
+    32064,
+    40064,
+    48128,
+    56128,
+    64128,
+    72128,
+    80192,
+    88192,
+    96192,
+    104192,
+    112256,
+    120256,
+    120320
+  ],
+  "cache_sha256": "948f14528a222613cc3a590d3d8e710586374be28dc0826d43afde461de48b3b",
+  "source_model_checkpoint_sha256": "ae29b2a7c657fec8566e3e230b55a70c385377b36dd37e08c0dcca873f3c7a8d",
+  "health_before": {
+    "index": 2,
+    "uuid": "GPU-cb4dc1ea-9ea3-e426-bdeb-df0bef8a23fa",
+    "memory_MiB": 10,
+    "temperature_C": "32 C",
+    "ecc": {
+      "volatile": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0
+      },
+      "aggregate": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0,
+        "sram_threshold_exceeded": "No"
+      },
+      "remap": {
+        "remapped_row_corr": "0",
+        "remapped_row_unc": "0",
+        "remapped_row_pending": "No",
+        "remapped_row_failure": "No"
+      },
+      "repair": {
+        "channel_repair_pending": "No",
+        "tpc_repair_pending": "No"
+      }
+    },
+    "apps": []
+  },
+  "keys": {
+    "h": {
+      "atol": 5e-06,
+      "rtol": 1e-05,
+      "max_cache_abs": 3.0994415283203125e-06,
+      "max_live_repeat_abs": 2.86102294921875e-06,
+      "failure_count": 0
+    },
+    "E_pred": {
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "max_cache_abs": 1.9073486328125e-06,
+      "max_live_repeat_abs": 1.9073486328125e-06,
+      "failure_count": 0
+    },
+    "base32": {
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "max_cache_abs": 2.384185791015625e-07,
+      "max_live_repeat_abs": 2.980232238769531e-07,
+      "failure_count": 0
+    },
+    "base64": {
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "max_cache_abs": 2.4816320287612825e-07,
+      "max_live_repeat_abs": 2.9773477978889407e-07,
+      "failure_count": 0
+    }
+  },
+  "gram_repeat_max_abs": 6.026807941594825e-06,
+  "trace_mismatch_count": 0,
+  "health_after": {
+    "index": 2,
+    "uuid": "GPU-cb4dc1ea-9ea3-e426-bdeb-df0bef8a23fa",
+    "memory_MiB": 2443,
+    "temperature_C": "33 C",
+    "ecc": {
+      "volatile": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0
+      },
+      "aggregate": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0,
+        "sram_threshold_exceeded": "No"
+      },
+      "remap": {
+        "remapped_row_corr": "0",
+        "remapped_row_unc": "0",
+        "remapped_row_pending": "No",
+        "remapped_row_failure": "No"
+      },
+      "repair": {
+        "channel_repair_pending": "No",
+        "tpc_repair_pending": "No"
+      }
+    },
+    "apps": [
+      852257
+    ]
+  },
+  "passed": true
+}

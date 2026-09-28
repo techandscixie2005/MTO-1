@@ -1,0 +1,306 @@
+{
+  "classification": "Lightweight Gram two-arm round archive: first failed pre-fit attempt, reviewed numeric amendment, saved scientific result, ASCII report failure and reviewed UTF-8 recovery",
+  "created": 1790621569.514292,
+  "remote_authoritative_root": "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe",
+  "files": [
+    {
+      "path": "FROZEN_GRAM_PROBE_PROTOCOL.md",
+      "bytes": 12798,
+      "sha256": "c7f6f6ede884e663d5af579e6add91f49552128ff39ce7dc0bdb73088777fa32"
+    },
+    {
+      "path": "FEASIBILITY.md",
+      "bytes": 7002,
+      "sha256": "deed5f968c597962fa1eefbc842cf5b31a77cdc9140bf80965610950810f95b8"
+    },
+    {
+      "path": "config.json",
+      "bytes": 2586,
+      "sha256": "f87df444bccff248e91a3f9d6aaf19d58c563c0499ab27ede591294816e84fc9"
+    },
+    {
+      "path": "features.py",
+      "bytes": 6241,
+      "sha256": "8138496b076bac43781fd08000d0b6119c01460b4a38619eb0c79675f353e230"
+    },
+    {
+      "path": "moments.py",
+      "bytes": 5637,
+      "sha256": "615a0405dae0ce1d04ff10e0bd8c84523bdacb11a4ed5c87ace7c884583cfd51"
+    },
+    {
+      "path": "preflight.py",
+      "bytes": 8268,
+      "sha256": "16e5b6b14992bc582b8d5ed8ff15d6b93dc13d835a682832179bf97406b76433"
+    },
+    {
+      "path": "run.py",
+      "bytes": 13126,
+      "sha256": "29b0a3b98c8fc9b9965edab9339cf284009894476e7c6cd6350f2d041955edc0"
+    },
+    {
+      "path": "summarize.py",
+      "bytes": 11166,
+      "sha256": "7727eeb5c8aa3c9605b3ab652c6b0c56e585f2dda2adefa0e2704dc2fe24b79e"
+    },
+    {
+      "path": "launch.py",
+      "bytes": 2541,
+      "sha256": "4442316cee0d212f614857a4fbcfaaf254fee10a2375fa2fea5890ad59870204"
+    },
+    {
+      "path": "NUMERICAL_AMENDMENT.md",
+      "bytes": 2043,
+      "sha256": "37ba34dd7a9c12077b4248e25f102ddb050f97b5d8cdc25fb492f6233c560e42"
+    },
+    {
+      "path": "NUMERICAL_AMENDMENT_SCIENTIFIC_REVIEW.md",
+      "bytes": 2902,
+      "sha256": "a78ba3641d3a8dee85af4ddcb87ddde4a2d2aa73b73dabd02b02bffa031e3b6c"
+    },
+    {
+      "path": "GRAM_NUMERIC_DIAG.py",
+      "bytes": 2330,
+      "sha256": "aaced526851eb0420a09937844747229ec76ae863499228d3b76c58a06ef60a3"
+    },
+    {
+      "path": "GRAM_NUMERIC_DIAG.json",
+      "bytes": 13300,
+      "sha256": "b7817b5b821f8fa62b6dc6387186c3aaaf6e604f5e8429346e9425bb6de39ab8"
+    },
+    {
+      "path": "GRAM_NUMERIC_DIAG_1280.py",
+      "bytes": 2562,
+      "sha256": "c93c7a4192c0daf988b9a0de00fd9f55f8325f1cfcc658b34efd4023632732e6"
+    },
+    {
+      "path": "GRAM_NUMERIC_DIAG_1280.json",
+      "bytes": 3375,
+      "sha256": "373890888ece418590ba1eb4f308f00fb2436ce81e7767caa3c34cdd409fe9cd"
+    },
+    {
+      "path": "GRAM_SPREAD_TRAIN_GPU2.py",
+      "bytes": 2785,
+      "sha256": "d043e8b7eff2ee7905c7981e07acadc5999b60a558b82b105b0e9fd6995f2f7b"
+    },
+    {
+      "path": "GRAM_SPREAD_TRAIN_GPU2.json",
+      "bytes": 3262,
+      "sha256": "f67fcec83bcac566b8babb29fee30036cde33d7959d08206cc113d1fa7d75a1d"
+    },
+    {
+      "path": "ATTEMPT1_RESET_RECEIPT.json",
+      "bytes": 628,
+      "sha256": "2b0a13a9f9b9871cda15341e2c940993f9ed26b8a67df25b19f3bacbaf2a1604"
+    },
+    {
+      "path": "FAILED_ATTEMPT1_REF.json",
+      "bytes": 145,
+      "sha256": "912e54dee85fd69c7152699e7a1b4b0c2d9ec0a3c4ab6eeb06a4b16d44937456"
+    },
+    {
+      "path": "LAUNCH_RECEIPT_ATTEMPT1_REF.json",
+      "bytes": 5403,
+      "sha256": "f033c8cc3eb1e7ace063c688b38a7034ad0e99789d0c77e4113767f8aea177b7"
+    },
+    {
+      "path": "PREFLIGHT.json",
+      "bytes": 61205,
+      "sha256": "4b03bcd7a553c1b24f517dcf8c392409d8dcad9686ab61f7d19a71165fdd97c8"
+    },
+    {
+      "path": "IMPLEMENTATION_HANDOFF.json",
+      "bytes": 5744,
+      "sha256": "44d8372f9ad6a20756e5491d9d10d6fed1f2fe6ba15a7f41124d2376711287c2"
+    },
+    {
+      "path": "IMPLEMENTATION_REVIEW.json",
+      "bytes": 6373,
+      "sha256": "fd0b549694970f5e41a7bb0d9d0904f2889ac506130dae8a3760d088f46398a7"
+    },
+    {
+      "path": "IMPLEMENTATION_REVIEW.md",
+      "bytes": 1939,
+      "sha256": "d20de1841090e581da56f768eb532588eebe40fc3a124c017e49d97e07b10be5"
+    },
+    {
+      "path": "LAUNCH_RECEIPT.json",
+      "bytes": 6275,
+      "sha256": "8481aa4ab882a7d87ed42c9963948523614d050bbafe947520253bc74ce95021"
+    },
+    {
+      "path": "TRAIN_GRAM_MANIFEST.json",
+      "bytes": 60809,
+      "sha256": "a8c5f14402ec20dcfbbdd3c7362eaf082a738bd9f23f655a0a070e2bb27dc97d"
+    },
+    {
+      "path": "FIT_FROZEN.json",
+      "bytes": 18592,
+      "sha256": "0958f141dfe290784002e91d4b0f899d37b8e00dc2d1d8dae9dc466e06d63812"
+    },
+    {
+      "path": "VAL_GRAM_MANIFEST.json",
+      "bytes": 60798,
+      "sha256": "946913ae2b184a686751f8b2e184458f27973aacd84ef9d93a015ff26433d8d8"
+    },
+    {
+      "path": "RESULTS.json",
+      "bytes": 50513,
+      "sha256": "b75610c8ed7d91b63b18adc84362453899edaed7deecefc072ed0f981b5d781a"
+    },
+    {
+      "path": "FAILED.json",
+      "bytes": 189,
+      "sha256": "6f833d3bdc6a77f5d7cf445a633534e206317fb0a5d0031a899b71202903027f"
+    },
+    {
+      "path": "run_attempt2.log",
+      "bytes": 765,
+      "sha256": "a4147531cbc0584d35901b4b1fe7c75868f4e5f66797e3506e88467140654c5b"
+    },
+    {
+      "path": "recover_report.py",
+      "bytes": 9052,
+      "sha256": "5e86992eb89d31d9a0221110ba89d7aa3c4327a84bbf906401fe4af7459c1951"
+    },
+    {
+      "path": "POSTPROCESS_REVIEW.json",
+      "bytes": 4791,
+      "sha256": "7d9f406ac182da6ee5cceec227f2ccf02f062cb050a4893d66877ef4225843dc"
+    },
+    {
+      "path": "RESULTS_RECOVERED.md",
+      "bytes": 867,
+      "sha256": "4fb8c060b760b86ca9feab91a7de9031de953d71d66158b31e3a1b7d16451f7c"
+    },
+    {
+      "path": "POSTPROCESS_RECOVERY.json",
+      "bytes": 6802,
+      "sha256": "6911b141bebd2153739a9331639389b3bbf41427a4e110d3ab0d4519eb89c10e"
+    },
+    {
+      "path": "attempt1/summarize.py",
+      "bytes": 11166,
+      "sha256": "7727eeb5c8aa3c9605b3ab652c6b0c56e585f2dda2adefa0e2704dc2fe24b79e"
+    },
+    {
+      "path": "attempt1/GRAM_NUMERIC_DIAG.py",
+      "bytes": 2330,
+      "sha256": "aaced526851eb0420a09937844747229ec76ae863499228d3b76c58a06ef60a3"
+    },
+    {
+      "path": "attempt1/FROZEN_GRAM_PROBE_PROTOCOL.md",
+      "bytes": 12798,
+      "sha256": "c7f6f6ede884e663d5af579e6add91f49552128ff39ce7dc0bdb73088777fa32"
+    },
+    {
+      "path": "attempt1/launch.py",
+      "bytes": 2514,
+      "sha256": "00289d6dfb9a82e0cc6e5f565a780374b751e4ac29c2ca1368bc348250dd8919"
+    },
+    {
+      "path": "attempt1/IMPLEMENTATION_REVIEW.json",
+      "bytes": 5676,
+      "sha256": "f5d9510fb0c9b75cd42bcec6c56931623a2658358ddf011b0f55cf2c97080f81"
+    },
+    {
+      "path": "attempt1/GRAM_NUMERIC_DIAG_1280.py",
+      "bytes": 2562,
+      "sha256": "c93c7a4192c0daf988b9a0de00fd9f55f8325f1cfcc658b34efd4023632732e6"
+    },
+    {
+      "path": "attempt1/IMPLEMENTATION_REVIEW.md",
+      "bytes": 2607,
+      "sha256": "534ce9627bf4f126ac45ee116ac43253ca88a2bc6fae20455226ce0cd750cbaf"
+    },
+    {
+      "path": "attempt1/GRAM_SPREAD_TRAIN_GPU2.py",
+      "bytes": 2785,
+      "sha256": "d043e8b7eff2ee7905c7981e07acadc5999b60a558b82b105b0e9fd6995f2f7b"
+    },
+    {
+      "path": "attempt1/moments.py",
+      "bytes": 5637,
+      "sha256": "615a0405dae0ce1d04ff10e0bd8c84523bdacb11a4ed5c87ace7c884583cfd51"
+    },
+    {
+      "path": "attempt1/run.log",
+      "bytes": 730,
+      "sha256": "1ea22c9e3fc5fcadbd9733a9352297b176b81bec9303dae086896ddabe5f5794"
+    },
+    {
+      "path": "attempt1/MANIFEST.json",
+      "bytes": 3440,
+      "sha256": "c0b69760003a0d1051f7f790b01b6ef99965930794593093556f70db73b86ba6"
+    },
+    {
+      "path": "attempt1/GRAM_NUMERIC_DIAG_1280.json",
+      "bytes": 3375,
+      "sha256": "373890888ece418590ba1eb4f308f00fb2436ce81e7767caa3c34cdd409fe9cd"
+    },
+    {
+      "path": "attempt1/PREFLIGHT.json",
+      "bytes": 60343,
+      "sha256": "4ecd34d0309d46c748c20c4857e677b0fbfef4bc5b4104c2b9a4ed9fbe8a6fe0"
+    },
+    {
+      "path": "attempt1/GRAM_NUMERIC_DIAG.json",
+      "bytes": 13300,
+      "sha256": "b7817b5b821f8fa62b6dc6387186c3aaaf6e604f5e8429346e9425bb6de39ab8"
+    },
+    {
+      "path": "attempt1/IMPLEMENTATION_HANDOFF.json",
+      "bytes": 4521,
+      "sha256": "114723976673b6598573774e28608ef3961426e242cb28ee76da6be6016a4e0f"
+    },
+    {
+      "path": "attempt1/config.json",
+      "bytes": 2350,
+      "sha256": "362f9d1ebd8b244b83be6314bce7be0b71e3c99ff065012ea980a0e13ec26237"
+    },
+    {
+      "path": "attempt1/GRAM_SPREAD_TRAIN_GPU2.json",
+      "bytes": 3262,
+      "sha256": "f67fcec83bcac566b8babb29fee30036cde33d7959d08206cc113d1fa7d75a1d"
+    },
+    {
+      "path": "attempt1/FAILED.json",
+      "bytes": 145,
+      "sha256": "912e54dee85fd69c7152699e7a1b4b0c2d9ec0a3c4ab6eeb06a4b16d44937456"
+    },
+    {
+      "path": "attempt1/LAUNCH_RECEIPT.json",
+      "bytes": 5403,
+      "sha256": "f033c8cc3eb1e7ace063c688b38a7034ad0e99789d0c77e4113767f8aea177b7"
+    },
+    {
+      "path": "attempt1/run.py",
+      "bytes": 13126,
+      "sha256": "29b0a3b98c8fc9b9965edab9339cf284009894476e7c6cd6350f2d041955edc0"
+    },
+    {
+      "path": "attempt1/preflight.py",
+      "bytes": 8268,
+      "sha256": "16e5b6b14992bc582b8d5ed8ff15d6b93dc13d835a682832179bf97406b76433"
+    },
+    {
+      "path": "attempt1/features.py",
+      "bytes": 5169,
+      "sha256": "a64f9b3fa464cd9b7f42cab816685e8208130b4896d283ff0be0b4d5e8d85e09"
+    }
+  ],
+  "excluded": [
+    "attempt1/train_gram_partial.npy",
+    "runtime/train_gram.npy",
+    "runtime/val_gram.npy",
+    "runtime/training_statistics.npz",
+    "runtime/frozen_coefficients.npz",
+    "runtime/val_predictions_A.npz",
+    "runtime/val_predictions_B.npz",
+    "source model checkpoints",
+    "caches"
+  ],
+  "test_access": false,
+  "original_failed_marker_preserved": true,
+  "original_PROBE_COMPLETE_absent": true
+}

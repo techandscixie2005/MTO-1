@@ -112,25 +112,3 @@ Legacy G3 remains active on GPU4 at epoch 281/cursor 108800; its status does not
 The completed frozen residual head-only run selected epoch 2 at R² 0.406789903 (+0.001495785 vs eta0) and finished at 0.404299111. The gain is below threshold; no promotion or test. The separate frozen-Gram probe failed before fitting at the runtime feature identity gate (`h` max difference 2.384185791015625e-06); it has no model result and awaits reviewed repair. The approved eta0 seed protocol is prepared, with no training launch recorded at this check.
 
 Next scheduled full monitor: 2026-09-29 06:29:29 +08. GPU2 and GPU6 were idle and clean; G3 owned GPU4 with no ECC errors. GPUs3/7 remain excluded and GPU0 remains reserved for the unrelated job.
-
-
-## Receipt update (2026-09-29 03:00 +08)
-
-The completed loss-pilot scientific review is available at `completion_receipts/LOSS_PILOT_SCIENTIFIC_REVIEW.md` (SHA-256 `5ba23d7a312cea6e101fef67737632307f617de4140ff4c57906481c40abaebc`). It confirms the epoch-0 variants are numerical ties; no promotion, test, or extension.
-
-Two fresh-initialization eta0 seed replications, each fixed at 100 epochs, were launched from reviewed protocol/review gates: seed 23 on GPU1 (PID 859155; receipt SHA-256 `af79442051f60dc0fd29e11c670ca3949237f312323f09a0d2b2829a8dfdfa3d`) and seed 37 on GPU6 (PID 859334; receipt SHA-256 `789d6b8fb4f5390b2313e33a2e107a915aa8c560ddf5e2fae32892f1500ed879`). These are launch receipts, not current health claims.
-
-Corrected frozen-Gram attempt 2 passed independent review and launched on GPU2 (receipt SHA-256 `8481aa4ab882a7d87ed42c9963948523614d050bbafe947520253bc74ce95021`). Its scientific evaluation completed, but report writing failed under ASCII encoding; an additive audited report recovery is underway. Attempt 1 remains preserved as a pre-fit cache-gate failure. No refit or new inference is authorized by this status note.
-
-Next scheduled full monitor remains **2026-09-29T06:29:29+08:00**.
-
-
-## Additive review and launch receipts (2026-09-29 03:00 +08)
-
-The loss-pilot scientific review is finalized (`completion_receipts/LOSS_PILOT_SCIENTIFIC_REVIEW.md`, SHA-256 `5ba23d7a312cea6e101fef67737632307f617de4140ff4c57906481c40abaebc`): epoch-0 variants are numerical ties; no promotion, test, or extension.
-
-Frozen-Gram attempt 2 completed its saved numerical evaluation. Its original report writer failed on ASCII encoding; additive report recovery and independent postprocess/scientific reviews are complete. The original failure remains provenance, and there was no refit or new inference. See `frozen_gram_probe/SCIENTIFIC_RESULT_REVIEW.md` (SHA-256 `cc8d3aeea23c18ba2f721f8e48e948a1cca30085230b902b599f947bd4d13eed`) and `POSTPROCESS_REVIEW.json` (SHA-256 `7d9f406ac182da6ee5cceec227f2ccf02f062cb050a4893d66877ef4225843dc`).
-
-The reviewed eta0 seed protocol/implementation was launched as two fresh-initialization, fixed 100-epoch runs: seed 23 PID 859155 on GPU1 and seed 37 PID 859334 on GPU6. Their launch receipts and implementation review are recorded in `eta0_seed_replication/`; these are launch records, not a fresh health check.
-
-The next scheduled full monitor remains **2026-09-29T06:29:29+08:00**.

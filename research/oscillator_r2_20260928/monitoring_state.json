@@ -4,7 +4,7 @@
   "automation_status": "ACTIVE",
   "interval_hours": 4,
   "first_health_check_at": "2026-09-28T22:29:29+08:00",
-  "next_check_due_at": "2026-09-29T02:29:29+08:00",
+  "next_check_due_at": "2026-09-29T06:29:29+08:00",
   "monitor_role": "archive_and_monitor sub-agent: perform compact scheduled health checks, archive reviewed lightweight round records through D: first, and report actionable issues to the coordinator",
   "active_campaign_at_first_check": "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925",
   "supervisor_pid": 566447,
@@ -28,141 +28,72 @@
   ],
   "gpu_policy": "Do not touch unrelated jobs; GPU3 is excluded due to historical ECC failure, and no GPU reset is authorized.",
   "publication_note": "Local D: archive is the staging source. Do not upload checkpoints, optimizer states, caches, raw tensors, or large runtime artifacts.",
-  "last_full_check_at": "2026-09-28T22:29:29+08:00",
+  "last_full_check_at": "2026-09-29T02:31:01+08:00",
   "scope_admin_amendment": {
-    "updated_at": "2026-09-29T02:07:33+08:00",
-    "purpose": "Administrative scope correction only; these are last-known handles/receipts, not claims of current health. Discover current identities from coordinator state, queue records and /proc at each scheduled check.",
-    "discover_from": [
-      "coordinator_state.json",
-      "queue_status.json",
-      "runs/<arm>/queue_launch_receipt.json",
-      "architecture/ARCH_QUEUE_STATUS.json",
-      "architecture/runs/<arm>/queue_launch_receipt.json",
-      "architecture/runs/<arm>/status.json",
-      "architecture/runs/<arm>/FIT_COMPLETE.json",
-      "architecture/runs/<arm>/INVALID.json",
-      "architecture/runs/<arm>/FAILED.json"
-    ],
-    "last_known_loss_pilot": {
-      "queue_pid": 785736,
-      "arm": "control",
-      "worker_pid": 785960,
-      "gpu": 2,
-      "next_arms": [
-        "weighted",
-        "direct_f_matched"
-      ],
-      "note": "Historical launch/targeted snapshot; dynamically discover current arm and PID."
-    },
-    "g2_retirement": {
-      "pid": 566514,
-      "state": "ADMIN_STOPPED",
-      "epoch": 215,
-      "cursor": 114496,
-      "best_epoch": 41,
-      "original_queue_pid": 762340,
-      "original_queue": "exited without workers",
-      "campaign_expectation": "STOPPED_REQUIRES_EXPLICIT_RESUME / CAMPAIGN_BLOCKED is intentional; no FIT_COMPLETE was forged; analyze the original campaign as partial after remaining old jobs finish."
-    },
-    "legacy_campaign": {
-      "G4": "naturally FIT_COMPLETE at epoch 223; retain as terminal completion evidence"
-    },
-    "architecture_screen": {
-      "queue_pid": 778242,
+    "updated_at": "2026-09-29T03:00:24+08:00",
+    "cadence_preserved": true,
+    "last_full_check_at": "2026-09-29T02:31:01+08:00",
+    "next_check_due_at": "2026-09-29T06:29:29+08:00",
+    "known_receipt_state_only": true,
+    "seed_replication": {
+      "state": "launched; await scheduled check",
+      "protocol": "eta0_seed_replication/PROTOCOL.md",
+      "review_sha256": "088be0c334d88b46ce39f7f3b5097cb6150a517d83cb0432b1a8fe847dcc1808",
       "arms": [
-        "retained_residual",
-        "original",
-        "direct_f",
-        "independent_trace"
-      ],
-      "last_known_workers": [
         {
-          "arm": "retained_residual",
-          "pid": 778585,
-          "gpu": 5
+          "seed": 23,
+          "pid": 859155,
+          "start_ticks": 1246891523,
+          "gpu": 1,
+          "gpu_uuid": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+          "launch_receipt_sha256": "af79442051f60dc0fd29e11c670ca3949237f312323f09a0d2b2829a8dfdfa3d",
+          "epochs": 100,
+          "initialization": "fresh"
         },
         {
-          "arm": "original_control",
-          "pid": 790200,
-          "gpu": 6
+          "seed": 37,
+          "pid": 859334,
+          "start_ticks": 1246893027,
+          "gpu": 6,
+          "gpu_uuid": "GPU-2431a641-8045-a10b-4aa0-2769010e0708",
+          "launch_receipt_sha256": "789d6b8fb4f5390b2313e33a2e107a915aa8c560ddf5e2fae32892f1500ed879",
+          "epochs": 100,
+          "initialization": "fresh"
         }
-      ],
-      "note": "IDs are recorded historical handles, not current health claims; discover additional/current arm receipts from queue state."
+      ]
     },
-    "gpu_policy": {
-      "exclude": [
-        3,
-        7
-      ],
-      "guarded": [
-        5
-      ],
-      "preserve_unrelated_gpu": 0,
-      "notes": "Use healthy/free admitted devices per live ownership/resource records; do not reset devices or stop unrelated work."
+    "frozen_gram_probe": {
+      "attempt1": "pre-fit cache identity gate failure; preserved under frozen_gram_probe/attempt1",
+      "attempt2_review": "PASS",
+      "attempt2_review_sha256": "fd0b549694970f5e41a7bb0d9d0904f2889ac506130dae8a3760d088f46398a7",
+      "attempt2_launch_receipt_sha256": "8481aa4ab882a7d87ed42c9963948523614d050bbafe947520253bc74ce95021",
+      "attempt2_status": "scientific evaluation completed; report write failed under ASCII encoding; additive audited recovery underway; no refit/inference authorized"
     },
-    "monitor_rule": "Preserve original22:29 full snapshot and02:29 next due exactly. Frozen worker completed; no training polling before due. At due inspect remaining loss queue/workers and any newly launched experiment from durable receipts. Architecture is terminal; cache builder completed.",
-    "current_rounds": {
-      "round02_loss_pilot": {
-        "queue_pid_last_receipt": 785736,
-        "next_expected_arms": [
-          "weighted",
-          "direct_f_matched"
-        ],
-        "note": "Use current queue state and launch receipts at the scheduled check; earlier admin stop of G2 is intentional."
+    "loss_pilot": "completed; all three variants selected epoch0 and are numerical ties; scientific review ready",
+    "loss_review_sha256": "5ba23d7a312cea6e101fef67737632307f617de4140ff4c57906481c40abaebc",
+    "legacy_G2": "intentional ADMIN_STOPPED; original campaign remains partial",
+    "legacy_G3": "last scheduled check found running on GPU4; no new health claim",
+    "gram_final_review_sha256": "cc8d3aeea23c18ba2f721f8e48e948a1cca30085230b902b599f947bd4d13eed",
+    "gram_postprocess_review_sha256": "7d9f406ac182da6ee5cceec227f2ccf02f062cb050a4893d66877ef4225843dc",
+    "gram_attempt2_state": "audited numerical outputs recovered; original report writer encoding failure retained as provenance; scientific review finalized; no refit/inference",
+    "seed_implementation_review_sha256": "088be0c334d88b46ce39f7f3b5097cb6150a517d83cb0432b1a8fe847dcc1808",
+    "seed_launches": [
+      {
+        "seed": 23,
+        "pid": 859155,
+        "start_ticks": 1246891523,
+        "gpu": 1,
+        "receipt_sha256": "af79442051f60dc0fd29e11c670ca3949237f312323f09a0d2b2829a8dfdfa3d"
       },
-      "round04_architecture_screen": {
-        "state": "ALL_COMPLETE, independently reviewed, no promotion",
-        "queue_pid_terminal": 778242,
-        "note": "No active architecture worker remains; do not report this screen as still running."
-      },
-      "round05_frozen_residual_head_only": {
-        "state": "FIT_COMPLETE per coordinator receipt; final integrity audit PASS; independent scientific review pending",
-        "worker_pid_at_launch_receipt": 830317,
-        "worker_start_ticks": 1246488075,
+      {
+        "seed": 37,
+        "pid": 859334,
+        "start_ticks": 1246893027,
         "gpu": 6,
-        "queue_launch_receipt": "frozen_residual/run/queue_launch_receipt.json",
-        "run_manifest": "frozen_residual/run/run_manifest.json",
-        "status_path": "frozen_residual/run/status.json",
-        "history_path": "frozen_residual/run/history.jsonl",
-        "log_path": "frozen_residual/run/train.log",
-        "terminal_paths": [
-          "frozen_residual/run/FIT_COMPLETE.json",
-          "frozen_residual/INDEPENDENT_RUN_AUDIT.json"
-        ],
-        "last_external_receipt": "PID passed initial gate, epoch 2 / step 3500; no independent monitor poll yet; treat as launch receipt not current health",
-        "archive_exclusions": [
-          "frozen_residual/runtime/cache_train.npz",
-          "frozen_residual/runtime/cache_val.npz",
-          "frozen_residual/run/*.pt",
-          "frozen_residual/run/*.npz"
-        ],
-        "completion_receipt_status": "complete 20 epochs / 37,620 steps; best epoch 2; validation raw-native-f R2 0.406789903; final R2 0.404299111; no test, no promotion, no extension",
-        "current_health_claim": false,
-        "review_pending": false,
-        "scientific_review": "frozen_residual/SCIENTIFIC_RESULT_REVIEW.md; SHA-256 639d1ce5e3a2fcd1335167f2f85e28290c46f7e623b0b81af14f9247773a1d95"
-      },
-      "frozen_feature_cache": {
-        "state": "complete per executor receipt; not active",
-        "former_pid": 826125,
-        "gpu": 6,
-        "manifest": "frozen_residual/CACHE_MANIFEST.json",
-        "note": "Never classify absent cache builder PID as failure; cache and arrays remain server-only."
-      },
-      "round06_frozen_gram_probe": {
-        "state": "protocol approved; implementation and preflight pending; no full-fit launch",
-        "protocol": "frozen_gram_probe/FROZEN_GRAM_PROBE_PROTOCOL.md",
-        "protocol_sha256": "c7f6f6ede884e663d5af579e6add91f49552128ff39ce7dc0bdb73088777fa32"
+        "receipt_sha256": "789d6b8fb4f5390b2313e33a2e107a915aa8c560ddf5e2fae32892f1500ed879"
       }
-    },
-    "scheduler_verification": {
-      "automation_id": "qm9s-e-a",
-      "status": "ACTIVE",
-      "rrule": "FREQ=HOURLY;INTERVAL=4",
-      "target_thread_id": "01a0e868-88e9-7dd2-b83c-d4763f2b5577",
-      "configured_interval_matches_four_hours": true,
-      "saved_next_due_at": "2026-09-29T02:29:29+08:00",
-      "scheduler_next_fire_time_exposed_by_automation_tool_or_local_config": false,
-      "limitation": "Automation view and automation.toml expose ACTIVE status, interval, target and prompt, but no actual next-fire timestamp. This monitor retains ownership of the due check at 02:29:29+08:00 while active; no duplicate automation was created."
-    }
+    ],
+    "scheduled_report": "monitoring/FULL_CHECK_20260929_0229_CORRECTED.md",
+    "original_report_placeholder_preserved": "monitoring/FULL_CHECK_20260929_0229.md (6 bytes, literal placeholder)"
   }
 }

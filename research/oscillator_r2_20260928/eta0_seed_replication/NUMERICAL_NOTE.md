@@ -1,0 +1,5 @@
+# Numerical preflight note
+
+The fixed train-only batch uses the immutable legacy FP32 CUDA path. The train/validation adapter and original `Data.batch` method return exactly equal tensors and masks. Their model/loss/gradient/update checks use declared FP32 tolerances because repeated GPU reductions are not bitwise stable on this device; the specific kernel cause is not proven.
+
+In the final bounded preflight, adapter-vs-original one-step maximum scalar-loss difference was 0, gradient-norm absolute difference 1.90734863e-06, and model-parameter maximum absolute difference 1.91666186e-06. The serialized two-step resume parameter maximum absolute difference was 2.38418579e-07. The predeclared bounds in preflight.py are loss atol/rtol1e-6, gradient norm abs1e-4 and parameter abs3e-6. The legacy trainer does not enable deterministic algorithms, so the new trainer leaves that behavior unchanged. The checkpoint-fixed validation replay later checks both stored-array truth identity and predictions within explicit combined tolerances.

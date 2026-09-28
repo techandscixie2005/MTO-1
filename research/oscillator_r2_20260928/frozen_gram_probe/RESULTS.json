@@ -1,0 +1,2011 @@
+{
+  "classification": "One fixed-\u03bb train-only two-arm convex probe, then one validation evaluation",
+  "created": 1790620990.937806,
+  "protocol_sha256": "c7f6f6ede884e663d5af579e6add91f49552128ff39ce7dc0bdb73088777fa32",
+  "source_hashes": {
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/FROZEN_GRAM_PROBE_PROTOCOL.md": "c7f6f6ede884e663d5af579e6add91f49552128ff39ce7dc0bdb73088777fa32",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/config.json": "f87df444bccff248e91a3f9d6aaf19d58c563c0499ab27ede591294816e84fc9",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/NUMERICAL_AMENDMENT.md": "37ba34dd7a9c12077b4248e25f102ddb050f97b5d8cdc25fb492f6233c560e42",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/attempt1/MANIFEST.json": "c0b69760003a0d1051f7f790b01b6ef99965930794593093556f70db73b86ba6",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/ATTEMPT1_RESET_RECEIPT.json": "2b0a13a9f9b9871cda15341e2c940993f9ed26b8a67df25b19f3bacbaf2a1604",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/GRAM_SPREAD_TRAIN_GPU2.json": "f67fcec83bcac566b8babb29fee30036cde33d7959d08206cc113d1fa7d75a1d",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/NUMERICAL_AMENDMENT_SCIENTIFIC_REVIEW.md": "a78ba3641d3a8dee85af4ddcb87ddde4a2d2aa73b73dabd02b02bffa031e3b6c",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/PREFLIGHT.json": "dfbd34b440cd948a19ae52b773aa074afdd1f9b38d7578c57d412b6e2b250b8f",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/INDEPENDENT_COMPLETION_AUDIT.json": "d7df6edfec2d322b8f70ecd0fe39fcc4d221b1c4967aa82a8b82ee715b8c1ed1",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/CACHE_MANIFEST.json": "ca3eb18da9b2ee64677dbf989ead38a4f667f7663d2a7e7bad10eb2811bf3b11",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/INDEPENDENT_RUN_AUDIT.json": "81ccc7adc01b861bed7ee2f31d3c1a9f42780c2b41d79e7a1e12d8600dfdfdb0",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/runtime/cache_train.npz": "948f14528a222613cc3a590d3d8e710586374be28dc0826d43afde461de48b3b",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/runtime/cache_val.npz": "f8f47fabcb00b0c03a99fa3d684a74294ff74fb0e9087f2301953802a6263848",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/common.py": "8d10d17157164eb45173325fa2afe839438fa1cf082c76d80ed6e2d4a4400631",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/config.json": "2ba4fbd592898d0717362f4bbe9812d25a4b1e1b35a2f13395f359a7572f3d38",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/analysis_addendum/validation_comparison_addendum.py": "3e723f56039ef670e43a73936c5775a33fb0c5b90a77e53c591a7941025c3b00",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/identity_audit_v2.json": "9d384425a90dd88fbc68f8b609a303872910bb21c69e0d0a19bcccaee49cb3c4",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta0/val_predictions.npz": "25acae64bb4e3e541048a8705045f7f639d1113d537dbbef71672752e8065890",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta01/val_predictions.npz": "9edffb5cd617469c78c8d83da7901ac90add69d89f27de7e8196a8736ae85500",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta1/val_predictions.npz": "a3808b9ad425abf4f6fcfed840d0ed8d1ff6fcf1557037a4e01932c734dc68bb"
+  },
+  "code_hashes": {
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/features.py": "8138496b076bac43781fd08000d0b6119c01460b4a38619eb0c79675f353e230",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/moments.py": "615a0405dae0ce1d04ff10e0bd8c84523bdacb11a4ed5c87ace7c884583cfd51",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/preflight.py": "16e5b6b14992bc582b8d5ed8ff15d6b93dc13d835a682832179bf97406b76433",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/run.py": "29b0a3b98c8fc9b9965edab9339cf284009894476e7c6cd6350f2d041955edc0",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/summarize.py": "7727eeb5c8aa3c9605b3ab652c6b0c56e585f2dda2adefa0e2704dc2fe24b79e",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/launch.py": "4442316cee0d212f614857a4fbcfaaf254fee10a2375fa2fea5890ad59870204",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/config.json": "f87df444bccff248e91a3f9d6aaf19d58c563c0499ab27ede591294816e84fc9",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/FROZEN_GRAM_PROBE_PROTOCOL.md": "c7f6f6ede884e663d5af579e6add91f49552128ff39ce7dc0bdb73088777fa32"
+  },
+  "fit_frozen_sha256": "0958f141dfe290784002e91d4b0f899d37b8e00dc2d1d8dae9dc466e06d63812",
+  "train_gram_manifest_sha256": "a8c5f14402ec20dcfbbdd3c7362eaf082a738bd9f23f655a0a070e2bb27dc97d",
+  "val_gram_manifest_sha256": "946913ae2b184a686751f8b2e184458f27973aacd84ef9d93a015ff26433d8d8",
+  "validation_predictions_server_only_hashes": {
+    "A": "17b9d89f032de4fcb2ef84983f02de6d2a64ca0f094f7c8cf1364b9b95c20b63",
+    "B": "3eb585b87401b59d55f00a509eed308b9ce0627b0042a42e00d6882519989ac8"
+  },
+  "frozen_comparators_sha256": {
+    "mto_eta0": "25acae64bb4e3e541048a8705045f7f639d1113d537dbbef71672752e8065890",
+    "mto_eta01": "9edffb5cd617469c78c8d83da7901ac90add69d89f27de7e8196a8736ae85500",
+    "mto_eta1": "a3808b9ad425abf4f6fcfed840d0ed8d1ff6fcf1557037a4e01932c734dc68bb"
+  },
+  "arms": {
+    "A": {
+      "train": {
+        "signed": {
+          "count": 1203550,
+          "sse": 1063.8109125180522,
+          "sst": 3022.091476089505,
+          "r2": 0.64798851360562,
+          "mae": 0.01614114724383643,
+          "rmse": 0.02973035889409668
+        },
+        "projected": {
+          "count": 1203550,
+          "sse": 1063.552523435527,
+          "sst": 3022.091476089505,
+          "r2": 0.6480740136920898,
+          "mae": 0.01612043255834719,
+          "rmse": 0.02972674807069076
+        },
+        "frozen_base": {
+          "count": 1203550,
+          "sse": 1069.507413089579,
+          "sst": 3022.091476089505,
+          "r2": 0.6461035605469199,
+          "mae": 0.01603994453758158,
+          "rmse": 0.029809852762934134
+        },
+        "energy": {
+          "count": 1203550,
+          "sse": 16214.731049665417,
+          "sst": 1200035.4134728776,
+          "r2": 0.9864881228773572,
+          "mae": 0.08831040037342762,
+          "rmse": 0.11607075413581198
+        },
+        "negative_signed_count": 14496,
+        "zero_signed_count": 0,
+        "projection_sse_improvement": 0.2583890825251274,
+        "mean_signed_prediction_error": 9.15077263452416e-20,
+        "signed_error_quantiles": [
+          -2.2476418385197303,
+          -0.11183742855573023,
+          0.0036784192819747054,
+          0.030337828099300433,
+          0.06511432188157466,
+          1.140450563572208
+        ],
+        "absolute_error_quantiles": [
+          0.0,
+          0.008934471768630181,
+          0.036235551399472356,
+          0.12137154937663186,
+          2.2476418385197303
+        ],
+        "max_projected_f": 3.08297962356701,
+        "per_state": [
+          {
+            "physical_state": 1,
+            "count": 120355,
+            "sse": 21.907588820829083,
+            "sst": 238.63498661441352,
+            "r2": 0.9081962409132096,
+            "mae": 0.007213855861113759,
+            "rmse": 0.013491654838725643
+          },
+          {
+            "physical_state": 2,
+            "count": 120355,
+            "sse": 57.61369655615725,
+            "sst": 339.0969783117619,
+            "r2": 0.8300966972840794,
+            "mae": 0.013070995792403813,
+            "rmse": 0.021879167940036134
+          },
+          {
+            "physical_state": 3,
+            "count": 120355,
+            "sse": 77.86616505263312,
+            "sst": 295.41737152347775,
+            "r2": 0.736419816305742,
+            "mae": 0.015190731731778522,
+            "rmse": 0.02543561978065012
+          },
+          {
+            "physical_state": 4,
+            "count": 120355,
+            "sse": 96.46087619242607,
+            "sst": 249.40813912238843,
+            "r2": 0.6132408648256213,
+            "mae": 0.016830695078315343,
+            "rmse": 0.02831023879522183
+          },
+          {
+            "physical_state": 5,
+            "count": 120355,
+            "sse": 105.46774768934927,
+            "sst": 240.54655763265373,
+            "r2": 0.561549544806156,
+            "mae": 0.01718592630599763,
+            "rmse": 0.02960245756114125
+          },
+          {
+            "physical_state": 6,
+            "count": 120355,
+            "sse": 114.35613750421025,
+            "sst": 272.78358130070046,
+            "r2": 0.5807807164971897,
+            "mae": 0.01757244284617729,
+            "rmse": 0.030824615676637378
+          },
+          {
+            "physical_state": 7,
+            "count": 120355,
+            "sse": 153.37900757537312,
+            "sst": 444.6916891695564,
+            "r2": 0.655089107102941,
+            "mae": 0.01877649069281615,
+            "rmse": 0.03569857603577889
+          },
+          {
+            "physical_state": 8,
+            "count": 120355,
+            "sse": 140.20396390221032,
+            "sst": 306.4742734121469,
+            "r2": 0.5425261561394946,
+            "mae": 0.018694240137944542,
+            "rmse": 0.03413092650016692
+          },
+          {
+            "physical_state": 9,
+            "count": 120355,
+            "sse": 157.1724481402654,
+            "sst": 398.68337608207963,
+            "r2": 0.6057712521529686,
+            "mae": 0.01838197816187001,
+            "rmse": 0.03613733654665695
+          },
+          {
+            "physical_state": 10,
+            "count": 120355,
+            "sse": 139.12489200207403,
+            "sst": 229.60087552010498,
+            "r2": 0.3940576590271252,
+            "mae": 0.01828696897505484,
+            "rmse": 0.03399932942837665
+          }
+        ],
+        "tail": {
+          "q90": {
+            "threshold": 0.0546,
+            "subsets": {
+              "bright": {
+                "count": 121189,
+                "sse": 713.1706628119498,
+                "base_sse": 726.0907498117298
+              },
+              "below": {
+                "count": 1082361,
+                "sse": 350.3818606235783,
+                "base_sse": 343.4166632778494
+              }
+            }
+          },
+          "q99": {
+            "threshold": 0.2377,
+            "subsets": {
+              "bright": {
+                "count": 12487,
+                "sse": 279.77472106937824,
+                "base_sse": 286.820727810932
+              },
+              "below": {
+                "count": 1191063,
+                "sse": 783.7778023661496,
+                "base_sse": 782.6866852786468
+              }
+            }
+          }
+        },
+        "molecule_error_concentration": {
+          "top1": {
+            "molecules": 1,
+            "share_of_sse": 0.004754314373404742
+          },
+          "top5": {
+            "molecules": 5,
+            "share_of_sse": 0.01342816617960559
+          },
+          "top10": {
+            "molecules": 10,
+            "share_of_sse": 0.019571165472356298
+          },
+          "top1pct": {
+            "molecules": 1204,
+            "share_of_sse": 0.19139569160864206
+          }
+        },
+        "signed_ridge_objective_recomputed": 0.352019204250794
+      },
+      "val": {
+        "signed": {
+          "count": 66860,
+          "sse": 94.36137880767242,
+          "sst": 158.4062371581119,
+          "r2": 0.4043076806787199,
+          "mae": 0.017911014858028398,
+          "rmse": 0.037567643410307425
+        },
+        "projected": {
+          "count": 66860,
+          "sse": 94.34224449575747,
+          "sst": 158.4062371581119,
+          "r2": 0.40442847334609355,
+          "mae": 0.017890233487135015,
+          "rmse": 0.0375638342912574
+        },
+        "frozen_base": {
+          "count": 66860,
+          "sse": 94.20512083314517,
+          "sst": 158.4062371581119,
+          "r2": 0.40529411894864287,
+          "mae": 0.017785608376680664,
+          "rmse": 0.03753652540330623
+        },
+        "energy": {
+          "count": 66860,
+          "sse": 1013.3249579516472,
+          "sst": 66156.66699740554,
+          "r2": 0.9846829502763284,
+          "mae": 0.09138826418757402,
+          "rmse": 0.12310939117268621
+        },
+        "negative_signed_count": 798,
+        "zero_signed_count": 0,
+        "projection_sse_improvement": 0.019134311914953628,
+        "mean_signed_prediction_error": -0.00014451832693737938,
+        "signed_error_quantiles": [
+          -1.4300320942802942,
+          -0.13134625620091583,
+          0.0037087896294075483,
+          0.03241424837144251,
+          0.08077989069056886,
+          1.6975425380552
+        ],
+        "absolute_error_quantiles": [
+          0.0,
+          0.009025357977063133,
+          0.03957252711470521,
+          0.149430557205979,
+          1.6975425380552
+        ],
+        "max_projected_f": 1.6975425380552,
+        "per_state": [
+          {
+            "physical_state": 1,
+            "count": 6686,
+            "sse": 2.188250153891048,
+            "sst": 12.61879869940323,
+            "r2": 0.8265880765659147,
+            "mae": 0.008108599328362108,
+            "rmse": 0.018091113474909368
+          },
+          {
+            "physical_state": 2,
+            "count": 6686,
+            "sse": 4.811030829341128,
+            "sst": 18.235775544983547,
+            "r2": 0.7361762422731406,
+            "mae": 0.014786053668018767,
+            "rmse": 0.026824762395150047
+          },
+          {
+            "physical_state": 3,
+            "count": 6686,
+            "sse": 6.462226823539984,
+            "sst": 15.7967115661382,
+            "r2": 0.59091315958491,
+            "mae": 0.01708258041564146,
+            "rmse": 0.03108908302586567
+          },
+          {
+            "physical_state": 4,
+            "count": 6686,
+            "sse": 8.502052485819242,
+            "sst": 13.942564171212982,
+            "r2": 0.39020883236289416,
+            "mae": 0.019219138166637385,
+            "rmse": 0.035659783711727996
+          },
+          {
+            "physical_state": 5,
+            "count": 6686,
+            "sse": 9.947712513936196,
+            "sst": 17.24040983047562,
+            "r2": 0.4230002295913077,
+            "mae": 0.019278910938139934,
+            "rmse": 0.0385725567586493
+          },
+          {
+            "physical_state": 6,
+            "count": 6686,
+            "sse": 10.090331878652492,
+            "sst": 13.289132092503738,
+            "r2": 0.24070798541130134,
+            "mae": 0.01962229954534002,
+            "rmse": 0.03884807819670235
+          },
+          {
+            "physical_state": 7,
+            "count": 6686,
+            "sse": 14.059189289893892,
+            "sst": 14.621334553797487,
+            "r2": 0.03844691890711116,
+            "mae": 0.020383683385889702,
+            "rmse": 0.04585608280834244
+          },
+          {
+            "physical_state": 8,
+            "count": 6686,
+            "sse": 15.55941301475674,
+            "sst": 22.45326726314837,
+            "r2": 0.3070312292459205,
+            "mae": 0.021117498528911472,
+            "rmse": 0.04824067971115693
+          },
+          {
+            "physical_state": 9,
+            "count": 6686,
+            "sse": 12.132729879917772,
+            "sst": 17.279348696118756,
+            "r2": 0.2978479632948784,
+            "mae": 0.01985343179764814,
+            "rmse": 0.04259867375483912
+          },
+          {
+            "physical_state": 10,
+            "count": 6686,
+            "sse": 10.589307626008967,
+            "sst": 12.54413376511068,
+            "r2": 0.15583588119402236,
+            "mae": 0.019450139096761146,
+            "rmse": 0.03979702394486587
+          }
+        ],
+        "tail": {
+          "q90": {
+            "threshold": 0.0546,
+            "subsets": {
+              "bright": {
+                "count": 6690,
+                "sse": 59.8778801846781,
+                "base_sse": 60.52563096941051
+              },
+              "below": {
+                "count": 60170,
+                "sse": 34.464364311079365,
+                "base_sse": 33.679489863734645
+              }
+            }
+          },
+          "q99": {
+            "threshold": 0.2377,
+            "subsets": {
+              "bright": {
+                "count": 671,
+                "sse": 31.271422147643158,
+                "base_sse": 31.612563830697756
+              },
+              "below": {
+                "count": 66189,
+                "sse": 63.070822348114305,
+                "base_sse": 62.59255700244739
+              }
+            }
+          }
+        },
+        "molecule_error_concentration": {
+          "top1": {
+            "molecules": 1,
+            "share_of_sse": 0.031840195665407765
+          },
+          "top5": {
+            "molecules": 5,
+            "share_of_sse": 0.0981864609137507
+          },
+          "top10": {
+            "molecules": 10,
+            "share_of_sse": 0.1345189617343158
+          },
+          "top1pct": {
+            "molecules": 67,
+            "share_of_sse": 0.301718464857831
+          }
+        },
+        "fixed_prior_case14562": {
+          "id": 14562,
+          "global_index": 14536,
+          "raw_true_f": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "frozen_base_f": [
+            1.901208888585855e-05,
+            0.00862582395735084,
+            0.002803358960509638,
+            0.008487270574109102,
+            0.06498891405488476,
+            0.00556719475610871,
+            1.6651424581497825,
+            0.3448054074825304,
+            0.03710644909144739,
+            0.025029175298660448
+          ],
+          "signed_f": [
+            0.00017326842427236536,
+            0.010349681747972437,
+            0.003935336611324709,
+            -0.0016792306886598048,
+            0.05753530409051153,
+            0.002037627710284528,
+            1.6975425380552,
+            0.34420469890431277,
+            0.016566993547066283,
+            0.006034880017012172
+          ],
+          "projected_f": [
+            0.00017326842427236536,
+            0.010349681747972437,
+            0.003935336611324709,
+            0.0,
+            0.05753530409051153,
+            0.002037627710284528,
+            1.6975425380552,
+            0.34420469890431277,
+            0.016566993547066283,
+            0.006034880017012172
+          ],
+          "molecule_sse": 3.0038755242586563,
+          "frozen_base_molecule_sse": 2.898002373533749
+        }
+      }
+    },
+    "B": {
+      "train": {
+        "signed": {
+          "count": 1203550,
+          "sse": 1057.6417047942423,
+          "sst": 3022.091476089505,
+          "r2": 0.6500298838859773,
+          "mae": 0.01615437086709356,
+          "rmse": 0.029644028023970908
+        },
+        "projected": {
+          "count": 1203550,
+          "sse": 1057.063270875046,
+          "sst": 3022.091476089505,
+          "r2": 0.6502212857425302,
+          "mae": 0.016116330376261503,
+          "rmse": 0.0296359206203236
+        },
+        "frozen_base": {
+          "count": 1203550,
+          "sse": 1069.507413089579,
+          "sst": 3022.091476089505,
+          "r2": 0.6461035605469199,
+          "mae": 0.01603994453758158,
+          "rmse": 0.029809852762934134
+        },
+        "energy": {
+          "count": 1203550,
+          "sse": 16214.731049665417,
+          "sst": 1200035.4134728776,
+          "r2": 0.9864881228773572,
+          "mae": 0.08831040037342762,
+          "rmse": 0.11607075413581198
+        },
+        "negative_signed_count": 18245,
+        "zero_signed_count": 0,
+        "projection_sse_improvement": 0.5784339191961863,
+        "mean_signed_prediction_error": -5.449875476287171e-19,
+        "signed_error_quantiles": [
+          -2.2104205185724144,
+          -0.11152650747996598,
+          0.0036560395406896777,
+          0.03046344096175175,
+          0.06485648074080592,
+          1.1396171079265234
+        ],
+        "absolute_error_quantiles": [
+          0.0,
+          0.00893558316695544,
+          0.03625755930884914,
+          0.12082976131835253,
+          2.2104205185724144
+        ],
+        "max_projected_f": 3.153835796203553,
+        "per_state": [
+          {
+            "physical_state": 1,
+            "count": 120355,
+            "sse": 21.817450320000656,
+            "sst": 238.63498661441352,
+            "r2": 0.9085739663343946,
+            "mae": 0.007237329903816201,
+            "rmse": 0.013463870607060079
+          },
+          {
+            "physical_state": 2,
+            "count": 120355,
+            "sse": 57.06116677093978,
+            "sst": 339.0969783117619,
+            "r2": 0.8317261125267876,
+            "mae": 0.013009619758255788,
+            "rmse": 0.021774001839068045
+          },
+          {
+            "physical_state": 3,
+            "count": 120355,
+            "sse": 77.55383837918173,
+            "sst": 295.41737152347775,
+            "r2": 0.7374770549909307,
+            "mae": 0.015186922435655387,
+            "rmse": 0.025384556493190134
+          },
+          {
+            "physical_state": 4,
+            "count": 120355,
+            "sse": 95.61344339170518,
+            "sst": 249.40813912238843,
+            "r2": 0.6166386400694559,
+            "mae": 0.016798725707210898,
+            "rmse": 0.028185608217440622
+          },
+          {
+            "physical_state": 5,
+            "count": 120355,
+            "sse": 104.90684847701603,
+            "sst": 240.54655763265373,
+            "r2": 0.5638813146633235,
+            "mae": 0.017280906136645742,
+            "rmse": 0.02952363664072692
+          },
+          {
+            "physical_state": 6,
+            "count": 120355,
+            "sse": 113.78589837544794,
+            "sst": 272.78358130070046,
+            "r2": 0.5828711616993651,
+            "mae": 0.017552011606490094,
+            "rmse": 0.030747665852641836
+          },
+          {
+            "physical_state": 7,
+            "count": 120355,
+            "sse": 151.7596475263511,
+            "sst": 444.6916891695564,
+            "r2": 0.6587306414253973,
+            "mae": 0.01876056760449885,
+            "rmse": 0.035509625003330055
+          },
+          {
+            "physical_state": 8,
+            "count": 120355,
+            "sse": 139.67617355160502,
+            "sst": 306.4742734121469,
+            "r2": 0.544248292045811,
+            "mae": 0.018564643828399084,
+            "rmse": 0.03406662390019741
+          },
+          {
+            "physical_state": 9,
+            "count": 120355,
+            "sse": 156.42150395065022,
+            "sst": 398.68337608207963,
+            "r2": 0.6076548124784449,
+            "mae": 0.0184050333045074,
+            "rmse": 0.03605090404822208
+          },
+          {
+            "physical_state": 10,
+            "count": 120355,
+            "sse": 138.46730013214878,
+            "sst": 229.60087552010498,
+            "r2": 0.3969217241942795,
+            "mae": 0.01836754347713552,
+            "rmse": 0.03391888313283145
+          }
+        ],
+        "tail": {
+          "q90": {
+            "threshold": 0.0546,
+            "subsets": {
+              "bright": {
+                "count": 121189,
+                "sse": 706.7607532654398,
+                "base_sse": 726.0907498117298
+              },
+              "below": {
+                "count": 1082361,
+                "sse": 350.30251760960635,
+                "base_sse": 343.4166632778494
+              }
+            }
+          },
+          "q99": {
+            "threshold": 0.2377,
+            "subsets": {
+              "bright": {
+                "count": 12487,
+                "sse": 275.60098672008803,
+                "base_sse": 286.820727810932
+              },
+              "below": {
+                "count": 1191063,
+                "sse": 781.4622841549582,
+                "base_sse": 782.6866852786468
+              }
+            }
+          }
+        },
+        "molecule_error_concentration": {
+          "top1": {
+            "molecules": 1,
+            "share_of_sse": 0.004626058571240213
+          },
+          "top5": {
+            "molecules": 5,
+            "share_of_sse": 0.013157303018151432
+          },
+          "top10": {
+            "molecules": 10,
+            "share_of_sse": 0.019172216476800168
+          },
+          "top1pct": {
+            "molecules": 1204,
+            "share_of_sse": 0.18953323425008245
+          }
+        },
+        "signed_ridge_objective_recomputed": 0.3499889628429737
+      },
+      "val": {
+        "signed": {
+          "count": 66860,
+          "sse": 94.64257039273879,
+          "sst": 158.4062371581119,
+          "r2": 0.40253255117554443,
+          "mae": 0.017947240198077925,
+          "rmse": 0.03762357650085656
+        },
+        "projected": {
+          "count": 66860,
+          "sse": 94.59714015019993,
+          "sst": 158.4062371581119,
+          "r2": 0.402819346969409,
+          "mae": 0.017907172561886175,
+          "rmse": 0.03761454539907163
+        },
+        "frozen_base": {
+          "count": 66860,
+          "sse": 94.20512083314517,
+          "sst": 158.4062371581119,
+          "r2": 0.40529411894864287,
+          "mae": 0.017785608376680664,
+          "rmse": 0.03753652540330623
+        },
+        "energy": {
+          "count": 66860,
+          "sse": 1013.3249579516472,
+          "sst": 66156.66699740554,
+          "r2": 0.9846829502763284,
+          "mae": 0.09138826418757402,
+          "rmse": 0.12310939117268621
+        },
+        "negative_signed_count": 1056,
+        "zero_signed_count": 0,
+        "projection_sse_improvement": 0.04543024253885619,
+        "mean_signed_prediction_error": -0.00014081941069931994,
+        "signed_error_quantiles": [
+          -1.4254103263776023,
+          -0.13118302162530648,
+          0.003680915869767859,
+          0.0324214431168743,
+          0.08092463315304874,
+          1.7871739926860684
+        ],
+        "absolute_error_quantiles": [
+          0.0,
+          0.009076348968980512,
+          0.03947986140872547,
+          0.1508269872808147,
+          1.7871739926860684
+        ],
+        "max_projected_f": 1.7871739926860684,
+        "per_state": [
+          {
+            "physical_state": 1,
+            "count": 6686,
+            "sse": 2.1905942309914925,
+            "sst": 12.61879869940323,
+            "r2": 0.8264023158484104,
+            "mae": 0.00813409543251815,
+            "rmse": 0.018100800579037322
+          },
+          {
+            "physical_state": 2,
+            "count": 6686,
+            "sse": 4.806072092176931,
+            "sst": 18.235775544983547,
+            "r2": 0.7364481658418401,
+            "mae": 0.014764157507933355,
+            "rmse": 0.026810934668432103
+          },
+          {
+            "physical_state": 3,
+            "count": 6686,
+            "sse": 6.464923248101579,
+            "sst": 15.7967115661382,
+            "r2": 0.5907424642759335,
+            "mae": 0.017104574737789674,
+            "rmse": 0.03109556845469186
+          },
+          {
+            "physical_state": 4,
+            "count": 6686,
+            "sse": 8.451623376002868,
+            "sst": 13.942564171212982,
+            "r2": 0.3938257502552639,
+            "mae": 0.019207995873311057,
+            "rmse": 0.0355538701286536
+          },
+          {
+            "physical_state": 5,
+            "count": 6686,
+            "sse": 9.934401546283851,
+            "sst": 17.24040983047562,
+            "r2": 0.4237723091290466,
+            "mae": 0.01941198105483235,
+            "rmse": 0.03854674127963437
+          },
+          {
+            "physical_state": 6,
+            "count": 6686,
+            "sse": 10.095253333970122,
+            "sst": 13.289132092503738,
+            "r2": 0.2403376485613572,
+            "mae": 0.01961103916860597,
+            "rmse": 0.03885755091654832
+          },
+          {
+            "physical_state": 7,
+            "count": 6686,
+            "sse": 14.378575194954408,
+            "sst": 14.621334553797487,
+            "r2": 0.016603091732144915,
+            "mae": 0.020433121715300342,
+            "rmse": 0.046374019506143824
+          },
+          {
+            "physical_state": 8,
+            "count": 6686,
+            "sse": 15.564431886215013,
+            "sst": 22.45326726314837,
+            "r2": 0.30680770402798885,
+            "mae": 0.02101415628853492,
+            "rmse": 0.048248459382835035
+          },
+          {
+            "physical_state": 9,
+            "count": 6686,
+            "sse": 12.178510485895288,
+            "sst": 17.279348696118756,
+            "r2": 0.2951985228105968,
+            "mae": 0.019885310397358195,
+            "rmse": 0.04267896718044479
+          },
+          {
+            "physical_state": 10,
+            "count": 6686,
+            "sse": 10.532754755608368,
+            "sst": 12.54413376511068,
+            "r2": 0.16034419332298666,
+            "mae": 0.019505293442677697,
+            "rmse": 0.039690612412403105
+          }
+        ],
+        "tail": {
+          "q90": {
+            "threshold": 0.0546,
+            "subsets": {
+              "bright": {
+                "count": 6690,
+                "sse": 59.72851794838719,
+                "base_sse": 60.52563096941051
+              },
+              "below": {
+                "count": 60170,
+                "sse": 34.86862220181273,
+                "base_sse": 33.679489863734645
+              }
+            }
+          },
+          "q99": {
+            "threshold": 0.2377,
+            "subsets": {
+              "bright": {
+                "count": 671,
+                "sse": 31.210466901045184,
+                "base_sse": 31.612563830697756
+              },
+              "below": {
+                "count": 66189,
+                "sse": 63.38667324915473,
+                "base_sse": 62.59255700244739
+              }
+            }
+          }
+        },
+        "molecule_error_concentration": {
+          "top1": {
+            "molecules": 1,
+            "share_of_sse": 0.035052431123901565
+          },
+          "top5": {
+            "molecules": 5,
+            "share_of_sse": 0.10125872236379442
+          },
+          "top10": {
+            "molecules": 10,
+            "share_of_sse": 0.1373527158324739
+          },
+          "top1pct": {
+            "molecules": 67,
+            "share_of_sse": 0.30380447033371066
+          }
+        },
+        "fixed_prior_case14562": {
+          "id": 14562,
+          "global_index": 14536,
+          "raw_true_f": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "frozen_base_f": [
+            1.901208888585855e-05,
+            0.00862582395735084,
+            0.002803358960509638,
+            0.008487270574109102,
+            0.06498891405488476,
+            0.00556719475610871,
+            1.6651424581497825,
+            0.3448054074825304,
+            0.03710644909144739,
+            0.025029175298660448
+          ],
+          "signed_f": [
+            0.0020183076006858396,
+            0.0038765215807185643,
+            -0.015633981484905336,
+            0.001845872588955618,
+            0.0760563553188322,
+            -0.002400228093765047,
+            1.7871739926860684,
+            0.3396699971236988,
+            0.02044133458962731,
+            0.01637763653668965
+          ],
+          "projected_f": [
+            0.0020183076006858396,
+            0.0038765215807185643,
+            0.0,
+            0.001845872588955618,
+            0.0760563553188322,
+            0.0,
+            1.7871739926860684,
+            0.3396699971236988,
+            0.02044133458962731,
+            0.01637763653668965
+          ],
+          "molecule_sse": 3.3158597396329457,
+          "frozen_base_molecule_sse": 2.898002373533749
+        }
+      }
+    }
+  },
+  "comparators": {
+    "eta0": {
+      "count": 66860,
+      "sse": 94.20512092938401,
+      "sst": 158.4062371581119,
+      "r2": 0.4052941183410983,
+      "mae": 0.017785608345899415,
+      "rmse": 0.037536525422479664
+    },
+    "equal_three_native_f_mean": {
+      "count": 66860,
+      "sse": 87.2150742627189,
+      "sst": 158.4062371581119,
+      "r2": 0.4494214632744171,
+      "mae": 0.017345038638210148,
+      "rmse": 0.03611707668926027
+    }
+  },
+  "delta_r2": {
+    "B_minus_A": -0.0016091263766845332,
+    "A_minus_eta0": -0.000865644995004744,
+    "B_minus_eta0": -0.002474771371689277,
+    "A_minus_equal3": -0.04499298992832357,
+    "B_minus_equal3": -0.0466021163050081
+  },
+  "paired_bootstrap": {
+    "vs_eta0": {
+      "molecule": {
+        "A": {
+          "delta_r2_2p5_50_97p5": [
+            -0.002951653276634623,
+            -0.0008136449216512584,
+            0.0007174287723755136
+          ],
+          "positive_fraction": 0.1875,
+          "replicates": 2000,
+          "seed": 20260928,
+          "unit": "whole molecule, all 10 states"
+        },
+        "B": {
+          "delta_r2_2p5_50_97p5": [
+            -0.009338794602459406,
+            -0.0022072408816036946,
+            0.001511594974153166
+          ],
+          "positive_fraction": 0.2155,
+          "replicates": 2000,
+          "seed": 20260928,
+          "unit": "whole molecule, all 10 states"
+        }
+      },
+      "connectivity_group": {
+        "A": {
+          "delta_r2_2p5_50_97p5": [
+            -0.0029487809491231367,
+            -0.0008245750998467796,
+            0.0007705852184119472
+          ],
+          "positive_fraction": 0.184,
+          "replicates": 2000,
+          "seed": 20260928,
+          "unit": "connectivity group, all molecules and states"
+        },
+        "B": {
+          "delta_r2_2p5_50_97p5": [
+            -0.008697191274199574,
+            -0.0022572756560907976,
+            0.0014766469621619767
+          ],
+          "positive_fraction": 0.203,
+          "replicates": 2000,
+          "seed": 20260928,
+          "unit": "connectivity group, all molecules and states"
+        }
+      }
+    },
+    "B_minus_A": {
+      "molecule": {
+        "B_minus_A": {
+          "delta_r2_2p5_50_97p5": [
+            -0.006745016047667445,
+            -0.0014364644921385531,
+            0.0011157041952160266
+          ],
+          "positive_fraction": 0.2805,
+          "replicates": 2000,
+          "seed": 20260928,
+          "unit": "whole molecule, all 10 states"
+        }
+      },
+      "connectivity_group": {
+        "B_minus_A": {
+          "delta_r2_2p5_50_97p5": [
+            -0.0062301216606240155,
+            -0.0014392214734656747,
+            0.0011167782711396007
+          ],
+          "positive_fraction": 0.27,
+          "replicates": 2000,
+          "seed": 20260928,
+          "unit": "connectivity group, all molecules and states"
+        }
+      }
+    },
+    "vs_equal_three": {
+      "molecule": {
+        "A_vs_equal3": {
+          "delta_r2_2p5_50_97p5": [
+            -0.061778727670717466,
+            -0.044799519556405286,
+            -0.02604830841332895
+          ],
+          "positive_fraction": 0.0,
+          "replicates": 2000,
+          "seed": 20260928,
+          "unit": "whole molecule, all 10 states"
+        },
+        "B_vs_equal3": {
+          "delta_r2_2p5_50_97p5": [
+            -0.06309539612908763,
+            -0.04644227892647343,
+            -0.02956590735396427
+          ],
+          "positive_fraction": 0.0,
+          "replicates": 2000,
+          "seed": 20260928,
+          "unit": "whole molecule, all 10 states"
+        }
+      },
+      "connectivity_group": {
+        "A_vs_equal3": {
+          "delta_r2_2p5_50_97p5": [
+            -0.06338722947413068,
+            -0.04513201131172073,
+            -0.027992282289767315
+          ],
+          "positive_fraction": 0.0,
+          "replicates": 2000,
+          "seed": 20260928,
+          "unit": "connectivity group, all molecules and states"
+        },
+        "B_vs_equal3": {
+          "delta_r2_2p5_50_97p5": [
+            -0.06426058142254441,
+            -0.04679718476939318,
+            -0.03012387774735271
+          ],
+          "positive_fraction": 0.0,
+          "replicates": 2000,
+          "seed": 20260928,
+          "unit": "connectivity group, all molecules and states"
+        }
+      }
+    }
+  },
+  "connectivity_layout": {
+    "molecules": 6686,
+    "groups": 6671,
+    "groups_with_multiple_molecules": 15,
+    "largest_group_molecules": 2
+  },
+  "fit_diagnostics": {
+    "A": {
+      "ncols": 129,
+      "active_count": 129,
+      "intercept_centered": 0.0034681425342057075,
+      "objective": 0.35201920425079397,
+      "zero_correction_baseline_objective": 0.3538964394530803,
+      "normal_residual": 1.3948795674222818e-15,
+      "covariance_symmetry_error": 0.0,
+      "min_covariance_eigenvalue": 0.022118146957179986,
+      "max_covariance_eigenvalue": 21.043510141363328,
+      "condition_estimate": 910.3026371595656,
+      "effective_degrees_of_freedom": 128.2107294910155,
+      "coefficient_norm": 0.0878513313149934,
+      "active_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128
+      ]
+    },
+    "B": {
+      "ncols": 657,
+      "active_count": 657,
+      "intercept_centered": 0.0034681425342057075,
+      "objective": 0.3499889628429738,
+      "zero_correction_baseline_objective": 0.3538964394530803,
+      "normal_residual": 2.7020033512835385e-15,
+      "covariance_symmetry_error": 0.0,
+      "min_covariance_eigenvalue": 0.007327051675104036,
+      "max_covariance_eigenvalue": 40.29303940616725,
+      "condition_estimate": 4838.932311016771,
+      "effective_degrees_of_freedom": 652.6491460035289,
+      "coefficient_norm": 0.13728338920290195,
+      "active_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295,
+        296,
+        297,
+        298,
+        299,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312,
+        313,
+        314,
+        315,
+        316,
+        317,
+        318,
+        319,
+        320,
+        321,
+        322,
+        323,
+        324,
+        325,
+        326,
+        327,
+        328,
+        329,
+        330,
+        331,
+        332,
+        333,
+        334,
+        335,
+        336,
+        337,
+        338,
+        339,
+        340,
+        341,
+        342,
+        343,
+        344,
+        345,
+        346,
+        347,
+        348,
+        349,
+        350,
+        351,
+        352,
+        353,
+        354,
+        355,
+        356,
+        357,
+        358,
+        359,
+        360,
+        361,
+        362,
+        363,
+        364,
+        365,
+        366,
+        367,
+        368,
+        369,
+        370,
+        371,
+        372,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392,
+        393,
+        394,
+        395,
+        396,
+        397,
+        398,
+        399,
+        400,
+        401,
+        402,
+        403,
+        404,
+        405,
+        406,
+        407,
+        408,
+        409,
+        410,
+        411,
+        412,
+        413,
+        414,
+        415,
+        416,
+        417,
+        418,
+        419,
+        420,
+        421,
+        422,
+        423,
+        424,
+        425,
+        426,
+        427,
+        428,
+        429,
+        430,
+        431,
+        432,
+        433,
+        434,
+        435,
+        436,
+        437,
+        438,
+        439,
+        440,
+        441,
+        442,
+        443,
+        444,
+        445,
+        446,
+        447,
+        448,
+        449,
+        450,
+        451,
+        452,
+        453,
+        454,
+        455,
+        456,
+        457,
+        458,
+        459,
+        460,
+        461,
+        462,
+        463,
+        464,
+        465,
+        466,
+        467,
+        468,
+        469,
+        470,
+        471,
+        472,
+        473,
+        474,
+        475,
+        476,
+        477,
+        478,
+        479,
+        480,
+        481,
+        482,
+        483,
+        484,
+        485,
+        486,
+        487,
+        488,
+        489,
+        490,
+        491,
+        492,
+        493,
+        494,
+        495,
+        496,
+        497,
+        498,
+        499,
+        500,
+        501,
+        502,
+        503,
+        504,
+        505,
+        506,
+        507,
+        508,
+        509,
+        510,
+        511,
+        512,
+        513,
+        514,
+        515,
+        516,
+        517,
+        518,
+        519,
+        520,
+        521,
+        522,
+        523,
+        524,
+        525,
+        526,
+        527,
+        528,
+        529,
+        530,
+        531,
+        532,
+        533,
+        534,
+        535,
+        536,
+        537,
+        538,
+        539,
+        540,
+        541,
+        542,
+        543,
+        544,
+        545,
+        546,
+        547,
+        548,
+        549,
+        550,
+        551,
+        552,
+        553,
+        554,
+        555,
+        556,
+        557,
+        558,
+        559,
+        560,
+        561,
+        562,
+        563,
+        564,
+        565,
+        566,
+        567,
+        568,
+        569,
+        570,
+        571,
+        572,
+        573,
+        574,
+        575,
+        576,
+        577,
+        578,
+        579,
+        580,
+        581,
+        582,
+        583,
+        584,
+        585,
+        586,
+        587,
+        588,
+        589,
+        590,
+        591,
+        592,
+        593,
+        594,
+        595,
+        596,
+        597,
+        598,
+        599,
+        600,
+        601,
+        602,
+        603,
+        604,
+        605,
+        606,
+        607,
+        608,
+        609,
+        610,
+        611,
+        612,
+        613,
+        614,
+        615,
+        616,
+        617,
+        618,
+        619,
+        620,
+        621,
+        622,
+        623,
+        624,
+        625,
+        626,
+        627,
+        628,
+        629,
+        630,
+        631,
+        632,
+        633,
+        634,
+        635,
+        636,
+        637,
+        638,
+        639,
+        640,
+        641,
+        642,
+        643,
+        644,
+        645,
+        646,
+        647,
+        648,
+        649,
+        650,
+        651,
+        652,
+        653,
+        654,
+        655,
+        656
+      ]
+    }
+  },
+  "health_before": {
+    "index": 2,
+    "uuid": "GPU-cb4dc1ea-9ea3-e426-bdeb-df0bef8a23fa",
+    "memory_MiB": 10,
+    "temperature_C": "32 C",
+    "ecc": {
+      "volatile": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0
+      },
+      "aggregate": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0,
+        "sram_threshold_exceeded": "No"
+      },
+      "remap": {
+        "remapped_row_corr": "0",
+        "remapped_row_unc": "0",
+        "remapped_row_pending": "No",
+        "remapped_row_failure": "No"
+      },
+      "repair": {
+        "channel_repair_pending": "No",
+        "tpc_repair_pending": "No"
+      }
+    },
+    "apps": []
+  },
+  "health_after": {
+    "index": 2,
+    "uuid": "GPU-cb4dc1ea-9ea3-e426-bdeb-df0bef8a23fa",
+    "memory_MiB": 541,
+    "temperature_C": "37 C",
+    "ecc": {
+      "volatile": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0
+      },
+      "aggregate": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0,
+        "sram_threshold_exceeded": "No"
+      },
+      "remap": {
+        "remapped_row_corr": "0",
+        "remapped_row_unc": "0",
+        "remapped_row_pending": "No",
+        "remapped_row_failure": "No"
+      },
+      "repair": {
+        "channel_repair_pending": "No",
+        "tpc_repair_pending": "No"
+      }
+    },
+    "apps": [
+      854789
+    ]
+  },
+  "evaluation_seconds": 19.74841497465968,
+  "decision_thresholds": {
+    "candidate_gain_vs_eta0": 0.01,
+    "Gram_gain_B_minus_A": 0.005
+  },
+  "limitations": [
+    "Validation split and feature design are historically exposed.",
+    "Arm B has more coefficients; B-A is not a capacity-matched information-only theorem.",
+    "Ridge minimizes signed residual error; nonnegative projection is a common post-fit rule.",
+    "No validation-driven fit, alternative lambda, test evaluation or model promotion occurred."
+  ]
+}

@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/run.py", line 240, in <module>
+    try:main()
+  File "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/run.py", line 228, in main
+    report=evaluate_and_report(gpu,baseline,gpu_health,source,code,fit,train,val)
+  File "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/summarize.py", line 181, in evaluate_and_report
+    (ROOT/"RESULTS.md").write_text("\n".join(lines)+"\n")
+  File "/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/pathlib.py", line 1155, in write_text
+    return f.write(data)
+UnicodeEncodeError: 'ascii' codec can't encode character '\u03bb' in position 68: ordinal not in range(128)

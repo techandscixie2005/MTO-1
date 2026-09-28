@@ -1,0 +1,161 @@
+{
+  "classification": "Matched continuation screen, validation only; no test metrics",
+  "source": "completed eta0 epoch33",
+  "selection": "lowest pooled raw native-f validation SSE among epochs 0..20 per arm",
+  "arms": {
+    "control": {
+      "best_f_epoch": 0,
+      "best_f_val_r2": 0.4052941076636265,
+      "best_f_val_sse": 94.20512262076214,
+      "delta_r2_vs_control": 0.0,
+      "relative_sse_reduction_vs_control": 0.0,
+      "derived_f_truth_r2": 0.40529196098992204,
+      "bootstrap_delta_r2_2p5_50_97p5": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bootstrap_delta_r2_positive_fraction": 0.0,
+      "energy_mae_best": 0.09138826514502824,
+      "energy_mae_epoch0": 0.09138826514502824,
+      "energy_mae_ratio_to_epoch0": 1.0,
+      "energy_drift_review_flag": false,
+      "per_state_r2": [
+        0.827283934126376,
+        0.7357275700324373,
+        0.5900715047576339,
+        0.39011613578978166,
+        0.4208344107815586,
+        0.2431280063566108,
+        0.049939976324709257,
+        0.3069297824570034,
+        0.30146330856131354,
+        0.15010040902812827
+      ],
+      "bright": {
+        "0.9": {
+          "threshold": 0.0546,
+          "count": 6690,
+          "sse": 60.52562955853372,
+          "control_sse": 60.52562955853372
+        },
+        "0.99": {
+          "threshold": 0.2377,
+          "count": 671,
+          "sse": 31.61256262174487,
+          "control_sse": 31.61256262174487
+        }
+      },
+      "best_old_objective_epoch": 0,
+      "best_arm_objective_epoch": 0,
+      "best_old_objective_val_r2": 0.4052941076636265,
+      "best_arm_objective_val_r2": 0.4052941076636265
+    },
+    "weighted": {
+      "best_f_epoch": 0,
+      "best_f_val_r2": 0.40529410889613404,
+      "best_f_val_sse": 94.20512242552526,
+      "delta_r2_vs_control": 1.232507547255025e-09,
+      "relative_sse_reduction_vs_control": 2.072465633254458e-09,
+      "derived_f_truth_r2": 0.4052919622216621,
+      "bootstrap_delta_r2_2p5_50_97p5": [
+        -1.656309207652572e-08,
+        1.4395147378882074e-09,
+        1.7572897908447377e-08
+      ],
+      "bootstrap_delta_r2_positive_fraction": 0.573,
+      "energy_mae_best": 0.09138826579402885,
+      "energy_mae_epoch0": 0.09138826579402885,
+      "energy_mae_ratio_to_epoch0": 1.0,
+      "energy_drift_review_flag": false,
+      "per_state_r2": [
+        0.8272839298997305,
+        0.7357275583830221,
+        0.5900715032889063,
+        0.39011615061358784,
+        0.4208343986837757,
+        0.24312800292937553,
+        0.049940019275451886,
+        0.3069298080881314,
+        0.30146328980628,
+        0.1501003813034657
+      ],
+      "bright": {
+        "0.9": {
+          "threshold": 0.0546,
+          "count": 6690,
+          "sse": 60.52563076617831,
+          "control_sse": 60.52562955853372
+        },
+        "0.99": {
+          "threshold": 0.2377,
+          "count": 671,
+          "sse": 31.612564027742984,
+          "control_sse": 31.61256262174487
+        }
+      },
+      "best_old_objective_epoch": 0,
+      "best_arm_objective_epoch": 0,
+      "best_old_objective_val_r2": 0.40529410889613404,
+      "best_arm_objective_val_r2": 0.40529410889613404
+    },
+    "direct_f_matched": {
+      "best_f_epoch": 0,
+      "best_f_val_r2": 0.4052941280338356,
+      "best_f_val_sse": 94.20511939399398,
+      "delta_r2_vs_control": 2.037020892170021e-08,
+      "relative_sse_reduction_vs_control": 3.425257637581211e-08,
+      "derived_f_truth_r2": 0.40529198136129585,
+      "bootstrap_delta_r2_2p5_50_97p5": [
+        -1.8976681616149942e-09,
+        1.9410629585430152e-08,
+        5.096803209446318e-08
+      ],
+      "bootstrap_delta_r2_positive_fraction": 0.96,
+      "energy_mae_best": 0.09138826423393122,
+      "energy_mae_epoch0": 0.09138826423393122,
+      "energy_mae_ratio_to_epoch0": 1.0,
+      "energy_drift_review_flag": false,
+      "per_state_r2": [
+        0.8272839443569244,
+        0.7357275696252874,
+        0.590071496173445,
+        0.39011614875067513,
+        0.42083440928316795,
+        0.24312804612388428,
+        0.04994016685737934,
+        0.306929774250973,
+        0.30146330052083214,
+        0.150100416577024
+      ],
+      "bright": {
+        "0.9": {
+          "threshold": 0.0546,
+          "count": 6690,
+          "sse": 60.52563029458736,
+          "control_sse": 60.52562955853372
+        },
+        "0.99": {
+          "threshold": 0.2377,
+          "count": 671,
+          "sse": 31.612563033266532,
+          "control_sse": 31.61256262174487
+        }
+      },
+      "best_old_objective_epoch": 0,
+      "best_arm_objective_epoch": 0,
+      "best_old_objective_val_r2": 0.4052941280338356,
+      "best_arm_objective_val_r2": 0.4052941280338356
+    }
+  },
+  "promotion_rule": {
+    "min_delta_validation_R2": 0.01,
+    "min_bootstrap_positive_fraction": 0.8,
+    "tentative_delta_R2": [
+      0.005,
+      0.01
+    ],
+    "energy_MAE_ratio_review_flag": 1.1,
+    "energy_regression_is_hard_rejection": false
+  }
+}

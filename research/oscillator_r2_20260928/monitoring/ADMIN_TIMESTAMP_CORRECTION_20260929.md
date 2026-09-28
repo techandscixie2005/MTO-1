@@ -1,0 +1,3 @@
+# Monitoring admin timestamp correction
+
+The state amendments prepared during this turn were initially labeled 2026-09-29 04:10 and 04:20 +08. A clock check at 2026-09-29 03:00:28 +08 showed those labels were in the future. The archived D: folders using those labels are preserved unchanged as provenance snapshots, but their timestamps must not be treated as observation times. The authoritative current monitoring/coordinator state was corrected to 2026-09-29 03:00:24 +08. The last full health check remains 2026-09-29 02:31:01 +08, and the next scheduled check remains 2026-09-29 06:29:29 +08. No training metric or process health check was performed as part of this correction.

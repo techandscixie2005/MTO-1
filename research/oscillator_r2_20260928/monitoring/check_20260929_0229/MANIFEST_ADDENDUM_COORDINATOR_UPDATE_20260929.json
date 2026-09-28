@@ -1,0 +1,33 @@
+{
+  "created_at": "2026-09-29T02:36:28+08:00",
+  "classification": "Addendum: current scheduled check with finalized coordinator and monitoring state",
+  "files": [
+    {
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/monitoring_state.json",
+      "local_path": "monitoring_state.json",
+      "bytes": 12492,
+      "sha256": "c9697a424bcbbd00491e43b5cca7a51973b8f469f6890610d79389b083800195",
+      "remote_local_match": true
+    },
+    {
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/coordinator_state.json",
+      "local_path": "coordinator_state.json",
+      "bytes": 19922,
+      "sha256": "f9e86bfe79608afe168662ed00ad24e581a92bd3a94243bdd4f6b1eebd1c105c",
+      "remote_local_match": true
+    },
+    {
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/RESEARCH_STATUS.md",
+      "local_path": "RESEARCH_STATUS.md",
+      "bytes": 15231,
+      "sha256": "60419ac09f79637fb18d7899b11e4ba55311adabf49025519de812a55efbc720",
+      "remote_local_match": true
+    }
+  ],
+  "previous_manifest": "MANIFEST.sha256.json",
+  "excluded": [
+    "checkpoints",
+    "runtime arrays",
+    "caches"
+  ]
+}

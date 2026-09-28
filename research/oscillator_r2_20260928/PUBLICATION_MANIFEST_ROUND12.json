@@ -1,0 +1,856 @@
+{
+  "purpose": "Completed loss pilot, recovered frozen Gram result, active seed launch, and timestamped monitoring receipts",
+  "base_published_commit": "275ef796c5473dea25657d0d40617a9352180250",
+  "source": "Verified D: research archives only",
+  "interpretation": "Loss variants are numerical ties; Gram attempt 1 failed before fitting and attempt 2 numerical outputs completed with additive report recovery; seed records are launches, not current health; scratch protocol approved, implementation/preflight pending",
+  "no_promotion_test_extension": true,
+  "excludes": "Checkpoints, optimizer states, Gram arrays, coefficients, predictions, caches, runtime binaries, and malformed 02:29 report placeholder",
+  "files": [
+    {
+      "path": "RESEARCH_STATUS.md",
+      "bytes": 17678,
+      "sha256": "2429a1837df5e4059bdf896807724ebbf3b0309757314ef107a1f4d984abd0a5",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\monitoring\\receipt_update_0300\\RESEARCH_STATUS.md"
+    },
+    {
+      "path": "completion_receipts/LOSS_PILOT_SCIENTIFIC_REVIEW.md",
+      "bytes": 5108,
+      "sha256": "5ba23d7a312cea6e101fef67737632307f617de4140ff4c57906481c40abaebc",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\completion_receipts\\LOSS_PILOT_SCIENTIFIC_REVIEW.md"
+    },
+    {
+      "path": "coordinator_state.json",
+      "bytes": 23805,
+      "sha256": "d89ed9d8e4486b47c7dbaa2ab94f89266896de7d55c349021a19105b8fbb19ee",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\monitoring\\receipt_update_0302\\coordinator_state.json"
+    },
+    {
+      "path": "eta0_seed_replication/IMPLEMENTATION_HANDOFF.json",
+      "bytes": 9682,
+      "sha256": "54cbd50e22f0b7d94c56901fdb0d0ad859f00a4b622bff1e2fe0016ccc39d1ab",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round07_seed_replication_launch\\IMPLEMENTATION_HANDOFF.json"
+    },
+    {
+      "path": "eta0_seed_replication/IMPLEMENTATION_REVIEW.json",
+      "bytes": 11855,
+      "sha256": "088be0c334d88b46ce39f7f3b5097cb6150a517d83cb0432b1a8fe847dcc1808",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round07_seed_replication_launch\\IMPLEMENTATION_REVIEW.json"
+    },
+    {
+      "path": "eta0_seed_replication/IMPLEMENTATION_REVIEW.md",
+      "bytes": 3205,
+      "sha256": "adab947050b3c6e9c2d38e272821b22453930a3dacae2d779bdd83656ce8baa9",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round07_seed_replication_launch\\IMPLEMENTATION_REVIEW.md"
+    },
+    {
+      "path": "eta0_seed_replication/NUMERICAL_NOTE.md",
+      "bytes": 1041,
+      "sha256": "ca35755089b1676c3536c19f957e92e2784be5398119189579e0e2b7a2cd24e2",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round07_seed_replication_launch\\NUMERICAL_NOTE.md"
+    },
+    {
+      "path": "eta0_seed_replication/ORDER_PLAN.json",
+      "bytes": 26013,
+      "sha256": "2cd71223598340a957d98babf064d17accb85719eba29eb091f279746dfd9c87",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round07_seed_replication_launch\\ORDER_PLAN.json"
+    },
+    {
+      "path": "eta0_seed_replication/PREFLIGHT.json",
+      "bytes": 12565,
+      "sha256": "f0142a2dda91e02eb919ce23a33516ffcfd874dd48a4af9bbebf0d5d4afe3ddc",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round07_seed_replication_launch\\PREFLIGHT.json"
+    },
+    {
+      "path": "eta0_seed_replication/PROTOCOL.md",
+      "bytes": 9545,
+      "sha256": "ceacc1d992aec0604f9b31b0fa0c71e2fe3303fbb417da72be115e04973473e8",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round07_seed_replication_launch\\PROTOCOL.md"
+    },
+    {
+      "path": "eta0_seed_replication/REPORT_ENCODING_READONLY_AUDIT.md",
+      "bytes": 1044,
+      "sha256": "5e7302356e5529af910e3a88b921eeef41f5c199807bf31ee13e93f8d4abab0b",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round07_seed_replication_launch\\REPORT_ENCODING_READONLY_AUDIT.md"
+    },
+    {
+      "path": "eta0_seed_replication/RESOURCE_GATE_AMENDMENT.md",
+      "bytes": 792,
+      "sha256": "061956126e2b3dcfa165ca3262c7a159262653428c17000df5db182fa7c60d2b",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round07_seed_replication_launch\\RESOURCE_GATE_AMENDMENT.md"
+    },
+    {
+      "path": "eta0_seed_replication/SOURCE_PINS.json",
+      "bytes": 6491,
+      "sha256": "5aefb846d38f00b6ec2b7ff9cc7a0b6149eeac1c1dd1116cc378f8310e5bbe1e",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round07_seed_replication_launch\\SOURCE_PINS.json"
+    },
+    {
+      "path": "eta0_seed_replication/common.py",
+      "bytes": 5286,
+      "sha256": "b30136664affff2560a01009a7e7029c1d1443cc7b23ab341c3adccdbacfe3f3",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round07_seed_replication_launch\\common.py"
+    },
+    {
+      "path": "eta0_seed_replication/data_adapter.py",
+      "bytes": 2841,
+      "sha256": "a6c8df922d939a01ded36288561bc1c0ef0aae884d6ea3c6912b0c0b720f3f28",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round07_seed_replication_launch\\data_adapter.py"
+    },
+    {
+      "path": "eta0_seed_replication/launch.py",
+      "bytes": 4303,
+      "sha256": "796ff0557413f71a18fc23a1f92d7397883fe2ef4cd43f2e6e06d0977d28b7e2",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round07_seed_replication_launch\\launch.py"
+    },
+    {
+      "path": "eta0_seed_replication/preflight.py",
+      "bytes": 11796,
+      "sha256": "b4b3e2021ed696a3ad5be96bc0aba2c5aee07c535b81074603df897b0c1d9ec3",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round07_seed_replication_launch\\preflight.py"
+    },
+    {
+      "path": "eta0_seed_replication/runs/seed23/LAUNCH_RECEIPT.json",
+      "bytes": 10263,
+      "sha256": "af79442051f60dc0fd29e11c670ca3949237f312323f09a0d2b2829a8dfdfa3d",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round07_seed_replication_launch\\runs\\seed23\\LAUNCH_RECEIPT.json"
+    },
+    {
+      "path": "eta0_seed_replication/runs/seed23/RUN_MANIFEST.json",
+      "bytes": 11042,
+      "sha256": "6d64f378837818e0d63cd979fe9814f544627d8aa8219be54ae261a6d1055e42",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round07_seed_replication_launch\\runs\\seed23\\RUN_MANIFEST.json"
+    },
+    {
+      "path": "eta0_seed_replication/runs/seed23/epoch0_val.json",
+      "bytes": 3210,
+      "sha256": "834402eff02f74a74803ddab37937bdd1da79ec578acd7d702c0db2ea7742368",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round07_seed_replication_launch\\runs\\seed23\\epoch0_val.json"
+    },
+    {
+      "path": "eta0_seed_replication/runs/seed37/LAUNCH_RECEIPT.json",
+      "bytes": 10262,
+      "sha256": "789d6b8fb4f5390b2313e33a2e107a915aa8c560ddf5e2fae32892f1500ed879",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round07_seed_replication_launch\\runs\\seed37\\LAUNCH_RECEIPT.json"
+    },
+    {
+      "path": "eta0_seed_replication/runs/seed37/RUN_MANIFEST.json",
+      "bytes": 11041,
+      "sha256": "a5753e5a6fbd0297f04210250291861732ae1f389a6744c05f3a6fe55ad03807",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round07_seed_replication_launch\\runs\\seed37\\RUN_MANIFEST.json"
+    },
+    {
+      "path": "eta0_seed_replication/runs/seed37/epoch0_val.json",
+      "bytes": 3207,
+      "sha256": "6a040439d24ad933b3d4b61c1756dda958fa75fc1a45272f5f28ded15b0c8512",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round07_seed_replication_launch\\runs\\seed37\\epoch0_val.json"
+    },
+    {
+      "path": "eta0_seed_replication/summarize.py",
+      "bytes": 8212,
+      "sha256": "2228ae0a039f7bd6304d8ea04d984ccfe8f9efaf7c7dde91b227eac6413707dd",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round07_seed_replication_launch\\summarize.py"
+    },
+    {
+      "path": "eta0_seed_replication/train.py",
+      "bytes": 18363,
+      "sha256": "b4ea40d9adc3caeca5db81cdfcfeb4db892d46c9062ab1456a3db04d384babfc",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round07_seed_replication_launch\\train.py"
+    },
+    {
+      "path": "frozen_gram_probe/ATTEMPT1_RESET_RECEIPT.json",
+      "bytes": 628,
+      "sha256": "2b0a13a9f9b9871cda15341e2c940993f9ed26b8a67df25b19f3bacbaf2a1604",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\ATTEMPT1_RESET_RECEIPT.json"
+    },
+    {
+      "path": "frozen_gram_probe/FAILED.json",
+      "bytes": 189,
+      "sha256": "6f833d3bdc6a77f5d7cf445a633534e206317fb0a5d0031a899b71202903027f",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\FAILED.json"
+    },
+    {
+      "path": "frozen_gram_probe/FAILED_ATTEMPT1_REF.json",
+      "bytes": 145,
+      "sha256": "912e54dee85fd69c7152699e7a1b4b0c2d9ec0a3c4ab6eeb06a4b16d44937456",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\FAILED_ATTEMPT1_REF.json"
+    },
+    {
+      "path": "frozen_gram_probe/FEASIBILITY.md",
+      "bytes": 7002,
+      "sha256": "deed5f968c597962fa1eefbc842cf5b31a77cdc9140bf80965610950810f95b8",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\FEASIBILITY.md"
+    },
+    {
+      "path": "frozen_gram_probe/FIT_FROZEN.json",
+      "bytes": 18592,
+      "sha256": "0958f141dfe290784002e91d4b0f899d37b8e00dc2d1d8dae9dc466e06d63812",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\FIT_FROZEN.json"
+    },
+    {
+      "path": "frozen_gram_probe/FROZEN_GRAM_PROBE_PROTOCOL.md",
+      "bytes": 12798,
+      "sha256": "c7f6f6ede884e663d5af579e6add91f49552128ff39ce7dc0bdb73088777fa32",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\FROZEN_GRAM_PROBE_PROTOCOL.md"
+    },
+    {
+      "path": "frozen_gram_probe/GRAM_NUMERIC_DIAG.json",
+      "bytes": 13300,
+      "sha256": "b7817b5b821f8fa62b6dc6387186c3aaaf6e604f5e8429346e9425bb6de39ab8",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\GRAM_NUMERIC_DIAG.json"
+    },
+    {
+      "path": "frozen_gram_probe/GRAM_NUMERIC_DIAG.py",
+      "bytes": 2330,
+      "sha256": "aaced526851eb0420a09937844747229ec76ae863499228d3b76c58a06ef60a3",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\GRAM_NUMERIC_DIAG.py"
+    },
+    {
+      "path": "frozen_gram_probe/GRAM_NUMERIC_DIAG_1280.json",
+      "bytes": 3375,
+      "sha256": "373890888ece418590ba1eb4f308f00fb2436ce81e7767caa3c34cdd409fe9cd",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\GRAM_NUMERIC_DIAG_1280.json"
+    },
+    {
+      "path": "frozen_gram_probe/GRAM_NUMERIC_DIAG_1280.py",
+      "bytes": 2562,
+      "sha256": "c93c7a4192c0daf988b9a0de00fd9f55f8325f1cfcc658b34efd4023632732e6",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\GRAM_NUMERIC_DIAG_1280.py"
+    },
+    {
+      "path": "frozen_gram_probe/GRAM_SPREAD_TRAIN_GPU2.json",
+      "bytes": 3262,
+      "sha256": "f67fcec83bcac566b8babb29fee30036cde33d7959d08206cc113d1fa7d75a1d",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\GRAM_SPREAD_TRAIN_GPU2.json"
+    },
+    {
+      "path": "frozen_gram_probe/GRAM_SPREAD_TRAIN_GPU2.py",
+      "bytes": 2785,
+      "sha256": "d043e8b7eff2ee7905c7981e07acadc5999b60a558b82b105b0e9fd6995f2f7b",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\GRAM_SPREAD_TRAIN_GPU2.py"
+    },
+    {
+      "path": "frozen_gram_probe/IMPLEMENTATION_HANDOFF.json",
+      "bytes": 5744,
+      "sha256": "44d8372f9ad6a20756e5491d9d10d6fed1f2fe6ba15a7f41124d2376711287c2",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\IMPLEMENTATION_HANDOFF.json"
+    },
+    {
+      "path": "frozen_gram_probe/IMPLEMENTATION_REVIEW.json",
+      "bytes": 6373,
+      "sha256": "fd0b549694970f5e41a7bb0d9d0904f2889ac506130dae8a3760d088f46398a7",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\IMPLEMENTATION_REVIEW.json"
+    },
+    {
+      "path": "frozen_gram_probe/IMPLEMENTATION_REVIEW.md",
+      "bytes": 1939,
+      "sha256": "d20de1841090e581da56f768eb532588eebe40fc3a124c017e49d97e07b10be5",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\IMPLEMENTATION_REVIEW.md"
+    },
+    {
+      "path": "frozen_gram_probe/LAUNCH_RECEIPT.json",
+      "bytes": 6275,
+      "sha256": "8481aa4ab882a7d87ed42c9963948523614d050bbafe947520253bc74ce95021",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\LAUNCH_RECEIPT.json"
+    },
+    {
+      "path": "frozen_gram_probe/LAUNCH_RECEIPT_ATTEMPT1_REF.json",
+      "bytes": 5403,
+      "sha256": "f033c8cc3eb1e7ace063c688b38a7034ad0e99789d0c77e4113767f8aea177b7",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\LAUNCH_RECEIPT_ATTEMPT1_REF.json"
+    },
+    {
+      "path": "frozen_gram_probe/NUMERICAL_AMENDMENT.md",
+      "bytes": 2043,
+      "sha256": "37ba34dd7a9c12077b4248e25f102ddb050f97b5d8cdc25fb492f6233c560e42",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\NUMERICAL_AMENDMENT.md"
+    },
+    {
+      "path": "frozen_gram_probe/NUMERICAL_AMENDMENT_SCIENTIFIC_REVIEW.md",
+      "bytes": 2902,
+      "sha256": "a78ba3641d3a8dee85af4ddcb87ddde4a2d2aa73b73dabd02b02bffa031e3b6c",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\NUMERICAL_AMENDMENT_SCIENTIFIC_REVIEW.md"
+    },
+    {
+      "path": "frozen_gram_probe/POSTPROCESS_RECOVERY.json",
+      "bytes": 6802,
+      "sha256": "6911b141bebd2153739a9331639389b3bbf41427a4e110d3ab0d4519eb89c10e",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\POSTPROCESS_RECOVERY.json"
+    },
+    {
+      "path": "frozen_gram_probe/POSTPROCESS_REVIEW.json",
+      "bytes": 4791,
+      "sha256": "7d9f406ac182da6ee5cceec227f2ccf02f062cb050a4893d66877ef4225843dc",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\POSTPROCESS_REVIEW.json"
+    },
+    {
+      "path": "frozen_gram_probe/PREFLIGHT.json",
+      "bytes": 61205,
+      "sha256": "4b03bcd7a553c1b24f517dcf8c392409d8dcad9686ab61f7d19a71165fdd97c8",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\PREFLIGHT.json"
+    },
+    {
+      "path": "frozen_gram_probe/RESULTS.json",
+      "bytes": 50513,
+      "sha256": "b75610c8ed7d91b63b18adc84362453899edaed7deecefc072ed0f981b5d781a",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\RESULTS.json"
+    },
+    {
+      "path": "frozen_gram_probe/RESULTS_RECOVERED.md",
+      "bytes": 867,
+      "sha256": "4fb8c060b760b86ca9feab91a7de9031de953d71d66158b31e3a1b7d16451f7c",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\RESULTS_RECOVERED.md"
+    },
+    {
+      "path": "frozen_gram_probe/SCIENTIFIC_RESULT_REVIEW.md",
+      "bytes": 6445,
+      "sha256": "cc8d3aeea23c18ba2f721f8e48e948a1cca30085230b902b599f947bd4d13eed",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\attempt2_reviews\\SCIENTIFIC_RESULT_REVIEW.md"
+    },
+    {
+      "path": "frozen_gram_probe/TRAIN_GRAM_MANIFEST.json",
+      "bytes": 60809,
+      "sha256": "a8c5f14402ec20dcfbbdd3c7362eaf082a738bd9f23f655a0a070e2bb27dc97d",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\TRAIN_GRAM_MANIFEST.json"
+    },
+    {
+      "path": "frozen_gram_probe/VAL_GRAM_MANIFEST.json",
+      "bytes": 60798,
+      "sha256": "946913ae2b184a686751f8b2e184458f27973aacd84ef9d93a015ff26433d8d8",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\VAL_GRAM_MANIFEST.json"
+    },
+    {
+      "path": "frozen_gram_probe/attempt1/FAILED.json",
+      "bytes": 145,
+      "sha256": "912e54dee85fd69c7152699e7a1b4b0c2d9ec0a3c4ab6eeb06a4b16d44937456",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\attempt1\\FAILED.json"
+    },
+    {
+      "path": "frozen_gram_probe/attempt1/FROZEN_GRAM_PROBE_PROTOCOL.md",
+      "bytes": 12798,
+      "sha256": "c7f6f6ede884e663d5af579e6add91f49552128ff39ce7dc0bdb73088777fa32",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\attempt1\\FROZEN_GRAM_PROBE_PROTOCOL.md"
+    },
+    {
+      "path": "frozen_gram_probe/attempt1/GRAM_NUMERIC_DIAG.json",
+      "bytes": 13300,
+      "sha256": "b7817b5b821f8fa62b6dc6387186c3aaaf6e604f5e8429346e9425bb6de39ab8",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\attempt1\\GRAM_NUMERIC_DIAG.json"
+    },
+    {
+      "path": "frozen_gram_probe/attempt1/GRAM_NUMERIC_DIAG.py",
+      "bytes": 2330,
+      "sha256": "aaced526851eb0420a09937844747229ec76ae863499228d3b76c58a06ef60a3",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\attempt1\\GRAM_NUMERIC_DIAG.py"
+    },
+    {
+      "path": "frozen_gram_probe/attempt1/GRAM_NUMERIC_DIAG_1280.json",
+      "bytes": 3375,
+      "sha256": "373890888ece418590ba1eb4f308f00fb2436ce81e7767caa3c34cdd409fe9cd",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\attempt1\\GRAM_NUMERIC_DIAG_1280.json"
+    },
+    {
+      "path": "frozen_gram_probe/attempt1/GRAM_NUMERIC_DIAG_1280.py",
+      "bytes": 2562,
+      "sha256": "c93c7a4192c0daf988b9a0de00fd9f55f8325f1cfcc658b34efd4023632732e6",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\attempt1\\GRAM_NUMERIC_DIAG_1280.py"
+    },
+    {
+      "path": "frozen_gram_probe/attempt1/GRAM_SPREAD_TRAIN_GPU2.json",
+      "bytes": 3262,
+      "sha256": "f67fcec83bcac566b8babb29fee30036cde33d7959d08206cc113d1fa7d75a1d",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\attempt1\\GRAM_SPREAD_TRAIN_GPU2.json"
+    },
+    {
+      "path": "frozen_gram_probe/attempt1/GRAM_SPREAD_TRAIN_GPU2.py",
+      "bytes": 2785,
+      "sha256": "d043e8b7eff2ee7905c7981e07acadc5999b60a558b82b105b0e9fd6995f2f7b",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\attempt1\\GRAM_SPREAD_TRAIN_GPU2.py"
+    },
+    {
+      "path": "frozen_gram_probe/attempt1/IMPLEMENTATION_HANDOFF.json",
+      "bytes": 4521,
+      "sha256": "114723976673b6598573774e28608ef3961426e242cb28ee76da6be6016a4e0f",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\attempt1\\IMPLEMENTATION_HANDOFF.json"
+    },
+    {
+      "path": "frozen_gram_probe/attempt1/IMPLEMENTATION_REVIEW.json",
+      "bytes": 5676,
+      "sha256": "f5d9510fb0c9b75cd42bcec6c56931623a2658358ddf011b0f55cf2c97080f81",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\attempt1\\IMPLEMENTATION_REVIEW.json"
+    },
+    {
+      "path": "frozen_gram_probe/attempt1/IMPLEMENTATION_REVIEW.md",
+      "bytes": 2607,
+      "sha256": "534ce9627bf4f126ac45ee116ac43253ca88a2bc6fae20455226ce0cd750cbaf",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\attempt1\\IMPLEMENTATION_REVIEW.md"
+    },
+    {
+      "path": "frozen_gram_probe/attempt1/LAUNCH_RECEIPT.json",
+      "bytes": 5403,
+      "sha256": "f033c8cc3eb1e7ace063c688b38a7034ad0e99789d0c77e4113767f8aea177b7",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\attempt1\\LAUNCH_RECEIPT.json"
+    },
+    {
+      "path": "frozen_gram_probe/attempt1/MANIFEST.json",
+      "bytes": 3440,
+      "sha256": "c0b69760003a0d1051f7f790b01b6ef99965930794593093556f70db73b86ba6",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\attempt1\\MANIFEST.json"
+    },
+    {
+      "path": "frozen_gram_probe/attempt1/PREFLIGHT.json",
+      "bytes": 60343,
+      "sha256": "4ecd34d0309d46c748c20c4857e677b0fbfef4bc5b4104c2b9a4ed9fbe8a6fe0",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\attempt1\\PREFLIGHT.json"
+    },
+    {
+      "path": "frozen_gram_probe/attempt1/config.json",
+      "bytes": 2350,
+      "sha256": "362f9d1ebd8b244b83be6314bce7be0b71e3c99ff065012ea980a0e13ec26237",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\attempt1\\config.json"
+    },
+    {
+      "path": "frozen_gram_probe/attempt1/features.py",
+      "bytes": 5169,
+      "sha256": "a64f9b3fa464cd9b7f42cab816685e8208130b4896d283ff0be0b4d5e8d85e09",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\attempt1\\features.py"
+    },
+    {
+      "path": "frozen_gram_probe/attempt1/launch.py",
+      "bytes": 2514,
+      "sha256": "00289d6dfb9a82e0cc6e5f565a780374b751e4ac29c2ca1368bc348250dd8919",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\attempt1\\launch.py"
+    },
+    {
+      "path": "frozen_gram_probe/attempt1/moments.py",
+      "bytes": 5637,
+      "sha256": "615a0405dae0ce1d04ff10e0bd8c84523bdacb11a4ed5c87ace7c884583cfd51",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\attempt1\\moments.py"
+    },
+    {
+      "path": "frozen_gram_probe/attempt1/preflight.py",
+      "bytes": 8268,
+      "sha256": "16e5b6b14992bc582b8d5ed8ff15d6b93dc13d835a682832179bf97406b76433",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\attempt1\\preflight.py"
+    },
+    {
+      "path": "frozen_gram_probe/attempt1/run.log",
+      "bytes": 730,
+      "sha256": "1ea22c9e3fc5fcadbd9733a9352297b176b81bec9303dae086896ddabe5f5794",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\attempt1\\run.log"
+    },
+    {
+      "path": "frozen_gram_probe/attempt1/run.py",
+      "bytes": 13126,
+      "sha256": "29b0a3b98c8fc9b9965edab9339cf284009894476e7c6cd6350f2d041955edc0",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\attempt1\\run.py"
+    },
+    {
+      "path": "frozen_gram_probe/attempt1/summarize.py",
+      "bytes": 11166,
+      "sha256": "7727eeb5c8aa3c9605b3ab652c6b0c56e585f2dda2adefa0e2704dc2fe24b79e",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\attempt1\\summarize.py"
+    },
+    {
+      "path": "frozen_gram_probe/attempt2_reviews/POSTPROCESS_REVIEW.json",
+      "bytes": 4791,
+      "sha256": "7d9f406ac182da6ee5cceec227f2ccf02f062cb050a4893d66877ef4225843dc",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\attempt2_reviews\\POSTPROCESS_REVIEW.json"
+    },
+    {
+      "path": "frozen_gram_probe/attempt2_reviews/SCIENTIFIC_RESULT_REVIEW.md",
+      "bytes": 6445,
+      "sha256": "cc8d3aeea23c18ba2f721f8e48e948a1cca30085230b902b599f947bd4d13eed",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\attempt2_reviews\\SCIENTIFIC_RESULT_REVIEW.md"
+    },
+    {
+      "path": "frozen_gram_probe/config.json",
+      "bytes": 2586,
+      "sha256": "f87df444bccff248e91a3f9d6aaf19d58c563c0499ab27ede591294816e84fc9",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\config.json"
+    },
+    {
+      "path": "frozen_gram_probe/features.py",
+      "bytes": 6241,
+      "sha256": "8138496b076bac43781fd08000d0b6119c01460b4a38619eb0c79675f353e230",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\features.py"
+    },
+    {
+      "path": "frozen_gram_probe/launch.py",
+      "bytes": 2541,
+      "sha256": "4442316cee0d212f614857a4fbcfaaf254fee10a2375fa2fea5890ad59870204",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\launch.py"
+    },
+    {
+      "path": "frozen_gram_probe/moments.py",
+      "bytes": 5637,
+      "sha256": "615a0405dae0ce1d04ff10e0bd8c84523bdacb11a4ed5c87ace7c884583cfd51",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\moments.py"
+    },
+    {
+      "path": "frozen_gram_probe/preflight.py",
+      "bytes": 8268,
+      "sha256": "16e5b6b14992bc582b8d5ed8ff15d6b93dc13d835a682832179bf97406b76433",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\preflight.py"
+    },
+    {
+      "path": "frozen_gram_probe/recover_report.py",
+      "bytes": 9052,
+      "sha256": "5e86992eb89d31d9a0221110ba89d7aa3c4327a84bbf906401fe4af7459c1951",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\recover_report.py"
+    },
+    {
+      "path": "frozen_gram_probe/run.py",
+      "bytes": 13126,
+      "sha256": "29b0a3b98c8fc9b9965edab9339cf284009894476e7c6cd6350f2d041955edc0",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\run.py"
+    },
+    {
+      "path": "frozen_gram_probe/run_attempt2.log",
+      "bytes": 765,
+      "sha256": "a4147531cbc0584d35901b4b1fe7c75868f4e5f66797e3506e88467140654c5b",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\run_attempt2.log"
+    },
+    {
+      "path": "frozen_gram_probe/summarize.py",
+      "bytes": 11166,
+      "sha256": "7727eeb5c8aa3c9605b3ab652c6b0c56e585f2dda2adefa0e2704dc2fe24b79e",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\summarize.py"
+    },
+    {
+      "path": "loss_pilot/CODE_REVIEW.json",
+      "bytes": 1950,
+      "sha256": "2c23812fb71666ed081d5437b24066042bb91b165a9383ab5bbbdd778c21e301",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\CODE_REVIEW.json"
+    },
+    {
+      "path": "loss_pilot/CODE_REVIEW.md",
+      "bytes": 1870,
+      "sha256": "4db880823aebcc44048d07c6c16cbf9bbf09e239d701bfc2c9e0ec9c7c0f714b",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\CODE_REVIEW.md"
+    },
+    {
+      "path": "loss_pilot/G2_ADMIN_STOPPED.json",
+      "bytes": 3866,
+      "sha256": "ce5ac336fdc05d1121b5b01a4fdc1bde017080ddb7c10d3dcfc4d811d66014a2",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\G2_ADMIN_STOPPED.json"
+    },
+    {
+      "path": "loss_pilot/G2_RETIREMENT.md",
+      "bytes": 1612,
+      "sha256": "cc19739adc0bb47995526b625dab5a3ce2dc4a7f0f611b542517ee24a7bb116c",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\G2_RETIREMENT.md"
+    },
+    {
+      "path": "loss_pilot/G2_RETIREMENT_AMENDMENT_REVIEW.json",
+      "bytes": 2300,
+      "sha256": "e6b398df958f62e87f40298dc2c7c21745c42a7c567d58be0e148967ae642f1a",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\G2_RETIREMENT_AMENDMENT_REVIEW.json"
+    },
+    {
+      "path": "loss_pilot/G2_RETIREMENT_AMENDMENT_REVIEW.md",
+      "bytes": 1273,
+      "sha256": "03d7eb2391803a11f90fa6f77ed4d686b9a35eadbbe8c20f35f4fbb8b9435ef6",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\G2_RETIREMENT_AMENDMENT_REVIEW.md"
+    },
+    {
+      "path": "loss_pilot/PILOT_SUMMARY.md",
+      "bytes": 805,
+      "sha256": "73e6ce4fc8e431b352d900fad299979673c916d67ce193879a9e18d966916833",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\PILOT_SUMMARY.md"
+    },
+    {
+      "path": "loss_pilot/SCIENTIFIC_AUDIT_AND_PROTOCOL.md",
+      "bytes": 10389,
+      "sha256": "437d21eb939f28d6d68da1c1e41ffcc44d21a71bf83794881c41d9f60ebd91f3",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\SCIENTIFIC_AUDIT_AND_PROTOCOL.md"
+    },
+    {
+      "path": "loss_pilot/g2_retire.py",
+      "bytes": 12401,
+      "sha256": "07703406550e383e0c4d4bb90c4a50c7f6a41cd7e55014f3f05b078a2f6ca76e",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\g2_retire.py"
+    },
+    {
+      "path": "loss_pilot/loss_pilot_completion_audit.json",
+      "bytes": 3975,
+      "sha256": "39e6c03a299f9bb46ef1140c5560f69f64eb6c96f743151a3018bf45ca8bf57d",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\loss_pilot_completion_audit.json"
+    },
+    {
+      "path": "loss_pilot/loss_pilot_completion_audit.md",
+      "bytes": 1209,
+      "sha256": "eb113a3742ac2b7d92d506cda92387bdcb76a6fe5465a2dc97060f476884b968",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\loss_pilot_completion_audit.md"
+    },
+    {
+      "path": "loss_pilot/pilot_config.json",
+      "bytes": 1098,
+      "sha256": "c4afc1c1fc1b0bd31595c2a93c6dd4799bc2924c3587de3ea7538e773dee623b",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\pilot_config.json"
+    },
+    {
+      "path": "loss_pilot/pilot_objective.py",
+      "bytes": 1339,
+      "sha256": "7277cc096b5b387f382c2954f3be31f7ab779ccaf5022fd3161efa7e01c7b065",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\pilot_objective.py"
+    },
+    {
+      "path": "loss_pilot/pilot_queue.py",
+      "bytes": 7864,
+      "sha256": "5796866183c00ee7ae22b1f8e7c6c7e0d3ce0130c4bce8a6c16b508781cefdc3",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\pilot_queue.py"
+    },
+    {
+      "path": "loss_pilot/pilot_queue_admin.py",
+      "bytes": 10100,
+      "sha256": "f0a13e9e55a79c4a35b42d390fd3f51203db5a3624635b6d8fe30f09dcd2a07b",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\pilot_queue_admin.py"
+    },
+    {
+      "path": "loss_pilot/pilot_summary.json",
+      "bytes": 4983,
+      "sha256": "4c109a0f017f518b445671b4b136f28d10f5aefe62facf8137e29d36b0bd2c78",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\pilot_summary.json"
+    },
+    {
+      "path": "loss_pilot/preflight.py",
+      "bytes": 6044,
+      "sha256": "602b1c582846227441398ef8dba58e2d0acc47da055a50049d39e70f49c80906",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\preflight.py"
+    },
+    {
+      "path": "loss_pilot/preflight_results.json",
+      "bytes": 7011,
+      "sha256": "3742173e5f9cc8df11f5dd62da06ab6f2d37a12e97a4875e955273ab26e17532",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\preflight_results.json"
+    },
+    {
+      "path": "loss_pilot/queue_status.json",
+      "bytes": 162,
+      "sha256": "a101adb565376e19cf8ee0f6107f44b83c01cad641eb0d98dce378c669b02f96",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\queue_status.json"
+    },
+    {
+      "path": "loss_pilot/runs/control/FIT_COMPLETE.json",
+      "bytes": 6119,
+      "sha256": "56503c84fd970907ae8eac7ceacedce23cb7d99b10e013bf163bdba7574a9591",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\runs\\control\\FIT_COMPLETE.json"
+    },
+    {
+      "path": "loss_pilot/runs/control/history.jsonl",
+      "bytes": 54164,
+      "sha256": "600602668d08d1c05da901fb08d4bc2f41db5afe534c87e83b6de7b7494b3d29",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\runs\\control\\history.jsonl"
+    },
+    {
+      "path": "loss_pilot/runs/control/queue_launch_receipt.json",
+      "bytes": 6489,
+      "sha256": "4ea0ad777f13bad122f0ebba522f7f8db3e69a1daf1ab3876b4481d26097e76e",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\runs\\control\\queue_launch_receipt.json"
+    },
+    {
+      "path": "loss_pilot/runs/control/run_manifest.json",
+      "bytes": 7223,
+      "sha256": "aab76d525d96ddefa493b303f58df8101c2f22f44eba2a3385c34f64233ba84d",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\runs\\control\\run_manifest.json"
+    },
+    {
+      "path": "loss_pilot/runs/control/status.json",
+      "bytes": 3607,
+      "sha256": "117a299915ac18cc51826247b8d169f7882bdd68084306a7988315e826dcdd0d",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\runs\\control\\status.json"
+    },
+    {
+      "path": "loss_pilot/runs/direct_f_matched/FIT_COMPLETE.json",
+      "bytes": 6127,
+      "sha256": "310c89e749d5bb44b2e459857b9f6651e102c0b407ae7a995c37e83d2b1f6f9c",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\runs\\direct_f_matched\\FIT_COMPLETE.json"
+    },
+    {
+      "path": "loss_pilot/runs/direct_f_matched/history.jsonl",
+      "bytes": 54125,
+      "sha256": "19130c00ce2f2bf410fb347d3dfa9dc3a3c0633675b296e9855a6465cba95b43",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\runs\\direct_f_matched\\history.jsonl"
+    },
+    {
+      "path": "loss_pilot/runs/direct_f_matched/queue_launch_receipt.json",
+      "bytes": 6498,
+      "sha256": "4ff90d338f1a069e297a7cb9daa42c148f740327386505f777194ea9d1aa6448",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\runs\\direct_f_matched\\queue_launch_receipt.json"
+    },
+    {
+      "path": "loss_pilot/runs/direct_f_matched/run_manifest.json",
+      "bytes": 7232,
+      "sha256": "e15af0fedb0567bebc06c164edb1692e4c8afd14457414b3bfe10b22ce41e41d",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\runs\\direct_f_matched\\run_manifest.json"
+    },
+    {
+      "path": "loss_pilot/runs/direct_f_matched/status.json",
+      "bytes": 3598,
+      "sha256": "d7e47e78d46e27d14eebef591de8dc50a15c384f72f8a30322bae892caa6df43",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\runs\\direct_f_matched\\status.json"
+    },
+    {
+      "path": "loss_pilot/runs/weighted/FIT_COMPLETE.json",
+      "bytes": 6118,
+      "sha256": "1c47d5c99c51b07ab4b58533f0749cbbc9f82c038470dafe65a482f3689ff27e",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\runs\\weighted\\FIT_COMPLETE.json"
+    },
+    {
+      "path": "loss_pilot/runs/weighted/history.jsonl",
+      "bytes": 54078,
+      "sha256": "d93727241424f49521a0e31a186aca1e35dbeff50feb603001d8254fa5813059",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\runs\\weighted\\history.jsonl"
+    },
+    {
+      "path": "loss_pilot/runs/weighted/queue_launch_receipt.json",
+      "bytes": 6490,
+      "sha256": "9ce4afdcce5b8aa2a6b1129d93df2b2e1c1fc93e7f55341777217cacf55fd416",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\runs\\weighted\\queue_launch_receipt.json"
+    },
+    {
+      "path": "loss_pilot/runs/weighted/run_manifest.json",
+      "bytes": 7223,
+      "sha256": "5a5004351922c3075b50604b31ee86c9a79704a45f0c28b5224c2116ad3016e9",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\runs\\weighted\\run_manifest.json"
+    },
+    {
+      "path": "loss_pilot/runs/weighted/status.json",
+      "bytes": 3598,
+      "sha256": "0ff1e3f8794a59d592cc0c93cf5b0380bff0b612a177e0b1bf128fb594aca806",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\runs\\weighted\\status.json"
+    },
+    {
+      "path": "loss_pilot/summarize.py",
+      "bytes": 5224,
+      "sha256": "2cb9cc45a41d3ea7977fd59cfae9657acb0d8c416f9b846eed0e277af905afe3",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\summarize.py"
+    },
+    {
+      "path": "loss_pilot/train.py",
+      "bytes": 13560,
+      "sha256": "001b888dacd9b27f1f7ebd5eace2eb816e56ccc1ff417cdec789af27909496a3",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\train.py"
+    },
+    {
+      "path": "monitoring/ADMIN_TIMESTAMP_CORRECTION_20260929.md",
+      "bytes": 683,
+      "sha256": "2659b0c7bfc41a19be2bf6d07c0c558a171fde52c0f222791f10bf942759dfd1",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\monitoring\\receipt_update_0300\\ADMIN_TIMESTAMP_CORRECTION_20260929.md"
+    },
+    {
+      "path": "monitoring/FULL_CHECK_20260929_0229_CORRECTED.md",
+      "bytes": 2577,
+      "sha256": "5ce59b7d99da5094e17e220907f090e9d93d18a33b3b655bd0847f060b9ee04e",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\monitoring\\check_20260929_0229\\FULL_CHECK_20260929_0229_CORRECTED.md"
+    },
+    {
+      "path": "monitoring/check_20260929_0229/MANIFEST.sha256.json",
+      "bytes": 945,
+      "sha256": "dd0aefa0a2ce5d4a1f36b8482e4c941a2809f71708d2224c8f6aac2972010b89",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\monitoring\\check_20260929_0229\\MANIFEST.sha256.json"
+    },
+    {
+      "path": "monitoring/check_20260929_0229/MANIFEST_ADDENDUM_COORDINATOR_UPDATE_20260929.json",
+      "bytes": 1203,
+      "sha256": "6ca1cfecc853fbc10b8ebd2945659b3022f85efd9a29af1fecf60a05b867c57f",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\monitoring\\check_20260929_0229\\MANIFEST_ADDENDUM_COORDINATOR_UPDATE_20260929.json"
+    },
+    {
+      "path": "monitoring/check_20260929_0229/MANIFEST_ADDENDUM_CORRECTED_REPORT.json",
+      "bytes": 344,
+      "sha256": "4e7477266d562763436eb49239436a3afad8a58195bf4b4d59b6426906246ca1",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\monitoring\\check_20260929_0229\\MANIFEST_ADDENDUM_CORRECTED_REPORT.json"
+    },
+    {
+      "path": "monitoring/check_20260929_0229/RESEARCH_STATUS.md",
+      "bytes": 15231,
+      "sha256": "60419ac09f79637fb18d7899b11e4ba55311adabf49025519de812a55efbc720",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\monitoring\\check_20260929_0229\\RESEARCH_STATUS.md"
+    },
+    {
+      "path": "monitoring/check_20260929_0229/coordinator_state.json",
+      "bytes": 19922,
+      "sha256": "f9e86bfe79608afe168662ed00ad24e581a92bd3a94243bdd4f6b1eebd1c105c",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\monitoring\\check_20260929_0229\\coordinator_state.json"
+    },
+    {
+      "path": "monitoring/check_20260929_0229/monitoring_state.json",
+      "bytes": 12492,
+      "sha256": "c9697a424bcbbd00491e43b5cca7a51973b8f469f6890610d79389b083800195",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\monitoring\\check_20260929_0229\\monitoring_state.json"
+    },
+    {
+      "path": "monitoring/receipt_update_0300/MANIFEST.sha256.json",
+      "bytes": 951,
+      "sha256": "afbcd78f02326d64e6db2d43d88b40395e6bdd423c860c7c9991974daea96cbe",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\monitoring\\receipt_update_0300\\MANIFEST.sha256.json"
+    },
+    {
+      "path": "monitoring/receipt_update_0302/MANIFEST.sha256.json",
+      "bytes": 575,
+      "sha256": "50fd649ee8575108d3f84c5c410ea190b9efe729c278e469a7dc802f2f18f1d1",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\monitoring\\receipt_update_0302\\MANIFEST.sha256.json"
+    },
+    {
+      "path": "monitoring_state.json",
+      "bytes": 4525,
+      "sha256": "dd3c00ffe726a088f63fc66f80cea58246b4ddd5874fe6a70f0fc93f795aecae",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\monitoring\\receipt_update_0302\\monitoring_state.json"
+    },
+    {
+      "path": "round02_loss_pilot_complete/MANIFEST.sha256.json",
+      "bytes": 6428,
+      "sha256": "e0f99a162c24ad9b5d5860c9d0a4d69b0b05391ccd27990825646cc0d011fe1e",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\MANIFEST.sha256.json"
+    },
+    {
+      "path": "round02_loss_pilot_complete/MANIFEST_ADDENDUM_SCIENTIFIC_REVIEW.json",
+      "bytes": 421,
+      "sha256": "5175679ebddf9a342b051abfc966e74e73a8b507a7c9b1c12a2d1ed6ec6cda4c",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round02_loss_pilot_complete\\MANIFEST_ADDENDUM_SCIENTIFIC_REVIEW.json"
+    },
+    {
+      "path": "round06_frozen_gram_probe_recovery/ARCHIVE_ALLOWLIST.json",
+      "bytes": 9762,
+      "sha256": "ee22459fd24f192208f5e29f20710aa6a2820ca12908facf4abb1231cebe39cc",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\ARCHIVE_ALLOWLIST.json"
+    },
+    {
+      "path": "round06_frozen_gram_probe_recovery/MANIFEST.sha256.json",
+      "bytes": 9970,
+      "sha256": "a14cc1e5f197757eef79d92f846ea12dadbda8cd50b0348a90c453cf49f9a52d",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\MANIFEST.sha256.json"
+    },
+    {
+      "path": "round06_frozen_gram_probe_recovery/MANIFEST_ADDENDUM_SCIENTIFIC_REVIEW.json",
+      "bytes": 605,
+      "sha256": "184cec62aed135b51a3dbc2fdba941453a92f896d4d8ebb2d02d887fc17a4d8a",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round06_frozen_gram_probe_recovery\\MANIFEST_ADDENDUM_SCIENTIFIC_REVIEW.json"
+    },
+    {
+      "path": "round07_seed_replication_launch/ACTIVE_LAUNCH_ARCHIVE_ALLOWLIST.json",
+      "bytes": 4005,
+      "sha256": "f1a633d3d988ab088d53fad37229e81f968a4dab6fe45c04a40ff3dccac3f346",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round07_seed_replication_launch\\ACTIVE_LAUNCH_ARCHIVE_ALLOWLIST.json"
+    },
+    {
+      "path": "round07_seed_replication_launch/MANIFEST.sha256.json",
+      "bytes": 4185,
+      "sha256": "7e05d43b9461f7a27f4331526e231550f69e450af2e22320499e614e5f9b27ce",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round07_seed_replication_launch\\MANIFEST.sha256.json"
+    },
+    {
+      "path": "round08_scratch_readout_protocol/MANIFEST.sha256.json",
+      "bytes": 284,
+      "sha256": "d2fee1bef8e8d27fa2d373926f5d79f0655aecffd354d95dff9fc3885e509c8f",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round08_scratch_readout_protocol\\MANIFEST.sha256.json"
+    },
+    {
+      "path": "scratch_readout_comparison/PROTOCOL.md",
+      "bytes": 11628,
+      "sha256": "9be3d271f86afac91a2b20957b4edee86bad6a14b0bd9058c564254ad8b151b2",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round08_scratch_readout_protocol\\PROTOCOL.md"
+    }
+  ]
+}

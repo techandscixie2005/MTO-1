@@ -1,0 +1,300 @@
+{
+  "automation_id": "qm9s-e-a",
+  "automation_name": "MTO oscillator-strength research - 4-hour checks",
+  "automation_status": "ACTIVE",
+  "interval_hours": 4,
+  "first_health_check_at": "2026-09-28T22:29:29+08:00",
+  "next_check_due_at": "2026-09-29T06:29:29+08:00",
+  "monitor_role": "archive_and_monitor sub-agent: perform compact scheduled health checks, archive reviewed lightweight round records through D: first, and report actionable issues to the coordinator",
+  "active_campaign_at_first_check": "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925",
+  "supervisor_pid": 566447,
+  "trainer_pids": {
+    "G1": 566461,
+    "G2": 566514,
+    "G3": 566521,
+    "G4": 566532
+  },
+  "status_files": [
+    "runs/G1/status.json",
+    "runs/G2/status.json",
+    "runs/G3/status.json",
+    "runs/G4/status.json"
+  ],
+  "log_files": [
+    "logs/G1.log",
+    "logs/G2.log",
+    "logs/G3.log",
+    "logs/G4.log"
+  ],
+  "gpu_policy": "Do not touch unrelated jobs; GPU3 is excluded due to historical ECC failure, and no GPU reset is authorized.",
+  "publication_note": "Local D: archive is the staging source. Do not upload checkpoints, optimizer states, caches, raw tensors, or large runtime artifacts.",
+  "last_full_check_at": "2026-09-29T02:31:01+08:00",
+  "scope_admin_amendment": {
+    "updated_at": "2026-09-29T02:36:28+08:00",
+    "purpose": "Administrative scope correction only; these are last-known handles/receipts, not claims of current health. Discover current identities from coordinator state, queue records and /proc at each scheduled check.",
+    "discover_from": [
+      "coordinator_state.json",
+      "queue_status.json",
+      "runs/<arm>/queue_launch_receipt.json",
+      "architecture/ARCH_QUEUE_STATUS.json",
+      "architecture/runs/<arm>/queue_launch_receipt.json",
+      "architecture/runs/<arm>/status.json",
+      "architecture/runs/<arm>/FIT_COMPLETE.json",
+      "architecture/runs/<arm>/INVALID.json",
+      "architecture/runs/<arm>/FAILED.json"
+    ],
+    "last_known_loss_pilot": {
+      "queue_pid": 785736,
+      "arm": "control",
+      "worker_pid": 785960,
+      "gpu": 2,
+      "next_arms": [
+        "weighted",
+        "direct_f_matched"
+      ],
+      "note": "Historical launch/targeted snapshot; dynamically discover current arm and PID."
+    },
+    "g2_retirement": {
+      "pid": 566514,
+      "state": "ADMIN_STOPPED",
+      "epoch": 215,
+      "cursor": 114496,
+      "best_epoch": 41,
+      "original_queue_pid": 762340,
+      "original_queue": "exited without workers",
+      "campaign_expectation": "STOPPED_REQUIRES_EXPLICIT_RESUME / CAMPAIGN_BLOCKED is intentional; no FIT_COMPLETE was forged; analyze the original campaign as partial after remaining old jobs finish."
+    },
+    "legacy_campaign": {
+      "G4": "naturally FIT_COMPLETE at epoch 223; retain as terminal completion evidence"
+    },
+    "architecture_screen": {
+      "queue_pid": 778242,
+      "arms": [
+        "retained_residual",
+        "original",
+        "direct_f",
+        "independent_trace"
+      ],
+      "last_known_workers": [
+        {
+          "arm": "retained_residual",
+          "pid": 778585,
+          "gpu": 5
+        },
+        {
+          "arm": "original_control",
+          "pid": 790200,
+          "gpu": 6
+        }
+      ],
+      "note": "IDs are recorded historical handles, not current health claims; discover additional/current arm receipts from queue state."
+    },
+    "gpu_policy": {
+      "exclude": [
+        3,
+        7
+      ],
+      "guarded": [
+        5
+      ],
+      "preserve_unrelated_gpu": 0,
+      "notes": "Use healthy/free admitted devices per live ownership/resource records; do not reset devices or stop unrelated work."
+    },
+    "monitor_rule": "No routine status/metrics/log checks until 2026-09-29T06:29:29+08:00. At next due, dynamically check G3, any new loss replacement/Gram/seed worker and durable terminal receipts. Do not retry the Gram failure automatically.",
+    "current_rounds": {
+      "round02_loss_pilot": {
+        "queue_pid_last_receipt": 785736,
+        "next_expected_arms": [
+          "weighted",
+          "direct_f_matched"
+        ],
+        "note": "Use current queue state and launch receipts at the scheduled check; earlier admin stop of G2 is intentional."
+      },
+      "round04_architecture_screen": {
+        "state": "ALL_COMPLETE, independently reviewed, no promotion",
+        "queue_pid_terminal": 778242,
+        "note": "No active architecture worker remains; do not report this screen as still running."
+      },
+      "round05_frozen_residual_head_only": {
+        "state": "FIT_COMPLETE per coordinator receipt; final integrity audit PASS; independent scientific review pending",
+        "worker_pid_at_launch_receipt": 830317,
+        "worker_start_ticks": 1246488075,
+        "gpu": 6,
+        "queue_launch_receipt": "frozen_residual/run/queue_launch_receipt.json",
+        "run_manifest": "frozen_residual/run/run_manifest.json",
+        "status_path": "frozen_residual/run/status.json",
+        "history_path": "frozen_residual/run/history.jsonl",
+        "log_path": "frozen_residual/run/train.log",
+        "terminal_paths": [
+          "frozen_residual/run/FIT_COMPLETE.json",
+          "frozen_residual/INDEPENDENT_RUN_AUDIT.json"
+        ],
+        "last_external_receipt": "PID passed initial gate, epoch 2 / step 3500; no independent monitor poll yet; treat as launch receipt not current health",
+        "archive_exclusions": [
+          "frozen_residual/runtime/cache_train.npz",
+          "frozen_residual/runtime/cache_val.npz",
+          "frozen_residual/run/*.pt",
+          "frozen_residual/run/*.npz"
+        ],
+        "completion_receipt_status": "complete 20 epochs / 37,620 steps; best epoch 2; validation raw-native-f R2 0.406789903; final R2 0.404299111; no test, no promotion, no extension",
+        "current_health_claim": false,
+        "review_pending": false,
+        "scientific_review": "frozen_residual/SCIENTIFIC_RESULT_REVIEW.md; SHA-256 639d1ce5e3a2fcd1335167f2f85e28290c46f7e623b0b81af14f9247773a1d95"
+      },
+      "frozen_feature_cache": {
+        "state": "complete per executor receipt; not active",
+        "former_pid": 826125,
+        "gpu": 6,
+        "manifest": "frozen_residual/CACHE_MANIFEST.json",
+        "note": "Never classify absent cache builder PID as failure; cache and arrays remain server-only."
+      },
+      "round06_frozen_gram_probe": {
+        "state": "single fixed probe launched; no completion claim",
+        "worker_pid_at_launch_receipt": 846525,
+        "worker_start_ticks": 1246719986,
+        "gpu": 6,
+        "gpu_uuid": "GPU-2431a641-8045-a10b-4aa0-2769010e0708",
+        "launch_receipt": "frozen_gram_probe/LAUNCH_RECEIPT.json",
+        "launch_receipt_sha256": "f033c8cc3eb1e7ace063c688b38a7034ad0e99789d0c77e4113767f8aea177b7",
+        "implementation_review_sha256": "f5d9510fb0c9b75cd42bcec6c56931623a2658358ddf011b0f55cf2c97080f81",
+        "run_log": "frozen_gram_probe/run.log",
+        "status_path": "frozen_gram_probe/status.json",
+        "progress_paths": [
+          "frozen_gram_probe/TRAIN_GRAM_PROGRESS.json",
+          "frozen_gram_probe/TRAIN_GRAM_MANIFEST.json",
+          "frozen_gram_probe/FIT_FROZEN.json",
+          "frozen_gram_probe/VAL_GRAM_PROGRESS.json",
+          "frozen_gram_probe/VAL_GRAM_MANIFEST.json"
+        ],
+        "terminal_path": "frozen_gram_probe/PROBE_COMPLETE.json",
+        "note": "At scheduled check verify current owner via PID/start_ticks/cmdline/cwd, review progress and resource health; archive lightweight records only after audit. Do not stage Gram arrays."
+      }
+    },
+    "scheduler_verification": {
+      "automation_id": "qm9s-e-a",
+      "status": "ACTIVE",
+      "rrule": "FREQ=HOURLY;INTERVAL=4",
+      "target_thread_id": "01a0e868-88e9-7dd2-b83c-d4763f2b5577",
+      "configured_interval_matches_four_hours": true,
+      "saved_next_due_at": "2026-09-29T06:29:29+08:00",
+      "scheduler_next_fire_time_exposed_by_automation_tool_or_local_config": false,
+      "limitation": "Automation configuration exposes ACTIVE, FREQ=HOURLY;INTERVAL=4, target and prompt, but not the scheduler next-fire timestamp. The check completed at 02:31:01; next due remains the RRULE-aligned 06:29:29 slot from the original 22:29:29 anchor. This monitor retains due-check ownership; no duplicate automation."
+    },
+    "latest_full_check": {
+      "scheduled_for": "2026-09-29T02:29:29+08:00",
+      "completed_at": "2026-09-29T02:31:01+08:00",
+      "server_observation_time": "2026-09-29T02:31:01+08:00",
+      "loss_pilot": {
+        "queue_pid": 785736,
+        "queue_state": "ALL_COMPLETE",
+        "arms": {
+          "control": {
+            "selected_epoch": 0,
+            "best_native_f_val_r2": 0.4052941076636265,
+            "epoch20_native_f_val_r2": 0.3093488847914624
+          },
+          "weighted": {
+            "selected_epoch": 0,
+            "best_native_f_val_r2": 0.40529410889613404,
+            "delta_r2_vs_control": 1.232507547255025e-09,
+            "bootstrap_ci95": [
+              -1.656309207652572e-08,
+              1.7572897908447377e-08
+            ],
+            "epoch20_native_f_val_r2": 0.30657218659536034
+          },
+          "direct_f_matched": {
+            "selected_epoch": 0,
+            "best_native_f_val_r2": 0.4052941280338356,
+            "delta_r2_vs_control": 2.037020892170021e-08,
+            "bootstrap_ci95": [
+              -1.8976681616149942e-09,
+              5.096803209446318e-08
+            ],
+            "epoch20_native_f_val_r2": 0.31736450271360983
+          }
+        },
+        "test_evaluated": false,
+        "promotion": "none; selected differences are numerical ties"
+      },
+      "legacy_chan64": {
+        "G1": "natural FIT_COMPLETE",
+        "G2": "intentional ADMIN_STOPPED at epoch215/cursor114496; original campaign remains partial, not failed",
+        "G3": {
+          "state": "RUNNING",
+          "pid": 566521,
+          "start_ticks": 1242573486,
+          "gpu": 4,
+          "epoch": 281,
+          "cursor": 108800,
+          "train_count": 120355,
+          "steps": 528380,
+          "lr": 0.00025,
+          "last_completed_validation_epoch": 280,
+          "last_validation_components": [
+            0.5477895469249026,
+            0.027387458792069413,
+            0.13601951820387514,
+            0.38438256992895803
+          ],
+          "FIT_COMPLETE": false,
+          "FAILED": false,
+          "INVALID": false
+        },
+        "G4": "natural FIT_COMPLETE"
+      },
+      "round05_frozen_residual": {
+        "state": "FIT_COMPLETE; audit/review complete",
+        "steps": 37620,
+        "selected_epoch": 2,
+        "baseline_validation_r2": 0.4052941183410983,
+        "selected_validation_r2": 0.406789903,
+        "delta_r2": 0.0014957847,
+        "epoch20_validation_r2": 0.4042991111635026,
+        "test_evaluated": false,
+        "promotion": false
+      },
+      "round06_frozen_gram_probe": {
+        "pid_at_launch": 846525,
+        "process_alive_at_check": false,
+        "state": "FAILED before fitting; no model result",
+        "error": "Frozen cache mismatch h max=2.384185791015625e-06",
+        "failure_marker": "frozen_gram_probe/FAILED.json",
+        "completion_marker_present": false,
+        "follow_up": "reviewed repair/diagnosis pending; no retry launched"
+      },
+      "eta0_seed_replication": {
+        "state": "protocol prepared; no training launched"
+      },
+      "gpu_health": {
+        "observed_at": "2026-09-29T02:31:01+08:00",
+        "gpu2": {
+          "memory_mib": 10,
+          "temperature_c": 32,
+          "utilization_pct": 0,
+          "ecc_corrected": 0,
+          "ecc_uncorrected": 0
+        },
+        "gpu4": {
+          "memory_mib": 5257,
+          "temperature_c": 51,
+          "utilization_pct": 43,
+          "ecc_corrected": 0,
+          "ecc_uncorrected": 0,
+          "owner": "G3"
+        },
+        "gpu6": {
+          "memory_mib": 10,
+          "temperature_c": 33,
+          "utilization_pct": 0,
+          "ecc_corrected": 0,
+          "ecc_uncorrected": 0
+        },
+        "gpu4_gpu6_remap_pending": "No",
+        "gpu4_gpu6_remap_failure": "No"
+      },
+      "intervention": "No intervention on G3; preserve its live process. Round06 gate failure is implementation/cache identity, not model evidence; hold any retry until reviewed. GPUs3/7 excluded, GPU0 unrelated job preserved.",
+      "report": "monitoring/FULL_CHECK_20260929_0229.md"
+    }
+  }
+}\n

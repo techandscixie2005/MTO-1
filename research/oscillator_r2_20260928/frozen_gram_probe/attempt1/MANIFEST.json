@@ -1,0 +1,100 @@
+{
+  "classification": "Immutable first failed pre-fit Gram attempt and bounded train-only numerical diagnostics",
+  "created": 1790620612.998166,
+  "original_worker_pid": 846525,
+  "original_worker_start_ticks": 1246719986,
+  "failed_pre_fit": true,
+  "train_gram_manifest_absent": true,
+  "fit_frozen_absent": true,
+  "validation_gram_absent": true,
+  "artifacts": {
+    "FAILED.json": {
+      "sha256": "912e54dee85fd69c7152699e7a1b4b0c2d9ec0a3c4ab6eeb06a4b16d44937456",
+      "bytes": 145
+    },
+    "FROZEN_GRAM_PROBE_PROTOCOL.md": {
+      "sha256": "c7f6f6ede884e663d5af579e6add91f49552128ff39ce7dc0bdb73088777fa32",
+      "bytes": 12798
+    },
+    "GRAM_NUMERIC_DIAG.json": {
+      "sha256": "b7817b5b821f8fa62b6dc6387186c3aaaf6e604f5e8429346e9425bb6de39ab8",
+      "bytes": 13300
+    },
+    "GRAM_NUMERIC_DIAG.py": {
+      "sha256": "aaced526851eb0420a09937844747229ec76ae863499228d3b76c58a06ef60a3",
+      "bytes": 2330
+    },
+    "GRAM_NUMERIC_DIAG_1280.json": {
+      "sha256": "373890888ece418590ba1eb4f308f00fb2436ce81e7767caa3c34cdd409fe9cd",
+      "bytes": 3375
+    },
+    "GRAM_NUMERIC_DIAG_1280.py": {
+      "sha256": "c93c7a4192c0daf988b9a0de00fd9f55f8325f1cfcc658b34efd4023632732e6",
+      "bytes": 2562
+    },
+    "GRAM_SPREAD_TRAIN_GPU2.json": {
+      "sha256": "f67fcec83bcac566b8babb29fee30036cde33d7959d08206cc113d1fa7d75a1d",
+      "bytes": 3262
+    },
+    "GRAM_SPREAD_TRAIN_GPU2.py": {
+      "sha256": "d043e8b7eff2ee7905c7981e07acadc5999b60a558b82b105b0e9fd6995f2f7b",
+      "bytes": 2785
+    },
+    "IMPLEMENTATION_HANDOFF.json": {
+      "sha256": "114723976673b6598573774e28608ef3961426e242cb28ee76da6be6016a4e0f",
+      "bytes": 4521
+    },
+    "IMPLEMENTATION_REVIEW.json": {
+      "sha256": "f5d9510fb0c9b75cd42bcec6c56931623a2658358ddf011b0f55cf2c97080f81",
+      "bytes": 5676
+    },
+    "IMPLEMENTATION_REVIEW.md": {
+      "sha256": "534ce9627bf4f126ac45ee116ac43253ca88a2bc6fae20455226ce0cd750cbaf",
+      "bytes": 2607
+    },
+    "LAUNCH_RECEIPT.json": {
+      "sha256": "f033c8cc3eb1e7ace063c688b38a7034ad0e99789d0c77e4113767f8aea177b7",
+      "bytes": 5403
+    },
+    "PREFLIGHT.json": {
+      "sha256": "4ecd34d0309d46c748c20c4857e677b0fbfef4bc5b4104c2b9a4ed9fbe8a6fe0",
+      "bytes": 60343
+    },
+    "config.json": {
+      "sha256": "362f9d1ebd8b244b83be6314bce7be0b71e3c99ff065012ea980a0e13ec26237",
+      "bytes": 2350
+    },
+    "features.py": {
+      "sha256": "a64f9b3fa464cd9b7f42cab816685e8208130b4896d283ff0be0b4d5e8d85e09",
+      "bytes": 5169
+    },
+    "launch.py": {
+      "sha256": "00289d6dfb9a82e0cc6e5f565a780374b751e4ac29c2ca1368bc348250dd8919",
+      "bytes": 2514
+    },
+    "moments.py": {
+      "sha256": "615a0405dae0ce1d04ff10e0bd8c84523bdacb11a4ed5c87ace7c884583cfd51",
+      "bytes": 5637
+    },
+    "preflight.py": {
+      "sha256": "16e5b6b14992bc582b8d5ed8ff15d6b93dc13d835a682832179bf97406b76433",
+      "bytes": 8268
+    },
+    "run.log": {
+      "sha256": "1ea22c9e3fc5fcadbd9733a9352297b176b81bec9303dae086896ddabe5f5794",
+      "bytes": 730
+    },
+    "run.py": {
+      "sha256": "29b0a3b98c8fc9b9965edab9339cf284009894476e7c6cd6350f2d041955edc0",
+      "bytes": 13126
+    },
+    "summarize.py": {
+      "sha256": "7727eeb5c8aa3c9605b3ab652c6b0c56e585f2dda2adefa0e2704dc2fe24b79e",
+      "bytes": 11166
+    },
+    "train_gram_partial.npy": {
+      "sha256": "36e7f81aa30920d8d1ccfe56391a8580b3c9e8bd37b58b2add0d3816ee09b18f",
+      "bytes": 5083795328
+    }
+  }
+}

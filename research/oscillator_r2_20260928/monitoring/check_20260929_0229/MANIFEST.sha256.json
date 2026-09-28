@@ -1,0 +1,30 @@
+{
+  "created_at": "2026-09-29T02:36:28+08:00",
+  "classification": "Scheduled full monitor report and durable scope state",
+  "files": [
+    {
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/monitoring/FULL_CHECK_20260929_0229.md",
+      "local_path": "FULL_CHECK_20260929_0229.md",
+      "bytes": 6,
+      "sha256": "cb48fb78e7496a5e9b002f4cab885a8291fae0b2f60bc9d36e7f07a310996564",
+      "remote_local_match": true
+    },
+    {
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/monitoring_state.json",
+      "local_path": "monitoring_state.json",
+      "bytes": 12492,
+      "sha256": "c9697a424bcbbd00491e43b5cca7a51973b8f469f6890610d79389b083800195",
+      "remote_local_match": true
+    }
+  ],
+  "staged_artifacts": [
+    "text report",
+    "JSON state"
+  ],
+  "excluded": [
+    "model checkpoints",
+    "optimizer states",
+    "caches",
+    "raw arrays"
+  ]
+}

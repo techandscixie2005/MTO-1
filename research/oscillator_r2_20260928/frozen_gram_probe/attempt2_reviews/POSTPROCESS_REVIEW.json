@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "reviewer": "backbone_baseline_audit",
+  "created": 1790621484.5175936,
+  "script_sha256": "5e86992eb89d31d9a0221110ba89d7aa3c4327a84bbf906401fe4af7459c1951",
+  "results_sha256": "b75610c8ed7d91b63b18adc84362453899edaed7deecefc072ed0f981b5d781a",
+  "original_failed_sha256": "6f833d3bdc6a77f5d7cf445a633534e206317fb0a5d0031a899b71202903027f",
+  "fit_frozen_sha256": "0958f141dfe290784002e91d4b0f899d37b8e00dc2d1d8dae9dc466e06d63812",
+  "original_implementation_review_sha256": "fd0b549694970f5e41a7bb0d9d0904f2889ac506130dae8a3760d088f46398a7",
+  "source_hashes": {
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/FROZEN_GRAM_PROBE_PROTOCOL.md": "c7f6f6ede884e663d5af579e6add91f49552128ff39ce7dc0bdb73088777fa32",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/config.json": "f87df444bccff248e91a3f9d6aaf19d58c563c0499ab27ede591294816e84fc9",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/NUMERICAL_AMENDMENT.md": "37ba34dd7a9c12077b4248e25f102ddb050f97b5d8cdc25fb492f6233c560e42",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/attempt1/MANIFEST.json": "c0b69760003a0d1051f7f790b01b6ef99965930794593093556f70db73b86ba6",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/ATTEMPT1_RESET_RECEIPT.json": "2b0a13a9f9b9871cda15341e2c940993f9ed26b8a67df25b19f3bacbaf2a1604",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/GRAM_SPREAD_TRAIN_GPU2.json": "f67fcec83bcac566b8babb29fee30036cde33d7959d08206cc113d1fa7d75a1d",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/NUMERICAL_AMENDMENT_SCIENTIFIC_REVIEW.md": "a78ba3641d3a8dee85af4ddcb87ddde4a2d2aa73b73dabd02b02bffa031e3b6c",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/PREFLIGHT.json": "dfbd34b440cd948a19ae52b773aa074afdd1f9b38d7578c57d412b6e2b250b8f",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/INDEPENDENT_COMPLETION_AUDIT.json": "d7df6edfec2d322b8f70ecd0fe39fcc4d221b1c4967aa82a8b82ee715b8c1ed1",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/CACHE_MANIFEST.json": "ca3eb18da9b2ee64677dbf989ead38a4f667f7663d2a7e7bad10eb2811bf3b11",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/INDEPENDENT_RUN_AUDIT.json": "81ccc7adc01b861bed7ee2f31d3c1a9f42780c2b41d79e7a1e12d8600dfdfdb0",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/runtime/cache_train.npz": "948f14528a222613cc3a590d3d8e710586374be28dc0826d43afde461de48b3b",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/runtime/cache_val.npz": "f8f47fabcb00b0c03a99fa3d684a74294ff74fb0e9087f2301953802a6263848",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/common.py": "8d10d17157164eb45173325fa2afe839438fa1cf082c76d80ed6e2d4a4400631",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/config.json": "2ba4fbd592898d0717362f4bbe9812d25a4b1e1b35a2f13395f359a7572f3d38",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/analysis_addendum/validation_comparison_addendum.py": "3e723f56039ef670e43a73936c5775a33fb0c5b90a77e53c591a7941025c3b00",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/identity_audit_v2.json": "9d384425a90dd88fbc68f8b609a303872910bb21c69e0d0a19bcccaee49cb3c4",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta0/val_predictions.npz": "25acae64bb4e3e541048a8705045f7f639d1113d537dbbef71672752e8065890",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta01/val_predictions.npz": "9edffb5cd617469c78c8d83da7901ac90add69d89f27de7e8196a8736ae85500",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta1/val_predictions.npz": "a3808b9ad425abf4f6fcfed840d0ed8d1ff6fcf1557037a4e01932c734dc68bb"
+  },
+  "scope": "Additive UTF-8 report and integrity recovery from saved arrays/statistics only",
+  "checks": [
+    "Fail-closed exact script/result/failure review gate",
+    "No model import, fitting, checkpoint inference or test access",
+    "Checks reviewed source/code, phase ordering, Gram/coeff/prediction hashes, normal equations and saved validation arithmetic",
+    "Checks original worker exit/lock release and recorded UUID/ECC consistency",
+    "Retains original FAILED record and absence of original PROBE_COMPLETE; explicitly reports post-evaluation report-write failure"
+  ],
+  "writes_allowed": [
+    "RESULTS_RECOVERED.md",
+    "POSTPROCESS_RECOVERY.json"
+  ],
+  "limitations": [
+    "Recovery is not a clean original worker exit",
+    "Bootstrap intervals reused from reviewed saved results; no refit or repeated selection",
+    "No validation tuning or new study authorized"
+  ]
+}

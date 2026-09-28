@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "attempt": 2,
+  "reviewer": "backbone_baseline_audit",
+  "created": 1790620841.2694361,
+  "scope": "Independent exact-hash numerical/resource amendment review; no inference, full fitting or launch by reviewer",
+  "source_hashes": {
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/FROZEN_GRAM_PROBE_PROTOCOL.md": "c7f6f6ede884e663d5af579e6add91f49552128ff39ce7dc0bdb73088777fa32",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/config.json": "f87df444bccff248e91a3f9d6aaf19d58c563c0499ab27ede591294816e84fc9",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/NUMERICAL_AMENDMENT.md": "37ba34dd7a9c12077b4248e25f102ddb050f97b5d8cdc25fb492f6233c560e42",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/attempt1/MANIFEST.json": "c0b69760003a0d1051f7f790b01b6ef99965930794593093556f70db73b86ba6",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/ATTEMPT1_RESET_RECEIPT.json": "2b0a13a9f9b9871cda15341e2c940993f9ed26b8a67df25b19f3bacbaf2a1604",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/GRAM_SPREAD_TRAIN_GPU2.json": "f67fcec83bcac566b8babb29fee30036cde33d7959d08206cc113d1fa7d75a1d",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/NUMERICAL_AMENDMENT_SCIENTIFIC_REVIEW.md": "a78ba3641d3a8dee85af4ddcb87ddde4a2d2aa73b73dabd02b02bffa031e3b6c",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/PREFLIGHT.json": "dfbd34b440cd948a19ae52b773aa074afdd1f9b38d7578c57d412b6e2b250b8f",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/INDEPENDENT_COMPLETION_AUDIT.json": "d7df6edfec2d322b8f70ecd0fe39fcc4d221b1c4967aa82a8b82ee715b8c1ed1",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/CACHE_MANIFEST.json": "ca3eb18da9b2ee64677dbf989ead38a4f667f7663d2a7e7bad10eb2811bf3b11",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/INDEPENDENT_RUN_AUDIT.json": "81ccc7adc01b861bed7ee2f31d3c1a9f42780c2b41d79e7a1e12d8600dfdfdb0",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/runtime/cache_train.npz": "948f14528a222613cc3a590d3d8e710586374be28dc0826d43afde461de48b3b",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/runtime/cache_val.npz": "f8f47fabcb00b0c03a99fa3d684a74294ff74fb0e9087f2301953802a6263848",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/common.py": "8d10d17157164eb45173325fa2afe839438fa1cf082c76d80ed6e2d4a4400631",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/config.json": "2ba4fbd592898d0717362f4bbe9812d25a4b1e1b35a2f13395f359a7572f3d38",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/analysis_addendum/validation_comparison_addendum.py": "3e723f56039ef670e43a73936c5775a33fb0c5b90a77e53c591a7941025c3b00",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/identity_audit_v2.json": "9d384425a90dd88fbc68f8b609a303872910bb21c69e0d0a19bcccaee49cb3c4",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta0/val_predictions.npz": "25acae64bb4e3e541048a8705045f7f639d1113d537dbbef71672752e8065890",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta01/val_predictions.npz": "9edffb5cd617469c78c8d83da7901ac90add69d89f27de7e8196a8736ae85500",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta1/val_predictions.npz": "a3808b9ad425abf4f6fcfed840d0ed8d1ff6fcf1557037a4e01932c734dc68bb"
+  },
+  "code_hashes": {
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/features.py": "8138496b076bac43781fd08000d0b6119c01460b4a38619eb0c79675f353e230",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/moments.py": "615a0405dae0ce1d04ff10e0bd8c84523bdacb11a4ed5c87ace7c884583cfd51",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/preflight.py": "16e5b6b14992bc582b8d5ed8ff15d6b93dc13d835a682832179bf97406b76433",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/run.py": "29b0a3b98c8fc9b9965edab9339cf284009894476e7c6cd6350f2d041955edc0",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/summarize.py": "7727eeb5c8aa3c9605b3ab652c6b0c56e585f2dda2adefa0e2704dc2fe24b79e",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/launch.py": "4442316cee0d212f614857a4fbcfaaf254fee10a2375fa2fea5890ad59870204",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/config.json": "f87df444bccff248e91a3f9d6aaf19d58c563c0499ab27ede591294816e84fc9",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/FROZEN_GRAM_PROBE_PROTOCOL.md": "c7f6f6ede884e663d5af579e6add91f49552128ff39ce7dc0bdb73088777fa32"
+  },
+  "handoff_sha256": "44d8372f9ad6a20756e5491d9d10d6fed1f2fe6ba15a7f41124d2376711287c2",
+  "preflight_sha256": "4b03bcd7a553c1b24f517dcf8c392409d8dcad9686ab61f7d19a71165fdd97c8",
+  "numerical_amendment_sha256": "37ba34dd7a9c12077b4248e25f102ddb050f97b5d8cdc25fb492f6233c560e42",
+  "spread_train_sha256": "f67fcec83bcac566b8babb29fee30036cde33d7959d08206cc113d1fa7d75a1d",
+  "attempt1_manifest_sha256": "c0b69760003a0d1051f7f790b01b6ef99965930794593093556f70db73b86ba6",
+  "attempt1_all_artifact_hashes_and_readonly_verified": true,
+  "science_protocol_unchanged": true,
+  "approved_change": "h-only atol5e-6, rtol1e-5 unchanged; E/base atol1e-6 unchanged; clean GPU2 added with same shared-lock/health gates",
+  "evidence": {
+    "spread_h_cache_max_abs": 3.0994415283203125e-06,
+    "spread_h_repeat_max_abs": 2.86102294921875e-06,
+    "gram_repeat_max_abs": 6.026807941594825e-06,
+    "spread_trace_failures": 0,
+    "spread_cache_failures": 0,
+    "preflight_cuda_cpu_moments_max": 5.551115123125783e-16
+  },
+  "limitations": [
+    "Consistent with FP32 nonrepeatability; exact kernel cause unproven",
+    "Bounded training-only diagnostic does not guarantee bitwise equality on all rows",
+    "No scientific result exists from failed pre-fit attempt",
+    "No validation-driven tolerance, fit or scientific-setting change"
+  ],
+  "launch_condition": "Exactly one corrected attempt under root standing authorization, intended physical GPU2, after fresh idle/UUID/ECC/shared-lock/provenance gates; stop on material mismatch"
+}

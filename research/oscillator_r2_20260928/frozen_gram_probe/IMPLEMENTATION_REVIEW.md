@@ -1,0 +1,9 @@
+# Corrected Gram attempt2: independent PASS
+
+The exact refreshed20-source/8-code maps, preflight, amendment and spread-training report were independently verified. Every artifact in attempt1/MANIFEST.json, including the5.08GB uncommitted partial Gram file, matches its hash/size and is read-only. No completed train Gram manifest, fitted coefficients or validation Gram exists from that attempt; its failure is not a scientific negative.
+
+The sole numerical change is h cache atol5e-6, retaining rtol1e-5. E/base32/base64 keep atol1e-6 and rtol1e-5. Frozen caches/weights, FP64 Gram construction, feature order, fixed ridge and train-fit freeze before validation are unchanged. The shared GPU lock, healthy-idle/UUID/ECC/occupancy gates and PID/start-time/working-directory receipt checks remain enforced; GPU2 is a resource-only addition.
+
+The prespecified GPU2 check used16 evenly spaced64-molecule training batches plus final35, two forwards each. Max h live/cache difference3.10e-6 and live-repeat2.86e-6 pass the amendment. All old E/base checks and trace reconstruction pass; Gram repeat maximum6.03e-6 is recorded, not asserted bitwise identical. Clean ECC/remap counters stayed unchanged. Full preflight also passes CPU/dense/CUDA moment and ridge checks, with maximum CUDA/CPU moment difference5.55e-16. This evidence supports a narrow FP32 numerical guard correction; the precise reduction kernel cause is unproven.
+
+PASS applies to handoff44d8372f9ad6a20756e5491d9d10d6fed1f2fe6ba15a7f41124d2376711287c2, preflight4b03bcd7a553c1b24f517dcf8c392409d8dcad9686ab61f7d19a71165fdd97c8 and the exact maps in IMPLEMENTATION_REVIEW.json. Under root standing authorization, executor may launch one corrected attempt on newly admitted healthy idle GPU2 after current gates pass. No further result-driven tolerance change, validation refit, promotion or test access is authorized. Reviewer performed no model inference, full fit or launch.

@@ -1,0 +1,129 @@
+{
+  "classification": "Active seed23/37 launch and independently reviewed implementation, lightweight provenance only",
+  "created": 1790621621.2749875,
+  "remote_authoritative_root": "/home/inspur/MTO-1/research/oscillator_r2_20260928/eta0_seed_replication",
+  "files": [
+    {
+      "path": "PROTOCOL.md",
+      "bytes": 9545,
+      "sha256": "ceacc1d992aec0604f9b31b0fa0c71e2fe3303fbb417da72be115e04973473e8"
+    },
+    {
+      "path": "RESOURCE_GATE_AMENDMENT.md",
+      "bytes": 792,
+      "sha256": "061956126e2b3dcfa165ca3262c7a159262653428c17000df5db182fa7c60d2b"
+    },
+    {
+      "path": "REPORT_ENCODING_READONLY_AUDIT.md",
+      "bytes": 1044,
+      "sha256": "5e7302356e5529af910e3a88b921eeef41f5c199807bf31ee13e93f8d4abab0b"
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "bytes": 6491,
+      "sha256": "5aefb846d38f00b6ec2b7ff9cc7a0b6149eeac1c1dd1116cc378f8310e5bbe1e"
+    },
+    {
+      "path": "ORDER_PLAN.json",
+      "bytes": 26013,
+      "sha256": "2cd71223598340a957d98babf064d17accb85719eba29eb091f279746dfd9c87"
+    },
+    {
+      "path": "NUMERICAL_NOTE.md",
+      "bytes": 1041,
+      "sha256": "ca35755089b1676c3536c19f957e92e2784be5398119189579e0e2b7a2cd24e2"
+    },
+    {
+      "path": "common.py",
+      "bytes": 5286,
+      "sha256": "b30136664affff2560a01009a7e7029c1d1443cc7b23ab341c3adccdbacfe3f3"
+    },
+    {
+      "path": "data_adapter.py",
+      "bytes": 2841,
+      "sha256": "a6c8df922d939a01ded36288561bc1c0ef0aae884d6ea3c6912b0c0b720f3f28"
+    },
+    {
+      "path": "train.py",
+      "bytes": 18363,
+      "sha256": "b4ea40d9adc3caeca5db81cdfcfeb4db892d46c9062ab1456a3db04d384babfc"
+    },
+    {
+      "path": "preflight.py",
+      "bytes": 11796,
+      "sha256": "b4b3e2021ed696a3ad5be96bc0aba2c5aee07c535b81074603df897b0c1d9ec3"
+    },
+    {
+      "path": "launch.py",
+      "bytes": 4303,
+      "sha256": "796ff0557413f71a18fc23a1f92d7397883fe2ef4cd43f2e6e06d0977d28b7e2"
+    },
+    {
+      "path": "summarize.py",
+      "bytes": 8212,
+      "sha256": "2228ae0a039f7bd6304d8ea04d984ccfe8f9efaf7c7dde91b227eac6413707dd"
+    },
+    {
+      "path": "PREFLIGHT.json",
+      "bytes": 12565,
+      "sha256": "f0142a2dda91e02eb919ce23a33516ffcfd874dd48a4af9bbebf0d5d4afe3ddc"
+    },
+    {
+      "path": "IMPLEMENTATION_HANDOFF.json",
+      "bytes": 9682,
+      "sha256": "54cbd50e22f0b7d94c56901fdb0d0ad859f00a4b622bff1e2fe0016ccc39d1ab"
+    },
+    {
+      "path": "IMPLEMENTATION_REVIEW.json",
+      "bytes": 11855,
+      "sha256": "088be0c334d88b46ce39f7f3b5097cb6150a517d83cb0432b1a8fe847dcc1808"
+    },
+    {
+      "path": "IMPLEMENTATION_REVIEW.md",
+      "bytes": 3205,
+      "sha256": "adab947050b3c6e9c2d38e272821b22453930a3dacae2d779bdd83656ce8baa9"
+    },
+    {
+      "path": "runs/seed23/LAUNCH_RECEIPT.json",
+      "bytes": 10263,
+      "sha256": "af79442051f60dc0fd29e11c670ca3949237f312323f09a0d2b2829a8dfdfa3d"
+    },
+    {
+      "path": "runs/seed23/RUN_MANIFEST.json",
+      "bytes": 11042,
+      "sha256": "6d64f378837818e0d63cd979fe9814f544627d8aa8219be54ae261a6d1055e42"
+    },
+    {
+      "path": "runs/seed23/epoch0_val.json",
+      "bytes": 3210,
+      "sha256": "834402eff02f74a74803ddab37937bdd1da79ec578acd7d702c0db2ea7742368"
+    },
+    {
+      "path": "runs/seed37/LAUNCH_RECEIPT.json",
+      "bytes": 10262,
+      "sha256": "789d6b8fb4f5390b2313e33a2e107a915aa8c560ddf5e2fae32892f1500ed879"
+    },
+    {
+      "path": "runs/seed37/RUN_MANIFEST.json",
+      "bytes": 11041,
+      "sha256": "a5753e5a6fbd0297f04210250291861732ae1f389a6744c05f3a6fe55ad03807"
+    },
+    {
+      "path": "runs/seed37/epoch0_val.json",
+      "bytes": 3207,
+      "sha256": "6a040439d24ad933b3d4b61c1756dda958fa75fc1a45272f5f28ded15b0c8512"
+    }
+  ],
+  "ongoing_training": true,
+  "test_access": false,
+  "excluded": [
+    "runs/seed*/initial.pt",
+    "runs/seed*/last.pt",
+    "runs/seed*/best_*.pt",
+    "runs/seed*/selected/",
+    "runs/seed*/val_*.npz",
+    "runs/seed*/train.log",
+    "runs/seed*/history.jsonl",
+    "runs/seed*/status.json"
+  ]
+}

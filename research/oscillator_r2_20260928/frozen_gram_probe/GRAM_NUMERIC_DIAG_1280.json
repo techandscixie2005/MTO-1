@@ -1,0 +1,118 @@
+{
+  "classification": "Fixed first1280 TRAIN molecule source/cache numerical diagnosis only; no fit/validation",
+  "gpu": 6,
+  "time": 1790620438.2013643,
+  "rows": 1280,
+  "cache_sha256": "948f14528a222613cc3a590d3d8e710586374be28dc0826d43afde461de48b3b",
+  "keys": {
+    "h": {
+      "max_cache_abs": 2.6226043701171875e-06,
+      "max_repeat_abs": 3.4570693969726562e-06,
+      "cache_old_tolerance_fail_count": 2,
+      "max_cache_error_over_old_tolerance": 1.069198489189148,
+      "first_failure": {
+        "batch_start": 320,
+        "local_index": [
+          62,
+          0,
+          12
+        ],
+        "cached": 0.0002989246277138591,
+        "live": 0.0002999385178554803,
+        "abs_error": 1.013890141621232e-06,
+        "old_tolerance": 1.0029892791862949e-06
+      }
+    },
+    "E_pred": {
+      "max_cache_abs": 1.9073486328125e-06,
+      "max_repeat_abs": 1.9073486328125e-06,
+      "cache_old_tolerance_fail_count": 0,
+      "max_cache_error_over_old_tolerance": 0.024296987801790237,
+      "first_failure": null
+    },
+    "base32": {
+      "max_cache_abs": 4.172325134277344e-07,
+      "max_repeat_abs": 4.76837158203125e-07,
+      "cache_old_tolerance_fail_count": 0,
+      "max_cache_error_over_old_tolerance": 0.13854825496673584,
+      "first_failure": null
+    },
+    "base64": {
+      "max_cache_abs": 4.089519587413548e-07,
+      "max_repeat_abs": 4.658337431351356e-07,
+      "cache_old_tolerance_fail_count": 0,
+      "max_cache_error_over_old_tolerance": 0.13160084947569126,
+      "first_failure": null
+    }
+  },
+  "health_before": {
+    "index": 6,
+    "uuid": "GPU-2431a641-8045-a10b-4aa0-2769010e0708",
+    "memory_MiB": 10,
+    "temperature_C": "33 C",
+    "ecc": {
+      "volatile": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0
+      },
+      "aggregate": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0,
+        "sram_threshold_exceeded": "No"
+      },
+      "remap": {
+        "remapped_row_corr": "0",
+        "remapped_row_unc": "0",
+        "remapped_row_pending": "No",
+        "remapped_row_failure": "No"
+      },
+      "repair": {
+        "channel_repair_pending": "No",
+        "tpc_repair_pending": "No"
+      }
+    },
+    "apps": []
+  },
+  "health_after": {
+    "index": 6,
+    "uuid": "GPU-2431a641-8045-a10b-4aa0-2769010e0708",
+    "memory_MiB": 1641,
+    "temperature_C": "34 C",
+    "ecc": {
+      "volatile": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0
+      },
+      "aggregate": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0,
+        "sram_threshold_exceeded": "No"
+      },
+      "remap": {
+        "remapped_row_corr": "0",
+        "remapped_row_unc": "0",
+        "remapped_row_pending": "No",
+        "remapped_row_failure": "No"
+      },
+      "repair": {
+        "channel_repair_pending": "No",
+        "tpc_repair_pending": "No"
+      }
+    },
+    "apps": [
+      851479
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "supersedes": "receipt_update_20260929_0410 and receipt_update_20260929_0420; preserved unchanged, labels are future-time artifacts",
+  "files": [
+    {
+      "sha256": "af6012090945449c0050c10caffa3417e1ac8627c0d0853bb431a92a3a4c92ae",
+      "bytes": 4331,
+      "path": "monitoring_state.json"
+    },
+    {
+      "sha256": "72539725d3d85b75cf44627aba667160395352bbfcc5bc04fb06f11a65155baa",
+      "bytes": 23643,
+      "path": "coordinator_state.json"
+    },
+    {
+      "sha256": "2429a1837df5e4059bdf896807724ebbf3b0309757314ef107a1f4d984abd0a5",
+      "bytes": 17678,
+      "path": "RESEARCH_STATUS.md"
+    },
+    {
+      "sha256": "2659b0c7bfc41a19be2bf6d07c0c558a171fde52c0f222791f10bf942759dfd1",
+      "bytes": 683,
+      "path": "monitoring/ADMIN_TIMESTAMP_CORRECTION_20260929.md"
+    }
+  ],
+  "archived_at": "2026-09-29T03:00:28+08:00",
+  "remote_root": "/home/inspur/MTO-1/research/oscillator_r2_20260928"
+}
