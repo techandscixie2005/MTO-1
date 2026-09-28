@@ -1,0 +1,41 @@
+{
+  "classification": "Family-specific validation-only post-run geometry utility handoff; future study outcomes pending",
+  "files": {
+    "PROTOCOL.md": {
+      "bytes": 5193,
+      "sha256": "7b1c10cf27e7b8943f5366e9b2cc6e389f5799dcbb8e20462d51cd10ec4d0f94"
+    },
+    "SCRATCH_MEAN_SECONDARY_AMENDMENT.md": {
+      "bytes": 2179,
+      "sha256": "dbff88c47c0b3e487e30507ba2f1903364f7134082abb2a3b1059bba7b4566df"
+    },
+    "postrun_geometry.py": {
+      "bytes": 25900,
+      "sha256": "06da5aa70deebc10ed4e538b26d86f5ab3292c392c85e1ef2109a057db405092"
+    },
+    "FIXTURE_VALIDATION.json": {
+      "bytes": 78211,
+      "sha256": "0410e2516906ad9aa549c189bad9b622b186f4015ce441fd7aec858ee5ea432a"
+    },
+    "FIXTURE_VALIDATION.md": {
+      "bytes": 3169,
+      "sha256": "ab75d1434bcc2572a71e5ca79da5897f46b5cafad7ae09c3b06178c21fa92f99"
+    },
+    "SELFTEST.json": {
+      "bytes": 727,
+      "sha256": "28929f6e27c7efe56c3d282c3493deb06a4a664b1e0fe50098a591410e73b589"
+    }
+  },
+  "round09_metrics_sha256": "b088b23a5098149c5a127623a5a9315f6d4c979a501eeb3fd0af46285eaccbbd",
+  "completed_modes_not_run": true,
+  "fixture_exact_full_and_q2_bin_sse_counts": true,
+  "family_missing_terminal_gate_tests_passed": true,
+  "test_access": false,
+  "required_implementation_review_fields": {
+    "passed": true,
+    "code_sha256": "06da5aa70deebc10ed4e538b26d86f5ab3292c392c85e1ef2109a057db405092",
+    "protocol_sha256": "7b1c10cf27e7b8943f5366e9b2cc6e389f5799dcbb8e20462d51cd10ec4d0f94",
+    "fixture_sha256": "0410e2516906ad9aa549c189bad9b622b186f4015ce441fd7aec858ee5ea432a",
+    "scratch_amendment_sha256": "dbff88c47c0b3e487e30507ba2f1903364f7134082abb2a3b1059bba7b4566df"
+  }
+}

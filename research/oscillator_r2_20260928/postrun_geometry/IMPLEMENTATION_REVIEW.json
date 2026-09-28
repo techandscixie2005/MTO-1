@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "code_sha256": "06da5aa70deebc10ed4e538b26d86f5ab3292c392c85e1ef2109a057db405092",
+  "protocol_sha256": "7b1c10cf27e7b8943f5366e9b2cc6e389f5799dcbb8e20462d51cd10ec4d0f94",
+  "fixture_sha256": "0410e2516906ad9aa549c189bad9b622b186f4015ce441fd7aec858ee5ea432a",
+  "scratch_amendment_sha256": "dbff88c47c0b3e487e30507ba2f1903364f7134082abb2a3b1059bba7b4566df",
+  "reviewer": "backbone_baseline_audit",
+  "created_at": "2026-09-29T03:47:57.881060+08:00",
+  "classification": "PASS exact-hash completed-saved-array utility only; no actual family execution in review",
+  "handoff_sha256": "7e37b45120aae3e859561f538edfdf3b52251135c71adb3f5122331b56a12299",
+  "reviewed_files": {
+    "PROTOCOL.md": "7b1c10cf27e7b8943f5366e9b2cc6e389f5799dcbb8e20462d51cd10ec4d0f94",
+    "SCRATCH_MEAN_SECONDARY_AMENDMENT.md": "dbff88c47c0b3e487e30507ba2f1903364f7134082abb2a3b1059bba7b4566df",
+    "postrun_geometry.py": "06da5aa70deebc10ed4e538b26d86f5ab3292c392c85e1ef2109a057db405092",
+    "FIXTURE_VALIDATION.json": "0410e2516906ad9aa549c189bad9b622b186f4015ce441fd7aec858ee5ea432a",
+    "FIXTURE_VALIDATION.md": "ab75d1434bcc2572a71e5ca79da5897f46b5cafad7ae09c3b06178c21fa92f99",
+    "SELFTEST.json": "28929f6e27c7efe56c3d282c3493deb06a4a664b1e0fe50098a591410e73b589"
+  },
+  "independent_verification_sha256": "9f6c43a541db603a625cc81ad12f891edd3c41ea820b786cbd4cdad95ad5d091",
+  "review_note_sha256": "aab708efb77262c72af18e91a7c897b22c0a92d3dffaa79e6cc32e1137155f40",
+  "conditions": [
+    "Read only valid completed receipts and saved arrays of requested family.",
+    "Preserve full benchmark, predefined checkpoints/ensembles, fixed q2 bins and descriptive q3.",
+    "Fixed scratch mean remains post-launch/pre-outcome secondary; native-minus-MTO is primary.",
+    "No fitting, new inference, test access, active source changes, filtering or automatic promotion.",
+    "Preserve existing completed reports and stop on provenance/alignment/numerical mismatch."
+  ],
+  "actual_completed_family_executed": false,
+  "active_metrics_accessed": false
+}

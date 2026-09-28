@@ -1,0 +1,105 @@
+{
+  "purpose": "Reviewed post-run geometry PREPARATION only; future seed/scratch outcomes pending",
+  "base_published_commit": "a0eb756cbf7df144d460c87f37d02f8b22510271",
+  "source": "Verified D: archive files only",
+  "reviewed_postprocessor": true,
+  "new_model_inference": false,
+  "new_test_access": false,
+  "candidate_outcome_claim": false,
+  "active_training_source_changed": false,
+  "excludes": [
+    "weights",
+    "checkpoints",
+    "optimizer states",
+    "caches",
+    "raw tensors",
+    "prediction arrays",
+    "independent_review_fixtures"
+  ],
+  "files": [
+    {
+      "path": "CONDITIONAL_NEXT_STUDY_DECISION.md",
+      "bytes": 5306,
+      "sha256": "8b46f8dec28ecb1c1709ceb4978f195a5dc9df4ebc9696a3edf72c5429b8f6cd",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round11_postrun_geometry_preparation\\CONDITIONAL_NEXT_STUDY_DECISION.md"
+    },
+    {
+      "path": "CONDITIONAL_NEXT_STUDY_DECISION_PROVENANCE.json",
+      "bytes": 1843,
+      "sha256": "221fa597c66f7a93cb33d0d5283d8d35f2b7a74d26de778db5062741b6d1a719",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round11_postrun_geometry_preparation\\CONDITIONAL_NEXT_STUDY_DECISION_PROVENANCE.json"
+    },
+    {
+      "path": "postrun_geometry/FIXTURE_VALIDATION.json",
+      "bytes": 78211,
+      "sha256": "0410e2516906ad9aa549c189bad9b622b186f4015ce441fd7aec858ee5ea432a",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round11_postrun_geometry_preparation\\postrun_geometry\\FIXTURE_VALIDATION.json"
+    },
+    {
+      "path": "postrun_geometry/FIXTURE_VALIDATION.md",
+      "bytes": 3169,
+      "sha256": "ab75d1434bcc2572a71e5ca79da5897f46b5cafad7ae09c3b06178c21fa92f99",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round11_postrun_geometry_preparation\\postrun_geometry\\FIXTURE_VALIDATION.md"
+    },
+    {
+      "path": "postrun_geometry/IMPLEMENTATION_HANDOFF.json",
+      "bytes": 1686,
+      "sha256": "7e37b45120aae3e859561f538edfdf3b52251135c71adb3f5122331b56a12299",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round11_postrun_geometry_preparation\\postrun_geometry\\IMPLEMENTATION_HANDOFF.json"
+    },
+    {
+      "path": "postrun_geometry/IMPLEMENTATION_REVIEW.json",
+      "bytes": 2056,
+      "sha256": "aeb1363fdb211b7306751d6c48de09b7c3bd62f48915d0d117c204e9a322ed6b",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round11_postrun_geometry_preparation\\postrun_geometry\\IMPLEMENTATION_REVIEW.json"
+    },
+    {
+      "path": "postrun_geometry/IMPLEMENTATION_REVIEW.md",
+      "bytes": 3524,
+      "sha256": "aab708efb77262c72af18e91a7c897b22c0a92d3dffaa79e6cc32e1137155f40",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round11_postrun_geometry_preparation\\postrun_geometry\\IMPLEMENTATION_REVIEW.md"
+    },
+    {
+      "path": "postrun_geometry/INDEPENDENT_VERIFICATION.json",
+      "bytes": 883,
+      "sha256": "9f6c43a541db603a625cc81ad12f891edd3c41ea820b786cbd4cdad95ad5d091",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round11_postrun_geometry_preparation\\postrun_geometry\\INDEPENDENT_VERIFICATION.json"
+    },
+    {
+      "path": "postrun_geometry/PROTOCOL.md",
+      "bytes": 5193,
+      "sha256": "7b1c10cf27e7b8943f5366e9b2cc6e389f5799dcbb8e20462d51cd10ec4d0f94",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round11_postrun_geometry_preparation\\postrun_geometry\\PROTOCOL.md"
+    },
+    {
+      "path": "postrun_geometry/SCRATCH_MEAN_SECONDARY_AMENDMENT.md",
+      "bytes": 2179,
+      "sha256": "dbff88c47c0b3e487e30507ba2f1903364f7134082abb2a3b1059bba7b4566df",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round11_postrun_geometry_preparation\\postrun_geometry\\SCRATCH_MEAN_SECONDARY_AMENDMENT.md"
+    },
+    {
+      "path": "postrun_geometry/SELFTEST.json",
+      "bytes": 727,
+      "sha256": "28929f6e27c7efe56c3d282c3493deb06a4a664b1e0fe50098a591410e73b589",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round11_postrun_geometry_preparation\\postrun_geometry\\SELFTEST.json"
+    },
+    {
+      "path": "postrun_geometry/postrun_geometry.py",
+      "bytes": 25900,
+      "sha256": "06da5aa70deebc10ed4e538b26d86f5ab3292c392c85e1ef2109a057db405092",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round11_postrun_geometry_preparation\\postrun_geometry\\postrun_geometry.py"
+    },
+    {
+      "path": "round11_postrun_geometry_preparation/D_STAGE_MANIFEST.json",
+      "bytes": 4327,
+      "sha256": "701830bc2d34bd0ab932d17ae6273777abc906612765a5d735fac182913b29c5",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round11_postrun_geometry_preparation\\D_STAGE_MANIFEST.json"
+    },
+    {
+      "path": "round11_postrun_geometry_preparation/PREP_ARCHIVE_ALLOWLIST.json",
+      "bytes": 2352,
+      "sha256": "befeeb57d961210885bb719d5e94a21276f3d2c4b40ff4e6601b81fdbb2f9a56",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round11_postrun_geometry_preparation\\PREP_ARCHIVE_ALLOWLIST.json"
+    }
+  ]
+}

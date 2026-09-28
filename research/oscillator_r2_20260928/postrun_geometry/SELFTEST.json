@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "classification": "Synthetic family assembly from archived eta0/eta01 only, plus Round09 exact fixture; no future prediction read",
+  "synthetic_predictors": 11,
+  "q2_bins_per_predictor": 7,
+  "physical_states_per_predictor": 10,
+  "missing_terminal_rejected_for_modes": [
+    "seed",
+    "scratch",
+    "all"
+  ],
+  "round09_full_q2_reproduction": true,
+  "scratch_equal_mean_exact_half_arithmetic": true,
+  "case14562_retained": true,
+  "source_sha256": "06da5aa70deebc10ed4e538b26d86f5ab3292c392c85e1ef2109a057db405092",
+  "protocol_sha256": "7b1c10cf27e7b8943f5366e9b2cc6e389f5799dcbb8e20462d51cd10ec4d0f94",
+  "amendment_sha256": "dbff88c47c0b3e487e30507ba2f1903364f7134082abb2a3b1059bba7b4566df"
+}

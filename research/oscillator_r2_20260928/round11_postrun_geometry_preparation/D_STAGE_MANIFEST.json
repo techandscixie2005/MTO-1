@@ -1,0 +1,93 @@
+{
+  "archived_at": "2026-09-29T03:54:32+08:00",
+  "archive_classification": "preparation only, not completed scientific result",
+  "allowlist_sha256": "befeeb57d961210885bb719d5e94a21276f3d2c4b40ff4e6601b81fdbb2f9a56",
+  "listed_files": 9,
+  "additional_review_decision_files": 3,
+  "total_files": 12,
+  "total_bytes": 130677.0,
+  "remote_to_local_hash_and_size_verified": true,
+  "exclusions": [
+    "independent_review_fixtures/**",
+    "__pycache__/**",
+    "runtime arrays",
+    "checkpoints",
+    "optimizer states",
+    "prediction arrays"
+  ],
+  "files": [
+    {
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/postrun_geometry/PROTOCOL.md",
+      "bytes": 5193,
+      "sha256": "7b1c10cf27e7b8943f5366e9b2cc6e389f5799dcbb8e20462d51cd10ec4d0f94",
+      "local_path": "postrun_geometry/PROTOCOL.md"
+    },
+    {
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/postrun_geometry/SCRATCH_MEAN_SECONDARY_AMENDMENT.md",
+      "bytes": 2179,
+      "sha256": "dbff88c47c0b3e487e30507ba2f1903364f7134082abb2a3b1059bba7b4566df",
+      "local_path": "postrun_geometry/SCRATCH_MEAN_SECONDARY_AMENDMENT.md"
+    },
+    {
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/postrun_geometry/postrun_geometry.py",
+      "bytes": 25900,
+      "sha256": "06da5aa70deebc10ed4e538b26d86f5ab3292c392c85e1ef2109a057db405092",
+      "local_path": "postrun_geometry/postrun_geometry.py"
+    },
+    {
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/postrun_geometry/FIXTURE_VALIDATION.json",
+      "bytes": 78211,
+      "sha256": "0410e2516906ad9aa549c189bad9b622b186f4015ce441fd7aec858ee5ea432a",
+      "local_path": "postrun_geometry/FIXTURE_VALIDATION.json"
+    },
+    {
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/postrun_geometry/FIXTURE_VALIDATION.md",
+      "bytes": 3169,
+      "sha256": "ab75d1434bcc2572a71e5ca79da5897f46b5cafad7ae09c3b06178c21fa92f99",
+      "local_path": "postrun_geometry/FIXTURE_VALIDATION.md"
+    },
+    {
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/postrun_geometry/SELFTEST.json",
+      "bytes": 727,
+      "sha256": "28929f6e27c7efe56c3d282c3493deb06a4a664b1e0fe50098a591410e73b589",
+      "local_path": "postrun_geometry/SELFTEST.json"
+    },
+    {
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/postrun_geometry/IMPLEMENTATION_HANDOFF.json",
+      "bytes": 1686,
+      "sha256": "7e37b45120aae3e859561f538edfdf3b52251135c71adb3f5122331b56a12299",
+      "local_path": "postrun_geometry/IMPLEMENTATION_HANDOFF.json"
+    },
+    {
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/postrun_geometry/IMPLEMENTATION_REVIEW.json",
+      "bytes": 2056,
+      "sha256": "aeb1363fdb211b7306751d6c48de09b7c3bd62f48915d0d117c204e9a322ed6b",
+      "local_path": "postrun_geometry/IMPLEMENTATION_REVIEW.json"
+    },
+    {
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/postrun_geometry/IMPLEMENTATION_REVIEW.md",
+      "bytes": 3524,
+      "sha256": "aab708efb77262c72af18e91a7c897b22c0a92d3dffaa79e6cc32e1137155f40",
+      "local_path": "postrun_geometry/IMPLEMENTATION_REVIEW.md"
+    },
+    {
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/postrun_geometry/INDEPENDENT_VERIFICATION.json",
+      "bytes": 883,
+      "sha256": "9f6c43a541db603a625cc81ad12f891edd3c41ea820b786cbd4cdad95ad5d091",
+      "local_path": "postrun_geometry/INDEPENDENT_VERIFICATION.json"
+    },
+    {
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/CONDITIONAL_NEXT_STUDY_DECISION.md",
+      "bytes": 5306,
+      "sha256": "8b46f8dec28ecb1c1709ceb4978f195a5dc9df4ebc9696a3edf72c5429b8f6cd",
+      "local_path": "CONDITIONAL_NEXT_STUDY_DECISION.md"
+    },
+    {
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/CONDITIONAL_NEXT_STUDY_DECISION_PROVENANCE.json",
+      "bytes": 1843,
+      "sha256": "221fa597c66f7a93cb33d0d5283d8d35f2b7a74d26de778db5062741b6d1a719",
+      "local_path": "CONDITIONAL_NEXT_STUDY_DECISION_PROVENANCE.json"
+    }
+  ],
+  "timestamp_source": "clock.curr_time returned 2026-09-28 19:54:32 UTC (converted to Asia/Shanghai)"
+}
