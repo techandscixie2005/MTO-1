@@ -1,0 +1,34 @@
+{
+  "index": 1,
+  "uuid": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+  "memory_MiB": 13,
+  "temperature_C": "49 C",
+  "ecc": {
+    "volatile": {
+      "sram_correctable": 0,
+      "sram_uncorrectable_parity": 0,
+      "sram_uncorrectable_secded": 0,
+      "dram_correctable": 0,
+      "dram_uncorrectable": 0
+    },
+    "aggregate": {
+      "sram_correctable": 0,
+      "sram_uncorrectable_parity": 0,
+      "sram_uncorrectable_secded": 0,
+      "dram_correctable": 0,
+      "dram_uncorrectable": 0,
+      "sram_threshold_exceeded": "No"
+    },
+    "remap": {
+      "remapped_row_corr": "0",
+      "remapped_row_unc": "0",
+      "remapped_row_pending": "No",
+      "remapped_row_failure": "No"
+    },
+    "repair": {
+      "channel_repair_pending": "No",
+      "tpc_repair_pending": "No"
+    }
+  },
+  "apps": []
+}

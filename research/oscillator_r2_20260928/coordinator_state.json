@@ -1,6 +1,6 @@
 {
   "project": "MTO-1",
-  "updated_at": "2026-09-29",
+  "updated_at": "2026-09-29T01:26:00+08:00",
   "primary_objective": "Improve pooled raw native oscillator-strength R2; maximize validation-selected R2 while preserving honest historical-test limits.",
   "coordinator": "root remains research orchestrator and decision owner",
   "monitor": {
@@ -103,7 +103,7 @@
     },
     {
       "id": "round04_architecture_screen",
-      "status": "partial_arm_completed_screen_incomplete",
+      "status": "complete_validation_only_reviewed_no_promotion",
       "queue_pid": 778242,
       "waiting_resources": "Historical launch admission note only; current resource ownership must be rediscovered",
       "epoch0_retained_residual_validation_native_f_r2": 0.4052941298,
@@ -119,10 +119,24 @@
         "completion_receipts/RETAINED_RESIDUAL_COMPLETION.md",
         "completion_receipts/RETAINED_RESIDUAL_SCIENTIFIC_INTERPRETATION.md",
         "completion_receipts/G1_COMPLETION_REASSIGNMENT.json",
-        "DETANET_SCALED_BASELINE_FEASIBILITY.md"
+        "DETANET_SCALED_BASELINE_FEASIBILITY.md",
+        "architecture/ARCHITECTURE_RESULTS.md",
+        "architecture/ARCHITECTURE_RESULTS.json",
+        "architecture/runs/original/FIT_COMPLETE.json",
+        "architecture/runs/retained_residual/FIT_COMPLETE.json",
+        "architecture/runs/direct_f/FIT_COMPLETE.json",
+        "architecture/runs/independent_trace/FIT_COMPLETE.json",
+        "architecture/runs/<arm>/queue_launch_receipt.json",
+        "architecture/INDEPENDENT_COMPLETION_AUDIT.json",
+        "analysis_addendum/ARCHITECTURE_VALIDATION_ADDENDUM.md",
+        "analysis_addendum/ARCHITECTURE_VALIDATION_ADDENDUM.json",
+        "completion_receipts/ARCHITECTURE_SCIENTIFIC_DECISION.md",
+        "frozen_residual/FROZEN_RESIDUAL_PROTOCOL.md",
+        "completion_receipts/FINAL20_REPLAY_RESULTS.json",
+        "completion_receipts/FINAL20_REPLAY_INDEPENDENT_REVIEW.md"
       ],
-      "whole_screen_complete": false,
-      "screen_result_promotion": "none; no test evaluation and no matched four-arm comparison yet",
+      "whole_screen_complete": true,
+      "screen_result_promotion": "none; independently reviewed validation-only screen; no test evaluation and no candidate reaches the +0.01 R2 promotion threshold",
       "completed_arm_receipts": {
         "retained_residual": {
           "fit_complete": true,
@@ -138,16 +152,91 @@
           "interpretation_record": "completion_receipts/RETAINED_RESIDUAL_SCIENTIFIC_INTERPRETATION.md"
         }
       },
-      "matched_control_pending_at_completion_receipt": true,
-      "last_known_queue_state": "RUNNING/incomplete; treat other arm identities and health as dynamic until scheduled check",
-      "deferred_next_action": "After matched summaries and resource review, consider one frozen-checkpoint residual validation replay comparing base_f with abs(base_f+delta_f), with error concentration by S7/S8 and fixed q90 complement. This is diagnostic only; no new architecture or training until the four-arm screen is complete.",
+      "matched_control_pending_at_completion_receipt": false,
+      "last_known_queue_state": "ALL_COMPLETE, exit_code 0 at architecture/ARCH_QUEUE_STATUS.json; terminal summary generated",
+      "deferred_next_action": "Root-authorized preparation of one frozen-eta0 residual-head-only 20-epoch validation diagnostic under frozen_residual/FROZEN_RESIDUAL_PROTOCOL.md, conditional on implementation review PASS, preflight PASS, resource admission, and queue receipt. No launch claimed. No test evaluation.",
       "last_completed_worker": {
         "arm": "retained_residual",
         "pid": 778585,
         "gpu": 5,
         "state": "FIT_COMPLETE per completion receipt; process not claimed currently active"
       },
-      "remaining_arms": "original, direct_f, independent_trace were not completed at the retained_residual receipt; discover current states at scheduled check"
+      "queue_terminal_receipt": {
+        "state": "ALL_COMPLETE",
+        "exit_code": 0,
+        "finished_arms": [
+          "original",
+          "retained_residual",
+          "direct_f",
+          "independent_trace"
+        ],
+        "path": "architecture/ARCH_QUEUE_STATUS.json"
+      },
+      "analysis_review_status": "independent scientific decision complete; promote none",
+      "validation_summary": {
+        "metric": "pooled raw native-f R2; best epoch selected by validation f SSE",
+        "epochs": 20,
+        "test_evaluation": "none",
+        "arms": {
+          "original": {
+            "best_epoch": 0,
+            "r2": 0.4052941152198205,
+            "delta_vs_original": 0.0
+          },
+          "retained_residual": {
+            "best_epoch": 0,
+            "r2": 0.4052941297965861,
+            "delta_vs_original": 1.4576765585223075e-08,
+            "final_epoch20_r2": 0.3049378537297114
+          },
+          "direct_f": {
+            "best_epoch": 1,
+            "r2": 0.36925006503234203,
+            "delta_vs_original": -0.03604405018747841,
+            "paired_bootstrap_ci95": [
+              -0.1096793226397856,
+              0.007561942458292267
+            ],
+            "bootstrap_positive_fraction": 0.0875
+          },
+          "independent_trace": {
+            "best_epoch": 1,
+            "r2": 0.3720225609675717,
+            "delta_vs_original": -0.0332715542522488,
+            "paired_bootstrap_ci95": [
+              -0.09941435844870743,
+              0.00823556386029235
+            ],
+            "bootstrap_positive_fraction": 0.0865
+          }
+        },
+        "promotion": "none; summary awaits independent review; no test and no benchmark change"
+      },
+      "final20_validation_replay": {
+        "state": "complete_validation_only_independently_reviewed",
+        "path": "completion_receipts/FINAL20_REPLAY_RESULTS.json",
+        "raw_native_f_validation_r2": {
+          "frozen_eta0": 0.4052941183410983,
+          "changed_base": 0.27896725245221476,
+          "emitted_final20": 0.3049378477187813
+        },
+        "sse": {
+          "frozen_eta0": 94.20512092938401,
+          "changed_base": 114.2160844068195,
+          "emitted_final20": 110.10218013388642,
+          "final20_minus_eta0": 15.897059204502412
+        },
+        "interpretation": "Inference decomposition of the jointly trained checkpoint, not a retraining counterfactual; final20 does not beat epoch0 or the unchanged eta0 source. Error is concentrated: the largest deterioration molecule contributes 72.97% of net SSE increase; top 10 contribute 97.27%. No test split accessed.",
+        "runtime_arrays_archived": false
+      }
+    },
+    {
+      "id": "round05_frozen_residual_head_only",
+      "status": "protocol_reviewed_preparation_only_not_launched",
+      "paths": [
+        "frozen_residual/FROZEN_RESIDUAL_PROTOCOL.md"
+      ],
+      "decision": "One 20-epoch frozen-eta0 residual-head-only validation diagnostic is authorized for preparation, conditional on implementation review PASS, preflight PASS, resource admission and a launch receipt. No training launch is recorded yet; no test evaluation."
     }
   ],
   "chan64_plateau_decision": {

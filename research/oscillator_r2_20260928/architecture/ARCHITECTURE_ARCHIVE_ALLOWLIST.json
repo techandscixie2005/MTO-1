@@ -1,0 +1,268 @@
+{
+  "classification": "Explicit lightweight architecture completion allowlist for D-drive staging and GitHub archival",
+  "created": 1790615909.0979245,
+  "source_root": "/home/inspur/MTO-1/research/oscillator_r2_20260928",
+  "count": 50,
+  "total_bytes": 632432,
+  "files": [
+    {
+      "relative_path": "architecture/ARCHITECTURE_PROTOCOL.md",
+      "bytes": 11737,
+      "sha256": "6bcf24872bbdf6207757223da4280560c4b9183c46e6254a207bb5966a8d8a95"
+    },
+    {
+      "relative_path": "architecture/config.json",
+      "bytes": 1497,
+      "sha256": "3f351102ea31e5bc58cb28087bbdca3ca102c84e878a22ea1190de92be933f52"
+    },
+    {
+      "relative_path": "architecture/stats.json",
+      "bytes": 785,
+      "sha256": "a539509addf32d7fe1496a8bba708a7daeef55a7e5ee975f9e01c69746de2253"
+    },
+    {
+      "relative_path": "architecture/PREPARATION.json",
+      "bytes": 4075,
+      "sha256": "13ab2c969913e79a0e444feb665135f7084e40af1f04a94fa6ff225a258bd682"
+    },
+    {
+      "relative_path": "architecture/MODEL_PREFLIGHT.json",
+      "bytes": 3203,
+      "sha256": "4bde0cf1ee604392eaeb9cf4bcafda7f13c9dbd0934cbcaaca4128139c59e363"
+    },
+    {
+      "relative_path": "architecture/PREFLIGHT.json",
+      "bytes": 9486,
+      "sha256": "dfbd34b440cd948a19ae52b773aa074afdd1f9b38d7578c57d412b6e2b250b8f"
+    },
+    {
+      "relative_path": "architecture/EXECUTION_REVIEW.json",
+      "bytes": 8898,
+      "sha256": "2ac6ac27ae0435a2c2a64f6f17fe21b27fa0930abe81b658dda98bd82a88ef45"
+    },
+    {
+      "relative_path": "architecture/ARCHITECTURE_CODE_REVIEW.md",
+      "bytes": 1768,
+      "sha256": "28a697e4bf37114515bc0c25deb6e992e115b2c94cdb5806c9e5df7af807cd9f"
+    },
+    {
+      "relative_path": "architecture/ARCH_QUEUE_STATUS.json",
+      "bytes": 196,
+      "sha256": "c1411452ffa5cb5c9e195abe3b8c0ac3d0b5ad7611113bf2d382f1e5e9f8a010"
+    },
+    {
+      "relative_path": "architecture/ARCHITECTURE_RESULTS.json",
+      "bytes": 17290,
+      "sha256": "5121d213eccee92b20fbd57335f194b9b5ec2d258d22d8e5ff470d769a8e06e5"
+    },
+    {
+      "relative_path": "architecture/ARCHITECTURE_RESULTS.md",
+      "bytes": 843,
+      "sha256": "c126ee6d8844873e9b40b363c28a0b2137c0105216f2ae1cc8f5f6c33b7f85ec"
+    },
+    {
+      "relative_path": "architecture/INDEPENDENT_COMPLETION_AUDIT.json",
+      "bytes": 3541,
+      "sha256": "d7df6edfec2d322b8f70ecd0fe39fcc4d221b1c4967aa82a8b82ee715b8c1ed1"
+    },
+    {
+      "relative_path": "architecture/model.py",
+      "bytes": 6166,
+      "sha256": "039bffaace2a5109c03400102da08b82a4f9706f684a680924a3fafece1babdc"
+    },
+    {
+      "relative_path": "architecture/objective.py",
+      "bytes": 942,
+      "sha256": "a5c49bcb831bb881cc898d7d5fc111fedfa31f5bbeab3262fb7b1d93292e9e48"
+    },
+    {
+      "relative_path": "architecture/train.py",
+      "bytes": 14678,
+      "sha256": "9b586dac871aa2b0e326d4d158eced45301a9fbc3413ec9c609896f12fb30811"
+    },
+    {
+      "relative_path": "architecture/preflight.py",
+      "bytes": 8500,
+      "sha256": "7f2a2783d38ecfa1189e8424281932c49e347fd4c797e5c032d9f12d542e61c2"
+    },
+    {
+      "relative_path": "architecture/architecture_queue.py",
+      "bytes": 10490,
+      "sha256": "a91e76925c541cd11e594ad712c1c894994007a97c9c3fa156910c457afafa2b"
+    },
+    {
+      "relative_path": "architecture/gpu_health.py",
+      "bytes": 2603,
+      "sha256": "c0f82c09ed865361c055fee290ea3a2339c1fcf38c55cf92d3fb0dbd780afa17"
+    },
+    {
+      "relative_path": "architecture/prepare.py",
+      "bytes": 6698,
+      "sha256": "fd1f172b243430c2f715cf08b7eea729350583e8d8a0d13413ff5299d684f702"
+    },
+    {
+      "relative_path": "architecture/summarize.py",
+      "bytes": 4666,
+      "sha256": "01183a16cb12013b518b4d7c0cc53c699b7f1285db3229889749c9732f78ea38"
+    },
+    {
+      "relative_path": "architecture/runs/original/FIT_COMPLETE.json",
+      "bytes": 7580,
+      "sha256": "b56332d4dbf3048516414a4eab1fec3b0e5d6fbaf26d2927873672f054b0f4cd"
+    },
+    {
+      "relative_path": "architecture/runs/original/history.jsonl",
+      "bytes": 84610,
+      "sha256": "f4ca79042a943f252f53476c567b83048c115c280eee25405b1e70b97f00192a"
+    },
+    {
+      "relative_path": "architecture/runs/original/status.json",
+      "bytes": 5442,
+      "sha256": "184751e4a4e3fa318e52bdcee3f90704f633173835d150e60563467d39cece87"
+    },
+    {
+      "relative_path": "architecture/runs/original/queue_launch_receipt.json",
+      "bytes": 1253,
+      "sha256": "235321132726198f2bf0a1fc7abced6ea7f024da29d80d0f9c6fd4921a4b074f"
+    },
+    {
+      "relative_path": "architecture/runs/original/run_manifest.json",
+      "bytes": 9363,
+      "sha256": "467f4eca47921d684c8d177431de4b57c105c96bda3db2ddfaaa70044cd610f3"
+    },
+    {
+      "relative_path": "architecture/runs/original/gpu_health_after.json",
+      "bytes": 814,
+      "sha256": "d033569c1ee2b6fef064afc6a9ed88b4bf07eff958b2d9943ac706fdac21bce6"
+    },
+    {
+      "relative_path": "architecture/runs/retained_residual/FIT_COMPLETE.json",
+      "bytes": 7588,
+      "sha256": "bb8bff434f1e698315a0a553f14087446a4303c11076018bb2c80df727cc1070"
+    },
+    {
+      "relative_path": "architecture/runs/retained_residual/history.jsonl",
+      "bytes": 91929,
+      "sha256": "13d8984af9986f2bc37347c864345bcd5cba7ea2b413a6f77f007b855ad4b7de"
+    },
+    {
+      "relative_path": "architecture/runs/retained_residual/status.json",
+      "bytes": 5893,
+      "sha256": "f6278741eec92a1933aef5b0d111d407dc6cae73e20a03246bde23a54faa897a"
+    },
+    {
+      "relative_path": "architecture/runs/retained_residual/queue_launch_receipt.json",
+      "bytes": 1564,
+      "sha256": "cdd224fe97c469c54a81ba4cf60b8b4885fa3cd81e0112d2b2504950bd670daf"
+    },
+    {
+      "relative_path": "architecture/runs/retained_residual/run_manifest.json",
+      "bytes": 9371,
+      "sha256": "c47e2235660f12404a9b32fdd3f1e32bd6c55fd9f6cf33f2528f592ae89c631f"
+    },
+    {
+      "relative_path": "architecture/runs/retained_residual/gpu_health_after.json",
+      "bytes": 814,
+      "sha256": "228a7488cfeac6dac81a699ce8ee00b17c8cb0ad2be1f256d6c7a0ffb9085d3c"
+    },
+    {
+      "relative_path": "architecture/runs/direct_f/FIT_COMPLETE.json",
+      "bytes": 7581,
+      "sha256": "7d3c67db5b663be93a1ad72244e57ab25b63d40307caebc5df32b624414d4b4c"
+    },
+    {
+      "relative_path": "architecture/runs/direct_f/history.jsonl",
+      "bytes": 84656,
+      "sha256": "c2676dad1b68bc89d57a13e5b1880116337d173f971e92b69fd0ab9ecc2bb648"
+    },
+    {
+      "relative_path": "architecture/runs/direct_f/status.json",
+      "bytes": 5439,
+      "sha256": "04cde4b61c0eed02241223d794e1037ef725bf76ae7094aff81d65c9b9ef8e3d"
+    },
+    {
+      "relative_path": "architecture/runs/direct_f/queue_launch_receipt.json",
+      "bytes": 1555,
+      "sha256": "f065f760e882e191937571a02da4d89e4d254b65d263d9c0a4142b2cfa8014fb"
+    },
+    {
+      "relative_path": "architecture/runs/direct_f/run_manifest.json",
+      "bytes": 9363,
+      "sha256": "86bbfce40907fbbd470be5a385760b85e39dd6da09b150ed1150d828ed5804fc"
+    },
+    {
+      "relative_path": "architecture/runs/direct_f/gpu_health_after.json",
+      "bytes": 814,
+      "sha256": "228a7488cfeac6dac81a699ce8ee00b17c8cb0ad2be1f256d6c7a0ffb9085d3c"
+    },
+    {
+      "relative_path": "architecture/runs/independent_trace/FIT_COMPLETE.json",
+      "bytes": 7589,
+      "sha256": "5ad1424419647078af3804549132ae638090d4a64d06cd244b2b3a6443372403"
+    },
+    {
+      "relative_path": "architecture/runs/independent_trace/history.jsonl",
+      "bytes": 84605,
+      "sha256": "3bd8710d79fa215a5594e7a183e2dc3a7d18e3cf7f2b5984a2eee7bf7d9606cd"
+    },
+    {
+      "relative_path": "architecture/runs/independent_trace/status.json",
+      "bytes": 5435,
+      "sha256": "dc74c040e222ea9fc590a425f96344bebbd75520f1dd3a51beb82b5f78ebb104"
+    },
+    {
+      "relative_path": "architecture/runs/independent_trace/queue_launch_receipt.json",
+      "bytes": 1262,
+      "sha256": "c0e781595b4c7759394b103eaf05a26ef0b69f95298e265d67b895f7044c5cc9"
+    },
+    {
+      "relative_path": "architecture/runs/independent_trace/run_manifest.json",
+      "bytes": 9371,
+      "sha256": "c260fe5a1c0ede5af6f54f4b787024186c76aca1c8635406835de879cdcaac82"
+    },
+    {
+      "relative_path": "architecture/runs/independent_trace/gpu_health_after.json",
+      "bytes": 814,
+      "sha256": "073e3f5bfe0258016fde7c46c5358df973e0371b952d9e75775b4c19746e51e5"
+    },
+    {
+      "relative_path": "analysis_addendum/README.md",
+      "bytes": 4032,
+      "sha256": "d4a956639592e058a467ab940dcfcd9f8500067a0e54d2ed1bb4171e214b5fb1"
+    },
+    {
+      "relative_path": "analysis_addendum/validation_comparison_addendum.py",
+      "bytes": 23378,
+      "sha256": "3e723f56039ef670e43a73936c5775a33fb0c5b90a77e53c591a7941025c3b00"
+    },
+    {
+      "relative_path": "analysis_addendum/FIXTURE_VALIDATION.json",
+      "bytes": 2205,
+      "sha256": "a5db18e39bdce16558f7bca30f9d8d709f9e7bcbf9748e7a7527ab1d2b4c55ab"
+    },
+    {
+      "relative_path": "analysis_addendum/INDEPENDENT_REVIEW.json",
+      "bytes": 1076,
+      "sha256": "230f72343908d0d0a012b203c94b52924e046e4b5bc39bb03bbb6ea9782764fc"
+    },
+    {
+      "relative_path": "analysis_addendum/ARCHITECTURE_VALIDATION_ADDENDUM.json",
+      "bytes": 36040,
+      "sha256": "136ad54f8d09c0f3b237f01cfba762e73b94ccaacd92500cddb4cc7a1ee79356"
+    },
+    {
+      "relative_path": "analysis_addendum/ARCHITECTURE_VALIDATION_ADDENDUM.md",
+      "bytes": 2934,
+      "sha256": "e2c6fbdc3ce6012d1e0595e50a2b2967594f85a0d3de67c60ab26819592c929d"
+    }
+  ],
+  "excluded": [
+    "*.pt",
+    "*.npz",
+    "runtime/**",
+    "__pycache__/**",
+    "model checkpoints and optimizer state",
+    "raw dataset and tensors"
+  ],
+  "validation_only": true
+}

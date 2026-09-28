@@ -1,0 +1,105 @@
+{
+  "created_at": "2026-09-29T01:28:00+08:00",
+  "classification": "Additive remote-to-D archive verification for architecture review and final20 replay",
+  "previous_manifest": "MANIFEST.sha256.json",
+  "files": [
+    {
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/completion_receipts/final20_replay.py",
+      "local_path": "final20_replay/final20_replay.py",
+      "bytes": 18070,
+      "sha256": "41d3259d814579f5500a02c73d84a44009b1cda4d8b21de7eceb217a2de84beb",
+      "verified": true
+    },
+    {
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/completion_receipts/FINAL20_REPLAY_PROTOCOL.json",
+      "local_path": "final20_replay/FINAL20_REPLAY_PROTOCOL.json",
+      "bytes": 2287,
+      "sha256": "5ead8356bfe88b66edf932c193626d6921664e227acc1a19f755df5462165c9f",
+      "verified": true
+    },
+    {
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/completion_receipts/FINAL20_REPLAY_README.md",
+      "local_path": "final20_replay/FINAL20_REPLAY_README.md",
+      "bytes": 3479,
+      "sha256": "228a7520c529405ad8ffecd0858ed696f61f0cae68c77467b2bb24b5c31ac143",
+      "verified": true
+    },
+    {
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/completion_receipts/FINAL20_REPLAY_SELF_TEST.json",
+      "local_path": "final20_replay/FINAL20_REPLAY_SELF_TEST.json",
+      "bytes": 519,
+      "sha256": "451cc97b19ca4683597628a1b80c3d6c84bf21ef05ec2a694769e00855308bb5",
+      "verified": true
+    },
+    {
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/completion_receipts/FINAL20_REPLAY_AUTHORIZATION.json",
+      "local_path": "final20_replay/FINAL20_REPLAY_AUTHORIZATION.json",
+      "bytes": 632,
+      "sha256": "bfc907fed20ca7cfba9c13ad21eab6f14943161445fa1a45d092c5a7e0d94fef",
+      "verified": true
+    },
+    {
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/completion_receipts/FINAL20_REPLAY_INDEPENDENT_REVIEW.md",
+      "local_path": "final20_replay/FINAL20_REPLAY_INDEPENDENT_REVIEW.md",
+      "bytes": 5865,
+      "sha256": "a37508a67aa9300579b84bd52573208f51feb7e914de13a934b08a57b59306b4",
+      "verified": true
+    },
+    {
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/completion_receipts/FINAL20_REPLAY_RESULTS.json",
+      "local_path": "final20_replay/FINAL20_REPLAY_RESULTS.json",
+      "bytes": 17557,
+      "sha256": "ce60e54cf0a8165f73309d54d9dc28d010a220b4fd08149f629ab03ca1dc4d12",
+      "verified": true
+    },
+    {
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/completion_receipts/FINAL20_REPLAY_ARCHIVE_ALLOWLIST.json",
+      "local_path": "completion_receipts_FINAL20_REPLAY_ARCHIVE_ALLOWLIST.json",
+      "bytes": 1488,
+      "sha256": "42c2304970ab789970a20dc2638ba77ad91d2c54eb3a13f86ae8b4962bd0e660",
+      "verified": true
+    },
+    {
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/completion_receipts/ARCHITECTURE_SCIENTIFIC_DECISION.md",
+      "local_path": "ARCHITECTURE_SCIENTIFIC_DECISION.md",
+      "bytes": 6491,
+      "sha256": "ef2a49a6d931dc45ca23b47665592b19cb1fb33d1bc939aee00a8cdfde1b0867",
+      "verified": true
+    },
+    {
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/FROZEN_RESIDUAL_PROTOCOL.md",
+      "local_path": "FROZEN_RESIDUAL_PROTOCOL.md",
+      "bytes": 11501,
+      "sha256": "eefbee1552c22b159022173726d7e958fefae710b760aee0eb0d6f439a43333f",
+      "verified": true
+    },
+    {
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/ARCHITECTURE_ARCHIVE_ALLOWLIST.json",
+      "local_path": "ARCHITECTURE_ARCHIVE_ALLOWLIST.json",
+      "bytes": 9714,
+      "sha256": "38b2ad881ef132be7a836efcc11c06619bb7e89979e614f66072ca0820ba376b",
+      "verified": true
+    },
+    {
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/coordinator_state.json",
+      "local_path": "coordinator_state.json",
+      "bytes": 15210,
+      "sha256": "8f4f5354a8d8a006345ed0361d56f70188fb08f6e14565a087a86837af6328ad",
+      "verified": true
+    },
+    {
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/RESEARCH_STATUS.md",
+      "local_path": "RESEARCH_STATUS.md",
+      "bytes": 12992,
+      "sha256": "20c57a18d6917266a146a67c96f0864c567a17b861663a4678b6d94c595e5d28",
+      "verified": true
+    }
+  ],
+  "excluded": [
+    "*.pt",
+    "*.npz",
+    "runtime/**",
+    "cache/**",
+    "__pycache__/**"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "classification": "Deferred validation-only final20 replay specification; not execution authorization",
+  "created": 1790613698.1796005,
+  "purpose": "Attribute final20 retained_residual raw-native-f SSE degradation by jointly changed base, additive correction, signed fold, physical state and true brightness.",
+  "replay_condition": "Only after all four matched architecture arms and round summary complete, on a healthy idle admitted GPU under existing shared lock, with explicit coordinator-approved authorization JSON.",
+  "arm": "retained_residual",
+  "final_epoch": 20,
+  "selected_checkpoint_epoch_remains": 0,
+  "expected_hashes": {
+    "FIT_COMPLETE.json": "bb8bff434f1e698315a0a553f14087446a4303c11076018bb2c80df727cc1070",
+    "last.pt": "c96f850f10e739632c90f8cc870990de92fa79dbeed9cfc3e1958d349122ed41",
+    "architecture/PREFLIGHT.json": "dfbd34b440cd948a19ae52b773aa074afdd1f9b38d7578c57d412b6e2b250b8f",
+    "architecture/EXECUTION_REVIEW.json": "2ac6ac27ae0435a2c2a64f6f17fe21b27fa0930abe81b658dda98bd82a88ef45",
+    "eta0_val_predictions.npz": "25acae64bb4e3e541048a8705045f7f639d1113d537dbbef71672752e8065890",
+    "dataset.npz": "be8fadca203429575d70642b617730592693be40858dca7189c098a671596330",
+    "raw_labels.npz": "621dc8723fb6dc96681851a26e4f52fcb7747a4778e57a249a75d22f3af4c632"
+  },
+  "validation_molecules": 6686,
+  "states_per_molecule": 10,
+  "raw_f_q90": 0.0546,
+  "q90_definition": "true raw f >= fixed pooled validation q90; below is strictly < q90",
+  "state_focus_physical": [
+    7,
+    8
+  ],
+  "cross_table_dimensions": [
+    "physical states7/8 versus other",
+    "raw true f below q90 versus >=q90",
+    "signed_f <0 versus >=0"
+  ],
+  "error_concentration": [
+    "top1 molecule",
+    "top5 molecules",
+    "top10 molecules",
+    "top1percent molecules"
+  ],
+  "comparison_predictors": [
+    "frozen_eta0_native_f",
+    "final20_changed_base_f",
+    "final20_emitted_abs_signed_f"
+  ],
+  "residual_identity": "final20 SSE minus frozen eta0 SSE = (changed base SSE minus frozen eta0 SSE) + (final emitted SSE minus changed base SSE)",
+  "gpu_allowed": [
+    1,
+    4,
+    5,
+    6
+  ],
+  "gpu5": "guarded pinned ECC and numerical preflight; no resets",
+  "no_test_access": true,
+  "no_training": true,
+  "runtime_arrays_remote_only": true
+}

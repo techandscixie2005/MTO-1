@@ -1,0 +1,481 @@
+{
+  "classification": "Authorized one-time validation-only final20 diagnostic; selected best epoch0 unchanged",
+  "time": 1790615944.450414,
+  "authorization_sha256": "bfc907fed20ca7cfba9c13ad21eab6f14943161445fa1a45d092c5a7e0d94fef",
+  "protocol_sha256": "5ead8356bfe88b66edf932c193626d6921664e227acc1a19f755df5462165c9f",
+  "script_sha256": "41d3259d814579f5500a02c73d84a44009b1cda4d8b21de7eceb217a2de84beb",
+  "frozen_input_hashes": {
+    "FIT_COMPLETE.json": "bb8bff434f1e698315a0a553f14087446a4303c11076018bb2c80df727cc1070",
+    "last.pt": "c96f850f10e739632c90f8cc870990de92fa79dbeed9cfc3e1958d349122ed41",
+    "architecture/PREFLIGHT.json": "dfbd34b440cd948a19ae52b773aa074afdd1f9b38d7578c57d412b6e2b250b8f",
+    "architecture/EXECUTION_REVIEW.json": "2ac6ac27ae0435a2c2a64f6f17fe21b27fa0930abe81b658dda98bd82a88ef45",
+    "eta0_val_predictions.npz": "25acae64bb4e3e541048a8705045f7f639d1113d537dbbef71672752e8065890",
+    "dataset.npz": "be8fadca203429575d70642b617730592693be40858dca7189c098a671596330",
+    "raw_labels.npz": "621dc8723fb6dc96681851a26e4f52fcb7747a4778e57a249a75d22f3af4c632"
+  },
+  "gpu": 6,
+  "gpu_uuid": "GPU-2431a641-8045-a10b-4aa0-2769010e0708",
+  "gpu_before": {
+    "index": 6,
+    "uuid": "GPU-2431a641-8045-a10b-4aa0-2769010e0708",
+    "memory_MiB": 13,
+    "temperature_C": "33 C",
+    "ecc": {
+      "volatile": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0
+      },
+      "aggregate": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0,
+        "sram_threshold_exceeded": "No"
+      },
+      "remap": {
+        "remapped_row_corr": "0",
+        "remapped_row_unc": "0",
+        "remapped_row_pending": "No",
+        "remapped_row_failure": "No"
+      },
+      "repair": {
+        "channel_repair_pending": "No",
+        "tpc_repair_pending": "No"
+      }
+    },
+    "apps": []
+  },
+  "gpu_after": {
+    "index": 6,
+    "uuid": "GPU-2431a641-8045-a10b-4aa0-2769010e0708",
+    "memory_MiB": 3569,
+    "temperature_C": "35 C",
+    "ecc": {
+      "volatile": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0
+      },
+      "aggregate": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0,
+        "sram_threshold_exceeded": "No"
+      },
+      "remap": {
+        "remapped_row_corr": "0",
+        "remapped_row_unc": "0",
+        "remapped_row_pending": "No",
+        "remapped_row_failure": "No"
+      },
+      "repair": {
+        "channel_repair_pending": "No",
+        "tpc_repair_pending": "No"
+      }
+    },
+    "apps": [
+      820368
+    ]
+  },
+  "gpu5_microcheck": null,
+  "runtime_array_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/completion_receipts/runtime/final20_val_replay.npz",
+  "runtime_array_sha256": "81c27f08407fc7ba2e134e13d6261a2d096664f724b9bdd521b79305c74e0f19",
+  "runtime_arrays_excluded_from_archive": true,
+  "full_validation_alignment": true,
+  "stored_final20_r2": 0.3049378537297114,
+  "stored_final20_energy_mae": 0.09241639339997315,
+  "recomputed": {
+    "primary_raw_native_f": {
+      "frozen_eta0": {
+        "count": 66860,
+        "sse": 94.20512092938401,
+        "sst": 158.4062371581119,
+        "r2": 0.4052941183410983,
+        "mae": 0.017785608345899415,
+        "rmse": 0.037536525422479664
+      },
+      "changed_base": {
+        "count": 66860,
+        "sse": 114.2160844068195,
+        "sst": 158.4062371581119,
+        "r2": 0.27896725245221476,
+        "mae": 0.017983888721095697,
+        "rmse": 0.04133143153976434
+      },
+      "emitted_final20": {
+        "count": 66860,
+        "sse": 110.10218013388642,
+        "sst": 158.4062371581119,
+        "r2": 0.3049378477187813,
+        "mae": 0.017538633457749073,
+        "rmse": 0.04058025512980096
+      }
+    },
+    "sse_decomposition": {
+      "net_final_minus_eta0": 15.897059204502412,
+      "changed_base_minus_eta0": 20.010963477435496,
+      "emitted_final_minus_changed_base": -4.113904272933084,
+      "aggregate_identity_verified": true
+    },
+    "fixed_raw_f_q90": 0.0546,
+    "cross_table": [
+      {
+        "state_group": "S7_S8",
+        "strength_group": "below_q90",
+        "signed_group": "negative_signed",
+        "count": 206,
+        "eta0_sse": 0.25121147785082704,
+        "changed_base_sse": 0.04917292355572589,
+        "emitted_final_sse": 0.037609379346675846,
+        "final_minus_eta0_sse": -0.21360209850415118,
+        "base_minus_eta0_sse": -0.20203855429510115,
+        "final_minus_base_sse": -0.011563544209050043,
+        "share_of_net_sse_increase": -0.013436579417383951
+      },
+      {
+        "state_group": "S7_S8",
+        "strength_group": "below_q90",
+        "signed_group": "nonnegative_signed",
+        "count": 12002,
+        "eta0_sse": 11.113711639715067,
+        "changed_base_sse": 26.922172051955595,
+        "emitted_final_sse": 24.656306589764007,
+        "final_minus_eta0_sse": 13.54259495004894,
+        "base_minus_eta0_sse": 15.808460412240528,
+        "final_minus_base_sse": -2.265865462191588,
+        "share_of_net_sse_increase": 0.8518930939260367
+      },
+      {
+        "state_group": "S7_S8",
+        "strength_group": "q90_or_brighter",
+        "signed_group": "negative_signed",
+        "count": 34,
+        "eta0_sse": 1.1961851554332117,
+        "changed_base_sse": 1.6182743901125372,
+        "emitted_final_sse": 1.6505503789240243,
+        "final_minus_eta0_sse": 0.45436522349081265,
+        "base_minus_eta0_sse": 0.42208923467932546,
+        "final_minus_base_sse": 0.03227598881148719,
+        "share_of_net_sse_increase": 0.0285817155013253
+      },
+      {
+        "state_group": "S7_S8",
+        "strength_group": "q90_or_brighter",
+        "signed_group": "nonnegative_signed",
+        "count": 1130,
+        "eta0_sse": 16.89172520420281,
+        "changed_base_sse": 16.953635982941947,
+        "emitted_final_sse": 18.31440084348283,
+        "final_minus_eta0_sse": 1.422675639280019,
+        "base_minus_eta0_sse": 0.06191077873913642,
+        "final_minus_base_sse": 1.3607648605408826,
+        "share_of_net_sse_increase": 0.08949300754173983
+      },
+      {
+        "state_group": "other_states",
+        "strength_group": "below_q90",
+        "signed_group": "negative_signed",
+        "count": 2581,
+        "eta0_sse": 0.6820572192272369,
+        "changed_base_sse": 0.22105129347716249,
+        "emitted_final_sse": 0.1967489290116537,
+        "final_minus_eta0_sse": -0.48530829021558325,
+        "base_minus_eta0_sse": -0.4610059257500745,
+        "final_minus_base_sse": -0.02430236446550879,
+        "share_of_net_sse_increase": -0.030528180336532484
+      },
+      {
+        "state_group": "other_states",
+        "strength_group": "below_q90",
+        "signed_group": "nonnegative_signed",
+        "count": 45381,
+        "eta0_sse": 21.632510038612963,
+        "changed_base_sse": 28.559753076828375,
+        "emitted_final_sse": 23.4033468776886,
+        "final_minus_eta0_sse": 1.7708368390756348,
+        "base_minus_eta0_sse": 6.927243038215412,
+        "final_minus_base_sse": -5.156406199139777,
+        "share_of_net_sse_increase": 0.11139398905768012
+      },
+      {
+        "state_group": "other_states",
+        "strength_group": "q90_or_brighter",
+        "signed_group": "negative_signed",
+        "count": 109,
+        "eta0_sse": 1.9481540111217495,
+        "changed_base_sse": 2.2462402134267068,
+        "emitted_final_sse": 2.3457335065816722,
+        "final_minus_eta0_sse": 0.39757949545992277,
+        "base_minus_eta0_sse": 0.2980862023049573,
+        "final_minus_base_sse": 0.09949329315496547,
+        "share_of_net_sse_increase": 0.02500962538702247
+      },
+      {
+        "state_group": "other_states",
+        "strength_group": "q90_or_brighter",
+        "signed_group": "nonnegative_signed",
+        "count": 5417,
+        "eta0_sse": 40.489566183220155,
+        "changed_base_sse": 37.645784474521456,
+        "emitted_final_sse": 39.49748362908696,
+        "final_minus_eta0_sse": -0.9920825541331979,
+        "base_minus_eta0_sse": -2.8437817086986996,
+        "final_minus_base_sse": 1.8516991545655017,
+        "share_of_net_sse_increase": -0.06240667165988898
+      }
+    ],
+    "per_state": [
+      {
+        "physical_state": 1,
+        "eta0_sse": 2.1794692511478946,
+        "changed_base_sse": 2.2374341997785856,
+        "emitted_final_sse": 2.161541851615306,
+        "final_minus_eta0_sse": -0.017927399532588595,
+        "base_minus_eta0_sse": 0.057964948630691016,
+        "final_minus_base_sse": -0.07589234816327961
+      },
+      {
+        "physical_state": 2,
+        "eta0_sse": 4.8192128155435325,
+        "changed_base_sse": 5.086233223379381,
+        "emitted_final_sse": 4.9713728825258325,
+        "final_minus_eta0_sse": 0.1521600669823,
+        "base_minus_eta0_sse": 0.26702040783584824,
+        "final_minus_base_sse": -0.11486034085354824
+      },
+      {
+        "physical_state": 3,
+        "eta0_sse": 6.475522164372647,
+        "changed_base_sse": 6.739517130949336,
+        "emitted_final_sse": 6.460341530503973,
+        "final_minus_eta0_sse": -0.015180633868673965,
+        "base_minus_eta0_sse": 0.2639949665766892,
+        "final_minus_base_sse": -0.27917560044536316
+      },
+      {
+        "physical_state": 4,
+        "eta0_sse": 8.503344608762278,
+        "changed_base_sse": 8.497146742227422,
+        "emitted_final_sse": 8.259623388230729,
+        "final_minus_eta0_sse": -0.24372122053154932,
+        "base_minus_eta0_sse": -0.006197866534856544,
+        "final_minus_base_sse": -0.23752335399669278
+      },
+      {
+        "physical_state": 5,
+        "eta0_sse": 9.985052358263781,
+        "changed_base_sse": 11.227690333293785,
+        "emitted_final_sse": 10.749593604302882,
+        "final_minus_eta0_sse": 0.7645412460391015,
+        "base_minus_eta0_sse": 1.2426379750300036,
+        "final_minus_base_sse": -0.47809672899090216
+      },
+      {
+        "physical_state": 6,
+        "eta0_sse": 10.05817248112513,
+        "changed_base_sse": 10.474415979233122,
+        "emitted_final_sse": 9.979957826088093,
+        "final_minus_eta0_sse": -0.07821465503703706,
+        "base_minus_eta0_sse": 0.4162434981079919,
+        "final_minus_base_sse": -0.49445815314502894
+      },
+      {
+        "physical_state": 7,
+        "eta0_sse": 13.89114341318531,
+        "changed_base_sse": 27.045988827699336,
+        "emitted_final_sse": 26.421747401826693,
+        "final_minus_eta0_sse": 12.530603988641383,
+        "base_minus_eta0_sse": 13.154845414514027,
+        "final_minus_base_sse": -0.6242414258726434
+      },
+      {
+        "physical_state": 8,
+        "eta0_sse": 15.56169006401661,
+        "changed_base_sse": 18.497266520866468,
+        "emitted_final_sse": 18.237119789690848,
+        "final_minus_eta0_sse": 2.6754297256742383,
+        "base_minus_eta0_sse": 2.9355764568498586,
+        "final_minus_base_sse": -0.26014673117562026
+      },
+      {
+        "physical_state": 9,
+        "eta0_sse": 12.070259586746662,
+        "changed_base_sse": 13.173733428064672,
+        "emitted_final_sse": 12.151887276375643,
+        "final_minus_eta0_sse": 0.0816276896289807,
+        "base_minus_eta0_sse": 1.10347384131801,
+        "final_minus_base_sse": -1.0218461516890294
+      },
+      {
+        "physical_state": 10,
+        "eta0_sse": 10.661254186220182,
+        "changed_base_sse": 11.2366580213274,
+        "emitted_final_sse": 10.708994582726424,
+        "final_minus_eta0_sse": 0.04774039650624218,
+        "base_minus_eta0_sse": 0.5754038351072186,
+        "final_minus_base_sse": -0.5276634386009764
+      }
+    ],
+    "molecule_error_concentration": {
+      "top1": {
+        "molecules": 1,
+        "by_largest_final_error": {
+          "share_of_final_sse": 0.13167782150725568,
+          "net_sse_change": 11.600012356225402,
+          "share_of_total_net_increase": 0.7296954868822538
+        },
+        "by_largest_deterioration": {
+          "net_sse_change": 11.600012356225402,
+          "share_of_total_net_increase": 0.7296954868822538,
+          "share_of_final_sse": 0.13167782150725568
+        }
+      },
+      "top5": {
+        "molecules": 5,
+        "by_largest_final_error": {
+          "share_of_final_sse": 0.20069847954880282,
+          "net_sse_change": 13.073203157612479,
+          "share_of_total_net_increase": 0.8223661363675269
+        },
+        "by_largest_deterioration": {
+          "net_sse_change": 14.079897242126076,
+          "share_of_total_net_increase": 0.8856919422013807,
+          "share_of_final_sse": 0.1691500708222599
+        }
+      },
+      "top10": {
+        "molecules": 10,
+        "by_largest_final_error": {
+          "share_of_final_sse": 0.23628478336719275,
+          "net_sse_change": 14.256490940351446,
+          "share_of_total_net_increase": 0.8968005186967964
+        },
+        "by_largest_deterioration": {
+          "net_sse_change": 15.46326941219409,
+          "share_of_total_net_increase": 0.9727125761609127,
+          "share_of_final_sse": 0.19053449039754272
+        }
+      },
+      "top1pct": {
+        "molecules": 67,
+        "by_largest_final_error": {
+          "share_of_final_sse": 0.38671518370900043,
+          "net_sse_change": 16.797089907134914,
+          "share_of_total_net_increase": 1.0566161760520836
+        },
+        "by_largest_deterioration": {
+          "net_sse_change": 20.671340823293594,
+          "share_of_total_net_increase": 1.3003248309875448,
+          "share_of_final_sse": 0.32159848869151164
+        }
+      }
+    },
+    "largest_deterioration_molecules": [
+      {
+        "id": 14562,
+        "eta0_molecule_sse": 2.898002867004206,
+        "changed_base_molecule_sse": 14.543867858063425,
+        "final_molecule_sse": 14.498015223229608,
+        "final_minus_eta0_sse": 11.600012356225402
+      },
+      {
+        "id": 3024,
+        "eta0_molecule_sse": 0.7279567768612448,
+        "changed_base_molecule_sse": 2.132888883678026,
+        "final_molecule_sse": 2.119490099683239,
+        "final_minus_eta0_sse": 1.391533322821994
+      },
+      {
+        "id": 26284,
+        "eta0_molecule_sse": 0.40283910533048806,
+        "changed_base_molecule_sse": 0.9335583051693991,
+        "final_molecule_sse": 0.8587291878236861,
+        "final_minus_eta0_sse": 0.45589008249319807
+      },
+      {
+        "id": 29946,
+        "eta0_molecule_sse": 0.3484680250802995,
+        "changed_base_molecule_sse": 0.6820227386201161,
+        "final_molecule_sse": 0.6697341294492613,
+        "final_minus_eta0_sse": 0.32126610436896175
+      },
+      {
+        "id": 130027,
+        "eta0_molecule_sse": 0.166627550929789,
+        "changed_base_molecule_sse": 0.49507247957751827,
+        "final_molecule_sse": 0.47782292714630953,
+        "final_minus_eta0_sse": 0.3111953762165205
+      },
+      {
+        "id": 1668,
+        "eta0_molecule_sse": 0.02916368393364913,
+        "changed_base_molecule_sse": 0.31051254077826207,
+        "final_molecule_sse": 0.3157956581008434,
+        "final_minus_eta0_sse": 0.28663197416719427
+      },
+      {
+        "id": 27916,
+        "eta0_molecule_sse": 0.0783056900096057,
+        "changed_base_molecule_sse": 0.3747062355300909,
+        "final_molecule_sse": 0.36084548676167766,
+        "final_minus_eta0_sse": 0.28253979675207197
+      },
+      {
+        "id": 133615,
+        "eta0_molecule_sse": 0.5001015976469397,
+        "changed_base_molecule_sse": 0.7596005554676757,
+        "final_molecule_sse": 0.7769001205523863,
+        "final_minus_eta0_sse": 0.2767985229054466
+      },
+      {
+        "id": 133463,
+        "eta0_molecule_sse": 0.29173129071228493,
+        "changed_base_molecule_sse": 0.644203339566497,
+        "final_molecule_sse": 0.5625606180789525,
+        "final_minus_eta0_sse": 0.2708293273666676
+      },
+      {
+        "id": 133009,
+        "eta0_molecule_sse": 0.07179678376590644,
+        "changed_base_molecule_sse": 0.33971256133809363,
+        "final_molecule_sse": 0.33836933264253966,
+        "final_minus_eta0_sse": 0.26657254887663323
+      }
+    ],
+    "signed_diagnostics": {
+      "negative_count": 2930,
+      "negative_fraction": 0.04382291355070296,
+      "zero_count": 0,
+      "signed_min": -0.046151150780285866,
+      "signed_max": 3.604860447708239,
+      "delta_min": -0.08660757541656494,
+      "delta_max": 0.009878307580947876,
+      "mean_abs_delta": 0.00561386433994699,
+      "base_max": 3.6030864002068537,
+      "max_abs_signed_minus_base_plus_delta": 0.0,
+      "abs_fold_improvement_in_sse_vs_unphysical_signed": 1.0614152381308413,
+      "negative_fold_identity_verified": true
+    },
+    "energy": {
+      "count": 66860,
+      "sse": 1041.684634755014,
+      "sst": 66156.66699740554,
+      "r2": 0.9842542757664037,
+      "mae": 0.09241639312004707,
+      "rmse": 0.12482021978929253
+    }
+  },
+  "limits": [
+    "Validation replay only; does not alter checkpoint selection or establish a matched-control advantage.",
+    "True raw f defines diagnostic bins, never model input. No test indices, labels, or predictions were read.",
+    "Base-versus-final errors are an inference decomposition of this jointly trained checkpoint, not a retraining counterfactual."
+  ]
+}

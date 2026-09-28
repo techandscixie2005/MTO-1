@@ -1,0 +1,52 @@
+{
+  "arm": "direct_f",
+  "gpu": 5,
+  "gpu_uuid": "GPU-71f357f3-3436-a616-b8af-50160d18f30d",
+  "health_before": {
+    "index": 5,
+    "uuid": "GPU-71f357f3-3436-a616-b8af-50160d18f30d",
+    "memory_MiB": 13,
+    "temperature_C": "44 C",
+    "ecc": {
+      "volatile": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 1,
+        "dram_uncorrectable": 0
+      },
+      "aggregate": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 1,
+        "dram_uncorrectable": 0,
+        "sram_threshold_exceeded": "No"
+      },
+      "remap": {
+        "remapped_row_corr": "0",
+        "remapped_row_unc": "0",
+        "remapped_row_pending": "No",
+        "remapped_row_failure": "No"
+      },
+      "repair": {
+        "channel_repair_pending": "No",
+        "tpc_repair_pending": "No"
+      }
+    },
+    "apps": []
+  },
+  "numerical_microcheck": {
+    "passed": true,
+    "cuda_name": "NVIDIA A800 80GB PCIe",
+    "exact_roundtrip_32MiB": true,
+    "three_matmul_outputs_bitwise_equal": true,
+    "matmul_max_abs_error_vs_CPU_FP64": 5.7220458984375e-05,
+    "matmul_relative_L2_error_vs_CPU_FP64": 2.617523477965733e-07,
+    "finite_gradient": true
+  },
+  "started": 1790612170.1439338,
+  "pid": 799079,
+  "preflight_sha256": "dfbd34b440cd948a19ae52b773aa074afdd1f9b38d7578c57d412b6e2b250b8f",
+  "review_sha256": "2ac6ac27ae0435a2c2a64f6f17fe21b27fa0930abe81b658dda98bd82a88ef45"
+}

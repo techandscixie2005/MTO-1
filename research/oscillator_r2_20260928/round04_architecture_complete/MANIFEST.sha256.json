@@ -1,0 +1,178 @@
+{
+  "purpose": "D: verified archive of the completed four-arm validation-only architecture screen",
+  "source": "USTC-A800:/home/inspur/MTO-1",
+  "queue_terminal_state": "ALL_COMPLETE",
+  "queue_exit_code": 0,
+  "test_evaluation": "none",
+  "exclusions": "No checkpoints, optimizer states, NPZ/raw arrays, caches, or training logs.",
+  "files": [
+    {
+      "path": "architecture/ARCH_QUEUE_STATUS.json",
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/ARCH_QUEUE_STATUS.json",
+      "bytes": 196,
+      "sha256": "c1411452ffa5cb5c9e195abe3b8c0ac3d0b5ad7611113bf2d382f1e5e9f8a010"
+    },
+    {
+      "path": "architecture/ARCHITECTURE_RESULTS.json",
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/ARCHITECTURE_RESULTS.json",
+      "bytes": 17290,
+      "sha256": "5121d213eccee92b20fbd57335f194b9b5ec2d258d22d8e5ff470d769a8e06e5"
+    },
+    {
+      "path": "architecture/ARCHITECTURE_RESULTS.md",
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/ARCHITECTURE_RESULTS.md",
+      "bytes": 843,
+      "sha256": "c126ee6d8844873e9b40b363c28a0b2137c0105216f2ae1cc8f5f6c33b7f85ec"
+    },
+    {
+      "path": "architecture/runs/retained_residual/FIT_COMPLETE.json",
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/runs/retained_residual/FIT_COMPLETE.json",
+      "bytes": 7588,
+      "sha256": "bb8bff434f1e698315a0a553f14087446a4303c11076018bb2c80df727cc1070"
+    },
+    {
+      "path": "architecture/runs/retained_residual/queue_launch_receipt.json",
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/runs/retained_residual/queue_launch_receipt.json",
+      "bytes": 1564,
+      "sha256": "cdd224fe97c469c54a81ba4cf60b8b4885fa3cd81e0112d2b2504950bd670daf"
+    },
+    {
+      "path": "architecture/runs/original/FIT_COMPLETE.json",
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/runs/original/FIT_COMPLETE.json",
+      "bytes": 7580,
+      "sha256": "b56332d4dbf3048516414a4eab1fec3b0e5d6fbaf26d2927873672f054b0f4cd"
+    },
+    {
+      "path": "architecture/runs/original/queue_launch_receipt.json",
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/runs/original/queue_launch_receipt.json",
+      "bytes": 1253,
+      "sha256": "235321132726198f2bf0a1fc7abced6ea7f024da29d80d0f9c6fd4921a4b074f"
+    },
+    {
+      "path": "architecture/runs/direct_f/FIT_COMPLETE.json",
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/runs/direct_f/FIT_COMPLETE.json",
+      "bytes": 7581,
+      "sha256": "7d3c67db5b663be93a1ad72244e57ab25b63d40307caebc5df32b624414d4b4c"
+    },
+    {
+      "path": "architecture/runs/direct_f/queue_launch_receipt.json",
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/runs/direct_f/queue_launch_receipt.json",
+      "bytes": 1555,
+      "sha256": "f065f760e882e191937571a02da4d89e4d254b65d263d9c0a4142b2cfa8014fb"
+    },
+    {
+      "path": "architecture/runs/independent_trace/FIT_COMPLETE.json",
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/runs/independent_trace/FIT_COMPLETE.json",
+      "bytes": 7589,
+      "sha256": "5ad1424419647078af3804549132ae638090d4a64d06cd244b2b3a6443372403"
+    },
+    {
+      "path": "architecture/runs/independent_trace/queue_launch_receipt.json",
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/runs/independent_trace/queue_launch_receipt.json",
+      "bytes": 1262,
+      "sha256": "c0e781595b4c7759394b103eaf05a26ef0b69f95298e265d67b895f7044c5cc9"
+    },
+    {
+      "path": "coordinator_state.json",
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/coordinator_state.json",
+      "bytes": 13261,
+      "sha256": "392b88e06b5d7bbca8c3018a7f736d9a23885335a28e49d2fa435a8b8c350625"
+    },
+    {
+      "path": "RESEARCH_STATUS.md",
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/RESEARCH_STATUS.md",
+      "bytes": 11512,
+      "sha256": "e4b7899da7e92b4d3705170b15f2bfeaf96e68ec20883e93b37f677cc9471efd"
+    },
+    {
+      "path": "architecture/INDEPENDENT_COMPLETION_AUDIT.json",
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/INDEPENDENT_COMPLETION_AUDIT.json",
+      "bytes": 3541,
+      "sha256": "d7df6edfec2d322b8f70ecd0fe39fcc4d221b1c4967aa82a8b82ee715b8c1ed1"
+    },
+    {
+      "path": "analysis_addendum/ARCHITECTURE_VALIDATION_ADDENDUM.json",
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/analysis_addendum/ARCHITECTURE_VALIDATION_ADDENDUM.json",
+      "bytes": 36040,
+      "sha256": "136ad54f8d09c0f3b237f01cfba762e73b94ccaacd92500cddb4cc7a1ee79356"
+    },
+    {
+      "path": "analysis_addendum/ARCHITECTURE_VALIDATION_ADDENDUM.md",
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/analysis_addendum/ARCHITECTURE_VALIDATION_ADDENDUM.md",
+      "bytes": 2934,
+      "sha256": "e2c6fbdc3ce6012d1e0595e50a2b2967594f85a0d3de67c60ab26819592c929d"
+    },
+    {
+      "path": "architecture/runs/original/history.jsonl",
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/runs/original/history.jsonl",
+      "bytes": 84610,
+      "sha256": "f4ca79042a943f252f53476c567b83048c115c280eee25405b1e70b97f00192a"
+    },
+    {
+      "path": "architecture/runs/original/status.json",
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/runs/original/status.json",
+      "bytes": 5442,
+      "sha256": "184751e4a4e3fa318e52bdcee3f90704f633173835d150e60563467d39cece87"
+    },
+    {
+      "path": "architecture/runs/original/gpu_health_after.json",
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/runs/original/gpu_health_after.json",
+      "bytes": 814,
+      "sha256": "d033569c1ee2b6fef064afc6a9ed88b4bf07eff958b2d9943ac706fdac21bce6"
+    },
+    {
+      "path": "architecture/runs/retained_residual/history.jsonl",
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/runs/retained_residual/history.jsonl",
+      "bytes": 91929,
+      "sha256": "13d8984af9986f2bc37347c864345bcd5cba7ea2b413a6f77f007b855ad4b7de"
+    },
+    {
+      "path": "architecture/runs/retained_residual/status.json",
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/runs/retained_residual/status.json",
+      "bytes": 5893,
+      "sha256": "f6278741eec92a1933aef5b0d111d407dc6cae73e20a03246bde23a54faa897a"
+    },
+    {
+      "path": "architecture/runs/retained_residual/gpu_health_after.json",
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/runs/retained_residual/gpu_health_after.json",
+      "bytes": 814,
+      "sha256": "228a7488cfeac6dac81a699ce8ee00b17c8cb0ad2be1f256d6c7a0ffb9085d3c"
+    },
+    {
+      "path": "architecture/runs/direct_f/history.jsonl",
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/runs/direct_f/history.jsonl",
+      "bytes": 84656,
+      "sha256": "c2676dad1b68bc89d57a13e5b1880116337d173f971e92b69fd0ab9ecc2bb648"
+    },
+    {
+      "path": "architecture/runs/direct_f/status.json",
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/runs/direct_f/status.json",
+      "bytes": 5439,
+      "sha256": "04cde4b61c0eed02241223d794e1037ef725bf76ae7094aff81d65c9b9ef8e3d"
+    },
+    {
+      "path": "architecture/runs/direct_f/gpu_health_after.json",
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/runs/direct_f/gpu_health_after.json",
+      "bytes": 814,
+      "sha256": "228a7488cfeac6dac81a699ce8ee00b17c8cb0ad2be1f256d6c7a0ffb9085d3c"
+    },
+    {
+      "path": "architecture/runs/independent_trace/history.jsonl",
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/runs/independent_trace/history.jsonl",
+      "bytes": 84605,
+      "sha256": "3bd8710d79fa215a5594e7a183e2dc3a7d18e3cf7f2b5984a2eee7bf7d9606cd"
+    },
+    {
+      "path": "architecture/runs/independent_trace/status.json",
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/runs/independent_trace/status.json",
+      "bytes": 5435,
+      "sha256": "dc74c040e222ea9fc590a425f96344bebbd75520f1dd3a51beb82b5f78ebb104"
+    },
+    {
+      "path": "architecture/runs/independent_trace/gpu_health_after.json",
+      "remote_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/runs/independent_trace/gpu_health_after.json",
+      "bytes": 814,
+      "sha256": "073e3f5bfe0258016fde7c46c5358df973e0371b952d9e75775b4c19746e51e5"
+    }
+  ]
+}
