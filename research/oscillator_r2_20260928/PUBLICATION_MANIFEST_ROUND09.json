@@ -1,0 +1,44 @@
+{
+  "purpose": "Publish reviewed final20 replay preparation; execution deferred",
+  "base_published_commit": "a1d848ad60817263bbeccc4b1b6fe3014335c2eb",
+  "status": "prepared_deferred_not_executed",
+  "files": [
+    {
+      "path": "round04_partial_completion/completion_receipts/final20_replay.py",
+      "bytes": 18070,
+      "sha256": "41d3259d814579f5500a02c73d84a44009b1cda4d8b21de7eceb217a2de84beb",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round04_deferred_replay\\final20_replay.py"
+    },
+    {
+      "path": "round04_partial_completion/completion_receipts/FINAL20_REPLAY_PROTOCOL.json",
+      "bytes": 2287,
+      "sha256": "5ead8356bfe88b66edf932c193626d6921664e227acc1a19f755df5462165c9f",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round04_deferred_replay\\FINAL20_REPLAY_PROTOCOL.json"
+    },
+    {
+      "path": "round04_partial_completion/completion_receipts/FINAL20_REPLAY_README.md",
+      "bytes": 3479,
+      "sha256": "228a7520c529405ad8ffecd0858ed696f61f0cae68c77467b2bb24b5c31ac143",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round04_deferred_replay\\FINAL20_REPLAY_README.md"
+    },
+    {
+      "path": "round04_partial_completion/completion_receipts/FINAL20_REPLAY_SELF_TEST.json",
+      "bytes": 519,
+      "sha256": "451cc97b19ca4683597628a1b80c3d6c84bf21ef05ec2a694769e00855308bb5",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round04_deferred_replay\\FINAL20_REPLAY_SELF_TEST.json"
+    },
+    {
+      "path": "round04_partial_completion/completion_receipts/FINAL20_REPLAY_INDEPENDENT_REVIEW.md",
+      "bytes": 5865,
+      "sha256": "a37508a67aa9300579b84bd52573208f51feb7e914de13a934b08a57b59306b4",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round04_deferred_replay\\FINAL20_REPLAY_INDEPENDENT_REVIEW.md"
+    },
+    {
+      "path": "round04_partial_completion/completion_receipts/FINAL20_REPLAY_ARCHIVE_MANIFEST.json",
+      "bytes": 1812,
+      "sha256": "8a4717b115a14b3066c8d093a71d2d565432f96b993bc207e432be9244b48410",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round04_deferred_replay\\MANIFEST.sha256.json"
+    }
+  ],
+  "excludes": "No checkpoint, NPZ/raw array, optimizer state, cache, GPU inference, or test artifact"
+}

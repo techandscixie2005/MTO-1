@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "time": 1790614111.752968,
+  "script_sha256": "41d3259d814579f5500a02c73d84a44009b1cda4d8b21de7eceb217a2de84beb",
+  "protocol_sha256": "5ead8356bfe88b66edf932c193626d6921664e227acc1a19f755df5462165c9f",
+  "synthetic_decomposition_and_cross_table": true,
+  "negative_fold_analytic_identity": true,
+  "top1_5_10_1pct_counts": [
+    1,
+    4,
+    4,
+    1
+  ],
+  "validation_only_loader_first_two_molecules": true,
+  "validation_q90": 0.0546,
+  "no_model_inference": true,
+  "no_test_access": true
+}
