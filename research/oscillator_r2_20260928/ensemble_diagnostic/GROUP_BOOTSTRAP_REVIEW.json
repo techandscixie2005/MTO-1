@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "time": 1790608710.23004,
+  "scope": "Code and summarized sensitivity report review; reviewer did not open test prediction arrays",
+  "files": {
+    "group_bootstrap.py": "1ced2c18070616bfa5656a377270fee8c4d05d7dd71ca5663b4ef3ebc51fbfcb",
+    "GROUP_BOOTSTRAP_SENSITIVITY.json": "6e85f16a6a27e6114a658c2dfd4dc21708a66c822feebe9dd7360ea03fa4e1cb"
+  },
+  "checks": [
+    "Groups retain all molecules and ten states; same group resamples pair both predictions.",
+    "SST is recomputed from resampled sums/counts; variable group sizes handled correctly.",
+    "Baseline aggregate delta is checked against previously frozen test result."
+  ],
+  "reported_connectivity_groups": 6671,
+  "reported_interval": [
+    0.003585571949548084,
+    0.0300315407549026,
+    0.05669062211661423
+  ],
+  "limitations": [
+    "Input alignment relies on the preceding frozen test evaluation; no new model selection.",
+    "Connectivity groups are not scaffold groups.",
+    "Positive interval remains sensitivity on exposed historical test, not fresh generalization evidence."
+  ]
+}

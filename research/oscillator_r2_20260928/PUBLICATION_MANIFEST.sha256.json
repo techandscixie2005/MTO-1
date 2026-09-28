@@ -1,0 +1,336 @@
+{
+  "purpose": "Lightweight reviewed MTO oscillator R2 research publication",
+  "source_archive": "D: archive verified from USTC-A800",
+  "files": [
+    {
+      "path": "calibration/validation_crossfit.json",
+      "source_round": "round01_calibration",
+      "bytes": 51453,
+      "sha256": "be80a185ffa436ecd4770c3735d92d05cb877360b31e1aef433066fff2eb42a3"
+    },
+    {
+      "path": "calibration/exploratory_test.json",
+      "source_round": "round01_calibration",
+      "bytes": 6876,
+      "sha256": "2b882f4557bbc08f5954f7f7a6d0337c78ae1ebd7fdc16853bdd7a41848fa7f8"
+    },
+    {
+      "path": "SCIENTIFIC_AUDIT_AND_PROTOCOL.md",
+      "source_round": "round02_continuation",
+      "bytes": 10389,
+      "sha256": "437d21eb939f28d6d68da1c1e41ffcc44d21a71bf83794881c41d9f60ebd91f3"
+    },
+    {
+      "path": "calibration/REPORT.md",
+      "source_round": "round01_calibration",
+      "bytes": 4144,
+      "sha256": "2b81964d0adc232fcf9ee424f03216b07fa57d7bafa7b80a4429fed61181dfec"
+    },
+    {
+      "path": "monitoring_state.json",
+      "source_round": "round01_calibration",
+      "bytes": 1144,
+      "sha256": "b4833f7f0eb978398d5eff3beeee040fc45fecf0a6284b10a5668a8c0e5978c9"
+    },
+    {
+      "path": "pilot_config.json",
+      "source_round": "round02_continuation",
+      "bytes": 1098,
+      "sha256": "c4afc1c1fc1b0bd31595c2a93c6dd4799bc2924c3587de3ea7538e773dee623b"
+    },
+    {
+      "path": "calibration/frozen_choice.json",
+      "source_round": "round01_calibration",
+      "bytes": 470,
+      "sha256": "dc1ab25eb87b05499fdb0dbe7d50dbcc6d7cd1a6e2ed16b5eeaf30de9616aee2"
+    },
+    {
+      "path": "pilot_objective.py",
+      "source_round": "round02_continuation",
+      "bytes": 1339,
+      "sha256": "7277cc096b5b387f382c2954f3be31f7ab779ccaf5022fd3161efa7e01c7b065"
+    },
+    {
+      "path": "calibration/calibrate.py",
+      "source_round": "round01_calibration",
+      "bytes": 8600,
+      "sha256": "7ba2de112aae8deaebe3d157840509d61143b390b6a95cb705946943700ab231"
+    },
+    {
+      "path": "ensemble_diagnostic/PROTOCOL.json",
+      "source_round": "round03_ensemble",
+      "bytes": 1742,
+      "sha256": "8fd4b5d8ed2bc43de7076d5a7c9a88640f400e8fcad6f8d0a5e2d4dfd2b5894f"
+    },
+    {
+      "path": "ensemble_diagnostic/ensemble_metrics.json",
+      "source_round": "round03_ensemble",
+      "bytes": 8863,
+      "sha256": "5d7d4d145528845764d2618296b69580b2267af0df49de9657ace60aaa253e28"
+    },
+    {
+      "path": "preflight.py",
+      "source_round": "round02_continuation",
+      "bytes": 6044,
+      "sha256": "602b1c582846227441398ef8dba58e2d0acc47da055a50049d39e70f49c80906"
+    },
+    {
+      "path": "pilot_queue.py",
+      "source_round": "round02_continuation",
+      "bytes": 7864,
+      "sha256": "5796866183c00ee7ae22b1f8e7c6c7e0d3ce0130c4bce8a6c16b508781cefdc3"
+    },
+    {
+      "path": "queue_status.json",
+      "source_round": "round02_continuation",
+      "bytes": 97,
+      "sha256": "d19d40bf39d14b2410829bebc8f0be333dac898520056da459070bae381295bc"
+    },
+    {
+      "path": "CODE_REVIEW.json",
+      "source_round": "round02_continuation",
+      "bytes": 1950,
+      "sha256": "2c23812fb71666ed081d5437b24066042bb91b165a9383ab5bbbdd778c21e301"
+    },
+    {
+      "path": "preflight_results.json",
+      "source_round": "round02_continuation",
+      "bytes": 7011,
+      "sha256": "3742173e5f9cc8df11f5dd62da06ab6f2d37a12e97a4875e955273ab26e17532"
+    },
+    {
+      "path": "train.py",
+      "source_round": "round02_continuation",
+      "bytes": 13560,
+      "sha256": "001b888dacd9b27f1f7ebd5eace2eb816e56ccc1ff417cdec789af27909496a3"
+    },
+    {
+      "path": "ensemble_diagnostic/REPORT.md",
+      "source_round": "round03_ensemble",
+      "bytes": 2232,
+      "sha256": "f1ab02fb07c0ced97164b7e6a798a18328aae80580a1fb568e0fe89948155cdd"
+    },
+    {
+      "path": "CODE_REVIEW.md",
+      "source_round": "round02_continuation",
+      "bytes": 1870,
+      "sha256": "4db880823aebcc44048d07c6c16cbf9bbf09e239d701bfc2c9e0ec9c7c0f714b"
+    },
+    {
+      "path": "summarize.py",
+      "source_round": "round02_continuation",
+      "bytes": 5224,
+      "sha256": "2cb9cc45a41d3ea7977fd59cfae9657acb0d8c416f9b846eed0e277af905afe3"
+    },
+    {
+      "path": "ensemble_diagnostic/diagnose.py",
+      "source_round": "round03_ensemble",
+      "bytes": 11571,
+      "sha256": "c45c42b24081379cd46e2fee65e9f3c12f95b8f1b49e637fb4c8cff265b35701"
+    },
+    {
+      "path": "ensemble_diagnostic/ENSEMBLE_REVIEW.md",
+      "source_round": "round03_ensemble",
+      "bytes": 1638,
+      "sha256": "4810df22641019547f6709759a7d41d66c8be0b89223ab092db800877766e935"
+    },
+    {
+      "path": "ensemble_diagnostic/ENSEMBLE_REVIEW.json",
+      "source_round": "round03_ensemble",
+      "bytes": 2669,
+      "sha256": "420ec2ef70ee269390b1cdfa905b48e36fac9c53dcd305645b4eac12c64f5e2e"
+    },
+    {
+      "path": "ensemble_diagnostic/EXPLORATORY_TEST.json",
+      "source_round": "round03_ensemble",
+      "bytes": 7673,
+      "sha256": "c85de6aae489ea43cf8b0559b29813d86e670878bcc6fe1c67cc4fac05b9e6a6"
+    },
+    {
+      "path": "ensemble_diagnostic/GROUP_BOOTSTRAP_SENSITIVITY.json",
+      "source_round": "round03_ensemble",
+      "bytes": 1215,
+      "sha256": "6e85f16a6a27e6114a658c2dfd4dc21708a66c822feebe9dd7360ea03fa4e1cb"
+    },
+    {
+      "path": "ensemble_diagnostic/FROZEN_CHOICE.json",
+      "source_round": "round03_ensemble",
+      "bytes": 4068,
+      "sha256": "ed917f216263d8e949192f83e5e9746551aebf17f79ed704252b87f92dec0dd3"
+    },
+    {
+      "path": "ensemble_diagnostic/ENSEMBLE_TEST_REPORT.md",
+      "source_round": "round03_ensemble",
+      "bytes": 4520,
+      "sha256": "c40e1a148b7b26f2a21ffa48611d41e9b76740af9814aa7feb7fe22d79cbc1fc"
+    },
+    {
+      "path": "ensemble_diagnostic/group_bootstrap.py",
+      "source_round": "round03_ensemble",
+      "bytes": 3060,
+      "sha256": "1ced2c18070616bfa5656a377270fee8c4d05d7dd71ca5663b4ef3ebc51fbfcb"
+    },
+    {
+      "path": "ensemble_diagnostic/frozen_test.py",
+      "source_round": "round03_ensemble",
+      "bytes": 8686,
+      "sha256": "70844afc31b56143e8d20a0d5296475747e58341ff6d2e7b3cd58ffc0500fd86"
+    },
+    {
+      "path": "ensemble_diagnostic/GROUP_BOOTSTRAP_REVIEW.json",
+      "source_round": "round03_ensemble",
+      "bytes": 1084,
+      "sha256": "b409def1d47d2638827f0247ad88fa3c3567211dc33ce6b5859fc42ab3a1bb0f"
+    },
+    {
+      "path": "ensemble_diagnostic/GROUP_BOOTSTRAP_REVIEW.md",
+      "source_round": "round03_ensemble",
+      "bytes": 740,
+      "sha256": "85549273986b20c8dbfad0f120d9ba08c0d9cfcb45bf76886b1f0414cfa98b2a"
+    },
+    {
+      "path": "architecture/architecture_queue.py",
+      "source_round": "round04_architecture",
+      "bytes": 10490,
+      "sha256": "a91e76925c541cd11e594ad712c1c894994007a97c9c3fa156910c457afafa2b"
+    },
+    {
+      "path": "architecture/gpu_health.py",
+      "source_round": "round04_architecture",
+      "bytes": 2603,
+      "sha256": "c0f82c09ed865361c055fee290ea3a2339c1fcf38c55cf92d3fb0dbd780afa17"
+    },
+    {
+      "path": "architecture/model_preflight.py",
+      "source_round": "round04_architecture",
+      "bytes": 3772,
+      "sha256": "9f7abe2df678da4352a72e7ad5612eb06a439c03968c8623992f6e75a1035b15"
+    },
+    {
+      "path": "architecture/model.py",
+      "source_round": "round04_architecture",
+      "bytes": 6166,
+      "sha256": "039bffaace2a5109c03400102da08b82a4f9706f684a680924a3fafece1babdc"
+    },
+    {
+      "path": "architecture/objective.py",
+      "source_round": "round04_architecture",
+      "bytes": 942,
+      "sha256": "a5c49bcb831bb881cc898d7d5fc111fedfa31f5bbeab3262fb7b1d93292e9e48"
+    },
+    {
+      "path": "architecture/preflight.py",
+      "source_round": "round04_architecture",
+      "bytes": 8500,
+      "sha256": "7f2a2783d38ecfa1189e8424281932c49e347fd4c797e5c032d9f12d542e61c2"
+    },
+    {
+      "path": "architecture/prepare.py",
+      "source_round": "round04_architecture",
+      "bytes": 6698,
+      "sha256": "fd1f172b243430c2f715cf08b7eea729350583e8d8a0d13413ff5299d684f702"
+    },
+    {
+      "path": "architecture/summarize.py",
+      "source_round": "round04_architecture",
+      "bytes": 4666,
+      "sha256": "01183a16cb12013b518b4d7c0cc53c699b7f1285db3229889749c9732f78ea38"
+    },
+    {
+      "path": "architecture/train.py",
+      "source_round": "round04_architecture",
+      "bytes": 14678,
+      "sha256": "9b586dac871aa2b0e326d4d158eced45301a9fbc3413ec9c609896f12fb30811"
+    },
+    {
+      "path": "architecture/config.json",
+      "source_round": "round04_architecture",
+      "bytes": 1497,
+      "sha256": "3f351102ea31e5bc58cb28087bbdca3ca102c84e878a22ea1190de92be933f52"
+    },
+    {
+      "path": "architecture/EXECUTION_REVIEW.json",
+      "source_round": "round04_architecture",
+      "bytes": 8898,
+      "sha256": "2ac6ac27ae0435a2c2a64f6f17fe21b27fa0930abe81b658dda98bd82a88ef45"
+    },
+    {
+      "path": "architecture/MODEL_PREFLIGHT.json",
+      "source_round": "round04_architecture",
+      "bytes": 3203,
+      "sha256": "4bde0cf1ee604392eaeb9cf4bcafda7f13c9dbd0934cbcaaca4128139c59e363"
+    },
+    {
+      "path": "architecture/PREFLIGHT.json",
+      "source_round": "round04_architecture",
+      "bytes": 9486,
+      "sha256": "dfbd34b440cd948a19ae52b773aa074afdd1f9b38d7578c57d412b6e2b250b8f"
+    },
+    {
+      "path": "architecture/PREPARATION_3ARM_MLP.json",
+      "source_round": "round04_architecture",
+      "bytes": 3214,
+      "sha256": "5406175fdea5a3bbbe85b74d063255c2b2e0a3bdc068a2384e09c7fd084575ff"
+    },
+    {
+      "path": "architecture/PREPARATION.json",
+      "source_round": "round04_architecture",
+      "bytes": 4075,
+      "sha256": "13ab2c969913e79a0e444feb665135f7084e40af1f04a94fa6ff225a258bd682"
+    },
+    {
+      "path": "architecture/stats.json",
+      "source_round": "round04_architecture",
+      "bytes": 785,
+      "sha256": "a539509addf32d7fe1496a8bba708a7daeef55a7e5ee975f9e01c69746de2253"
+    },
+    {
+      "path": "architecture/warmup_subset.json",
+      "source_round": "round04_architecture",
+      "bytes": 183201,
+      "sha256": "5113c7a116a9a2acaaf54536e6c1f16d6fb2bf7e30b4a1e2f81996839e0261ff"
+    },
+    {
+      "path": "architecture/ARCHITECTURE_CODE_REVIEW.md",
+      "source_round": "round04_architecture",
+      "bytes": 1768,
+      "sha256": "28a697e4bf37114515bc0c25deb6e992e115b2c94cdb5806c9e5df7af807cd9f"
+    },
+    {
+      "path": "architecture/ARCHITECTURE_PROTOCOL.md",
+      "source_round": "round04_architecture",
+      "bytes": 11737,
+      "sha256": "6bcf24872bbdf6207757223da4280560c4b9183c46e6254a207bb5966a8d8a95"
+    },
+    {
+      "path": "architecture/linear_diagnostic/model.py",
+      "source_round": "round04_architecture",
+      "bytes": 4553,
+      "sha256": "65a61ff8ac02ef9e6f7a34967d47379199374193bd0fbb7c283c6639211cdcd9"
+    },
+    {
+      "path": "architecture/linear_diagnostic/prepare.py",
+      "source_round": "round04_architecture",
+      "bytes": 6300,
+      "sha256": "bdf053746a14af90427b7398c18d9c6a9b087d6914cdeab8f5cf60b393e0355b"
+    },
+    {
+      "path": "architecture/linear_diagnostic/config.json",
+      "source_round": "round04_architecture",
+      "bytes": 1235,
+      "sha256": "ade7a8514e3bb5bc321b893c1ce78a1f279361a78e1ece8c4800fd019c267395"
+    },
+    {
+      "path": "architecture/linear_diagnostic/PREPARATION.json",
+      "source_round": "round04_architecture",
+      "bytes": 3228,
+      "sha256": "b3d9d384f6a3d0aafbd947b18d6a432f2df5be9ffafa9f44bf69632fa8f794d1"
+    },
+    {
+      "path": "architecture/runs/retained_residual/queue_launch_receipt.json",
+      "source_round": "round04_architecture",
+      "bytes": 1564,
+      "sha256": "cdd224fe97c469c54a81ba4cf60b8b4885fa3cd81e0112d2b2504950bd670daf"
+    }
+  ]
+}

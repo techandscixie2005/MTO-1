@@ -1,0 +1,17 @@
+{
+  "analysis": "Validation-only ensemble diagnostic for variance versus shared bias",
+  "frozen_before_scoring": true,
+  "source_files": {
+    "mto_eta0": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta0/val_predictions.npz",
+    "mto_eta01": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta01/val_predictions.npz",
+    "mto_eta1": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta1/val_predictions.npz"
+  },
+  "candidate_set": ["mto_eta0", "mto_eta01", "mto_eta1"],
+  "excluded": ["all test split files and predictions", "nonsupervisedE models", "c64G1 because no saved validation array exists", "checkpoint inference"],
+  "alignment": "Require exact equality across candidates for molecule IDs, source row indices, matrix-order state slots, raw f_true, and f_true mask before any score is computed.",
+  "fixed_ensembles": ["all three candidates at equal 1/3 weights", "each of the three pairs at equal 1/2 weights"],
+  "fitted_ensemble": "Minimize masked raw oscillator-strength SSE with nonnegative sum-to-one weights using deterministic SLSQP; fit on four of five molecule-level folds, predict the held-out fold, repeat all folds.",
+  "fold_rule": "fold = integer(SHA256(UTF8(str(molecule ID)))) mod 5; all states for one molecule stay together.",
+  "metrics": ["pooled R2 and SSE", "residual Pearson correlations", "per-state-slot SSE", "bright-transition SSE for raw f_true at or above the whole-validation 90th percentile"],
+  "interpretation": "OOF weights assess blend fitting conditional on the saved validation predictions; base checkpoint selection already used validation. Results are exploratory and do not replace an untouched test, which is forbidden for this diagnostic."
+}

@@ -1,0 +1,89 @@
+{
+  "time": 1790610086.3689399,
+  "reason": "G2 validation plateau after epoch41; third LR reduction at194 delays natural stop to at least244; native-f deployable score unavailable for unsupervised E",
+  "receipt": {
+    "name": "G2",
+    "pid": 566514,
+    "gpu": 2,
+    "gpu_uuid": "GPU-cb4dc1ea-9ea3-e426-bdeb-df0bef8a23fa",
+    "time": 1790578069.3353066,
+    "resume": false
+  },
+  "receipt_sha256": "29ea4a9a9c7d79f4c973675393ecae74b96458e4237a3c7be02fbf7005b5c4a1",
+  "old_waiter": {
+    "pid": 762340,
+    "cmdline": [
+      "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/bin/python",
+      "-u",
+      "/home/inspur/MTO-1/research/oscillator_r2_20260928/pilot_queue.py"
+    ],
+    "cwd": "/home/inspur",
+    "start_ticks": 1245485483,
+    "status": "State:\tS (sleeping)"
+  },
+  "g2_worker": {
+    "pid": 566514,
+    "cmdline": [
+      "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/bin/python",
+      "trainer.py",
+      "G2"
+    ],
+    "cwd": "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928",
+    "start_ticks": 1242573409,
+    "status": "State:\tR (running)",
+    "start_wall_time": 1790578069.09
+  },
+  "old_queue_status": {
+    "time": 1790610076.698104,
+    "pid": 762340,
+    "state": "WAIT_G2_FINISH",
+    "g2_pid": 566514
+  },
+  "before": {
+    "last_pt_sha256": "dcc4d949bada15eabe9d3d9b486f15892e1629b156222e7ed3aeeefb4be257dd",
+    "best_pt_sha256": "1894f778b2d98a99cc390237c0516d98279375f140ad4b5ea72ac8d08012bd1a",
+    "last_state": {
+      "epoch": 215,
+      "cursor": 0,
+      "steps": 402534,
+      "best": 0.12957936948799922,
+      "best_epoch": 41,
+      "bad_epochs": 173,
+      "lr_reductions": 3,
+      "last_reduction": 194,
+      "total_seconds": 31912.691772425547,
+      "history_count": 214,
+      "history_last_epoch": 214,
+      "has_order": false,
+      "resumable_rng_optimizer_scheduler": true
+    },
+    "best_checkpoint": {
+      "epoch": 41,
+      "validation_objective": 0.12957936948799922,
+      "config_fingerprint_match": true
+    },
+    "status": {
+      "event": "TRAIN",
+      "epoch": 215,
+      "cursor": 96384,
+      "train_count": 120355,
+      "steps": 404040,
+      "loss": [
+        0.007514906581491232,
+        0.0,
+        0.007514906581491232,
+        0.0
+      ],
+      "lr": 0.000125,
+      "grad_norm": 0.05431747809052467,
+      "time": 1790610086.2246137,
+      "seconds_this_epoch": 98.65851580351591
+    }
+  },
+  "pilot_workers": [],
+  "architecture_seal": {
+    "preflight_sha256": "dfbd34b440cd948a19ae52b773aa074afdd1f9b38d7578c57d412b6e2b250b8f",
+    "execution_review_sha256": "2ac6ac27ae0435a2c2a64f6f17fe21b27fa0930abe81b658dda98bd82a88ef45",
+    "source_file_count": 44
+  }
+}

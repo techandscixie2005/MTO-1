@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "time": 1790607123.242222,
+  "reviewer": "scientific_audit",
+  "scope": "Frozen A/B/C continuation code and persistent clean-GPU2 queue; no training launched by reviewer",
+  "preflight_sha256": "3742173e5f9cc8df11f5dd62da06ab6f2d37a12e97a4875e955273ab26e17532",
+  "checks": {
+    "all_35_source_hashes_match_preflight": true,
+    "python_ast_valid": true,
+    "raw_f_and_masks_indexing": true,
+    "pooled_float64_native_f_metric": true,
+    "full_native_f_energy_gradients": true,
+    "matched_oracle_f_normalization": true,
+    "same_source_weights_and_fresh_optimizers": true,
+    "epoch_zero_metric_gate_and_eligibility": true,
+    "same_order_seed_and_saved_order_hashes": true,
+    "commit_history_and_selection_alias_recovery": true,
+    "pinned_data_hashes_verified": true,
+    "optimizer_resume_next_step_max_difference": 0.0,
+    "independent_masked_nan_gradient_check": true,
+    "clean_gpu2_and_existing_supervisor_lock_gates": true,
+    "queue_output_directory_created_before_spawn": true,
+    "no_test_evaluation": true
+  },
+  "limitations": [
+    "Epoch-zero full GPU inference must pass runtime reproduction gate before any update.",
+    "Validation checkpoint selection and bootstrap are exploratory; historical test is already exposed.",
+    "GPU reductions may not be bitwise reproducible; identity/order and CPU resume checks passed."
+  ],
+  "train.py_sha256": "001b888dacd9b27f1f7ebd5eace2eb816e56ccc1ff417cdec789af27909496a3",
+  "preflight.py_sha256": "602b1c582846227441398ef8dba58e2d0acc47da055a50049d39e70f49c80906",
+  "pilot_queue.py_sha256": "5796866183c00ee7ae22b1f8e7c6c7e0d3ce0130c4bce8a6c16b508781cefdc3",
+  "summarize.py_sha256": "2cb9cc45a41d3ea7977fd59cfae9657acb0d8c416f9b846eed0e277af905afe3",
+  "pilot_objective.py_sha256": "7277cc096b5b387f382c2954f3be31f7ab779ccaf5022fd3161efa7e01c7b065",
+  "pilot_config.json_sha256": "c4afc1c1fc1b0bd31595c2a93c6dd4799bc2924c3587de3ea7538e773dee623b"
+}

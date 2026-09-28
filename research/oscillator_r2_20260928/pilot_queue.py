@@ -1,0 +1,143 @@
+#!/usr/bin/env python3
+"""Persistent, conservative GPU2 queue for the frozen A/B/C screen."""
+import fcntl, importlib.util, json, os, signal, subprocess, sys, time, traceback
+from pathlib import Path
+ROOT=Path(__file__).resolve().parent
+OLD=Path("/home/inspur/MTO-1/experiments/qm9s_chan64_20260928")
+PY=Path("/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/bin/python")
+sys.path.insert(0,str(ROOT))
+from train import atomic_json,sha,source_hashes
+spec=importlib.util.spec_from_file_location("old_supervisor",OLD/"supervisor.py")
+old=importlib.util.module_from_spec(spec);spec.loader.exec_module(old)
+STOP=False
+def stop(*_):
+    global STOP
+    STOP=True
+signal.signal(signal.SIGTERM,stop);signal.signal(signal.SIGINT,stop)
+def status(**kwargs):
+    atomic_json({"time":time.time(),"pid":os.getpid(),**kwargs},ROOT/"queue_status.json")
+def pid_alive(pid):
+    try:
+        b=(Path("/proc")/str(pid)/"cmdline").read_bytes()
+        return b and b"trainer.py" in b and b"G2" in b
+    except (FileNotFoundError,PermissionError):return False
+def official_eval_pending():
+    all_done=all((OLD/"runs"/n/"FIT_COMPLETE.json").exists() for n in ("G1","G2","G3","G4"))
+    return all_done and not ((OLD/"reports/ANALYSIS_COMPLETE.json").exists() or
+                              (OLD/"reports/ANALYSIS_FAILED.json").exists())
+def reviewed():
+    rp=ROOT/"CODE_REVIEW.json";pp=ROOT/"preflight_results.json"
+    if not rp.exists() or not pp.exists():return False,"review/preflight missing"
+    r=json.loads(rp.read_text());p=json.loads(pp.read_text())
+    if not r.get("passed") or not p.get("passed"):return False,"review/preflight failed"
+    for name in ("train.py","preflight.py","pilot_queue.py","summarize.py","pilot_objective.py","pilot_config.json"):
+        if r.get(name+"_sha256")!=sha(ROOT/name):return False,"review hash mismatch "+name
+    if p["source_hashes"]!=source_hashes():return False,"stale preflight source hash"
+    return True,"passed"
+def free_clean_gpu2():
+    h,busy,xml=old.health()
+    g=h[2]
+    return bool(g["clean"] and g["uuid"] not in busy and g["memory_MiB"]<=200),h,busy,xml
+def foreign_gpu2_process(child_pid):
+    lines=subprocess.check_output(["nvidia-smi","--query-compute-apps=gpu_uuid,pid",
+                                   "--format=csv,noheader"],text=True).splitlines()
+    h,_,_=old.health();uuid=h[2]["uuid"]
+    return [int(bits[1]) for line in lines if len(bits:=[b.strip() for b in line.split(",")])==2
+            and bits[0]==uuid and bits[1].isdigit() and int(bits[1])!=child_pid]
+def main():
+    lock=open(ROOT/"pilot_queue.lock","w");fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+    cfg=json.loads((ROOT/"pilot_config.json").read_text())
+    assert cfg["arms"]==["control","weighted","direct_f_matched"]
+    receipt=json.loads((OLD/"runs/G2/launch_receipt.json").read_text())
+    assert receipt["gpu"]==2
+    while not STOP:
+        if not (OLD/"runs/G2/FIT_COMPLETE.json").exists() or pid_alive(receipt["pid"]):
+            status(state="WAIT_G2_FINISH",g2_pid=receipt["pid"]);time.sleep(30);continue
+        okay,why=reviewed()
+        if not okay:
+            status(state="WAIT_REVIEW",reason=why);time.sleep(30);continue
+        break
+    if STOP:
+        status(state="STOPPED_BEFORE_LAUNCH");return
+    for arm in cfg["arms"]:
+        out=ROOT/"runs"/arm;out.mkdir(parents=True,exist_ok=True)
+        if (out/"FIT_COMPLETE.json").exists():
+            fit=json.loads((out/"FIT_COMPLETE.json").read_text())
+            assert fit["source_hashes"]==source_hashes()
+            continue
+        if (out/"FAILED.json").exists():
+            raise RuntimeError("Prior arm failed and needs review: "+arm)
+        while not STOP:
+            okay,why=reviewed()
+            if not okay:
+                status(state="WAIT_REVIEW",arm=arm,reason=why);time.sleep(30);continue
+            if official_eval_pending():
+                status(state="WAIT_OFFICIAL_EVALUATION",arm=arm);time.sleep(30);continue
+            free,h,busy,xml=free_clean_gpu2()
+            if not free:
+                status(state="WAIT_HEALTHY_IDLE_GPU2",arm=arm,
+                       gpu2=h[2],busy=h[2]["uuid"] in busy);time.sleep(30);continue
+            glock=open("/tmp/mto_pouter_gpu_2.lock","w")
+            try:fcntl.flock(glock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+            except BlockingIOError:
+                glock.close();status(state="WAIT_GPU2_LOCK",arm=arm);time.sleep(30);continue
+            free,h,busy,xml=free_clean_gpu2()
+            if not free:
+                glock.close();time.sleep(30);continue
+            break
+        if STOP:
+            status(state="STOPPED_BEFORE_ARM",arm=arm);return
+        logs=ROOT/"logs";logs.mkdir(exist_ok=True)
+        (logs/(arm+"_gpu_before.xml")).write_text(xml)
+        env=dict(os.environ,CUDA_VISIBLE_DEVICES="2",OMP_NUM_THREADS="2",MKL_NUM_THREADS="2",
+                 PYTHONUNBUFFERED="1",PYTHONWARNINGS="ignore",PYTHONDONTWRITEBYTECODE="1")
+        with open(logs/(arm+".log"),"a") as logfile:
+            child=subprocess.Popen([str(PY),"-u",str(ROOT/"train.py"),arm],cwd=ROOT,
+                env=env,stdout=logfile,stderr=subprocess.STDOUT,pass_fds=(glock.fileno(),),
+                start_new_session=True)
+            atomic_json({"arm":arm,"pid":child.pid,"gpu":2,"gpu_uuid":h[2]["uuid"],
+                         "started":time.time(),"health_clean":h[2]["clean"],
+                         "memory_before_MiB":h[2]["memory_MiB"],
+                         "review_sha256":sha(ROOT/"CODE_REVIEW.json"),
+                         "preflight_sha256":sha(ROOT/"preflight_results.json"),
+                         "source_hashes":source_hashes()},out/"queue_launch_receipt.json")
+            status(state="RUNNING",arm=arm,child_pid=child.pid,gpu=2)
+            while True:
+                try:code=child.wait(timeout=20);break
+                except subprocess.TimeoutExpired:pass
+                hnow,_,_=old.health()
+                if STOP or not hnow[2]["clean"] or foreign_gpu2_process(child.pid):
+                    child.send_signal(signal.SIGTERM)
+                    code=child.wait()
+                    status(state="STOPPED_FOR_HEALTH_OR_CONFLICT",arm=arm,
+                           child_pid=child.pid,exit_code=code)
+                    glock.close();return
+                if official_eval_pending():
+                    h1=hnow[1]
+                    if not h1["clean"] or h1["memory_MiB"]>200:
+                        child.send_signal(signal.SIGTERM)
+                        code=child.wait()
+                        status(state="STOPPED_FOR_OFFICIAL_EVALUATION",arm=arm,
+                               child_pid=child.pid,exit_code=code)
+                        glock.close();return
+                status(state="RUNNING",arm=arm,child_pid=child.pid,gpu=2,
+                       progress=json.loads((out/"status.json").read_text()) if (out/"status.json").exists() else None)
+        (logs/(arm+"_gpu_after.xml")).write_text(old.health()[2])
+        glock.close()
+        if code!=0 or not (out/"FIT_COMPLETE.json").exists():
+            status(state="ARM_NEEDS_REVIEW",arm=arm,child_pid=child.pid,exit_code=code)
+            return
+        status(state="ARM_COMPLETE",arm=arm,child_pid=child.pid)
+    status(state="SUMMARIZING")
+    with open(ROOT/"logs/summarize.log","a") as f:
+        code=subprocess.call([str(PY),str(ROOT/"summarize.py")],cwd=ROOT,
+                             env=dict(os.environ,PYTHONWARNINGS="ignore"),stdout=f,stderr=subprocess.STDOUT)
+    if code:status(state="ANALYSIS_FAILED",exit_code=code)
+    else:status(state="ALL_COMPLETE",summary=str(ROOT/"pilot_summary.json"))
+if __name__=="__main__":
+    try:main()
+    except BlockingIOError:print("Queue already active",flush=True)
+    except BaseException as exc:
+        status(state="QUEUE_FAILED",error=str(exc),traceback=traceback.format_exc())
+        raise
+

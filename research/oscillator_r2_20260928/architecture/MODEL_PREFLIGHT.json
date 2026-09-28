@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "time": 1790608644.6717675,
+  "scope": "CPU two training molecules only; no validation/test evaluation",
+  "arms": {
+    "original": {
+      "parameter_counts": {
+        "total": 1552092,
+        "trainable": 1552092,
+        "backbone": 1371840
+      },
+      "loss": 5.21474027633667,
+      "f_to_energy_head_gradient_abs_sum": 9.722090870141983,
+      "rotation_max_f_error": 2.0749524212715365e-07,
+      "permutation_max_f_error": 1.182035790636693e-07,
+      "min_f": 0.0010724747116272356,
+      "exact_zero_f_count": 0,
+      "shared_pretrained_weights_exact": true,
+      "min_A_eigenvalue": 3.4403055906295776e-05,
+      "f_tensor_consistency_max_abs": 0.0
+    },
+    "retained_residual": {
+      "parameter_counts": {
+        "total": 1556253,
+        "trainable": 1556253,
+        "backbone": 1371840
+      },
+      "loss": 5.21474027633667,
+      "f_to_energy_head_gradient_abs_sum": 9.722090870141983,
+      "rotation_max_f_error": 2.0749524212715365e-07,
+      "permutation_max_f_error": 1.182035790636693e-07,
+      "min_f": 0.0010724747116272356,
+      "exact_zero_f_count": 0,
+      "shared_pretrained_weights_exact": true,
+      "min_A_eigenvalue": 3.44105064868927e-05,
+      "f_tensor_consistency_max_abs": 4.8516007877807965e-09,
+      "exact_original_initialization": true
+    },
+    "direct_f": {
+      "parameter_counts": {
+        "total": 1551996,
+        "trainable": 1551996,
+        "backbone": 1371840
+      },
+      "loss": 8.626044273376465,
+      "f_to_energy_head_gradient_abs_sum": 0,
+      "rotation_max_f_error": 4.3958425521850586e-07,
+      "permutation_max_f_error": 1.601874828338623e-07,
+      "min_f": 2.1773918223999544e-09,
+      "exact_zero_f_count": 0,
+      "shared_pretrained_weights_exact": true
+    },
+    "independent_trace": {
+      "parameter_counts": {
+        "total": 1556253,
+        "trainable": 1551996,
+        "backbone": 1371840
+      },
+      "loss": 9.431741714477539,
+      "f_to_energy_head_gradient_abs_sum": 5.014119990170002,
+      "rotation_max_f_error": 1.6779016302759242e-07,
+      "permutation_max_f_error": 6.404618703437226e-08,
+      "min_f": 6.199456058667599e-09,
+      "exact_zero_f_count": 0,
+      "shared_pretrained_weights_exact": true,
+      "min_A_eigenvalue": 1.0943176052824466e-11,
+      "f_tensor_consistency_max_abs": 9.703201603317169e-09
+    }
+  },
+  "residual_both_signs_weak_gradient_checked": true,
+  "source_hashes": {
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/model.py": "039bffaace2a5109c03400102da08b82a4f9706f684a680924a3fafece1babdc",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/objective.py": "a5c49bcb831bb881cc898d7d5fc111fedfa31f5bbeab3262fb7b1d93292e9e48",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/config.json": "3f351102ea31e5bc58cb28087bbdca3ca102c84e878a22ea1190de92be933f52",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/prepare.py": "fd1f172b243430c2f715cf08b7eea729350583e8d8a0d13413ff5299d684f702",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/PREPARATION.json": "13ab2c969913e79a0e444feb665135f7084e40af1f04a94fa6ff225a258bd682"
+  }
+}

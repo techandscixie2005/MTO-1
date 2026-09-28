@@ -1,0 +1,318 @@
+{
+  "alignment": {
+    "exact_ids_indices_raw_truth_and_mask_match": true,
+    "fold_molecule_counts": [
+      1286,
+      1341,
+      1336,
+      1404,
+      1319
+    ],
+    "molecule_id_shape": [
+      6686
+    ],
+    "molecules": 6686,
+    "source_row_index_shape": [
+      6686
+    ],
+    "state_slot_order": "matrix columns 0 through 9; raw truth/mask arrays exactly matched",
+    "states_per_molecule": 10,
+    "unique_molecule_ids": 6686,
+    "valid_values": 66860
+  },
+  "fixed_uniform_pair_and_all_means_validation_metrics": {
+    "all_three_equal": {
+      "count": 66860,
+      "mae": 0.017345038638210148,
+      "r2": 0.44942146327441623,
+      "rmse": 0.03611707668926027,
+      "sse": 87.2150742627189
+    },
+    "mto_eta0+mto_eta01_equal": {
+      "count": 66860,
+      "mae": 0.017352602360180398,
+      "r2": 0.4305426372438065,
+      "rmse": 0.036731068237374556,
+      "sse": 90.20559805619041
+    },
+    "mto_eta0+mto_eta1_equal": {
+      "count": 66860,
+      "mae": 0.017562174343181997,
+      "r2": 0.44190587836058526,
+      "rmse": 0.03636274637311393,
+      "sse": 88.40558978896114
+    },
+    "mto_eta01+mto_eta1_equal": {
+      "count": 66860,
+      "mae": 0.017546657947086697,
+      "r2": 0.43119665089048975,
+      "rmse": 0.03670996962417833,
+      "sse": 90.10199821536925
+    }
+  },
+  "fold_fitted_weights": [
+    {
+      "fold": 0,
+      "heldout_molecules": 1286,
+      "train_molecules": 5400,
+      "weights": {
+        "mto_eta0": 0.3836327746508205,
+        "mto_eta01": 0.19166875977497677,
+        "mto_eta1": 0.42469846557420277
+      }
+    },
+    {
+      "fold": 1,
+      "heldout_molecules": 1341,
+      "train_molecules": 5345,
+      "weights": {
+        "mto_eta0": 0.3926852862496472,
+        "mto_eta01": 0.25012222423639446,
+        "mto_eta1": 0.3571924895139584
+      }
+    },
+    {
+      "fold": 2,
+      "heldout_molecules": 1336,
+      "train_molecules": 5350,
+      "weights": {
+        "mto_eta0": 0.37580333131371746,
+        "mto_eta01": 0.38184576164340467,
+        "mto_eta1": 0.24235090704287784
+      }
+    },
+    {
+      "fold": 3,
+      "heldout_molecules": 1404,
+      "train_molecules": 5282,
+      "weights": {
+        "mto_eta0": 0.4056892312892275,
+        "mto_eta01": 0.24344815061997346,
+        "mto_eta1": 0.3508626180907991
+      }
+    },
+    {
+      "fold": 4,
+      "heldout_molecules": 1319,
+      "train_molecules": 5367,
+      "weights": {
+        "mto_eta0": 0.42839765022463194,
+        "mto_eta01": 0.19274989517618338,
+        "mto_eta1": 0.37885245459918454
+      }
+    }
+  ],
+  "individual_validation_metrics": {
+    "mto_eta0": {
+      "count": 66860,
+      "mae": 0.017785608345899415,
+      "r2": 0.4052941183410974,
+      "rmse": 0.037536525422479664,
+      "sse": 94.20512092938401
+    },
+    "mto_eta01": {
+      "count": 66860,
+      "mae": 0.017723784799850664,
+      "r2": 0.3771266681094927,
+      "rmse": 0.03841517547031459,
+      "sse": 98.66702073091089
+    },
+    "mto_eta1": {
+      "count": 66860,
+      "mae": 0.01818819651153714,
+      "r2": 0.38736671005918843,
+      "rmse": 0.03809809398697,
+      "sse": 97.04493421731837
+    }
+  },
+  "limitations": [
+    "Weights are fit and scored on held-out folds of saved validation predictions, but source checkpoint selection already used validation.",
+    "No test files or test predictions were opened.",
+    "This is conditional exploratory ensemble evidence, not a generalization claim."
+  ],
+  "mean_fold_weights": {
+    "mto_eta0": 0.3972416547456089,
+    "mto_eta01": 0.25196695829018656,
+    "mto_eta1": 0.35079138696420453
+  },
+  "per_state": [
+    {
+      "bright_count": 604,
+      "bright_sse_oof_simplex": 1.0378346220764831,
+      "count": 6686,
+      "sse": {
+        "mto_eta0": 2.179469251147894,
+        "mto_eta01": 2.3409677490420377,
+        "mto_eta1": 2.4209599953377343
+      },
+      "sse_all_three_equal": 1.863999340029872,
+      "sse_oof_simplex": 1.8802047602525724,
+      "state_slot": 0
+    },
+    {
+      "bright_count": 952,
+      "bright_sse_oof_simplex": 2.4893154984071244,
+      "count": 6686,
+      "sse": {
+        "mto_eta0": 4.8192128155435325,
+        "mto_eta01": 5.542247979077564,
+        "mto_eta1": 5.90114197297583
+      },
+      "sse_all_three_equal": 4.405392237083245,
+      "sse_oof_simplex": 4.4320914786847005,
+      "state_slot": 1
+    },
+    {
+      "bright_count": 822,
+      "bright_sse_oof_simplex": 3.345109960777865,
+      "count": 6686,
+      "sse": {
+        "mto_eta0": 6.475522164372648,
+        "mto_eta01": 6.4616799784016985,
+        "mto_eta1": 6.842734981014534
+      },
+      "sse_all_three_equal": 5.671685136428397,
+      "sse_oof_simplex": 5.692930323018658,
+      "state_slot": 2
+    },
+    {
+      "bright_count": 714,
+      "bright_sse_oof_simplex": 4.457257043861375,
+      "count": 6686,
+      "sse": {
+        "mto_eta0": 8.50334460876228,
+        "mto_eta01": 7.793713804193527,
+        "mto_eta1": 8.05708098426255
+      },
+      "sse_all_three_equal": 7.19646867503925,
+      "sse_oof_simplex": 7.250084265981666,
+      "state_slot": 3
+    },
+    {
+      "bright_count": 685,
+      "bright_sse_oof_simplex": 6.3758719000301305,
+      "count": 6686,
+      "sse": {
+        "mto_eta0": 9.985052358263783,
+        "mto_eta01": 10.378329289181533,
+        "mto_eta1": 9.32703592389962
+      },
+      "sse_all_three_equal": 9.03000252478779,
+      "sse_oof_simplex": 9.100823524701473,
+      "state_slot": 4
+    },
+    {
+      "bright_count": 616,
+      "bright_sse_oof_simplex": 6.36387066631591,
+      "count": 6686,
+      "sse": {
+        "mto_eta0": 10.058172481125133,
+        "mto_eta01": 10.126295314784459,
+        "mto_eta1": 10.266457990568794
+      },
+      "sse_all_three_equal": 9.377811980890318,
+      "sse_oof_simplex": 9.375836758331028,
+      "state_slot": 5
+    },
+    {
+      "bright_count": 593,
+      "bright_sse_oof_simplex": 6.670147795756593,
+      "count": 6686,
+      "sse": {
+        "mto_eta0": 13.891143413185304,
+        "mto_eta01": 19.04985569447649,
+        "mto_eta1": 12.566065182603129
+      },
+      "sse_all_three_equal": 13.876331885842921,
+      "sse_oof_simplex": 14.250993821245467,
+      "state_slot": 6
+    },
+    {
+      "bright_count": 571,
+      "bright_sse_oof_simplex": 10.87697102380164,
+      "count": 6686,
+      "sse": {
+        "mto_eta0": 15.56169006401661,
+        "mto_eta01": 14.955012196087576,
+        "mto_eta1": 16.20092738798059
+      },
+      "sse_all_three_equal": 14.345967083051129,
+      "sse_oof_simplex": 14.478595659394887,
+      "state_slot": 7
+    },
+    {
+      "bright_count": 553,
+      "bright_sse_oof_simplex": 8.239605279696951,
+      "count": 6686,
+      "sse": {
+        "mto_eta0": 12.070259586746662,
+        "mto_eta01": 11.65513198782581,
+        "mto_eta1": 15.67220057460354
+      },
+      "sse_all_three_equal": 11.68202148019904,
+      "sse_oof_simplex": 11.983386838404929,
+      "state_slot": 8
+    },
+    {
+      "bright_count": 580,
+      "bright_sse_oof_simplex": 7.800688620901388,
+      "count": 6686,
+      "sse": {
+        "mto_eta0": 10.66125418622018,
+        "mto_eta01": 10.363786737840176,
+        "mto_eta1": 9.790329224072044
+      },
+      "sse_all_three_equal": 9.765393919366932,
+      "sse_oof_simplex": 9.78536136692255,
+      "state_slot": 9
+    }
+  ],
+  "protocol": "PROTOCOL.json",
+  "residual_pearson_correlation": {
+    "mto_eta0": {
+      "mto_eta0": 0.9999999999999998,
+      "mto_eta01": 0.8710365345327049,
+      "mto_eta1": 0.8490919424154123
+    },
+    "mto_eta01": {
+      "mto_eta0": 0.871036534532705,
+      "mto_eta01": 1.0,
+      "mto_eta1": 0.8415202094633354
+    },
+    "mto_eta1": {
+      "mto_eta0": 0.8490919424154123,
+      "mto_eta01": 0.8415202094633353,
+      "mto_eta1": 0.9999999999999998
+    }
+  },
+  "simplex_ensemble_oof_bright_metrics": {
+    "count": 6690,
+    "mae": 0.065399265987431,
+    "r2": 0.10688405064880058,
+    "rmse": 0.09283499708273861,
+    "sse": 57.65667241162546,
+    "threshold_q90": 0.0546
+  },
+  "simplex_ensemble_oof_metrics": {
+    "count": 66860,
+    "mae": 0.017376232075870666,
+    "r2": 0.44301240670926534,
+    "rmse": 0.03632668043725516,
+    "sse": 88.23030879693795
+  },
+  "source_files": {
+    "mto_eta0": {
+      "path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta0/val_predictions.npz",
+      "sha256": "25acae64bb4e3e541048a8705045f7f639d1113d537dbbef71672752e8065890"
+    },
+    "mto_eta01": {
+      "path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta01/val_predictions.npz",
+      "sha256": "9edffb5cd617469c78c8d83da7901ac90add69d89f27de7e8196a8736ae85500"
+    },
+    "mto_eta1": {
+      "path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta1/val_predictions.npz",
+      "sha256": "a3808b9ad425abf4f6fcfed840d0ed8d1ff6fcf1557037a4e01932c734dc68bb"
+    }
+  },
+  "split": "validation only"
+}

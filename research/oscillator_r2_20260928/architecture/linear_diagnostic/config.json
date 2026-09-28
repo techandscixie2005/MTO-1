@@ -1,0 +1,48 @@
+{
+  "status": "prepared_not_launched",
+  "arms": [
+    "original",
+    "direct_f",
+    "independent_trace"
+  ],
+  "source_campaign": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926",
+  "source_checkpoint_sha256": "9f1963267cd0e5e35212baca6b4080cf986e73aed6e1662c4cb720afb9a4c136",
+  "seed": 11,
+  "order_seed": 11,
+  "epochs": 20,
+  "lr": 0.0001,
+  "optimizer": "Adam_AMSGrad",
+  "weight_decay": 0.0,
+  "batch_size": 64,
+  "grad_clip": 5.0,
+  "num_threads": 2,
+  "dtype": "float32",
+  "amp": false,
+  "tf32": false,
+  "allow_test_evaluation": false,
+  "primary_metric": "pooled_raw_native_f_SSE",
+  "epoch0_eligible": true,
+  "shape_loss_weight": 0.0,
+  "warmup": {
+    "subset_molecules": 8192,
+    "subset_seed": 20260928,
+    "steps": 1000,
+    "state_batch_size": 4096,
+    "lr": 0.01,
+    "optimizer": "Adam_AMSGrad",
+    "seed": 20260928,
+    "targets": "frozen_eta0_teacher_native_f_for_both_scalar_heads"
+  },
+  "promotion": {
+    "min_delta_validation_R2": 0.01,
+    "min_bootstrap_positive_fraction": 0.8,
+    "tentative_delta_R2": [
+      0.005,
+      0.01
+    ],
+    "energy_MAE_ratio_review_flag": 1.1,
+    "energy_regression_is_hard_rejection": false
+  },
+  "bootstrap_samples": 2000,
+  "bootstrap_seed": 20260928
+}

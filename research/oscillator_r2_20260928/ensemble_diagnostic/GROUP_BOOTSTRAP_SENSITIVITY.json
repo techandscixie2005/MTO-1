@@ -1,0 +1,33 @@
+{
+  "classification": "Sensitivity of the already frozen exploratory test; no new model or ensemble selection.",
+  "source_test_report_sha256": "c85de6aae489ea43cf8b0559b29813d86e670878bcc6fe1c67cc4fac05b9e6a6",
+  "identity_audit_sha256": "9d384425a90dd88fbc68f8b609a303872910bb21c69e0d0a19bcccaee49cb3c4",
+  "grouping": "Exact conservative RDKit XYZ connectivity key used in original split creation; identity_audit_v2.json second tuple field.",
+  "molecules": 6686,
+  "connectivity_groups": 6671,
+  "groups_with_multiple_test_molecules": 14,
+  "largest_group_molecules": 3,
+  "paired_bootstrap": {
+    "resampling_unit": "connectivity group, retaining all molecules and ten states",
+    "replicates": 2000,
+    "seed": 20260928,
+    "delta_r2_2p5_50_97p5": [
+      0.003585571949548084,
+      0.0300315407549026,
+      0.05669062211661423
+    ],
+    "positive_fraction": 0.9875
+  },
+  "original_molecule_bootstrap": {
+    "paired_delta_r2_2p5_50_97p5": [
+      0.004704539268314157,
+      0.029959034576317545,
+      0.05596546443286754
+    ],
+    "positive_fraction": 0.99,
+    "replicates": 2000,
+    "resampling_unit": "molecule with ten states",
+    "seed": 20260928
+  },
+  "conclusion_sign_unchanged": true
+}

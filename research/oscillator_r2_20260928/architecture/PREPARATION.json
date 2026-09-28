@@ -1,0 +1,79 @@
+{
+  "status": "prepared_no_joint_training",
+  "source_checkpoint_sha256": "9f1963267cd0e5e35212baca6b4080cf986e73aed6e1662c4cb720afb9a4c136",
+  "config_sha256": "3f351102ea31e5bc58cb28087bbdca3ca102c84e878a22ea1190de92be933f52",
+  "stats_sha256": "a539509addf32d7fe1496a8bba708a7daeef55a7e5ee975f9e01c69746de2253",
+  "subset_sha256": "5113c7a116a9a2acaaf54536e6c1f16d6fb2bf7e30b4a1e2f81996839e0261ff",
+  "teacher_feature_seconds": 0.0,
+  "source_device": "cpu",
+  "feature_shape": [
+    81920,
+    128
+  ],
+  "arms": {
+    "original": {
+      "head_warmup_steps": 0,
+      "teacher_native_f_normalized_MSE_initial": 0.0,
+      "teacher_native_f_normalized_MSE_final": 0.0,
+      "note": "Source is its own teacher; all arms reuse same training subset/exposure, no extra labels; do not waste compute optimizing zero self-distillation loss",
+      "parameter_counts": {
+        "total": 1552092,
+        "trainable": 1552092,
+        "backbone": 1371840
+      },
+      "head_warmup_seconds": 5.7220458984375e-06,
+      "initial_checkpoint_sha256": "00c99dc819ac76f0869500cb89a11cbecb2532e31112b487f1b9e156bfdcb500"
+    },
+    "direct_f": {
+      "head_warmup_steps": 1000,
+      "teacher_native_f_normalized_MSE_initial": 0.7173780798912048,
+      "teacher_native_f_normalized_MSE_final": 0.06344063580036163,
+      "head_state_order_sha256": "35d0bc087f45283f1601c825b1c7361f31107787d5ea2bd05e7f766231e6b79d",
+      "note": "Only new scalar head updated; shared pretrained representation unchanged",
+      "parameter_counts": {
+        "total": 1551996,
+        "trainable": 1551996,
+        "backbone": 1371840
+      },
+      "head_warmup_seconds": 3.100206136703491,
+      "initial_checkpoint_sha256": "5983c13cf3a78358481589f60aabb5f6b5c2e3fb54b1d9023dbc6a180b950897"
+    },
+    "independent_trace": {
+      "head_warmup_steps": 1000,
+      "teacher_native_f_normalized_MSE_initial": 0.7353532314300537,
+      "teacher_native_f_normalized_MSE_final": 0.06445638835430145,
+      "head_state_order_sha256": "35d0bc087f45283f1601c825b1c7361f31107787d5ea2bd05e7f766231e6b79d",
+      "note": "Only new scalar head updated; shared pretrained representation unchanged",
+      "parameter_counts": {
+        "total": 1556253,
+        "trainable": 1551996,
+        "backbone": 1371840
+      },
+      "head_warmup_seconds": 3.136753797531128,
+      "initial_checkpoint_sha256": "aed7670b17dbd3bd42df3763e0ddae8e6f14c98afb03f23754a7110aa3ca12a3"
+    },
+    "retained_residual": {
+      "head_warmup_steps": 0,
+      "teacher_native_f_normalized_MSE_initial": 0.0,
+      "teacher_native_f_normalized_MSE_final": 0.0,
+      "note": "Retains complete teacher intensity; zero final correction layer, exact f initialization; no distillation",
+      "parameter_counts": {
+        "total": 1556253,
+        "trainable": 1556253,
+        "backbone": 1371840
+      },
+      "head_warmup_seconds": 0.0,
+      "initial_checkpoint_sha256": "ae29b2a7c657fec8566e3e230b55a70c385377b36dd37e08c0dcca873f3c7a8d"
+    }
+  },
+  "source_hashes": {
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/prepare.py": "fd1f172b243430c2f715cf08b7eea729350583e8d8a0d13413ff5299d684f702",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/model.py": "039bffaace2a5109c03400102da08b82a4f9706f684a680924a3fafece1babdc",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/objective.py": "a5c49bcb831bb881cc898d7d5fc111fedfa31f5bbeab3262fb7b1d93292e9e48",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/dataset.npz": "be8fadca203429575d70642b617730592693be40858dca7189c098a671596330",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/raw_labels.npz": "621dc8723fb6dc96681851a26e4f52fcb7747a4778e57a249a75d22f3af4c632"
+  },
+  "residual_addition_time": 1790608511.2707605,
+  "residual_addition_note": "New arm appended without altering already fitted scalar-head weights; source-code changes only add residual branch.",
+  "module_import_fix": "Restore experiment ROOT after importing source model modules; no parameter/numeric changes"
+}

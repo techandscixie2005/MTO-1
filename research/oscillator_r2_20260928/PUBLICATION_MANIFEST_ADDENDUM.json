@@ -1,0 +1,91 @@
+{
+  "purpose": "Addendum for coordinator handoff and reviewed G2 retirement amendment; base PUBLICATION_MANIFEST.sha256.json remains unchanged",
+  "source_archive": "D: archives hash-verified from USTC-A800",
+  "previous_coordination_snapshot": "coordination/revision_before_G2_admin_stop/MANIFEST.sha256.json",
+  "latest_coordination_snapshot": "coordination/revision_after_G2_admin_stop/MANIFEST.sha256.json",
+  "checkpoint_hash_metadata_only": {
+    "last": "f437e1ee9a0f569cc6b788e5df12ad3278d28fa867853e5067fca7f71dce7cfa",
+    "best": "1894f778b2d98a99cc390237c0516d98279375f140ad4b5ea72ac8d08012bd1a"
+  },
+  "exclusions": "No checkpoint files, optimizer states, raw arrays, caches or runtime tensors. Dynamic queue_status omitted because it changed during transfer.",
+  "files": [
+    {
+      "path": "round02_continuation_amendment/g2_retire.py",
+      "source_archive": "/home/inspur/MTO-1/research/oscillator_r2_20260928/g2_retire.py",
+      "bytes": 12401,
+      "sha256": "07703406550e383e0c4d4bb90c4a50c7f6a41cd7e55014f3f05b078a2f6ca76e"
+    },
+    {
+      "path": "round02_continuation_amendment/pilot_queue_admin.py",
+      "source_archive": "/home/inspur/MTO-1/research/oscillator_r2_20260928/pilot_queue_admin.py",
+      "bytes": 10100,
+      "sha256": "f0a13e9e55a79c4a35b42d390fd3f51203db5a3624635b6d8fe30f09dcd2a07b"
+    },
+    {
+      "path": "round02_continuation_amendment/G2_ADMIN_STOPPED.json",
+      "source_archive": "/home/inspur/MTO-1/research/oscillator_r2_20260928/G2_ADMIN_STOPPED.json",
+      "bytes": 3866,
+      "sha256": "ce5ac336fdc05d1121b5b01a4fdc1bde017080ddb7c10d3dcfc4d811d66014a2"
+    },
+    {
+      "path": "round02_continuation_amendment/G2_RETIREMENT.md",
+      "source_archive": "/home/inspur/MTO-1/research/oscillator_r2_20260928/G2_RETIREMENT.md",
+      "bytes": 1612,
+      "sha256": "cc19739adc0bb47995526b625dab5a3ce2dc4a7f0f611b542517ee24a7bb116c"
+    },
+    {
+      "path": "round02_continuation_amendment/G2_RETIREMENT_AMENDMENT_REVIEW.json",
+      "source_archive": "/home/inspur/MTO-1/research/oscillator_r2_20260928/G2_RETIREMENT_AMENDMENT_REVIEW.json",
+      "bytes": 2300,
+      "sha256": "e6b398df958f62e87f40298dc2c7c21745c42a7c567d58be0e148967ae642f1a"
+    },
+    {
+      "path": "round02_continuation_amendment/G2_RETIREMENT_AMENDMENT_REVIEW.md",
+      "source_archive": "/home/inspur/MTO-1/research/oscillator_r2_20260928/G2_RETIREMENT_AMENDMENT_REVIEW.md",
+      "bytes": 1273,
+      "sha256": "03d7eb2391803a11f90fa6f77ed4d686b9a35eadbbe8c20f35f4fbb8b9435ef6"
+    },
+    {
+      "path": "round02_continuation_amendment/G2_RETIREMENT_PREFLIGHT.json",
+      "source_archive": "/home/inspur/MTO-1/research/oscillator_r2_20260928/G2_RETIREMENT_PREFLIGHT.json",
+      "bytes": 2683,
+      "sha256": "b2143cae2ba5a54764de2ef139dc24061c90f1696647e0f4be67646d28c2d650"
+    },
+    {
+      "path": "round02_continuation_amendment/G2_RETIREMENT_SCIENTIFIC_REVIEW.md",
+      "source_archive": "/home/inspur/MTO-1/research/oscillator_r2_20260928/G2_RETIREMENT_SCIENTIFIC_REVIEW.md",
+      "bytes": 2702,
+      "sha256": "52ea3cb07ab939735e4e406a7f944da8aee7989d91b3ca301316ddb91753f187"
+    },
+    {
+      "path": "round02_continuation_amendment/logs\\pilot_queue.log",
+      "source_archive": "/home/inspur/MTO-1/research/oscillator_r2_20260928/logs/pilot_queue.log",
+      "bytes": 1081,
+      "sha256": "d7e26b7ccda976009facb339dfe9acd87f6a7d1beeb6ded8fc833ab36124f2a8"
+    },
+    {
+      "path": "round02_continuation_amendment/runs\\control\\queue_launch_receipt.json",
+      "source_archive": "/home/inspur/MTO-1/research/oscillator_r2_20260928/runs/control/queue_launch_receipt.json",
+      "bytes": 6489,
+      "sha256": "4ea0ad777f13bad122f0ebba522f7f8db3e69a1daf1ab3876b4481d26097e76e"
+    },
+    {
+      "path": "round02_continuation_amendment/G2_ORIGINAL_RUN_ADMIN_STOPPED.json",
+      "source_archive": "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/runs/G2/ADMIN_STOPPED.json",
+      "bytes": 3866,
+      "sha256": "ce5ac336fdc05d1121b5b01a4fdc1bde017080ddb7c10d3dcfc4d811d66014a2"
+    },
+    {
+      "path": "RESEARCH_STATUS.md",
+      "source_archive": "latest verified USTC-A800 research coordinator revision; D archive coordination/revision_after_G2_admin_stop/RESEARCH_STATUS.md",
+      "bytes": 8848,
+      "sha256": "a04465ce4f2db0614455059a26eb52870068066a34479a4405ddc8649be29a10"
+    },
+    {
+      "path": "coordinator_state.json",
+      "source_archive": "latest verified USTC-A800 research coordinator revision; D archive coordination/revision_after_G2_admin_stop/coordinator_state.json",
+      "bytes": 7521,
+      "sha256": "6a5448c5c73ecf10838f8938094ea1de06ba1cdaf936ac2536f6f98fdef44911"
+    }
+  ]
+}

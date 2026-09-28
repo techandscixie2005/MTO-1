@@ -1,0 +1,79 @@
+{
+  "bright_thresholds_raw_f_from_validation": {
+    "q90": 0.0546,
+    "q99": 0.2377
+  },
+  "classification": "Exploratory: historical test split was evaluated in prior campaigns; this script has not opened test data during freeze.",
+  "ensemble_diagnostic_code_sha256": "c45c42b24081379cd46e2fee65e9f3c12f95b8f1b49e637fb4c8cff265b35701",
+  "ensemble_inference_cost": "Three separately trained model predictions rather than one model.",
+  "evaluation_code_sha256": "70844afc31b56143e8d20a0d5296475747e58341ff6d2e7b3cd58ffc0500fd86",
+  "hypothesis": "Average three existing native oscillator-strength predictions to reduce complementary errors.",
+  "prediction_rule": "Arithmetic mean of saved native f arrays. Do not average E/A and derive f.",
+  "selected": "all_three_equal",
+  "selection_evidence": "Best fixed candidate on validation pooled raw-f R2 among recorded single and equal-weight ensemble candidates; no fitted weights.",
+  "source_checkpoint_provenance": {
+    "mto_eta0": {
+      "best_epoch": 33,
+      "path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta0/best.pt",
+      "selection": "own validation L_eta",
+      "sha256": "9f1963267cd0e5e35212baca6b4080cf986e73aed6e1662c4cb720afb9a4c136"
+    },
+    "mto_eta01": {
+      "best_epoch": 33,
+      "path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta01/best.pt",
+      "selection": "own validation L_eta",
+      "sha256": "1e787adfd1deddbd4f366e68cdd70a408ab3169167c07018abfe6fa363f4be2d"
+    },
+    "mto_eta1": {
+      "best_epoch": 25,
+      "path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta1/best.pt",
+      "selection": "own validation L_eta",
+      "sha256": "90c14c65359c1fa5ea3f1a495c83b1ed72d67707f213ce450dbf283ffc5ac9d0"
+    }
+  },
+  "source_selection_report_sha256": "30aeacb22692079437f563d4b39d6f81f5d4e0f9b0d7de723cdd45197fa7c08e",
+  "source_validation_paths": {
+    "mto_eta0": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta0/val_predictions.npz",
+    "mto_eta01": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta01/val_predictions.npz",
+    "mto_eta1": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta1/val_predictions.npz"
+  },
+  "source_validation_sha256": {
+    "mto_eta0": "25acae64bb4e3e541048a8705045f7f639d1113d537dbbef71672752e8065890",
+    "mto_eta01": "9edffb5cd617469c78c8d83da7901ac90add69d89f27de7e8196a8736ae85500",
+    "mto_eta1": "a3808b9ad425abf4f6fcfed840d0ed8d1ff6fcf1557037a4e01932c734dc68bb"
+  },
+  "status": "FROZEN_BEFORE_THIS_TEST_STAGE",
+  "test_evaluation_rule": "One run after freeze; exact alignment, validation/test disjointness; pooled raw f R2/MAE/RMSE; paired molecule bootstrap 2000 seed 20260928; per-state and validation-defined q90/q99 bright SSE.",
+  "test_metrics_opened_during_freeze": false,
+  "test_paths_fixed": {
+    "mto_eta0": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta0/test_predictions.npz",
+    "mto_eta01": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta01/test_predictions.npz",
+    "mto_eta1": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta1/test_predictions.npz"
+  },
+  "time": 1790607529.7864048,
+  "validation_baseline": {
+    "count": 66860,
+    "mae": 0.017785608345899415,
+    "r2": 0.4052941183410983,
+    "rmse": 0.037536525422479664,
+    "sse": 94.20512092938401,
+    "sst": 158.4062371581119
+  },
+  "validation_delta_r2": 0.044127344933318824,
+  "validation_diagnostic_sha256": "5d7d4d145528845764d2618296b69580b2267af0df49de9657ace60aaa253e28",
+  "validation_equal_three": {
+    "count": 66860,
+    "mae": 0.017345038638210148,
+    "r2": 0.4494214632744171,
+    "rmse": 0.03611707668926027,
+    "sse": 87.2150742627189,
+    "sst": 158.4062371581119
+  },
+  "validation_protocol_sha256": "8fd4b5d8ed2bc43de7076d5a7c9a88640f400e8fcad6f8d0a5e2d4dfd2b5894f",
+  "validation_relative_sse_reduction": 0.07420028335725863,
+  "weights": {
+    "mto_eta0": 0.3333333333333333,
+    "mto_eta01": 0.3333333333333333,
+    "mto_eta1": 0.3333333333333333
+  }
+}

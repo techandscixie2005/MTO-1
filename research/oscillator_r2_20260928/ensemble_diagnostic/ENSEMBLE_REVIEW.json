@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "time": 1790607476.6831725,
+  "reviewer": "scientific_audit",
+  "files_reviewed": {
+    "PROTOCOL.json": "8fd4b5d8ed2bc43de7076d5a7c9a88640f400e8fcad6f8d0a5e2d4dfd2b5894f",
+    "diagnose.py": "c45c42b24081379cd46e2fee65e9f3c12f95b8f1b49e637fb4c8cff265b35701",
+    "ensemble_metrics.json": "5d7d4d145528845764d2618296b69580b2267af0df49de9657ace60aaa253e28"
+  },
+  "source_validation_files": {
+    "mto_eta0": {
+      "path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta0/val_predictions.npz",
+      "sha256": "25acae64bb4e3e541048a8705045f7f639d1113d537dbbef71672752e8065890"
+    },
+    "mto_eta01": {
+      "path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta01/val_predictions.npz",
+      "sha256": "9edffb5cd617469c78c8d83da7901ac90add69d89f27de7e8196a8736ae85500"
+    },
+    "mto_eta1": {
+      "path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta1/val_predictions.npz",
+      "sha256": "a3808b9ad425abf4f6fcfed840d0ed8d1ff6fcf1557037a4e01932c734dc68bb"
+    }
+  },
+  "independent_reproduction": {
+    "eta0_raw_native_f_pooled_R2": 0.4052941183410983,
+    "equal_three_raw_native_f_pooled_R2": 0.4494214632744171,
+    "delta_R2": 0.04412734493331882,
+    "relative_SSE_reduction": 0.07420028335725859
+  },
+  "checks": {
+    "exact_ids_indices_truth_masks_alignment": true,
+    "source_hashes_verified": true,
+    "float64_raw_f_pooled_SSE_SST": true,
+    "molecule_grouped_fivefold_simplex_OOF": true,
+    "validation_only_access_by_diagnostic_and_reviewer": true
+  },
+  "chronology": "Protocol file mtime precedes script and output mtimes; consistent with documented candidate freeze but not immutable chronological proof.",
+  "frozen_test_evaluation_constraints": {
+    "models": [
+      "mto_eta0",
+      "mto_eta01",
+      "mto_eta1"
+    ],
+    "weights": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "prediction": "Arithmetic mean of native f predictions, not oscillator strength recomputed from averaged E and A",
+    "comparator": "mto_eta0",
+    "freeze_before_test_access": true,
+    "test_classification": "historical reused test, exploratory",
+    "no_test_tuning": true
+  },
+  "limitations": [
+    "Single-model benchmark remains eta0; ensemble result must be identified separately.",
+    "Base checkpoints were selected on validation; OOF blend weighting does not undo that selection.",
+    "Equal-three was selected among reported blends using validation, so reported validation gain has selection optimism.",
+    "Residual diversity supports error cancellation but does not identify its causal source as variance."
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "project": "MTO-1",
+  "updated_at": "2026-09-28",
+  "primary_objective": "Improve pooled raw native oscillator-strength R2; maximize validation-selected R2 while preserving honest historical-test limits.",
+  "coordinator": "root remains research orchestrator and decision owner",
+  "monitor": {
+    "automation_id": "qm9s-e-a",
+    "status": "ACTIVE",
+    "interval_hours": 4,
+    "next_due_at": "2026-09-29T02:29:29+08:00",
+    "scopes": [
+      "chan64 campaign including intentional G2 administrative-stop provenance and partial-campaign analysis",
+      "replacement GPU2 matched native-f loss pilot queue (PID 785736)",
+      "four-arm architecture queue PID 778242"
+    ]
+  },
+  "benchmarks": {
+    "single_eta0_validation_native_f_r2": 0.4052941183,
+    "single_eta0_historical_test_native_f_r2": 0.45581511,
+    "equal_three_eta_validation_native_f_r2": 0.4494214633,
+    "equal_three_eta_historical_test_native_f_r2": 0.48510176,
+    "ensemble_historical_test_delta_r2": 0.02928666,
+    "ensemble_connectivity_group_bootstrap_95ci_delta_r2": [
+      0.003586,
+      0.056691
+    ],
+    "ensemble_test_sse_reduction_fraction": 0.0538,
+    "test_status": "Historical split reused and previously exposed; all test metrics are exploratory, not a new generalization estimate."
+  },
+  "rounds": [
+    {
+      "id": "round01_calibration",
+      "status": "complete_uncertain",
+      "paths": [
+        "calibration/REPORT.md",
+        "calibration/validation_crossfit.json",
+        "calibration/frozen_choice.json",
+        "calibration/exploratory_test.json"
+      ],
+      "decision": "Do not continue test-fitted calibration; uncertainty includes no gain and bright-tail SSE worsened."
+    },
+    {
+      "id": "round02_loss_pilot",
+      "status": "G2_intentionally_admin_stopped_replacement_pilot_active",
+      "last_verified_queue_snapshot_at": "2026-09-28T22:57:13.966+08:00",
+      "queue_pid": 785736,
+      "snapshot_state": "WAIT_G2_FINISH",
+      "waiting_for_pid": 566514,
+      "paths": [
+        "CODE_REVIEW.md",
+        "SCIENTIFIC_AUDIT_AND_PROTOCOL.md",
+        "pilot_config.json",
+        "pilot_queue.py",
+        "g2_retire.py",
+        "pilot_queue_admin.py",
+        "G2_ADMIN_STOPPED.json",
+        "G2_RETIREMENT.md",
+        "G2_RETIREMENT_AMENDMENT_REVIEW.json",
+        "G2_RETIREMENT_AMENDMENT_REVIEW.md",
+        "runs/control/queue_launch_receipt.json"
+      ],
+      "decision": "Use validation only; refreshed queue state belongs to next scheduled check.",
+      "queue_state_at_execution_receipt": "RUNNING",
+      "active_arm": "control",
+      "active_worker_pid": 785960,
+      "gpu": 2,
+      "epoch0_native_f_validation_r2": 0.4052941077,
+      "next_arms": [
+        "weighted",
+        "direct_f_matched"
+      ],
+      "previous_queue_pid": 762340,
+      "previous_queue_outcome": "exited without workers after G2 administrative stop"
+    },
+    {
+      "id": "round03_equal_three_ensemble",
+      "status": "complete_exploratory",
+      "weights": {
+        "mto_eta0": 0.3333333333,
+        "mto_eta01": 0.3333333333,
+        "mto_eta1": 0.3333333333
+      },
+      "validation_native_f_r2": 0.4494214633,
+      "historical_test_native_f_r2": 0.48510176,
+      "historical_test_delta_r2": 0.02928666,
+      "group_bootstrap_95ci": [
+        0.003586,
+        0.056691
+      ],
+      "paths": [
+        "ensemble_diagnostic/FROZEN_CHOICE.json",
+        "ensemble_diagnostic/ENSEMBLE_TEST_REPORT.md",
+        "ensemble_diagnostic/EXPLORATORY_TEST.json",
+        "ensemble_diagnostic/GROUP_BOOTSTRAP_SENSITIVITY.json",
+        "ensemble_diagnostic/ENSEMBLE_REVIEW.md"
+      ],
+      "caveats": [
+        "Three model forward passes at inference",
+        "historical test is exposed and exploratory",
+        "upper 1 percent bright-transition SSE worsens",
+        "state slots 7 and 8 regress"
+      ]
+    },
+    {
+      "id": "round04_architecture_screen",
+      "status": "launched_active_snapshot_only",
+      "queue_pid": 778242,
+      "worker": {
+        "arm": "retained_residual",
+        "pid": 778585,
+        "gpu": 5,
+        "admission": "guarded; fresh microcheck passed and pinned ECC unchanged"
+      },
+      "waiting_arms": [
+        "original",
+        "direct_f",
+        "independent_trace"
+      ],
+      "waiting_resources": "clean GPUs 1/4/6 when available, or later guarded GPU5",
+      "epoch0_retained_residual_validation_native_f_r2": 0.4052941298,
+      "baseline_gate": "passed",
+      "paths": [
+        "architecture/ARCHITECTURE_PROTOCOL.md",
+        "architecture/ARCHITECTURE_CODE_REVIEW.md",
+        "architecture/EXECUTION_REVIEW.json",
+        "architecture/ARCH_QUEUE_STATUS.json",
+        "architecture/runs/<arm>/status.json"
+      ]
+    }
+  ],
+  "chan64_plateau_decision": {
+    "state": "executed_intentional_administrative_stop",
+    "g2_epoch": 215,
+    "cursor": 114496,
+    "best_epoch": 41,
+    "best_objective": 0.12957936948799922,
+    "last_checkpoint_sha256": "f437e1ee9a0f569cc6b788e5df12ad3278d28fa867853e5067fca7f71dce7cfa",
+    "best_checkpoint_sha256": "1894f778b2d98a99cc390237c0516d98279375f140ad4b5ea72ac8d08012bd1a",
+    "resumable": true,
+    "original_queue_pid": 762340,
+    "original_queue_outcome": "exited_without_workers",
+    "provenance": [
+      "ADMIN_STOPPED",
+      "STOPPED_REQUIRES_EXPLICIT_RESUME",
+      "CAMPAIGN_BLOCKED expected"
+    ],
+    "prohibition": "No FIT_COMPLETE was forged; other chan64 arms continue; analyze eventual original campaign as partial."
+  },
+  "gpu_policy": {
+    "exclude": [
+      3,
+      7
+    ],
+    "guarded": [
+      5
+    ],
+    "clean_when_free": [
+      1,
+      4,
+      6
+    ],
+    "preserve_unrelated": {
+      "gpu": 0,
+      "job": "SpecGPT"
+    },
+    "notes": "GPU2 is allocated to replacement matched loss pilot queue PID 785736. User authorized architecture changes and broad GPU use; resource admission and active ownership locks still apply."
+  },
+  "publication": {
+    "repository": "techandscixie2005/MTO-1",
+    "branch": "codex/oscillator-r2-research-20260928",
+    "state": "pending_ssh_git_transport",
+    "owner_ssh_authentication": "verified",
+    "pushed": false,
+    "source": "verified D: archive copies only",
+    "local_status": "D:\\MTO\\archives\\oscillator_r2_20260928\\PUBLICATION_STATUS.md"
+  },
+  "decision_rules": [
+    "Root remains orchestrator.",
+    "Select and tune with validation only.",
+    "Keep frozen choices and reviews immutable.",
+    "Do not claim generalization from the exposed historical test; require a newly sealed molecule-disjoint holdout.",
+    "Archive only lightweight code, protocols, reviews, logs, and summarized metrics after D: hash verification."
+  ],
+  "g2_retirement_execution_receipt": {
+    "state": "ADMIN_STOPPED",
+    "pid": 566514,
+    "gpu": 2,
+    "epoch": 215,
+    "cursor": 114496,
+    "train_count": 120355,
+    "best_epoch": 41,
+    "best_objective": 0.12957936948799922,
+    "last_checkpoint_sha256": "f437e1ee9a0f569cc6b788e5df12ad3278d28fa867853e5067fca7f71dce7cfa",
+    "best_checkpoint_sha256": "1894f778b2d98a99cc390237c0516d98279375f140ad4b5ea72ac8d08012bd1a",
+    "checkpoints_retained_resumable": true,
+    "fit_complete_forged": false,
+    "original_queue_exited_without_workers": true,
+    "original_campaign_state": "STOPPED_REQUIRES_EXPLICIT_RESUME; expected CAMPAIGN_BLOCKED; intentional incomplete campaign",
+    "partial_campaign_analysis": "Required after remaining original chan64 jobs finish; label explicitly as partial and administratively stopped."
+  }
+}

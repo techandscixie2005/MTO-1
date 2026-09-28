@@ -1,0 +1,16 @@
+{
+  "automation_id": "qm9s-e-a",
+  "automation_name": "MTO oscillator-strength research - 4-hour checks",
+  "automation_status": "ACTIVE",
+  "interval_hours": 4,
+  "first_health_check_at": "2026-09-28T22:29:29+08:00",
+  "next_check_due_at": "2026-09-29T02:29:29+08:00",
+  "monitor_role": "archive_and_monitor sub-agent: perform compact scheduled health checks, archive reviewed lightweight round records through D: first, and report actionable issues to the coordinator",
+  "active_campaign_at_first_check": "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925",
+  "supervisor_pid": 566447,
+  "trainer_pids": {"G1": 566461, "G2": 566514, "G3": 566521, "G4": 566532},
+  "status_files": ["runs/G1/status.json", "runs/G2/status.json", "runs/G3/status.json", "runs/G4/status.json"],
+  "log_files": ["logs/G1.log", "logs/G2.log", "logs/G3.log", "logs/G4.log"],
+  "gpu_policy": "Do not touch unrelated jobs; GPU3 is excluded due to historical ECC failure, and no GPU reset is authorized.",
+  "publication_note": "Local D: archive is the staging source. Do not upload checkpoints, optimizer states, caches, raw tensors, or large runtime artifacts."
+}

@@ -1,0 +1,43 @@
+{
+  "status": "prepared_no_launch",
+  "arms": [
+    "control",
+    "weighted",
+    "direct_f_matched"
+  ],
+  "source_campaign": "experiments/qm9s_eta_Ef_20260926",
+  "source_run": "mto_eta0",
+  "source_checkpoint_sha256": "9f1963267cd0e5e35212baca6b4080cf986e73aed6e1662c4cb720afb9a4c136",
+  "seed": 11,
+  "order_seed": 11,
+  "optimizer": "Adam_AMSGrad",
+  "optimizer_reset_all_arms": true,
+  "lr": 0.0001,
+  "batch_size": 64,
+  "epochs": 20,
+  "scheduler": null,
+  "weight_decay": 0.0,
+  "grad_clip": 5.0,
+  "dtype": "float32",
+  "amp": false,
+  "tf32": false,
+  "num_threads": 2,
+  "selection": "validation_native_raw_f_SSE",
+  "allow_test_evaluation": false,
+  "bootstrap_samples": 2000,
+  "bootstrap_seed": 20260928,
+  "sE2": 0.5378066634062587,
+  "sA2": 0.1324285377060015,
+  "mean_E2_train": 47.478104650939535,
+  "promotion": {
+    "min_delta_validation_R2": 0.01,
+    "min_bootstrap_positive_fraction": 0.8,
+    "tentative_delta_R2": [
+      0.005,
+      0.01
+    ],
+    "energy_MAE_ratio_review_flag": 1.1,
+    "energy_regression_is_hard_rejection": false
+  },
+  "epoch0_eligible": true
+}
