@@ -1,6 +1,6 @@
 {
   "project": "MTO-1",
-  "updated_at": "2026-09-29T06:38:40+08:00",
+  "updated_at": "2026-09-29T06:34:03+08:00",
   "primary_objective": "Improve pooled raw native oscillator-strength R2; maximize validation-selected R2 while preserving honest historical-test limits.",
   "coordinator": "root remains research orchestrator and decision owner",
   "monitor": {
@@ -28,11 +28,10 @@
           "gpu_uuid": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
           "epoch": 83,
           "steps": 154400,
+          "best_validation_raw_f_r2": 0.368703,
           "best_epoch": 53,
           "latest_complete_epoch": 81,
-          "latest_raw_f_r2": 0.3496044,
-          "best_observed_interim_raw_f_validation_r2": 0.368703,
-          "not_final_selected_primary_metric": true
+          "latest_raw_f_r2": 0.3496044
         },
         {
           "label": "eta0_seed37",
@@ -42,11 +41,10 @@
           "gpu_uuid": "GPU-2431a641-8045-a10b-4aa0-2769010e0708",
           "epoch": 82,
           "steps": 152900,
+          "best_validation_raw_f_r2": 0.39445,
           "best_epoch": 44,
           "latest_complete_epoch": 81,
-          "latest_raw_f_r2": 0.3560038,
-          "best_observed_interim_raw_f_validation_r2": 0.39445,
-          "not_final_selected_primary_metric": true
+          "latest_raw_f_r2": 0.3560038
         },
         {
           "label": "scratch_mto",
@@ -56,11 +54,10 @@
           "gpu_uuid": "GPU-cb4dc1ea-9ea3-e426-bdeb-df0bef8a23fa",
           "epoch": 68,
           "steps": 127700,
+          "best_validation_raw_f_r2": 0.373499,
           "best_epoch": 16,
           "latest_complete_epoch": 67,
-          "latest_raw_f_r2": 0.3340615,
-          "best_observed_interim_raw_f_validation_r2": 0.373499,
-          "not_final_selected_primary_metric": true
+          "latest_raw_f_r2": 0.3340615
         },
         {
           "label": "scratch_native",
@@ -70,11 +67,10 @@
           "gpu_uuid": "GPU-71f357f3-3436-a616-b8af-50160d18f30d",
           "epoch": 88,
           "steps": 163900,
+          "best_validation_raw_f_r2": 0.34378,
           "best_epoch": 21,
           "latest_complete_epoch": 86,
-          "latest_raw_f_r2": 0.2414353,
-          "best_observed_interim_raw_f_validation_r2": 0.34378,
-          "not_final_selected_primary_metric": true
+          "latest_raw_f_r2": 0.2414353
         }
       ],
       "gpu_health": {
@@ -83,8 +79,7 @@
         "gpu5": "ECC corrected/uncorrected 1/0, unchanged from admission; no pending remap/repair/failure",
         "gpu6": "ECC corrected/uncorrected 0/0; no pending remap/repair"
       },
-      "intervention": "none",
-      "metrics_interpretation": "Interim best-observed raw-f validation values are descriptive only; not final protocol-selected primary metrics."
+      "intervention": "none"
     }
   },
   "benchmarks": {
@@ -776,7 +771,7 @@
     "started_at": "2026-09-29T06:29:39+08:00",
     "ended_at": "2026-09-29T06:30:11+08:00",
     "report_path": "monitoring/FULL_CHECK_20260929_0629.md",
-    "report_sha256": "45608fb4f95ae451a6c297b75dd4c38171269eaf4f5579baba90d6bfb9c58d27",
+    "report_sha256": "d728c3c45adcdff7be6f9c5c77b470812133282fe18a3d4fb99eb64c99d9a431",
     "next_due_at": "2026-09-29T10:29:29+08:00",
     "worker_snapshot": [
       {
@@ -832,7 +827,6 @@
         "latest_raw_f_r2": 0.2414353
       }
     ],
-    "decision": "No intervention; continue fixed runs to 100 epochs despite interim validation declines. No new test or promotion.",
-    "metrics_interpretation": "Interim best-observed raw-f validation values are descriptive only; not final protocol-selected primary metrics."
+    "decision": "No intervention; continue fixed runs to 100 epochs despite interim validation declines. No new test or promotion."
   }
 }

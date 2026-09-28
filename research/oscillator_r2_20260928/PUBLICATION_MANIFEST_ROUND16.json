@@ -1,0 +1,135 @@
+{
+  "purpose": "Corrected 06:29 four-hour check and reviewed fixed-seven preparation only",
+  "base_published_commit": "19d5cadf5995e0dff5eb85464e4ad52440fe9ac6",
+  "source": "Verified D drive archives only",
+  "full_check_manifest_sha256": "6c7a30744194a801ad248252c9ff2f6e45712f2d96ada7af830a014a3e4c9da1",
+  "sidecar_manifest_sha256": "8bedf3b795ef041f0dc344160cf390ef535f9878a59808ac4ae223981aafd7ad",
+  "interim_raw_f_metric": "best-observed descriptive, not final protocol-selected outcome",
+  "fixed_seven": "reviewed saved-array sidecar preparation; no seed/scratch outcome",
+  "new_training_or_inference": false,
+  "new_test_access": false,
+  "excluded": [
+    "checkpoints",
+    "optimizer states",
+    "runtime predictions",
+    "raw datasets",
+    "caches",
+    "large logs"
+  ],
+  "files": [
+    {
+      "path": "coordinator_state.json",
+      "bytes": 37127,
+      "sha256": "12b93a4a4e92e41dd3f8d95f99b9b599099ba8d1e6ac9fac6092128b5587ad9b",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\monitoring\\full_check_0629\\coordinator_state.json"
+    },
+    {
+      "path": "coordinator_state.pre_fullcheck_20260929_0629_063403.json",
+      "bytes": 31947,
+      "sha256": "861f374ae94149ab8461fa09190508fc2b536b7fbda06afe0cb2671a97dfb298",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\monitoring\\full_check_0629\\coordinator_state.pre_fullcheck_20260929_0629_063403.json"
+    },
+    {
+      "path": "coordinator_state.pre_metric_label_fix_063840.json",
+      "bytes": 36553,
+      "sha256": "dfc1ce0b9c59f09005aeb6c2046a327964b8b32b49029f077d5fc54e5e4d5898",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\monitoring\\full_check_0629\\coordinator_state.pre_metric_label_fix_063840.json"
+    },
+    {
+      "path": "fixed_seven_sidecar/D_STAGE_MANIFEST.json",
+      "bytes": 2251,
+      "sha256": "8bedf3b795ef041f0dc344160cf390ef535f9878a59808ac4ae223981aafd7ad",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round15_fixed_seven_sidecar_preparation\\D_STAGE_MANIFEST.json"
+    },
+    {
+      "path": "fixed_seven_sidecar/IMPLEMENTATION_HANDOFF.json",
+      "bytes": 2816,
+      "sha256": "22793c110d422e23cf0adee200bf3178d8885406ec61f03563c9fc602ad02fac",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round15_fixed_seven_sidecar_preparation\\IMPLEMENTATION_HANDOFF.json"
+    },
+    {
+      "path": "fixed_seven_sidecar/IMPLEMENTATION_REVIEW.json",
+      "bytes": 2583,
+      "sha256": "35269c1df08e07851dd2b2cfa740d49c351f71785abfc2334bf2eb6557e640c4",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round15_fixed_seven_sidecar_preparation\\IMPLEMENTATION_REVIEW.json"
+    },
+    {
+      "path": "fixed_seven_sidecar/IMPLEMENTATION_REVIEW.md",
+      "bytes": 2154,
+      "sha256": "5f93f84a7516aa84c3fd635b12f12a3bdee945e2dd51ad23e1fa6f56b9cfe119",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round15_fixed_seven_sidecar_preparation\\IMPLEMENTATION_REVIEW.md"
+    },
+    {
+      "path": "fixed_seven_sidecar/INDEPENDENT_VERIFICATION.json",
+      "bytes": 1292,
+      "sha256": "f91c51e91f90431300e4bef3f11024129bc652e2d526bc7210ef5858554f5579",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round15_fixed_seven_sidecar_preparation\\INDEPENDENT_VERIFICATION.json"
+    },
+    {
+      "path": "fixed_seven_sidecar/PREPARATION_PREFLIGHT.json",
+      "bytes": 1841,
+      "sha256": "3af928803205e51d94806affcb75c151c3a6f60edd2a7198bfa66212d20f97a2",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round15_fixed_seven_sidecar_preparation\\PREPARATION_PREFLIGHT.json"
+    },
+    {
+      "path": "fixed_seven_sidecar/PREP_ARCHIVE_ALLOWLIST.json",
+      "bytes": 2018,
+      "sha256": "3903760d2a8a7c34b2ca2a12fc133c18e2db233ab604017bbecbb19a7cdcf6a5",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round15_fixed_seven_sidecar_preparation\\PREP_ARCHIVE_ALLOWLIST.json"
+    },
+    {
+      "path": "fixed_seven_sidecar/PROTOCOL.md",
+      "bytes": 4666,
+      "sha256": "4d4c2c024ff3450167668c478960f09b8f25b19fb8043e07e86f6b71597d5370",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round15_fixed_seven_sidecar_preparation\\PROTOCOL.md"
+    },
+    {
+      "path": "fixed_seven_sidecar/SCRATCH_SOURCE_PINS.json",
+      "bytes": 421,
+      "sha256": "c4db1881dc5b6c89e73bfacac1e9338ec68d3629ee45983d237973da373cf302",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round15_fixed_seven_sidecar_preparation\\SCRATCH_SOURCE_PINS.json"
+    },
+    {
+      "path": "fixed_seven_sidecar/fixed_seven.py",
+      "bytes": 35697,
+      "sha256": "3a11c1f90918437241eb6c26332fa87c7ef7b95f0b3f86493a0c8e908e627755",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round15_fixed_seven_sidecar_preparation\\fixed_seven.py"
+    },
+    {
+      "path": "monitoring/FULL_CHECK_20260929_0629.md",
+      "bytes": 3185,
+      "sha256": "45608fb4f95ae451a6c297b75dd4c38171269eaf4f5579baba90d6bfb9c58d27",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\monitoring\\full_check_0629\\FULL_CHECK_20260929_0629.md"
+    },
+    {
+      "path": "monitoring/FULL_CHECK_20260929_0629_PRE_LABEL_FIX.md",
+      "bytes": 3048,
+      "sha256": "d728c3c45adcdff7be6f9c5c77b470812133282fe18a3d4fb99eb64c99d9a431",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\monitoring\\full_check_0629\\FULL_CHECK_20260929_0629_PRE_LABEL_FIX.md"
+    },
+    {
+      "path": "monitoring/full_check_0629/D_STAGE_MANIFEST.json",
+      "bytes": 2611,
+      "sha256": "6c7a30744194a801ad248252c9ff2f6e45712f2d96ada7af830a014a3e4c9da1",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\monitoring\\full_check_0629\\D_STAGE_MANIFEST.json"
+    },
+    {
+      "path": "monitoring_state.json",
+      "bytes": 12002,
+      "sha256": "cb8e19bbd427c49d7e43473c38f6bbcc45653048bd3de073dba227b3f0de724a",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\monitoring\\full_check_0629\\monitoring_state.json"
+    },
+    {
+      "path": "monitoring_state.pre_0629_20260929_063328.json",
+      "bytes": 7364,
+      "sha256": "2d1a09f3a44c74936075e57332788b806290b2143da20f49348b686570fab1a5",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\monitoring\\full_check_0629\\monitoring_state.pre_0629_20260929_063328.json"
+    },
+    {
+      "path": "monitoring_state.pre_metric_label_fix_063840.json",
+      "bytes": 11246,
+      "sha256": "f1264cc02e763c825a37befd530026cb80f9e68e51d9bcd56521f7fa8327d79c",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\monitoring\\full_check_0629\\monitoring_state.pre_metric_label_fix_063840.json"
+    }
+  ]
+}

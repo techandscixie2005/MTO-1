@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "verified_at": "2026-09-29T05:05:31.351064+08:00",
+  "source_hashes": {
+    "PROTOCOL.md": "4d4c2c024ff3450167668c478960f09b8f25b19fb8043e07e86f6b71597d5370",
+    "fixed_seven.py": "3a11c1f90918437241eb6c26332fa87c7ef7b95f0b3f86493a0c8e908e627755",
+    "PREPARATION_PREFLIGHT.json": "3af928803205e51d94806affcb75c151c3a6f60edd2a7198bfa66212d20f97a2",
+    "SCRATCH_SOURCE_PINS.json": "c4db1881dc5b6c89e73bfacac1e9338ec68d3629ee45983d237973da373cf302",
+    "IMPLEMENTATION_HANDOFF.json": "22793c110d422e23cf0adee200bf3178d8885406ec61f03563c9fc602ad02fac"
+  },
+  "F5_r2": 0.48769960489832564,
+  "validation_molecules": 6686,
+  "connectivity_groups": 6671,
+  "synthetic_full_artifact_tests": {
+    "seed_pair_success": true,
+    "seed_missing_failed_invalid_selection_checkpoint_array_rejected": true,
+    "scratch_pair_success": true,
+    "scratch_missing_failed_invalid_selection_checkpoint_array_rejected": true
+  },
+  "synthetic_prediction_load_calls": 8,
+  "all_synthetic_prediction_loads_followed_both_terminals": true,
+  "independent_expanded_row_bootstrap_matches": true,
+  "concentration_null_extrema_and_absolute_sse": true,
+  "static_seed_scratch_review_preflight_source_maps_verified": true,
+  "future_outcomes_read": false,
+  "model_inference_or_test": false
+}

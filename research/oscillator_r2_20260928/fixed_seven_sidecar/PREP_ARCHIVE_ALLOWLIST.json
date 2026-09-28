@@ -1,0 +1,53 @@
+{
+  "classification": "fixed-seven preparation only; no completed seed/scratch outcomes",
+  "files": [
+    {
+      "relative_path": "research/oscillator_r2_20260928/fixed_seven_sidecar/PROTOCOL.md",
+      "bytes": 4666,
+      "sha256": "4d4c2c024ff3450167668c478960f09b8f25b19fb8043e07e86f6b71597d5370"
+    },
+    {
+      "relative_path": "research/oscillator_r2_20260928/fixed_seven_sidecar/fixed_seven.py",
+      "bytes": 35697,
+      "sha256": "3a11c1f90918437241eb6c26332fa87c7ef7b95f0b3f86493a0c8e908e627755"
+    },
+    {
+      "relative_path": "research/oscillator_r2_20260928/fixed_seven_sidecar/PREPARATION_PREFLIGHT.json",
+      "bytes": 1841,
+      "sha256": "3af928803205e51d94806affcb75c151c3a6f60edd2a7198bfa66212d20f97a2"
+    },
+    {
+      "relative_path": "research/oscillator_r2_20260928/fixed_seven_sidecar/IMPLEMENTATION_HANDOFF.json",
+      "bytes": 2816,
+      "sha256": "22793c110d422e23cf0adee200bf3178d8885406ec61f03563c9fc602ad02fac"
+    },
+    {
+      "relative_path": "research/oscillator_r2_20260928/fixed_seven_sidecar/SCRATCH_SOURCE_PINS.json",
+      "bytes": 421,
+      "sha256": "c4db1881dc5b6c89e73bfacac1e9338ec68d3629ee45983d237973da373cf302"
+    },
+    {
+      "relative_path": "research/oscillator_r2_20260928/fixed_seven_sidecar/IMPLEMENTATION_REVIEW.json",
+      "bytes": 2583,
+      "sha256": "35269c1df08e07851dd2b2cfa740d49c351f71785abfc2334bf2eb6557e640c4"
+    },
+    {
+      "relative_path": "research/oscillator_r2_20260928/fixed_seven_sidecar/IMPLEMENTATION_REVIEW.md",
+      "bytes": 2154,
+      "sha256": "5f93f84a7516aa84c3fd635b12f12a3bdee945e2dd51ad23e1fa6f56b9cfe119"
+    },
+    {
+      "relative_path": "research/oscillator_r2_20260928/fixed_seven_sidecar/INDEPENDENT_VERIFICATION.json",
+      "bytes": 1292,
+      "sha256": "f91c51e91f90431300e4bef3f11024129bc652e2d526bc7210ef5858554f5579"
+    }
+  ],
+  "excluded": [
+    "__pycache__",
+    "runtime predictions",
+    "model checkpoints",
+    "active run files",
+    "test artifacts"
+  ],
+  "total_bytes": 51470
+}

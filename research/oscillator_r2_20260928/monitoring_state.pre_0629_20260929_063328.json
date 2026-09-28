@@ -4,7 +4,7 @@
   "automation_status": "ACTIVE",
   "interval_hours": 4,
   "first_health_check_at": "2026-09-28T22:29:29+08:00",
-  "next_check_due_at": "2026-09-29T10:29:29+08:00",
+  "next_check_due_at": "2026-09-29T06:29:29+08:00",
   "monitor_role": "archive_and_monitor sub-agent: perform compact scheduled health checks, archive reviewed lightweight round records through D: first, and report actionable issues to the coordinator",
   "active_campaign_at_first_check": "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925",
   "supervisor_pid": 566447,
@@ -28,7 +28,7 @@
   ],
   "gpu_policy": "Do not touch unrelated jobs; GPU3 is excluded due to historical ECC failure, and no GPU reset is authorized.",
   "publication_note": "Local D: archive is the staging source. Do not upload checkpoints, optimizer states, caches, raw tensors, or large runtime artifacts.",
-  "last_full_check_at": "2026-09-29T06:30:11+08:00",
+  "last_full_check_at": "2026-09-29T02:31:01+08:00",
   "scope_admin_amendment": {
     "updated_at": "2026-09-29T04:23:57+08:00",
     "cadence_preserved": true,
@@ -151,144 +151,5 @@
       "reason": "early_stop",
       "note": "First lifecycle terminal event only; other four workers not polled."
     }
-  },
-  "full_check_history": [
-    {
-      "scheduled_slot_at": "2026-09-29T06:29:29+08:00",
-      "started_at": "2026-09-29T06:29:39+08:00",
-      "ended_at": "2026-09-29T06:30:11+08:00",
-      "report_path": "monitoring/FULL_CHECK_20260929_0629.md",
-      "report_sha256": "45608fb4f95ae451a6c297b75dd4c38171269eaf4f5579baba90d6bfb9c58d27",
-      "report_bytes": 3185,
-      "next_due_at": "2026-09-29T10:29:29+08:00",
-      "pinned_workers": [
-        {
-          "label": "seed23",
-          "pid": 859155,
-          "start_ticks": 1246891523,
-          "gpu": 1,
-          "epoch": 83,
-          "steps": 154400,
-          "latest_complete_epoch": 81,
-          "latest_native_f_r2": 0.3496044259278748,
-          "best_epoch": 53,
-          "state": "RUNNING_IDENTITY_MATCH",
-          "best_observed_interim_raw_f_validation_r2": 0.3687088954590514,
-          "not_final_selected_primary_metric": true
-        },
-        {
-          "label": "seed37",
-          "pid": 859334,
-          "start_ticks": 1246893027,
-          "gpu": 6,
-          "epoch": 82,
-          "steps": 152900,
-          "latest_complete_epoch": 81,
-          "latest_native_f_r2": 0.3560038061381273,
-          "best_epoch": 44,
-          "state": "RUNNING_IDENTITY_MATCH",
-          "best_observed_interim_raw_f_validation_r2": 0.3944553336588742,
-          "not_final_selected_primary_metric": true
-        },
-        {
-          "label": "scratch_mto",
-          "pid": 879890,
-          "start_ticks": 1247080802,
-          "gpu": 2,
-          "epoch": 68,
-          "steps": 127700,
-          "latest_complete_epoch": 67,
-          "latest_native_f_r2": 0.33406147894367566,
-          "best_epoch": 16,
-          "state": "RUNNING_IDENTITY_MATCH",
-          "best_observed_interim_raw_f_validation_r2": 0.3734929484611761,
-          "not_final_selected_primary_metric": true
-        },
-        {
-          "label": "scratch_native",
-          "pid": 880266,
-          "start_ticks": 1247085838,
-          "gpu": 5,
-          "epoch": 88,
-          "steps": 163900,
-          "latest_complete_epoch": 86,
-          "latest_native_f_r2": 0.2414353408566967,
-          "best_epoch": 21,
-          "state": "RUNNING_IDENTITY_MATCH",
-          "best_observed_interim_raw_f_validation_r2": 0.34378197600986826,
-          "not_final_selected_primary_metric": true
-        }
-      ],
-      "intervention": "none",
-      "gpu5_corrected_ecc_matches_admission_baseline": true,
-      "gpu5_uncorrected_ecc": 0,
-      "gpu5_remap_pending": false,
-      "gpu5_remap_failure": false,
-      "excluded_gpus": [
-        3,
-        7
-      ],
-      "gpu0_preserved": true,
-      "metrics_interpretation": "Interim best-observed raw-f validation values are descriptive only; not final protocol-selected primary metrics."
-    }
-  ],
-  "current_workers": [
-    {
-      "label": "seed23",
-      "pid": 859155,
-      "start_ticks": 1246891523,
-      "gpu": 1,
-      "epoch": 83,
-      "steps": 154400,
-      "latest_complete_epoch": 81,
-      "latest_native_f_r2": 0.3496044259278748,
-      "best_epoch": 53,
-      "state": "RUNNING_IDENTITY_MATCH",
-      "best_observed_interim_raw_f_validation_r2": 0.3687088954590514,
-      "not_final_selected_primary_metric": true
-    },
-    {
-      "label": "seed37",
-      "pid": 859334,
-      "start_ticks": 1246893027,
-      "gpu": 6,
-      "epoch": 82,
-      "steps": 152900,
-      "latest_complete_epoch": 81,
-      "latest_native_f_r2": 0.3560038061381273,
-      "best_epoch": 44,
-      "state": "RUNNING_IDENTITY_MATCH",
-      "best_observed_interim_raw_f_validation_r2": 0.3944553336588742,
-      "not_final_selected_primary_metric": true
-    },
-    {
-      "label": "scratch_mto",
-      "pid": 879890,
-      "start_ticks": 1247080802,
-      "gpu": 2,
-      "epoch": 68,
-      "steps": 127700,
-      "latest_complete_epoch": 67,
-      "latest_native_f_r2": 0.33406147894367566,
-      "best_epoch": 16,
-      "state": "RUNNING_IDENTITY_MATCH",
-      "best_observed_interim_raw_f_validation_r2": 0.3734929484611761,
-      "not_final_selected_primary_metric": true
-    },
-    {
-      "label": "scratch_native",
-      "pid": 880266,
-      "start_ticks": 1247085838,
-      "gpu": 5,
-      "epoch": 88,
-      "steps": 163900,
-      "latest_complete_epoch": 86,
-      "latest_native_f_r2": 0.2414353408566967,
-      "best_epoch": 21,
-      "state": "RUNNING_IDENTITY_MATCH",
-      "best_observed_interim_raw_f_validation_r2": 0.34378197600986826,
-      "not_final_selected_primary_metric": true
-    }
-  ],
-  "last_check_note": "All four pinned identities matched; fixed-run health/progress snapshot recorded; no intervention; see report."
+  }
 }

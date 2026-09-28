@@ -1,0 +1,46 @@
+{
+  "classification": "fixture-only, no seed/scratch outcome files opened",
+  "time": 1790629445.5002682,
+  "protocol_sha256": "4d4c2c024ff3450167668c478960f09b8f25b19fb8043e07e86f6b71597d5370",
+  "script_sha256": "3a11c1f90918437241eb6c26332fa87c7ef7b95f0b3f86493a0c8e908e627755",
+  "amendment_sha256": "675030449886676094b1226d6ea75d753752fdd7e3e7cc3c8e1a9441bb469c0e",
+  "provenance_sha256": "6a1ef5ae13b7c1675fed75c0461c8a5d1d4c0f596e1029d90b263411cc43201b",
+  "frozen_five_prediction_hashes": {
+    "mto_eta0": "25acae64bb4e3e541048a8705045f7f639d1113d537dbbef71672752e8065890",
+    "mto_eta01": "9edffb5cd617469c78c8d83da7901ac90add69d89f27de7e8196a8736ae85500",
+    "mto_eta1": "a3808b9ad425abf4f6fcfed840d0ed8d1ff6fcf1557037a4e01932c734dc68bb",
+    "G1": "7c5fef99d9547c3fbe42c26fc7506287fc37a6cbc58f10d1900447a4724cfb5d",
+    "G3": "55310a8f3924c5e5b2edd58c60a95dec0216b159672358ca2ff9609f5129adce"
+  },
+  "F5_metrics": {
+    "molecules": 6686,
+    "transitions": 66860,
+    "sse": 81.15157788267025,
+    "sst": 158.4062371581119,
+    "r2": 0.48769960489832564,
+    "rmse": 0.0348389693055272,
+    "mae": 0.016334465778657103
+  },
+  "round09_eta0_equal3_reproduction_passed": true,
+  "round09_q2_counts": [
+    0,
+    1,
+    5,
+    59,
+    597,
+    2648,
+    3376
+  ],
+  "seven_equal_weights_synthetic_passed": true,
+  "synthetic_incomplete_receipts_rejected": 3,
+  "synthetic_bootstrap_positive_fraction": 1.0,
+  "synthetic_full_family_gates": {
+    "seed_pair_success": true,
+    "seed_missing_failed_invalid_selection_checkpoint_array_rejected": true,
+    "scratch_pair_success": true,
+    "scratch_missing_failed_invalid_selection_checkpoint_array_rejected": true
+  },
+  "scratch_source_pins_sha256": "c4db1881dc5b6c89e73bfacac1e9338ec68d3629ee45983d237973da373cf302",
+  "active_outcome_access": false,
+  "test_access": false
+}

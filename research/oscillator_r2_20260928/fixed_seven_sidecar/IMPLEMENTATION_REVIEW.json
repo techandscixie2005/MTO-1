@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "reviewer": "backbone_baseline_audit",
+  "reviewed_at": "2026-09-29T05:06:20.273102+08:00",
+  "script_sha256": "3a11c1f90918437241eb6c26332fa87c7ef7b95f0b3f86493a0c8e908e627755",
+  "protocol_sha256": "4d4c2c024ff3450167668c478960f09b8f25b19fb8043e07e86f6b71597d5370",
+  "preflight_sha256": "3af928803205e51d94806affcb75c151c3a6f60edd2a7198bfa66212d20f97a2",
+  "amendment_sha256": "675030449886676094b1226d6ea75d753752fdd7e3e7cc3c8e1a9441bb469c0e",
+  "provenance_sha256": "6a1ef5ae13b7c1675fed75c0461c8a5d1d4c0f596e1029d90b263411cc43201b",
+  "scratch_pins_sha256": "c4db1881dc5b6c89e73bfacac1e9338ec68d3629ee45983d237973da373cf302",
+  "handoff_sha256": "22793c110d422e23cf0adee200bf3178d8885406ec61f03563c9fc602ad02fac",
+  "independent_verification_sha256": "f91c51e91f90431300e4bef3f11024129bc652e2d526bc7210ef5858554f5579",
+  "scope": "Separate completed-family saved-array sidecar only; future modes gated on both relevant genuine terminal receipts. No completed-mode execution during review.",
+  "findings": [
+    "Seven equal individual native-f weights, eta0 once; new seeds use legacy-joint-selected arrays only. Seed3 primary and existing mixed-selection secondary unchanged.",
+    "Both family terminals, current reviewed source/preflight/code maps, fixed-selection metrics, selected checkpoint bytes, saved-array hashes, exact IDs/indices/FP64 labels/masks enforced; no cross-family completion dependency.",
+    "Scratch F5 references are supplemental; native-minus-MTO remains primary and prescribed0.5/0.5 mean remains secondary.",
+    "Molecule and whole-connectivity-group 2000-draw bootstrap uses common draws across fixed contrasts, recomputes SST and preserves ten states; independent expanded-row reconstruction agrees.",
+    "State/tail and frozen TRAIN q2 diagnostics retain all molecules; absolute SSE and concentration accompany net shares, null extrema when absent; explicit7/5/3 and scratch1/1/2 forward counts.",
+    "Existing F5 and Round09 geometry fixtures reproduce; synthetic full artifact positive/negative gates and both-terminals-before-prediction checks pass."
+  ],
+  "limitations": [
+    "All results remain exploratory under repeated validation selection; no fresh test/confirmation claim.",
+    "Physical checkpoint hash and reviewed producer receipt bind selection; the sidecar performs no model replay.",
+    "Preparation synthetic cases are small; genuine completed artifacts still must pass all runtime gates.",
+    "This PASS changes no training, existing sealed utility, primary study selection, or test access."
+  ]
+}
