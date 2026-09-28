@@ -1,0 +1,98 @@
+{
+  "passed": true,
+  "reviewer": "backbone_baseline_audit",
+  "classification": "Independent NEW guarded GPU5 numerical admission for approved scratch pair only",
+  "admission_sha256": "11afe0f6946d1c904ff82b3ae4fa185f4598208d4801a37a6664b6ef231e0d9c",
+  "microcheck_script_sha256": "24140b113d6017dd53cb9eb47035b85181d3e0970d92ba16575060493cdde3f0",
+  "implementation_review_sha256": "6226b1c68226ce8a5ed6ddf74c630bce32dd88e0fadc46b0de12e8e4d005c3e2",
+  "gpu_uuid": "GPU-71f357f3-3436-a616-b8af-50160d18f30d",
+  "fresh_idle_snapshot": {
+    "index": 5,
+    "uuid": "GPU-71f357f3-3436-a616-b8af-50160d18f30d",
+    "memory_MiB": 10,
+    "temperature_C": "33 C",
+    "ecc": {
+      "volatile": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 1,
+        "dram_uncorrectable": 0
+      },
+      "aggregate": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 1,
+        "dram_uncorrectable": 0,
+        "sram_threshold_exceeded": "No"
+      },
+      "remap": {
+        "remapped_row_corr": "0",
+        "remapped_row_unc": "0",
+        "remapped_row_pending": "No",
+        "remapped_row_failure": "No"
+      },
+      "repair": {
+        "channel_repair_pending": "No",
+        "tpc_repair_pending": "No"
+      }
+    },
+    "apps": []
+  },
+  "microcheck_process_exited": true,
+  "shared_lock_acquired": true,
+  "evidence": {
+    "all_source_and_code_hashes_match_implementation_review": true,
+    "fp64_gemm_max_abs": 2.4868995751603507e-14,
+    "fp32_gemm_max_abs": 3.0517578125e-05,
+    "model_checks": {
+      "native": {
+        "E": {
+          "cpu_gpu_max_abs": 4.76837158203125e-07,
+          "gpu_repeat_max_abs": 0.0,
+          "molecule_span": 0.011080741882324219
+        },
+        "f": {
+          "cpu_gpu_max_abs": 3.725290298461914e-09,
+          "gpu_repeat_max_abs": 3.725290298461914e-09,
+          "molecule_span": 0.00023894011974334717
+        },
+        "loss": 29.103137969970703,
+        "max_grad": 8.960444450378418
+      },
+      "mto": {
+        "E": {
+          "cpu_gpu_max_abs": 4.76837158203125e-07,
+          "gpu_repeat_max_abs": 0.0,
+          "molecule_span": 0.0002865791320800781
+        },
+        "f": {
+          "cpu_gpu_max_abs": 3.725290298461914e-09,
+          "gpu_repeat_max_abs": 0.0,
+          "molecule_span": 7.227063179016113e-06
+        },
+        "loss": 29.341590881347656,
+        "max_grad": 11.080110549926758
+      }
+    },
+    "ecc_remap_unchanged": true,
+    "historical_corrected_dram_count": 1,
+    "test_batches": 0,
+    "val_inference_batches": 0,
+    "train_molecules_inferred": 16
+  },
+  "conditions": [
+    "Only the already approved paired100 scratch study, under root standing authorization.",
+    "Launcher/worker must independently acquire shared GPU5 lock and recheck idle eligibility, UUID and exact admission ECC counters.",
+    "Stop and record INVALID on any new ECC/remap/repair change, foreign occupancy, nonfinite loss/gradient or source mismatch.",
+    "Preserve unrelated GPU0, faulty3/7 exclusions and active seed jobs1/6."
+  ],
+  "limitations": [
+    "GPU5 retains one historical corrected DRAM event; this is guarded admission, not proof of long-term hardware reliability.",
+    "The check covers fixed first16 training examples plus synthetic GEMM, not exhaustive memory or full-duration workload.",
+    "Disposable model forward/backward probes made no optimizer update and consumed no validation/test targets for inference.",
+    "Future failure requires independent review rather than silent continuation, tolerance relaxation or device substitution."
+  ],
+  "time": 1790623173.8350892
+}

@@ -1,0 +1,39 @@
+{
+  "verified": "2026-09-29T03:19:46.8851945+08:00",
+  "runtime_arrays": "none copied",
+  "test_data": "none accessed",
+  "files": [
+    {
+      "sha256": "901e7e9fea9375481ba73bfe0dc321e60bd1647bddbb2d09e8ef8e8a3cfc56d4",
+      "path": "PROTOCOL.md",
+      "bytes": 3240
+    },
+    {
+      "sha256": "cda3735529a57e83a6183ef82a85fc022022517404681bff0635a9bf91e54472",
+      "path": "geometry_error_audit.py",
+      "bytes": 23374
+    },
+    {
+      "sha256": "b088b23a5098149c5a127623a5a9315f6d4c979a501eeb3fd0af46285eaccbbd",
+      "path": "geometry_error_metrics.json",
+      "bytes": 53803
+    },
+    {
+      "sha256": "bc97cdb2c1c949cf53eed6c5ab0610c1254b9f4405e37a28a5707affdbdc4d70",
+      "path": "REPORT.md",
+      "bytes": 12803
+    },
+    {
+      "sha256": "8ba9f56457b79d2cbc0fefeb2f048416f024f6180b64b0c6c11c0b76c7103161",
+      "path": "READBACK_VALIDATION.json",
+      "bytes": 1138
+    },
+    {
+      "sha256": "c1e7c2b4c52c275829f787a5c6b46b5fc15e2b82da143085a39df2aa50787d2c",
+      "path": "MANIFEST.sha256.json",
+      "bytes": 1926
+    }
+  ],
+  "remote_root": "/home/inspur/MTO-1/research/oscillator_r2_20260928/geometry_error_audit",
+  "local_stage": "D:\\MTO\\archives\\oscillator_r2_20260928\\round09_geometry_error_audit"
+}

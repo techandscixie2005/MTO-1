@@ -1,0 +1,145 @@
+{
+  "classification": "Scratch pair active-launch lightweight archive allowlist, D-first publication; no runtime arrays/checkpoints/caches",
+  "root": "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison",
+  "files": [
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/PROTOCOL.md",
+      "bytes": 11628,
+      "sha256": "9be3d271f86afac91a2b20957b4edee86bad6a14b0bd9058c564254ad8b151b2"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/config.json",
+      "bytes": 1044,
+      "sha256": "9ecb34590a64e389edbc455dbd22293593ce6c6e01c7d10b90b9cb5f6ec35048"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/model.py",
+      "bytes": 4569,
+      "sha256": "150905f92a6837e309ca8773295319a7e55054ccf8cf2b53c8c4aab9d1918ebc"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/data_adapter.py",
+      "bytes": 2841,
+      "sha256": "a6c8df922d939a01ded36288561bc1c0ef0aae884d6ea3c6912b0c0b720f3f28"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/prepare.py",
+      "bytes": 4898,
+      "sha256": "addfb8b77897a994caf32b2730647d75a74e950f53a2f3ada964f85ddada9029"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/common.py",
+      "bytes": 6244,
+      "sha256": "2ae185a3fcc834c9420f44b943b206bb85a66984eeb678085c82ec73127dac78"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/train.py",
+      "bytes": 15620,
+      "sha256": "28263e384b823a8a7c9a7f8a0ed1c7860eb34e2829397e97ab7fb183ecd8f796"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/preflight.py",
+      "bytes": 13875,
+      "sha256": "b2aa9133c10e301e6be0390f2fd8475cd4a4f37c3e83f1064818d7ff33c6ef07"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/launch.py",
+      "bytes": 4057,
+      "sha256": "b4283b6ec127f76f13284363c20e06fcee4b3052968a3f228f3d719aab0bb7e6"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/summarize.py",
+      "bytes": 6551,
+      "sha256": "f8710b40b4f0aa52eeb9ee6fd6ab94ea51c2cbffeee5189810f9c3eb07308892"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/stats.json",
+      "bytes": 1015,
+      "sha256": "39d2d8d281f5f3a74aedf276026bbba4d3df614375dc212f639c1ae24b4b0140"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/ORDER_PLAN.json",
+      "bytes": 19036,
+      "sha256": "f01da11c7ac29a89cb2914a69b7e7b4d9b4ef67120240513fc5ca59b460a6bce"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/INITIALIZATION.json",
+      "bytes": 91423,
+      "sha256": "a906e86581f3fed70c93f4922f96a28b292b16f86de6b813fc21121668ee644d"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/SOURCE_PINS.json",
+      "bytes": 8687,
+      "sha256": "6dbb539d294e876d5a1cd785ce52991c747ca3b2ddcdf2652b43222afc6c1f9d"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/PREFLIGHT.json",
+      "bytes": 16415,
+      "sha256": "7719140e4bc0fcf5566eb6e90aa0d450bb27f3e217eb17a727a06116eec02e3c"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/IMPLEMENTATION_HANDOFF.json",
+      "bytes": 14020,
+      "sha256": "bbbc40128effa784539168b00e275f3d0f023dfb913cd6a24336a710f150a6a9"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/IMPLEMENTATION_REVIEW.json",
+      "bytes": 13708,
+      "sha256": "6226b1c68226ce8a5ed6ddf74c630bce32dd88e0fadc46b0de12e8e4d005c3e2"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/IMPLEMENTATION_REVIEW.md",
+      "bytes": 4622,
+      "sha256": "e77feb109394bff335370cb3cc4044dbf0d46c6434e3d78ff076d4e6b0ed4ab5"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/GPU5_ADMISSION.json",
+      "bytes": 14856,
+      "sha256": "11afe0f6946d1c904ff82b3ae4fa185f4598208d4801a37a6664b6ef231e0d9c"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/GPU5_ADMISSION_REVIEW.json",
+      "bytes": 3758,
+      "sha256": "ce61348caab6b1367787e18eeb89e2dfe5cf91349ad4e0602d2bf0dff9d4183d"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/runs/mto/LAUNCH_RECEIPT.json",
+      "bytes": 13401,
+      "sha256": "d4bf260b73e6db099742c7bcef8be0c4834adad2202c99486b7130be0873d39c"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/runs/native/LAUNCH_RECEIPT.json",
+      "bytes": 13534,
+      "sha256": "cd006ac90880c3f2b7e17d5a65aa064070e8eed72f5b7d272949b0378507b837"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/runs/mto/RUN_MANIFEST.json",
+      "bytes": 15122,
+      "sha256": "6c2984eb549a22754212f7bdc92ce734bf9421119bb0637bb6a07364ea8288bc"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/runs/native/RUN_MANIFEST.json",
+      "bytes": 15125,
+      "sha256": "786d497b938d4fb215ce0e3390ed9c52194248bfa5a145f2a17d4c378a4b8b6c"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/runs/mto/epoch0_val.json",
+      "bytes": 4201,
+      "sha256": "88f792f3dfc0c842e9cc93d846274d0de1d826e0a6280bf74ec03516b5e4ff03"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/runs/native/epoch0_val.json",
+      "bytes": 4201,
+      "sha256": "88f792f3dfc0c842e9cc93d846274d0de1d826e0a6280bf74ec03516b5e4ff03"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/resource_audit/scratch_gpu5_microcheck.py",
+      "bytes": 4632,
+      "sha256": "24140b113d6017dd53cb9eb47035b85181d3e0970d92ba16575060493cdde3f0"
+    }
+  ],
+  "file_count": 27,
+  "total_bytes": 329083,
+  "immutable_at_creation": true,
+  "large_runtime_artifacts_excluded": true
+}

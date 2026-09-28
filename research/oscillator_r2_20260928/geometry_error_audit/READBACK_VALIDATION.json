@@ -1,0 +1,31 @@
+{
+  "validated_at": "2026-09-29T03:16:38.827786+08:00",
+  "substantive_readback_pass": true,
+  "files": {
+    "PROTOCOL.md": {
+      "bytes": 3240,
+      "sha256": "901e7e9fea9375481ba73bfe0dc321e60bd1647bddbb2d09e8ef8e8a3cfc56d4"
+    },
+    "geometry_error_audit.py": {
+      "bytes": 23374,
+      "sha256": "cda3735529a57e83a6183ef82a85fc022022517404681bff0635a9bf91e54472"
+    },
+    "geometry_error_metrics.json": {
+      "bytes": 53803,
+      "sha256": "b088b23a5098149c5a127623a5a9315f6d4c979a501eeb3fd0af46285eaccbbd"
+    },
+    "REPORT.md": {
+      "bytes": 12803,
+      "sha256": "bc97cdb2c1c949cf53eed6c5ab0610c1254b9f4405e37a28a5707affdbdc4d70"
+    }
+  },
+  "checks": [
+    "all listed artifacts present and substantive",
+    "JSON parses and reports 120355 train/6686 validation molecules",
+    "prediction IDs/indices/raw truth/masks exact-alignment gates passed",
+    "molecule14562 is confirmed all-zero and near-linear",
+    "six geometry strata and ten per-state rows each are present",
+    "10 training molecules are near-linear; none match C8H2 composition/connectivity",
+    "no report placeholder tokens found"
+  ]
+}

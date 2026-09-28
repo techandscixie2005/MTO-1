@@ -134,3 +134,20 @@ Frozen-Gram attempt 2 completed its saved numerical evaluation. Its original rep
 The reviewed eta0 seed protocol/implementation was launched as two fresh-initialization, fixed 100-epoch runs: seed 23 PID 859155 on GPU1 and seed 37 PID 859334 on GPU6. Their launch receipts and implementation review are recorded in `eta0_seed_replication/`; these are launch records, not a fresh health check.
 
 The next scheduled full monitor remains **2026-09-29T06:29:29+08:00**.
+
+
+## Scratch readout comparison launch receipts (2026-09-29T03:21:03+08:00)
+
+The reviewed fixed-100-epoch study has two launch receipts: MTO arm PID 879890 on GPU2 (start_ticks 1247080802, receipt SHA-256 `d4bf260b73e6db099742c7bcef8be0c4834adad2202c99486b7130be0873d39c`) and native arm PID 880266 on guarded GPU5 (start_ticks 1247085838, receipt SHA-256 `cd006ac90880c3f2b7e17d5a65aa064070e8eed72f5b7d272949b0378507b837`; admission review `ce61348caab6b1367787e18eeb89e2dfe5cf91349ad4e0602d2bf0dff9d4183d`). These receipts do not claim current health. Implementation review SHA-256 `6226b1c68226ce8a5ed6ddf74c630bce32dd88e0fadc46b0de12e8e4d005c3e2`; preflight SHA-256 `7719140e4bc0fcf5566eb6e90aa0d450bb27f3e217eb17a727a06116eec02e3c`.
+
+The geometry audit report is complete and staged locally; its descriptive findings retain every validation molecule and make no causal or label-error claim.
+
+Next scheduled full monitor remains **2026-09-29T06:29:29+08:00**.
+
+
+## Independent geometry review and scratch scope (2026-09-29T03:25:14+08:00)
+
+`geometry_error_audit/INDEPENDENT_SCIENTIFIC_REVIEW.md` (SHA-256 `cbfff434ea9d2df1f06b713f53788f803c960cec12b38547920138bece294e5c`) independently recalculates the descriptive geometry diagnostic. State slots are zero-based (slot 6 is S7); equal3 has slightly lower absolute SSE across the six lowest-q2 molecules but a higher share of its lower full-validation SSE. There is no causal or label-error conclusion, no sample removal, and no benchmark change.
+
+Root authorized reuse of the fixed training-derived shape bins for saved-prediction diagnostics after the seed and scratch runs complete. Do not modify active trainers or run new inference for those comparisons.
+

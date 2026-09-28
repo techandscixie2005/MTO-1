@@ -1,0 +1,707 @@
+{
+  "seed": 11,
+  "definition": "np.random.default_rng(11).permutation(original_train_indices) once/epoch",
+  "epochs": 100,
+  "orders": [
+    {
+      "epoch": 1,
+      "sha256": "0788b3c2011664345ebdea86325e4a7bdf095389a8265754c9cf7aefa052a973",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 2,
+      "sha256": "4ca3f9f6face0fa3031d611477ee27faa4269965928781db461b44837c2ec172",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 3,
+      "sha256": "53dbe3e3e89171f93d853d9f199b2b47f12b2a56f25e5367b59507df1586df2b",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 4,
+      "sha256": "558c203b6b766eab51250794c815186ed89b1a4fea7822bd5a6dda62d28b3748",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 5,
+      "sha256": "105434da9e81af8b634c6da213072168fe07e1932c626b9cfe1850b47e06e7bd",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 6,
+      "sha256": "5d9dda5c04833a47adf6a4e6b926f72e62132436b4bb62dd8c2f32095b18f800",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 7,
+      "sha256": "cc4cc1a384dba82c119795c1bdde63ed9541937744f5a3b2d13fdd50c572de9c",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 8,
+      "sha256": "f8b02b91791c0a2fce8d4196f0c6571c620fb207b0af859c3821bc16694ee26a",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 9,
+      "sha256": "bec2cad051027013c34c4c9469fb67a638cc03046ca7dd6c05546464cbc89f9a",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 10,
+      "sha256": "ff6b31a3394233817bfc0f3dd0ccc422ca397de0ffe67875e2563be45af74416",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 11,
+      "sha256": "6a807c6fddc8e46eca49c6b78a8a9cfe9e1f9a03edc463b151063705c9dde0a4",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 12,
+      "sha256": "6e0049f2db25da778beab85c55ce1c95d23c9d2ae5716abc9d236f4c245b65b6",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 13,
+      "sha256": "382fe3f312d98fd4124a6ed69ffc84dd99659a1b98916ba07a2aed3f9f7fed1f",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 14,
+      "sha256": "71a9fd479c10fa377b955ba0741994af326bac6d82a0b322cab8c17a2e75eaed",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 15,
+      "sha256": "88541d7447614efc970c8501e09a7cc51cae4f1fa4285661e1e10f070b023cba",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 16,
+      "sha256": "6d539fb36dfab162a07135c294de7d15b88e787b2e217535bafb37c211e123c8",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 17,
+      "sha256": "d7c2febc6e969b1154cf50f467a7752c7a259f16f828771d5091a8cb1215dc12",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 18,
+      "sha256": "6c3e31045a2f7d987735f129d650fd120b941cc64fbe035f39f7e32596b7e2fd",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 19,
+      "sha256": "c327073e711bf92953fcc953e0435ddf5127ed44765bc6226c149f1a12ea2515",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 20,
+      "sha256": "6c175dbb000835af70e179e63f9d6461427df604c9eb3fbbd8285d66ff9e8527",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 21,
+      "sha256": "24bd7e14a6838a6fa82ec1cad6072f20b978d55af2158048bacba75128f19cbc",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 22,
+      "sha256": "132fee120219ec1981545431cab42e78689017a2a887f83df14a030e3b2285d7",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 23,
+      "sha256": "43565343af4bf2c58f51b0607d293d1e08e8c309ab16cc2e5213f2ae30fdefcf",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 24,
+      "sha256": "4c217ad8f7885f130064e487a274bb7797822a14aeb9eb39cbd5e0d99d218d1f",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 25,
+      "sha256": "05b730dccf52d102ccc1d2366254a3c340754383161b226eaf3ddf6818d330e4",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 26,
+      "sha256": "87002a97de87978367026f7b4d030011fe7f4fbb12243e98273554449c0580ba",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 27,
+      "sha256": "69a571d121a9b810b6434209cd23f03e9387bbe1a841cec3fa87a60ad73e5eed",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 28,
+      "sha256": "4a3f2def004660ff11f7affa999969ed3d4db70bb7bf7013b5c42a9e0fc8fe69",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 29,
+      "sha256": "cd016dc5844df02579cbc03371991f1113ff02ff0caf0886e56aed22e563aaad",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 30,
+      "sha256": "0f80f7471eaf9e63de37e74d3e53a931f8623e9929cad5a9aa56d33d1dc21a56",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 31,
+      "sha256": "437426c235addf1bd475200b261ffa5858c086c5060b1bee46011a050761c6a2",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 32,
+      "sha256": "13efe352e73021dd6b28ab17c76fc8f802a2b5b67a1f977e2086f7453ece7f0f",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 33,
+      "sha256": "3fc89eea6630729da699e2164af7c7976949786fe0bf27002f8dc78e103320e6",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 34,
+      "sha256": "81d5e8c72f097075c3e0e5f8c1fd99771e20b3a03e3f8aefd0bfd4641b96a153",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 35,
+      "sha256": "13828c7cda95f1659f3dfe5958f183d7513e3a3452c277cf6eaa1fa356852b28",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 36,
+      "sha256": "cd53ac2ed71a26a3f4b7285b7d895dc51f7e98fde2a5c361f076d5061a3ecf79",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 37,
+      "sha256": "349ad189dd65d21845cd88585b137e9afe2db51fb2434f55668de080f81b53e2",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 38,
+      "sha256": "2bb17f010fdb2702a07680d6de35d0d7e1f15c9931df865bb89bdb0b34914d25",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 39,
+      "sha256": "5c534ab552f82de452e6cf6e5b67e090ee85f42d2d3fcdc1d059c2faf597918e",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 40,
+      "sha256": "2f09a18b81dabcf166e0bc8a343b35bf2c741d18991e8122113664a81189ed44",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 41,
+      "sha256": "46407288d227b32b669bec7174ac9814f2788d3fad37680167b0b7848741b993",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 42,
+      "sha256": "6a2b1a75e43b4156c387bdd5f14b17aca7e2728b65615349ce4f145f0400720c",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 43,
+      "sha256": "6e33c93e47cc046c7e594fc7b5dcfa749c3057b3b0637f1b1b1f660d95115452",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 44,
+      "sha256": "dcf3e1431352d88233de2798242466cf2d8321e5a507e53f77dbfaaabe8904fb",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 45,
+      "sha256": "355d78d5f2cab7e5bc709ac5333abb6859b62dc94a9db7e1f5cf3b244e092a03",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 46,
+      "sha256": "bc6407e0472017a54e823629d2f9fedad39eb379fcb976690ee87ca4ef6d5f5b",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 47,
+      "sha256": "841123379982a8a6cecf5068b460a0b9152ac26d6e3d2dbdec1f35406d49060b",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 48,
+      "sha256": "b46fbfb951cb790c9f033a0dc9638f1ff71cd96a24ed5abac8e5e868a7479928",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 49,
+      "sha256": "7723540382366df4259c407f8b54617f96c8842d71b1990bb974e035bf4ee719",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 50,
+      "sha256": "200ec61e40cb7f3513f51159cc8771c2808ec3cc61b1ab0bd531b8dc3649c1fa",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 51,
+      "sha256": "102fc186794ad658fba611f3a823d57fc98b762d3a28f38939bc2a08608f4e74",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 52,
+      "sha256": "49d9217beb329defa972069a0475745989e19095fd738c38c75da7c34888cb92",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 53,
+      "sha256": "49e4656424cfe9348c0ce72e11bf84742baaf8fc908ead971fcbe1237987baf5",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 54,
+      "sha256": "6ae3811b2fd3bb8be78f12e5a4abc261fbbb4a2d9300711abd73ad119858ab79",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 55,
+      "sha256": "c72d467135ba1e7e36b57dc76eec946de3f5527ba47de5c817b914b024022cfc",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 56,
+      "sha256": "2e98b0fd832c27b5de1949f5fabd0fd23b05fa29b59a2aa07b2f3ea8204a8873",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 57,
+      "sha256": "9ed8f79091ebce3d398eb2d64a3c5d8aaa7974ddfa9f1b82b79ee66897d67863",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 58,
+      "sha256": "e880a7248dff4c34126668b6757291fe183a4fd5aa4ea7b6d618dcb978a756c4",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 59,
+      "sha256": "fdd8469ce953294dc6eb8d5c2518e1fc56caef360f0f2f0714ea90e17c41b8e2",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 60,
+      "sha256": "c7ac7cad0f6d574c3ed0fb30be063b9f22965fad691233f8ce18fda72a7f4b91",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 61,
+      "sha256": "c6e8d6f380025fbe5a7db5d1b334dd6d03b81d3235e8d5f9f80cd781db0f39f7",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 62,
+      "sha256": "a4768f72416feeb9c46d62cc9834fb7aa2263df33412156b952fd9aba530fb53",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 63,
+      "sha256": "0c768495d828b7d2f412110292fdac925114a4f769aa6775cffe63315534679d",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 64,
+      "sha256": "42257df74c49e66c925719e0e2b5843ad48049f665eb506c578ea02068c23bb5",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 65,
+      "sha256": "68b0359edd605d978588bafc69301fa2fc1db9c23adf112005eb2249765c1f00",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 66,
+      "sha256": "c3e8c63f44fbb8d5f49a35ef49b7c3e78567ef62498e7b1ba5e1dba5b42263a8",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 67,
+      "sha256": "769a47b96e16d56044f1166cf381b8ef28a08e984b14cd6b9434bd911c0cd7c8",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 68,
+      "sha256": "7d1ca9749761e5da7a1858044bfc7ee3c256f118d4f803e0faf21591d4e1dafb",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 69,
+      "sha256": "56de4cb86eeb1748a2b76ba8e8990409210261cedd8ac5bdd5267f63f2f61de2",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 70,
+      "sha256": "a9c0cd7d15ccfe6bb7087429e31b102e4f0a93a67f3401221249cf1f2e375b9c",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 71,
+      "sha256": "1f1ffbde5303f88b32e8170ec6362362152f9d0d5f2f202cc8a5538f79da6b80",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 72,
+      "sha256": "e5713a448a5f29e5b8ac10c6d5b8e51f640dc9b99d767c2cb3bd5ae841a3c881",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 73,
+      "sha256": "c88b11a9024dc8a0c6761f37229a6e78519356e8a8feec6045ee6c2f07d215bd",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 74,
+      "sha256": "6b0608f0d514a2273478ffb0422fc35690a57391b8d143bca8a1b4ca42fcd938",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 75,
+      "sha256": "ca9219d6dc6f85bf26a6a5df80c378697ee5e7edbb34de53692b3017b5716159",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 76,
+      "sha256": "dbafff0a0311709e57d05a2528c7528063235def7e2f89e44f60e2e285c6d4b1",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 77,
+      "sha256": "48eb3691b2b090e4903df1471ea594314fdc51e8d0b5d198708a0195f6527eeb",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 78,
+      "sha256": "cfbfc1c6cbc7e5940b550ca11d816fb1d1d3f035ac112d5fee0e6522a2ba022a",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 79,
+      "sha256": "370a6b0c8b65a8fac51656892e7375f11f8c187e70db732878b889a34e39b24e",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 80,
+      "sha256": "31f3cbba580b2c62245fca440aa6de34c083e5af738de89e1c2ae2f3158b86be",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 81,
+      "sha256": "ce1bce59be64c7ebe31136d9e2b425c15fb023d1bf6e26c714a880192740ac17",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 82,
+      "sha256": "4f7ba274051f19d6fc0e5425dd281e689118822d5538de0b5663b0e4a4940f73",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 83,
+      "sha256": "5c39d9fca0ed5963f13687b0fd8654cd7ea4cc8576ae6dad801b719675789a7a",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 84,
+      "sha256": "ed7ddfc5d5a58b19d4da3c0e269000962cb4e5bb631fd991e79e93e2d1dddefa",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 85,
+      "sha256": "bde0d76772ef57b37c2065dcc550d9d220138ff9893f36bae86e4d3be00cea93",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 86,
+      "sha256": "8b0d6e0923f24094b0184e9a246fe8d4a0d359bf174497e0ade4188095950452",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 87,
+      "sha256": "10f0edc68119416d8dbf82aad7dea881b8820fa26d6b2420d9e1f23a36ab89e6",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 88,
+      "sha256": "416ff9432a40e63a87783555c4c684ce6ef2cc4301033b055fb67051076cc00a",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 89,
+      "sha256": "772cfeb4c0d4d680a1b78a8c25ce4ee6d818d2bbaaad72dbd1c661aec72fae61",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 90,
+      "sha256": "72fff61e8125eefe48e74a3cf7c7e27a29bb94e1cde67e1e07b427d18eaa65f9",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 91,
+      "sha256": "5f25b64e3cfcc0d1be6a3143329b90c9c174b8f93f0a520a8db2974f2b5bbc45",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 92,
+      "sha256": "6e6e0ecd78e9ca48e29b5b8b8df3d52add5d5739800af988ab1a3ebdb5290af7",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 93,
+      "sha256": "219781bd823ac704bfc5b04826aedf0efe2ca1873eca5fef8d0bbc213f42ea5d",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 94,
+      "sha256": "4a99519cbe34b29b9c841186f1e7b62e505fbf1e4146880ff157101a45520aca",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 95,
+      "sha256": "bf686a39047c1799c85991bebe8a1c846664b82c28d2c53a221c7d2bece3d224",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 96,
+      "sha256": "a347425ccb872db9cbf36e0ee4396f998f7e4f9d055ca9103a4cb53697da1d81",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 97,
+      "sha256": "9b22b46b246951239d085040d3312a9039eaf1f5efa67356299019533660cf5c",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 98,
+      "sha256": "09667e1be129dbc178030dfede51c9ce830f79db9021526cb36aee9cd2922dd3",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 99,
+      "sha256": "d36252000a2bc11ff1d7274263b85e86f25414f4d7231645a24c7d0c7c3dbc81",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    },
+    {
+      "epoch": 100,
+      "sha256": "c5b7a2fd848e77081c613b28bd2bb7062005b1221f38ffd2e298a0c07ad66651",
+      "molecules": 120355,
+      "updates": 1881,
+      "last_batch": 35
+    }
+  ]
+}

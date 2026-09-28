@@ -30,7 +30,7 @@
   "publication_note": "Local D: archive is the staging source. Do not upload checkpoints, optimizer states, caches, raw tensors, or large runtime artifacts.",
   "last_full_check_at": "2026-09-29T02:31:01+08:00",
   "scope_admin_amendment": {
-    "updated_at": "2026-09-29T03:00:24+08:00",
+    "updated_at": "2026-09-29T03:25:14+08:00",
     "cadence_preserved": true,
     "last_full_check_at": "2026-09-29T02:31:01+08:00",
     "next_check_due_at": "2026-09-29T06:29:29+08:00",
@@ -94,6 +94,42 @@
       }
     ],
     "scheduled_report": "monitoring/FULL_CHECK_20260929_0229_CORRECTED.md",
-    "original_report_placeholder_preserved": "monitoring/FULL_CHECK_20260929_0229.md (6 bytes, literal placeholder)"
+    "original_report_placeholder_preserved": "monitoring/FULL_CHECK_20260929_0229.md (6 bytes, literal placeholder)",
+    "scratch_readout_comparison": {
+      "state": "both reviewed fixed-100-epoch arms launched; receipt identity only, no current health claim",
+      "protocol_path": "scratch_readout_comparison/PROTOCOL.md",
+      "implementation_review_sha256": "6226b1c68226ce8a5ed6ddf74c630bce32dd88e0fadc46b0de12e8e4d005c3e2",
+      "preflight_sha256": "7719140e4bc0fcf5566eb6e90aa0d450bb27f3e217eb17a727a06116eec02e3c",
+      "arms": [
+        {
+          "arm": "mto",
+          "pid": 879890,
+          "start_ticks": 1247080802,
+          "gpu": 2,
+          "receipt_path": "scratch_readout_comparison/runs/mto/LAUNCH_RECEIPT.json",
+          "receipt_sha256": "d4bf260b73e6db099742c7bcef8be0c4834adad2202c99486b7130be0873d39c",
+          "epochs": 100
+        },
+        {
+          "arm": "native",
+          "pid": 880266,
+          "start_ticks": 1247085838,
+          "gpu": 5,
+          "receipt_path": "scratch_readout_comparison/runs/native/LAUNCH_RECEIPT.json",
+          "receipt_sha256": "cd006ac90880c3f2b7e17d5a65aa064070e8eed72f5b7d272949b0378507b837",
+          "epochs": 100,
+          "gpu5_admission_review_sha256": "ce61348caab6b1367787e18eeb89e2dfe5cf91349ad4e0602d2bf0dff9d4183d"
+        }
+      ]
+    },
+    "geometry_error_audit": {
+      "state": "completed, D-staged, strong reviewer acknowledged packet; no promotion or causal/label-error claim",
+      "report_sha256": "bc97cdb2c1c949cf53eed6c5ab0610c1254b9f4405e37a28a5707affdbdc4d70",
+      "metrics_sha256": "b088b23a5098149c5a127623a5a9315f6d4c979a501eeb3fd0af46285eaccbbd",
+      "all_validation_molecules_retained": true,
+      "independent_review_sha256": "cbfff434ea9d2df1f06b713f53788f803c960cec12b38547920138bece294e5c",
+      "disposition": "reviewed descriptive audit; no model/benchmark/sample decision changes"
+    },
+    "approved_post_run_reuse": "frozen training-derived shape bins may be applied to saved predictions from seed/scratch studies after completion; no active trainer edits or new inference"
   }
 }

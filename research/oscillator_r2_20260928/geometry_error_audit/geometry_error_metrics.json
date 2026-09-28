@@ -1,0 +1,1558 @@
+{
+  "created_at": "2026-09-29T03:16:38.827786+08:00",
+  "classification": "validation geometry/concentration diagnostic only; no training, inference, test use, or sample removal",
+  "protocol_sha256": "901e7e9fea9375481ba73bfe0dc321e60bd1647bddbb2d09e8ef8e8a3cfc56d4",
+  "code_sha256": "cda3735529a57e83a6183ef82a85fc022022517404681bff0635a9bf91e54472",
+  "pinned_sources": {
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/dataset.npz": "be8fadca203429575d70642b617730592693be40858dca7189c098a671596330",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/raw_labels.npz": "621dc8723fb6dc96681851a26e4f52fcb7747a4778e57a249a75d22f3af4c632",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta0/val_predictions.npz": "25acae64bb4e3e541048a8705045f7f639d1113d537dbbef71672752e8065890",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta01/val_predictions.npz": "9edffb5cd617469c78c8d83da7901ac90add69d89f27de7e8196a8736ae85500",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta1/val_predictions.npz": "a3808b9ad425abf4f6fcfed840d0ed8d1ff6fcf1557037a4e01932c734dc68bb",
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/data/identity_audit_v2.json": "9d384425a90dd88fbc68f8b609a303872910bb21c69e0d0a19bcccaee49cb3c4"
+  },
+  "alignment": {
+    "train_molecules": 120355,
+    "validation_molecules": 6686,
+    "train_val_indices_disjoint": true,
+    "raw_ids_and_masks_verified": true,
+    "each_saved_val_prediction_ids_indices_truth_mask_verified": true,
+    "selected_identity_rows_verified_train_val_only": true,
+    "identity_source_rows_total_lexically_skipped_nonselected": 6686
+  },
+  "geometry": {
+    "definition": "centered unweighted coordinate covariance X.T@X/n_atoms in FP64; eigenvalues descending",
+    "degeneracy": "undefined when lambda1 <= 64*eps64*max(trace(cov),1)",
+    "near_linear_threshold_q2_le_1e-5": 1e-05,
+    "train_quantiles": {
+      "0.001": 0.05941956341810567,
+      "0.01": 0.09867099135475822,
+      "0.1": 0.21033971729099188,
+      "0.5": 0.45009813312285296
+    },
+    "deduplicated_boundaries_including_fixed_threshold": [
+      1e-05,
+      0.05941956341810567,
+      0.09867099135475822,
+      0.21033971729099188,
+      0.45009813312285296
+    ],
+    "interval_convention": "[0,b0], then (previous,boundary], final (last,+inf); degenerate geometry separately counted",
+    "train_degenerate_count": 0,
+    "validation_degenerate_count": 0,
+    "train_near_linear_count": 10,
+    "validation_near_linear_count": 1,
+    "training_q3_quantiles": {
+      "0.001": 1.3129937341794305e-11,
+      "0.01": 1.0273606733704654e-09,
+      "0.1": 0.03703241529916692,
+      "0.5": 0.1950348664308274
+    },
+    "validation_q2_quantiles": {
+      "0.001": 0.06303273920274605,
+      "0.01": 0.09892220475868772,
+      "0.1": 0.21178087717570265,
+      "0.5": 0.4530987305579758
+    },
+    "validation_q3_quantiles": {
+      "0.001": 9.200555382944365e-12,
+      "0.01": 9.051522668656339e-10,
+      "0.1": 0.038657574824693064,
+      "0.5": 0.19408249728112825
+    }
+  },
+  "full_validation_metrics_all_molecules_retained": {
+    "eta0": {
+      "sse": 94.20512092938401,
+      "mean_signed_error": -0.0003239182921283121,
+      "overprediction_fraction": 0.6387825306610828,
+      "labels": 66860
+    },
+    "equal3": {
+      "sse": 87.2150742627189,
+      "mean_signed_error": -0.000511999750944044,
+      "overprediction_fraction": 0.6457523182769968,
+      "labels": 66860
+    }
+  },
+  "strata": [
+    {
+      "bin_index": 0,
+      "label": "q2 <= 1e-05",
+      "training_molecules": 10,
+      "validation_molecules": 1,
+      "training_q2_count": 10,
+      "training_raw_f_zero_count": 72,
+      "training_raw_f_label_count": 100,
+      "training_raw_f_zero_prevalence": 0.72,
+      "validation_raw_f_zero_count": 10,
+      "validation_raw_f_label_count": 10,
+      "validation_raw_f_zero_prevalence": 1.0,
+      "validation_molecules_with_any_zero": 1,
+      "validation_molecules_all_zero": 1,
+      "models": {
+        "eta0": {
+          "sse": 2.898002867004206,
+          "mean_signed_error": 0.2162575245077548,
+          "overprediction_fraction": 1.0,
+          "labels": 10,
+          "sse_share_of_full_validation": 0.030762689314698125,
+          "mean_sse_per_molecule": 2.898002867004206,
+          "median_sse_per_molecule": 2.898002867004206,
+          "p90_sse_per_molecule": 2.898002867004206,
+          "case_excluded_concentration_only": {
+            "excluded_molecule_id": 14562,
+            "remaining_molecules": 0,
+            "sse_after_case_exclusion_concentration_only": 0.0,
+            "mean_sse_per_remaining_molecule_concentration_only": null
+          },
+          "per_state": [
+            {
+              "state": 0,
+              "labels": 1,
+              "raw_f_zero_count": 1,
+              "sse": 3.614698250263893e-10,
+              "mean_signed_error": 1.9012359796363767e-05,
+              "overprediction_fraction": 1.0
+            },
+            {
+              "state": 1,
+              "labels": 1,
+              "raw_f_zero_count": 1,
+              "sse": 7.440480113365224e-05,
+              "mean_signed_error": 0.008625821765701645,
+              "overprediction_fraction": 1.0
+            },
+            {
+              "state": 2,
+              "labels": 1,
+              "raw_f_zero_count": 1,
+              "sse": 7.858829167868802e-06,
+              "mean_signed_error": 0.0028033603350031194,
+              "overprediction_fraction": 1.0
+            },
+            {
+              "state": 3,
+              "labels": 1,
+              "raw_f_zero_count": 1,
+              "sse": 7.203397890594104e-05,
+              "mean_signed_error": 0.008487283364301032,
+              "overprediction_fraction": 1.0
+            },
+            {
+              "state": 4,
+              "labels": 1,
+              "raw_f_zero_count": 1,
+              "sse": 0.004223562127298653,
+              "mean_signed_error": 0.06498893849955277,
+              "overprediction_fraction": 1.0
+            },
+            {
+              "state": 5,
+              "labels": 1,
+              "raw_f_zero_count": 1,
+              "sse": 3.099366851664966e-05,
+              "mean_signed_error": 0.005567195749805251,
+              "overprediction_fraction": 1.0
+            },
+            {
+              "state": 6,
+              "labels": 1,
+              "raw_f_zero_count": 1,
+              "sse": 2.772699857507466,
+              "mean_signed_error": 1.665142593746093,
+              "overprediction_fraction": 1.0
+            },
+            {
+              "state": 7,
+              "labels": 1,
+              "raw_f_zero_count": 1,
+              "sse": 0.1188908114248374,
+              "mean_signed_error": 0.34480546896016223,
+              "overprediction_fraction": 1.0
+            },
+            {
+              "state": 8,
+              "labels": 1,
+              "raw_f_zero_count": 1,
+              "sse": 0.0013768849783766131,
+              "mean_signed_error": 0.03710640077367533,
+              "overprediction_fraction": 1.0
+            },
+            {
+              "state": 9,
+              "labels": 1,
+              "raw_f_zero_count": 1,
+              "sse": 0.0006264593270339454,
+              "mean_signed_error": 0.025029169523456934,
+              "overprediction_fraction": 1.0
+            }
+          ]
+        },
+        "equal3": {
+          "sse": 3.5965408966908905,
+          "mean_signed_error": 0.21517973379682412,
+          "overprediction_fraction": 1.0,
+          "labels": 10,
+          "sse_share_of_full_validation": 0.041237606309397754,
+          "mean_sse_per_molecule": 3.5965408966908905,
+          "median_sse_per_molecule": 3.5965408966908905,
+          "p90_sse_per_molecule": 3.5965408966908905,
+          "case_excluded_concentration_only": {
+            "excluded_molecule_id": 14562,
+            "remaining_molecules": 0,
+            "sse_after_case_exclusion_concentration_only": 0.0,
+            "mean_sse_per_remaining_molecule_concentration_only": null
+          },
+          "per_state": [
+            {
+              "state": 0,
+              "labels": 1,
+              "raw_f_zero_count": 1,
+              "sse": 3.298027693411436e-05,
+              "mean_signed_error": 0.0057428457174221875,
+              "overprediction_fraction": 1.0
+            },
+            {
+              "state": 1,
+              "labels": 1,
+              "raw_f_zero_count": 1,
+              "sse": 1.0523882055644686e-05,
+              "mean_signed_error": 0.0032440533373612533,
+              "overprediction_fraction": 1.0
+            },
+            {
+              "state": 2,
+              "labels": 1,
+              "raw_f_zero_count": 1,
+              "sse": 4.762648545856095e-05,
+              "mean_signed_error": 0.0069011944950538055,
+              "overprediction_fraction": 1.0
+            },
+            {
+              "state": 3,
+              "labels": 1,
+              "raw_f_zero_count": 1,
+              "sse": 6.539473275758875e-05,
+              "mean_signed_error": 0.008086700981091656,
+              "overprediction_fraction": 1.0
+            },
+            {
+              "state": 4,
+              "labels": 1,
+              "raw_f_zero_count": 1,
+              "sse": 0.0008149778833737696,
+              "mean_signed_error": 0.02854781748879885,
+              "overprediction_fraction": 1.0
+            },
+            {
+              "state": 5,
+              "labels": 1,
+              "raw_f_zero_count": 1,
+              "sse": 4.1550886810114065e-05,
+              "mean_signed_error": 0.0064459977358136,
+              "overprediction_fraction": 1.0
+            },
+            {
+              "state": 6,
+              "labels": 1,
+              "raw_f_zero_count": 1,
+              "sse": 3.5760589530043485,
+              "mean_signed_error": 1.891047052033436,
+              "overprediction_fraction": 1.0
+            },
+            {
+              "state": 7,
+              "labels": 1,
+              "raw_f_zero_count": 1,
+              "sse": 0.0161123417937452,
+              "mean_signed_error": 0.12693439956822264,
+              "overprediction_fraction": 1.0
+            },
+            {
+              "state": 8,
+              "labels": 1,
+              "raw_f_zero_count": 1,
+              "sse": 0.00043089248573053543,
+              "mean_signed_error": 0.0207579499404574,
+              "overprediction_fraction": 1.0
+            },
+            {
+              "state": 9,
+              "labels": 1,
+              "raw_f_zero_count": 1,
+              "sse": 0.0029256552596771345,
+              "mean_signed_error": 0.05408932667058386,
+              "overprediction_fraction": 1.0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "bin_index": 1,
+      "label": "1e-05 < q2 <= 0.0594195634181",
+      "training_molecules": 111,
+      "validation_molecules": 5,
+      "training_q2_count": 111,
+      "training_raw_f_zero_count": 161,
+      "training_raw_f_label_count": 1110,
+      "training_raw_f_zero_prevalence": 0.14504504504504503,
+      "validation_raw_f_zero_count": 9,
+      "validation_raw_f_label_count": 50,
+      "validation_raw_f_zero_prevalence": 0.18,
+      "validation_molecules_with_any_zero": 5,
+      "validation_molecules_all_zero": 0,
+      "models": {
+        "eta0": {
+          "sse": 2.4876833143508805,
+          "mean_signed_error": -0.0029212865188808466,
+          "overprediction_fraction": 0.8,
+          "labels": 50,
+          "sse_share_of_full_validation": 0.026407092202722648,
+          "mean_sse_per_molecule": 0.4975366628701761,
+          "median_sse_per_molecule": 0.4601312126348298,
+          "p90_sse_per_molecule": 0.98410803064014,
+          "case_excluded_concentration_only": null,
+          "per_state": [
+            {
+              "state": 0,
+              "labels": 5,
+              "raw_f_zero_count": 5,
+              "sse": 0.00025574367808559755,
+              "mean_signed_error": 0.005859607859532955,
+              "overprediction_fraction": 1.0
+            },
+            {
+              "state": 1,
+              "labels": 5,
+              "raw_f_zero_count": 0,
+              "sse": 0.0018755519720775548,
+              "mean_signed_error": -0.0021199207459506007,
+              "overprediction_fraction": 0.8
+            },
+            {
+              "state": 2,
+              "labels": 5,
+              "raw_f_zero_count": 2,
+              "sse": 0.00230702844775492,
+              "mean_signed_error": -0.0030837869591524257,
+              "overprediction_fraction": 0.8
+            },
+            {
+              "state": 3,
+              "labels": 5,
+              "raw_f_zero_count": 0,
+              "sse": 0.0009799755620073895,
+              "mean_signed_error": 0.008864018917343394,
+              "overprediction_fraction": 0.6
+            },
+            {
+              "state": 4,
+              "labels": 5,
+              "raw_f_zero_count": 0,
+              "sse": 0.0035550877097926124,
+              "mean_signed_error": 0.0065994447890588654,
+              "overprediction_fraction": 0.8
+            },
+            {
+              "state": 5,
+              "labels": 5,
+              "raw_f_zero_count": 0,
+              "sse": 0.08616169257904634,
+              "mean_signed_error": 0.07815466807113225,
+              "overprediction_fraction": 1.0
+            },
+            {
+              "state": 6,
+              "labels": 5,
+              "raw_f_zero_count": 0,
+              "sse": 0.03886516915588578,
+              "mean_signed_error": -0.017345381389288705,
+              "overprediction_fraction": 0.6
+            },
+            {
+              "state": 7,
+              "labels": 5,
+              "raw_f_zero_count": 1,
+              "sse": 0.7543892221330181,
+              "mean_signed_error": -0.15567957952810285,
+              "overprediction_fraction": 0.6
+            },
+            {
+              "state": 8,
+              "labels": 5,
+              "raw_f_zero_count": 0,
+              "sse": 0.4647050390288078,
+              "mean_signed_error": 0.2276326853989319,
+              "overprediction_fraction": 1.0
+            },
+            {
+              "state": 9,
+              "labels": 5,
+              "raw_f_zero_count": 1,
+              "sse": 1.1345888040844043,
+              "mean_signed_error": -0.1780946216023132,
+              "overprediction_fraction": 0.8
+            }
+          ]
+        },
+        "equal3": {
+          "sse": 1.6603773944766307,
+          "mean_signed_error": 0.00014391480474925568,
+          "overprediction_fraction": 0.78,
+          "labels": 50,
+          "sse_share_of_full_validation": 0.01903773411319995,
+          "mean_sse_per_molecule": 0.3320754788953261,
+          "median_sse_per_molecule": 0.09351503651137742,
+          "p90_sse_per_molecule": 0.8422377720485508,
+          "case_excluded_concentration_only": null,
+          "per_state": [
+            {
+              "state": 0,
+              "labels": 5,
+              "raw_f_zero_count": 5,
+              "sse": 0.0002761734261745611,
+              "mean_signed_error": 0.0070343181415050875,
+              "overprediction_fraction": 1.0
+            },
+            {
+              "state": 1,
+              "labels": 5,
+              "raw_f_zero_count": 0,
+              "sse": 0.0006185509682879281,
+              "mean_signed_error": 0.0043521850073992814,
+              "overprediction_fraction": 0.8
+            },
+            {
+              "state": 2,
+              "labels": 5,
+              "raw_f_zero_count": 2,
+              "sse": 0.0016125515662737434,
+              "mean_signed_error": 0.011568178892152774,
+              "overprediction_fraction": 0.8
+            },
+            {
+              "state": 3,
+              "labels": 5,
+              "raw_f_zero_count": 0,
+              "sse": 0.0018807307591607331,
+              "mean_signed_error": -0.004514150294645748,
+              "overprediction_fraction": 0.6
+            },
+            {
+              "state": 4,
+              "labels": 5,
+              "raw_f_zero_count": 0,
+              "sse": 0.0017432548188720236,
+              "mean_signed_error": -0.0015234230011739833,
+              "overprediction_fraction": 0.6
+            },
+            {
+              "state": 5,
+              "labels": 5,
+              "raw_f_zero_count": 0,
+              "sse": 0.04819327714134424,
+              "mean_signed_error": 0.05212438404774424,
+              "overprediction_fraction": 0.8
+            },
+            {
+              "state": 6,
+              "labels": 5,
+              "raw_f_zero_count": 0,
+              "sse": 0.04006142530436189,
+              "mean_signed_error": 0.01303610294393781,
+              "overprediction_fraction": 0.8
+            },
+            {
+              "state": 7,
+              "labels": 5,
+              "raw_f_zero_count": 1,
+              "sse": 0.14398807487589949,
+              "mean_signed_error": -0.06454609089207977,
+              "overprediction_fraction": 0.6
+            },
+            {
+              "state": 8,
+              "labels": 5,
+              "raw_f_zero_count": 0,
+              "sse": 0.18481154077828352,
+              "mean_signed_error": 0.17797291659730977,
+              "overprediction_fraction": 1.0
+            },
+            {
+              "state": 9,
+              "labels": 5,
+              "raw_f_zero_count": 1,
+              "sse": 1.2371918148379726,
+              "mean_signed_error": -0.19406527339465687,
+              "overprediction_fraction": 0.8
+            }
+          ]
+        }
+      }
+    },
+    {
+      "bin_index": 2,
+      "label": "0.0594195634181 < q2 <= 0.0986709913548",
+      "training_molecules": 1083,
+      "validation_molecules": 59,
+      "training_q2_count": 1083,
+      "training_raw_f_zero_count": 787,
+      "training_raw_f_label_count": 10830,
+      "training_raw_f_zero_prevalence": 0.07266851338873499,
+      "validation_raw_f_zero_count": 47,
+      "validation_raw_f_label_count": 590,
+      "validation_raw_f_zero_prevalence": 0.07966101694915254,
+      "validation_molecules_with_any_zero": 29,
+      "validation_molecules_all_zero": 0,
+      "models": {
+        "eta0": {
+          "sse": 3.0437935218053367,
+          "mean_signed_error": -0.00010832563938900076,
+          "overprediction_fraction": 0.7033898305084746,
+          "labels": 590,
+          "sse_share_of_full_validation": 0.0323102766789818,
+          "mean_sse_per_molecule": 0.05158972070856503,
+          "median_sse_per_molecule": 0.007698957331179576,
+          "p90_sse_per_molecule": 0.07721923146592852,
+          "case_excluded_concentration_only": null,
+          "per_state": [
+            {
+              "state": 0,
+              "labels": 59,
+              "raw_f_zero_count": 13,
+              "sse": 0.022043128551340028,
+              "mean_signed_error": 0.00028948710954440876,
+              "overprediction_fraction": 0.7796610169491526
+            },
+            {
+              "state": 1,
+              "labels": 59,
+              "raw_f_zero_count": 6,
+              "sse": 0.04234791306260783,
+              "mean_signed_error": -0.0019335634266829061,
+              "overprediction_fraction": 0.6440677966101694
+            },
+            {
+              "state": 2,
+              "labels": 59,
+              "raw_f_zero_count": 4,
+              "sse": 0.01610703336541803,
+              "mean_signed_error": 0.001307661075325505,
+              "overprediction_fraction": 0.6440677966101694
+            },
+            {
+              "state": 3,
+              "labels": 59,
+              "raw_f_zero_count": 4,
+              "sse": 0.3412380454248503,
+              "mean_signed_error": 0.0025832957583435696,
+              "overprediction_fraction": 0.7457627118644068
+            },
+            {
+              "state": 4,
+              "labels": 59,
+              "raw_f_zero_count": 1,
+              "sse": 0.7834879446695758,
+              "mean_signed_error": -0.025387512120853533,
+              "overprediction_fraction": 0.4915254237288136
+            },
+            {
+              "state": 5,
+              "labels": 59,
+              "raw_f_zero_count": 1,
+              "sse": 0.20368853916258428,
+              "mean_signed_error": 0.0022284994620860353,
+              "overprediction_fraction": 0.6949152542372882
+            },
+            {
+              "state": 6,
+              "labels": 59,
+              "raw_f_zero_count": 5,
+              "sse": 0.3033003061324414,
+              "mean_signed_error": 0.017628556566541675,
+              "overprediction_fraction": 0.8135593220338984
+            },
+            {
+              "state": 7,
+              "labels": 59,
+              "raw_f_zero_count": 6,
+              "sse": 0.15238185693517295,
+              "mean_signed_error": 0.007865731428067532,
+              "overprediction_fraction": 0.7966101694915254
+            },
+            {
+              "state": 8,
+              "labels": 59,
+              "raw_f_zero_count": 4,
+              "sse": 0.5481654913985411,
+              "mean_signed_error": -0.006006144200204891,
+              "overprediction_fraction": 0.7288135593220338
+            },
+            {
+              "state": 9,
+              "labels": 59,
+              "raw_f_zero_count": 3,
+              "sse": 0.6310332631028048,
+              "mean_signed_error": 0.0003407319539426088,
+              "overprediction_fraction": 0.6949152542372882
+            }
+          ]
+        },
+        "equal3": {
+          "sse": 3.288753613377514,
+          "mean_signed_error": -0.00037363245583990124,
+          "overprediction_fraction": 0.7220338983050848,
+          "labels": 590,
+          "sse_share_of_full_validation": 0.03770854569785455,
+          "mean_sse_per_molecule": 0.055741586667415494,
+          "median_sse_per_molecule": 0.006995882610055049,
+          "p90_sse_per_molecule": 0.0976695116813893,
+          "case_excluded_concentration_only": null,
+          "per_state": [
+            {
+              "state": 0,
+              "labels": 59,
+              "raw_f_zero_count": 13,
+              "sse": 0.02146558944231823,
+              "mean_signed_error": 0.00020270647130313682,
+              "overprediction_fraction": 0.7966101694915254
+            },
+            {
+              "state": 1,
+              "labels": 59,
+              "raw_f_zero_count": 6,
+              "sse": 0.026753193645751856,
+              "mean_signed_error": -0.0006113844846941862,
+              "overprediction_fraction": 0.6610169491525424
+            },
+            {
+              "state": 2,
+              "labels": 59,
+              "raw_f_zero_count": 4,
+              "sse": 0.02324992938974035,
+              "mean_signed_error": 0.0022294083455115846,
+              "overprediction_fraction": 0.711864406779661
+            },
+            {
+              "state": 3,
+              "labels": 59,
+              "raw_f_zero_count": 4,
+              "sse": 0.21799798069370546,
+              "mean_signed_error": 0.0008912988266866808,
+              "overprediction_fraction": 0.7288135593220338
+            },
+            {
+              "state": 4,
+              "labels": 59,
+              "raw_f_zero_count": 1,
+              "sse": 0.6018451267820198,
+              "mean_signed_error": -0.021692114128594505,
+              "overprediction_fraction": 0.5254237288135594
+            },
+            {
+              "state": 5,
+              "labels": 59,
+              "raw_f_zero_count": 1,
+              "sse": 0.22352096547635195,
+              "mean_signed_error": 0.00689027842461499,
+              "overprediction_fraction": 0.711864406779661
+            },
+            {
+              "state": 6,
+              "labels": 59,
+              "raw_f_zero_count": 5,
+              "sse": 0.3600813820113303,
+              "mean_signed_error": 0.01366815713429863,
+              "overprediction_fraction": 0.7966101694915254
+            },
+            {
+              "state": 7,
+              "labels": 59,
+              "raw_f_zero_count": 6,
+              "sse": 0.14820767301031487,
+              "mean_signed_error": 0.007910336163480945,
+              "overprediction_fraction": 0.7966101694915254
+            },
+            {
+              "state": 8,
+              "labels": 59,
+              "raw_f_zero_count": 4,
+              "sse": 1.2233314907933763,
+              "mean_signed_error": -0.010340781907509259,
+              "overprediction_fraction": 0.7796610169491526
+            },
+            {
+              "state": 9,
+              "labels": 59,
+              "raw_f_zero_count": 3,
+              "sse": 0.4423002821326044,
+              "mean_signed_error": -0.002884229403497023,
+              "overprediction_fraction": 0.711864406779661
+            }
+          ]
+        }
+      }
+    },
+    {
+      "bin_index": 3,
+      "label": "0.0986709913548 < q2 <= 0.210339717291",
+      "training_molecules": 10832,
+      "validation_molecules": 597,
+      "training_q2_count": 10832,
+      "training_raw_f_zero_count": 3940,
+      "training_raw_f_label_count": 108320,
+      "training_raw_f_zero_prevalence": 0.03637370753323486,
+      "validation_raw_f_zero_count": 225,
+      "validation_raw_f_label_count": 5970,
+      "validation_raw_f_zero_prevalence": 0.03768844221105527,
+      "validation_molecules_with_any_zero": 145,
+      "validation_molecules_all_zero": 0,
+      "models": {
+        "eta0": {
+          "sse": 12.946568667009942,
+          "mean_signed_error": 0.0005768176251865281,
+          "overprediction_fraction": 0.6604690117252932,
+          "labels": 5970,
+          "sse_share_of_full_validation": 0.13742956369340756,
+          "mean_sse_per_molecule": 0.02168604466835836,
+          "median_sse_per_molecule": 0.0053704506881027386,
+          "p90_sse_per_molecule": 0.04017715431205487,
+          "case_excluded_concentration_only": null,
+          "per_state": [
+            {
+              "state": 0,
+              "labels": 597,
+              "raw_f_zero_count": 49,
+              "sse": 0.20251561258596998,
+              "mean_signed_error": -0.00011337569342842738,
+              "overprediction_fraction": 0.6549413735343383
+            },
+            {
+              "state": 1,
+              "labels": 597,
+              "raw_f_zero_count": 26,
+              "sse": 0.4924229435785667,
+              "mean_signed_error": 0.001150797574011309,
+              "overprediction_fraction": 0.6247906197654941
+            },
+            {
+              "state": 2,
+              "labels": 597,
+              "raw_f_zero_count": 27,
+              "sse": 0.646284709125876,
+              "mean_signed_error": -0.00016194042609386818,
+              "overprediction_fraction": 0.6298157453936348
+            },
+            {
+              "state": 3,
+              "labels": 597,
+              "raw_f_zero_count": 21,
+              "sse": 1.0653747881671762,
+              "mean_signed_error": 0.0020386643828016198,
+              "overprediction_fraction": 0.6649916247906198
+            },
+            {
+              "state": 4,
+              "labels": 597,
+              "raw_f_zero_count": 21,
+              "sse": 1.2529058306916965,
+              "mean_signed_error": -0.001924607441091601,
+              "overprediction_fraction": 0.6633165829145728
+            },
+            {
+              "state": 5,
+              "labels": 597,
+              "raw_f_zero_count": 18,
+              "sse": 1.4492650711803443,
+              "mean_signed_error": 0.002936124828460549,
+              "overprediction_fraction": 0.6834170854271356
+            },
+            {
+              "state": 6,
+              "labels": 597,
+              "raw_f_zero_count": 16,
+              "sse": 1.1011860535920914,
+              "mean_signed_error": 0.0019677160667561076,
+              "overprediction_fraction": 0.6432160804020101
+            },
+            {
+              "state": 7,
+              "labels": 597,
+              "raw_f_zero_count": 16,
+              "sse": 3.6556140219347726,
+              "mean_signed_error": -0.00291087281993798,
+              "overprediction_fraction": 0.6968174204355109
+            },
+            {
+              "state": 8,
+              "labels": 597,
+              "raw_f_zero_count": 12,
+              "sse": 1.5487263086563963,
+              "mean_signed_error": 0.00044229618237888154,
+              "overprediction_fraction": 0.6549413735343383
+            },
+            {
+              "state": 9,
+              "labels": 597,
+              "raw_f_zero_count": 19,
+              "sse": 1.5322733274970504,
+              "mean_signed_error": 0.002343373598008693,
+              "overprediction_fraction": 0.6884422110552764
+            }
+          ]
+        },
+        "equal3": {
+          "sse": 11.592638094162169,
+          "mean_signed_error": 0.00014389277014222832,
+          "overprediction_fraction": 0.6668341708542713,
+          "labels": 5970,
+          "sse_share_of_full_validation": 0.13292011951100954,
+          "mean_sse_per_molecule": 0.019418154261578172,
+          "median_sse_per_molecule": 0.004886014154954335,
+          "p90_sse_per_molecule": 0.03834925796624191,
+          "case_excluded_concentration_only": null,
+          "per_state": [
+            {
+              "state": 0,
+              "labels": 597,
+              "raw_f_zero_count": 49,
+              "sse": 0.16407785919962597,
+              "mean_signed_error": 1.5510789743327207e-06,
+              "overprediction_fraction": 0.6716917922948074
+            },
+            {
+              "state": 1,
+              "labels": 597,
+              "raw_f_zero_count": 26,
+              "sse": 0.4586464227980939,
+              "mean_signed_error": 0.0009372163687147671,
+              "overprediction_fraction": 0.6197654941373534
+            },
+            {
+              "state": 2,
+              "labels": 597,
+              "raw_f_zero_count": 27,
+              "sse": 0.522407127345016,
+              "mean_signed_error": -0.0006632984750468596,
+              "overprediction_fraction": 0.6566164154103853
+            },
+            {
+              "state": 3,
+              "labels": 597,
+              "raw_f_zero_count": 21,
+              "sse": 0.8377800128274931,
+              "mean_signed_error": 0.0013379749810412235,
+              "overprediction_fraction": 0.6666666666666666
+            },
+            {
+              "state": 4,
+              "labels": 597,
+              "raw_f_zero_count": 21,
+              "sse": 1.1801677837581708,
+              "mean_signed_error": -0.0018681241641338255,
+              "overprediction_fraction": 0.6683417085427136
+            },
+            {
+              "state": 5,
+              "labels": 597,
+              "raw_f_zero_count": 18,
+              "sse": 1.2167150800666149,
+              "mean_signed_error": 0.00223450092568904,
+              "overprediction_fraction": 0.6968174204355109
+            },
+            {
+              "state": 6,
+              "labels": 597,
+              "raw_f_zero_count": 16,
+              "sse": 0.935104691237856,
+              "mean_signed_error": 0.000814430767429988,
+              "overprediction_fraction": 0.6549413735343383
+            },
+            {
+              "state": 7,
+              "labels": 597,
+              "raw_f_zero_count": 16,
+              "sse": 3.619813305100727,
+              "mean_signed_error": -0.004262411107668032,
+              "overprediction_fraction": 0.678391959798995
+            },
+            {
+              "state": 8,
+              "labels": 597,
+              "raw_f_zero_count": 12,
+              "sse": 1.4239817827506749,
+              "mean_signed_error": 0.00044276602731078713,
+              "overprediction_fraction": 0.6582914572864321
+            },
+            {
+              "state": 9,
+              "labels": 597,
+              "raw_f_zero_count": 19,
+              "sse": 1.2339440290778954,
+              "mean_signed_error": 0.0024643212991108596,
+              "overprediction_fraction": 0.6968174204355109
+            }
+          ]
+        }
+      }
+    },
+    {
+      "bin_index": 4,
+      "label": "0.210339717291 < q2 <= 0.450098133123",
+      "training_molecules": 48142,
+      "validation_molecules": 2648,
+      "training_q2_count": 48142,
+      "training_raw_f_zero_count": 8536,
+      "training_raw_f_label_count": 481420,
+      "training_raw_f_zero_prevalence": 0.017730879481533797,
+      "validation_raw_f_zero_count": 419,
+      "validation_raw_f_label_count": 26480,
+      "validation_raw_f_zero_prevalence": 0.015823262839879153,
+      "validation_molecules_with_any_zero": 296,
+      "validation_molecules_all_zero": 0,
+      "models": {
+        "eta0": {
+          "sse": 33.683644536659635,
+          "mean_signed_error": -0.0002340273341986225,
+          "overprediction_fraction": 0.6436933534743202,
+          "labels": 26480,
+          "sse_share_of_full_validation": 0.35755640674681405,
+          "mean_sse_per_molecule": 0.012720409568224938,
+          "median_sse_per_molecule": 0.0030205291728682255,
+          "p90_sse_per_molecule": 0.03031610739889698,
+          "case_excluded_concentration_only": null,
+          "per_state": [
+            {
+              "state": 0,
+              "labels": 2648,
+              "raw_f_zero_count": 101,
+              "sse": 0.9943180500137242,
+              "mean_signed_error": 0.00032780297986079724,
+              "overprediction_fraction": 0.6302870090634441
+            },
+            {
+              "state": 1,
+              "labels": 2648,
+              "raw_f_zero_count": 52,
+              "sse": 1.9013093998700552,
+              "mean_signed_error": 0.0001661488689333764,
+              "overprediction_fraction": 0.5966767371601208
+            },
+            {
+              "state": 2,
+              "labels": 2648,
+              "raw_f_zero_count": 40,
+              "sse": 2.8489118908236017,
+              "mean_signed_error": 0.0005066812911408248,
+              "overprediction_fraction": 0.6295317220543807
+            },
+            {
+              "state": 3,
+              "labels": 2648,
+              "raw_f_zero_count": 40,
+              "sse": 3.2539081477874796,
+              "mean_signed_error": 0.0013815673161356413,
+              "overprediction_fraction": 0.6567220543806647
+            },
+            {
+              "state": 4,
+              "labels": 2648,
+              "raw_f_zero_count": 45,
+              "sse": 4.043946361665753,
+              "mean_signed_error": -0.0014259219067044515,
+              "overprediction_fraction": 0.6476586102719033
+            },
+            {
+              "state": 5,
+              "labels": 2648,
+              "raw_f_zero_count": 36,
+              "sse": 3.790533725082299,
+              "mean_signed_error": -0.0008463128996218659,
+              "overprediction_fraction": 0.6503021148036254
+            },
+            {
+              "state": 6,
+              "labels": 2648,
+              "raw_f_zero_count": 29,
+              "sse": 5.1235347221517475,
+              "mean_signed_error": 2.841801626784232e-05,
+              "overprediction_fraction": 0.6574773413897281
+            },
+            {
+              "state": 7,
+              "labels": 2648,
+              "raw_f_zero_count": 30,
+              "sse": 4.434456359399293,
+              "mean_signed_error": 0.0009635237422264027,
+              "overprediction_fraction": 0.677870090634441
+            },
+            {
+              "state": 8,
+              "labels": 2648,
+              "raw_f_zero_count": 19,
+              "sse": 3.622106297575871,
+              "mean_signed_error": -0.001159074385538333,
+              "overprediction_fraction": 0.6465256797583081
+            },
+            {
+              "state": 9,
+              "labels": 2648,
+              "raw_f_zero_count": 27,
+              "sse": 3.6706195822898064,
+              "mean_signed_error": -0.002283106364686459,
+              "overprediction_fraction": 0.6438821752265861
+            }
+          ]
+        },
+        "equal3": {
+          "sse": 30.844862418048177,
+          "mean_signed_error": -0.0004069917625886489,
+          "overprediction_fraction": 0.6493957703927492,
+          "labels": 26480,
+          "sse_share_of_full_validation": 0.3536643484947782,
+          "mean_sse_per_molecule": 0.011648361940350519,
+          "median_sse_per_molecule": 0.00281541109760453,
+          "p90_sse_per_molecule": 0.028419298573129602,
+          "case_excluded_concentration_only": null,
+          "per_state": [
+            {
+              "state": 0,
+              "labels": 2648,
+              "raw_f_zero_count": 101,
+              "sse": 0.8285324745426252,
+              "mean_signed_error": -5.760403092121016e-05,
+              "overprediction_fraction": 0.6435045317220544
+            },
+            {
+              "state": 1,
+              "labels": 2648,
+              "raw_f_zero_count": 52,
+              "sse": 1.8600923878033606,
+              "mean_signed_error": 0.0003478980417882999,
+              "overprediction_fraction": 0.6064954682779456
+            },
+            {
+              "state": 2,
+              "labels": 2648,
+              "raw_f_zero_count": 40,
+              "sse": 2.34247428018112,
+              "mean_signed_error": -3.735633822043797e-05,
+              "overprediction_fraction": 0.6310422960725075
+            },
+            {
+              "state": 3,
+              "labels": 2648,
+              "raw_f_zero_count": 40,
+              "sse": 2.8526594020895417,
+              "mean_signed_error": 0.0002742905256213444,
+              "overprediction_fraction": 0.6491691842900302
+            },
+            {
+              "state": 4,
+              "labels": 2648,
+              "raw_f_zero_count": 45,
+              "sse": 3.6249543634435986,
+              "mean_signed_error": -0.00123026551653522,
+              "overprediction_fraction": 0.6559667673716012
+            },
+            {
+              "state": 5,
+              "labels": 2648,
+              "raw_f_zero_count": 36,
+              "sse": 3.65589756174351,
+              "mean_signed_error": -0.0008965180262590695,
+              "overprediction_fraction": 0.6612537764350453
+            },
+            {
+              "state": 6,
+              "labels": 2648,
+              "raw_f_zero_count": 29,
+              "sse": 4.616466641614037,
+              "mean_signed_error": -0.00038182070021986153,
+              "overprediction_fraction": 0.6627643504531722
+            },
+            {
+              "state": 7,
+              "labels": 2648,
+              "raw_f_zero_count": 30,
+              "sse": 4.207788594319171,
+              "mean_signed_error": 0.0006536569081503691,
+              "overprediction_fraction": 0.6782477341389728
+            },
+            {
+              "state": 8,
+              "labels": 2648,
+              "raw_f_zero_count": 19,
+              "sse": 3.514208376003674,
+              "mean_signed_error": -0.000907134429937723,
+              "overprediction_fraction": 0.6503021148036254
+            },
+            {
+              "state": 9,
+              "labels": 2648,
+              "raw_f_zero_count": 27,
+              "sse": 3.341788336307534,
+              "mean_signed_error": -0.0018350640593529802,
+              "overprediction_fraction": 0.6552114803625377
+            }
+          ]
+        }
+      }
+    },
+    {
+      "bin_index": 5,
+      "label": "q2 > 0.450098133123",
+      "training_molecules": 60177,
+      "validation_molecules": 3376,
+      "training_q2_count": 60177,
+      "training_raw_f_zero_count": 9150,
+      "training_raw_f_label_count": 601770,
+      "training_raw_f_zero_prevalence": 0.01520514482277282,
+      "validation_raw_f_zero_count": 514,
+      "validation_raw_f_label_count": 33760,
+      "validation_raw_f_zero_prevalence": 0.015225118483412322,
+      "validation_molecules_with_any_zero": 348,
+      "validation_molecules_all_zero": 0,
+      "models": {
+        "eta0": {
+          "sse": 39.145428022554036,
+          "mean_signed_error": -0.000617782382001688,
+          "overprediction_fraction": 0.6296208530805687,
+          "labels": 33760,
+          "sse_share_of_full_validation": 0.4155339713633761,
+          "mean_sse_per_molecule": 0.011595209722320508,
+          "median_sse_per_molecule": 0.0024846969907361843,
+          "p90_sse_per_molecule": 0.023126419687226955,
+          "case_excluded_concentration_only": null,
+          "per_state": [
+            {
+              "state": 0,
+              "labels": 3376,
+              "raw_f_zero_count": 120,
+              "sse": 0.9603367159573046,
+              "mean_signed_error": -0.0003835318384295933,
+              "overprediction_fraction": 0.6063388625592417
+            },
+            {
+              "state": 1,
+              "labels": 3376,
+              "raw_f_zero_count": 62,
+              "sse": 2.3811826022590923,
+              "mean_signed_error": 0.0012008166402305673,
+              "overprediction_fraction": 0.6214454976303317
+            },
+            {
+              "state": 2,
+              "labels": 3376,
+              "raw_f_zero_count": 49,
+              "sse": 2.961903643780828,
+              "mean_signed_error": 0.0002952758476234516,
+              "overprediction_fraction": 0.6146327014218009
+            },
+            {
+              "state": 3,
+              "labels": 3376,
+              "raw_f_zero_count": 44,
+              "sse": 3.8417716178418586,
+              "mean_signed_error": 0.0007452551269882973,
+              "overprediction_fraction": 0.6412914691943128
+            },
+            {
+              "state": 4,
+              "labels": 3376,
+              "raw_f_zero_count": 43,
+              "sse": 3.8969335713996633,
+              "mean_signed_error": -0.001781195174627666,
+              "overprediction_fraction": 0.6327014218009479
+            },
+            {
+              "state": 5,
+              "labels": 3376,
+              "raw_f_zero_count": 45,
+              "sse": 4.528492459452341,
+              "mean_signed_error": -0.0010759997226625075,
+              "overprediction_fraction": 0.6335900473933649
+            },
+            {
+              "state": 6,
+              "labels": 3376,
+              "raw_f_zero_count": 33,
+              "sse": 4.5515573046456765,
+              "mean_signed_error": 5.5726913604372684e-05,
+              "overprediction_fraction": 0.6561018957345972
+            },
+            {
+              "state": 7,
+              "labels": 3376,
+              "raw_f_zero_count": 39,
+              "sse": 6.445957792189513,
+              "mean_signed_error": -0.0014118194562637754,
+              "overprediction_fraction": 0.6365521327014217
+            },
+            {
+              "state": 8,
+              "labels": 3376,
+              "raw_f_zero_count": 41,
+              "sse": 5.88517956510867,
+              "mean_signed_error": -0.0017539388931162231,
+              "overprediction_fraction": 0.629739336492891
+            },
+            {
+              "state": 9,
+              "labels": 3376,
+              "raw_f_zero_count": 38,
+              "sse": 3.6921127499190822,
+              "mean_signed_error": -0.0020684132633638046,
+              "overprediction_fraction": 0.6238151658767772
+            }
+          ]
+        },
+        "equal3": {
+          "sse": 36.23190184596352,
+          "mean_signed_error": -0.0007776288874935019,
+          "overprediction_fraction": 0.6375296208530805,
+          "labels": 33760,
+          "sse_share_of_full_validation": 0.41543164587376,
+          "mean_sse_per_molecule": 0.01073219841408872,
+          "median_sse_per_molecule": 0.0023540420139700462,
+          "p90_sse_per_molecule": 0.022254948383026163,
+          "case_excluded_concentration_only": null,
+          "per_state": [
+            {
+              "state": 0,
+              "labels": 3376,
+              "raw_f_zero_count": 120,
+              "sse": 0.8496142631421943,
+              "mean_signed_error": -0.0005510777040983392,
+              "overprediction_fraction": 0.6247037914691943
+            },
+            {
+              "state": 1,
+              "labels": 3376,
+              "raw_f_zero_count": 62,
+              "sse": 2.059271157985695,
+              "mean_signed_error": 0.000981040579506558,
+              "overprediction_fraction": 0.625
+            },
+            {
+              "state": 2,
+              "labels": 3376,
+              "raw_f_zero_count": 49,
+              "sse": 2.781893621460788,
+              "mean_signed_error": -0.0003610421144655164,
+              "overprediction_fraction": 0.6205568720379147
+            },
+            {
+              "state": 3,
+              "labels": 3376,
+              "raw_f_zero_count": 44,
+              "sse": 3.2860851539365905,
+              "mean_signed_error": -5.4075258804044804e-05,
+              "overprediction_fraction": 0.64010663507109
+            },
+            {
+              "state": 4,
+              "labels": 3376,
+              "raw_f_zero_count": 43,
+              "sse": 3.620477018101754,
+              "mean_signed_error": -0.001988914302511261,
+              "overprediction_fraction": 0.6368483412322274
+            },
+            {
+              "state": 5,
+              "labels": 3376,
+              "raw_f_zero_count": 45,
+              "sse": 4.23344354557569,
+              "mean_signed_error": -0.0010568469864419138,
+              "overprediction_fraction": 0.6472156398104265
+            },
+            {
+              "state": 6,
+              "labels": 3376,
+              "raw_f_zero_count": 33,
+              "sse": 4.348558792670987,
+              "mean_signed_error": -0.0002563382065333265,
+              "overprediction_fraction": 0.6519549763033176
+            },
+            {
+              "state": 7,
+              "labels": 3376,
+              "raw_f_zero_count": 39,
+              "sse": 6.210057093951274,
+              "mean_signed_error": -0.0014043578339770926,
+              "overprediction_fraction": 0.6433649289099526
+            },
+            {
+              "state": 8,
+              "labels": 3376,
+              "raw_f_zero_count": 41,
+              "sse": 5.3352573973872985,
+              "mean_signed_error": -0.0014755944097124463,
+              "overprediction_fraction": 0.6424763033175356
+            },
+            {
+              "state": 9,
+              "labels": 3376,
+              "raw_f_zero_count": 38,
+              "sse": 3.50724380175125,
+              "mean_signed_error": -0.001609082637897637,
+              "overprediction_fraction": 0.643068720379147
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "case_14562": {
+    "dataset_index": 14536,
+    "molecule_id": 14562,
+    "formula": [
+      [
+        1,
+        2
+      ],
+      [
+        6,
+        8
+      ]
+    ],
+    "q2_lambda2_over_lambda1": 1.5862396972212982e-06,
+    "q3_lambda3_over_lambda1": 2.2184182054830714e-10,
+    "near_linear_q2_le_1e-5": true,
+    "all_ten_raw_f_exactly_zero": true,
+    "connectivity_key": "[H][C][C][C][C][C][C][C][C][H]",
+    "shape_bin": "q2 <= 1e-05",
+    "models": {
+      "eta0": {
+        "per_state": [
+          {
+            "state": 0,
+            "truth": 0.0,
+            "prediction": 1.9012359796363767e-05,
+            "error": 1.9012359796363767e-05,
+            "overprediction": true,
+            "sse": 3.614698250263893e-10
+          },
+          {
+            "state": 1,
+            "truth": 0.0,
+            "prediction": 0.008625821765701645,
+            "error": 0.008625821765701645,
+            "overprediction": true,
+            "sse": 7.440480113365224e-05
+          },
+          {
+            "state": 2,
+            "truth": 0.0,
+            "prediction": 0.0028033603350031194,
+            "error": 0.0028033603350031194,
+            "overprediction": true,
+            "sse": 7.858829167868802e-06
+          },
+          {
+            "state": 3,
+            "truth": 0.0,
+            "prediction": 0.008487283364301032,
+            "error": 0.008487283364301032,
+            "overprediction": true,
+            "sse": 7.203397890594104e-05
+          },
+          {
+            "state": 4,
+            "truth": 0.0,
+            "prediction": 0.06498893849955277,
+            "error": 0.06498893849955277,
+            "overprediction": true,
+            "sse": 0.004223562127298653
+          },
+          {
+            "state": 5,
+            "truth": 0.0,
+            "prediction": 0.005567195749805251,
+            "error": 0.005567195749805251,
+            "overprediction": true,
+            "sse": 3.099366851664966e-05
+          },
+          {
+            "state": 6,
+            "truth": 0.0,
+            "prediction": 1.665142593746093,
+            "error": 1.665142593746093,
+            "overprediction": true,
+            "sse": 2.772699857507466
+          },
+          {
+            "state": 7,
+            "truth": 0.0,
+            "prediction": 0.34480546896016223,
+            "error": 0.34480546896016223,
+            "overprediction": true,
+            "sse": 0.1188908114248374
+          },
+          {
+            "state": 8,
+            "truth": 0.0,
+            "prediction": 0.03710640077367533,
+            "error": 0.03710640077367533,
+            "overprediction": true,
+            "sse": 0.0013768849783766131
+          },
+          {
+            "state": 9,
+            "truth": 0.0,
+            "prediction": 0.025029169523456934,
+            "error": 0.025029169523456934,
+            "overprediction": true,
+            "sse": 0.0006264593270339454
+          }
+        ],
+        "sse": 2.898002867004206,
+        "sse_share_of_full_validation": 0.030762689314698125
+      },
+      "equal3": {
+        "per_state": [
+          {
+            "state": 0,
+            "truth": 0.0,
+            "prediction": 0.0057428457174221875,
+            "error": 0.0057428457174221875,
+            "overprediction": true,
+            "sse": 3.298027693411436e-05
+          },
+          {
+            "state": 1,
+            "truth": 0.0,
+            "prediction": 0.0032440533373612533,
+            "error": 0.0032440533373612533,
+            "overprediction": true,
+            "sse": 1.0523882055644686e-05
+          },
+          {
+            "state": 2,
+            "truth": 0.0,
+            "prediction": 0.0069011944950538055,
+            "error": 0.0069011944950538055,
+            "overprediction": true,
+            "sse": 4.762648545856095e-05
+          },
+          {
+            "state": 3,
+            "truth": 0.0,
+            "prediction": 0.008086700981091656,
+            "error": 0.008086700981091656,
+            "overprediction": true,
+            "sse": 6.539473275758875e-05
+          },
+          {
+            "state": 4,
+            "truth": 0.0,
+            "prediction": 0.02854781748879885,
+            "error": 0.02854781748879885,
+            "overprediction": true,
+            "sse": 0.0008149778833737696
+          },
+          {
+            "state": 5,
+            "truth": 0.0,
+            "prediction": 0.0064459977358136,
+            "error": 0.0064459977358136,
+            "overprediction": true,
+            "sse": 4.1550886810114065e-05
+          },
+          {
+            "state": 6,
+            "truth": 0.0,
+            "prediction": 1.891047052033436,
+            "error": 1.891047052033436,
+            "overprediction": true,
+            "sse": 3.5760589530043485
+          },
+          {
+            "state": 7,
+            "truth": 0.0,
+            "prediction": 0.12693439956822264,
+            "error": 0.12693439956822264,
+            "overprediction": true,
+            "sse": 0.0161123417937452
+          },
+          {
+            "state": 8,
+            "truth": 0.0,
+            "prediction": 0.0207579499404574,
+            "error": 0.0207579499404574,
+            "overprediction": true,
+            "sse": 0.00043089248573053543
+          },
+          {
+            "state": 9,
+            "truth": 0.0,
+            "prediction": 0.05408932667058386,
+            "error": 0.05408932667058386,
+            "overprediction": true,
+            "sse": 0.0029256552596771345
+          }
+        ],
+        "sse": 3.5965408966908905,
+        "sse_share_of_full_validation": 0.041237606309397754
+      }
+    }
+  },
+  "training_matches_to_case": {
+    "same_composition": {
+      "count": 0,
+      "ids": [],
+      "q2": []
+    },
+    "near_linear_any_composition": {
+      "count": 10,
+      "ids": [
+        4,
+        5,
+        23,
+        24,
+        25,
+        484,
+        485,
+        486,
+        14563,
+        14564
+      ],
+      "q2": [
+        0.0,
+        7.986683780931817e-13,
+        0.0,
+        0.0,
+        1.1148023208047145e-07,
+        1.1130133833154736e-08,
+        3.425054598745356e-08,
+        0.0,
+        5.141848089164258e-07,
+        1.787692244105811e-09
+      ]
+    },
+    "same_composition_and_near_linear": {
+      "count": 0,
+      "ids": [],
+      "q2": []
+    },
+    "same_existing_connectivity_group": {
+      "count": 0,
+      "ids": [],
+      "q2": []
+    },
+    "same_composition_and_connectivity_group": {
+      "count": 0,
+      "ids": [],
+      "q2": []
+    }
+  },
+  "limitations": [
+    "Geometry associations are descriptive and do not establish causality or label errors.",
+    "Exact raw-f zeros are reported as supplied; no claim is made that labels are erroneous.",
+    "All benchmark metrics include every validation molecule; molecule 14562 is isolated only for concentration accounting.",
+    "Equal3 is the arithmetic mean of three saved validation native-f predictions; no new inference or fitted weights.",
+    "No test indices, test labels, test geometries, test predictions, or test metrics were accessed."
+  ]
+}
