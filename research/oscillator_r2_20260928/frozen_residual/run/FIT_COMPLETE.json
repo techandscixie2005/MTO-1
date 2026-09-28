@@ -1,0 +1,105 @@
+{
+  "event": "FIT_COMPLETE",
+  "epochs": 20,
+  "steps": 37620,
+  "best_epoch": 2,
+  "best_sse": 93.9681792408906,
+  "best_raw_f_r2": 0.4067899034360811,
+  "final20_raw_f_r2": 0.4042991111635026,
+  "head_parameters": 4161,
+  "source_hashes": {
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/FROZEN_RESIDUAL_PROTOCOL.md": "eefbee1552c22b159022173726d7e958fefae710b760aee0eb0d6f439a43333f",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/config.json": "2ba4fbd592898d0717362f4bbe9812d25a4b1e1b35a2f13395f359a7572f3d38",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/common.py": "8d10d17157164eb45173325fa2afe839438fa1cf082c76d80ed6e2d4a4400631",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/cache.py": "9540d67e56f6eef0040cb16a8918493f0ba72b14511a461644e15f21a58d2a35",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/preflight.py": "5875df265fff3652326a7fb8d6475f2f8bc6c55ab51fb68730037ed36a9414be",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/train.py": "b77bb5dff6c58d281de3b4683a673002d2beb8724480be8b2877cf16913d640d",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/summarize.py": "f2c4b5771b337cca16a6554786bb042d1df846e1222eff9ac8d8f1afcb4f5516",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/launch.py": "f2376a51f19502bb19624f76fec44662f2efe3263fb0109f798d72613b6e501b",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/CACHE_MANIFEST.json": "ca3eb18da9b2ee64677dbf989ead38a4f667f7663d2a7e7bad10eb2811bf3b11",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/PREFLIGHT.json": "075632210e2a6d9d7225212178b23fe3a2788049560f98aad84e0f42e4c97d04",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/INDEPENDENT_COMPLETION_AUDIT.json": "d7df6edfec2d322b8f70ecd0fe39fcc4d221b1c4967aa82a8b82ee715b8c1ed1",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/completion_receipts/FINAL20_REPLAY_RESULTS.json": "ce60e54cf0a8165f73309d54d9dc28d010a220b4fd08149f629ab03ca1dc4d12"
+  },
+  "cache_hashes": {
+    "train": "948f14528a222613cc3a590d3d8e710586374be28dc0826d43afde461de48b3b",
+    "val": "f8f47fabcb00b0c03a99fa3d684a74294ff74fb0e9087f2301953802a6263848"
+  },
+  "gpu_before": {
+    "index": 6,
+    "uuid": "GPU-2431a641-8045-a10b-4aa0-2769010e0708",
+    "memory_MiB": 13,
+    "temperature_C": "33 C",
+    "ecc": {
+      "volatile": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0
+      },
+      "aggregate": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0,
+        "sram_threshold_exceeded": "No"
+      },
+      "remap": {
+        "remapped_row_corr": "0",
+        "remapped_row_unc": "0",
+        "remapped_row_pending": "No",
+        "remapped_row_failure": "No"
+      },
+      "repair": {
+        "channel_repair_pending": "No",
+        "tpc_repair_pending": "No"
+      }
+    },
+    "apps": []
+  },
+  "gpu_after": {
+    "index": 6,
+    "uuid": "GPU-2431a641-8045-a10b-4aa0-2769010e0708",
+    "memory_MiB": 1191,
+    "temperature_C": "37 C",
+    "ecc": {
+      "volatile": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0
+      },
+      "aggregate": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0,
+        "sram_threshold_exceeded": "No"
+      },
+      "remap": {
+        "remapped_row_corr": "0",
+        "remapped_row_unc": "0",
+        "remapped_row_pending": "No",
+        "remapped_row_failure": "No"
+      },
+      "repair": {
+        "channel_repair_pending": "No",
+        "tpc_repair_pending": "No"
+      }
+    },
+    "apps": [
+      830317
+    ]
+  },
+  "cache_seconds": {
+    "train": 48.08649304509163,
+    "val": 3.621703304350376
+  },
+  "training_seconds": 447.0923921111971,
+  "evaluation_seconds": 5.505814032629132,
+  "time": 1790617717.2323475
+}

@@ -92,3 +92,12 @@ The four-arm architecture screen is complete and independently reviewed. No cand
 The authorized final20 replay is complete and independently reviewed, validation only. Raw native-f validation R² is 0.4052941183 for frozen eta0, 0.2789672525 for the changed base, and 0.3049378477 for emitted final20; emitted final20 adds 15.8971 SSE over eta0. This is an inference decomposition of one jointly trained checkpoint, not a retraining counterfactual. The largest deterioration molecule accounts for 72.97% of net SSE increase and the top 10 for 97.27%. No test split was read, and runtime arrays remain server-only. See `completion_receipts/FINAL20_REPLAY_RESULTS.json` and `completion_receipts/FINAL20_REPLAY_INDEPENDENT_REVIEW.md`.
 
 A single frozen-eta0 residual-head-only 20-epoch diagnostic is authorized for preparation under `frozen_residual/FROZEN_RESIDUAL_PROTOCOL.md`, subject to implementation review, preflight and resource admission. No training launch is recorded yet. The round remains validation-only; no model or benchmark is promoted.
+
+
+## Round 05: frozen residual-head result (2026-09-29)
+
+The fixed 20-epoch, train/validation-only run completed 37,620 optimizer steps. It selected epoch 2 at pooled raw native-f validation R² 0.406789903, a +0.001495785 change from eta0 (0.4052941183); epoch 20 was 0.404299111. The independent run audit and scientific result review passed. This small one-seed validation gain is below the +0.01 promotion threshold, so no model or benchmark is promoted. No test data were used and no extra epochs are authorized by this result. See `frozen_residual/ROUND_REPORT.md` and `frozen_residual/SCIENTIFIC_RESULT_REVIEW.md`.
+
+## Round 06: frozen-Gram probe (preparation only)
+
+The bounded two-arm protocol is approved at `frozen_gram_probe/FROZEN_GRAM_PROBE_PROTOCOL.md` (SHA-256 `c7f6f6ede884e663d5af579e6add91f49552128ff39ce7dc0bdb73088777fa32`). Implementation and preflight remain pending; no full-fit launch is recorded. Launch is conditional on independent review and runtime admission gates.

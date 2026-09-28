@@ -1,0 +1,168 @@
+{
+  "classification": "Explicit lightweight frozen residual study allowlist for D-drive staging and GitHub archive",
+  "created": 1790617899.5584266,
+  "server_source_root": "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual",
+  "file_count": 30,
+  "total_bytes": 319948,
+  "files": [
+    {
+      "path": "FROZEN_RESIDUAL_PROTOCOL.md",
+      "bytes": 11501,
+      "sha256": "eefbee1552c22b159022173726d7e958fefae710b760aee0eb0d6f439a43333f"
+    },
+    {
+      "path": "config.json",
+      "bytes": 1096,
+      "sha256": "2ba4fbd592898d0717362f4bbe9812d25a4b1e1b35a2f13395f359a7572f3d38"
+    },
+    {
+      "path": "common.py",
+      "bytes": 9408,
+      "sha256": "8d10d17157164eb45173325fa2afe839438fa1cf082c76d80ed6e2d4a4400631"
+    },
+    {
+      "path": "cache.py",
+      "bytes": 3131,
+      "sha256": "9540d67e56f6eef0040cb16a8918493f0ba72b14511a461644e15f21a58d2a35"
+    },
+    {
+      "path": "preflight.py",
+      "bytes": 8976,
+      "sha256": "5875df265fff3652326a7fb8d6475f2f8bc6c55ab51fb68730037ed36a9414be"
+    },
+    {
+      "path": "train.py",
+      "bytes": 14521,
+      "sha256": "b77bb5dff6c58d281de3b4683a673002d2beb8724480be8b2877cf16913d640d"
+    },
+    {
+      "path": "summarize.py",
+      "bytes": 6794,
+      "sha256": "f2c4b5771b337cca16a6554786bb042d1df846e1222eff9ac8d8f1afcb4f5516"
+    },
+    {
+      "path": "launch.py",
+      "bytes": 2360,
+      "sha256": "f2376a51f19502bb19624f76fec44662f2efe3263fb0109f798d72613b6e501b"
+    },
+    {
+      "path": "PREFLIGHT_NUMERICAL_NOTE.md",
+      "bytes": 1340,
+      "sha256": "d3fba08e545f4512518dcc619586579d2cc2533ffdb486160c8de98f76222be3"
+    },
+    {
+      "path": "CACHE_MANIFEST.json",
+      "bytes": 5074,
+      "sha256": "ca3eb18da9b2ee64677dbf989ead38a4f667f7663d2a7e7bad10eb2811bf3b11"
+    },
+    {
+      "path": "PREFLIGHT.json",
+      "bytes": 4547,
+      "sha256": "075632210e2a6d9d7225212178b23fe3a2788049560f98aad84e0f42e4c97d04"
+    },
+    {
+      "path": "IMPLEMENTATION_HANDOFF.json",
+      "bytes": 2806,
+      "sha256": "b48240e4e20a8841610fea906363ea48875ed0c4dbde16f9507ca701bfe4f89d"
+    },
+    {
+      "path": "IMPLEMENTATION_REVIEW.json",
+      "bytes": 4439,
+      "sha256": "38906f681fdbd35a8b7a2851dcb443b82569d5b5e344b26c4bfb6de1b6e55357"
+    },
+    {
+      "path": "IMPLEMENTATION_REVIEW.md",
+      "bytes": 5841,
+      "sha256": "646f28da8986edd27ef58a87b89ea7e9458534ab2a972c9f644996aa78d138f9"
+    },
+    {
+      "path": "INDEPENDENT_RUN_AUDIT.json",
+      "bytes": 1774,
+      "sha256": "81ccc7adc01b861bed7ee2f31d3c1a9f42780c2b41d79e7a1e12d8600dfdfdb0"
+    },
+    {
+      "path": "FROZEN_RESIDUAL_RESULTS.json",
+      "bytes": 22071,
+      "sha256": "5684aa79801b8edb40040b2aef716e60d770c6b9171706463a4cb754a6f6dfcb"
+    },
+    {
+      "path": "FROZEN_RESIDUAL_RESULTS.md",
+      "bytes": 845,
+      "sha256": "c2dd0796281a2675b9086b4b3e38827ff2943a641f7c14e54e31d56fc664a467"
+    },
+    {
+      "path": "FROZEN_ERROR_DECOMPOSITION.json",
+      "bytes": 9596,
+      "sha256": "a7e178d4d47cb240fbdb5995220c50bf82e7222676345cd0d812e1ab876d98e3"
+    },
+    {
+      "path": "FROZEN_VS_ENSEMBLE_VALIDATION.json",
+      "bytes": 3495,
+      "sha256": "ee89334270b6f34b9997e5c7c7162cddd9c78f77352ddc6a44b71abecd4a71ce"
+    },
+    {
+      "path": "WORSTCASE_14562_VALIDATION.json",
+      "bytes": 15724,
+      "sha256": "0ad5f587ada7b288f4a3ca6aab325659471c3ccfc68944c709d6be5988ce3ed5"
+    },
+    {
+      "path": "analysis/worstcase.py",
+      "bytes": 3917,
+      "sha256": "702518bb3cf3fe7d6c378d98f05e24a0720eb6b20098ab2aa35ef0f3e5dce14e"
+    },
+    {
+      "path": "analysis/benchmark.py",
+      "bytes": 3311,
+      "sha256": "3eb804e44a2841164d6d1f0f98fccd464a1a4255df0ded410305795356c4b82a"
+    },
+    {
+      "path": "run/queue_launch_receipt.json",
+      "bytes": 1466,
+      "sha256": "1efcf5464380adc827120ea7384e943975a9790f76fe9362e8d2e0f0e5f840e5"
+    },
+    {
+      "path": "run/run_manifest.json",
+      "bytes": 4712,
+      "sha256": "4f00d572d761dbae14d1e5333529d42fbeade63ad344c901986190974a401c4b"
+    },
+    {
+      "path": "run/FIT_COMPLETE.json",
+      "bytes": 4354,
+      "sha256": "35eb275150ef763db49ad288f69142d61f01dd9d4cfc70bcddf4eb0b038a1344"
+    },
+    {
+      "path": "run/history.jsonl",
+      "bytes": 144035,
+      "sha256": "881bdab3d8869d8d3ec150fdb258bccc1fe412ec5e5955f627b8e4085a4a9273"
+    },
+    {
+      "path": "run/status.json",
+      "bytes": 9202,
+      "sha256": "0effea49b800c6d9c05cb47a2c608ee0f54b65619666f4c5fffc0e0e41f8c1e8"
+    },
+    {
+      "path": "run/train.log",
+      "bytes": 2383,
+      "sha256": "ee43b263e57ee98e46b7d8be1c9d50581d5f3a577df725f4a59649589f778c0e"
+    },
+    {
+      "path": "ROUND_REPORT.md",
+      "bytes": 3370,
+      "sha256": "10a0289549b2f5af4b9672a5131d92e23f28cd4ae5272793bcfb954e247a3a1d"
+    },
+    {
+      "path": "SCIENTIFIC_RESULT_REVIEW.md",
+      "bytes": 7859,
+      "sha256": "639d1ce5e3a2fcd1335167f2f85e28290c46f7e623b0b81af14f9247773a1d95"
+    }
+  ],
+  "exclude": [
+    "runtime/**",
+    "run/*.pt",
+    "run/*.npz",
+    "run/selections/**",
+    "__pycache__/**",
+    "raw source datasets, model checkpoints, optimizer states, runtime tensors"
+  ],
+  "validation_only": true
+}

@@ -1,0 +1,111 @@
+{
+  "classification": "Validation-only context comparison; selected frozen single model versus pre-existing fixed equal-three ensemble",
+  "created": 1790617752.4876769,
+  "source_fit_sha256": "35eb275150ef763db49ad288f69142d61f01dd9d4cfc70bcddf4eb0b038a1344",
+  "source_prediction_hashes": {
+    "mto_eta0": "25acae64bb4e3e541048a8705045f7f639d1113d537dbbef71672752e8065890",
+    "mto_eta01": "9edffb5cd617469c78c8d83da7901ac90add69d89f27de7e8196a8736ae85500",
+    "mto_eta1": "a3808b9ad425abf4f6fcfed840d0ed8d1ff6fcf1557037a4e01932c734dc68bb"
+  },
+  "selected_prediction_sha256": "aaf5d9cc9210d72d359f601fd86b79777a72c6d47b775a08bfdff25921ec9bc2",
+  "selected_epoch": 2,
+  "metrics": {
+    "eta0": {
+      "count": 66860,
+      "sse": 94.20512092938401,
+      "sst": 158.4062371581119,
+      "r2": 0.4052941183410983,
+      "mae": 0.017785608345899415,
+      "rmse": 0.037536525422479664
+    },
+    "equal_three_native_f_mean": {
+      "count": 66860,
+      "sse": 87.2150742627189,
+      "sst": 158.4062371581119,
+      "r2": 0.4494214632744171,
+      "mae": 0.017345038638210148,
+      "rmse": 0.03611707668926027
+    },
+    "frozen_selected": {
+      "count": 66860,
+      "sse": 93.9681792408906,
+      "sst": 158.4062371581119,
+      "r2": 0.4067899034360811,
+      "mae": 0.01785149846899699,
+      "rmse": 0.03748929037238165
+    }
+  },
+  "paired_delta_r2_frozen_minus_eta0": {
+    "point": 0.0014957850949828266,
+    "bootstrap": {
+      "molecule": {
+        "frozen_selected": {
+          "delta_r2_2p5_50_97p5": [
+            0.0008634949153836127,
+            0.0014953056464875188,
+            0.002200671018033634
+          ],
+          "positive_fraction": 1.0,
+          "replicates": 2000,
+          "seed": 20260928,
+          "unit": "whole molecule, all 10 states"
+        }
+      },
+      "connectivity_group": {
+        "frozen_selected": {
+          "delta_r2_2p5_50_97p5": [
+            0.0008293115394427374,
+            0.0014752449370309321,
+            0.0021848703508610275
+          ],
+          "positive_fraction": 1.0,
+          "replicates": 2000,
+          "seed": 20260928,
+          "unit": "connectivity group, all molecules and states"
+        }
+      }
+    }
+  },
+  "paired_delta_r2_frozen_minus_equal_three": {
+    "point": -0.042631559838336,
+    "bootstrap": {
+      "molecule": {
+        "frozen_selected": {
+          "delta_r2_2p5_50_97p5": [
+            -0.05958591195406501,
+            -0.04248467248581374,
+            -0.023376597495199773
+          ],
+          "positive_fraction": 0.0,
+          "replicates": 2000,
+          "seed": 20260928,
+          "unit": "whole molecule, all 10 states"
+        }
+      },
+      "connectivity_group": {
+        "frozen_selected": {
+          "delta_r2_2p5_50_97p5": [
+            -0.06142417290973216,
+            -0.04279896519392976,
+            -0.02533617611100037
+          ],
+          "positive_fraction": 0.0,
+          "replicates": 2000,
+          "seed": 20260928,
+          "unit": "connectivity group, all molecules and states"
+        }
+      }
+    }
+  },
+  "connectivity_layout": {
+    "molecules": 6686,
+    "groups": 6671,
+    "groups_with_multiple_molecules": 15,
+    "largest_group_molecules": 2
+  },
+  "limitations": [
+    "Fixed equal-three average uses each constituent model's native f prediction; E/A are not averaged.",
+    "All intervals condition on validation-selected checkpoints and a reused validation split.",
+    "One seed; no test access or model promotion."
+  ]
+}

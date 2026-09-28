@@ -1,0 +1,45 @@
+{
+  "classification": "Frozen residual head only, single authorized20epoch run",
+  "pid": 830317,
+  "gpu": 6,
+  "gpu_uuid": "GPU-2431a641-8045-a10b-4aa0-2769010e0708",
+  "health_before": {
+    "index": 6,
+    "uuid": "GPU-2431a641-8045-a10b-4aa0-2769010e0708",
+    "memory_MiB": 13,
+    "temperature_C": "33 C",
+    "ecc": {
+      "volatile": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0
+      },
+      "aggregate": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0,
+        "sram_threshold_exceeded": "No"
+      },
+      "remap": {
+        "remapped_row_corr": "0",
+        "remapped_row_unc": "0",
+        "remapped_row_pending": "No",
+        "remapped_row_failure": "No"
+      },
+      "repair": {
+        "channel_repair_pending": "No",
+        "tpc_repair_pending": "No"
+      }
+    },
+    "apps": []
+  },
+  "preflight_sha256": "075632210e2a6d9d7225212178b23fe3a2788049560f98aad84e0f42e4c97d04",
+  "review_sha256": "38906f681fdbd35a8b7a2851dcb443b82569d5b5e344b26c4bfb6de1b6e55357",
+  "train_script_sha256": "b77bb5dff6c58d281de3b4683a673002d2beb8724480be8b2877cf16913d640d",
+  "started": 1790617215.9899597,
+  "log": "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/run/train.log"
+}

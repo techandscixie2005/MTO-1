@@ -1,0 +1,153 @@
+{
+  "classification": "Frozen eta0 train/validation features, server-only runtime cache",
+  "created": 1790616512.8374567,
+  "physical_gpu": 6,
+  "health_before": {
+    "index": 6,
+    "uuid": "GPU-2431a641-8045-a10b-4aa0-2769010e0708",
+    "memory_MiB": 13,
+    "temperature_C": "33 C",
+    "ecc": {
+      "volatile": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0
+      },
+      "aggregate": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0,
+        "sram_threshold_exceeded": "No"
+      },
+      "remap": {
+        "remapped_row_corr": "0",
+        "remapped_row_unc": "0",
+        "remapped_row_pending": "No",
+        "remapped_row_failure": "No"
+      },
+      "repair": {
+        "channel_repair_pending": "No",
+        "tpc_repair_pending": "No"
+      }
+    },
+    "apps": []
+  },
+  "health_after": {
+    "index": 6,
+    "uuid": "GPU-2431a641-8045-a10b-4aa0-2769010e0708",
+    "memory_MiB": 3529,
+    "temperature_C": "41 C",
+    "ecc": {
+      "volatile": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0
+      },
+      "aggregate": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0,
+        "sram_threshold_exceeded": "No"
+      },
+      "remap": {
+        "remapped_row_corr": "0",
+        "remapped_row_unc": "0",
+        "remapped_row_pending": "No",
+        "remapped_row_failure": "No"
+      },
+      "repair": {
+        "channel_repair_pending": "No",
+        "tpc_repair_pending": "No"
+      }
+    },
+    "apps": [
+      826125
+    ]
+  },
+  "source_hashes": {
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/FROZEN_RESIDUAL_PROTOCOL.md": "eefbee1552c22b159022173726d7e958fefae710b760aee0eb0d6f439a43333f",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/config.json": "2ba4fbd592898d0717362f4bbe9812d25a4b1e1b35a2f13395f359a7572f3d38",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/common.py": "8d10d17157164eb45173325fa2afe839438fa1cf082c76d80ed6e2d4a4400631",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/PREFLIGHT.json": "dfbd34b440cd948a19ae52b773aa074afdd1f9b38d7578c57d412b6e2b250b8f",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/EXECUTION_REVIEW.json": "2ac6ac27ae0435a2c2a64f6f17fe21b27fa0930abe81b658dda98bd82a88ef45",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/INDEPENDENT_COMPLETION_AUDIT.json": "d7df6edfec2d322b8f70ecd0fe39fcc4d221b1c4967aa82a8b82ee715b8c1ed1",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/completion_receipts/FINAL20_REPLAY_RESULTS.json": "ce60e54cf0a8165f73309d54d9dc28d010a220b4fd08149f629ab03ca1dc4d12"
+  },
+  "cache_script_sha256": "9540d67e56f6eef0040cb16a8918493f0ba72b14511a461644e15f21a58d2a35",
+  "model_eval_mode": true,
+  "torch_tf32_disabled": true,
+  "train_test_loader_constructed": false,
+  "cache": {
+    "train": {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/runtime/cache_train.npz",
+      "sha256": "948f14528a222613cc3a590d3d8e710586374be28dc0826d43afde461de48b3b",
+      "bytes": 659066428,
+      "shape_h": [
+        120355,
+        10,
+        128
+      ],
+      "dtype_h": "float32",
+      "shape_scalar": [
+        120355,
+        10
+      ],
+      "dtypes": {
+        "h": "float32",
+        "E_pred": "float32",
+        "base32": "float32",
+        "base64": "float64",
+        "indices": "int64",
+        "ids": "int64",
+        "f_true": "float64",
+        "E_true": "float64",
+        "mask_f": "bool",
+        "mask_E": "bool"
+      },
+      "molecules": 120355,
+      "first_global_index": 0,
+      "first_id": 1,
+      "generation_seconds": 48.08649304509163
+    },
+    "val": {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/runtime/cache_val.npz",
+      "sha256": "f8f47fabcb00b0c03a99fa3d684a74294ff74fb0e9087f2301953802a6263848",
+      "bytes": 36614984,
+      "shape_h": [
+        6686,
+        10,
+        128
+      ],
+      "dtype_h": "float32",
+      "shape_scalar": [
+        6686,
+        10
+      ],
+      "dtypes": {
+        "h": "float32",
+        "E_pred": "float32",
+        "base32": "float32",
+        "base64": "float64",
+        "indices": "int64",
+        "ids": "int64",
+        "f_true": "float64",
+        "E_true": "float64",
+        "mask_f": "bool",
+        "mask_E": "bool"
+      },
+      "molecules": 6686,
+      "first_global_index": 63,
+      "first_id": 64,
+      "generation_seconds": 3.621703304350376
+    }
+  },
+  "initial_head_checkpoint_sha256": "ae29b2a7c657fec8566e3e230b55a70c385377b36dd37e08c0dcca873f3c7a8d"
+}

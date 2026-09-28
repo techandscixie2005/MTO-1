@@ -1,0 +1,262 @@
+{
+  "purpose": "Completed independently reviewed frozen-head validation study and next approved protocol",
+  "base_published_commit": "3e61bad894a7f13d550c8c4b492d2cf5ce23ef3a",
+  "source": "Verified D: round05_frozen_residual_complete archive only",
+  "frozen_head_result": "validation-selected delta R2 +0.001495785; no promotion or test evaluation",
+  "gram_probe": "protocol approved; implementation pending; no run",
+  "files": [
+    {
+      "path": "RESEARCH_STATUS.md",
+      "bytes": 13988,
+      "sha256": "5cc1467e5b7c85eb814bbfa05b5d3b9d095068053b38c98dfaa351d92b0f7423",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_frozen_residual_complete\\RESEARCH_STATUS.md",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/RESEARCH_STATUS.md"
+    },
+    {
+      "path": "coordinator_state.json",
+      "bytes": 17258,
+      "sha256": "8c51b60251665bb6dae7e517008d78306be0c5af47fb75c9773c0aa463834ef7",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_frozen_residual_complete\\coordinator_state.json",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/coordinator_state.json"
+    },
+    {
+      "path": "frozen_gram_probe/FROZEN_GRAM_PROBE_PROTOCOL.md",
+      "bytes": 12798,
+      "sha256": "c7f6f6ede884e663d5af579e6add91f49552128ff39ce7dc0bdb73088777fa32",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_frozen_residual_complete\\frozen_gram_probe\\FROZEN_GRAM_PROBE_PROTOCOL.md",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/FROZEN_GRAM_PROBE_PROTOCOL.md"
+    },
+    {
+      "path": "frozen_residual/CACHE_MANIFEST.json",
+      "bytes": 5074,
+      "sha256": "ca3eb18da9b2ee64677dbf989ead38a4f667f7663d2a7e7bad10eb2811bf3b11",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_frozen_residual_complete\\frozen_residual\\CACHE_MANIFEST.json",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/CACHE_MANIFEST.json"
+    },
+    {
+      "path": "frozen_residual/FROZEN_ERROR_DECOMPOSITION.json",
+      "bytes": 9596,
+      "sha256": "a7e178d4d47cb240fbdb5995220c50bf82e7222676345cd0d812e1ab876d98e3",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_frozen_residual_complete\\frozen_residual\\FROZEN_ERROR_DECOMPOSITION.json",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/FROZEN_ERROR_DECOMPOSITION.json"
+    },
+    {
+      "path": "frozen_residual/FROZEN_RESIDUAL_PROTOCOL.md",
+      "bytes": 11501,
+      "sha256": "eefbee1552c22b159022173726d7e958fefae710b760aee0eb0d6f439a43333f",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_frozen_residual_complete\\frozen_residual\\FROZEN_RESIDUAL_PROTOCOL.md",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/FROZEN_RESIDUAL_PROTOCOL.md"
+    },
+    {
+      "path": "frozen_residual/FROZEN_RESIDUAL_RESULTS.json",
+      "bytes": 22071,
+      "sha256": "5684aa79801b8edb40040b2aef716e60d770c6b9171706463a4cb754a6f6dfcb",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_frozen_residual_complete\\frozen_residual\\FROZEN_RESIDUAL_RESULTS.json",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/FROZEN_RESIDUAL_RESULTS.json"
+    },
+    {
+      "path": "frozen_residual/FROZEN_RESIDUAL_RESULTS.md",
+      "bytes": 845,
+      "sha256": "c2dd0796281a2675b9086b4b3e38827ff2943a641f7c14e54e31d56fc664a467",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_frozen_residual_complete\\frozen_residual\\FROZEN_RESIDUAL_RESULTS.md",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/FROZEN_RESIDUAL_RESULTS.md"
+    },
+    {
+      "path": "frozen_residual/FROZEN_VS_ENSEMBLE_VALIDATION.json",
+      "bytes": 3495,
+      "sha256": "ee89334270b6f34b9997e5c7c7162cddd9c78f77352ddc6a44b71abecd4a71ce",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_frozen_residual_complete\\frozen_residual\\FROZEN_VS_ENSEMBLE_VALIDATION.json",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/FROZEN_VS_ENSEMBLE_VALIDATION.json"
+    },
+    {
+      "path": "frozen_residual/IMPLEMENTATION_HANDOFF.json",
+      "bytes": 2806,
+      "sha256": "b48240e4e20a8841610fea906363ea48875ed0c4dbde16f9507ca701bfe4f89d",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_frozen_residual_complete\\frozen_residual\\IMPLEMENTATION_HANDOFF.json",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/IMPLEMENTATION_HANDOFF.json"
+    },
+    {
+      "path": "frozen_residual/IMPLEMENTATION_REVIEW.json",
+      "bytes": 4439,
+      "sha256": "38906f681fdbd35a8b7a2851dcb443b82569d5b5e344b26c4bfb6de1b6e55357",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_frozen_residual_complete\\frozen_residual\\IMPLEMENTATION_REVIEW.json",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/IMPLEMENTATION_REVIEW.json"
+    },
+    {
+      "path": "frozen_residual/IMPLEMENTATION_REVIEW.md",
+      "bytes": 5841,
+      "sha256": "646f28da8986edd27ef58a87b89ea7e9458534ab2a972c9f644996aa78d138f9",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_frozen_residual_complete\\frozen_residual\\IMPLEMENTATION_REVIEW.md",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/IMPLEMENTATION_REVIEW.md"
+    },
+    {
+      "path": "frozen_residual/INDEPENDENT_RUN_AUDIT.json",
+      "bytes": 1774,
+      "sha256": "81ccc7adc01b861bed7ee2f31d3c1a9f42780c2b41d79e7a1e12d8600dfdfdb0",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_frozen_residual_complete\\frozen_residual\\INDEPENDENT_RUN_AUDIT.json",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/INDEPENDENT_RUN_AUDIT.json"
+    },
+    {
+      "path": "frozen_residual/PREFLIGHT.json",
+      "bytes": 4547,
+      "sha256": "075632210e2a6d9d7225212178b23fe3a2788049560f98aad84e0f42e4c97d04",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_frozen_residual_complete\\frozen_residual\\PREFLIGHT.json",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/PREFLIGHT.json"
+    },
+    {
+      "path": "frozen_residual/PREFLIGHT_NUMERICAL_NOTE.md",
+      "bytes": 1340,
+      "sha256": "d3fba08e545f4512518dcc619586579d2cc2533ffdb486160c8de98f76222be3",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_frozen_residual_complete\\frozen_residual\\PREFLIGHT_NUMERICAL_NOTE.md",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/PREFLIGHT_NUMERICAL_NOTE.md"
+    },
+    {
+      "path": "frozen_residual/ROUND_REPORT.md",
+      "bytes": 3370,
+      "sha256": "10a0289549b2f5af4b9672a5131d92e23f28cd4ae5272793bcfb954e247a3a1d",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_frozen_residual_complete\\frozen_residual\\ROUND_REPORT.md",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/ROUND_REPORT.md"
+    },
+    {
+      "path": "frozen_residual/SCIENTIFIC_RESULT_REVIEW.md",
+      "bytes": 7859,
+      "sha256": "639d1ce5e3a2fcd1335167f2f85e28290c46f7e623b0b81af14f9247773a1d95",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_frozen_residual_complete\\frozen_residual\\SCIENTIFIC_RESULT_REVIEW.md",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/SCIENTIFIC_RESULT_REVIEW.md"
+    },
+    {
+      "path": "frozen_residual/WORSTCASE_14562_VALIDATION.json",
+      "bytes": 15724,
+      "sha256": "0ad5f587ada7b288f4a3ca6aab325659471c3ccfc68944c709d6be5988ce3ed5",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_frozen_residual_complete\\frozen_residual\\WORSTCASE_14562_VALIDATION.json",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/WORSTCASE_14562_VALIDATION.json"
+    },
+    {
+      "path": "frozen_residual/analysis/benchmark.py",
+      "bytes": 3311,
+      "sha256": "3eb804e44a2841164d6d1f0f98fccd464a1a4255df0ded410305795356c4b82a",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_frozen_residual_complete\\frozen_residual\\analysis\\benchmark.py",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/analysis/benchmark.py"
+    },
+    {
+      "path": "frozen_residual/analysis/worstcase.py",
+      "bytes": 3917,
+      "sha256": "702518bb3cf3fe7d6c378d98f05e24a0720eb6b20098ab2aa35ef0f3e5dce14e",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_frozen_residual_complete\\frozen_residual\\analysis\\worstcase.py",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/analysis/worstcase.py"
+    },
+    {
+      "path": "frozen_residual/cache.py",
+      "bytes": 3131,
+      "sha256": "9540d67e56f6eef0040cb16a8918493f0ba72b14511a461644e15f21a58d2a35",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_frozen_residual_complete\\frozen_residual\\cache.py",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/cache.py"
+    },
+    {
+      "path": "frozen_residual/common.py",
+      "bytes": 9408,
+      "sha256": "8d10d17157164eb45173325fa2afe839438fa1cf082c76d80ed6e2d4a4400631",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_frozen_residual_complete\\frozen_residual\\common.py",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/common.py"
+    },
+    {
+      "path": "frozen_residual/config.json",
+      "bytes": 1096,
+      "sha256": "2ba4fbd592898d0717362f4bbe9812d25a4b1e1b35a2f13395f359a7572f3d38",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_frozen_residual_complete\\frozen_residual\\config.json",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/config.json"
+    },
+    {
+      "path": "frozen_residual/launch.py",
+      "bytes": 2360,
+      "sha256": "f2376a51f19502bb19624f76fec44662f2efe3263fb0109f798d72613b6e501b",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_frozen_residual_complete\\frozen_residual\\launch.py",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/launch.py"
+    },
+    {
+      "path": "frozen_residual/preflight.py",
+      "bytes": 8976,
+      "sha256": "5875df265fff3652326a7fb8d6475f2f8bc6c55ab51fb68730037ed36a9414be",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_frozen_residual_complete\\frozen_residual\\preflight.py",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/preflight.py"
+    },
+    {
+      "path": "frozen_residual/run/FIT_COMPLETE.json",
+      "bytes": 4354,
+      "sha256": "35eb275150ef763db49ad288f69142d61f01dd9d4cfc70bcddf4eb0b038a1344",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_frozen_residual_complete\\frozen_residual\\run\\FIT_COMPLETE.json",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/run/FIT_COMPLETE.json"
+    },
+    {
+      "path": "frozen_residual/run/history.jsonl",
+      "bytes": 144035,
+      "sha256": "881bdab3d8869d8d3ec150fdb258bccc1fe412ec5e5955f627b8e4085a4a9273",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_frozen_residual_complete\\frozen_residual\\run\\history.jsonl",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/run/history.jsonl"
+    },
+    {
+      "path": "frozen_residual/run/queue_launch_receipt.json",
+      "bytes": 1466,
+      "sha256": "1efcf5464380adc827120ea7384e943975a9790f76fe9362e8d2e0f0e5f840e5",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_frozen_residual_complete\\frozen_residual\\run\\queue_launch_receipt.json",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/run/queue_launch_receipt.json"
+    },
+    {
+      "path": "frozen_residual/run/run_manifest.json",
+      "bytes": 4712,
+      "sha256": "4f00d572d761dbae14d1e5333529d42fbeade63ad344c901986190974a401c4b",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_frozen_residual_complete\\frozen_residual\\run\\run_manifest.json",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/run/run_manifest.json"
+    },
+    {
+      "path": "frozen_residual/run/status.json",
+      "bytes": 9202,
+      "sha256": "0effea49b800c6d9c05cb47a2c608ee0f54b65619666f4c5fffc0e0e41f8c1e8",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_frozen_residual_complete\\frozen_residual\\run\\status.json",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/run/status.json"
+    },
+    {
+      "path": "frozen_residual/run/train.log",
+      "bytes": 2383,
+      "sha256": "ee43b263e57ee98e46b7d8be1c9d50581d5f3a577df725f4a59649589f778c0e",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_frozen_residual_complete\\frozen_residual\\run\\train.log",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/run/train.log"
+    },
+    {
+      "path": "frozen_residual/summarize.py",
+      "bytes": 6794,
+      "sha256": "f2c4b5771b337cca16a6554786bb042d1df846e1222eff9ac8d8f1afcb4f5516",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_frozen_residual_complete\\frozen_residual\\summarize.py",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/summarize.py"
+    },
+    {
+      "path": "frozen_residual/train.py",
+      "bytes": 14521,
+      "sha256": "b77bb5dff6c58d281de3b4683a673002d2beb8724480be8b2877cf16913d640d",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_frozen_residual_complete\\frozen_residual\\train.py",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_residual/train.py"
+    },
+    {
+      "path": "monitoring_state.json",
+      "bytes": 7414,
+      "sha256": "0e681b6dd4025a1d2f6f84329a2675146ffc4ef525c561850a5e9e1418c38a68",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_frozen_residual_complete\\monitoring_state.json",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/monitoring_state.json"
+    },
+    {
+      "path": "round05_frozen_residual_complete/MANIFEST.sha256.json",
+      "bytes": 11666,
+      "sha256": "c6f5dc0811934ba831933ed310aee47fccdfc8e5e6709becd164feb85ca6207a",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_frozen_residual_complete\\MANIFEST.sha256.json",
+      "remote_source": "D: archive metadata"
+    },
+    {
+      "path": "round05_frozen_residual_complete/ARCHIVE_ALLOWLIST.json",
+      "bytes": 5196,
+      "sha256": "8608ab898f8be4d88ebd6af0c73501efdb3521f1587beb05e3373a2f70744455",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_frozen_residual_complete\\ARCHIVE_ALLOWLIST.json",
+      "remote_source": "D: archive metadata"
+    }
+  ],
+  "excludes": "Checkpoints, optimizer states, NPZ/raw arrays, caches and runtime binaries"
+}

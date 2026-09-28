@@ -1,0 +1,412 @@
+{
+  "classification": "Post-run validation-only diagnostic for molecule ID14562 fixed before frozen-head training from prior joint-residual replay",
+  "created": 1790617751.5287793,
+  "fixed_molecule_id": 14562,
+  "global_index": 14536,
+  "control_full_validation_sse": 94.20512092938404,
+  "control_fixed_molecule_sse": 2.898002867004206,
+  "selected_epoch": 2,
+  "predictors": {
+    "initial": {
+      "full_validation_sse": 94.20512083314514,
+      "full_validation_delta_sse_vs_eta0": -9.623889241083816e-08,
+      "fixed_molecule_sse": 2.898002373533749,
+      "fixed_molecule_delta_sse_vs_eta0": -4.934704573855697e-07,
+      "fixed_molecule_share_of_net_change": 5.127557529226058,
+      "fixed_molecule_deterioration_rank": 6684,
+      "fixed_molecule_per_state": [
+        {
+          "physical_state": 1,
+          "raw_f_true": 0.0,
+          "eta0_f": 1.9012359796363767e-05,
+          "head_f": 1.901208888585855e-05,
+          "base_f32": 1.9012088159797713e-05,
+          "base_f_native64": 1.901208888585855e-05,
+          "delta_f": 0.0,
+          "signed_f": 1.901208888585855e-05,
+          "eta0_squared_error": 3.614698250263893e-10,
+          "head_squared_error": 3.614595238037862e-10
+        },
+        {
+          "physical_state": 2,
+          "raw_f_true": 0.0,
+          "eta0_f": 0.008625821765701645,
+          "head_f": 0.00862582395735084,
+          "base_f32": 0.008625824004411697,
+          "base_f_native64": 0.00862582395735084,
+          "delta_f": 0.0,
+          "signed_f": 0.00862582395735084,
+          "eta0_squared_error": 7.440480113365224e-05,
+          "head_squared_error": 7.440483894320771e-05
+        },
+        {
+          "physical_state": 3,
+          "raw_f_true": 0.0,
+          "eta0_f": 0.0028033603350031194,
+          "head_f": 0.002803358960509638,
+          "base_f32": 0.002803359180688858,
+          "base_f_native64": 0.002803358960509638,
+          "delta_f": 0.0,
+          "signed_f": 0.002803358960509638,
+          "eta0_squared_error": 7.858829167868802e-06,
+          "head_squared_error": 7.85882146146968e-06
+        },
+        {
+          "physical_state": 4,
+          "raw_f_true": 0.0,
+          "eta0_f": 0.008487283364301032,
+          "head_f": 0.008487270574109102,
+          "base_f32": 0.008487270213663578,
+          "base_f_native64": 0.008487270574109102,
+          "delta_f": 0.0,
+          "signed_f": 0.008487270574109102,
+          "eta0_squared_error": 7.203397890594104e-05,
+          "head_squared_error": 7.203376179813825e-05
+        },
+        {
+          "physical_state": 5,
+          "raw_f_true": 0.0,
+          "eta0_f": 0.06498893849955277,
+          "head_f": 0.06498891405488476,
+          "base_f32": 0.06498891860246658,
+          "base_f_native64": 0.06498891405488476,
+          "delta_f": 0.0,
+          "signed_f": 0.06498891405488476,
+          "eta0_squared_error": 0.004223562127298653,
+          "head_squared_error": 0.004223558950033198
+        },
+        {
+          "physical_state": 6,
+          "raw_f_true": 0.0,
+          "eta0_f": 0.005567195749805251,
+          "head_f": 0.00556719475610871,
+          "base_f32": 0.005567195359617472,
+          "base_f_native64": 0.00556719475610871,
+          "delta_f": 0.0,
+          "signed_f": 0.00556719475610871,
+          "eta0_squared_error": 3.099366851664966e-05,
+          "head_squared_error": 3.099365745244431e-05
+        },
+        {
+          "physical_state": 7,
+          "raw_f_true": 0.0,
+          "eta0_f": 1.665142593746093,
+          "head_f": 1.6651424581497825,
+          "base_f32": 1.66514253616333,
+          "base_f_native64": 1.6651424581497825,
+          "delta_f": 0.0,
+          "signed_f": 1.6651424581497825,
+          "eta0_squared_error": 2.772699857507466,
+          "head_squared_error": 2.7726994059331
+        },
+        {
+          "physical_state": 8,
+          "raw_f_true": 0.0,
+          "eta0_f": 0.34480546896016223,
+          "head_f": 0.3448054074825304,
+          "base_f32": 0.34480538964271545,
+          "base_f_native64": 0.3448054074825304,
+          "delta_f": 0.0,
+          "signed_f": 0.3448054074825304,
+          "eta0_squared_error": 0.1188908114248374,
+          "head_squared_error": 0.11889076902919384
+        },
+        {
+          "physical_state": 9,
+          "raw_f_true": 0.0,
+          "eta0_f": 0.03710640077367533,
+          "head_f": 0.03710644909144739,
+          "base_f32": 0.03710645064711571,
+          "base_f_native64": 0.03710644909144739,
+          "delta_f": 0.0,
+          "signed_f": 0.03710644909144739,
+          "eta0_squared_error": 0.0013768849783766131,
+          "head_squared_error": 0.0013768885641761769
+        },
+        {
+          "physical_state": 10,
+          "raw_f_true": 0.0,
+          "eta0_f": 0.025029169523456934,
+          "head_f": 0.025029175298660448,
+          "base_f32": 0.025029174983501434,
+          "base_f_native64": 0.025029175298660448,
+          "delta_f": 0.0,
+          "signed_f": 0.025029175298660448,
+          "eta0_squared_error": 0.0006264593270339454,
+          "head_squared_error": 0.0006264596161310743
+        }
+      ]
+    },
+    "selected": {
+      "full_validation_sse": 93.9681792408906,
+      "full_validation_delta_sse_vs_eta0": -0.236941688493431,
+      "fixed_molecule_sse": 2.9101660837165153,
+      "fixed_molecule_delta_sse_vs_eta0": 0.012163216712309133,
+      "fixed_molecule_share_of_net_change": -0.05133421978060373,
+      "fixed_molecule_deterioration_rank": 2,
+      "fixed_molecule_per_state": [
+        {
+          "physical_state": 1,
+          "raw_f_true": 0.0,
+          "eta0_f": 1.9012359796363767e-05,
+          "head_f": 0.0005925901234165282,
+          "base_f32": 1.9012088159797713e-05,
+          "base_f_native64": 1.901208888585855e-05,
+          "delta_f": -0.0006116022123023868,
+          "signed_f": -0.0005925901234165282,
+          "eta0_squared_error": 3.614698250263893e-10,
+          "head_squared_error": 3.5116305437081614e-07
+        },
+        {
+          "physical_state": 2,
+          "raw_f_true": 0.0,
+          "eta0_f": 0.008625821765701645,
+          "head_f": 0.007271839724358907,
+          "base_f32": 0.008625824004411697,
+          "base_f_native64": 0.00862582395735084,
+          "delta_f": -0.0013539842329919338,
+          "signed_f": 0.007271839724358907,
+          "eta0_squared_error": 7.440480113365224e-05,
+          "head_squared_error": 5.287965297676422e-05
+        },
+        {
+          "physical_state": 3,
+          "raw_f_true": 0.0,
+          "eta0_f": 0.0028033603350031194,
+          "head_f": 0.0013486136576015156,
+          "base_f32": 0.002803359180688858,
+          "base_f_native64": 0.002803358960509638,
+          "delta_f": -0.0014547453029081225,
+          "signed_f": 0.0013486136576015156,
+          "eta0_squared_error": 7.858829167868802e-06,
+          "head_squared_error": 1.818758797469338e-06
+        },
+        {
+          "physical_state": 4,
+          "raw_f_true": 0.0,
+          "eta0_f": 0.008487283364301032,
+          "head_f": 0.0012874103961749324,
+          "base_f32": 0.008487270213663578,
+          "base_f_native64": 0.008487270574109102,
+          "delta_f": -0.00719986017793417,
+          "signed_f": 0.0012874103961749324,
+          "eta0_squared_error": 7.203397890594104e-05,
+          "head_squared_error": 1.6574255281792964e-06
+        },
+        {
+          "physical_state": 5,
+          "raw_f_true": 0.0,
+          "eta0_f": 0.06498893849955277,
+          "head_f": 0.061475489397599545,
+          "base_f32": 0.06498891860246658,
+          "base_f_native64": 0.06498891405488476,
+          "delta_f": -0.0035134246572852135,
+          "signed_f": 0.061475489397599545,
+          "eta0_squared_error": 0.004223562127298653,
+          "head_squared_error": 0.003779235796674374
+        },
+        {
+          "physical_state": 6,
+          "raw_f_true": 0.0,
+          "eta0_f": 0.005567195749805251,
+          "head_f": 0.003159040912974068,
+          "base_f32": 0.005567195359617472,
+          "base_f_native64": 0.00556719475610871,
+          "delta_f": -0.0024081538431346416,
+          "signed_f": 0.003159040912974068,
+          "eta0_squared_error": 3.099366851664966e-05,
+          "head_squared_error": 9.979539489844032e-06
+        },
+        {
+          "physical_state": 7,
+          "raw_f_true": 0.0,
+          "eta0_f": 1.665142593746093,
+          "head_f": 1.6706551958188331,
+          "base_f32": 1.66514253616333,
+          "base_f_native64": 1.6651424581497825,
+          "delta_f": 0.0055127376690506935,
+          "signed_f": 1.6706551958188331,
+          "eta0_squared_error": 2.772699857507466,
+          "head_squared_error": 2.791088783316464
+        },
+        {
+          "physical_state": 8,
+          "raw_f_true": 0.0,
+          "eta0_f": 0.34480546896016223,
+          "head_f": 0.33806901998385364,
+          "base_f32": 0.34480538964271545,
+          "base_f_native64": 0.3448054074825304,
+          "delta_f": -0.006736387498676777,
+          "signed_f": 0.33806901998385364,
+          "eta0_squared_error": 0.1188908114248374,
+          "head_squared_error": 0.11429066227284324
+        },
+        {
+          "physical_state": 9,
+          "raw_f_true": 0.0,
+          "eta0_f": 0.03710640077367533,
+          "head_f": 0.026254408368481197,
+          "base_f32": 0.03710645064711571,
+          "base_f_native64": 0.03710644909144739,
+          "delta_f": -0.010852040722966194,
+          "signed_f": 0.026254408368481197,
+          "eta0_squared_error": 0.0013768849783766131,
+          "head_squared_error": 0.0006892939587789755
+        },
+        {
+          "physical_state": 10,
+          "raw_f_true": 0.0,
+          "eta0_f": 0.025029169523456934,
+          "head_f": 0.01585628682598417,
+          "base_f32": 0.025029174983501434,
+          "base_f_native64": 0.025029175298660448,
+          "delta_f": -0.009172888472676277,
+          "signed_f": 0.01585628682598417,
+          "eta0_squared_error": 0.0006264593270339454,
+          "head_squared_error": 0.00025142183190787916
+        }
+      ]
+    },
+    "final20": {
+      "full_validation_sse": 94.36273627233226,
+      "full_validation_delta_sse_vs_eta0": 0.157615342948219,
+      "fixed_molecule_sse": 3.4588740549816275,
+      "fixed_molecule_delta_sse_vs_eta0": 0.5608711879774213,
+      "fixed_molecule_share_of_net_change": 3.55848090348465,
+      "fixed_molecule_deterioration_rank": 1,
+      "fixed_molecule_per_state": [
+        {
+          "physical_state": 1,
+          "raw_f_true": 0.0,
+          "eta0_f": 1.9012359796363767e-05,
+          "head_f": 0.0020842255791664573,
+          "base_f32": 1.9012088159797713e-05,
+          "base_f_native64": 1.901208888585855e-05,
+          "delta_f": -0.0021032376680523157,
+          "signed_f": -0.0020842255791664573,
+          "eta0_squared_error": 3.614698250263893e-10,
+          "head_squared_error": 4.3439962648517546e-06
+        },
+        {
+          "physical_state": 2,
+          "raw_f_true": 0.0,
+          "eta0_f": 0.008625821765701645,
+          "head_f": 0.009315348823525747,
+          "base_f32": 0.008625824004411697,
+          "base_f_native64": 0.00862582395735084,
+          "delta_f": 0.0006895248661749065,
+          "signed_f": 0.009315348823525747,
+          "eta0_squared_error": 7.440480113365224e-05,
+          "head_squared_error": 8.677572370396252e-05
+        },
+        {
+          "physical_state": 3,
+          "raw_f_true": 0.0,
+          "eta0_f": 0.0028033603350031194,
+          "head_f": 0.0006143758199963372,
+          "base_f32": 0.002803359180688858,
+          "base_f_native64": 0.002803358960509638,
+          "delta_f": -0.002188983140513301,
+          "signed_f": 0.0006143758199963372,
+          "eta0_squared_error": 7.858829167868802e-06,
+          "head_squared_error": 3.7745764819617176e-07
+        },
+        {
+          "physical_state": 4,
+          "raw_f_true": 0.0,
+          "eta0_f": 0.008487283364301032,
+          "head_f": 0.004125460621877169,
+          "base_f32": 0.008487270213663578,
+          "base_f_native64": 0.008487270574109102,
+          "delta_f": -0.012612731195986271,
+          "signed_f": -0.004125460621877169,
+          "eta0_squared_error": 7.203397890594104e-05,
+          "head_squared_error": 1.7019425342659156e-05
+        },
+        {
+          "physical_state": 5,
+          "raw_f_true": 0.0,
+          "eta0_f": 0.06498893849955277,
+          "head_f": 0.05866160953144654,
+          "base_f32": 0.06498891860246658,
+          "base_f_native64": 0.06498891405488476,
+          "delta_f": -0.006327304523438215,
+          "signed_f": 0.05866160953144654,
+          "eta0_squared_error": 0.004223562127298653,
+          "head_squared_error": 0.0034411844328199
+        },
+        {
+          "physical_state": 6,
+          "raw_f_true": 0.0,
+          "eta0_f": 0.005567195749805251,
+          "head_f": 0.004909517381351999,
+          "base_f32": 0.005567195359617472,
+          "base_f_native64": 0.00556719475610871,
+          "delta_f": -0.010476712137460709,
+          "signed_f": -0.004909517381351999,
+          "eta0_squared_error": 3.099366851664966e-05,
+          "head_squared_error": 2.410336091779739e-05
+        },
+        {
+          "physical_state": 7,
+          "raw_f_true": 0.0,
+          "eta0_f": 1.665142593746093,
+          "head_f": 1.8265350425928748,
+          "base_f32": 1.66514253616333,
+          "base_f_native64": 1.6651424581497825,
+          "delta_f": 0.16139258444309235,
+          "signed_f": 1.8265350425928748,
+          "eta0_squared_error": 2.772699857507466,
+          "head_squared_error": 3.336230261819755
+        },
+        {
+          "physical_state": 8,
+          "raw_f_true": 0.0,
+          "eta0_f": 0.34480546896016223,
+          "head_f": 0.3449296625468232,
+          "base_f32": 0.34480538964271545,
+          "base_f_native64": 0.3448054074825304,
+          "delta_f": 0.00012425506429281086,
+          "signed_f": 0.3449296625468232,
+          "eta0_squared_error": 0.1188908114248374,
+          "head_squared_error": 0.11897647210466535
+        },
+        {
+          "physical_state": 9,
+          "raw_f_true": 0.0,
+          "eta0_f": 0.03710640077367533,
+          "head_f": 0.006522020018087826,
+          "base_f32": 0.03710645064711571,
+          "base_f_native64": 0.03710644909144739,
+          "delta_f": -0.04362846910953522,
+          "signed_f": -0.006522020018087826,
+          "eta0_squared_error": 0.0013768849783766131,
+          "head_squared_error": 4.253674511633833e-05
+        },
+        {
+          "physical_state": 10,
+          "raw_f_true": 0.0,
+          "eta0_f": 0.025029169523456934,
+          "head_f": 0.007140022086351564,
+          "base_f32": 0.025029174983501434,
+          "base_f_native64": 0.025029175298660448,
+          "delta_f": -0.017889153212308884,
+          "signed_f": 0.007140022086351564,
+          "eta0_squared_error": 0.0006264593270339454,
+          "head_squared_error": 5.097991539358814e-05
+        }
+      ]
+    }
+  },
+  "fit_complete_sha256": "35eb275150ef763db49ad288f69142d61f01dd9d4cfc70bcddf4eb0b038a1344",
+  "eta0_export_sha256": "25acae64bb4e3e541048a8705045f7f639d1113d537dbbef71672752e8065890",
+  "prediction_hashes": {
+    "initial": "514a83e9f7264d1bad62faf5de44582c266aa1f0b5c23bdf7a61bed966f8e184",
+    "selected": "aaf5d9cc9210d72d359f601fd86b79777a72c6d47b775a08bfdff25921ec9bc2",
+    "final20": "425cd0dd4ac782a95d9d70d43259c7a1e346d117d1d864e8069f908faa9a6c90"
+  },
+  "limitations": [
+    "This fixed ID was chosen after inspecting an earlier validation diagnostic; it is illustrative, not a selection metric.",
+    "The full 6,686-molecule pooled raw-f R2 remains primary. No test data were opened."
+  ]
+}

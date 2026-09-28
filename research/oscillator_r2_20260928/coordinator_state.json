@@ -1,6 +1,6 @@
 {
   "project": "MTO-1",
-  "updated_at": "2026-09-29T01:26:00+08:00",
+  "updated_at": "2026-09-29T02:00:00+08:00",
   "primary_objective": "Improve pooled raw native oscillator-strength R2; maximize validation-selected R2 while preserving honest historical-test limits.",
   "coordinator": "root remains research orchestrator and decision owner",
   "monitor": {
@@ -232,11 +232,43 @@
     },
     {
       "id": "round05_frozen_residual_head_only",
-      "status": "protocol_reviewed_preparation_only_not_launched",
+      "status": "complete_validation_only_no_promotion",
       "paths": [
-        "frozen_residual/FROZEN_RESIDUAL_PROTOCOL.md"
+        "frozen_residual/FROZEN_RESIDUAL_PROTOCOL.md",
+        "frozen_residual/IMPLEMENTATION_HANDOFF.json",
+        "frozen_residual/IMPLEMENTATION_REVIEW.md",
+        "frozen_residual/PREFLIGHT.json",
+        "frozen_residual/INDEPENDENT_RUN_AUDIT.json",
+        "frozen_residual/FROZEN_RESIDUAL_RESULTS.json",
+        "frozen_residual/FROZEN_RESIDUAL_RESULTS.md",
+        "frozen_residual/FROZEN_ERROR_DECOMPOSITION.json",
+        "frozen_residual/FROZEN_VS_ENSEMBLE_VALIDATION.json",
+        "frozen_residual/WORSTCASE_14562_VALIDATION.json",
+        "frozen_residual/ROUND_REPORT.md",
+        "frozen_residual/run/FIT_COMPLETE.json",
+        "frozen_residual/run/history.jsonl",
+        "frozen_residual/run/status.json",
+        "frozen_residual/run/train.log",
+        "frozen_residual/SCIENTIFIC_RESULT_REVIEW.md"
       ],
-      "decision": "One 20-epoch frozen-eta0 residual-head-only validation diagnostic is authorized for preparation, conditional on implementation review PASS, preflight PASS, resource admission and a launch receipt. No training launch is recorded yet; no test evaluation."
+      "decision": "One 20-epoch frozen-eta0 residual-head-only validation diagnostic is authorized for preparation, conditional on implementation review PASS, preflight PASS, resource admission and a launch receipt. No training launch is recorded yet; no test evaluation.",
+      "run_state": "FIT_COMPLETE; independent run audit PASS; scientific result review complete",
+      "best_epoch": 2,
+      "epochs_completed": 20,
+      "optimizer_steps": 37620,
+      "baseline_validation_raw_native_f_r2": 0.4052941183410983,
+      "selected_validation_raw_native_f_r2": 0.406789903,
+      "selected_delta_r2": 0.0014957847,
+      "final_epoch20_validation_raw_native_f_r2": 0.404299111,
+      "promotion": "none; gain below prespecified +0.01 R2 threshold; no test evaluation, no extension",
+      "interpretation": "Small validation-selected gain; final epoch regresses below baseline. One-seed exploratory result; uncertainty conditions on selected checkpoint. Fixed-base protection and Gram-information limits are discussed in the independent review."
+    },
+    {
+      "id": "round06_frozen_gram_probe",
+      "status": "protocol_approved_implementation_preflight_pending_not_launched",
+      "path": "frozen_gram_probe/FROZEN_GRAM_PROBE_PROTOCOL.md",
+      "protocol_sha256": "c7f6f6ede884e663d5af579e6add91f49552128ff39ce7dc0bdb73088777fa32",
+      "decision": "Bounded two-arm frozen-Gram probe protocol approved. Implementation/preflight are underway. No full fit or launch is recorded; launch remains conditional on independent review and runtime gates."
     }
   ],
   "chan64_plateau_decision": {
