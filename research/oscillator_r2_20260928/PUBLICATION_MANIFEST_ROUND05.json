@@ -1,0 +1,75 @@
+{
+  "purpose": "Post-publication coordinator, natural G4 completion, and reviewed validation-only analysis addendum",
+  "base_published_commit": "25f208aee122ad09e5737a737e4fcef993fab954",
+  "source": "Hash-verified D: archive copies of USTC-A800 files",
+  "overrides": [
+    "RESEARCH_STATUS.md",
+    "coordinator_state.json"
+  ],
+  "excludes": "Checkpoints, optimizer states, NPZ arrays, caches, dynamic queue files, and deferred analysis outputs",
+  "files": [
+    {
+      "path": "RESEARCH_STATUS.md",
+      "bytes": 10259,
+      "sha256": "2a41b1e62c21a5f523476d5ea97de8568d1424b514d8e91567a25670dbb305bb",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_publication_addendum\\RESEARCH_STATUS.md",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/RESEARCH_STATUS.md"
+    },
+    {
+      "path": "coordinator_state.json",
+      "bytes": 8876,
+      "sha256": "b915f9c65c80c47a95f0b4103536c52f1c0aeff638d1b947c3678e52a5ef2841",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_publication_addendum\\coordinator_state.json",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/coordinator_state.json"
+    },
+    {
+      "path": "G4_COMPLETION_REASSIGNMENT.json",
+      "bytes": 2086,
+      "sha256": "d656186bbb9006897a19d29bd0680206a5b35bf184061a2257333f5af2ca7f0d",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_publication_addendum\\G4_COMPLETION_REASSIGNMENT.json",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/G4_COMPLETION_REASSIGNMENT.json"
+    },
+    {
+      "path": "G4_COMPLETION_REASSIGNMENT.md",
+      "bytes": 1006,
+      "sha256": "a241c1f0740a1fa3186654c5a401e26acee3cfc69780caaca53adcef6ba2ed48",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_publication_addendum\\G4_COMPLETION_REASSIGNMENT.md",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/G4_COMPLETION_REASSIGNMENT.md"
+    },
+    {
+      "path": "analysis_addendum/ARCHIVE_MANIFEST.json",
+      "bytes": 1646,
+      "sha256": "d5663b6a762547da2edd85b35d5016e4700253b0484667b50aad4e15cc6faa21",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_publication_addendum\\analysis_addendum\\ARCHIVE_MANIFEST.json",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/analysis_addendum/ARCHIVE_MANIFEST.json"
+    },
+    {
+      "path": "analysis_addendum/validation_comparison_addendum.py",
+      "bytes": 23378,
+      "sha256": "3e723f56039ef670e43a73936c5775a33fb0c5b90a77e53c591a7941025c3b00",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_publication_addendum\\analysis_addendum\\validation_comparison_addendum.py",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/analysis_addendum/validation_comparison_addendum.py"
+    },
+    {
+      "path": "analysis_addendum/README.md",
+      "bytes": 4032,
+      "sha256": "d4a956639592e058a467ab940dcfcd9f8500067a0e54d2ed1bb4171e214b5fb1",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_publication_addendum\\analysis_addendum\\README.md",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/analysis_addendum/README.md"
+    },
+    {
+      "path": "analysis_addendum/FIXTURE_VALIDATION.json",
+      "bytes": 2205,
+      "sha256": "a5db18e39bdce16558f7bca30f9d8d709f9e7bcbf9748e7a7527ab1d2b4c55ab",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_publication_addendum\\analysis_addendum\\FIXTURE_VALIDATION.json",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/analysis_addendum/FIXTURE_VALIDATION.json"
+    },
+    {
+      "path": "analysis_addendum/INDEPENDENT_REVIEW.json",
+      "bytes": 1076,
+      "sha256": "230f72343908d0d0a012b203c94b52924e046e4b5bc39bb03bbb6ea9782764fc",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round05_publication_addendum\\analysis_addendum\\INDEPENDENT_REVIEW.json",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/analysis_addendum/INDEPENDENT_REVIEW.json"
+    }
+  ]
+}

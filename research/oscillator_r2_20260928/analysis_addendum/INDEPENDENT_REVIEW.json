@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "reviewer": "scientific_audit",
+  "time": 1790611716.3660157,
+  "source_sha256": "3e723f56039ef670e43a73936c5775a33fb0c5b90a77e53c591a7941025c3b00",
+  "fixture_sha256": "a5db18e39bdce16558f7bca30f9d8d709f9e7bcbf9748e7a7527ab1d2b4c55ab",
+  "checks": [
+    "validation-only data paths and full ID/index/raw-label alignment",
+    "completed-artifact gates avoid reading running histories",
+    "selected checkpoint/prediction aliases and source manifests verified",
+    "paired molecule and whole-connectivity-group bootstrap recalculates pooled SST",
+    "per-state pooled delta contributions sum to total; physical states1..10",
+    "common q90/q99 thresholds and complementary tail subsets",
+    "epoch0/best/final20 metrics and full curve",
+    "matched controls and4.508882x loss-scale distinction",
+    "conditional-selection uncertainty and one-seed caveats"
+  ],
+  "limitations": [
+    "Completed training paths await actual round completion; fixture validates frozen validation aggregation.",
+    "No test inference or generalization claim."
+  ]
+}

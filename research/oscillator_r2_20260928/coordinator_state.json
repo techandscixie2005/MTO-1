@@ -1,6 +1,6 @@
 {
   "project": "MTO-1",
-  "updated_at": "2026-09-28",
+  "updated_at": "2026-09-29",
   "primary_objective": "Improve pooled raw native oscillator-strength R2; maximize validation-selected R2 while preserving honest historical-test limits.",
   "coordinator": "root remains research orchestrator and decision owner",
   "monitor": {
@@ -168,11 +168,16 @@
   "publication": {
     "repository": "techandscixie2005/MTO-1",
     "branch": "codex/oscillator-r2-research-20260928",
-    "state": "pending_ssh_git_transport",
+    "state": "ssh_branch_confirmed",
     "owner_ssh_authentication": "verified",
-    "pushed": false,
+    "pushed": true,
     "source": "verified D: archive copies only",
-    "local_status": "D:\\MTO\\archives\\oscillator_r2_20260928\\PUBLICATION_STATUS.md"
+    "local_status": "D:\\MTO\\archives\\oscillator_r2_20260928\\PUBLICATION_STATUS.md",
+    "commit": "25f208aee122ad09e5737a737e4fcef993fab954",
+    "base_main_commit": "1de09d232379eb05a999cb67f58f084476b107b6",
+    "verified_at": "2026-09-29T00:13:53+08:00",
+    "verification": "SSH ls-remote returned the exact branch commit; 70 additions confined to research/oscillator_r2_20260928/",
+    "draft_pr": "not_created_github_integration_403"
   },
   "decision_rules": [
     "Root remains orchestrator.",
@@ -197,5 +202,28 @@
     "original_queue_exited_without_workers": true,
     "original_campaign_state": "STOPPED_REQUIRES_EXPLICIT_RESUME; expected CAMPAIGN_BLOCKED; intentional incomplete campaign",
     "partial_campaign_analysis": "Required after remaining original chan64 jobs finish; label explicitly as partial and administratively stopped."
+  },
+  "targeted_resource_check": {
+    "type": "targeted_G4_and_architecture_resource_check_not_four_hour_monitor",
+    "recorded_at": "2026-09-29T00:13:53+08:00",
+    "receipt": "G4_COMPLETION_REASSIGNMENT.json",
+    "g4": {
+      "state": "FIT_COMPLETE",
+      "reason": "early_stop",
+      "completed_epoch": 223,
+      "best_epoch": 71,
+      "best_validation_objective": 0.13636913722659028,
+      "nonimproving_epochs": 152,
+      "former_pid": 566532,
+      "former_process_absent": true,
+      "oracle_E_validation_f_r2_diagnostic_only": 0.34833500406629203,
+      "native_f_available": false
+    },
+    "architecture_original": {
+      "state": "launched",
+      "pid": 790200,
+      "gpu": 6
+    },
+    "next_four_hour_monitor_due_at": "2026-09-29T02:29:29+08:00"
   }
 }

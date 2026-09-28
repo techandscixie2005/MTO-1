@@ -1,0 +1,43 @@
+{
+  "classification": "lightweight remote-to-D archive manifest",
+  "created": 1790611797.4617686,
+  "remote_root": "/home/inspur/MTO-1/research/oscillator_r2_20260928/analysis_addendum",
+  "approved_files": [
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/analysis_addendum/validation_comparison_addendum.py",
+      "size_bytes": 23378,
+      "sha256": "3e723f56039ef670e43a73936c5775a33fb0c5b90a77e53c591a7941025c3b00"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/analysis_addendum/README.md",
+      "size_bytes": 4032,
+      "sha256": "d4a956639592e058a467ab940dcfcd9f8500067a0e54d2ed1bb4171e214b5fb1"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/analysis_addendum/FIXTURE_VALIDATION.json",
+      "size_bytes": 2205,
+      "sha256": "a5db18e39bdce16558f7bca30f9d8d709f9e7bcbf9748e7a7527ab1d2b4c55ab"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/analysis_addendum/INDEPENDENT_REVIEW.json",
+      "size_bytes": 1076,
+      "sha256": "230f72343908d0d0a012b203c94b52924e046e4b5bc39bb03bbb6ea9782764fc"
+    }
+  ],
+  "deferred_until_completed_rounds": [
+    "PILOT_VALIDATION_ADDENDUM.json",
+    "PILOT_VALIDATION_ADDENDUM.md",
+    "ARCHITECTURE_VALIDATION_ADDENDUM.json",
+    "ARCHITECTURE_VALIDATION_ADDENDUM.md",
+    "COMMON_COMPARISON.json",
+    "COMMON_COMPARISON.md"
+  ],
+  "exclude": [
+    "__pycache__",
+    "all training checkpoints",
+    "optimizer states",
+    "raw prediction NPZ files",
+    "teacher feature caches"
+  ],
+  "review_sha256": "230f72343908d0d0a012b203c94b52924e046e4b5bc39bb03bbb6ea9782764fc"
+}

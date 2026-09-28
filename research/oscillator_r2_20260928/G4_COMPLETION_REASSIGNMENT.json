@@ -1,0 +1,37 @@
+{
+  "classification": "targeted resource-reassignment receipt; original G4 completed naturally",
+  "time": 1790611777.7918565,
+  "G4": {
+    "fit_reason": "early_stop",
+    "completed_epoch": 223,
+    "best_epoch": 71,
+    "best_validation_objective": 0.13636913722659028,
+    "nonimproving_epochs": 152,
+    "lr_reductions": 2,
+    "last_lr_reduction_epoch": 173,
+    "cooldown_epochs": 50,
+    "supervise_E": false,
+    "native_f_available": false,
+    "oracle_E_validation_f_r2_diagnostic_only": 0.34833500406629203,
+    "former_pid": 566532,
+    "former_process_absent": true,
+    "gpu": 6,
+    "files": {
+      "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/runs/G4/FIT_COMPLETE.json": "84b1049e8edda4c738dc95576482b9fc35ff69a366abba179eb9bc17ed774abc",
+      "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/configs/G4.json": "96f254a903ed697eb405a16210efd45bc6d7aced016686c9cb458578eb4abbad",
+      "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/runs/G4/launch_receipt.json": "1abdc99be549d6066ed5a2a73e36312e4554cbdccd65590f177a807ef404ce67",
+      "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/runs/G4/best.pt": "3d5f2df9e9f94709236dbafd79e8a1c4443346abdf40b21b13b25d4e7618e64e",
+      "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/runs/G4/last.pt": "cce4419f7355812f69e6677ddcd2601adc40b59bcc44419f8ef5be4362ae3a39",
+      "/home/inspur/MTO-1/research/oscillator_r2_20260928/chan64_validation_only.json": "cc9a40af9e1ba3a1b9200cbe25514b5b35e7cabf1e8642e991d59282707899de"
+    }
+  },
+  "architecture_original": {
+    "pid": 790200,
+    "process_present_at_receipt": true,
+    "gpu": 6,
+    "gpu_uuid": "GPU-2431a641-8045-a10b-4aa0-2769010e0708",
+    "launch_receipt_sha256": "235321132726198f2bf0a1fc7abced6ea7f024da29d80d0f9c6fd4921a4b074f",
+    "launch_receipt_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/runs/original/queue_launch_receipt.json"
+  },
+  "action": "No retirement signal, no GPU reset, no training or test inference. GPU6 released naturally and was assigned to the matched architecture original arm."
+}

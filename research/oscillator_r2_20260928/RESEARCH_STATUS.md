@@ -73,3 +73,9 @@ Local D: archives were hash-verified from USTC-A800 before publication staging:
 - `D:\MTO\archives\oscillator_r2_20260928\round03_ensemble\MANIFEST.sha256.json`
 
 Publication to `techandscixie2005/MTO-1` via SSH is **pending Git transport**. SSH authentication succeeded, but a branch push has not been recorded. See the D: `PUBLICATION_STATUS.md` for the exact transport attempts. Upload only reviewed lightweight material from the verified D: copies; exclude checkpoints, optimizer states, caches, raw tensors, and other large runtime artifacts.
+
+## Publication and targeted resource update (2026-09-29T00:13:53+08:00)
+
+The preceding publication paragraph records the earlier archived snapshot. GitHub SSH now confirms branch `codex/oscillator-r2-research-20260928` at commit `25f208aee122ad09e5737a737e4fcef993fab954`, based on `main` `1de09d232379eb05a999cb67f58f084476b107b6`. The first commit contains the 70 verified lightweight files staged from D: archives; its diff adds only `research/oscillator_r2_20260928/`. The GitHub integration declined draft PR creation with HTTP 403, so no PR is recorded. The D: publication status holds transport and hash details.
+
+A targeted resource check, separate from the four-hour monitor, found original chan64 G4 naturally `FIT_COMPLETE` by early stop at epoch 223 (best validation objective 0.1363691372 at epoch 71; 152 non-improving epochs). G4's oracle-E validation f R² 0.3483350041 is diagnostic only: that model does not produce deployable native f. Its former PID 566532 is gone; clean GPU6 was assigned to architecture original control PID 790200. No G4 retirement signal, GPU reset, or test inference was performed. See `G4_COMPLETION_REASSIGNMENT.json` and `.md` for the reviewed hashes and receipt. The scheduled four-hour monitor remains due at **2026-09-29T02:29:29+08:00**; this targeted check does not replace it.
