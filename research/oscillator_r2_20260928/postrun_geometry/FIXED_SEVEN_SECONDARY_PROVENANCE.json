@@ -1,0 +1,47 @@
+{
+  "recorded_at": "2026-09-29T04:41:20.245408+08:00",
+  "classification": "post-launch pre-seed-outcome exploratory protocol amendment; no implementation/execution",
+  "protocol_sha256": "675030449886676094b1226d6ea75d753752fdd7e3e7cc3c8e1a9441bb469c0e",
+  "frozen_five_components": {
+    "mto_eta0": {
+      "prediction_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta0/val_predictions.npz",
+      "prediction_sha256": "25acae64bb4e3e541048a8705045f7f639d1113d537dbbef71672752e8065890"
+    },
+    "mto_eta01": {
+      "prediction_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta01/val_predictions.npz",
+      "prediction_sha256": "9edffb5cd617469c78c8d83da7901ac90add69d89f27de7e8196a8736ae85500"
+    },
+    "mto_eta1": {
+      "prediction_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta1/val_predictions.npz",
+      "prediction_sha256": "a3808b9ad425abf4f6fcfed840d0ed8d1ff6fcf1557037a4e01932c734dc68bb"
+    },
+    "G1": {
+      "prediction_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/chan64_campaign_completion/runtime/G1_selected_native_val.npz",
+      "prediction_sha256": "7c5fef99d9547c3fbe42c26fc7506287fc37a6cbc58f10d1900447a4724cfb5d"
+    },
+    "G3": {
+      "prediction_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/chan64_campaign_completion/runtime/G3_selected_native_val.npz",
+      "prediction_sha256": "55310a8f3924c5e5b2edd58c60a95dec0216b159672358ca2ff9609f5129adce"
+    }
+  },
+  "reference_hashes": {
+    "eta0_seed_replication/PROTOCOL.md": "ceacc1d992aec0604f9b31b0fa0c71e2fe3303fbb417da72be115e04973473e8",
+    "eta0_seed_replication/IMPLEMENTATION_REVIEW.json": "088be0c334d88b46ce39f7f3b5097cb6150a517d83cb0432b1a8fe847dcc1808",
+    "eta0_seed_replication/PREFLIGHT.json": "f0142a2dda91e02eb919ce23a33516ffcfd874dd48a4af9bbebf0d5d4afe3ddc",
+    "postrun_geometry/PROTOCOL.md": "7b1c10cf27e7b8943f5366e9b2cc6e389f5799dcbb8e20462d51cd10ec4d0f94",
+    "postrun_geometry/IMPLEMENTATION_REVIEW.json": "aeb1363fdb211b7306751d6c48de09b7c3bd62f48915d0d117c204e9a322ed6b",
+    "postrun_geometry/postrun_geometry.py": "06da5aa70deebc10ed4e538b26d86f5ab3292c392c85e1ef2109a057db405092",
+    "postrun_geometry/SCRATCH_MEAN_SECONDARY_AMENDMENT.md": "dbff88c47c0b3e487e30507ba2f1903364f7134082abb2a3b1059bba7b4566df",
+    "geometry_error_audit/geometry_error_metrics.json": "b088b23a5098149c5a127623a5a9315f6d4c979a501eeb3fd0af46285eaccbbd",
+    "chan64_campaign_completion/ENSEMBLE_RESULTS.json": "f1d1d3ee451a48af73fc2dfdf5b1533256caedb1ade16fafda51cc834edfcbf2",
+    "chan64_campaign_completion/REPLAY_RESULT.json": "597472292d168d8e32cd391a5f9aa4e8a7445087b3186368e28edce2ae45923f",
+    "chan64_campaign_completion/SCIENTIFIC_CLOSEOUT_REVIEW.md": "0fd3d7012f457b9689e070d8f2f32e04f1ac75cb63ecf909bb420defb0694a84"
+  },
+  "future_components": {
+    "seed23": "legacy-joint selected, future receipt/hash required",
+    "seed37": "legacy-joint selected, future receipt/hash required"
+  },
+  "active_outcome_access": false,
+  "test_access": false,
+  "training_or_inference": false
+}

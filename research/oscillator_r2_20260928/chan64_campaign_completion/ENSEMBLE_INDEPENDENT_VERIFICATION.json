@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "verified_at": "2026-09-29T04:35:40.427297+08:00",
+  "source_hashes": {
+    "REPLAY_RESULT.json": "597472292d168d8e32cd391a5f9aa4e8a7445087b3186368e28edce2ae45923f",
+    "ENSEMBLE_RESULTS.json": "f1d1d3ee451a48af73fc2dfdf5b1533256caedb1ade16fafda51cc834edfcbf2",
+    "ensemble_fixed.py": "725a07b184f4c1c8f6a14bdabb1c50ea19ff5745182e958528c47c2e8237cdb5"
+  },
+  "method": "Independent NumPy reconstruction from five saved validation arrays; no imports of evaluator, no inference/test; independent bincount-group paired bootstrap arithmetic with same preregistered seed/draw count.",
+  "alignment": "Exact all-five indices/IDs/FP64 raw truth/masks; native formula reconstructed exactly for G1/G3; full6686x10 retained.",
+  "results": {
+    "G1_G3_equal2": {
+      "delta_r2": 0.014656264658142126,
+      "delta_sse": -2.3216437352897157,
+      "below_q90_delta_sse": -4.998820842788298,
+      "q90_delta_sse": 2.6771771074985824,
+      "q99_delta_sse": 4.014522440505711,
+      "bootstraps": {
+        "molecule_bootstrap": {
+          "ci95": [
+            -0.011908747056965405,
+            0.012745508805354053,
+            0.050374171866101096
+          ],
+          "positive_fraction": 0.822,
+          "units": 6686
+        },
+        "connectivity_bootstrap": {
+          "ci95": [
+            -0.012311955021593352,
+            0.01328676080480063,
+            0.05047665681184861
+          ],
+          "positive_fraction": 0.817,
+          "units": 6671
+        }
+      }
+    },
+    "eta0_eta01_eta1_G1_G3_equal5": {
+      "delta_r2": 0.03827814162390845,
+      "delta_sse": -6.063496380048637,
+      "below_q90_delta_sse": -4.864880061635388,
+      "q90_delta_sse": -1.1986163184132481,
+      "q99_delta_sse": 0.6238836171867584,
+      "bootstraps": {
+        "molecule_bootstrap": {
+          "ci95": [
+            0.026124049038690977,
+            0.037448724154415323,
+            0.05552190214393336
+          ],
+          "positive_fraction": 1.0,
+          "units": 6686
+        },
+        "connectivity_bootstrap": {
+          "ci95": [
+            0.02597229740944394,
+            0.037494438960585436,
+            0.05469673787032106
+          ],
+          "positive_fraction": 1.0,
+          "units": 6671
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "time": 1790626862.3492339,
+  "reason": "At least one group failed or stopped; evaluation withheld",
+  "groups": {
+    "G1": {
+      "state": "FIT_COMPLETE",
+      "pid": 566461,
+      "gpu": 1,
+      "log": "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/logs/G1.log"
+    },
+    "G2": {
+      "state": "STOPPED_REQUIRES_EXPLICIT_RESUME",
+      "pid": 566514,
+      "gpu": 2,
+      "log": "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/logs/G2.log"
+    },
+    "G3": {
+      "state": "FIT_COMPLETE",
+      "pid": 566521,
+      "gpu": 4,
+      "log": "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/logs/G3.log"
+    },
+    "G4": {
+      "state": "FIT_COMPLETE",
+      "pid": 566532,
+      "gpu": 6,
+      "log": "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/logs/G4.log"
+    }
+  }
+}

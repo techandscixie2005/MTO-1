@@ -1,0 +1,46 @@
+{
+  "classification": "validation-only audit of in-progress best checkpoints; G2/G4 E head unsupervised, so oracle-E f is diagnostic, not native performance",
+  "source": "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928",
+  "results": {
+    "G1": {
+      "checkpoint_sha256": "3718c223eb40cc6a40d710bd3b9086b5a3209b6d0eb440f7265f1444510e153f",
+      "checkpoint_epoch": 75,
+      "checkpoint_selection_val": 0.4876234199502958,
+      "f_mode": "native",
+      "val_f_r2": 0.4052545406625945,
+      "val_f_sse": 94.21139028051125,
+      "val_f_rmse": 0.03753777442964871,
+      "elapsed_seconds": 118.63599099218845
+    },
+    "G2": {
+      "checkpoint_sha256": "1894f778b2d98a99cc390237c0516d98279375f140ad4b5ea72ac8d08012bd1a",
+      "checkpoint_epoch": 41,
+      "checkpoint_selection_val": 0.12957936948799922,
+      "f_mode": "oracle_E_diagnostic_only",
+      "val_f_r2": 0.38078050390016693,
+      "val_f_sse": 98.08823035211671,
+      "val_f_rmse": 0.03830233615997003,
+      "elapsed_seconds": 119.1031731273979
+    },
+    "G3": {
+      "checkpoint_sha256": "f0ac00a5a19496e656d4b28969aae4f4ab0ecde3062fc9a92b92af10db0e322d",
+      "checkpoint_epoch": 174,
+      "checkpoint_selection_val": 0.5248532128786919,
+      "f_mode": "native",
+      "val_f_r2": 0.3681007180162036,
+      "val_f_sse": 100.09678752196588,
+      "val_f_rmse": 0.03869250823181418,
+      "elapsed_seconds": 117.53856399282813
+    },
+    "G4": {
+      "checkpoint_sha256": "3d5f2df9e9f94709236dbafd79e8a1c4443346abdf40b21b13b25d4e7618e64e",
+      "checkpoint_epoch": 71,
+      "checkpoint_selection_val": 0.13636913722659028,
+      "f_mode": "oracle_E_diagnostic_only",
+      "val_f_r2": 0.34833500406629203,
+      "val_f_sse": 103.22779989351497,
+      "val_f_rmse": 0.039292996496057296,
+      "elapsed_seconds": 112.36623526737094
+    }
+  }
+}

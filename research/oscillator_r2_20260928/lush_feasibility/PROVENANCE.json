@@ -1,0 +1,31 @@
+{
+  "created_at": "2026-09-29T04:00:01.793494+08:00",
+  "classification": "Theory-only primary-paper feasibility review; no experiment authorization",
+  "review_sha256": "7c19e2c6975e0b829556b42b5eddb87d81ba173ea1ce69c9b7a5da2c55af3c2c",
+  "paper": {
+    "title": "Latent unified smooth Hamiltonians for excited state chemistry",
+    "authors": "Juergens et al.",
+    "arxiv": "2609.01871v1",
+    "submitted": "2026-09-01",
+    "primary_pdf": "https://arxiv.org/pdf/2609.01871v1",
+    "primary_abstract": "https://arxiv.org/abs/2609.01871",
+    "retrieval": "Read web-extracted 31-page PDF main text and supplemental text/captions; equation extraction imperfect; no implementation inspected. Server direct PDF retrieval did not complete and no PDF hash is asserted."
+  },
+  "other_primary_sources": [
+    "https://docs.pytorch.org/docs/2.14/generated/torch.linalg.eigh.html",
+    "https://talk.q-chem.com/t/transition-dipole-moment/343"
+  ],
+  "local_context_hashes": {
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/COUPLED_STATE_REFERENCE_BACKLOG.md": "cbcb1358dfddd4f921224909acb56e2f8829fc844e5355cd8f74f77f34ea0132",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/completion_receipts/CASE14562_RAW_SOURCE_AUDIT.md": "843762c179dc4a4b67e9178ffe83de5150649e80968e06e691582f7f215b294c",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/frozen_gram_probe/SCIENTIFIC_RESULT_REVIEW.md": "cc8d3aeea23c18ba2f721f8e48e948a1cca30085230b902b599f947bd4d13eed",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/CONDITIONAL_NEXT_STUDY_DECISION.md": "8b46f8dec28ecb1c1709ceb4978f195a5dc9df4ebc9696a3edf72c5429b8f6cd"
+  },
+  "active_metrics_read": false,
+  "new_model_inference": false,
+  "training": false,
+  "test_access": false,
+  "updated_at": "2026-09-29T04:00:46.528540+08:00",
+  "readability_pass_at": "2026-09-29T04:02:23.194870+08:00",
+  "readability_pass_scope": "Whitespace-only prose edits to note/backlog; mathematical content and original timestamps preserved."
+}

@@ -1,0 +1,41 @@
+# LUSH feasibility for a later QM9S head
+
+Timestamp: 2026-09-29T04:00:01.793494+08:00. Theory review only. No model/data evaluation, active metrics, training or test access. The earlier bookmark is preserved. Pending scratch/seed decisions and the accepted conditional priorities take precedence.
+
+**Assessment:** a shared latent eigenbasis is a credible inductive bias for energy/intensity co-variation. Current labels can support an empirical head, but cannot identify physical electronic wavefunctions, transition operators or nonadiabatic couplings. A faithful LUSH transfer requires more than replacing ten output neurons with an eigensolver.
+
+## What the primary paper establishes
+
+LUSH creates state tokens and pair features, predicts a symmetric Hamiltonian and other latent operators, and rotates operators with its eigenvectors. Training uses phase-invariant observables. It employs a specialized differentiable eigensolver and upper buffer states/state weighting for spectral truncation. Its excited-state training includes 135,000 geometries across nine QeMFi species with a random 90/10 split; the detailed examples are thymine and azobenzene. QM9 evidence concerns ground-state energies, not QM9S excitation strengths. The paper also reports a near-degenerate bright/dark state swap in azobenzene. Code release is promised upon journal acceptance. See [Juergens et al., v1, main pp. 3–7, 9, 13, 15; SI S2–S3](https://arxiv.org/pdf/2609.01871v1).
+
+The described encoder is invariant and the dipole head outputs three channels. My inference: those channels can produce invariant norms, but the description alone does not establish laboratory-frame vector equivariance. This review does not claim the published implementation has been tested. The PDF's accessible main text and supplemental text/captions were read; some extracted equations are garbled, so exact implementation equations must be checked before reproduction.
+
+## QM9S labels and basis: our inference
+
+The established task supplies ten ordered excitation energies and raw ground-to-excited f values, with derived tensor targets in the legacy pipeline. Raw-source records also contain transition-dipole components; their presence is not a consistent cross-molecule electronic phase convention. No audited common diabatic basis, excited-to-excited operator matrix, wavefunction overlaps or nonadiabatic-coupling supervision is established here. Do not infer those labels from f or existing A tensors.
+
+Relative excitation energies permit setting E0=0; absolute atomization energies are not necessary for this narrower task. Fixed latent slots can be learned without atom-to-atom or orbital identity across unrelated molecules, provided every operator within one example uses the same latent basis. But the same slot need not denote the same chemical excitation across molecules. Joint rotations H→VᵀHV and D→VᵀDV leave predicted observables unchanged. Geometry-dependent V can also change derivative-based pseudo-couplings; energies/strengths alone do not establish physical NACs. Changing electron counts/composition does not create a shared physical Hilbert basis merely because matrix dimensions match.
+
+Ten observed states do not automatically supply supervision for additional upper buffer states. Treating S9/S10 as disposable buffers would change our benchmark objective; adding unobserved buffers is underconstrained. A future design must retain all ten scored targets and state explicitly how truncation is handled. There is no present evidence that near-crossing state allocation, rather than amplitude/generalization errors, dominates QM9S.
+
+## Ordering, degeneracy and derivatives
+
+Ascending eigenvalues provide energy order; transition labels must follow the same eigenvectors. Do not sort strengths independently. An eigenvector sign cancels in squared strengths, but at an exact degeneracy arbitrary rotations within the degenerate subspace redistribute individual strengths. The subspace total is invariant when its excitation energies coincide. Sorting alone cannot recover an arbitrary electronic-structure labeling convention there.
+
+Eigenvector gradients contain inverse energy gaps. Phase-invariant losses are necessary but do not by themselves remove near-degenerate instability; the [PyTorch eigh documentation](https://docs.pytorch.org/docs/2.14/generated/torch.linalg.eigh.html) explicitly warns about this. Any regularized backward rule must pass finite-difference checks away from degeneracy and document its behavior at degeneracy. Do not silently clamp gaps, inject jitter or regroup benchmark labels after seeing validation errors.
+
+## Phase/parity obstruction and what PSD retains: derivation
+
+For an exactly inversion-symmetric nuclear configuration R, inversion is an identical-atom permutation. A deterministic permutation-invariant ordinary polar-vector head obeys v(−R)=−v(R), yet permutation invariance gives v(−R)=v(R); therefore v=0. This is correct for a permanent dipole of such a state, but not for every transition dipole. If electronic states have parity p0, pa, then μ0a=−p0pa μ0a. Opposite parity permits a nonzero electric-dipole transition; its sign depends on electronic-state gauge. A scalar query label or a phase-free vector loss does not repair the ordinary-vector representation's forced zero. Near-linear is not synonymous with inversion-symmetric, and no such diagnosis is asserted for ID 14562.
+
+For a real transition, A=μμᵀ is phase-free and can remain nonzero under inversion. It retains intensity and an unoriented spatial direction; in the usual length convention f=(2/3)ΔE Tr(A) in atomic units ([Q-Chem developer explanation](https://talk.q-chem.com/t/transition-dipole-moment/343)). A general PSD A may have rank>1 and need not represent a single pure transition. Scalar f alone identifies only its trace at known energy, not its orientation or rank.
+
+Separate state tensors A_a do not retain the cross terms needed to mix transition amplitudes. For an isolated ground state and excited-state mixing U, define a STATE-SPACE Gram Q_ab=μ0a·μ0b, distinct from each SPATIAL 3×3 tensor A_a. Squared mixed dipoles are diag(UᵀQU), and f additionally includes the predicted excitation-energy factor. Off-diagonal Q retains intensity-level interference without signed spatial-vector outputs. A physical real-dipole Gram has rank≤3; a full-rank learned PSD Q is a more flexible strength surrogate, not necessarily such a dipole Gram. Ten energies/strengths determine neither Q's off-diagonals nor a unique latent H/Q basis. At exact degeneracy, individual diagonal entries still depend on the arbitrary eigenbasis; only the equal-energy subspace total is invariant. Q lacks laboratory polarization and complete excited-to-excited operators. PSD can represent useful intensities without identifying a physical Hamiltonian.
+
+## One bounded future prerequisite, not a launch proposal
+
+If a coupled-state head later becomes a priority, first run one CPU synthetic algebra/gradient stress test; no QM9S fitting or labels. Use an isolated ground state, two excited states H=Ec I+xσz+yσx with Ec above the tested radius, and a known non-diagonal PSD state-space transition Gram Q. Prespecify a circle and shrinking gaps, including zero; compare shared-eigenbasis Q against a version retaining only its diagonal. Include an inversion-symmetric bright transition represented as an unoriented axis.
+
+Require FP64 forward strengths to match analytic values within 1e-10, invariance to eigenvector signs/consistent basis rotations, the correct nonzero centrosymmetric intensity, and finite-difference gradient agreement away from degeneracy. At zero gap test invariant subspace totals, not arbitrary individual-state assignments. This can falsify an incorrect coherence/gauge representation or backward rule cheaply; passing says nothing about QM9S R2. No benchmark study is justified by this paper alone. The closed linear-Gram and frozen-head probes also do not reject nonlinear invariants or new backbones.
+
+Local context: COUPLED_STATE_REFERENCE_BACKLOG.md; completion_receipts/CASE14562_RAW_SOURCE_AUDIT.md; frozen_gram_probe/SCIENTIFIC_RESULT_REVIEW.md; CONDITIONAL_NEXT_STUDY_DECISION.md. Exact local reference hashes are in PROVENANCE.json.

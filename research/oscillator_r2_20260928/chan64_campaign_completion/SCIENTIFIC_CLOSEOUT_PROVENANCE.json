@@ -1,0 +1,19 @@
+{
+  "reviewed_at": "2026-09-29T04:37:48.046827+08:00",
+  "classification": "independent completed campaign and saved-array exploratory ensemble review",
+  "passed": true,
+  "sources": {
+    "SCIENTIFIC_CLOSEOUT_REVIEW.md": "0fd3d7012f457b9689e070d8f2f32e04f1ac75cb63ecf909bb420defb0694a84",
+    "CAMPAIGN_INDEPENDENT_VERIFICATION.json": "672135a5a5ed379ae5df3d27872410c5d327ff7b8b6dfaf1116cd66f14428df0",
+    "ENSEMBLE_INDEPENDENT_VERIFICATION.json": "114f6a1ce50630465c7612cfac64bd31c8eda01ebb842b01546179e2ee456a66",
+    "ENSEMBLE_CONCENTRATION_REVIEW.json": "a391e92e5e388b114580ae2ca0adb2f7eafb1a0a8c0def1b9b469d878f0563a3",
+    "REPLAY_REVIEW.json": "e3347d6a4013afdce4f4d4de4232af74ae674b7b476fd7b6ba5c95f417aa317d",
+    "CAMPAIGN_AUDIT.json": "413c548d1ea9243e25b64953dfd46a0416c6a52e5087290bee0c62222108f78e",
+    "REPLAY_RESULT.json": "597472292d168d8e32cd391a5f9aa4e8a7445087b3186368e28edce2ae45923f",
+    "ENSEMBLE_RESULTS.json": "f1d1d3ee451a48af73fc2dfdf5b1533256caedb1ade16fafda51cc834edfcbf2",
+    "REPLAY_PROTOCOL.json": "ca3edcef7b68043e75a31c0a96a1d529c2d6db281882a97e8ee58b7ab6e77a99",
+    "REPLAY_SEAL.json": "64d1d5be02f3d12b6aab4a78df81af86bd28ebd6853eff1e846f15ce7375b4ed",
+    "ensemble_fixed.py": "725a07b184f4c1c8f6a14bdabb1c50ea19ff5745182e958528c47c2e8237cdb5"
+  },
+  "decision": "Close existing chan64 training; preserve fixed-five as provisional validation candidate, no test/promotion/new training authorization."
+}

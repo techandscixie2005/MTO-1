@@ -1,6 +1,6 @@
 {
   "project": "MTO-1",
-  "updated_at": "2026-09-29T04:43:30+08:00",
+  "updated_at": "2026-09-29T02:36:28+08:00",
   "primary_objective": "Improve pooled raw native oscillator-strength R2; maximize validation-selected R2 while preserving honest historical-test limits.",
   "coordinator": "root remains research orchestrator and decision owner",
   "monitor": {
@@ -26,12 +26,7 @@
       0.056691
     ],
     "ensemble_test_sse_reduction_fraction": 0.0538,
-    "test_status": "Historical split reused and previously exposed; all test metrics are exploratory, not a new generalization estimate.",
-    "provisional_fixed_five_validation_native_f_r2": 0.487699605,
-    "provisional_fixed_five_validation_native_f_sse": 81.151578,
-    "best_measured_historical_test_native_f_r2": 0.48510176,
-    "best_measured_historical_test_candidate": "equal_three_eta",
-    "fixed_five_test_evaluated": false
+    "test_status": "Historical split reused and previously exposed; all test metrics are exploratory, not a new generalization estimate."
   },
   "rounds": [
     {
@@ -319,16 +314,6 @@
       "status": "protocol_prepared_no_training_launched",
       "path": "eta0_seed_replication/PROTOCOL.md",
       "decision": "Seed protocol exists; no seed run had launched at the 02:29 full check."
-    },
-    {
-      "id": "round_chan64_campaign_closeout",
-      "status": "complete_partial_campaign_provisional_validation_candidate_only",
-      "paths": [
-        "chan64_campaign_completion/CAMPAIGN_REPORT.md",
-        "chan64_campaign_completion/SCIENTIFIC_CLOSEOUT_REVIEW.md",
-        "chan64_campaign_completion/ARCHIVE_ALLOWLIST.json"
-      ],
-      "decision": "Fixed-five ensemble is a provisional validation candidate (R2 0.487699605, SSE 81.151578; 6.95% lower SSE than old three). The fixed-five candidate has no test evaluation. Best measured historical test remains original fixed-three R2 0.48510176 and is exploratory; G2 intentional ADMIN_STOPPED, so campaign remains explicitly partial."
     }
   ],
   "chan64_plateau_decision": {
@@ -671,31 +656,5 @@
     "event": "FIT_COMPLETE",
     "receipt_sha256": "319cb32bce7bfde222d9bd98e2c734ecdb4b0a029396a9165eb02e16afb38130",
     "next_full_check_due_at": "2026-09-29T06:29:29+08:00"
-  },
-  "research_updates_20260929_chan64_closeout": {
-    "recorded_at": "2026-09-29T04:43:30+08:00",
-    "basis": "reviewed campaign closeout and D-stage verified allowlist; no live health poll or new training",
-    "next_full_check_due_at": "2026-09-29T06:29:29+08:00",
-    "monitor_last_full_check_preserved_at": "2026-09-29T02:31:01+08:00",
-    "campaign_state": "closed_partial_campaign_G2_intentionally_ADMIN_STOPPED; G1/G3/G4 natural FIT_COMPLETE; no G2 FIT_COMPLETE forged",
-    "candidate": {
-      "name": "fixed five-model equal-weight native-f ensemble",
-      "status": "provisional validation candidate; no promotion; five-way test unevaluated",
-      "validation_native_f_r2": 0.487699605,
-      "validation_native_f_sse": 81.151578,
-      "sse_reduction_vs_old_three_validation_fraction": 0.0695,
-      "replay_evidence": "fixed weights, selected components and saved-array audit; see chan64_campaign_completion/CAMPAIGN_REPORT.md and SCIENTIFIC_CLOSEOUT_REVIEW.md"
-    },
-    "known_test": {
-      "best_measured_historical_native_f_r2": 0.48510176,
-      "candidate": "original fixed three-model ensemble",
-      "five_model_test_evaluated": false,
-      "interpretation": "historically reused/exposed test; exploratory only, not a fresh generalization estimate"
-    },
-    "archive": {
-      "allowlist_path": "research/oscillator_r2_20260928/chan64_campaign_completion/ARCHIVE_ALLOWLIST.json",
-      "allowlist_sha256": "73f1bb9db9691b3eecca97d24e859373e8b8f2cf048441681642e6541ca38b01",
-      "D_manifest_path": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\D_STAGE_MANIFEST.json"
-    }
   }
 }

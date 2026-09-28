@@ -1,0 +1,53 @@
+{
+  "verified_at": "2026-09-29T04:34:10.302550+08:00",
+  "audit_sha256": "413c548d1ea9243e25b64953dfd46a0416c6a52e5087290bee0c62222108f78e",
+  "passed": true,
+  "checks": "Each run source fingerprint/config, all listed checkpoint/history/terminal hashes, history epoch continuity and minimum joint selection, data/scaler hashes; no inference/test or active study read.",
+  "runs": {
+    "G1": {
+      "epochs": 227,
+      "best_epoch": 75,
+      "classification": "natural_early_stop",
+      "selected_joint_loss": 0.4876234199502958,
+      "native_f": true,
+      "parameters": {
+        "total": 3451500,
+        "backbone": 1371840
+      }
+    },
+    "G2": {
+      "epochs": 214,
+      "best_epoch": 41,
+      "classification": "administratively_stopped_incomplete",
+      "selected_joint_loss": 0.12957936948799922,
+      "native_f": false,
+      "parameters": {
+        "total": 3451500,
+        "backbone": 1371840
+      }
+    },
+    "G3": {
+      "epochs": 326,
+      "best_epoch": 174,
+      "classification": "natural_early_stop",
+      "selected_joint_loss": 0.5248532128786919,
+      "native_f": true,
+      "parameters": {
+        "total": 3393195,
+        "backbone": 1371840
+      }
+    },
+    "G4": {
+      "epochs": 223,
+      "best_epoch": 71,
+      "classification": "natural_early_stop",
+      "selected_joint_loss": 0.13636913722659028,
+      "native_f": false,
+      "parameters": {
+        "total": 3393195,
+        "backbone": 1371840
+      }
+    }
+  },
+  "campaign_status": "partial: G2 ADMIN_STOPPED; G1/G3/G4 natural early stops"
+}

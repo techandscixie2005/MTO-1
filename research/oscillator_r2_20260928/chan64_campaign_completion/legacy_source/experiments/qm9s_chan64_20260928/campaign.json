@@ -1,0 +1,40 @@
+{
+  "name": "qm9s_chan64_20260928",
+  "reference_commit": "71e575f573cfc94c7f0a301b663b0169290ce9bd",
+  "predecessor": "experiments/qm9s_pouter_trace_wE_20260928",
+  "seed": 11,
+  "groups": [
+    "G1",
+    "G2",
+    "G3",
+    "G4"
+  ],
+  "gpu_pool": [
+    1,
+    2,
+    4,
+    6
+  ],
+  "max_formal_groups": 4,
+  "classification": "Single-seed additional exploratory experiment; identical to qm9s_pouter_trace_wE_20260928 (E_true^2-weighted trace loss) except that mto_channels is raised 16 -> 64. Architecture, readout, initial values, data, splits, optimizer, schedule, early stopping and loss are unchanged, so the only free variable is the MTO channel count. Cannot attribute effects to readout, rank-one constraint or the trace weighting. Old test set was previously analyzed. Intermediate rung chosen between the c=16 baseline and a c=128 run.",
+  "selection": "Each group selects best by its own full-validation training objective. Different total objectives are not ranked across groups.",
+  "evaluation": "Freeze all four selected checkpoint hashes before test; G1 selected best provides common E_ref only for evaluation.",
+  "loss_change": {
+    "scope": "trace term only; LE switch/weight, LQ weight, model, optimizer, schedule, data and splits are unchanged",
+    "old": "Ls = mean_valid((tr A_pred - tr A_true)^2) / (3 * sA2)",
+    "new": "Ls = mean_valid(w * (tr A_pred - tr A_true)^2) / (3 * sA2), w = E_true^2 / mean_E2_train",
+    "weight_source": "truth E only; a constant, never a function of any prediction; carries no gradient",
+    "valid_mask": "mask_A & mask_E; entries are filtered before any reduction so an invalid NaN cannot pollute the mean",
+    "mean_E2_train": "one global mean over train-only valid (molecule,state) entries of E_true^2; computed once in prepare.py, frozen into data/trace_weight.json (its own file, so the read-only data/normalization.json pinned by data/hashes.json stays byte-identical), shared verbatim by training and validation; never rescaled per state or per batch; never computed from validation or test statistics",
+    "eta_0_groups": "G2/G4 still have no E prediction loss and a frozen energy head; E labels are read only to build the fixed weight",
+    "note": "with the weighting the quadratic form is no longer a metric on residual space, so the per-state trace scale sA2 weights bright states above their plain share"
+  },
+  "spectrum": {
+    "min_eV": 0,
+    "max_eV": 21,
+    "step_eV": 0.02,
+    "sigma_eV": 0.2,
+    "unit_integral_gaussian": true
+  },
+  "known_limitation": "An ordinary equivariant polar 1o vector is forced to zero when the molecular symmetry group has no invariant polar vector, including centrosymmetric geometries. Nonzero transition intensity at such geometries cannot be represented by this head. Samples are retained unchanged."
+}

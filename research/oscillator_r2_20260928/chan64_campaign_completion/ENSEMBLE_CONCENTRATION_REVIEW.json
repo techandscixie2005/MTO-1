@@ -1,0 +1,222 @@
+{
+  "created_at": "2026-09-29T04:36:45.231329+08:00",
+  "classification": "Authorized saved-validation-array concentration diagnostic; no case exclusions, new inference, new ensembles or test.",
+  "source_ensemble_results_sha256": "f1d1d3ee451a48af73fc2dfdf5b1533256caedb1ade16fafda51cc834edfcbf2",
+  "round09_metric_sha256": "b088b23a5098149c5a127623a5a9315f6d4c979a501eeb3fd0af46285eaccbbd",
+  "geometry_helper_sha256": "06da5aa70deebc10ed4e538b26d86f5ab3292c392c85e1ef2109a057db405092",
+  "q2_boundaries_fixed_from_train": [
+    1e-05,
+    0.05941956341810567,
+    0.09867099135475822,
+    0.21033971729099188,
+    0.45009813312285296
+  ],
+  "timing_unix_file_mtimes": {
+    "REPLAY_PROTOCOL.json": 1790627222.9007635,
+    "REPLAY_SEAL.json": 1790627388.09677,
+    "REPLAY_REVIEW.json": 1790627588.836778,
+    "REPLAY_STARTED.json": 1790627613.927779,
+    "REPLAY_RESULT.json": 1790627624.6907794,
+    "ensemble_fixed.py": 1790627639.5897799,
+    "ENSEMBLE_RESULTS.json": 1790627648.5807803
+  },
+  "replay_started_unix": 1790627613.927937,
+  "replay_finished_unix": 1790627624.6906567,
+  "caveat": "Protocol existed before new replay/combined scores, but after individual model results; mtime is supporting local chronology, not immutable external notarization. Net-gain shares can exceed100% because other cases deteriorate.",
+  "results": {
+    "G1_G3_equal2": {
+      "net_sse_gain": 2.321643735289715,
+      "molecules_improved": 3031,
+      "molecules_worsened": 3655,
+      "gross_positive_gain": 16.41082354596255,
+      "gross_deterioration": 14.089179810672835,
+      "top1": {
+        "id": 14562,
+        "dataset_index": 14536,
+        "equal3_sse": 3.5965408966908905,
+        "candidate_sse": 1.555947412925799,
+        "sse_gain": 2.0405934837650914,
+        "share_net_gain": 0.8789434195899348
+      },
+      "worst1": {
+        "id": 3024,
+        "dataset_index": 3015,
+        "equal3_sse": 0.5150696057452577,
+        "candidate_sse": 1.1735817082650999,
+        "sse_gain": -0.6585121025198422,
+        "share_net_gain": -0.28364046236304524
+      },
+      "top10_positive_sse_gain": 4.284779531707229,
+      "top10_share_net_gain": 1.8455801235035474,
+      "largest_group": {
+        "molecule_ids": [
+          14562
+        ],
+        "sse_gain": 2.0405934837650914,
+        "share_net_gain": 0.8789434195899348
+      },
+      "case14562": {
+        "id": 14562,
+        "dataset_index": 14536,
+        "equal3_sse": 3.5965408966908905,
+        "candidate_sse": 1.555947412925799,
+        "sse_gain": 2.0405934837650914,
+        "share_net_gain": 0.8789434195899348
+      },
+      "fixed_six_low_q2": {
+        "ids": [
+          14562,
+          14687,
+          53719,
+          53720,
+          97472,
+          123287
+        ],
+        "equal3_sse": 5.256918291167521,
+        "candidate_sse": 3.1335297025265345,
+        "sse_gain": 2.1233885886409865
+      },
+      "q2_bins": [
+        {
+          "bin": 0,
+          "molecules": 1,
+          "equal3_sse": 3.5965408966908905,
+          "candidate_sse": 1.555947412925799,
+          "sse_gain": 2.0405934837650914
+        },
+        {
+          "bin": 1,
+          "molecules": 5,
+          "equal3_sse": 1.6603773944766307,
+          "candidate_sse": 1.5775822896007354,
+          "sse_gain": 0.08279510487589493
+        },
+        {
+          "bin": 2,
+          "molecules": 59,
+          "equal3_sse": 3.288753613377514,
+          "candidate_sse": 3.6327039740714384,
+          "sse_gain": -0.34395036069392476
+        },
+        {
+          "bin": 3,
+          "molecules": 597,
+          "equal3_sse": 11.592638094162167,
+          "candidate_sse": 12.47082901853,
+          "sse_gain": -0.8781909243678323
+        },
+        {
+          "bin": 4,
+          "molecules": 2648,
+          "equal3_sse": 30.844862418048173,
+          "candidate_sse": 29.88704136275186,
+          "sse_gain": 0.9578210552963116
+        },
+        {
+          "bin": 5,
+          "molecules": 3376,
+          "equal3_sse": 36.23190184596352,
+          "candidate_sse": 35.76932646954935,
+          "sse_gain": 0.46257537641417457
+        }
+      ]
+    },
+    "eta0_eta01_eta1_G1_G3_equal5": {
+      "net_sse_gain": 6.063496380048637,
+      "molecules_improved": 4091,
+      "molecules_worsened": 2595,
+      "gross_positive_gain": 9.724786855168539,
+      "gross_deterioration": 3.6612904751199022,
+      "top1": {
+        "id": 14562,
+        "dataset_index": 14536,
+        "equal3_sse": 3.5965408966908905,
+        "candidate_sse": 2.622175363530418,
+        "sse_gain": 0.9743655331604724,
+        "share_net_gain": 0.1606936777214101
+      },
+      "worst1": {
+        "id": 3024,
+        "dataset_index": 3015,
+        "equal3_sse": 0.5150696057452577,
+        "candidate_sse": 0.7395485277291819,
+        "sse_gain": -0.22447892198392416,
+        "share_net_gain": -0.037021366537391014
+      },
+      "top10_positive_sse_gain": 2.1290849835720236,
+      "top10_share_net_gain": 0.35113156669435425,
+      "largest_group": {
+        "molecule_ids": [
+          14562
+        ],
+        "sse_gain": 0.9743655331604724,
+        "share_net_gain": 0.1606936777214101
+      },
+      "case14562": {
+        "id": 14562,
+        "dataset_index": 14536,
+        "equal3_sse": 3.5965408966908905,
+        "candidate_sse": 2.622175363530418,
+        "sse_gain": 0.9743655331604724,
+        "share_net_gain": 0.1606936777214101
+      },
+      "fixed_six_low_q2": {
+        "ids": [
+          14562,
+          14687,
+          53719,
+          53720,
+          97472,
+          123287
+        ],
+        "equal3_sse": 5.256918291167521,
+        "candidate_sse": 4.141298423188785,
+        "sse_gain": 1.115619867978736
+      },
+      "q2_bins": [
+        {
+          "bin": 0,
+          "molecules": 1,
+          "equal3_sse": 3.5965408966908905,
+          "candidate_sse": 2.622175363530418,
+          "sse_gain": 0.9743655331604724
+        },
+        {
+          "bin": 1,
+          "molecules": 5,
+          "equal3_sse": 1.6603773944766307,
+          "candidate_sse": 1.5191230596583671,
+          "sse_gain": 0.14125433481826352
+        },
+        {
+          "bin": 2,
+          "molecules": 59,
+          "equal3_sse": 3.288753613377514,
+          "candidate_sse": 3.2407924379801094,
+          "sse_gain": 0.04796117539740465
+        },
+        {
+          "bin": 3,
+          "molecules": 597,
+          "equal3_sse": 11.592638094162167,
+          "candidate_sse": 11.318840910199814,
+          "sse_gain": 0.27379718396235564
+        },
+        {
+          "bin": 4,
+          "molecules": 2648,
+          "equal3_sse": 30.844862418048173,
+          "candidate_sse": 28.53134538453378,
+          "sse_gain": 2.313517033514395
+        },
+        {
+          "bin": 5,
+          "molecules": 3376,
+          "equal3_sse": 36.23190184596352,
+          "candidate_sse": 33.91930072676778,
+          "sse_gain": 2.312601119195745
+        }
+      ]
+    }
+  }
+}

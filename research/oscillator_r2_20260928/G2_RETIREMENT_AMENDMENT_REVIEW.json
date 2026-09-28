@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "time": 1790610065.3436337,
+  "reviewer": "scientific_audit",
+  "scope": "Additive administrative G2 retirement and replacement waiting loss-pilot queue; model and experiment unchanged",
+  "source_hashes": {
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/g2_retire.py": "07703406550e383e0c4d4bb90c4a50c7f6a41cd7e55014f3f05b078a2f6ca76e",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/pilot_queue_admin.py": "f0a13e9e55a79c4a35b42d390fd3f51203db5a3624635b6d8fe30f09dcd2a07b",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/pilot_queue.py": "5796866183c00ee7ae22b1f8e7c6c7e0d3ce0130c4bce8a6c16b508781cefdc3",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/train.py": "001b888dacd9b27f1f7ebd5eace2eb816e56ccc1ff417cdec789af27909496a3",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/pilot_config.json": "c4afc1c1fc1b0bd31595c2a93c6dd4799bc2924c3587de3ea7538e773dee623b"
+  },
+  "preflight_sha256": "d78f0dd1e9418bdda0359499f00be3815f6393406063f4e86808d9a70c74d060",
+  "checks": {
+    "architecture_44_source_hashes_unchanged": true,
+    "legacy_35_source_hashes_unchanged": true,
+    "syntax_and_negative_identity_tests_pass": true,
+    "missing_marker_fails_closed": true,
+    "only_verified_G2_and_inactive_waiter_signaled": true,
+    "pid_start_tick_cwd_and_command_rechecked": true,
+    "no_active_pilot_worker_gate": true,
+    "last_optimizer_scheduler_rng_order_cursor_preserved": true,
+    "best_epoch41_fingerprint_and_hash_preserved": true,
+    "batch_and_validation_boundary_stop_cases_handled": true,
+    "no_forged_fit_complete": true,
+    "administrative_marker_hash_bound_to_review": true,
+    "clean_idle_gpu2_and_shared_lock_gate": true,
+    "downstream_training_identical_to_sealed_queue": true,
+    "corrected_earliest_natural_stop_epoch": 244,
+    "G2_process_start_matches_launch_receipt_within_30_seconds": true
+  },
+  "limitations": [
+    "Execution has not yet occurred; executor must record actual retained checkpoint epoch/cursor and confirm both processes exited.",
+    "SIGTERM guarantees a resumable batch or completed-epoch checkpoint, not an exact requested epoch boundary.",
+    "Original supervisor will preserve intentional stopped/blocked provenance and may withhold uniform campaign evaluation."
+  ]
+}

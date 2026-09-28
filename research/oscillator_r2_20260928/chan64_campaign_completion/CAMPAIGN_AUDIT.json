@@ -1,0 +1,318 @@
+{
+  "classification": "completed legacy chan64 campaign with one intentional incomplete arm",
+  "no_new_inference": true,
+  "no_test_access": true,
+  "validation_audit_source_sha256": "cc9a40af9e1ba3a1b9200cbe25514b5b35e7cabf1e8642e991d59282707899de",
+  "validation_evaluator_sha256": "4ae875d2e53c18775b1f5589a98029f5697b7cb37e3bd24f9b391424d046b367",
+  "data_hashes_actual_verified": {
+    "dataset.npz": "be8fadca203429575d70642b617730592693be40858dca7189c098a671596330",
+    "raw_labels.npz": "621dc8723fb6dc96681851a26e4f52fcb7747a4778e57a249a75d22f3af4c632",
+    "splits.json": "141d6c4ba9631de91b81076b56afc2239aa3632478895102d8024e13d79c93ca",
+    "normalization.json": "812a7b80d6259eb6106a5a534a8358a626713ec7ee53ad992fff6fcbabe59452",
+    "trace_weight.json": "39ef096cc0e608c62b0f0cabebf4de96f4941bb83560a11ecff9f91bae997ef2"
+  },
+  "split_counts": {
+    "train": 120355,
+    "validation": 6686,
+    "test": 6686
+  },
+  "label_source": "raw printed FP64 oscillator strengths; all validation masks valid; 10 states per molecule",
+  "checkpoint_selection": "minimum legacy validation objective; native raw-f R2 separately evaluated after selection",
+  "source_and_scaler": "each run_manifest config/fingerprint matches current frozen source; normalization and E2 trace weight train-only",
+  "campaign_terminal_status": {
+    "time": 1790626862.3492339,
+    "reason": "At least one group failed or stopped; evaluation withheld",
+    "groups": {
+      "G1": {
+        "state": "FIT_COMPLETE",
+        "pid": 566461,
+        "gpu": 1,
+        "log": "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/logs/G1.log"
+      },
+      "G2": {
+        "state": "STOPPED_REQUIRES_EXPLICIT_RESUME",
+        "pid": 566514,
+        "gpu": 2,
+        "log": "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/logs/G2.log"
+      },
+      "G3": {
+        "state": "FIT_COMPLETE",
+        "pid": 566521,
+        "gpu": 4,
+        "log": "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/logs/G3.log"
+      },
+      "G4": {
+        "state": "FIT_COMPLETE",
+        "pid": 566532,
+        "gpu": 6,
+        "log": "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/logs/G4.log"
+      }
+    }
+  },
+  "supervisor_status_sha256": "3476d2895bf5bc8cbcf97c91063c4830399c1ac8e7dfdd629fe60f852536d97f",
+  "runs": {
+    "G1": {
+      "classification": "natural_early_stop",
+      "epochs_completed": 227,
+      "best_epoch": 75,
+      "selection_metric": "validation training objective, not oscillator-strength R2",
+      "selected_joint_loss": 0.4876234199502958,
+      "f_evaluation_mode": "native",
+      "pooled_raw_f_validation": {
+        "r2": 0.4052545406625945,
+        "sse": 94.21139028051125,
+        "rmse": 0.03753777442964871
+      },
+      "selected_energy_loss_normalized": 0.0267913936231438,
+      "selected_trace_loss_weighted_normalized": 0.12364200263047624,
+      "selected_traceless_tensor_loss_normalized": 0.3371900236966758,
+      "terminal_time_local": "2026-09-29T00:17:52.447728+08:00",
+      "artifact_sha256": {
+        "run_manifest.json": "8aae9a629ed658b7b1b353b38c375c69ee58f14da137e7fad2d237c870ff26fa",
+        "history.jsonl": "0092192ba8183d19bd408ecb5c153f2a18287d1cfde61cd92dd2b65a332b136e",
+        "best.pt": "3718c223eb40cc6a40d710bd3b9086b5a3209b6d0eb440f7265f1444510e153f",
+        "last.pt": "9ba013345640a883730115b24276f23bd8024c626c869d426501af7bbbb4a649",
+        "FIT_COMPLETE.json": "a24e6b48043a68c0dc22584528ed4024e8c9b02ba950fc8784ad76872b8c0330"
+      },
+      "source_fingerprint_sha256": "8aae9a629ed658b7b1b353b38c375c69ee58f14da137e7fad2d237c870ff26fa",
+      "terminal": {
+        "event": "FIT_COMPLETE",
+        "epochs": 227,
+        "best_epoch": 75,
+        "best_val": 0.4876234199502958,
+        "seconds": 34198.333881871775,
+        "steps": 426987,
+        "parameters": {
+          "total": 3451500,
+          "backbone": 1371840
+        },
+        "reason": "early_stop",
+        "time": 1790612272.4477282
+      }
+    },
+    "G2": {
+      "classification": "administratively_stopped_incomplete",
+      "epochs_completed": 214,
+      "best_epoch": 41,
+      "selection_metric": "validation training objective, not oscillator-strength R2",
+      "selected_joint_loss": 0.12957936948799922,
+      "f_evaluation_mode": "oracle_E_diagnostic_only",
+      "pooled_raw_f_validation": {
+        "r2": 0.38078050390016693,
+        "sse": 98.08823035211671,
+        "rmse": 0.03830233615997003
+      },
+      "selected_energy_loss_normalized": null,
+      "selected_trace_loss_weighted_normalized": 0.12957936948799922,
+      "selected_traceless_tensor_loss_normalized": null,
+      "terminal_time_local": "2026-09-28T23:41:50.903054+08:00",
+      "artifact_sha256": {
+        "run_manifest.json": "dc2154ba80a905ed8c41f3dea08bba057ba321ee504697dde893153196e484c0",
+        "history.jsonl": "8156205f77d5d71f69c1366dcbe3737c1370d767619aca946d4054a2b694ec34",
+        "best.pt": "1894f778b2d98a99cc390237c0516d98279375f140ad4b5ea72ac8d08012bd1a",
+        "last.pt": "f437e1ee9a0f569cc6b788e5df12ad3278d28fa867853e5067fca7f71dce7cfa",
+        "ADMIN_STOPPED.json": "ce5ac336fdc05d1121b5b01a4fdc1bde017080ddb7c10d3dcfc4d811d66014a2"
+      },
+      "source_fingerprint_sha256": "dc2154ba80a905ed8c41f3dea08bba057ba321ee504697dde893153196e484c0",
+      "terminal": {
+        "event": "ADMIN_STOPPED",
+        "classification": "intentional incomplete G2 training",
+        "time": 1790610110.9030538,
+        "reason": "G2 validation plateau after epoch41; third LR reduction at194 delays natural stop to at least244; native-f deployable score unavailable for unsupervised E",
+        "g2_pid": 566514,
+        "g2_start_ticks": 1242573409,
+        "g2_process_exited": true,
+        "waiter_pid": 762340,
+        "waiter_start_ticks": 1245485483,
+        "waiter_exited_before_G2_signal": true,
+        "gpu": 2,
+        "gpu_uuid": "GPU-cb4dc1ea-9ea3-e426-bdeb-df0bef8a23fa",
+        "before": {
+          "last_pt_sha256": "dcc4d949bada15eabe9d3d9b486f15892e1629b156222e7ed3aeeefb4be257dd",
+          "best_pt_sha256": "1894f778b2d98a99cc390237c0516d98279375f140ad4b5ea72ac8d08012bd1a",
+          "last_state": {
+            "epoch": 215,
+            "cursor": 0,
+            "steps": 402534,
+            "best": 0.12957936948799922,
+            "best_epoch": 41,
+            "bad_epochs": 173,
+            "lr_reductions": 3,
+            "last_reduction": 194,
+            "total_seconds": 31912.691772425547,
+            "history_count": 214,
+            "history_last_epoch": 214,
+            "has_order": false,
+            "resumable_rng_optimizer_scheduler": true
+          },
+          "best_checkpoint": {
+            "epoch": 41,
+            "validation_objective": 0.12957936948799922,
+            "config_fingerprint_match": true
+          },
+          "status": {
+            "event": "TRAIN",
+            "epoch": 215,
+            "cursor": 96384,
+            "train_count": 120355,
+            "steps": 404040,
+            "loss": [
+              0.007514906581491232,
+              0.0,
+              0.007514906581491232,
+              0.0
+            ],
+            "lr": 0.000125,
+            "grad_norm": 0.05431747809052467,
+            "time": 1790610086.2246137,
+            "seconds_this_epoch": 98.65851580351591
+          }
+        },
+        "after": {
+          "last_pt_sha256": "f437e1ee9a0f569cc6b788e5df12ad3278d28fa867853e5067fca7f71dce7cfa",
+          "best_pt_sha256": "1894f778b2d98a99cc390237c0516d98279375f140ad4b5ea72ac8d08012bd1a",
+          "last_state": {
+            "epoch": 215,
+            "cursor": 114496,
+            "steps": 404323,
+            "best": 0.12957936948799922,
+            "best_epoch": 41,
+            "bad_epochs": 173,
+            "lr_reductions": 3,
+            "last_reduction": 194,
+            "total_seconds": 32034.128087526187,
+            "history_count": 214,
+            "history_last_epoch": 214,
+            "has_order": true,
+            "resumable_rng_optimizer_scheduler": true
+          },
+          "status": {
+            "event": "STOPPED_CHECKPOINTED",
+            "epoch": 215,
+            "cursor": 114496,
+            "time": 1790610109.0502598
+          }
+        },
+        "g2_fit_complete_absent": true,
+        "pilot_workers_absent": true,
+        "stop_boundary": "within_epoch",
+        "architecture_seal_before": {
+          "preflight_sha256": "dfbd34b440cd948a19ae52b773aa074afdd1f9b38d7578c57d412b6e2b250b8f",
+          "execution_review_sha256": "2ac6ac27ae0435a2c2a64f6f17fe21b27fa0930abe81b658dda98bd82a88ef45",
+          "source_file_count": 44
+        },
+        "architecture_seal_after": {
+          "preflight_sha256": "dfbd34b440cd948a19ae52b773aa074afdd1f9b38d7578c57d412b6e2b250b8f",
+          "execution_review_sha256": "2ac6ac27ae0435a2c2a64f6f17fe21b27fa0930abe81b658dda98bd82a88ef45",
+          "source_file_count": 44
+        },
+        "source_hashes": {
+          "/home/inspur/MTO-1/research/oscillator_r2_20260928/g2_retire.py": "07703406550e383e0c4d4bb90c4a50c7f6a41cd7e55014f3f05b078a2f6ca76e",
+          "/home/inspur/MTO-1/research/oscillator_r2_20260928/pilot_queue_admin.py": "f0a13e9e55a79c4a35b42d390fd3f51203db5a3624635b6d8fe30f09dcd2a07b",
+          "/home/inspur/MTO-1/research/oscillator_r2_20260928/pilot_queue.py": "5796866183c00ee7ae22b1f8e7c6c7e0d3ce0130c4bce8a6c16b508781cefdc3",
+          "/home/inspur/MTO-1/research/oscillator_r2_20260928/train.py": "001b888dacd9b27f1f7ebd5eace2eb816e56ccc1ff417cdec789af27909496a3",
+          "/home/inspur/MTO-1/research/oscillator_r2_20260928/pilot_config.json": "c4afc1c1fc1b0bd31595c2a93c6dd4799bc2924c3587de3ea7538e773dee623b"
+        },
+        "amendment_review_sha256": "e6b398df958f62e87f40298dc2c7c21745c42a7c567d58be0e148967ae642f1a"
+      }
+    },
+    "G3": {
+      "classification": "natural_early_stop",
+      "epochs_completed": 326,
+      "best_epoch": 174,
+      "selection_metric": "validation training objective, not oscillator-strength R2",
+      "selected_joint_loss": 0.5248532128786919,
+      "f_evaluation_mode": "native",
+      "pooled_raw_f_validation": {
+        "r2": 0.3681007180162036,
+        "sse": 100.09678752196588,
+        "rmse": 0.03869250823181418
+      },
+      "selected_energy_loss_normalized": 0.03072090106847719,
+      "selected_trace_loss_weighted_normalized": 0.1321268690816307,
+      "selected_traceless_tensor_loss_normalized": 0.36200544272858404,
+      "terminal_time_local": "2026-09-29T04:21:00.267034+08:00",
+      "artifact_sha256": {
+        "run_manifest.json": "fa249097d8223af2a610b55a4b81fcaabf63fc0fb46dc9891dcf6a3a8966dba3",
+        "history.jsonl": "3dc55e757eaeadd0dc06de18b7139aa14a0ccb6f00eeb24b33caf11b8a55db06",
+        "best.pt": "f0ac00a5a19496e656d4b28969aae4f4ab0ecde3062fc9a92b92af10db0e322d",
+        "last.pt": "25c9572b805298301508e5649a1c0b9c11c64691161dcbf3fa3d6d390086053c",
+        "FIT_COMPLETE.json": "319cb32bce7bfde222d9bd98e2c734ecdb4b0a029396a9165eb02e16afb38130"
+      },
+      "source_fingerprint_sha256": "fa249097d8223af2a610b55a4b81fcaabf63fc0fb46dc9891dcf6a3a8966dba3",
+      "terminal": {
+        "event": "FIT_COMPLETE",
+        "epochs": 326,
+        "best_epoch": 174,
+        "best_val": 0.5248532128786919,
+        "seconds": 48784.70293424092,
+        "steps": 613206,
+        "parameters": {
+          "total": 3393195,
+          "backbone": 1371840
+        },
+        "reason": "early_stop",
+        "time": 1790626860.2670338
+      }
+    },
+    "G4": {
+      "classification": "natural_early_stop",
+      "epochs_completed": 223,
+      "best_epoch": 71,
+      "selection_metric": "validation training objective, not oscillator-strength R2",
+      "selected_joint_loss": 0.13636913722659028,
+      "f_evaluation_mode": "oracle_E_diagnostic_only",
+      "pooled_raw_f_validation": {
+        "r2": 0.34833500406629203,
+        "sse": 103.22779989351497,
+        "rmse": 0.039292996496057296
+      },
+      "selected_energy_loss_normalized": null,
+      "selected_trace_loss_weighted_normalized": 0.13636913722659028,
+      "selected_traceless_tensor_loss_normalized": null,
+      "terminal_time_local": "2026-09-28T23:54:13.795898+08:00",
+      "artifact_sha256": {
+        "run_manifest.json": "556672e27a840b62be9a9002ba91eed756d5b9b788a295c3e54891cd7e57b0ac",
+        "history.jsonl": "6796cdb5ef223bbc2c675d54ff6c4d1c2e43ead8cc62857f0dc59e3502e606a1",
+        "best.pt": "3d5f2df9e9f94709236dbafd79e8a1c4443346abdf40b21b13b25d4e7618e64e",
+        "last.pt": "cce4419f7355812f69e6677ddcd2601adc40b59bcc44419f8ef5be4362ae3a39",
+        "FIT_COMPLETE.json": "84b1049e8edda4c738dc95576482b9fc35ff69a366abba179eb9bc17ed774abc"
+      },
+      "source_fingerprint_sha256": "556672e27a840b62be9a9002ba91eed756d5b9b788a295c3e54891cd7e57b0ac",
+      "terminal": {
+        "event": "FIT_COMPLETE",
+        "epochs": 223,
+        "best_epoch": 71,
+        "best_val": 0.13636913722659028,
+        "seconds": 32777.407734585926,
+        "steps": 419463,
+        "parameters": {
+          "total": 3393195,
+          "backbone": 1371840
+        },
+        "reason": "early_stop",
+        "time": 1790610853.7958984
+      }
+    }
+  },
+  "context": {
+    "eta0": {
+      "r2": 0.4052941183410983,
+      "sse": 94.20512092938401
+    },
+    "fixed_equal3": {
+      "r2": 0.4494214632744171,
+      "sse": 87.2150742627189
+    },
+    "G3_delta_r2_vs_eta0": -0.03719340032489471,
+    "G3_delta_sse_vs_eta0": 5.8916665925818705,
+    "G3_delta_r2_vs_equal3": -0.08132074525821353,
+    "G3_delta_sse_vs_equal3": 12.881713259246979
+  },
+  "limitations": [
+    "G2 and G4 use true E for their historical f diagnostic because their E heads were not trained; their f numbers are not deployable native scores.",
+    "Historical validation already selected checkpoints; no independent confirmatory holdout is claimed.",
+    "The old validation audit saved aggregate scores only; no G1/G3 per-molecule predictions for ensemble assessment.",
+    "Raw-f and energy MAE are unavailable from prior aggregate scores; a separate authorized selected-validation replay is required."
+  ]
+}

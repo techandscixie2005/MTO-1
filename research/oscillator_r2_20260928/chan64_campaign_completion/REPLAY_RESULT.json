@@ -1,0 +1,126 @@
+{
+  "classification": "exactly two selected-checkpoint validation-only native-f replays",
+  "time": 1790627624.6906567,
+  "seal_sha256": "64d1d5be02f3d12b6aab4a78df81af86bd28ebd6853eff1e846f15ce7375b4ed",
+  "device": "cuda:4",
+  "gpu_before": {
+    "index": 4,
+    "uuid": "GPU-e212aefc-f1d6-cc7a-5594-e87abeaf1184",
+    "memory_MiB": 13,
+    "temperature_C": "32 C",
+    "ecc": {
+      "volatile": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0
+      },
+      "aggregate": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0,
+        "sram_threshold_exceeded": "No"
+      },
+      "remap": {
+        "remapped_row_corr": "0",
+        "remapped_row_unc": "0",
+        "remapped_row_pending": "No",
+        "remapped_row_failure": "No"
+      },
+      "repair": {
+        "channel_repair_pending": "No",
+        "tpc_repair_pending": "No"
+      }
+    },
+    "apps": []
+  },
+  "gpu_after": {
+    "index": 4,
+    "uuid": "GPU-e212aefc-f1d6-cc7a-5594-e87abeaf1184",
+    "memory_MiB": 545,
+    "temperature_C": "34 C",
+    "ecc": {
+      "volatile": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0
+      },
+      "aggregate": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0,
+        "sram_threshold_exceeded": "No"
+      },
+      "remap": {
+        "remapped_row_corr": "0",
+        "remapped_row_unc": "0",
+        "remapped_row_pending": "No",
+        "remapped_row_failure": "No"
+      },
+      "repair": {
+        "channel_repair_pending": "No",
+        "tpc_repair_pending": "No"
+      }
+    },
+    "apps": [
+      906432
+    ]
+  },
+  "results": {
+    "G1": {
+      "checkpoint_sha256": "3718c223eb40cc6a40d710bd3b9086b5a3209b6d0eb440f7265f1444510e153f",
+      "epoch": 75,
+      "selection_joint_loss": 0.4876234199502958,
+      "legacy_fp32_trace_metric": {
+        "n": 66860,
+        "sse": 94.21138257738086,
+        "sst": 158.4062371581119,
+        "r2": 0.40525458929155345,
+        "rmse": 0.03753777289502335,
+        "mae": 0.01679550763123162
+      },
+      "native_fp64_trace_metric": {
+        "n": 66860,
+        "sse": 94.21138264040563,
+        "sst": 158.4062371581119,
+        "r2": 0.4052545888936854,
+        "rmse": 0.03753777290757921,
+        "mae": 0.016795507641439028
+      },
+      "energy_raw_MAE_eV": 0.08914911633678656,
+      "prediction_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/chan64_campaign_completion/runtime/G1_selected_native_val.npz",
+      "prediction_sha256": "7c5fef99d9547c3fbe42c26fc7506287fc37a6cbc58f10d1900447a4724cfb5d"
+    },
+    "G3": {
+      "checkpoint_sha256": "f0ac00a5a19496e656d4b28969aae4f4ab0ecde3062fc9a92b92af10db0e322d",
+      "epoch": 174,
+      "selection_joint_loss": 0.5248532128786919,
+      "legacy_fp32_trace_metric": {
+        "n": 66860,
+        "sse": 100.09679119640785,
+        "sst": 158.4062371581119,
+        "r2": 0.3681006948198824,
+        "rmse": 0.03869250894199369,
+        "mae": 0.017506931001821727
+      },
+      "native_fp64_trace_metric": {
+        "n": 66860,
+        "sse": 100.09679134458781,
+        "sst": 158.4062371581119,
+        "r2": 0.36810069388443956,
+        "rmse": 0.03869250897063324,
+        "mae": 0.017506931003250775
+      },
+      "energy_raw_MAE_eV": 0.09498987573538076,
+      "prediction_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/chan64_campaign_completion/runtime/G3_selected_native_val.npz",
+      "prediction_sha256": "55310a8f3924c5e5b2edd58c60a95dec0216b159672358ca2ff9609f5129adce"
+    }
+  }
+}

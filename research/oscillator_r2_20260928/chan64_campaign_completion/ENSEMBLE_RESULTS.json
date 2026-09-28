@@ -1,0 +1,341 @@
+{
+  "classification": "exploratory validation-only fixed native-f ensembles; post-individual-result choices",
+  "protocol_sha256": "ca3edcef7b68043e75a31c0a96a1d529c2d6db281882a97e8ee58b7ab6e77a99",
+  "ensemble_evaluator_sha256": "725a07b184f4c1c8f6a14bdabb1c50ea19ff5745182e958528c47c2e8237cdb5",
+  "replay_result_sha256": "597472292d168d8e32cd391a5f9aa4e8a7445087b3186368e28edce2ae45923f",
+  "source_prediction_sha256": {
+    "mto_eta0": "25acae64bb4e3e541048a8705045f7f639d1113d537dbbef71672752e8065890",
+    "mto_eta01": "9edffb5cd617469c78c8d83da7901ac90add69d89f27de7e8196a8736ae85500",
+    "mto_eta1": "a3808b9ad425abf4f6fcfed840d0ed8d1ff6fcf1557037a4e01932c734dc68bb",
+    "G1": "7c5fef99d9547c3fbe42c26fc7506287fc37a6cbc58f10d1900447a4724cfb5d",
+    "G3": "55310a8f3924c5e5b2edd58c60a95dec0216b159672358ca2ff9609f5129adce"
+  },
+  "identity_audit_sha256": "9d384425a90dd88fbc68f8b609a303872910bb21c69e0d0a19bcccaee49cb3c4",
+  "molecules": 6686,
+  "states": 10,
+  "connectivity_groups": 6671,
+  "metrics": {
+    "mto_eta0": {
+      "count": 66860,
+      "sse": 94.20512092938401,
+      "sst": 158.4062371581119,
+      "r2": 0.4052941183410983,
+      "rmse": 0.037536525422479664,
+      "mae": 0.017785608345899415
+    },
+    "mto_eta01": {
+      "count": 66860,
+      "sse": 98.66702073091088,
+      "sst": 158.4062371581119,
+      "r2": 0.3771266681094938,
+      "rmse": 0.03841517547031459,
+      "mae": 0.017723784799850664
+    },
+    "mto_eta1": {
+      "count": 66860,
+      "sse": 97.04493421731837,
+      "sst": 158.4062371581119,
+      "r2": 0.38736671005918943,
+      "rmse": 0.03809809398697,
+      "mae": 0.01818819651153714
+    },
+    "G1": {
+      "count": 66860,
+      "sse": 94.21138264040563,
+      "sst": 158.4062371581119,
+      "r2": 0.4052545888936854,
+      "rmse": 0.03753777290757921,
+      "mae": 0.016795507641439028
+    },
+    "G3": {
+      "count": 66860,
+      "sse": 100.09679134458781,
+      "sst": 158.4062371581119,
+      "r2": 0.36810069388443956,
+      "rmse": 0.03869250897063324,
+      "mae": 0.017506931003250775
+    },
+    "fixed_equal3": {
+      "count": 66860,
+      "sse": 87.2150742627189,
+      "sst": 158.4062371581119,
+      "r2": 0.4494214632744171,
+      "rmse": 0.03611707668926027,
+      "mae": 0.017345038638210148
+    },
+    "G1_G3_equal2": {
+      "count": 66860,
+      "sse": 84.89343052742919,
+      "sst": 158.4062371581119,
+      "r2": 0.4640777279325593,
+      "rmse": 0.035633120436225796,
+      "mae": 0.016059105588808464
+    },
+    "eta0_eta01_eta1_G1_G3_equal5": {
+      "count": 66860,
+      "sse": 81.15157788267025,
+      "sst": 158.4062371581119,
+      "r2": 0.48769960489832564,
+      "rmse": 0.0348389693055272,
+      "mae": 0.016334465778657103
+    }
+  },
+  "comparisons_vs_fixed_equal3": {
+    "G1_G3_equal2": {
+      "delta_r2_vs_equal3": 0.014656264658142182,
+      "delta_sse_vs_equal3": -2.3216437352897117,
+      "molecule_bootstrap": {
+        "units": 6686,
+        "replicates": 2000,
+        "seed": 20260929,
+        "delta_r2_ci95": [
+          -0.01190874705696541,
+          0.012745508805354088,
+          0.05037417186610109
+        ],
+        "positive_fraction": 0.822
+      },
+      "connectivity_bootstrap": {
+        "units": 6671,
+        "replicates": 2000,
+        "seed": 20260929,
+        "delta_r2_ci95": [
+          -0.012311955021593391,
+          0.013286760804800637,
+          0.05047665681184866
+        ],
+        "positive_fraction": 0.817
+      },
+      "per_state": [
+        {
+          "state": 1,
+          "state_index_zero_based": 0,
+          "equal3_sse": 1.8639993400298724,
+          "candidate_sse": 1.581495969305085,
+          "delta_sse_candidate_minus_equal3": -0.2825033707247875,
+          "delta_r2_contribution": 0.0017834106522132019
+        },
+        {
+          "state": 2,
+          "state_index_zero_based": 1,
+          "equal3_sse": 4.4053922370832455,
+          "candidate_sse": 4.164241462498942,
+          "delta_sse_candidate_minus_equal3": -0.24115077458430356,
+          "delta_r2_contribution": 0.0015223565619048249
+        },
+        {
+          "state": 3,
+          "state_index_zero_based": 2,
+          "equal3_sse": 5.6716851364283976,
+          "candidate_sse": 4.924084718781115,
+          "delta_sse_candidate_minus_equal3": -0.7476004176472824,
+          "delta_r2_contribution": 0.004719513770793451
+        },
+        {
+          "state": 4,
+          "state_index_zero_based": 3,
+          "equal3_sse": 7.196468675039249,
+          "candidate_sse": 6.9714517727134355,
+          "delta_sse_candidate_minus_equal3": -0.22501690232581328,
+          "delta_r2_contribution": 0.0014205053182420745
+        },
+        {
+          "state": 5,
+          "state_index_zero_based": 4,
+          "equal3_sse": 9.03000252478779,
+          "candidate_sse": 8.612565555588215,
+          "delta_sse_candidate_minus_equal3": -0.4174369691995743,
+          "delta_r2_contribution": 0.002635230636675707
+        },
+        {
+          "state": 6,
+          "state_index_zero_based": 5,
+          "equal3_sse": 9.37781198089032,
+          "candidate_sse": 9.417017203695803,
+          "delta_sse_candidate_minus_equal3": 0.03920522280548333,
+          "delta_r2_contribution": -0.00024749797425180266
+        },
+        {
+          "state": 7,
+          "state_index_zero_based": 6,
+          "equal3_sse": 13.876331885842925,
+          "candidate_sse": 11.739241208785245,
+          "delta_sse_candidate_minus_equal3": -2.13709067705768,
+          "delta_r2_contribution": 0.013491202842755238
+        },
+        {
+          "state": 8,
+          "state_index_zero_based": 7,
+          "equal3_sse": 14.345967083051129,
+          "candidate_sse": 15.980088519811657,
+          "delta_sse_candidate_minus_equal3": 1.6341214367605286,
+          "delta_r2_contribution": -0.010316017008405063
+        },
+        {
+          "state": 9,
+          "state_index_zero_based": 8,
+          "equal3_sse": 11.682021480199039,
+          "candidate_sse": 11.620884163329674,
+          "delta_sse_candidate_minus_equal3": -0.061137316869364966,
+          "delta_r2_contribution": 0.0003859527122555234
+        },
+        {
+          "state": 10,
+          "state_index_zero_based": 9,
+          "equal3_sse": 9.765393919366932,
+          "candidate_sse": 9.882359952920009,
+          "delta_sse_candidate_minus_equal3": 0.11696603355307644,
+          "delta_r2_contribution": -0.000738392854041017
+        }
+      ],
+      "tails": {
+        "q90": {
+          "threshold": 0.0546,
+          "count": 6690,
+          "equal3_sse": 57.425729599975355,
+          "candidate_sse": 60.102906707473934,
+          "delta_sse_candidate_minus_equal3": 2.6771771074985793
+        },
+        "q99": {
+          "threshold": 0.2377,
+          "count": 671,
+          "equal3_sse": 30.38721158255988,
+          "candidate_sse": 34.401734023065586,
+          "delta_sse_candidate_minus_equal3": 4.014522440505708
+        }
+      },
+      "model_count": 2
+    },
+    "eta0_eta01_eta1_G1_G3_equal5": {
+      "delta_r2_vs_equal3": 0.038278141623908524,
+      "delta_sse_vs_equal3": -6.063496380048647,
+      "molecule_bootstrap": {
+        "units": 6686,
+        "replicates": 2000,
+        "seed": 20260929,
+        "delta_r2_ci95": [
+          0.026124049038690995,
+          0.037448724154415344,
+          0.05552190214393337
+        ],
+        "positive_fraction": 1.0
+      },
+      "connectivity_bootstrap": {
+        "units": 6671,
+        "replicates": 2000,
+        "seed": 20260929,
+        "delta_r2_ci95": [
+          0.02597229740944386,
+          0.03749443896058541,
+          0.05469673787032103
+        ],
+        "positive_fraction": 1.0
+      },
+      "per_state": [
+        {
+          "state": 1,
+          "state_index_zero_based": 0,
+          "equal3_sse": 1.8639993400298724,
+          "candidate_sse": 1.5842943587893017,
+          "delta_sse_candidate_minus_equal3": -0.27970498124057075,
+          "delta_r2_contribution": 0.0017657447475466859
+        },
+        {
+          "state": 2,
+          "state_index_zero_based": 1,
+          "equal3_sse": 4.4053922370832455,
+          "candidate_sse": 3.857040755781834,
+          "delta_sse_candidate_minus_equal3": -0.5483514813014114,
+          "delta_r2_contribution": 0.0034616786001556163
+        },
+        {
+          "state": 3,
+          "state_index_zero_based": 2,
+          "equal3_sse": 5.6716851364283976,
+          "candidate_sse": 4.8805730858868195,
+          "delta_sse_candidate_minus_equal3": -0.7911120505415781,
+          "delta_r2_contribution": 0.00499419760695367
+        },
+        {
+          "state": 4,
+          "state_index_zero_based": 3,
+          "equal3_sse": 7.196468675039249,
+          "candidate_sse": 6.573285975194221,
+          "delta_sse_candidate_minus_equal3": -0.623182699845028,
+          "delta_r2_contribution": 0.003934079307893686
+        },
+        {
+          "state": 5,
+          "state_index_zero_based": 4,
+          "equal3_sse": 9.03000252478779,
+          "candidate_sse": 8.31929521607518,
+          "delta_sse_candidate_minus_equal3": -0.7107073087126103,
+          "delta_r2_contribution": 0.004486611900282838
+        },
+        {
+          "state": 6,
+          "state_index_zero_based": 5,
+          "equal3_sse": 9.37781198089032,
+          "candidate_sse": 8.866332300393587,
+          "delta_sse_candidate_minus_equal3": -0.5114796804967323,
+          "delta_r2_contribution": 0.003228911245370995
+        },
+        {
+          "state": 7,
+          "state_index_zero_based": 6,
+          "equal3_sse": 13.876331885842925,
+          "candidate_sse": 12.278883866005529,
+          "delta_sse_candidate_minus_equal3": -1.5974480198373957,
+          "delta_r2_contribution": 0.010084502027801569
+        },
+        {
+          "state": 8,
+          "state_index_zero_based": 7,
+          "equal3_sse": 14.345967083051129,
+          "candidate_sse": 14.41385901527562,
+          "delta_sse_candidate_minus_equal3": 0.06789193222449086,
+          "delta_r2_contribution": -0.00042859380692646007
+        },
+        {
+          "state": 9,
+          "state_index_zero_based": 8,
+          "equal3_sse": 11.682021480199039,
+          "candidate_sse": 11.033086709873736,
+          "delta_sse_candidate_minus_equal3": -0.6489347703253028,
+          "delta_r2_contribution": 0.0040966491090724776
+        },
+        {
+          "state": 10,
+          "state_index_zero_based": 9,
+          "equal3_sse": 9.765393919366932,
+          "candidate_sse": 9.344926599394437,
+          "delta_sse_candidate_minus_equal3": -0.4204673199724951,
+          "delta_r2_contribution": 0.002654360885757352
+        }
+      ],
+      "tails": {
+        "q90": {
+          "threshold": 0.0546,
+          "count": 6690,
+          "equal3_sse": 57.425729599975355,
+          "candidate_sse": 56.22711328156211,
+          "delta_sse_candidate_minus_equal3": -1.1986163184132437
+        },
+        "q99": {
+          "threshold": 0.2377,
+          "count": 671,
+          "equal3_sse": 30.38721158255988,
+          "candidate_sse": 31.011095199746634,
+          "delta_sse_candidate_minus_equal3": 0.6238836171867561
+        }
+      },
+      "model_count": 5
+    }
+  },
+  "fixed_equal3_model_count": 3,
+  "limitations": [
+    "All base checkpoints and this combination were assessed on validation; bootstrap intervals are conditional on model selection and do not imply a fresh holdout.",
+    "Historical test was previously exposed elsewhere; no test arrays used here.",
+    "Inference requires two model forwards for G1+G3 or five for the equal-five, compared with three for equal-three; chan64 G1/G3 have about 3.45M/3.39M parameters, so forward counts are not calibrated latency ratios."
+  ]
+}

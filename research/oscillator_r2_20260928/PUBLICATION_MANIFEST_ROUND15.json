@@ -1,0 +1,616 @@
+{
+  "purpose": "Reviewed legacy chan64 closeout and provisional fixed-five validation candidate; held theory and pre-outcome fixed-seven design",
+  "base_published_commit": "72a6186fccaf0940ca5032ed4c8327cab8912f38",
+  "source": "Verified D drive archives only",
+  "chan64_classification": "G1/G3/G4 natural completion; G2 intentional ADMIN_STOPPED; overall campaign partial",
+  "five_model_validation_r2": 0.48769960489832564,
+  "original_three_model_historical_test_r2": 0.48510176,
+  "five_model_test_evaluated": false,
+  "fixed_seven": "design-only secondary; no implementation or outcome",
+  "new_training_or_inference": false,
+  "new_test_access": false,
+  "excluded": [
+    "checkpoints",
+    "optimizer states",
+    "runtime arrays",
+    "raw dataset",
+    "caches",
+    "large logs"
+  ],
+  "files": [
+    {
+      "path": "COUPLED_STATE_REFERENCE_BACKLOG.md",
+      "bytes": 2057,
+      "sha256": "cbcb1358dfddd4f921224909acb56e2f8829fc844e5355cd8f74f77f34ea0132",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round12_lush_feasibility_theory\\COUPLED_STATE_REFERENCE_BACKLOG.md"
+    },
+    {
+      "path": "G2_RETIREMENT.md",
+      "bytes": 1612,
+      "sha256": "cc19739adc0bb47995526b625dab5a3ce2dc4a7f0f611b542517ee24a7bb116c",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\research\\oscillator_r2_20260928\\G2_RETIREMENT.md"
+    },
+    {
+      "path": "G2_RETIREMENT_AMENDMENT_REVIEW.json",
+      "bytes": 2300,
+      "sha256": "e6b398df958f62e87f40298dc2c7c21745c42a7c567d58be0e148967ae642f1a",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\research\\oscillator_r2_20260928\\G2_RETIREMENT_AMENDMENT_REVIEW.json"
+    },
+    {
+      "path": "G2_RETIREMENT_AMENDMENT_REVIEW.md",
+      "bytes": 1273,
+      "sha256": "03d7eb2391803a11f90fa6f77ed4d686b9a35eadbbe8c20f35f4fbb8b9435ef6",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\research\\oscillator_r2_20260928\\G2_RETIREMENT_AMENDMENT_REVIEW.md"
+    },
+    {
+      "path": "G2_RETIREMENT_SCIENTIFIC_REVIEW.md",
+      "bytes": 2702,
+      "sha256": "52ea3cb07ab939735e4e406a7f944da8aee7989d91b3ca301316ddb91753f187",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\research\\oscillator_r2_20260928\\G2_RETIREMENT_SCIENTIFIC_REVIEW.md"
+    },
+    {
+      "path": "chan64_campaign_completion/CAMPAIGN_AUDIT.json",
+      "bytes": 14083,
+      "sha256": "413c548d1ea9243e25b64953dfd46a0416c6a52e5087290bee0c62222108f78e",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\research\\oscillator_r2_20260928\\chan64_campaign_completion\\CAMPAIGN_AUDIT.json"
+    },
+    {
+      "path": "chan64_campaign_completion/CAMPAIGN_INDEPENDENT_VERIFICATION.json",
+      "bytes": 1558,
+      "sha256": "672135a5a5ed379ae5df3d27872410c5d327ff7b8b6dfaf1116cd66f14428df0",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\research\\oscillator_r2_20260928\\chan64_campaign_completion\\CAMPAIGN_INDEPENDENT_VERIFICATION.json"
+    },
+    {
+      "path": "chan64_campaign_completion/CAMPAIGN_REPORT.md",
+      "bytes": 5689,
+      "sha256": "da01ab2916aba09306f485c1f78ab49f39b5b7d623e14d163b03d986dbcf9241",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\research\\oscillator_r2_20260928\\chan64_campaign_completion\\CAMPAIGN_REPORT.md"
+    },
+    {
+      "path": "chan64_campaign_completion/D_STAGE_MANIFEST.json",
+      "bytes": 18997,
+      "sha256": "b6a603afe0cd653b54538e5c8f0dec00a069decc70bf02b733bf2c504d0f8465",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\D_STAGE_MANIFEST.json"
+    },
+    {
+      "path": "chan64_campaign_completion/ENSEMBLE_CONCENTRATION_REVIEW.json",
+      "bytes": 6933,
+      "sha256": "a391e92e5e388b114580ae2ca0adb2f7eafb1a0a8c0def1b9b469d878f0563a3",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\research\\oscillator_r2_20260928\\chan64_campaign_completion\\ENSEMBLE_CONCENTRATION_REVIEW.json"
+    },
+    {
+      "path": "chan64_campaign_completion/ENSEMBLE_INDEPENDENT_VERIFICATION.json",
+      "bytes": 2279,
+      "sha256": "114f6a1ce50630465c7612cfac64bd31c8eda01ebb842b01546179e2ee456a66",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\research\\oscillator_r2_20260928\\chan64_campaign_completion\\ENSEMBLE_INDEPENDENT_VERIFICATION.json"
+    },
+    {
+      "path": "chan64_campaign_completion/ENSEMBLE_RESULTS.json",
+      "bytes": 11728,
+      "sha256": "f1d1d3ee451a48af73fc2dfdf5b1533256caedb1ade16fafda51cc834edfcbf2",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\research\\oscillator_r2_20260928\\chan64_campaign_completion\\ENSEMBLE_RESULTS.json"
+    },
+    {
+      "path": "chan64_campaign_completion/REMOTE_ARCHIVE_ALLOWLIST.json",
+      "bytes": 18860,
+      "sha256": "b12c71ffa642c7479b69376b65cc3407f526f2ae9bbbeff84144155800404c4c",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\REMOTE_ARCHIVE_ALLOWLIST.json"
+    },
+    {
+      "path": "chan64_campaign_completion/REPLAY_PROTOCOL.json",
+      "bytes": 2700,
+      "sha256": "ca3edcef7b68043e75a31c0a96a1d529c2d6db281882a97e8ee58b7ab6e77a99",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\research\\oscillator_r2_20260928\\chan64_campaign_completion\\REPLAY_PROTOCOL.json"
+    },
+    {
+      "path": "chan64_campaign_completion/REPLAY_RESULT.json",
+      "bytes": 3957,
+      "sha256": "597472292d168d8e32cd391a5f9aa4e8a7445087b3186368e28edce2ae45923f",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\research\\oscillator_r2_20260928\\chan64_campaign_completion\\REPLAY_RESULT.json"
+    },
+    {
+      "path": "chan64_campaign_completion/REPLAY_REVIEW.json",
+      "bytes": 2257,
+      "sha256": "e3347d6a4013afdce4f4d4de4232af74ae674b7b476fd7b6ba5c95f417aa317d",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\research\\oscillator_r2_20260928\\chan64_campaign_completion\\REPLAY_REVIEW.json"
+    },
+    {
+      "path": "chan64_campaign_completion/REPLAY_SEAL.json",
+      "bytes": 3253,
+      "sha256": "64d1d5be02f3d12b6aab4a78df81af86bd28ebd6853eff1e846f15ce7375b4ed",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\research\\oscillator_r2_20260928\\chan64_campaign_completion\\REPLAY_SEAL.json"
+    },
+    {
+      "path": "chan64_campaign_completion/REPLAY_STARTED.json",
+      "bytes": 1524,
+      "sha256": "b2af2f91ea5ea4b6f684bf2e8d067014a95c9d165d29ceda8adacc7275fa7303",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\research\\oscillator_r2_20260928\\chan64_campaign_completion\\REPLAY_STARTED.json"
+    },
+    {
+      "path": "chan64_campaign_completion/SCIENTIFIC_CLOSEOUT_PROVENANCE.json",
+      "bytes": 1447,
+      "sha256": "a83a9f68f3ef7c362dde22ec681a2f9b931a54ced4bd546115c50dc89eb01366",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\research\\oscillator_r2_20260928\\chan64_campaign_completion\\SCIENTIFIC_CLOSEOUT_PROVENANCE.json"
+    },
+    {
+      "path": "chan64_campaign_completion/SCIENTIFIC_CLOSEOUT_REVIEW.md",
+      "bytes": 5226,
+      "sha256": "0fd3d7012f457b9689e070d8f2f32e04f1ac75cb63ecf909bb420defb0694a84",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\research\\oscillator_r2_20260928\\chan64_campaign_completion\\SCIENTIFIC_CLOSEOUT_REVIEW.md"
+    },
+    {
+      "path": "chan64_campaign_completion/campaign_audit.py",
+      "bytes": 5565,
+      "sha256": "c69c148bd87d803f741b768b7763769078eddfe78b2a082d4880a7316880a09e",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\research\\oscillator_r2_20260928\\chan64_campaign_completion\\campaign_audit.py"
+    },
+    {
+      "path": "chan64_campaign_completion/coordinator_snapshot/D_STAGE_ADDENDUM.json",
+      "bytes": 767,
+      "sha256": "748ad96de7fc1525700e4dfda22f12923ecbefb0c83a1d3b4887b771e0071689",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\coordinator_snapshot\\D_STAGE_ADDENDUM.json"
+    },
+    {
+      "path": "chan64_campaign_completion/coordinator_snapshot/coordinator_state.pre_chan64_closeout_20260929_044330.json",
+      "bytes": 29307,
+      "sha256": "532b33d3967183be26ddac408298fdda301d1217d535b02d30b24c4033c9061f",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\coordinator_snapshot\\coordinator_state.pre_chan64_closeout_20260929_044330.json"
+    },
+    {
+      "path": "chan64_campaign_completion/ensemble_fixed.py",
+      "bytes": 7399,
+      "sha256": "725a07b184f4c1c8f6a14bdabb1c50ea19ff5745182e958528c47c2e8237cdb5",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\research\\oscillator_r2_20260928\\chan64_campaign_completion\\ensemble_fixed.py"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/README.md",
+      "bytes": 9521,
+      "sha256": "6db340e955317fd28fea59e10d803a098f06b042b3acbc58b211de84313a20a2",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\README.md"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/campaign.json",
+      "bytes": 2823,
+      "sha256": "a2383dee08e4c939ae4fd7be4364b513cce13381c58db3ce2d985dd7aba2988b",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\campaign.json"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/configs/G1.json",
+      "bytes": 757,
+      "sha256": "5cf899eec31cc3a7316e406a68911b2a23768a62fcf34cb168d4b1229809cc78",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\configs\\G1.json"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/configs/G2.json",
+      "bytes": 758,
+      "sha256": "df3c022aa1cccc0d8b62c7ef9ae0111855bc09686863e8569eba62275888a452",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\configs\\G2.json"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/configs/G3.json",
+      "bytes": 756,
+      "sha256": "afe3612c0795ef18eb39835f866c4af66ccebfe698a2cb6653ae08db58ec25ea",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\configs\\G3.json"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/configs/G4.json",
+      "bytes": 757,
+      "sha256": "96f254a903ed697eb405a16210efd45bc6d7aced016686c9cb458578eb4abbad",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\configs\\G4.json"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/data/hashes.json",
+      "bytes": 624,
+      "sha256": "7d4ec1eacae2f0c48b26168a211af7098958fa1b265b562702d06362ee5ac262",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\data\\hashes.json"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/data/normalization.json",
+      "bytes": 462,
+      "sha256": "812a7b80d6259eb6106a5a534a8358a626713ec7ee53ad992fff6fcbabe59452",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\data\\normalization.json"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/data/splits.json",
+      "bytes": 3522922,
+      "sha256": "141d6c4ba9631de91b81076b56afc2239aa3632478895102d8024e13d79c93ca",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\data\\splits.json"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/data/trace_weight.json",
+      "bytes": 790,
+      "sha256": "39ef096cc0e608c62b0f0cabebf4de96f4941bb83560a11ecff9f91bae997ef2",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\data\\trace_weight.json"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/dataset.py",
+      "bytes": 1810,
+      "sha256": "fd672956869fb9e438eb0c2d697efa511f412bd0192959333a768b3e49f2aea9",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\dataset.py"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/evaluate.py",
+      "bytes": 5842,
+      "sha256": "ac15e1b07c070554ca2fea476d24ab307ea40c0e94420d7369ba3aa290200c2a",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\evaluate.py"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/frozen_reference/data_ea.py",
+      "bytes": 1324,
+      "sha256": "8027dc8695b2ade12aac64c3e894a075b4d98ca667a24053129a951001b6e943",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\frozen_reference\\data_ea.py"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/frozen_reference/models_ea.py",
+      "bytes": 3687,
+      "sha256": "b47d50b8b32313d1c3e1f19f3e64e6f02ce42e91736e6da00f896f68965250b0",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\frozen_reference\\models_ea.py"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/frozen_reference/train_ea.py",
+      "bytes": 7637,
+      "sha256": "7c7b4d49db539566abd8c76da6fe3b7eabf96eaac3ac495997c5f074a49085dd",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\frozen_reference\\train_ea.py"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/frozen_reference/upstream/models.py",
+      "bytes": 10195,
+      "sha256": "a8d7bf8a8d89839f687a773f59f02b2a5d75abd6f47a59406e9eb3d1a40f4771",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\frozen_reference\\upstream\\models.py"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/frozen_reference/upstream/vendor/detanet_model/__init__.py",
+      "bytes": 235,
+      "sha256": "8fe70f55031182c1d0012945907181ecc85278f7849599e15e3a16939fae67f1",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\frozen_reference\\upstream\\vendor\\detanet_model\\__init__.py"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/frozen_reference/upstream/vendor/detanet_model/constant.py",
+      "bytes": 3241,
+      "sha256": "1c3a8f9058ba6890c2f6730241136b35a552235b41f812288ce9cbdcc42ec856",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\frozen_reference\\upstream\\vendor\\detanet_model\\constant.py"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/frozen_reference/upstream/vendor/detanet_model/detanet.py",
+      "bytes": 20754,
+      "sha256": "4083382f2d615d1573b9dbc2d2c456d00f9895d4dae144b6c62b26feff6eebcd",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\frozen_reference\\upstream\\vendor\\detanet_model\\detanet.py"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/frozen_reference/upstream/vendor/detanet_model/metrics.py",
+      "bytes": 1386,
+      "sha256": "677630dd1b97c7474c2f8a4cdda81d7e0f2a56a12dfd4b02bbb869329af4fec2",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\frozen_reference\\upstream\\vendor\\detanet_model\\metrics.py"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/frozen_reference/upstream/vendor/detanet_model/model_loader.py",
+      "bytes": 12371,
+      "sha256": "85507209b15efea567e686f4d99cf3be53dbf3779607d4b33e295d52c44505b3",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\frozen_reference\\upstream\\vendor\\detanet_model\\model_loader.py"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/frozen_reference/upstream/vendor/detanet_model/modules/__init__.py",
+      "bytes": 306,
+      "sha256": "032b99150e38283d3695b394175d792c370be7dbbe38b58b94971143de9446de",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\frozen_reference\\upstream\\vendor\\detanet_model\\modules\\__init__.py"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/frozen_reference/upstream/vendor/detanet_model/modules/acts.py",
+      "bytes": 1889,
+      "sha256": "6bcd255ac95b33e6ef6a982d87c8dd6b39c2f1a41996f2425c5ada1f0fe8256c",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\frozen_reference\\upstream\\vendor\\detanet_model\\modules\\acts.py"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/frozen_reference/upstream/vendor/detanet_model/modules/block.py",
+      "bytes": 1008,
+      "sha256": "38eb81b385fded74ac4ff3950ee2cbe6e7c7e7cc0873ec57ede64ef758460e35",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\frozen_reference\\upstream\\vendor\\detanet_model\\modules\\block.py"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/frozen_reference/upstream/vendor/detanet_model/modules/edge_attention.py",
+      "bytes": 2754,
+      "sha256": "48a69aa9a83cfe225f8e55eeea4bab65120955aee2dc7ad02d414aef7b4e2fea",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\frozen_reference\\upstream\\vendor\\detanet_model\\modules\\edge_attention.py"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/frozen_reference/upstream/vendor/detanet_model/modules/embedding.py",
+      "bytes": 4311,
+      "sha256": "07eff3330b5709fec463563d4ef53f857525ae85f55b8a3ab1e7c9ffb3c70ee8",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\frozen_reference\\upstream\\vendor\\detanet_model\\modules\\embedding.py"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/frozen_reference/upstream/vendor/detanet_model/modules/message.py",
+      "bytes": 2020,
+      "sha256": "a76bae58dbb92447d6fb05230d7db826dc9defc929706e6f2c88c067ee5918cf",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\frozen_reference\\upstream\\vendor\\detanet_model\\modules\\message.py"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/frozen_reference/upstream/vendor/detanet_model/modules/multilayer_perceptron.py",
+      "bytes": 2237,
+      "sha256": "5628a4cebadbbc493058edae808a64370ee2834fa4ccacc041f820bf9afb4d42",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\frozen_reference\\upstream\\vendor\\detanet_model\\modules\\multilayer_perceptron.py"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/frozen_reference/upstream/vendor/detanet_model/modules/radial_basis.py",
+      "bytes": 4178,
+      "sha256": "cbbbf125bdb4b64e21a4d58ddb175bde489bb7a640375847f416f137881307ca",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\frozen_reference\\upstream\\vendor\\detanet_model\\modules\\radial_basis.py"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/frozen_reference/upstream/vendor/detanet_model/modules/update.py",
+      "bytes": 3719,
+      "sha256": "65cda1be8fd5daa491779211ba37ec9c23b73e4a2da81444d21534584c0028a6",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\frozen_reference\\upstream\\vendor\\detanet_model\\modules\\update.py"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/frozen_reference/upstream/vendor/detanet_model/spectra_simulator.py",
+      "bytes": 9886,
+      "sha256": "cb36131b7dc855cd2c528d532f4d7742fc2da757d078e8732142dbeab4f0b67e",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\frozen_reference\\upstream\\vendor\\detanet_model\\spectra_simulator.py"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/model_factory.py",
+      "bytes": 3107,
+      "sha256": "f05a879645a17222f63fb224459728be0a8e6fbfc3fc165d6d3c8bd4b231fa88",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\model_factory.py"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/objective.py",
+      "bytes": 1741,
+      "sha256": "6de50ddaa5edc1f7fc232a67ad212827cfbf3430eef48537a502e463e6a5c131",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\objective.py"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/prepare.py",
+      "bytes": 10399,
+      "sha256": "5a394d3f3adc1bade36a951d905efa708341a7b8fd85f507a920f0a7a266e4cf",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\prepare.py"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/reports/CAMPAIGN_BLOCKED.json",
+      "bytes": 807,
+      "sha256": "cc42a2c86af6b08c6661d4d768c703da0da56aac2af3fa6b52b479c014952227",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\reports\\CAMPAIGN_BLOCKED.json"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/reports/data_audit.json",
+      "bytes": 3832,
+      "sha256": "e8c14515c1692f93848987faf7a0d199cf7c16ab29786232ee077c4de3cb52ca",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\reports\\data_audit.json"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/reports/epoch_order_hashes.json",
+      "bytes": 107895,
+      "sha256": "775e9e717d64925978c285bd2f7d8afe05506ad79af3336cfbfd563fafdb8f60",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\reports\\epoch_order_hashes.json"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/reports/initialization.json",
+      "bytes": 10012,
+      "sha256": "38f76451f48718af7efcca1543fc4aa09dbc6a1dbf4486ac7a63d2c199897517",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\reports\\initialization.json"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/reports/preflight.json",
+      "bytes": 4697,
+      "sha256": "46c712cff23762846efab9e3b5b12b9070774818ea0b6a993b0f8231a21601a8",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\reports\\preflight.json"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/reports/source_verification.json",
+      "bytes": 7119,
+      "sha256": "a654d475b4fb190cb65a89223bb5282d62e1a85f12d2f7f02310b7b21cdf0273",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\reports\\source_verification.json"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/runs/G1/FIT_COMPLETE.json",
+      "bytes": 277,
+      "sha256": "a24e6b48043a68c0dc22584528ed4024e8c9b02ba950fc8784ad76872b8c0330",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\runs\\G1\\FIT_COMPLETE.json"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/runs/G1/history.jsonl",
+      "bytes": 108445,
+      "sha256": "0092192ba8183d19bd408ecb5c153f2a18287d1cfde61cd92dd2b65a332b136e",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\runs\\G1\\history.jsonl"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/runs/G1/launch_receipt.json",
+      "bytes": 154,
+      "sha256": "dd48f6d406079434f6566fa1753ad4174a0cfa3d281414677cabb7d09859e6b7",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\runs\\G1\\launch_receipt.json"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/runs/G1/run_manifest.json",
+      "bytes": 5470,
+      "sha256": "8aae9a629ed658b7b1b353b38c375c69ee58f14da137e7fad2d237c870ff26fa",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\runs\\G1\\run_manifest.json"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/runs/G1/status.json",
+      "bytes": 577,
+      "sha256": "a49929ae2936c1c87369c96f7da4062283e5fb0844ec72404b85721d428b74f0",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\runs\\G1\\status.json"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/runs/G2/ADMIN_STOPPED.json",
+      "bytes": 3866,
+      "sha256": "ce5ac336fdc05d1121b5b01a4fdc1bde017080ddb7c10d3dcfc4d811d66014a2",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\runs\\G2\\ADMIN_STOPPED.json"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/runs/G2/history.jsonl",
+      "bytes": 89027,
+      "sha256": "8156205f77d5d71f69c1366dcbe3737c1370d767619aca946d4054a2b694ec34",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\runs\\G2\\history.jsonl"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/runs/G2/launch_receipt.json",
+      "bytes": 154,
+      "sha256": "29ea4a9a9c7d79f4c973675393ecae74b96458e4237a3c7be02fbf7005b5c4a1",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\runs\\G2\\launch_receipt.json"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/runs/G2/run_manifest.json",
+      "bytes": 5471,
+      "sha256": "dc2154ba80a905ed8c41f3dea08bba057ba321ee504697dde893153196e484c0",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\runs\\G2\\run_manifest.json"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/runs/G2/status.json",
+      "bytes": 103,
+      "sha256": "00c6b17c7dc0ba187ea2ca6035c65eeea7126b0652fbb880eea7387160b46414",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\runs\\G2\\status.json"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/runs/G3/FIT_COMPLETE.json",
+      "bytes": 277,
+      "sha256": "319cb32bce7bfde222d9bd98e2c734ecdb4b0a029396a9165eb02e16afb38130",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\runs\\G3\\FIT_COMPLETE.json"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/runs/G3/history.jsonl",
+      "bytes": 155575,
+      "sha256": "3dc55e757eaeadd0dc06de18b7139aa14a0ccb6f00eeb24b33caf11b8a55db06",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\runs\\G3\\history.jsonl"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/runs/G3/launch_receipt.json",
+      "bytes": 153,
+      "sha256": "00191ec313c151b9eb9c737de07c584c5d7ccbf654843523f4a0ee82500d2cb4",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\runs\\G3\\launch_receipt.json"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/runs/G3/run_manifest.json",
+      "bytes": 5469,
+      "sha256": "fa249097d8223af2a610b55a4b81fcaabf63fc0fb46dc9891dcf6a3a8966dba3",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\runs\\G3\\run_manifest.json"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/runs/G3/status.json",
+      "bytes": 575,
+      "sha256": "f55c09e13762f70832af870be07106d38db1a184168082523ddae0b609850904",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\runs\\G3\\status.json"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/runs/G4/FIT_COMPLETE.json",
+      "bytes": 278,
+      "sha256": "84b1049e8edda4c738dc95576482b9fc35ff69a366abba179eb9bc17ed774abc",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\runs\\G4\\FIT_COMPLETE.json"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/runs/G4/history.jsonl",
+      "bytes": 92546,
+      "sha256": "6796cdb5ef223bbc2c675d54ff6c4d1c2e43ead8cc62857f0dc59e3502e606a1",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\runs\\G4\\history.jsonl"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/runs/G4/launch_receipt.json",
+      "bytes": 154,
+      "sha256": "1abdc99be549d6066ed5a2a73e36312e4554cbdccd65590f177a807ef404ce67",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\runs\\G4\\launch_receipt.json"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/runs/G4/run_manifest.json",
+      "bytes": 5470,
+      "sha256": "556672e27a840b62be9a9002ba91eed756d5b9b788a295c3e54891cd7e57b0ac",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\runs\\G4\\run_manifest.json"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/runs/G4/status.json",
+      "bytes": 512,
+      "sha256": "2c4f7ac12793bea9af8a6baa471ebd21890685a432e69481f4af69468eeb56f5",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\runs\\G4\\status.json"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/supervisor.py",
+      "bytes": 6789,
+      "sha256": "2e1df83c29c4d9c71cc624246f9de0ae018d02f81d264cc2c8b897001978c9e6",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\supervisor.py"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/supervisor_receipt.json",
+      "bytes": 49,
+      "sha256": "1fcc79f474fc0e7572e086321a2e4261cbf36dd91d6736db36f5c9e554c4de88",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\supervisor_receipt.json"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/supervisor_status.json",
+      "bytes": 4574,
+      "sha256": "3476d2895bf5bc8cbcf97c91063c4830399c1ac8e7dfdd629fe60f852536d97f",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\supervisor_status.json"
+    },
+    {
+      "path": "chan64_campaign_completion/legacy_source/experiments/qm9s_chan64_20260928/trainer.py",
+      "bytes": 10893,
+      "sha256": "7e9b8248455bb1c27ca7080c827c7fc4affcd36ba001e1e4049490f09b417349",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\experiments\\qm9s_chan64_20260928\\trainer.py"
+    },
+    {
+      "path": "chan64_campaign_completion/replay_selected.py",
+      "bytes": 9032,
+      "sha256": "e947d01b6d309a0596af705afaaa019ebc084280325dc690f771967c768c8627",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\research\\oscillator_r2_20260928\\chan64_campaign_completion\\replay_selected.py"
+    },
+    {
+      "path": "chan64_validation_only.json",
+      "bytes": 1828,
+      "sha256": "cc9a40af9e1ba3a1b9200cbe25514b5b35e7cabf1e8642e991d59282707899de",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\research\\oscillator_r2_20260928\\chan64_validation_only.json"
+    },
+    {
+      "path": "chan64_validation_only.py",
+      "bytes": 2328,
+      "sha256": "4ae875d2e53c18775b1f5589a98029f5697b7cb37e3bd24f9b391424d046b367",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\research\\oscillator_r2_20260928\\chan64_validation_only.py"
+    },
+    {
+      "path": "coordinator_state.json",
+      "bytes": 31947,
+      "sha256": "861f374ae94149ab8461fa09190508fc2b536b7fbda06afe0cb2671a97dfb298",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\coordinator_snapshot\\coordinator_state.json"
+    },
+    {
+      "path": "lush_feasibility/FEASIBILITY_REVIEW.md",
+      "bytes": 8302,
+      "sha256": "7c19e2c6975e0b829556b42b5eddb87d81ba173ea1ce69c9b7a5da2c55af3c2c",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round12_lush_feasibility_theory\\lush_feasibility\\FEASIBILITY_REVIEW.md"
+    },
+    {
+      "path": "lush_feasibility/PROVENANCE.json",
+      "bytes": 1999,
+      "sha256": "24ed1ba4d5b70ea91cd2541c9edc2a25030955517141303989f4e8888c409180",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round12_lush_feasibility_theory\\lush_feasibility\\PROVENANCE.json"
+    },
+    {
+      "path": "postrun_geometry/FIXED_SEVEN_SECONDARY_AMENDMENT.md",
+      "bytes": 5810,
+      "sha256": "675030449886676094b1226d6ea75d753752fdd7e3e7cc3c8e1a9441bb469c0e",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round13_fixed_seven_secondary\\FIXED_SEVEN_SECONDARY_AMENDMENT.md"
+    },
+    {
+      "path": "postrun_geometry/FIXED_SEVEN_SECONDARY_PROVENANCE.json",
+      "bytes": 3096,
+      "sha256": "6a1ef5ae13b7c1675fed75c0461c8a5d1d4c0f596e1029d90b263411cc43201b",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round13_fixed_seven_secondary\\FIXED_SEVEN_SECONDARY_PROVENANCE.json"
+    },
+    {
+      "path": "round12_lush_feasibility_theory/ARCHIVE_ALLOWLIST.json",
+      "bytes": 667,
+      "sha256": "d64749e6eeb2ddd9cf9959091177723f47ba5494a24413a118adab58d568cefc",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round12_lush_feasibility_theory\\ARCHIVE_ALLOWLIST.json"
+    },
+    {
+      "path": "round12_lush_feasibility_theory/D_STAGE_MANIFEST.json",
+      "bytes": 933,
+      "sha256": "2549bfbaa8ced1fd4034c02cba59b40161e5d0c81d3fa07c74bc9eeb7c6bc439",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round12_lush_feasibility_theory\\D_STAGE_MANIFEST.json"
+    },
+    {
+      "path": "round13_fixed_seven_secondary/D_STAGE_MANIFEST.json",
+      "bytes": 589,
+      "sha256": "a9ce84ab7b73853d79d694d02a88759231202666c323deed79771aa11cae37c2",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round13_fixed_seven_secondary\\D_STAGE_MANIFEST.json"
+    }
+  ]
+}

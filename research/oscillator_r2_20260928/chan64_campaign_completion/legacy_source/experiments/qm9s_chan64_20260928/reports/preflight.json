@@ -1,0 +1,133 @@
+{
+  "initialization_equal": {
+    "G1": "22621983f5004bcb374e18f1d2536800b84e7f64c8ae15230a367364661f5012",
+    "G2": "22621983f5004bcb374e18f1d2536800b84e7f64c8ae15230a367364661f5012",
+    "G3": "8f385b722728c3a1d53417cf83908386ae99e63b564da9b42bcd4b462713f97f",
+    "G4": "8f385b722728c3a1d53417cf83908386ae99e63b564da9b42bcd4b462713f97f"
+  },
+  "all_1000_epoch_orders_equal": true,
+  "G1_reference_equivalence": {
+    "torch.float32": {
+      "forward_max_abs": 1.4210854715202004e-13,
+      "pinned_reference_gradient_max_abs": 4.76837158203125e-07,
+      "weighted_trace_term_max_abs": 0.0,
+      "absolute_and_relative_tolerance": 2e-05,
+      "weighted_minus_pinned_trace_term": 1.9146513938903809,
+      "LE_and_LQ_identical_to_pinned": true
+    },
+    "torch.float64": {
+      "forward_max_abs": 8.881784197001252e-16,
+      "pinned_reference_gradient_max_abs": 1.7763568394002505e-15,
+      "weighted_trace_term_max_abs": 0.0,
+      "absolute_and_relative_tolerance": 1e-10,
+      "weighted_minus_pinned_trace_term": 1.914651249880835,
+      "LE_and_LQ_identical_to_pinned": true
+    }
+  },
+  "trace_not_diagonal_MSE_mask_NaN_empty_and_valid_zero_labels": true,
+  "weighted_trace_loss": {
+    "mean_E2_train": 47.478104650939535,
+    "zero_when_correct": true,
+    "bright_to_dim_penalty_ratio": 9.000000140535596,
+    "closed_form_max_abs": 0.0,
+    "no_gradient_into_E_or_through_prediction": true,
+    "weight_uses_truth_E_only": true,
+    "train_valid_entries": 1203550,
+    "independent_train_recomputation": 47.478104650939535,
+    "all_split_mean_for_contrast": 47.482254535393885,
+    "train_only_constant_verified": true
+  },
+  "G2_no_E_prediction_loss_frozen_head_weighted_trace": {
+    "passed": true,
+    "loss_invariant_to_predicted_E": true,
+    "loss_change_from_E_true": 0.5685393810272217,
+    "frozen_parameters": [
+      "decoder.energy_offset",
+      "decoder.energy_head.weight",
+      "decoder.energy_head.bias"
+    ],
+    "note": "E labels feed only the frozen E_true^2 weight; no E prediction term, no gradient into the energy head, and no dependence on the predicted E"
+  },
+  "G4_no_E_prediction_loss_frozen_head_weighted_trace": {
+    "passed": true,
+    "loss_invariant_to_predicted_E": true,
+    "loss_change_from_E_true": 0.6250994205474854,
+    "frozen_parameters": [
+      "decoder.energy_offset",
+      "decoder.energy_head.weight",
+      "decoder.energy_head.bias"
+    ],
+    "note": "E labels feed only the frozen E_true^2 weight; no E prediction term, no gradient into the energy head, and no dependence on the predicted E"
+  },
+  "centrosymmetric_geometry": {
+    "mu_max_abs": 1.0078769201340073e-16,
+    "A_max_abs": 1.0158158861388121e-32,
+    "limitation": "Ordinary polar 1o head forced to zero by inversion; nonzero transition intensity cannot be represented. No samples removed."
+  },
+  "P_only_equivariance": {
+    "rotations_and_inversion": [
+      {
+        "det": 1.0,
+        "mu_error": 8.587169170182207e-12,
+        "A_error": 3.499598614370436e-13
+      },
+      {
+        "det": 1.0,
+        "mu_error": 1.5083689505757114e-12,
+        "A_error": 1.863288847216496e-14
+      },
+      {
+        "det": 1.0,
+        "mu_error": 4.352962434950314e-12,
+        "A_error": 1.3930485454408115e-13
+      },
+      {
+        "det": -1.0,
+        "mu_error": 2.3146032242838362e-17,
+        "A_error": 1.0164395367051604e-19
+      }
+    ],
+    "permutation_mu_error": 7.152062979973574e-17,
+    "minimum_eigenvalue": -4.0952835215089086e-21,
+    "rank_at_most_one": true,
+    "decoder_only_P": true
+  },
+  "FP32_gradient_and_resume": {
+    "G1": {
+      "batch_size": 64,
+      "first_loss": 10.919397354125977,
+      "next_loss": 1.419028639793396,
+      "resumed_loss": 1.419028639793396,
+      "model_max_abs_difference": 1.1920928955078125e-07,
+      "optimizer_steps": 2
+    },
+    "G2": {
+      "batch_size": 64,
+      "first_loss": 1.0264983177185059,
+      "next_loss": 0.13248540461063385,
+      "resumed_loss": 0.13248540461063385,
+      "model_max_abs_difference": 2.384185791015625e-07,
+      "optimizer_steps": 2
+    },
+    "G3": {
+      "batch_size": 64,
+      "first_loss": 11.046082496643066,
+      "next_loss": 44524.4140625,
+      "resumed_loss": 44524.4140625,
+      "model_max_abs_difference": 3.725290298461914e-07,
+      "optimizer_steps": 2
+    },
+    "G4": {
+      "batch_size": 64,
+      "first_loss": 1.099391222000122,
+      "next_loss": 285767.96875,
+      "resumed_loss": 285767.96875,
+      "model_max_abs_difference": 2.384185791015625e-07,
+      "optimizer_steps": 2
+    }
+  },
+  "passed": true,
+  "time": 1790577968.89929,
+  "scratch_training_discarded": true,
+  "formal_runs_load_frozen_initial_files": true
+}

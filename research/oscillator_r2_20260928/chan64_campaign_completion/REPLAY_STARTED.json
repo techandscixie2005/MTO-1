@@ -1,0 +1,53 @@
+{
+  "event": "REPLAY_STARTED",
+  "time": 1790627613.927937,
+  "pid": 906432,
+  "seal_sha256": "64d1d5be02f3d12b6aab4a78df81af86bd28ebd6853eff1e846f15ce7375b4ed",
+  "review_sha256": "e3347d6a4013afdce4f4d4de4232af74ae674b7b476fd7b6ba5c95f417aa317d",
+  "gpu_before": {
+    "index": 4,
+    "uuid": "GPU-e212aefc-f1d6-cc7a-5594-e87abeaf1184",
+    "memory_MiB": 13,
+    "temperature_C": "32 C",
+    "ecc": {
+      "volatile": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0
+      },
+      "aggregate": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0,
+        "sram_threshold_exceeded": "No"
+      },
+      "remap": {
+        "remapped_row_corr": "0",
+        "remapped_row_unc": "0",
+        "remapped_row_pending": "No",
+        "remapped_row_failure": "No"
+      },
+      "repair": {
+        "channel_repair_pending": "No",
+        "tpc_repair_pending": "No"
+      }
+    },
+    "apps": []
+  },
+  "checkpoints": {
+    "G1": {
+      "epoch": 75,
+      "selection_loss": 0.4876234199502958,
+      "checkpoint_sha256": "3718c223eb40cc6a40d710bd3b9086b5a3209b6d0eb440f7265f1444510e153f"
+    },
+    "G3": {
+      "epoch": 174,
+      "selection_loss": 0.5248532128786919,
+      "checkpoint_sha256": "f0ac00a5a19496e656d4b28969aae4f4ab0ecde3062fc9a92b92af10db0e322d"
+    }
+  }
+}

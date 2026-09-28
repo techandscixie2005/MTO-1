@@ -1,0 +1,23 @@
+{
+  "classification": "post-individual-result exploratory validation analysis; no architecture confirmation",
+  "scope": "exactly two validation-only selected-checkpoint replays and exactly two fixed equal-weight ensembles",
+  "models_replayed": {
+    "G1": {"checkpoint": "runs/G1/best.pt", "selection": "legacy joint validation objective", "epoch": 75, "sha256": "3718c223eb40cc6a40d710bd3b9086b5a3209b6d0eb440f7265f1444510e153f", "prior_native_f_r2": 0.4052545406625945},
+    "G3": {"checkpoint": "runs/G3/best.pt", "selection": "legacy joint validation objective", "epoch": 174, "sha256": "f0ac00a5a19496e656d4b28969aae4f4ab0ecde3062fc9a92b92af10db0e322d", "prior_native_f_r2": 0.3681007180162036}
+  },
+  "device": "healthy idle physical GPU4, UUID GPU-e212aefc-f1d6-cc7a-5594-e87abeaf1184, shared /tmp/mto_pouter_gpu_4.lock and before/after ECC guards; CPU fallback only after separate documentation",
+  "validation": "exact 6686 validation molecule indices and raw FP64 printed f truth, all ten states and masks, no state filtering; no test evaluation or final-checkpoint replay",
+  "native_f": "for each model, K*its predicted E*trace(its predicted A), K=(2/3)/27.211386245988; primary trace accumulated FP64 from FP32 A, with legacy FP32 trace accumulation crosscheck",
+  "reproduction_gate": "G1 and G3 old-semantics and primary R2 each within 1e-6 of prior audit before ensemble interpretation",
+  "fixed_ensembles": {
+    "G1_G3_equal2": {"components": ["G1", "G3"], "weight_each": 0.5},
+    "eta0_eta01_eta1_G1_G3_equal5": {"components": ["mto_eta0", "mto_eta01", "mto_eta1", "G1", "G3"], "weight_each": 0.2}
+  },
+  "comparators": ["mto_eta0", "fixed eta0/eta01/eta1 equal3"],
+  "selection_prohibition": "No subset, coefficient, checkpoint, or hyperparameter search; G2/G4 excluded because E is unsupervised; no new model inference after exactly two authorized replays",
+  "alignment": "exact equality of validation indices, molecule IDs, printed raw FP64 f truth, masks, and state order across all five component arrays",
+  "metrics": "pooled raw-f SSE/R2/RMSE/MAE; paired molecule and connectivity-group 2000-bootstrap delta-R2 intervals versus equal3; per physical state delta SSE and pooled-SST contributions; fixed validation q90/q99 tail SSE/count; model-count inference cost",
+  "interpretation": "all comparisons exploratory because selected checkpoints and new ensemble candidates use validation; historical test previously exposed, but is not accessed here",
+  "server_runtime_arrays": "G1/G3 validation NPZ stay on server, excluded from D/GitHub archive",
+  "source_replay_reference": "research/oscillator_r2_20260928/chan64_validation_only.py and exact prior JSON metrics"
+}

@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "reviewed_at": "2026-09-29T04:33:08.836990+08:00",
+  "reviewer": "backbone_baseline_audit",
+  "evaluator_sha256": "e947d01b6d309a0596af705afaaa019ebc084280325dc690f771967c768c8627",
+  "protocol_sha256": "ca3edcef7b68043e75a31c0a96a1d529c2d6db281882a97e8ee58b7ab6e77a99",
+  "seal_sha256": "64d1d5be02f3d12b6aab4a78df81af86bd28ebd6853eff1e846f15ce7375b4ed",
+  "scope": "Exactly G1 epoch75 and G3 epoch174 selected-checkpoint validation replays; no training/test/final-checkpoint inference. Ensemble postprocessing is separate.",
+  "independent_checks": {
+    "source_and_checkpoint_preflight": {
+      "passed": true,
+      "checks": {
+        "G1": {
+          "epoch": 75,
+          "selection_loss": 0.4876234199502958,
+          "checkpoint_sha256": "3718c223eb40cc6a40d710bd3b9086b5a3209b6d0eb440f7265f1444510e153f"
+        },
+        "G3": {
+          "epoch": 174,
+          "selection_loss": 0.5248532128786919,
+          "checkpoint_sha256": "f0ac00a5a19496e656d4b28969aae4f4ab0ecde3062fc9a92b92af10db0e322d"
+        }
+      }
+    },
+    "alignment": "All 6686 validation indices/IDs/FP64 printed f labels and all three component masks match all three pinned eta arrays exactly.",
+    "numerics": "FP32 model, TF32 disabled, primary FP64 trace and multiplication, historical FP32-trace crosscheck; each R2 must reproduce prior aggregate within 1e-6.",
+    "execution": "Exact reviewed hashes required; exclusive STARTED receipt and pre-existing prediction guards; shared GPU4 lock, idle health and UUID before, unchanged ECC after.",
+    "data_scope": "Model inputs and metrics indexed only by fixed validation indices. Eager Data storage includes full arrays; no test-row inference or metric consumption.",
+    "selection": "Immutable best.pt selected by minimum legacy joint validation objective, not raw-f selection; exact checkpoint epochs and hashes checked against terminal/history."
+  },
+  "conditions": [
+    "GPU4 must pass fresh health/idle/exclusive-lock gate at execution.",
+    "Any partial execution failure requires root review; do not remove STARTED to rerun.",
+    "All prediction NPZ files remain server-only.",
+    "No architecture causality or promotion from these exploratory validation comparisons."
+  ]
+}
