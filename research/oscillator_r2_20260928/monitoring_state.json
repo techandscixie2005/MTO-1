@@ -8,9 +8,98 @@
   "monitor_role": "archive_and_monitor sub-agent: perform compact scheduled health checks, archive reviewed lightweight round records through D: first, and report actionable issues to the coordinator",
   "active_campaign_at_first_check": "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925",
   "supervisor_pid": 566447,
-  "trainer_pids": {"G1": 566461, "G2": 566514, "G3": 566521, "G4": 566532},
-  "status_files": ["runs/G1/status.json", "runs/G2/status.json", "runs/G3/status.json", "runs/G4/status.json"],
-  "log_files": ["logs/G1.log", "logs/G2.log", "logs/G3.log", "logs/G4.log"],
+  "trainer_pids": {
+    "G1": 566461,
+    "G2": 566514,
+    "G3": 566521,
+    "G4": 566532
+  },
+  "status_files": [
+    "runs/G1/status.json",
+    "runs/G2/status.json",
+    "runs/G3/status.json",
+    "runs/G4/status.json"
+  ],
+  "log_files": [
+    "logs/G1.log",
+    "logs/G2.log",
+    "logs/G3.log",
+    "logs/G4.log"
+  ],
   "gpu_policy": "Do not touch unrelated jobs; GPU3 is excluded due to historical ECC failure, and no GPU reset is authorized.",
-  "publication_note": "Local D: archive is the staging source. Do not upload checkpoints, optimizer states, caches, raw tensors, or large runtime artifacts."
+  "publication_note": "Local D: archive is the staging source. Do not upload checkpoints, optimizer states, caches, raw tensors, or large runtime artifacts.",
+  "last_full_check_at": "2026-09-28T22:29:29+08:00",
+  "scope_admin_amendment": {
+    "updated_at": "2026-09-29T00:18:13+08:00",
+    "purpose": "Administrative scope correction only; these are last-known handles/receipts, not claims of current health. Discover current identities from coordinator state, queue records and /proc at each scheduled check.",
+    "discover_from": [
+      "coordinator_state.json",
+      "queue_status.json",
+      "runs/<arm>/queue_launch_receipt.json",
+      "architecture/ARCH_QUEUE_STATUS.json",
+      "architecture/runs/<arm>/queue_launch_receipt.json",
+      "architecture/runs/<arm>/status.json",
+      "architecture/runs/<arm>/FIT_COMPLETE.json",
+      "architecture/runs/<arm>/INVALID.json",
+      "architecture/runs/<arm>/FAILED.json"
+    ],
+    "last_known_loss_pilot": {
+      "queue_pid": 785736,
+      "arm": "control",
+      "worker_pid": 785960,
+      "gpu": 2,
+      "next_arms": [
+        "weighted",
+        "direct_f_matched"
+      ],
+      "note": "Historical launch/targeted snapshot; dynamically discover current arm and PID."
+    },
+    "g2_retirement": {
+      "pid": 566514,
+      "state": "ADMIN_STOPPED",
+      "epoch": 215,
+      "cursor": 114496,
+      "best_epoch": 41,
+      "original_queue_pid": 762340,
+      "original_queue": "exited without workers",
+      "campaign_expectation": "STOPPED_REQUIRES_EXPLICIT_RESUME / CAMPAIGN_BLOCKED is intentional; no FIT_COMPLETE was forged; analyze the original campaign as partial after remaining old jobs finish."
+    },
+    "legacy_campaign": {
+      "G4": "naturally FIT_COMPLETE at epoch 223; retain as terminal completion evidence"
+    },
+    "architecture_screen": {
+      "queue_pid": 778242,
+      "arms": [
+        "retained_residual",
+        "original",
+        "direct_f",
+        "independent_trace"
+      ],
+      "last_known_workers": [
+        {
+          "arm": "retained_residual",
+          "pid": 778585,
+          "gpu": 5
+        },
+        {
+          "arm": "original_control",
+          "pid": 790200,
+          "gpu": 6
+        }
+      ],
+      "note": "IDs are recorded historical handles, not current health claims; discover additional/current arm receipts from queue state."
+    },
+    "gpu_policy": {
+      "exclude": [
+        3,
+        7
+      ],
+      "guarded": [
+        5
+      ],
+      "preserve_unrelated_gpu": 0,
+      "notes": "Use healthy/free admitted devices per live ownership/resource records; do not reset devices or stop unrelated work."
+    },
+    "monitor_rule": "Do not run routine progress/metric/log checks before the scheduled four-hour due time. At due time provide a concise full health/progress/metrics/failure/intervention report for active campaigns and queues."
+  }
 }

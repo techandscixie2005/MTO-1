@@ -1,0 +1,33 @@
+{
+  "purpose": "Administrative four-hour monitoring-scope correction from verified D: archive",
+  "base_published_commit": "0909e89318f851b6f2c0790951e262421a86137f",
+  "first_and_last_full_check_at": "2026-09-28T22:29:29+08:00",
+  "next_check_due_at": "2026-09-29T02:29:29+08:00",
+  "overrides": [
+    "monitoring_state.json"
+  ],
+  "files": [
+    {
+      "path": "monitoring_state.json",
+      "bytes": 3934,
+      "sha256": "dc7b2c19e4f124f049b5df1a1bd05145578d49b0ecae0d007ffe8f070a926885",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\coordination\\monitoring_scope_amendment\\monitoring_state.json",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/monitoring_state.json"
+    },
+    {
+      "path": "MONITORING_SCOPE_AMENDMENT.md",
+      "bytes": 1476,
+      "sha256": "99ae56034f1c81090208f6830310aae21f20b444e550e3553eaee939daa700c2",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\coordination\\monitoring_scope_amendment\\MONITORING_SCOPE_AMENDMENT.md",
+      "remote_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/MONITORING_SCOPE_AMENDMENT.md"
+    },
+    {
+      "path": "MONITORING_SCOPE_MANIFEST.sha256.json",
+      "bytes": 806,
+      "sha256": "2b2a5b08a79791e765e1f2332fe7fb7b4cc0189175aa028b45a7be5345f4cd36",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\coordination\\monitoring_scope_amendment\\MANIFEST.sha256.json",
+      "remote_source": "D: administrative archive manifest generated after remote-to-D verification"
+    }
+  ],
+  "excludes": "Dynamic health or training metrics not checked in this administrative update"
+}
