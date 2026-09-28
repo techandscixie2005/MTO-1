@@ -1,0 +1,804 @@
+{
+  "classification": "exploratory fixed-seven saved-validation-array secondary; no inference/test",
+  "mode": "seed family completed",
+  "time": 1790638340.7771022,
+  "protocol_sha256": "4d4c2c024ff3450167668c478960f09b8f25b19fb8043e07e86f6b71597d5370",
+  "script_sha256": "3a11c1f90918437241eb6c26332fa87c7ef7b95f0b3f86493a0c8e908e627755",
+  "review_sha256": "35269c1df08e07851dd2b2cfa740d49c351f71785abfc2334bf2eb6557e640c4",
+  "amendment_sha256": "675030449886676094b1226d6ea75d753752fdd7e3e7cc3c8e1a9441bb469c0e",
+  "provenance_sha256": "6a1ef5ae13b7c1675fed75c0461c8a5d1d4c0f596e1029d90b263411cc43201b",
+  "seed_terminal_and_selection_evidence": {
+    "23": {
+      "terminal_sha256": "e68fe95736dd448d35318b691f63c3a98ab51b26db26e2b495cc6d4026ee8697",
+      "fixed_metrics_sha256": "3a86cc03c0faac6cf40f98887dc3c5890a0a58fc9255c08803d0ff145f40cf12",
+      "legacy_epoch": 53,
+      "legacy_checkpoint_sha256": "7c28a2fe204f8804d05d3dc58bb9acf853f2d0505ce83a9f66819f02fd485a18",
+      "legacy_prediction_sha256": "97b58fcafecfa6f69a5afabdd0c6a5dba0f5be03af3aef1f5d6f5e44b01f0bd6",
+      "saved_array_sse": 100.00044842171992
+    },
+    "37": {
+      "terminal_sha256": "48294d9a1340ee874af8e975bf7973965d9b40050312bc4fb1372a0e69d1adb2",
+      "fixed_metrics_sha256": "4d10f80e05bf5ec280fa318e6609db21e3fd2b7639f1c376de6c44213fc0b5cf",
+      "legacy_epoch": 44,
+      "legacy_checkpoint_sha256": "9570b5b3743be89cd8ca3f7f75a95bc43cd8445336a3d73694858c79ae05dd82",
+      "legacy_prediction_sha256": "1a08c2c5a1cfead22b489affb345da3ca021ad15d196ca51dd6f3c4fefe5b951",
+      "saved_array_sse": 95.92205202626212
+    }
+  },
+  "five_component_hashes": {
+    "mto_eta0": "25acae64bb4e3e541048a8705045f7f639d1113d537dbbef71672752e8065890",
+    "mto_eta01": "9edffb5cd617469c78c8d83da7901ac90add69d89f27de7e8196a8736ae85500",
+    "mto_eta1": "a3808b9ad425abf4f6fcfed840d0ed8d1ff6fcf1557037a4e01932c734dc68bb",
+    "G1": "7c5fef99d9547c3fbe42c26fc7506287fc37a6cbc58f10d1900447a4724cfb5d",
+    "G3": "55310a8f3924c5e5b2edd58c60a95dec0216b159672358ca2ff9609f5129adce"
+  },
+  "weights": "exact equal 1/7 over eta0,eta01,eta1,G1,G3,seed23_legacy,seed37_legacy",
+  "inference_forward_counts": {
+    "F7": 7,
+    "F5": 5,
+    "seed3_primary": 3
+  },
+  "metrics": {
+    "F5": {
+      "molecules": 6686,
+      "transitions": 66860,
+      "sse": 81.15157788267025,
+      "sst": 158.4062371581119,
+      "r2": 0.48769960489832564,
+      "rmse": 0.0348389693055272,
+      "mae": 0.016334465778657103
+    },
+    "seed3_primary": {
+      "molecules": 6686,
+      "transitions": 66860,
+      "sse": 86.65532816343206,
+      "sst": 158.4062371581119,
+      "r2": 0.45295507476174857,
+      "rmse": 0.0360009904813206,
+      "mae": 0.017021105724296215
+    },
+    "F7": {
+      "molecules": 6686,
+      "transitions": 66860,
+      "sse": 81.31135500588225,
+      "sst": 158.4062371581119,
+      "r2": 0.4866909506554217,
+      "rmse": 0.034873249187771245,
+      "mae": 0.016370885159856737
+    }
+  },
+  "comparisons": {
+    "F7_minus_F5": {
+      "reference_metrics": {
+        "molecules": 6686,
+        "transitions": 66860,
+        "sse": 81.15157788267025,
+        "sst": 158.4062371581119,
+        "r2": 0.48769960489832564,
+        "rmse": 0.0348389693055272,
+        "mae": 0.016334465778657103
+      },
+      "candidate_metrics": {
+        "molecules": 6686,
+        "transitions": 66860,
+        "sse": 81.31135500588225,
+        "sst": 158.4062371581119,
+        "r2": 0.4866909506554217,
+        "rmse": 0.034873249187771245,
+        "mae": 0.016370885159856737
+      },
+      "delta_sse_candidate_minus_reference": 0.15977712321199533,
+      "delta_r2_candidate_minus_reference": -0.0010086542429039724,
+      "molecule_bootstrap": {
+        "units": 6686,
+        "replicates": 2000,
+        "seed": 20260929,
+        "delta_r2_ci95": [
+          -0.020300527468791556,
+          -0.00022038459592339663,
+          0.010452893886135642
+        ],
+        "positive_fraction": 0.487
+      },
+      "connectivity_bootstrap": {
+        "units": 6671,
+        "replicates": 2000,
+        "seed": 20260929,
+        "delta_r2_ci95": [
+          -0.02051874411058313,
+          -0.00018673044897409957,
+          0.010437931285063064
+        ],
+        "positive_fraction": 0.488
+      },
+      "per_state": [
+        {
+          "physical_state": 1,
+          "state_index_zero_based": 0,
+          "labels": 6686,
+          "reference_sse": 1.5842943587893017,
+          "candidate_sse": 1.5348300683815161,
+          "delta_sse_candidate_minus_reference": -0.04946429040778555,
+          "delta_r2_pooled_contribution": 0.0003122622650168324
+        },
+        {
+          "physical_state": 2,
+          "state_index_zero_based": 1,
+          "labels": 6686,
+          "reference_sse": 3.857040755781834,
+          "candidate_sse": 3.691614248377525,
+          "delta_sse_candidate_minus_reference": -0.16542650740430886,
+          "delta_r2_pooled_contribution": 0.001044318142846798
+        },
+        {
+          "physical_state": 3,
+          "state_index_zero_based": 2,
+          "labels": 6686,
+          "reference_sse": 4.8805730858868195,
+          "candidate_sse": 4.74948871649066,
+          "delta_sse_candidate_minus_reference": -0.13108436939615942,
+          "delta_r2_pooled_contribution": 0.0008275202526610024
+        },
+        {
+          "physical_state": 4,
+          "state_index_zero_based": 3,
+          "labels": 6686,
+          "reference_sse": 6.573285975194221,
+          "candidate_sse": 6.41624246959789,
+          "delta_sse_candidate_minus_reference": -0.15704350559633085,
+          "delta_r2_pooled_contribution": 0.000991397235448369
+        },
+        {
+          "physical_state": 5,
+          "state_index_zero_based": 4,
+          "labels": 6686,
+          "reference_sse": 8.31929521607518,
+          "candidate_sse": 8.106367704290927,
+          "delta_sse_candidate_minus_reference": -0.21292751178425284,
+          "delta_r2_pooled_contribution": 0.0013441864133905343
+        },
+        {
+          "physical_state": 6,
+          "state_index_zero_based": 5,
+          "labels": 6686,
+          "reference_sse": 8.866332300393587,
+          "candidate_sse": 8.711138893278939,
+          "delta_sse_candidate_minus_reference": -0.15519340711464835,
+          "delta_r2_pooled_contribution": 0.0009797177806814721
+        },
+        {
+          "physical_state": 7,
+          "state_index_zero_based": 6,
+          "labels": 6686,
+          "reference_sse": 12.278883866005529,
+          "candidate_sse": 13.469957885684973,
+          "delta_sse_candidate_minus_reference": 1.1910740196794443,
+          "delta_r2_pooled_contribution": -0.007519110617409486
+        },
+        {
+          "physical_state": 8,
+          "state_index_zero_based": 7,
+          "labels": 6686,
+          "reference_sse": 14.41385901527562,
+          "candidate_sse": 14.278032306735579,
+          "delta_sse_candidate_minus_reference": -0.13582670854004064,
+          "delta_r2_pooled_contribution": 0.0008574580835757515
+        },
+        {
+          "physical_state": 9,
+          "state_index_zero_based": 8,
+          "labels": 6686,
+          "reference_sse": 11.033086709873736,
+          "candidate_sse": 11.042042418874564,
+          "delta_sse_candidate_minus_reference": 0.008955709000828094,
+          "delta_r2_pooled_contribution": -5.6536340749569256e-05
+        },
+        {
+          "physical_state": 10,
+          "state_index_zero_based": 9,
+          "labels": 6686,
+          "reference_sse": 9.344926599394437,
+          "candidate_sse": 9.31164029416967,
+          "delta_sse_candidate_minus_reference": -0.03328630522476672,
+          "delta_r2_pooled_contribution": 0.000210132541634344
+        }
+      ],
+      "tails": {
+        "below_q90": {
+          "count": 60170,
+          "reference_sse": 24.924464601108156,
+          "candidate_sse": 26.05837655924323,
+          "delta_sse_candidate_minus_reference": 1.133911958135073
+        },
+        "q90_and_above": {
+          "count": 6690,
+          "reference_sse": 56.22711328156211,
+          "candidate_sse": 55.25297844663902,
+          "delta_sse_candidate_minus_reference": -0.9741348349230918
+        },
+        "q99_and_above": {
+          "count": 671,
+          "reference_sse": 31.011095199746634,
+          "candidate_sse": 30.502231548478772,
+          "delta_sse_candidate_minus_reference": -0.5088636512678626
+        }
+      },
+      "concentration": {
+        "net_sse_gain": -0.15977712321198334,
+        "molecules_improved": 3795,
+        "molecules_worsened": 2891,
+        "gross_positive_gain": 3.5358501516547616,
+        "gross_deterioration": 3.695627274866745,
+        "largest_positive_molecule": {
+          "id": 52479,
+          "dataset_index": 52405,
+          "reference_sse": 2.6822055199087376,
+          "candidate_sse": 2.576882691775583,
+          "sse_gain_reference_minus_candidate": 0.10532282813315463,
+          "share_of_net_gain": null
+        },
+        "largest_negative_molecule": {
+          "id": 14562,
+          "dataset_index": 14536,
+          "reference_sse": 2.622175363530418,
+          "candidate_sse": 3.9421990163182494,
+          "sse_gain_reference_minus_candidate": -1.3200236527878313,
+          "share_of_net_gain": null
+        },
+        "top10_positive_molecules": [
+          {
+            "id": 52479,
+            "dataset_index": 52405,
+            "reference_sse": 2.6822055199087376,
+            "candidate_sse": 2.576882691775583,
+            "sse_gain_reference_minus_candidate": 0.10532282813315463,
+            "share_of_net_gain": null
+          },
+          {
+            "id": 30372,
+            "dataset_index": 30319,
+            "reference_sse": 0.2867628998507124,
+            "candidate_sse": 0.19933389919505803,
+            "sse_gain_reference_minus_candidate": 0.08742900065565437,
+            "share_of_net_gain": null
+          },
+          {
+            "id": 129198,
+            "dataset_index": 129051,
+            "reference_sse": 1.203854037844058,
+            "candidate_sse": 1.133493915622331,
+            "sse_gain_reference_minus_candidate": 0.07036012222172716,
+            "share_of_net_gain": null
+          },
+          {
+            "id": 132809,
+            "dataset_index": 132652,
+            "reference_sse": 0.3819758094077198,
+            "candidate_sse": 0.3284466137513105,
+            "sse_gain_reference_minus_candidate": 0.05352919565640929,
+            "share_of_net_gain": null
+          },
+          {
+            "id": 24533,
+            "dataset_index": 24492,
+            "reference_sse": 0.2634476094359337,
+            "candidate_sse": 0.21581868130228885,
+            "sse_gain_reference_minus_candidate": 0.04762892813364486,
+            "share_of_net_gain": null
+          },
+          {
+            "id": 125593,
+            "dataset_index": 125450,
+            "reference_sse": 0.16773459861911905,
+            "candidate_sse": 0.12315739708887101,
+            "sse_gain_reference_minus_candidate": 0.04457720153024804,
+            "share_of_net_gain": null
+          },
+          {
+            "id": 132521,
+            "dataset_index": 132366,
+            "reference_sse": 0.261350584180634,
+            "candidate_sse": 0.22103793082255166,
+            "sse_gain_reference_minus_candidate": 0.040312653358082345,
+            "share_of_net_gain": null
+          },
+          {
+            "id": 27916,
+            "dataset_index": 27865,
+            "reference_sse": 0.18073712048677198,
+            "candidate_sse": 0.14163851876924669,
+            "sse_gain_reference_minus_candidate": 0.0390986017175253,
+            "share_of_net_gain": null
+          },
+          {
+            "id": 3026,
+            "dataset_index": 3017,
+            "reference_sse": 0.4965266570814708,
+            "candidate_sse": 0.45876484714154536,
+            "sse_gain_reference_minus_candidate": 0.03776180993992545,
+            "share_of_net_gain": null
+          },
+          {
+            "id": 4327,
+            "dataset_index": 4313,
+            "reference_sse": 0.18391795125576013,
+            "candidate_sse": 0.153690357835376,
+            "sse_gain_reference_minus_candidate": 0.03022759342038414,
+            "share_of_net_gain": null
+          }
+        ],
+        "top10_positive_gain": 0.5562479347667556,
+        "top10_share_of_net_gain": null,
+        "largest_positive_group": {
+          "connectivity_key_sha256": "3111731c4c88b46e64793e7995b53a796e7d318b8fd7d7d9467e405982f1b51e",
+          "molecule_count": 1,
+          "molecule_ids": [
+            52479
+          ],
+          "reference_sse": 2.6822055199087376,
+          "candidate_sse": 2.576882691775583,
+          "sse_gain_reference_minus_candidate": 0.10532282813315463,
+          "share_of_net_gain": null
+        },
+        "largest_negative_group": {
+          "connectivity_key_sha256": "6c84e8017068164e117c813546685d3f83577d2e22e79edfdc3c630649e5a7d9",
+          "molecule_count": 1,
+          "molecule_ids": [
+            14562
+          ],
+          "reference_sse": 2.622175363530418,
+          "candidate_sse": 3.9421990163182494,
+          "sse_gain_reference_minus_candidate": -1.3200236527878313,
+          "share_of_net_gain": null
+        },
+        "case14562": {
+          "id": 14562,
+          "dataset_index": 14536,
+          "reference_sse": 2.622175363530418,
+          "candidate_sse": 3.9421990163182494,
+          "sse_gain_reference_minus_candidate": -1.3200236527878313,
+          "share_of_net_gain": null
+        },
+        "six_low_q2": {
+          "ids": [
+            14562,
+            14687,
+            53719,
+            53720,
+            97472,
+            123287
+          ],
+          "reference_sse": 4.141298423188785,
+          "candidate_sse": 5.496181748363896,
+          "sse_gain_reference_minus_candidate": -1.3548833251751102
+        },
+        "fixed_q2_bins": [
+          {
+            "q2_bin": -1,
+            "molecules": 0,
+            "reference_sse": 0.0,
+            "candidate_sse": 0.0,
+            "sse_gain_reference_minus_candidate": 0.0
+          },
+          {
+            "q2_bin": 0,
+            "molecules": 1,
+            "reference_sse": 2.622175363530418,
+            "candidate_sse": 3.9421990163182494,
+            "sse_gain_reference_minus_candidate": -1.3200236527878313
+          },
+          {
+            "q2_bin": 1,
+            "molecules": 5,
+            "reference_sse": 1.5191230596583671,
+            "candidate_sse": 1.5539827320456463,
+            "sse_gain_reference_minus_candidate": -0.03485967238727902
+          },
+          {
+            "q2_bin": 2,
+            "molecules": 59,
+            "reference_sse": 3.2407924379801094,
+            "candidate_sse": 3.4300696301568716,
+            "sse_gain_reference_minus_candidate": -0.18927719217676214
+          },
+          {
+            "q2_bin": 3,
+            "molecules": 597,
+            "reference_sse": 11.318840910199814,
+            "candidate_sse": 11.043924141668795,
+            "sse_gain_reference_minus_candidate": 0.274916768531019
+          },
+          {
+            "q2_bin": 4,
+            "molecules": 2648,
+            "reference_sse": 28.53134538453378,
+            "candidate_sse": 27.932723712015516,
+            "sse_gain_reference_minus_candidate": 0.5986216725182643
+          },
+          {
+            "q2_bin": 5,
+            "molecules": 3376,
+            "reference_sse": 33.91930072676778,
+            "candidate_sse": 33.408455773677176,
+            "sse_gain_reference_minus_candidate": 0.5108449530906056
+          }
+        ]
+      }
+    },
+    "F7_minus_seed3_primary": {
+      "reference_metrics": {
+        "molecules": 6686,
+        "transitions": 66860,
+        "sse": 86.65532816343206,
+        "sst": 158.4062371581119,
+        "r2": 0.45295507476174857,
+        "rmse": 0.0360009904813206,
+        "mae": 0.017021105724296215
+      },
+      "candidate_metrics": {
+        "molecules": 6686,
+        "transitions": 66860,
+        "sse": 81.31135500588225,
+        "sst": 158.4062371581119,
+        "r2": 0.4866909506554217,
+        "rmse": 0.034873249187771245,
+        "mae": 0.016370885159856737
+      },
+      "delta_sse_candidate_minus_reference": -5.3439731575498115,
+      "delta_r2_candidate_minus_reference": 0.033735875893673106,
+      "molecule_bootstrap": {
+        "units": 6686,
+        "replicates": 2000,
+        "seed": 20260929,
+        "delta_r2_ci95": [
+          0.014627632368699118,
+          0.03228350214347733,
+          0.06910504555160718
+        ],
+        "positive_fraction": 1.0
+      },
+      "connectivity_bootstrap": {
+        "units": 6671,
+        "replicates": 2000,
+        "seed": 20260929,
+        "delta_r2_ci95": [
+          0.014659339630814634,
+          0.03280286305386112,
+          0.06788354871100427
+        ],
+        "positive_fraction": 1.0
+      },
+      "per_state": [
+        {
+          "physical_state": 1,
+          "state_index_zero_based": 0,
+          "labels": 6686,
+          "reference_sse": 1.676638210538144,
+          "candidate_sse": 1.5348300683815161,
+          "delta_sse_candidate_minus_reference": -0.14180814215662796,
+          "delta_r2_pooled_contribution": 0.0008952181725968486
+        },
+        {
+          "physical_state": 2,
+          "state_index_zero_based": 1,
+          "labels": 6686,
+          "reference_sse": 3.8216576242117517,
+          "candidate_sse": 3.691614248377525,
+          "delta_sse_candidate_minus_reference": -0.13004337583422654,
+          "delta_r2_pooled_contribution": 0.000820948582374473
+        },
+        {
+          "physical_state": 3,
+          "state_index_zero_based": 2,
+          "labels": 6686,
+          "reference_sse": 5.110373278251508,
+          "candidate_sse": 4.74948871649066,
+          "delta_sse_candidate_minus_reference": -0.36088456176084804,
+          "delta_r2_pooled_contribution": 0.002278221920015902
+        },
+        {
+          "physical_state": 4,
+          "state_index_zero_based": 3,
+          "labels": 6686,
+          "reference_sse": 6.87266930549827,
+          "candidate_sse": 6.41624246959789,
+          "delta_sse_candidate_minus_reference": -0.45642683590038047,
+          "delta_r2_pooled_contribution": 0.0028813690930919703
+        },
+        {
+          "physical_state": 5,
+          "state_index_zero_based": 4,
+          "labels": 6686,
+          "reference_sse": 8.450851999029961,
+          "candidate_sse": 8.106367704290927,
+          "delta_sse_candidate_minus_reference": -0.3444842947390345,
+          "delta_r2_pooled_contribution": 0.0021746889574505222
+        },
+        {
+          "physical_state": 6,
+          "state_index_zero_based": 5,
+          "labels": 6686,
+          "reference_sse": 8.963367482374547,
+          "candidate_sse": 8.711138893278939,
+          "delta_sse_candidate_minus_reference": -0.2522285890956084,
+          "delta_r2_pooled_contribution": 0.0015922895058977284
+        },
+        {
+          "physical_state": 7,
+          "state_index_zero_based": 6,
+          "labels": 6686,
+          "reference_sse": 16.124516294047677,
+          "candidate_sse": 13.469957885684973,
+          "delta_sse_candidate_minus_reference": -2.6545584083627034,
+          "delta_r2_pooled_contribution": 0.016757915950702605
+        },
+        {
+          "physical_state": 8,
+          "state_index_zero_based": 7,
+          "labels": 6686,
+          "reference_sse": 14.561231688973798,
+          "candidate_sse": 14.278032306735579,
+          "delta_sse_candidate_minus_reference": -0.2831993822382195,
+          "delta_r2_pooled_contribution": 0.0017878044912811504
+        },
+        {
+          "physical_state": 9,
+          "state_index_zero_based": 8,
+          "labels": 6686,
+          "reference_sse": 11.296571761478756,
+          "candidate_sse": 11.042042418874564,
+          "delta_sse_candidate_minus_reference": -0.2545293426041919,
+          "delta_r2_pooled_contribution": 0.0016068138930043234
+        },
+        {
+          "physical_state": 10,
+          "state_index_zero_based": 9,
+          "labels": 6686,
+          "reference_sse": 9.77745051902764,
+          "candidate_sse": 9.31164029416967,
+          "delta_sse_candidate_minus_reference": -0.46581022485796986,
+          "delta_r2_pooled_contribution": 0.0029406053272575698
+        }
+      ],
+      "tails": {
+        "below_q90": {
+          "count": 60170,
+          "reference_sse": 31.30441794056486,
+          "candidate_sse": 26.05837655924323,
+          "delta_sse_candidate_minus_reference": -5.246041381321632
+        },
+        "q90_and_above": {
+          "count": 6690,
+          "reference_sse": 55.3509102228672,
+          "candidate_sse": 55.25297844663902,
+          "delta_sse_candidate_minus_reference": -0.0979317762281795
+        },
+        "q99_and_above": {
+          "count": 671,
+          "reference_sse": 29.872992315844733,
+          "candidate_sse": 30.502231548478772,
+          "delta_sse_candidate_minus_reference": 0.6292392326340384
+        }
+      },
+      "concentration": {
+        "net_sse_gain": 5.343973157549809,
+        "molecules_improved": 4038,
+        "molecules_worsened": 2648,
+        "gross_positive_gain": 9.04545152846682,
+        "gross_deterioration": 3.7014783709170134,
+        "largest_positive_molecule": {
+          "id": 14562,
+          "dataset_index": 14536,
+          "reference_sse": 6.257275739363844,
+          "candidate_sse": 3.9421990163182494,
+          "sse_gain_reference_minus_candidate": 2.3150767230455944,
+          "share_of_net_gain": 0.4332126406314227
+        },
+        "largest_negative_molecule": {
+          "id": 52479,
+          "dataset_index": 52405,
+          "reference_sse": 2.4451964226992393,
+          "candidate_sse": 2.576882691775583,
+          "sse_gain_reference_minus_candidate": -0.13168626907634362,
+          "share_of_net_gain": -0.024642015443191573
+        },
+        "top10_positive_molecules": [
+          {
+            "id": 14562,
+            "dataset_index": 14536,
+            "reference_sse": 6.257275739363844,
+            "candidate_sse": 3.9421990163182494,
+            "sse_gain_reference_minus_candidate": 2.3150767230455944,
+            "share_of_net_gain": 0.4332126406314227
+          },
+          {
+            "id": 53719,
+            "dataset_index": 53643,
+            "reference_sse": 0.38937266420240035,
+            "candidate_sse": 0.160621233827866,
+            "sse_gain_reference_minus_candidate": 0.22875143037453435,
+            "share_of_net_gain": 0.0428054976382808
+          },
+          {
+            "id": 123275,
+            "dataset_index": 123136,
+            "reference_sse": 0.5534140371199258,
+            "candidate_sse": 0.415836156138327,
+            "sse_gain_reference_minus_candidate": 0.1375778809815988,
+            "share_of_net_gain": 0.02574449326850244
+          },
+          {
+            "id": 86505,
+            "dataset_index": 86394,
+            "reference_sse": 0.2513314645726111,
+            "candidate_sse": 0.14176425456590228,
+            "sse_gain_reference_minus_candidate": 0.1095672100067088,
+            "share_of_net_gain": 0.020502949168432004
+          },
+          {
+            "id": 94493,
+            "dataset_index": 94377,
+            "reference_sse": 0.13260714197602796,
+            "candidate_sse": 0.06570361438083991,
+            "sse_gain_reference_minus_candidate": 0.06690352759518806,
+            "share_of_net_gain": 0.012519435562783229
+          },
+          {
+            "id": 29069,
+            "dataset_index": 29018,
+            "reference_sse": 0.468374234149503,
+            "candidate_sse": 0.4087888372346889,
+            "sse_gain_reference_minus_candidate": 0.059585396914814126,
+            "share_of_net_gain": 0.011150018003109469
+          },
+          {
+            "id": 29047,
+            "dataset_index": 28996,
+            "reference_sse": 0.46839455760560517,
+            "candidate_sse": 0.4090364666294128,
+            "sse_gain_reference_minus_candidate": 0.05935809097619238,
+            "share_of_net_gain": 0.011107482995556032
+          },
+          {
+            "id": 24479,
+            "dataset_index": 24439,
+            "reference_sse": 0.37460033521397706,
+            "candidate_sse": 0.31603771137087644,
+            "sse_gain_reference_minus_candidate": 0.058562623843100625,
+            "share_of_net_gain": 0.010958629865190297
+          },
+          {
+            "id": 128967,
+            "dataset_index": 128820,
+            "reference_sse": 0.4948345270826104,
+            "candidate_sse": 0.43937077054715384,
+            "sse_gain_reference_minus_candidate": 0.05546375653545654,
+            "share_of_net_gain": 0.010378749088044908
+          },
+          {
+            "id": 132773,
+            "dataset_index": 132616,
+            "reference_sse": 0.3767219393121664,
+            "candidate_sse": 0.3239755671394576,
+            "sse_gain_reference_minus_candidate": 0.05274637217270883,
+            "share_of_net_gain": 0.00987025395106828
+          }
+        ],
+        "top10_positive_gain": 3.143593012445897,
+        "top10_share_of_net_gain": 0.5882501501723901,
+        "largest_positive_group": {
+          "connectivity_key_sha256": "6c84e8017068164e117c813546685d3f83577d2e22e79edfdc3c630649e5a7d9",
+          "molecule_count": 1,
+          "molecule_ids": [
+            14562
+          ],
+          "reference_sse": 6.257275739363844,
+          "candidate_sse": 3.9421990163182494,
+          "sse_gain_reference_minus_candidate": 2.3150767230455944,
+          "share_of_net_gain": 0.4332126406314227
+        },
+        "largest_negative_group": {
+          "connectivity_key_sha256": "3111731c4c88b46e64793e7995b53a796e7d318b8fd7d7d9467e405982f1b51e",
+          "molecule_count": 1,
+          "molecule_ids": [
+            52479
+          ],
+          "reference_sse": 2.4451964226992393,
+          "candidate_sse": 2.576882691775583,
+          "sse_gain_reference_minus_candidate": -0.13168626907634362,
+          "share_of_net_gain": -0.024642015443191573
+        },
+        "case14562": {
+          "id": 14562,
+          "dataset_index": 14536,
+          "reference_sse": 6.257275739363844,
+          "candidate_sse": 3.9421990163182494,
+          "sse_gain_reference_minus_candidate": 2.3150767230455944,
+          "share_of_net_gain": 0.4332126406314227
+        },
+        "six_low_q2": {
+          "ids": [
+            14562,
+            14687,
+            53719,
+            53720,
+            97472,
+            123287
+          ],
+          "reference_sse": 8.034492796942642,
+          "candidate_sse": 5.496181748363896,
+          "sse_gain_reference_minus_candidate": 2.5383110485787466
+        },
+        "fixed_q2_bins": [
+          {
+            "q2_bin": -1,
+            "molecules": 0,
+            "reference_sse": 0.0,
+            "candidate_sse": 0.0,
+            "sse_gain_reference_minus_candidate": 0.0
+          },
+          {
+            "q2_bin": 0,
+            "molecules": 1,
+            "reference_sse": 6.257275739363844,
+            "candidate_sse": 3.9421990163182494,
+            "sse_gain_reference_minus_candidate": 2.3150767230455944
+          },
+          {
+            "q2_bin": 1,
+            "molecules": 5,
+            "reference_sse": 1.7772170575787984,
+            "candidate_sse": 1.5539827320456463,
+            "sse_gain_reference_minus_candidate": 0.22323432553315226
+          },
+          {
+            "q2_bin": 2,
+            "molecules": 59,
+            "reference_sse": 3.5079412892605384,
+            "candidate_sse": 3.4300696301568716,
+            "sse_gain_reference_minus_candidate": 0.07787165910366699
+          },
+          {
+            "q2_bin": 3,
+            "molecules": 597,
+            "reference_sse": 11.261940620066644,
+            "candidate_sse": 11.043924141668795,
+            "sse_gain_reference_minus_candidate": 0.2180164783978516
+          },
+          {
+            "q2_bin": 4,
+            "molecules": 2648,
+            "reference_sse": 29.105126020278462,
+            "candidate_sse": 27.932723712015516,
+            "sse_gain_reference_minus_candidate": 1.172402308262948
+          },
+          {
+            "q2_bin": 5,
+            "molecules": 3376,
+            "reference_sse": 34.74582743688377,
+            "candidate_sse": 33.408455773677176,
+            "sse_gain_reference_minus_candidate": 1.3373716632065953
+          }
+        ]
+      }
+    }
+  },
+  "connectivity_groups": 6671,
+  "fixed_q2_boundaries_train_only": [
+    1e-05,
+    0.05941956341810567,
+    0.09867099135475822,
+    0.21033971729099188,
+    0.45009813312285296
+  ],
+  "fixed_tail_thresholds": {
+    "q90": 0.0546,
+    "q99": 0.2377
+  },
+  "limitations": [
+    "Post-individual-result exploratory candidate on reused validation.",
+    "Bootstrap intervals omit selection/adaptation uncertainty.",
+    "No test access, model inference, fitting, filtering or mixture search.",
+    "Seven model forwards are not calibrated latency relative to five or three."
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "recorded_at": "2026-09-29T07:25:14.365185+08:00",
+  "classification": "final neural mixture addition; post-native-result/pre-completed-pair-review exploratory; design only",
+  "amendment_sha256": "5c315badf8c93408693250453197dec6cecaeb0b6f89c193adb1f8f4af30b364",
+  "frozen_five_components": {
+    "mto_eta0": {
+      "prediction_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta0/val_predictions.npz",
+      "prediction_sha256": "25acae64bb4e3e541048a8705045f7f639d1113d537dbbef71672752e8065890"
+    },
+    "mto_eta01": {
+      "prediction_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta01/val_predictions.npz",
+      "prediction_sha256": "9edffb5cd617469c78c8d83da7901ac90add69d89f27de7e8196a8736ae85500"
+    },
+    "mto_eta1": {
+      "prediction_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta1/val_predictions.npz",
+      "prediction_sha256": "a3808b9ad425abf4f6fcfed840d0ed8d1ff6fcf1557037a4e01932c734dc68bb"
+    },
+    "G1": {
+      "prediction_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/chan64_campaign_completion/runtime/G1_selected_native_val.npz",
+      "prediction_sha256": "7c5fef99d9547c3fbe42c26fc7506287fc37a6cbc58f10d1900447a4724cfb5d"
+    },
+    "G3": {
+      "prediction_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/chan64_campaign_completion/runtime/G3_selected_native_val.npz",
+      "prediction_sha256": "55310a8f3924c5e5b2edd58c60a95dec0216b159672358ca2ff9609f5129adce"
+    }
+  },
+  "native_completed_component": {
+    "receipt_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/runs/native/FIT_COMPLETE.json",
+    "receipt_sha256": "31ade59511a4fde1b323201de387ae873c31f83d5dfa49f595faae7cc5b31abb",
+    "raw_f_selected_epoch": 21,
+    "checkpoint_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/runs/native/best_raw_f.pt",
+    "checkpoint_sha256": "5d1b5fb21e1b07501765515518a8761c719098df02ca62d984a485f5c428543d",
+    "prediction_path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/runs/native/val_best_raw_f.npz",
+    "prediction_sha256": "2a469b817ec32360f59f0babe6e1990e7b649a7b7a460d935c674a502b45d504"
+  },
+  "MTO_future_component": "Raw-f-selected checkpoint over epochs0..100; no MTO outcome/receipt/prediction read for this amendment, future genuine FIT pins required.",
+  "seed_reference": "Existing F7_seed_legacy only, once both prescribed legacy selections completed; no seed outcome/receipt/prediction read for this amendment.",
+  "reference_hashes": {
+    "postrun_geometry/FIXED_SEVEN_SECONDARY_AMENDMENT.md": "675030449886676094b1226d6ea75d753752fdd7e3e7cc3c8e1a9441bb469c0e",
+    "postrun_geometry/FIXED_SEVEN_SECONDARY_PROVENANCE.json": "6a1ef5ae13b7c1675fed75c0461c8a5d1d4c0f596e1029d90b263411cc43201b",
+    "postrun_geometry/SCRATCH_MEAN_SECONDARY_AMENDMENT.md": "dbff88c47c0b3e487e30507ba2f1903364f7134082abb2a3b1059bba7b4566df",
+    "eta0_seed_replication/PROTOCOL.md": "ceacc1d992aec0604f9b31b0fa0c71e2fe3303fbb417da72be115e04973473e8",
+    "eta0_seed_replication/IMPLEMENTATION_REVIEW.json": "088be0c334d88b46ce39f7f3b5097cb6150a517d83cb0432b1a8fe847dcc1808",
+    "eta0_seed_replication/PREFLIGHT.json": "f0142a2dda91e02eb919ce23a33516ffcfd874dd48a4af9bbebf0d5d4afe3ddc",
+    "scratch_readout_comparison/PROTOCOL.md": "9be3d271f86afac91a2b20957b4edee86bad6a14b0bd9058c564254ad8b151b2",
+    "scratch_readout_comparison/IMPLEMENTATION_REVIEW.json": "6226b1c68226ce8a5ed6ddf74c630bce32dd88e0fadc46b0de12e8e4d005c3e2",
+    "scratch_readout_comparison/PREFLIGHT.json": "7719140e4bc0fcf5566eb6e90aa0d450bb27f3e217eb17a727a06116eec02e3c",
+    "fixed_seven_sidecar/fixed_seven.py": "3a11c1f90918437241eb6c26332fa87c7ef7b95f0b3f86493a0c8e908e627755",
+    "fixed_seven_sidecar/IMPLEMENTATION_REVIEW.json": "35269c1df08e07851dd2b2cfa740d49c351f71785abfc2334bf2eb6557e640c4",
+    "scratch_readout_comparison/completion_receipts/NATIVE_INDEPENDENT_VERIFICATION.json": "364483bafade15cb997eb193352c9f3c39db02e66055e83214cdd7af28a63d40"
+  },
+  "model_inference_or_test": false,
+  "implementation": false,
+  "new_neural_mixture_count": 1,
+  "roster_frozen": true
+}

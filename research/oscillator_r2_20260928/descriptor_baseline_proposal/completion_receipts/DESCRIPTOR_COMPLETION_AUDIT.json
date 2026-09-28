@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "classification": "one completed fixed descriptor fit/validation; saved arrays and receipts only; no model inference or test",
+  "source_files_verified": 25,
+  "terminal_sha256": "f56e6e4e6960bc8dd0737be86f4c73014e8937ee1db9dccaf057fa6c6fead592",
+  "review_sha256": "d617e2b36691fa040a6a3d976b3331fd3cd8c844c556a110962c848faa702879",
+  "authorization_sha256": "71ba12f04b4c57d5d33a443efd95208ecc11897f9c67427ea8246e9b0633cf6c",
+  "fit_freeze_sha256": "12e992ad9b30aa3071361a5a35c590771fe60380d2b7657d43806f910a58d3a0",
+  "validation_results_sha256": "641b5a9eba1289c00d40b9878f0855e3c691e57ed047dc339ea55b5825b945c2",
+  "metrics": {
+    "D": {
+      "molecules": 6686,
+      "states": 10,
+      "sse": 124.42376224684318,
+      "sst": 158.4062371581119,
+      "r2": 0.21452737923033538,
+      "mae": 0.021453695143477388,
+      "rmse": 0.04313884155509478
+    },
+    "F5": {
+      "molecules": 6686,
+      "states": 10,
+      "sse": 81.15157788267025,
+      "sst": 158.4062371581119,
+      "r2": 0.48769960489832564,
+      "mae": 0.016334465778657103,
+      "rmse": 0.0348389693055272
+    },
+    "equal_blend": {
+      "molecules": 6686,
+      "states": 10,
+      "sse": 93.21519615602762,
+      "sst": 158.4062371581119,
+      "r2": 0.41154339735381995,
+      "mae": 0.018462053932927245,
+      "rmse": 0.03733878421161901
+    }
+  },
+  "train_metrics": {
+    "molecules": 120355,
+    "states": 10,
+    "sse": 1552.557053118338,
+    "sst": 3022.091476089505,
+    "r2": 0.4862640441555065,
+    "mae": 0.01859589669657304,
+    "rmse": 0.0359163103539305
+  },
+  "resource": {
+    "total_seconds": 138.54343921504915,
+    "train_peak_rss_bytes": 1566130176,
+    "val_peak_rss_bytes": 1639878656,
+    "train_feature_seconds": 89.76851161569357,
+    "forest_fit_seconds": 26.454408360645175,
+    "val_feature_seconds": 5.0696931555867195
+  },
+  "limits": [
+    "Validation and train predictions are historical saved arrays; this audit ran no forest prediction or model inference.",
+    "Fixed descriptor recipe and equal half-blend both underperform F5 on reused validation; no promotion/test/retuning."
+  ]
+}

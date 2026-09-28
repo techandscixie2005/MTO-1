@@ -1,0 +1,42 @@
+{
+  "event": "SUPERVISOR_STARTED",
+  "time": 1790639071.3863323,
+  "pid": 967854,
+  "start_ticks": 1248673500,
+  "auth_sha256": "71ba12f04b4c57d5d33a443efd95208ecc11897f9c67427ea8246e9b0633cf6c",
+  "review_sha256": "d617e2b36691fa040a6a3d976b3331fd3cd8c844c556a110962c848faa702879",
+  "source_seal_sha256": "5c2ab2f81fd427bdf2b3330797eaaf2c8ea7fa957917c2fc8698ac4e6e07139b",
+  "admission": {
+    "allowed_logical_cpus": 512,
+    "idle_below_50_percent": 511,
+    "selected_cpus": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "selected_percent_busy": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "available_bytes": 506344353792,
+    "process_limit_bytes": 17179869184,
+    "wall_limit_seconds": 14400,
+    "fit_cpu_limit_seconds": 115200
+  },
+  "command": [
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/bin/python",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/descriptor_baseline_proposal/fit_worker.py"
+  ],
+  "test_access": false
+}

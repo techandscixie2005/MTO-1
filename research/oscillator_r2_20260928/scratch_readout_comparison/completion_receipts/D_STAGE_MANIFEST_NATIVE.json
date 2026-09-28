@@ -1,0 +1,96 @@
+{
+  "created_at": "2026-09-29T07:12:49+08:00",
+  "classification": "completed scratch native arm only; MTO paired result pending",
+  "remote_allowlist_sha256": "f8bb57005bffb214ee92cacb2ef61eeff8d3082471d1c6da9a05fae3a0871139",
+  "source": "USTC-A800:/home/inspur/MTO-1",
+  "verification": "all allowlisted remote size/SHA values matched D files; audit and review read back",
+  "entry_count": 13,
+  "total_bytes": 199823,
+  "entries": [
+    {
+      "remote_path": "research/oscillator_r2_20260928/scratch_readout_comparison/completion_receipts/audit_native.py",
+      "local_path": "completion_receipts\\audit_native.py",
+      "bytes": 7566,
+      "sha256": "3cdf02687b208f2f976f636d25dd06fc7fc7de1e79ce0de9d6c292b2fd4c7062"
+    },
+    {
+      "remote_path": "research/oscillator_r2_20260928/scratch_readout_comparison/completion_receipts/NATIVE_COMPLETION_AUDIT.json",
+      "local_path": "completion_receipts\\NATIVE_COMPLETION_AUDIT.json",
+      "bytes": 3557,
+      "sha256": "02cb1b0a41c27e9c93ba838dc894e6467eafedb2500e31a09178383e5c4b9f3e"
+    },
+    {
+      "remote_path": "research/oscillator_r2_20260928/scratch_readout_comparison/completion_receipts/NATIVE_COMPLETION_AUDIT.md",
+      "local_path": "completion_receipts\\NATIVE_COMPLETION_AUDIT.md",
+      "bytes": 1327,
+      "sha256": "ea0b562317d7ea0480fa5bfcf01f76aab3189ee35a7c937f3b34c2d6c87fe008"
+    },
+    {
+      "remote_path": "research/oscillator_r2_20260928/scratch_readout_comparison/completion_receipts/NATIVE_INDEPENDENT_SCIENTIFIC_REVIEW.md",
+      "local_path": "completion_receipts\\NATIVE_INDEPENDENT_SCIENTIFIC_REVIEW.md",
+      "bytes": 2887,
+      "sha256": "5e5768da11bbf56e1e53d65899dd1db8d6e7323ed0aa8997e40a66f1d87dcdb7"
+    },
+    {
+      "remote_path": "research/oscillator_r2_20260928/scratch_readout_comparison/completion_receipts/NATIVE_INDEPENDENT_REVIEW_PROVENANCE.json",
+      "local_path": "completion_receipts\\NATIVE_INDEPENDENT_REVIEW_PROVENANCE.json",
+      "bytes": 778,
+      "sha256": "aca2cf38d0b73893d9fd365c5ac4e4bcc44d84ddde557ed288aadc911713fb88"
+    },
+    {
+      "remote_path": "research/oscillator_r2_20260928/scratch_readout_comparison/completion_receipts/NATIVE_INDEPENDENT_VERIFICATION.json",
+      "local_path": "completion_receipts\\NATIVE_INDEPENDENT_VERIFICATION.json",
+      "bytes": 1735,
+      "sha256": "364483bafade15cb997eb193352c9f3c39db02e66055e83214cdd7af28a63d40"
+    },
+    {
+      "remote_path": "research/oscillator_r2_20260928/scratch_readout_comparison/runs/native/FIT_COMPLETE.json",
+      "local_path": "runs\\native\\FIT_COMPLETE.json",
+      "bytes": 14844,
+      "sha256": "31ade59511a4fde1b323201de387ae873c31f83d5dfa49f595faae7cc5b31abb"
+    },
+    {
+      "remote_path": "research/oscillator_r2_20260928/scratch_readout_comparison/runs/native/FIXED_CHECKPOINT_METRICS.json",
+      "local_path": "runs\\native\\FIXED_CHECKPOINT_METRICS.json",
+      "bytes": 37520,
+      "sha256": "4b1baf0940d08349073537372ecb830d6132dbff96810f0a6fb64ac27150c71b"
+    },
+    {
+      "remote_path": "research/oscillator_r2_20260928/scratch_readout_comparison/runs/native/history.jsonl",
+      "local_path": "runs\\native\\history.jsonl",
+      "bytes": 96670,
+      "sha256": "a842c836c3fa4c75ba4b19704389ad404207981e477166271e57b6fcf81efa28"
+    },
+    {
+      "remote_path": "research/oscillator_r2_20260928/scratch_readout_comparison/runs/native/LAUNCH_RECEIPT.json",
+      "local_path": "runs\\native\\LAUNCH_RECEIPT.json",
+      "bytes": 13534,
+      "sha256": "cd006ac90880c3f2b7e17d5a65aa064070e8eed72f5b7d272949b0378507b837"
+    },
+    {
+      "remote_path": "research/oscillator_r2_20260928/scratch_readout_comparison/runs/native/RUN_MANIFEST.json",
+      "local_path": "runs\\native\\RUN_MANIFEST.json",
+      "bytes": 15125,
+      "sha256": "786d497b938d4fb215ce0e3390ed9c52194248bfa5a145f2a17d4c378a4b8b6c"
+    },
+    {
+      "remote_path": "research/oscillator_r2_20260928/scratch_readout_comparison/runs/native/epoch0_val.json",
+      "local_path": "runs\\native\\epoch0_val.json",
+      "bytes": 4201,
+      "sha256": "88f792f3dfc0c842e9cc93d846274d0de1d826e0a6280bf74ec03516b5e4ff03"
+    },
+    {
+      "remote_path": "research/oscillator_r2_20260928/scratch_readout_comparison/runs/native/status.json",
+      "local_path": "runs\\native\\status.json",
+      "bytes": 79,
+      "sha256": "db143f746da1ea9fdaf7dd7b0f85afacbd467acf9ad595527bd2c71db28f7110"
+    }
+  ],
+  "excluded": [
+    "model checkpoints",
+    "optimizer state",
+    "validation prediction arrays",
+    "raw dataset",
+    "test outputs"
+  ]
+}

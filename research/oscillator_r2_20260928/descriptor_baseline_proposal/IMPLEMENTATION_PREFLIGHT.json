@@ -1,0 +1,218 @@
+{
+  "passed": true,
+  "classification": "synthetic and fixed 16-row TRAIN-only; no full table/fit/val/test",
+  "time": 1790638938.1953874,
+  "protocol_sha256": "0f5f0fadacf82a377583b90708f851035cc98321eb5b9d38f987406700f6dcf2",
+  "authorization_sha256": "25d2d72d18ed0513ce4417497929b64bf7e9cb7a21cbe273d0612265c85d2606",
+  "config_sha256": "5a8c5db1dfa225f97ac08a976ec5bc3fdc98c4fecd53d88c8842217520e278cb",
+  "features_sha256": "78fcaa8a097a44c4fcc75dbbf9880e91b192e2a01c21e94f1378aff193bc9e5a",
+  "resource_guard_sha256": "6455800edc6e244f24b6051469921d34f22b17727673442dcab02270a0814878",
+  "preflight_script_sha256": "23343b148ade7ac83ea4b939df5f3fe673c11a56807ace1b75df52b2576c9734",
+  "source_seal_sha256": "5c2ab2f81fd427bdf2b3330797eaaf2c8ea7fa957917c2fc8698ac4e6e07139b",
+  "data_hashes_verified": {
+    "dataset.npz": "be8fadca203429575d70642b617730592693be40858dca7189c098a671596330",
+    "splits.json": "141d6c4ba9631de91b81076b56afc2239aa3632478895102d8024e13d79c93ca",
+    "normalization.json": "812a7b80d6259eb6106a5a534a8358a626713ec7ee53ad992fff6fcbabe59452",
+    "identity_audit_v2.json": "9d384425a90dd88fbc68f8b609a303872910bb21c69e0d0a19bcccaee49cb3c4"
+  },
+  "versions": {
+    "python": "3.10.19",
+    "sklearn": "1.7.2",
+    "rdkit": "2025.09.4",
+    "numpy": "2.2.6",
+    "psutil": "7.2.2"
+  },
+  "schema_columns": 803,
+  "schema_names_sha256": "116c7fe12065ebd7809b8b350468d1e635308b77ac7a37aabc6dfd9c6f490898",
+  "literal_methane_descriptor_sha256": "23db7694c5a0c75d3d636850673e35e9308958e3f45f10fcac20a40e6ba4f24e",
+  "synthetic": {
+    "max_abs_feature_difference": 0.0
+  },
+  "train_sample_rows": [
+    {
+      "dataset_index": 0,
+      "atoms": 5,
+      "edges": 4,
+      "components": 1,
+      "near_graph_threshold_pairs": 0,
+      "minimum_graph_threshold_gap_angstrom": 0.3014129763949638,
+      "descriptor_sha256": "462b655534d494f2598ada0faf2b66ec2a0b43aa93f44eaaab36581153fceec3"
+    },
+    {
+      "dataset_index": 8943,
+      "atoms": 14,
+      "edges": 13,
+      "components": 1,
+      "near_graph_threshold_pairs": 0,
+      "minimum_graph_threshold_gap_angstrom": 0.2963869911650887,
+      "descriptor_sha256": "f9b9e3ac66d16be0717bfd634e8587e1cd1a20fd768597e99c2e841bde10ffdc"
+    },
+    {
+      "dataset_index": 17872,
+      "atoms": 16,
+      "edges": 17,
+      "components": 1,
+      "near_graph_threshold_pairs": 0,
+      "minimum_graph_threshold_gap_angstrom": 0.05336834652555278,
+      "descriptor_sha256": "2d74704b64dea3a838d3d0a8a1f7a015d7d9cbd8a4ec16f8f1bf455bc593fbc8"
+    },
+    {
+      "dataset_index": 26778,
+      "atoms": 15,
+      "edges": 15,
+      "components": 1,
+      "near_graph_threshold_pairs": 0,
+      "minimum_graph_threshold_gap_angstrom": 0.16705939670883718,
+      "descriptor_sha256": "44edc33b83075bb132855a1662c176b607433ed929a84ecc4408cedfde3dc099"
+    },
+    {
+      "dataset_index": 35634,
+      "atoms": 18,
+      "edges": 19,
+      "components": 1,
+      "near_graph_threshold_pairs": 0,
+      "minimum_graph_threshold_gap_angstrom": 0.13659076148162597,
+      "descriptor_sha256": "c8bf8c22812509f8af4a7d4d73bdb23b8be38f95b31f38337c003d5b992c53e1"
+    },
+    {
+      "dataset_index": 44560,
+      "atoms": 17,
+      "edges": 19,
+      "components": 1,
+      "near_graph_threshold_pairs": 0,
+      "minimum_graph_threshold_gap_angstrom": 0.07133213246646597,
+      "descriptor_sha256": "19ccb561a67d3d62c82fdb76ef15676fe4e673188e2be0b7b7c2d019a70082a6"
+    },
+    {
+      "dataset_index": 53503,
+      "atoms": 21,
+      "edges": 21,
+      "components": 1,
+      "near_graph_threshold_pairs": 0,
+      "minimum_graph_threshold_gap_angstrom": 0.17888768873164218,
+      "descriptor_sha256": "fd90c7a91530e08aec017390ce7bfea227811936bb616bd13364189b71eff0d8"
+    },
+    {
+      "dataset_index": 62418,
+      "atoms": 15,
+      "edges": 15,
+      "components": 1,
+      "near_graph_threshold_pairs": 0,
+      "minimum_graph_threshold_gap_angstrom": 0.2952613368146346,
+      "descriptor_sha256": "1a2aef7840283a30614dc50075ac6dff205ed7777c6d06e972e01ed27f2c1e62"
+    },
+    {
+      "dataset_index": 71302,
+      "atoms": 20,
+      "edges": 22,
+      "components": 1,
+      "near_graph_threshold_pairs": 0,
+      "minimum_graph_threshold_gap_angstrom": 0.07459070468952533,
+      "descriptor_sha256": "4f3c73fe655b44c3fc68313d0e462503cb846316a51d4017bff5c76338a0052f"
+    },
+    {
+      "dataset_index": 80196,
+      "atoms": 20,
+      "edges": 21,
+      "components": 1,
+      "near_graph_threshold_pairs": 0,
+      "minimum_graph_threshold_gap_angstrom": 0.29376592198519913,
+      "descriptor_sha256": "13a6a138ce8a00c72f072f3d48cd7592bc000c56af7ae5f52c4c6bb06ac52547"
+    },
+    {
+      "dataset_index": 89153,
+      "atoms": 19,
+      "edges": 21,
+      "components": 1,
+      "near_graph_threshold_pairs": 0,
+      "minimum_graph_threshold_gap_angstrom": 0.172541434530195,
+      "descriptor_sha256": "6804699c576aed31a91ab91f180894115918e2fc9fa6ace7d17c14671069c3ae"
+    },
+    {
+      "dataset_index": 98071,
+      "atoms": 22,
+      "edges": 21,
+      "components": 1,
+      "near_graph_threshold_pairs": 0,
+      "minimum_graph_threshold_gap_angstrom": 0.29325373615122796,
+      "descriptor_sha256": "99f52089405f0bb096d4140499bf8e743c0cbfce4df5566bafd32ddf8f0f70de"
+    },
+    {
+      "dataset_index": 106993,
+      "atoms": 17,
+      "edges": 19,
+      "components": 1,
+      "near_graph_threshold_pairs": 0,
+      "minimum_graph_threshold_gap_angstrom": 0.1769685097301219,
+      "descriptor_sha256": "9242b39895b3af7c98b6bda77fd9f9d61f9b532c3e5a9754b8abed5fb47cc1ad"
+    },
+    {
+      "dataset_index": 115885,
+      "atoms": 21,
+      "edges": 21,
+      "components": 1,
+      "near_graph_threshold_pairs": 0,
+      "minimum_graph_threshold_gap_angstrom": 0.29007731116822466,
+      "descriptor_sha256": "e6d1d8cdcfc93976503beb764107ff6c47a67a72326b7a7dd602b4a49d80b3c8"
+    },
+    {
+      "dataset_index": 124817,
+      "atoms": 15,
+      "edges": 15,
+      "components": 1,
+      "near_graph_threshold_pairs": 0,
+      "minimum_graph_threshold_gap_angstrom": 0.24010043417046822,
+      "descriptor_sha256": "34837cba1df5a3a793ffa4413e5b98ec57e565fd947375d276658088b0e02d74"
+    },
+    {
+      "dataset_index": 133726,
+      "atoms": 16,
+      "edges": 21,
+      "components": 1,
+      "near_graph_threshold_pairs": 0,
+      "minimum_graph_threshold_gap_angstrom": 0.004754331435868897,
+      "descriptor_sha256": "136d1afe07c631766ef7604d6d3ba4d5b29e6df38407a505f3bb45d66e953f44"
+    }
+  ],
+  "max_train_invariance_abs": 0.0,
+  "near_threshold_train_pairs": 0,
+  "resource_admission_snapshot": {
+    "allowed_logical_cpus": 512,
+    "idle_below_50_percent": 511,
+    "selected_cpus": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "selected_percent_busy": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "available_bytes": 507920420864,
+    "process_limit_bytes": 17179869184,
+    "wall_limit_seconds": 14400,
+    "fit_cpu_limit_seconds": 115200
+  },
+  "synthetic_resource_guard_passed": true,
+  "negative_resource_and_direct_child_checks": {
+    "short_wall": "wall_clock_over_total_budget",
+    "low_memory": "address_space_or_allocation_failure",
+    "direct_child_returncode": 1,
+    "invalid_authorization_rejected": true
+  },
+  "full_feature_table": false,
+  "fit": false,
+  "validation_access": false,
+  "test_access": false
+}

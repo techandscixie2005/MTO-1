@@ -1,0 +1,113 @@
+{
+  "protocol_sha256": "0f5f0fadacf82a377583b90708f851035cc98321eb5b9d38f987406700f6dcf2",
+  "files_pre_fit": [
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/descriptor_baseline_proposal/CONDITIONAL_PROTOCOL.md",
+      "sha256": "0f5f0fadacf82a377583b90708f851035cc98321eb5b9d38f987406700f6dcf2"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/descriptor_baseline_proposal/IMPLEMENTATION_AUTHORIZATION.md",
+      "sha256": "25d2d72d18ed0513ce4417497929b64bf7e9cb7a21cbe273d0612265c85d2606"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/descriptor_baseline_proposal/IMPLEMENTATION_CONFIG.json",
+      "sha256": "5a8c5db1dfa225f97ac08a976ec5bc3fdc98c4fecd53d88c8842217520e278cb"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/descriptor_baseline_proposal/features.py",
+      "sha256": "78fcaa8a097a44c4fcc75dbbf9880e91b192e2a01c21e94f1378aff193bc9e5a"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/descriptor_baseline_proposal/array_io.py",
+      "sha256": "032d40ed53561cd4a4b2b0971a132bebc9106f87397613021932dad92b15fedd"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/descriptor_baseline_proposal/resource_guard.py",
+      "sha256": "6455800edc6e244f24b6051469921d34f22b17727673442dcab02270a0814878"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/descriptor_baseline_proposal/execution_gate.py",
+      "sha256": "7fbb5362a19d5d5df50dd8b938c827f5e739cee8c3f271c139554beb558af250"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/descriptor_baseline_proposal/preflight.py",
+      "sha256": "23343b148ade7ac83ea4b939df5f3fe673c11a56807ace1b75df52b2576c9734"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/descriptor_baseline_proposal/fit_worker.py",
+      "sha256": "d426385cdb2658f9979d0d8326294a0ee8a2ab25ec9db67853ec02f9c39aacf3"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/descriptor_baseline_proposal/run.py",
+      "sha256": "532c5f537acd0d65aa4967f97ba2cde26351717c18ffb750077609846c7c77c2"
+    },
+    {
+      "path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/dataset.npz",
+      "sha256": "be8fadca203429575d70642b617730592693be40858dca7189c098a671596330"
+    },
+    {
+      "path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/raw_labels.npz",
+      "sha256": "621dc8723fb6dc96681851a26e4f52fcb7747a4778e57a249a75d22f3af4c632"
+    },
+    {
+      "path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/splits.json",
+      "sha256": "141d6c4ba9631de91b81076b56afc2239aa3632478895102d8024e13d79c93ca"
+    },
+    {
+      "path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/normalization.json",
+      "sha256": "812a7b80d6259eb6106a5a534a8358a626713ec7ee53ad992fff6fcbabe59452"
+    },
+    {
+      "path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/identity_audit_v2.json",
+      "sha256": "9d384425a90dd88fbc68f8b609a303872910bb21c69e0d0a19bcccaee49cb3c4"
+    },
+    {
+      "path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/hashes.json",
+      "sha256": "ee33f69ef8de4dd917574f5df131103ba58638033f42abcb083b56205873314d"
+    }
+  ],
+  "files_post_fit": [
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/fixed_seven_sidecar/fixed_seven.py",
+      "sha256": "3a11c1f90918437241eb6c26332fa87c7ef7b95f0b3f86493a0c8e908e627755"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/fixed_seven_sidecar/IMPLEMENTATION_REVIEW.json",
+      "sha256": "35269c1df08e07851dd2b2cfa740d49c351f71785abfc2334bf2eb6557e640c4"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/postrun_geometry/postrun_geometry.py",
+      "sha256": "06da5aa70deebc10ed4e538b26d86f5ab3292c392c85e1ef2109a057db405092"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/postrun_geometry/FIXED_SEVEN_SECONDARY_PROVENANCE.json",
+      "sha256": "6a1ef5ae13b7c1675fed75c0461c8a5d1d4c0f596e1029d90b263411cc43201b"
+    },
+    {
+      "path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta0/val_predictions.npz",
+      "sha256": "25acae64bb4e3e541048a8705045f7f639d1113d537dbbef71672752e8065890",
+      "validation_array_verification_deferred_until_frozen_fit": true
+    },
+    {
+      "path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta01/val_predictions.npz",
+      "sha256": "9edffb5cd617469c78c8d83da7901ac90add69d89f27de7e8196a8736ae85500",
+      "validation_array_verification_deferred_until_frozen_fit": true
+    },
+    {
+      "path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta1/val_predictions.npz",
+      "sha256": "a3808b9ad425abf4f6fcfed840d0ed8d1ff6fcf1557037a4e01932c734dc68bb",
+      "validation_array_verification_deferred_until_frozen_fit": true
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/chan64_campaign_completion/runtime/G1_selected_native_val.npz",
+      "sha256": "7c5fef99d9547c3fbe42c26fc7506287fc37a6cbc58f10d1900447a4724cfb5d",
+      "validation_array_verification_deferred_until_frozen_fit": true
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/chan64_campaign_completion/runtime/G3_selected_native_val.npz",
+      "sha256": "55310a8f3924c5e5b2edd58c60a95dec0216b159672358ca2ff9609f5129adce",
+      "validation_array_verification_deferred_until_frozen_fit": true
+    }
+  ],
+  "postfit_five_array_contents_not_opened_in_preflight": true
+}

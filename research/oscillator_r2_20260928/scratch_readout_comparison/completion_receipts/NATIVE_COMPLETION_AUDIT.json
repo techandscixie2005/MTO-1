@@ -1,0 +1,112 @@
+{
+  "passed": true,
+  "classification": "native arm completed; paired scratch study pending; saved arrays only; no test",
+  "epochs": 100,
+  "steps": 188100,
+  "selected": {
+    "raw_f": {
+      "epoch": 21,
+      "metric": 103.94902793560838
+    },
+    "joint": {
+      "epoch": 21,
+      "metric": 0.6680877956843397
+    }
+  },
+  "sources_verified": 58,
+  "code_verified": 10,
+  "orders_verified": 100,
+  "replay_metric_tolerances": {
+    "f_sse_absolute": 2e-06,
+    "energy_sse_absolute": 0.0001
+  },
+  "terminal_sha256": "31ade59511a4fde1b323201de387ae873c31f83d5dfa49f595faae7cc5b31abb",
+  "launch_sha256": "cd006ac90880c3f2b7e17d5a65aa064070e8eed72f5b7d272949b0378507b837",
+  "history_sha256": "a842c836c3fa4c75ba4b19704389ad404207981e477166271e57b6fcf81efa28",
+  "fixed_metrics_sha256": "4b1baf0940d08349073537372ecb830d6132dbff96810f0a6fb64ac27150c71b",
+  "saved_validation": {
+    "initial": {
+      "sse": 158.0511526973256,
+      "r2": 0.002241606562700449,
+      "mae": 0.024611250635125464,
+      "energy_mae": 0.5592830654660749,
+      "saved_minus_fixed_f_sse": 0.0,
+      "saved_minus_fixed_energy_sse": 0.0
+    },
+    "raw_f": {
+      "sse": 103.94902793560838,
+      "r2": 0.34378197600986826,
+      "mae": 0.01870419276519841,
+      "energy_mae": 0.12093616907601294,
+      "saved_minus_fixed_f_sse": 3.3925573461601743e-09,
+      "saved_minus_fixed_energy_sse": 3.611006377468584e-05
+    },
+    "joint": {
+      "sse": 103.94902793560838,
+      "r2": 0.34378197600986826,
+      "mae": 0.01870419276519841,
+      "energy_mae": 0.12093616907601294,
+      "saved_minus_fixed_f_sse": 6.478576750623688e-07,
+      "saved_minus_fixed_energy_sse": 2.232160659332294e-05
+    },
+    "final100": {
+      "sse": 122.36526335030491,
+      "r2": 0.22752244137857391,
+      "mae": 0.018408858771086504,
+      "energy_mae": 0.10870417247601907,
+      "saved_minus_fixed_f_sse": -9.390401345399368e-07,
+      "saved_minus_fixed_energy_sse": 2.7032102707380545e-05
+    }
+  },
+  "fixed_full_train": {
+    "initial": {
+      "f": {
+        "count": 1203550,
+        "sse": 3015.3378286892876,
+        "sst": 3022.091476089505,
+        "r2": 0.002234759421960386,
+        "mae": 0.024802033765859825,
+        "rmse": 0.05005366924513699
+      },
+      "energy_mae": 0.5621147443126087
+    },
+    "raw_f": {
+      "f": {
+        "count": 1203550,
+        "sse": 1255.2386608193915,
+        "sst": 3022.091476089505,
+        "r2": 0.5846457095191465,
+        "mae": 0.017040846533452003,
+        "rmse": 0.032294687379948846
+      },
+      "energy_mae": 0.11930985201109111
+    },
+    "joint": {
+      "f": {
+        "count": 1203550,
+        "sse": 1255.2386648808315,
+        "sst": 3022.091476089505,
+        "r2": 0.5846457081752295,
+        "mae": 0.01704084651929431,
+        "rmse": 0.03229468743219506
+      },
+      "energy_mae": 0.11930985237940131
+    },
+    "final100": {
+      "f": {
+        "count": 1203550,
+        "sse": 259.27136960471444,
+        "sst": 3022.091476089505,
+        "r2": 0.9142079676753518,
+        "mae": 0.009519360195536996,
+        "rmse": 0.014677267594576385
+      },
+      "energy_mae": 0.09909910885652605
+    }
+  },
+  "limits": [
+    "Train metrics are terminal fixed-checkpoint aggregates; no train prediction arrays saved for independent elementwise check.",
+    "MTO arm pending; no paired outcome or model promotion.",
+    "Replay-versus-array tolerances compare saved validation arrays with fixed-checkpoint replays already performed during authorized training completion; this audit ran no inference."
+  ]
+}

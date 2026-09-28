@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "time": 1790638199.4411147,
+  "classification": "synthetic only; no active/completed family outcome arrays opened",
+  "adapter_sha256": "cb8d7a7c50b186fbbb0d207fe0f53cad8e21b58d23e25c581e43273e3e755a41",
+  "protocol_sha256": "6196a76e85a84c74c421bda5dba1abe2aafc9a53f577c52240efb43dcc0e68cb",
+  "checks": [
+    "hash",
+    "not-all-valid reference mask",
+    "ids",
+    "truth",
+    "E truth",
+    "nonfinite",
+    "wrong optional mask",
+    "nonseed original loader retained"
+  ],
+  "test_access": false
+}

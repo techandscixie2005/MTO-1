@@ -1,0 +1,60 @@
+{
+  "classification": "one reviewed fixed 803-feature CPU descriptor probe; training started, no outcome claim",
+  "time": 1790639133.795713,
+  "supervisor": {
+    "pid": 967854,
+    "start_ticks": 1248673500,
+    "cwd": "/home/inspur/MTO-1/research/oscillator_r2_20260928/descriptor_baseline_proposal",
+    "cmdline": [
+      "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/bin/python",
+      "run.py"
+    ]
+  },
+  "worker": {
+    "pid": 967855,
+    "start_ticks": 1248673614,
+    "cwd": "/home/inspur/MTO-1/research/oscillator_r2_20260928/descriptor_baseline_proposal",
+    "cmdline": [
+      "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/bin/python",
+      "/home/inspur/MTO-1/research/oscillator_r2_20260928/descriptor_baseline_proposal/fit_worker.py",
+      "--phase",
+      "train"
+    ]
+  },
+  "authorization_sha256": "71ba12f04b4c57d5d33a443efd95208ecc11897f9c67427ea8246e9b0633cf6c",
+  "implementation_review_sha256": "d617e2b36691fa040a6a3d976b3331fd3cd8c844c556a110962c848faa702879",
+  "source_seal_sha256": "5c2ab2f81fd427bdf2b3330797eaaf2c8ea7fa957917c2fc8698ac4e6e07139b",
+  "preflight_sha256": "cf5bfa41dc83e8d257d4e7416d98d63a93a848381efc169048d976b441b4b948",
+  "supervisor_started_sha256": "0a57fefbc5e9e1d563774c15da559710dc4efd90d6736db39af0f105fc347139",
+  "supervisor_phase_train_sha256": "3088661efc9037637cf99bd0b0ca36b5f76974f778f91a71ed8d730293d41e24",
+  "resource_admission": {
+    "allowed_logical_cpus": 512,
+    "idle_below_50_percent": 511,
+    "selected_cpus": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "selected_percent_busy": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "available_bytes": 506344353792,
+    "process_limit_bytes": 17179869184,
+    "wall_limit_seconds": 14400,
+    "fit_cpu_limit_seconds": 115200
+  },
+  "stage": "TRAIN_FEATURE_CONSTRUCTION",
+  "test_access": false
+}

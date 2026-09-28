@@ -1,0 +1,28 @@
+{
+  "approved": true,
+  "one_run": true,
+  "classification": "Root conditional single full descriptor fit authorization after independent exact-code PASS; timing wait for scratch/seed completion lifted due native overfit",
+  "time": "2026-09-29T07:44:21.615763+08:00",
+  "review_sha256": "d617e2b36691fa040a6a3d976b3331fd3cd8c844c556a110962c848faa702879",
+  "protocol_sha256": "0f5f0fadacf82a377583b90708f851035cc98321eb5b9d38f987406700f6dcf2",
+  "source_seal_sha256": "5c2ab2f81fd427bdf2b3330797eaaf2c8ea7fa957917c2fc8698ac4e6e07139b",
+  "preflight_sha256": "cf5bfa41dc83e8d257d4e7416d98d63a93a848381efc169048d976b441b4b948",
+  "fit_timing_authorization_sha256": "b8f35e52612c9606b6540a20e65406042845af53527cf650cdbbe99d3fd4ae45",
+  "handoff_sha256": "5ad296e40efd7cc7311e86e0b97e855e8781c6cbec0741a2fd37bc91e2eb52cf",
+  "settings": {
+    "features": 803,
+    "trees": 256,
+    "max_depth": 24,
+    "min_samples_leaf": 4,
+    "max_features": "sqrt",
+    "cpu_workers": 8,
+    "process_limit_bytes": 17179869184,
+    "wall_limit_seconds": 14400
+  },
+  "training_fit_limit": 1,
+  "validation_references": [
+    "D standalone",
+    "exact half D plus half frozen F5"
+  ],
+  "test_access": false
+}

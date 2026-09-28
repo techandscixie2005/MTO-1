@@ -1,0 +1,116 @@
+{
+  "passed": true,
+  "classification": "seed23 complete; seed37 pending; no family ensemble, test or audit-time inference",
+  "epochs": 100,
+  "steps": 188100,
+  "selected": {
+    "legacy": {
+      "epoch": 53,
+      "metric": 0.1783892699666912
+    },
+    "raw_f": {
+      "epoch": 53,
+      "sse": 100.00044842171992
+    }
+  },
+  "sources_verified": 41,
+  "code_verified": 9,
+  "orders_verified": 100,
+  "selected_model_tensors_bitwise_identical": 178,
+  "selected_checkpoint_metadata_difference": {
+    "legacy": {
+      "selection": "legacy",
+      "metric": 0.1783892699666912
+    },
+    "raw_f": {
+      "selection": "raw_f_secondary",
+      "metric": 100.00044842171992
+    }
+  },
+  "terminal_sha256": "e68fe95736dd448d35318b691f63c3a98ab51b26db26e2b495cc6d4026ee8697",
+  "launch_sha256": "af79442051f60dc0fd29e11c670ca3949237f312323f09a0d2b2829a8dfdfa3d",
+  "history_sha256": "0c24673f8bd4397ad85c2cf0bd3eeabd35c86b3624d67929772fa37bd876e768",
+  "fixed_metrics_sha256": "3a86cc03c0faac6cf40f98887dc3c5890a0a58fc9255c08803d0ff145f40cf12",
+  "saved_validation": {
+    "initial": {
+      "sse": 167.94390134577117,
+      "r2": -0.06021015560226539,
+      "mae": 0.01999689533107419,
+      "energy_mae": 0.5582145155387191,
+      "saved_minus_completion_replay_f_sse": -2.6298977218175423e-08
+    },
+    "legacy": {
+      "sse": 100.00044842171992,
+      "r2": 0.3687088954590514,
+      "mae": 0.017704880738982895,
+      "energy_mae": 0.08796236261559219,
+      "saved_minus_completion_replay_f_sse": -7.466136608513807e-06
+    },
+    "raw_f": {
+      "sse": 100.00044842171992,
+      "r2": 0.3687088954590514,
+      "mae": 0.017704880738982895,
+      "energy_mae": 0.08796236261559219,
+      "saved_minus_completion_replay_f_sse": 1.0700000387942055e-06
+    },
+    "final100": {
+      "sse": 105.06915517010654,
+      "r2": 0.3367107441278805,
+      "mae": 0.017416984575321055,
+      "energy_mae": 0.08468271940357129,
+      "saved_minus_completion_replay_f_sse": 6.2795748618782454e-06
+    }
+  },
+  "fixed_full_train": {
+    "initial": {
+      "f": {
+        "count": 1203550,
+        "sse": 3199.2772865451625,
+        "sst": 3022.091476089505,
+        "r2": -0.0586301943066696,
+        "mae": 0.020179397389644662,
+        "rmse": 0.051557740079688164
+      },
+      "energy_mae": 0.5611001460068088
+    },
+    "legacy": {
+      "f": {
+        "count": 1203550,
+        "sse": 669.132277296192,
+        "sst": 3022.091476089505,
+        "r2": 0.7785863589536247,
+        "mae": 0.01417447011954416,
+        "rmse": 0.02357892066677118
+      },
+      "energy_mae": 0.08206601914079943
+    },
+    "raw_f": {
+      "f": {
+        "count": 1203550,
+        "sse": 669.1322745573369,
+        "sst": 3022.091476089505,
+        "r2": 0.7785863598599028,
+        "mae": 0.014174470119776848,
+        "rmse": 0.023578920618515214
+      },
+      "energy_mae": 0.08206601910093259
+    },
+    "final100": {
+      "f": {
+        "count": 1203550,
+        "sse": 350.3758399772149,
+        "sst": 3022.091476089505,
+        "r2": 0.8840618019840383,
+        "mae": 0.011139665689493166,
+        "rmse": 0.01706219917446263
+      },
+      "energy_mae": 0.07338958307270885
+    }
+  },
+  "limits": [
+    "Full-train figures are completion-time aggregates, not independently recomputed from saved train predictions.",
+    "The selected checkpoint model tensors/buffers are bitwise identical; serialized checkpoint hashes differ only because metric and selection metadata differ. Selected validation array bytes are identical.",
+    "Replay comparisons use already-recorded completion-time replays; this audit ran no inference.",
+    "Seed37 and the prespecified three-seed ensemble remain pending."
+  ]
+}

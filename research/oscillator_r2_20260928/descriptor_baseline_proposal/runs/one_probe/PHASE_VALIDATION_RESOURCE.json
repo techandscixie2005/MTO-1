@@ -1,0 +1,39 @@
+{
+  "child_pid": 971689,
+  "returncode": 0,
+  "elapsed_seconds": 15.287903629243374,
+  "peak_tree_rss_bytes": 1639878656,
+  "peak_tree_cpu_seconds": 14.95,
+  "resource_limit_bytes": 17179869184,
+  "phase_wall_budget_seconds": 14276.953461049125,
+  "phase_cpu_limit_seconds": null,
+  "admission": {
+    "allowed_logical_cpus": 512,
+    "idle_below_50_percent": 510,
+    "selected_cpus": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "selected_percent_busy": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "available_bytes": 506487021568,
+    "process_limit_bytes": 17179869184,
+    "wall_limit_seconds": 14400,
+    "fit_cpu_limit_seconds": 115200
+  },
+  "resource_failure": null
+}

@@ -1,0 +1,211 @@
+{
+  "classification": "one reviewed completed fixed descriptor CPU probe; lightweight code/config/provenance/metrics/resource receipts only",
+  "time": 1790639559.535048,
+  "root": "/home/inspur/MTO-1/research/oscillator_r2_20260928",
+  "count": 38,
+  "total_bytes": 167463,
+  "entries": [
+    {
+      "path": "descriptor_baseline_proposal/CONDITIONAL_PROTOCOL.md",
+      "bytes": 10841,
+      "sha256": "0f5f0fadacf82a377583b90708f851035cc98321eb5b9d38f987406700f6dcf2"
+    },
+    {
+      "path": "descriptor_baseline_proposal/PROVENANCE.json",
+      "bytes": 1506,
+      "sha256": "312b63ec3548d0293c9cb66857d7d23d28f5f0df8c32e574482599fb02000514"
+    },
+    {
+      "path": "descriptor_baseline_proposal/FEASIBILITY.md",
+      "bytes": 3994,
+      "sha256": "86f79009b41e69f2769cb1e631d0b87fc8c744487258be0ce256bb9a9d690162"
+    },
+    {
+      "path": "descriptor_baseline_proposal/IMPLEMENTATION_AUTHORIZATION.md",
+      "bytes": 1428,
+      "sha256": "25d2d72d18ed0513ce4417497929b64bf7e9cb7a21cbe273d0612265c85d2606"
+    },
+    {
+      "path": "descriptor_baseline_proposal/FIT_TIMING_AUTHORIZATION.md",
+      "bytes": 1262,
+      "sha256": "b8f35e52612c9606b6540a20e65406042845af53527cf650cdbbe99d3fd4ae45"
+    },
+    {
+      "path": "descriptor_baseline_proposal/IMPLEMENTATION_CONFIG.json",
+      "bytes": 1369,
+      "sha256": "5a8c5db1dfa225f97ac08a976ec5bc3fdc98c4fecd53d88c8842217520e278cb"
+    },
+    {
+      "path": "descriptor_baseline_proposal/features.py",
+      "bytes": 5134,
+      "sha256": "78fcaa8a097a44c4fcc75dbbf9880e91b192e2a01c21e94f1378aff193bc9e5a"
+    },
+    {
+      "path": "descriptor_baseline_proposal/array_io.py",
+      "bytes": 1498,
+      "sha256": "032d40ed53561cd4a4b2b0971a132bebc9106f87397613021932dad92b15fedd"
+    },
+    {
+      "path": "descriptor_baseline_proposal/resource_guard.py",
+      "bytes": 4206,
+      "sha256": "6455800edc6e244f24b6051469921d34f22b17727673442dcab02270a0814878"
+    },
+    {
+      "path": "descriptor_baseline_proposal/execution_gate.py",
+      "bytes": 2899,
+      "sha256": "7fbb5362a19d5d5df50dd8b938c827f5e739cee8c3f271c139554beb558af250"
+    },
+    {
+      "path": "descriptor_baseline_proposal/fit_worker.py",
+      "bytes": 9565,
+      "sha256": "d426385cdb2658f9979d0d8326294a0ee8a2ab25ec9db67853ec02f9c39aacf3"
+    },
+    {
+      "path": "descriptor_baseline_proposal/run.py",
+      "bytes": 4205,
+      "sha256": "532c5f537acd0d65aa4967f97ba2cde26351717c18ffb750077609846c7c77c2"
+    },
+    {
+      "path": "descriptor_baseline_proposal/preflight.py",
+      "bytes": 9616,
+      "sha256": "23343b148ade7ac83ea4b939df5f3fe673c11a56807ace1b75df52b2576c9734"
+    },
+    {
+      "path": "descriptor_baseline_proposal/SOURCE_SEAL.json",
+      "bytes": 5661,
+      "sha256": "5c2ab2f81fd427bdf2b3330797eaaf2c8ea7fa957917c2fc8698ac4e6e07139b"
+    },
+    {
+      "path": "descriptor_baseline_proposal/IMPLEMENTATION_PREFLIGHT.json",
+      "bytes": 7422,
+      "sha256": "cf5bfa41dc83e8d257d4e7416d98d63a93a848381efc169048d976b441b4b948"
+    },
+    {
+      "path": "descriptor_baseline_proposal/IMPLEMENTATION_HANDOFF.json",
+      "bytes": 2248,
+      "sha256": "5ad296e40efd7cc7311e86e0b97e855e8781c6cbec0741a2fd37bc91e2eb52cf"
+    },
+    {
+      "path": "descriptor_baseline_proposal/IMPLEMENTATION_REVIEW.json",
+      "bytes": 4269,
+      "sha256": "d617e2b36691fa040a6a3d976b3331fd3cd8c844c556a110962c848faa702879"
+    },
+    {
+      "path": "descriptor_baseline_proposal/IMPLEMENTATION_REVIEW.md",
+      "bytes": 2625,
+      "sha256": "e7a0ef217d7da34be7ed27c45c81c26d0b812be0bc81d4b24645432f24349a42"
+    },
+    {
+      "path": "descriptor_baseline_proposal/FIT_AUTHORIZATION.json",
+      "bytes": 1195,
+      "sha256": "71ba12f04b4c57d5d33a443efd95208ecc11897f9c67427ea8246e9b0633cf6c"
+    },
+    {
+      "path": "descriptor_baseline_proposal/audit_completion.py",
+      "bytes": 7597,
+      "sha256": "054a5a45b38c33758b4c4d4e0df91a08502954bc1cc60ccc4ff55ef8defcfba9"
+    },
+    {
+      "path": "descriptor_baseline_proposal/completion_receipts/DESCRIPTOR_COMPLETION_AUDIT.json",
+      "bytes": 2126,
+      "sha256": "90f654b4eb35892be696cf6993bc53eb40348145e0eaf03447244805c40c4b63"
+    },
+    {
+      "path": "descriptor_baseline_proposal/completion_receipts/DESCRIPTOR_COMPLETION_AUDIT.md",
+      "bytes": 611,
+      "sha256": "8d336420a1c56a918c92785f395f7d894828c3a98a014681d9fa674221041c2f"
+    },
+    {
+      "path": "descriptor_baseline_proposal/independent_completion_audit.py",
+      "bytes": 9348,
+      "sha256": "71c816ccf7788c5d0875577013d25fa9d2500ae4a2b74f7392909b17499a4ea7"
+    },
+    {
+      "path": "descriptor_baseline_proposal/INDEPENDENT_COMPLETION_AUDIT.json",
+      "bytes": 22828,
+      "sha256": "80d398a4cc362147671f1163f3976fd4c34f56f0e8ce983a98d2792478bc1e71"
+    },
+    {
+      "path": "descriptor_baseline_proposal/SCIENTIFIC_CLOSEOUT.md",
+      "bytes": 5607,
+      "sha256": "5d52e6d296f8aafde34ffb66f1c4467544d2d1f9ce73b606a4ba13fe9ffbe664"
+    },
+    {
+      "path": "descriptor_baseline_proposal/SCIENTIFIC_PROVENANCE.json",
+      "bytes": 1490,
+      "sha256": "da4d90f547da3e4aa3bfba2cb600688d667ab3713a65803042b70ec221442f1f"
+    },
+    {
+      "path": "descriptor_baseline_proposal/runs/one_probe/DESCRIPTOR_LAUNCH_RECEIPT.json",
+      "bytes": 1937,
+      "sha256": "74b36401f81fc9fe1df652037647870e212b07ef01fd68c673d76b79af02a47e"
+    },
+    {
+      "path": "descriptor_baseline_proposal/runs/one_probe/SUPERVISOR_STARTED.json",
+      "bytes": 1056,
+      "sha256": "0a57fefbc5e9e1d563774c15da559710dc4efd90d6736db39af0f105fc347139"
+    },
+    {
+      "path": "descriptor_baseline_proposal/runs/one_probe/TRAIN_STARTED.json",
+      "bytes": 153,
+      "sha256": "39e05b9dabe381986467376f643dbf16a14fc43555c744d9b27b37d9626e5ff8"
+    },
+    {
+      "path": "descriptor_baseline_proposal/runs/one_probe/FIT_FREEZE.json",
+      "bytes": 2082,
+      "sha256": "12e992ad9b30aa3071361a5a35c590771fe60380d2b7657d43806f910a58d3a0"
+    },
+    {
+      "path": "descriptor_baseline_proposal/runs/one_probe/VALIDATION_STARTED.json",
+      "bytes": 156,
+      "sha256": "2818bf1782fe27f707b041af40f04c1907db5b883a7372eb885d0f24a56e7d82"
+    },
+    {
+      "path": "descriptor_baseline_proposal/runs/one_probe/VALIDATION_RESULTS.json",
+      "bytes": 28195,
+      "sha256": "641b5a9eba1289c00d40b9878f0855e3c691e57ed047dc339ea55b5825b945c2"
+    },
+    {
+      "path": "descriptor_baseline_proposal/runs/one_probe/PHASE_TRAIN_RESOURCE.json",
+      "bytes": 773,
+      "sha256": "b62099beb5a15b22eba9e9060bc1f138637591a7dd304fc2733025e74f9541a9"
+    },
+    {
+      "path": "descriptor_baseline_proposal/runs/one_probe/PHASE_VALIDATION_RESOURCE.json",
+      "bytes": 771,
+      "sha256": "e06925123d6d4e27128f37359f1292bb55e2a42d74abb6c68efcccab21d47c4b"
+    },
+    {
+      "path": "descriptor_baseline_proposal/runs/one_probe/PROBE_COMPLETE.json",
+      "bytes": 668,
+      "sha256": "f56e6e4e6960bc8dd0737be86f4c73014e8937ee1db9dccaf057fa6c6fead592"
+    },
+    {
+      "path": "descriptor_baseline_proposal/runs/one_probe/train.log",
+      "bytes": 960,
+      "sha256": "76d09f74076398e87f7cbc20d9c3c8abc819be7239487a7080912a3b7d5747f5"
+    },
+    {
+      "path": "descriptor_baseline_proposal/runs/one_probe/validation.log",
+      "bytes": 95,
+      "sha256": "d35562685ff482472c994c941c99cc225231463d16b9841c0d690df3f65dccd3"
+    },
+    {
+      "path": "descriptor_baseline_proposal/SUPERVISOR.log",
+      "bytes": 67,
+      "sha256": "1d3ff3692cc18a963aba2d4639116aa080236e89ac3c9758ad71b246b5ba68be"
+    }
+  ],
+  "excluded": [
+    "FOREST.joblib",
+    "TRAIN_FEATURES.npy",
+    "VAL_FEATURES.npy",
+    "TRAIN_PREDICTIONS.npz",
+    "VAL_PREDICTIONS.npz",
+    "supervisor phase tokens",
+    "raw datasets",
+    "test data",
+    "caches"
+  ],
+  "science": "Standalone D R2 .214527379; fixed half D/F5 .411543397; F5 .487699605 provisional validation candidate; no further fit/test"
+}

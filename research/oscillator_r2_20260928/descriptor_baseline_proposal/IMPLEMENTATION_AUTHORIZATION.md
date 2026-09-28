@@ -1,0 +1,7 @@
+# Descriptor implementation authorization addendum
+
+Recorded 2026-09-29T07:10:09+08:00. The project orchestrator authorizes isolated implementation and TRAIN-only/synthetic preflight of the already frozen [conditional protocol](CONDITIONAL_PROTOCOL.md), SHA-256 0f5f0fadacf82a377583b90708f851035cc98321eb5b9d38f987406700f6dcf2. This addendum supersedes that protocol's earlier design-only status **only for implementation and bounded preflight**. The fixed 803-feature schema, learner settings and scientific comparisons remain unchanged.
+
+Allowed now: feature extraction code, source/data/version/resource gates, synthetic geometry/hash fixtures, and a fixed small TRAIN-only sample for correctness checks. No full feature table, forest fit, validation feature/prediction pass, test access, trial run, or training launch is authorized. Root reserves the fit decision until completed seed/scratch family review and an independent exact-hash implementation/preflight PASS. Terminal events from active studies take priority.
+
+The preflight may load the frozen dataset's Z/position storage for indexed TRAIN sample access; it must not use val/test indices or any label tensor. It may inspect the existing train split and fixed input hashes. Any graph threshold ambiguity, unsupported element, nonfinite feature, missing row, resource-cap issue, or invariance failure is a review issue; do not filter rows or alter fixed settings.

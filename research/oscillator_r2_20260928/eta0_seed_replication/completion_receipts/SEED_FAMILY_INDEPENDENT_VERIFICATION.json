@@ -1,0 +1,402 @@
+{
+  "passed": true,
+  "timestamp": "2026-09-29T07:38:36.248776+08:00",
+  "scope": "Saved validation arrays, CPU checkpoint tensor reads and fixed source hashes only; no inference/test or active scratch results",
+  "script_sha256": "5c81c607cbd313f9277d3c11b47324d931f13e9cf98d3f27618456d2d6949b3d",
+  "sources_and_code_verified": 48,
+  "seed_checks": {
+    "23": {
+      "epochs": 100,
+      "steps": 188100,
+      "orders": 100,
+      "model_tensors_equal": 178,
+      "metadata_only_differences": {
+        "legacy": [
+          "legacy",
+          0.1783892699666912
+        ],
+        "raw_f": [
+          "raw_f_secondary",
+          100.00044842171992
+        ]
+      },
+      "validation": {
+        "epoch0": {
+          "sse": 167.94390134577117,
+          "r2": -0.06021015560226539,
+          "mae": 0.01999689533107419
+        },
+        "best_legacy": {
+          "sse": 100.00044842171992,
+          "r2": 0.3687088954590514,
+          "mae": 0.017704880738982895
+        },
+        "best_raw_f": {
+          "sse": 100.00044842171992,
+          "r2": 0.3687088954590514,
+          "mae": 0.017704880738982895
+        },
+        "final100": {
+          "sse": 105.06915517010654,
+          "r2": 0.3367107441278805,
+          "mae": 0.017416984575321055
+        }
+      },
+      "terminal_sha256": "e68fe95736dd448d35318b691f63c3a98ab51b26db26e2b495cc6d4026ee8697"
+    },
+    "37": {
+      "epochs": 100,
+      "steps": 188100,
+      "orders": 100,
+      "model_tensors_equal": 178,
+      "metadata_only_differences": {
+        "legacy": [
+          "legacy",
+          0.17288918703607267
+        ],
+        "raw_f": [
+          "raw_f_secondary",
+          95.92205202626212
+        ]
+      },
+      "validation": {
+        "epoch0": {
+          "sse": 166.17269873153742,
+          "r2": -0.04902876119501198,
+          "mae": 0.02024329933392784
+        },
+        "best_legacy": {
+          "sse": 95.92205202626212,
+          "r2": 0.3944553336588742,
+          "mae": 0.017497954125630093
+        },
+        "best_raw_f": {
+          "sse": 95.92205202626212,
+          "r2": 0.3944553336588742,
+          "mae": 0.017497954125630093
+        },
+        "final100": {
+          "sse": 102.53822546139362,
+          "r2": 0.3526882065947572,
+          "mae": 0.01722316814605699
+        }
+      },
+      "terminal_sha256": "48294d9a1340ee874af8e975bf7973965d9b40050312bc4fb1372a0e69d1adb2"
+    }
+  },
+  "metrics": {
+    "eta0": {
+      "sse": 94.20512092938401,
+      "r2": 0.4052941183410983
+    },
+    "equal3": {
+      "sse": 87.2150742627189,
+      "r2": 0.4494214632744171
+    },
+    "seed3": {
+      "sse": 86.65532816343206,
+      "r2": 0.45295507476174857
+    },
+    "F5": {
+      "sse": 81.15157788267025,
+      "r2": 0.48769960489832564
+    },
+    "F7": {
+      "sse": 81.31135500588225,
+      "r2": 0.4866909506554217
+    }
+  },
+  "bootstrap": {
+    "seed3_minus_eta0": {
+      "molecule": {
+        "ci": [
+          -0.00826063938089732,
+          0.04993027235870394,
+          0.08252589621510609
+        ],
+        "positive_fraction": 0.953
+      },
+      "group": {
+        "ci": [
+          -0.0033441823836850623,
+          0.04984738199889052,
+          0.08246125239927221
+        ],
+        "positive_fraction": 0.967
+      }
+    },
+    "seed3_minus_equal3": {
+      "molecule": {
+        "ci": [
+          -0.03988813004253984,
+          0.005215224367479623,
+          0.029298182981040078
+        ],
+        "positive_fraction": 0.6385
+      },
+      "group": {
+        "ci": [
+          -0.03747978619586427,
+          0.005012759828604611,
+          0.029682443809164825
+        ],
+        "positive_fraction": 0.618
+      }
+    },
+    "F7_minus_F5": {
+      "molecule": {
+        "ci": [
+          -0.020300527468791577,
+          -0.00022038459592336264,
+          0.010452893886135762
+        ],
+        "positive_fraction": 0.487
+      },
+      "group": {
+        "ci": [
+          -0.02051874411058323,
+          -0.00018673044897410713,
+          0.01043793128506304
+        ],
+        "positive_fraction": 0.488
+      }
+    },
+    "F7_minus_seed3_primary": {
+      "molecule": {
+        "ci": [
+          0.014627632368699106,
+          0.03228350214347732,
+          0.06910504555160722
+        ],
+        "positive_fraction": 1.0
+      },
+      "group": {
+        "ci": [
+          0.014659339630814639,
+          0.03280286305386118,
+          0.0678835487110043
+        ],
+        "positive_fraction": 1.0
+      }
+    }
+  },
+  "concentration": {
+    "seed3_vs_equal3": {
+      "per_state_sse_gain": [
+        0.18736112949172876,
+        0.5837346128714946,
+        0.5613118581768864,
+        0.3237993695409822,
+        0.5791505257578266,
+        0.41444449851577086,
+        -2.2481844082047564,
+        -0.21526460592266838,
+        0.3854497187202834,
+        -0.012056599660706475
+      ],
+      "tails_sse_gain": {
+        "belowq90": -1.5150732778213116,
+        "q90": 2.074819377108156,
+        "q99": 0.5142192667151402
+      },
+      "improved": 3750,
+      "worsened": 2936,
+      "net_gain": 0.5597460992868432,
+      "case14562": {
+        "ref_sse": 3.5965408966908905,
+        "candidate_sse": 6.257275739363844,
+        "gain": -2.660734842672953
+      },
+      "max_gain_id": 129198,
+      "max_gain": 0.3272328201566519,
+      "max_loss_id": 14562,
+      "max_loss": -2.660734842672953,
+      "q2_bins": [
+        {
+          "count": 1,
+          "ref_sse": 3.5965408966908905,
+          "candidate_sse": 6.257275739363844
+        },
+        {
+          "count": 5,
+          "ref_sse": 1.6603773944766307,
+          "candidate_sse": 1.7772170575787984
+        },
+        {
+          "count": 59,
+          "ref_sse": 3.288753613377514,
+          "candidate_sse": 3.507941289260538
+        },
+        {
+          "count": 597,
+          "ref_sse": 11.592638094162169,
+          "candidate_sse": 11.261940620066644
+        },
+        {
+          "count": 2648,
+          "ref_sse": 30.844862418048177,
+          "candidate_sse": 29.105126020278462
+        },
+        {
+          "count": 3376,
+          "ref_sse": 36.23190184596352,
+          "candidate_sse": 34.745827436883765
+        }
+      ]
+    },
+    "F7_vs_F5": {
+      "per_state_sse_gain": [
+        0.049464290407785494,
+        0.16542650740430898,
+        0.1310843693961591,
+        0.15704350559633093,
+        0.2129275117842538,
+        0.15519340711464558,
+        -1.1910740196794396,
+        0.13582670854004011,
+        -0.00895570900082993,
+        0.033286305224766784
+      ],
+      "tails_sse_gain": {
+        "belowq90": -1.1339119581350725,
+        "q90": 0.9741348349230894,
+        "q99": 0.5088636512678595
+      },
+      "improved": 3795,
+      "worsened": 2891,
+      "net_gain": -0.15977712321198323,
+      "case14562": {
+        "ref_sse": 2.622175363530418,
+        "candidate_sse": 3.9421990163182494,
+        "gain": -1.3200236527878315
+      },
+      "max_gain_id": 52479,
+      "max_gain": 0.10532282813315492,
+      "max_loss_id": 14562,
+      "max_loss": -1.3200236527878315,
+      "q2_bins": [
+        {
+          "count": 1,
+          "ref_sse": 2.622175363530418,
+          "candidate_sse": 3.9421990163182494
+        },
+        {
+          "count": 5,
+          "ref_sse": 1.5191230596583667,
+          "candidate_sse": 1.5539827320456463
+        },
+        {
+          "count": 59,
+          "ref_sse": 3.240792437980109,
+          "candidate_sse": 3.4300696301568716
+        },
+        {
+          "count": 597,
+          "ref_sse": 11.318840910199814,
+          "candidate_sse": 11.043924141668796
+        },
+        {
+          "count": 2648,
+          "ref_sse": 28.531345384533775,
+          "candidate_sse": 27.932723712015516
+        },
+        {
+          "count": 3376,
+          "ref_sse": 33.91930072676779,
+          "candidate_sse": 33.408455773677176
+        }
+      ]
+    },
+    "F7_vs_seed3": {
+      "per_state_sse_gain": [
+        0.141808142156628,
+        0.13004337583422607,
+        0.36088456176084976,
+        0.45642683590037936,
+        0.3444842947390374,
+        0.2522285890956088,
+        2.654558408362683,
+        0.28319938223822017,
+        0.25452934260419197,
+        0.46581022485796936
+      ],
+      "tails_sse_gain": {
+        "belowq90": 5.246041381321628,
+        "q90": 0.09793177622818097,
+        "q99": -0.6292392326340395
+      },
+      "improved": 4038,
+      "worsened": 2648,
+      "net_gain": 5.343973157549808,
+      "case14562": {
+        "ref_sse": 6.257275739363844,
+        "candidate_sse": 3.9421990163182494,
+        "gain": 2.3150767230455944
+      },
+      "max_gain_id": 14562,
+      "max_gain": 2.3150767230455944,
+      "max_loss_id": 52479,
+      "max_loss": -0.13168626907634365,
+      "q2_bins": [
+        {
+          "count": 1,
+          "ref_sse": 6.257275739363844,
+          "candidate_sse": 3.9421990163182494
+        },
+        {
+          "count": 5,
+          "ref_sse": 1.7772170575787984,
+          "candidate_sse": 1.5539827320456463
+        },
+        {
+          "count": 59,
+          "ref_sse": 3.507941289260538,
+          "candidate_sse": 3.4300696301568716
+        },
+        {
+          "count": 597,
+          "ref_sse": 11.261940620066644,
+          "candidate_sse": 11.043924141668796
+        },
+        {
+          "count": 2648,
+          "ref_sse": 29.105126020278462,
+          "candidate_sse": 27.932723712015516
+        },
+        {
+          "count": 3376,
+          "ref_sse": 34.745827436883765,
+          "candidate_sse": 33.408455773677176
+        }
+      ]
+    }
+  },
+  "evidence_sha256": {
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta0/val_predictions.npz": "25acae64bb4e3e541048a8705045f7f639d1113d537dbbef71672752e8065890",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta01/val_predictions.npz": "9edffb5cd617469c78c8d83da7901ac90add69d89f27de7e8196a8736ae85500",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta1/val_predictions.npz": "a3808b9ad425abf4f6fcfed840d0ed8d1ff6fcf1557037a4e01932c734dc68bb",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/chan64_campaign_completion/runtime/G1_selected_native_val.npz": "7c5fef99d9547c3fbe42c26fc7506287fc37a6cbc58f10d1900447a4724cfb5d",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/chan64_campaign_completion/runtime/G3_selected_native_val.npz": "55310a8f3924c5e5b2edd58c60a95dec0216b159672358ca2ff9609f5129adce",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/eta0_seed_replication/runs/seed23/val_epoch0.npz": "5b1ab38f25f8a31d27d1a5486229488bf86d9463bb830b17dc88c35f946dc027",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/eta0_seed_replication/runs/seed23/val_best_legacy.npz": "97b58fcafecfa6f69a5afabdd0c6a5dba0f5be03af3aef1f5d6f5e44b01f0bd6",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/eta0_seed_replication/runs/seed23/val_best_raw_f.npz": "97b58fcafecfa6f69a5afabdd0c6a5dba0f5be03af3aef1f5d6f5e44b01f0bd6",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/eta0_seed_replication/runs/seed23/val_final100.npz": "99ca1651a8dcc9a6befda6d1f9e042712dc5c780f902fd348ce31c5fa116385e",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/eta0_seed_replication/runs/seed37/val_epoch0.npz": "3deb7feed29958b0b51f371c13e714fa2c589225aa8a70484e31d3fff3820d06",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/eta0_seed_replication/runs/seed37/val_best_legacy.npz": "1a08c2c5a1cfead22b489affb345da3ca021ad15d196ca51dd6f3c4fefe5b951",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/eta0_seed_replication/runs/seed37/val_best_raw_f.npz": "1a08c2c5a1cfead22b489affb345da3ca021ad15d196ca51dd6f3c4fefe5b951",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/eta0_seed_replication/runs/seed37/val_final100.npz": "2448918647ce5f5b0148d0aab4fe26fd166a0ddbb71faae259362ae448673d7c",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/eta0_seed_replication/RESULTS.json": "5150aa1ebc96f4202f1019d8eb3caa3d85affd0caef4ba57e19e750dd194cd57",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/eta0_seed_replication/completion_receipts/SEED23_COMPLETION_AUDIT.json": "ce9284f3c8fdc1f951db3f7721952c244f7710657dd65e31e8fb4f90c33a9290",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/eta0_seed_replication/completion_receipts/SEED37_COMPLETION_AUDIT.json": "1644a6bddcdda39a538ab5f757734c3d4fbd2f29cc90153e18b3aacd8f11601e",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/eta0_seed_replication/completion_receipts/SEED_FAMILY_SUMMARY_RECEIPT.json": "480710da0e37a6b53e8b4e6fa32f0da8b371ea9a94df6bced8e0ee52b55b7be0",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/fixed_seven_sidecar/SEED_FIXED7_RESULTS.json": "c3a3871a39c324be0a6ad8d930f8938c542e337023a6c2d762ae9c8be086640a",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/fixed_seven_completion/SEED_COMPAT_EXECUTION.json": "89c4041c85d7a68d0312dbda479e6fe2b4bccd42306dff4703d2db9a549f56f4",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/fixed_seven_completion/COMPATIBILITY_REVIEW.json": "6d4bfeb512901a582314778d8b70bb45e095e6882d348f84b4b09ec743943a3d",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/fixed_seven_completion/ORIGINAL_SCHEMA_FAILURE.json": "5aecf6e92195cb33fdffdda65cc128ccab3120ae4254656c5093f9cbadaad5f2"
+  },
+  "limits": [
+    "Full-train figures are completion aggregates, not independently recomputed from train predictions.",
+    "Bootstrap is descriptive conditional on validation selection; no correction for prior adaptation.",
+    "No model forward or new predictions."
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "verified_at": "2026-09-29T07:08:06.502964+08:00",
+  "audit_sha256": "02cb1b0a41c27e9c93ba838dc894e6467eafedb2500e31a09178383e5c4b9f3e",
+  "terminal_sha256": "31ade59511a4fde1b323201de387ae873c31f83d5dfa49f595faae7cc5b31abb",
+  "fixed_metrics_sha256": "4b1baf0940d08349073537372ecb830d6132dbff96810f0a6fb64ac27150c71b",
+  "source_count": 58,
+  "code_count": 10,
+  "orders": 100,
+  "validation_metrics_independently_recomputed": {
+    "initial": {
+      "sse": 158.0511526973256,
+      "r2": 0.002241606562700449,
+      "mae": 0.024611250635125464,
+      "energy_mae": 0.5592830654660749,
+      "train_r2_from_fixed_aggregate": 0.002234759421960386
+    },
+    "raw_f": {
+      "sse": 103.94902793560838,
+      "r2": 0.34378197600986826,
+      "mae": 0.01870419276519841,
+      "energy_mae": 0.12093616907601294,
+      "train_r2_from_fixed_aggregate": 0.5846457095191465
+    },
+    "joint": {
+      "sse": 103.94902793560838,
+      "r2": 0.34378197600986826,
+      "mae": 0.01870419276519841,
+      "energy_mae": 0.12093616907601294,
+      "train_r2_from_fixed_aggregate": 0.5846457081752295
+    },
+    "final100": {
+      "sse": 122.36526335030491,
+      "r2": 0.22752244137857391,
+      "mae": 0.018408858771086504,
+      "energy_mae": 0.10870417247601907,
+      "train_r2_from_fixed_aggregate": 0.9142079676753518
+    }
+  },
+  "selected_raw_and_joint_saved_predictions_exactly_equal": true,
+  "raw_selected_to_final_val_sse_increase": 18.41623541469653,
+  "train_limit": "Only fixed-checkpoint aggregate metrics retained; arithmetic/counts/provenance checked, not independent elementwise train recomputation.",
+  "no_new_model_inference": true,
+  "no_test": true,
+  "no_paired_or_other_active_arm_reads": true
+}

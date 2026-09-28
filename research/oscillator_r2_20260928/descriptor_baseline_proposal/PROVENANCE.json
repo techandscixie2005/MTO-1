@@ -1,0 +1,21 @@
+{
+  "recorded_at": "2026-09-29T06:42:15.852398+08:00",
+  "classification": "conditional scientific design only; no implementation or launch authorization",
+  "protocol_sha256": "0f5f0fadacf82a377583b90708f851035cc98321eb5b9d38f987406700f6dcf2",
+  "source_hashes": {
+    "CONDITIONAL_NEXT_STUDY_DECISION.md": "8b46f8dec28ecb1c1709ceb4978f195a5dc9df4ebc9696a3edf72c5429b8f6cd",
+    "frozen_residual/SCIENTIFIC_RESULT_REVIEW.md": "639d1ce5e3a2fcd1335167f2f85e28290c46f7e623b0b81af14f9247773a1d95",
+    "frozen_gram_probe/SCIENTIFIC_RESULT_REVIEW.md": "cc8d3aeea23c18ba2f721f8e48e948a1cca30085230b902b599f947bd4d13eed",
+    "chan64_campaign_completion/SCIENTIFIC_CLOSEOUT_REVIEW.md": "0fd3d7012f457b9689e070d8f2f32e04f1ac75cb63ecf909bb420defb0694a84",
+    "postrun_geometry/FIXED_SEVEN_SECONDARY_PROVENANCE.json": "6a1ef5ae13b7c1675fed75c0461c8a5d1d4c0f596e1029d90b263411cc43201b",
+    "descriptor_baseline_proposal/FEASIBILITY.md": "86f79009b41e69f2769cb1e631d0b87fc8c744487258be0ce256bb9a9d690162"
+  },
+  "external_primary_sources": [
+    "https://scikit-learn.org/1.7/modules/generated/sklearn.ensemble.ExtraTreesRegressor.html",
+    "https://scikit-learn.org/1.7/modules/tree.html#multi-output-problems"
+  ],
+  "feasibility_source": "FEASIBILITY.md: existing project environment and original input/identity provenance, read-only; runtime/memory remain unmeasured and admission is required.",
+  "active_outcome_access": false,
+  "feature_implementation_or_fit_or_inference": false,
+  "test_access": false
+}

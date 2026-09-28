@@ -1,0 +1,457 @@
+{
+  "created_at": "2026-09-29T07:47:11+08:00",
+  "source": "USTC-A800:/home/inspur/MTO-1/research/oscillator_r2_20260928",
+  "classification": "completed seed family and fixed-seven saved-array secondary; lightweight source/results/review only",
+  "remote_allowlist_sha256": "81f6b89cf6eda8facaa7d2f0b81e1ba89a8c6cb2aa8ffee7d35258e9dd24bbe0",
+  "entry_count": 73,
+  "total_bytes": 1478664,
+  "verification": "all 73 allowlisted paths matched remote SHA-256/bytes; markdown reports read back for content",
+  "entries": [
+    {
+      "source_path": "eta0_seed_replication/PROTOCOL.md",
+      "local_path": "project\\eta0_seed_replication\\PROTOCOL.md",
+      "bytes": 9545,
+      "sha256": "ceacc1d992aec0604f9b31b0fa0c71e2fe3303fbb417da72be115e04973473e8"
+    },
+    {
+      "source_path": "eta0_seed_replication/RESOURCE_GATE_AMENDMENT.md",
+      "local_path": "project\\eta0_seed_replication\\RESOURCE_GATE_AMENDMENT.md",
+      "bytes": 792,
+      "sha256": "061956126e2b3dcfa165ca3262c7a159262653428c17000df5db182fa7c60d2b"
+    },
+    {
+      "source_path": "eta0_seed_replication/REPORT_ENCODING_READONLY_AUDIT.md",
+      "local_path": "project\\eta0_seed_replication\\REPORT_ENCODING_READONLY_AUDIT.md",
+      "bytes": 1044,
+      "sha256": "5e7302356e5529af910e3a88b921eeef41f5c199807bf31ee13e93f8d4abab0b"
+    },
+    {
+      "source_path": "eta0_seed_replication/NUMERICAL_NOTE.md",
+      "local_path": "project\\eta0_seed_replication\\NUMERICAL_NOTE.md",
+      "bytes": 1041,
+      "sha256": "ca35755089b1676c3536c19f957e92e2784be5398119189579e0e2b7a2cd24e2"
+    },
+    {
+      "source_path": "eta0_seed_replication/SOURCE_PINS.json",
+      "local_path": "project\\eta0_seed_replication\\SOURCE_PINS.json",
+      "bytes": 6491,
+      "sha256": "5aefb846d38f00b6ec2b7ff9cc7a0b6149eeac1c1dd1116cc378f8310e5bbe1e"
+    },
+    {
+      "source_path": "eta0_seed_replication/ORDER_PLAN.json",
+      "local_path": "project\\eta0_seed_replication\\ORDER_PLAN.json",
+      "bytes": 26013,
+      "sha256": "2cd71223598340a957d98babf064d17accb85719eba29eb091f279746dfd9c87"
+    },
+    {
+      "source_path": "eta0_seed_replication/IMPLEMENTATION_HANDOFF.json",
+      "local_path": "project\\eta0_seed_replication\\IMPLEMENTATION_HANDOFF.json",
+      "bytes": 9682,
+      "sha256": "54cbd50e22f0b7d94c56901fdb0d0ad859f00a4b622bff1e2fe0016ccc39d1ab"
+    },
+    {
+      "source_path": "eta0_seed_replication/IMPLEMENTATION_REVIEW.json",
+      "local_path": "project\\eta0_seed_replication\\IMPLEMENTATION_REVIEW.json",
+      "bytes": 11855,
+      "sha256": "088be0c334d88b46ce39f7f3b5097cb6150a517d83cb0432b1a8fe847dcc1808"
+    },
+    {
+      "source_path": "eta0_seed_replication/IMPLEMENTATION_REVIEW.md",
+      "local_path": "project\\eta0_seed_replication\\IMPLEMENTATION_REVIEW.md",
+      "bytes": 3205,
+      "sha256": "adab947050b3c6e9c2d38e272821b22453930a3dacae2d779bdd83656ce8baa9"
+    },
+    {
+      "source_path": "eta0_seed_replication/PREFLIGHT.json",
+      "local_path": "project\\eta0_seed_replication\\PREFLIGHT.json",
+      "bytes": 12565,
+      "sha256": "f0142a2dda91e02eb919ce23a33516ffcfd874dd48a4af9bbebf0d5d4afe3ddc"
+    },
+    {
+      "source_path": "eta0_seed_replication/common.py",
+      "local_path": "project\\eta0_seed_replication\\common.py",
+      "bytes": 5286,
+      "sha256": "b30136664affff2560a01009a7e7029c1d1443cc7b23ab341c3adccdbacfe3f3"
+    },
+    {
+      "source_path": "eta0_seed_replication/data_adapter.py",
+      "local_path": "project\\eta0_seed_replication\\data_adapter.py",
+      "bytes": 2841,
+      "sha256": "a6c8df922d939a01ded36288561bc1c0ef0aae884d6ea3c6912b0c0b720f3f28"
+    },
+    {
+      "source_path": "eta0_seed_replication/train.py",
+      "local_path": "project\\eta0_seed_replication\\train.py",
+      "bytes": 18363,
+      "sha256": "b4ea40d9adc3caeca5db81cdfcfeb4db892d46c9062ab1456a3db04d384babfc"
+    },
+    {
+      "source_path": "eta0_seed_replication/launch.py",
+      "local_path": "project\\eta0_seed_replication\\launch.py",
+      "bytes": 4303,
+      "sha256": "796ff0557413f71a18fc23a1f92d7397883fe2ef4cd43f2e6e06d0977d28b7e2"
+    },
+    {
+      "source_path": "eta0_seed_replication/summarize.py",
+      "local_path": "project\\eta0_seed_replication\\summarize.py",
+      "bytes": 8212,
+      "sha256": "2228ae0a039f7bd6304d8ea04d984ccfe8f9efaf7c7dde91b227eac6413707dd"
+    },
+    {
+      "source_path": "eta0_seed_replication/preflight.py",
+      "local_path": "project\\eta0_seed_replication\\preflight.py",
+      "bytes": 11796,
+      "sha256": "b4b3e2021ed696a3ad5be96bc0aba2c5aee07c535b81074603df897b0c1d9ec3"
+    },
+    {
+      "source_path": "eta0_seed_replication/RESULTS.json",
+      "local_path": "project\\eta0_seed_replication\\RESULTS.json",
+      "bytes": 29513,
+      "sha256": "5150aa1ebc96f4202f1019d8eb3caa3d85affd0caef4ba57e19e750dd194cd57"
+    },
+    {
+      "source_path": "eta0_seed_replication/RESULTS.md",
+      "local_path": "project\\eta0_seed_replication\\RESULTS.md",
+      "bytes": 790,
+      "sha256": "fb322c341e48f14c2635c797354822c63f3e453ba55e951b508564ab97eb71c9"
+    },
+    {
+      "source_path": "eta0_seed_replication/runs/seed23/FIT_COMPLETE.json",
+      "local_path": "project\\eta0_seed_replication\\runs\\seed23\\FIT_COMPLETE.json",
+      "bytes": 11570,
+      "sha256": "e68fe95736dd448d35318b691f63c3a98ab51b26db26e2b495cc6d4026ee8697"
+    },
+    {
+      "source_path": "eta0_seed_replication/runs/seed23/FIXED_CHECKPOINT_METRICS.json",
+      "local_path": "project\\eta0_seed_replication\\runs\\seed23\\FIXED_CHECKPOINT_METRICS.json",
+      "bytes": 30815,
+      "sha256": "3a86cc03c0faac6cf40f98887dc3c5890a0a58fc9255c08803d0ff145f40cf12"
+    },
+    {
+      "source_path": "eta0_seed_replication/runs/seed23/LAUNCH_RECEIPT.json",
+      "local_path": "project\\eta0_seed_replication\\runs\\seed23\\LAUNCH_RECEIPT.json",
+      "bytes": 10263,
+      "sha256": "af79442051f60dc0fd29e11c670ca3949237f312323f09a0d2b2829a8dfdfa3d"
+    },
+    {
+      "source_path": "eta0_seed_replication/runs/seed23/RUN_MANIFEST.json",
+      "local_path": "project\\eta0_seed_replication\\runs\\seed23\\RUN_MANIFEST.json",
+      "bytes": 11042,
+      "sha256": "6d64f378837818e0d63cd979fe9814f544627d8aa8219be54ae261a6d1055e42"
+    },
+    {
+      "source_path": "eta0_seed_replication/runs/seed23/history.jsonl",
+      "local_path": "project\\eta0_seed_replication\\runs\\seed23\\history.jsonl",
+      "bytes": 309993,
+      "sha256": "0c24673f8bd4397ad85c2cf0bd3eeabd35c86b3624d67929772fa37bd876e768"
+    },
+    {
+      "source_path": "eta0_seed_replication/runs/seed23/epoch0_val.json",
+      "local_path": "project\\eta0_seed_replication\\runs\\seed23\\epoch0_val.json",
+      "bytes": 3210,
+      "sha256": "834402eff02f74a74803ddab37937bdd1da79ec578acd7d702c0db2ea7742368"
+    },
+    {
+      "source_path": "eta0_seed_replication/runs/seed23/status.json",
+      "local_path": "project\\eta0_seed_replication\\runs\\seed23\\status.json",
+      "bytes": 74,
+      "sha256": "06480b0a9447031855a9a8f5f08fe51eba5fdb98b1c26b1b801f2875018657ba"
+    },
+    {
+      "source_path": "eta0_seed_replication/runs/seed23/train.log",
+      "local_path": "project\\eta0_seed_replication\\runs\\seed23\\train.log",
+      "bytes": 80,
+      "sha256": "dc25e1c66228887682884a54d33ab250f9e5612fd599a506af4e771ee8d3e29d"
+    },
+    {
+      "source_path": "eta0_seed_replication/runs/seed37/FIT_COMPLETE.json",
+      "local_path": "project\\eta0_seed_replication\\runs\\seed37\\FIT_COMPLETE.json",
+      "bytes": 11570,
+      "sha256": "48294d9a1340ee874af8e975bf7973965d9b40050312bc4fb1372a0e69d1adb2"
+    },
+    {
+      "source_path": "eta0_seed_replication/runs/seed37/FIXED_CHECKPOINT_METRICS.json",
+      "local_path": "project\\eta0_seed_replication\\runs\\seed37\\FIXED_CHECKPOINT_METRICS.json",
+      "bytes": 30843,
+      "sha256": "4d10f80e05bf5ec280fa318e6609db21e3fd2b7639f1c376de6c44213fc0b5cf"
+    },
+    {
+      "source_path": "eta0_seed_replication/runs/seed37/LAUNCH_RECEIPT.json",
+      "local_path": "project\\eta0_seed_replication\\runs\\seed37\\LAUNCH_RECEIPT.json",
+      "bytes": 10262,
+      "sha256": "789d6b8fb4f5390b2313e33a2e107a915aa8c560ddf5e2fae32892f1500ed879"
+    },
+    {
+      "source_path": "eta0_seed_replication/runs/seed37/RUN_MANIFEST.json",
+      "local_path": "project\\eta0_seed_replication\\runs\\seed37\\RUN_MANIFEST.json",
+      "bytes": 11041,
+      "sha256": "a5753e5a6fbd0297f04210250291861732ae1f389a6744c05f3a6fe55ad03807"
+    },
+    {
+      "source_path": "eta0_seed_replication/runs/seed37/history.jsonl",
+      "local_path": "project\\eta0_seed_replication\\runs\\seed37\\history.jsonl",
+      "bytes": 309909,
+      "sha256": "2350467fad51d532172e641af0f7660ce96c644b4f66312186182bcc5bd74aec"
+    },
+    {
+      "source_path": "eta0_seed_replication/runs/seed37/epoch0_val.json",
+      "local_path": "project\\eta0_seed_replication\\runs\\seed37\\epoch0_val.json",
+      "bytes": 3207,
+      "sha256": "6a040439d24ad933b3d4b61c1756dda958fa75fc1a45272f5f28ded15b0c8512"
+    },
+    {
+      "source_path": "eta0_seed_replication/runs/seed37/status.json",
+      "local_path": "project\\eta0_seed_replication\\runs\\seed37\\status.json",
+      "bytes": 74,
+      "sha256": "f20668eb07e78a8bfe2c06d72ffc6cd33a34cddae797d91bc5fba8984dceddef"
+    },
+    {
+      "source_path": "eta0_seed_replication/runs/seed37/train.log",
+      "local_path": "project\\eta0_seed_replication\\runs\\seed37\\train.log",
+      "bytes": 80,
+      "sha256": "35dc8dd9584a911c76690579d1173219076ffe3e8e7a828c9018baa06418a6b2"
+    },
+    {
+      "source_path": "eta0_seed_replication/completion_receipts/audit_seed23.py",
+      "local_path": "project\\eta0_seed_replication\\completion_receipts\\audit_seed23.py",
+      "bytes": 8788,
+      "sha256": "862076fc024a5b4ad473d09cb4d1a1d70e0e8b1b021502d84c61450cebb771c8"
+    },
+    {
+      "source_path": "eta0_seed_replication/completion_receipts/audit_seed37.py",
+      "local_path": "project\\eta0_seed_replication\\completion_receipts\\audit_seed37.py",
+      "bytes": 8871,
+      "sha256": "5fb7d0ac3e19700bb4f68ec22200569e1f0706aa8106f96e31ab273876a02844"
+    },
+    {
+      "source_path": "eta0_seed_replication/completion_receipts/independent_seed_family_review.py",
+      "local_path": "project\\eta0_seed_replication\\completion_receipts\\independent_seed_family_review.py",
+      "bytes": 8666,
+      "sha256": "5c81c607cbd313f9277d3c11b47324d931f13e9cf98d3f27618456d2d6949b3d"
+    },
+    {
+      "source_path": "eta0_seed_replication/completion_receipts/SEED23_COMPLETION_AUDIT.json",
+      "local_path": "project\\eta0_seed_replication\\completion_receipts\\SEED23_COMPLETION_AUDIT.json",
+      "bytes": 3699,
+      "sha256": "ce9284f3c8fdc1f951db3f7721952c244f7710657dd65e31e8fb4f90c33a9290"
+    },
+    {
+      "source_path": "eta0_seed_replication/completion_receipts/SEED23_COMPLETION_AUDIT.md",
+      "local_path": "project\\eta0_seed_replication\\completion_receipts\\SEED23_COMPLETION_AUDIT.md",
+      "bytes": 1249,
+      "sha256": "3908e0313a747b67c99be6cf57c490bed8e24c95186447c1f2067e58a62e802c"
+    },
+    {
+      "source_path": "eta0_seed_replication/completion_receipts/SEED37_COMPLETION_AUDIT.json",
+      "local_path": "project\\eta0_seed_replication\\completion_receipts\\SEED37_COMPLETION_AUDIT.json",
+      "bytes": 3737,
+      "sha256": "1644a6bddcdda39a538ab5f757734c3d4fbd2f29cc90153e18b3aacd8f11601e"
+    },
+    {
+      "source_path": "eta0_seed_replication/completion_receipts/SEED37_COMPLETION_AUDIT.md",
+      "local_path": "project\\eta0_seed_replication\\completion_receipts\\SEED37_COMPLETION_AUDIT.md",
+      "bytes": 1244,
+      "sha256": "faa206a239e3808f04bb1fd98daedb07ca968d656e60b55e310cd53ab24b1b21"
+    },
+    {
+      "source_path": "eta0_seed_replication/completion_receipts/SEED_FAMILY_AUDIT.md",
+      "local_path": "project\\eta0_seed_replication\\completion_receipts\\SEED_FAMILY_AUDIT.md",
+      "bytes": 1930,
+      "sha256": "f0ae6c75effac396da26f91925fff4b181dbeae88d9861d9b6977cdd3631a935"
+    },
+    {
+      "source_path": "eta0_seed_replication/completion_receipts/SEED_FAMILY_PROVENANCE.json",
+      "local_path": "project\\eta0_seed_replication\\completion_receipts\\SEED_FAMILY_PROVENANCE.json",
+      "bytes": 1382,
+      "sha256": "eeb9bd9bc8fc9306cbf6cf2570697591c734b79d315b2bf34d739b6d7846b841"
+    },
+    {
+      "source_path": "eta0_seed_replication/completion_receipts/SEED_FAMILY_SUMMARY_RECEIPT.json",
+      "local_path": "project\\eta0_seed_replication\\completion_receipts\\SEED_FAMILY_SUMMARY_RECEIPT.json",
+      "bytes": 1164,
+      "sha256": "480710da0e37a6b53e8b4e6fa32f0da8b371ea9a94df6bced8e0ee52b55b7be0"
+    },
+    {
+      "source_path": "eta0_seed_replication/completion_receipts/SEED_FAMILY_INDEPENDENT_VERIFICATION.json",
+      "local_path": "project\\eta0_seed_replication\\completion_receipts\\SEED_FAMILY_INDEPENDENT_VERIFICATION.json",
+      "bytes": 13584,
+      "sha256": "f702b783d5c760e1cab33b96187b06f89c1f997afe67e40d557f61edc83f5302"
+    },
+    {
+      "source_path": "eta0_seed_replication/completion_receipts/SEED_FAMILY_SCIENTIFIC_CLOSEOUT.md",
+      "local_path": "project\\eta0_seed_replication\\completion_receipts\\SEED_FAMILY_SCIENTIFIC_CLOSEOUT.md",
+      "bytes": 7301,
+      "sha256": "0031fc71c9a48088e9fd73d1b6dd896be948fb42431db1eea32be5df2015a787"
+    },
+    {
+      "source_path": "eta0_seed_replication/completion_receipts/SEED_FAMILY_SCIENTIFIC_PROVENANCE.json",
+      "local_path": "project\\eta0_seed_replication\\completion_receipts\\SEED_FAMILY_SCIENTIFIC_PROVENANCE.json",
+      "bytes": 1526,
+      "sha256": "f5ea67bc0c2f2005c6d701a249262b104501209e611b60c1784e90cd5e340bb3"
+    },
+    {
+      "source_path": "eta0_seed_replication/completion_receipts/COORDINATOR_DECISION_ADDENDUM.json",
+      "local_path": "project\\eta0_seed_replication\\completion_receipts\\COORDINATOR_DECISION_ADDENDUM.json",
+      "bytes": 398,
+      "sha256": "b461a4d1b995efffba2fd250028320afb8c4764ce9e231afe9e5ef4355de75e6"
+    },
+    {
+      "source_path": "eta0_seed_replication/completion_receipts/coordinator_snapshot/coordinator_state.json",
+      "local_path": "project\\eta0_seed_replication\\completion_receipts\\coordinator_snapshot\\coordinator_state.json",
+      "bytes": 41787,
+      "sha256": "28548a670f8d58eddfbff10d180fa731663c29173569e266c4761aa79070848a"
+    },
+    {
+      "source_path": "postrun_geometry/PROTOCOL.md",
+      "local_path": "project\\postrun_geometry\\PROTOCOL.md",
+      "bytes": 5193,
+      "sha256": "7b1c10cf27e7b8943f5366e9b2cc6e389f5799dcbb8e20462d51cd10ec4d0f94"
+    },
+    {
+      "source_path": "postrun_geometry/SCRATCH_MEAN_SECONDARY_AMENDMENT.md",
+      "local_path": "project\\postrun_geometry\\SCRATCH_MEAN_SECONDARY_AMENDMENT.md",
+      "bytes": 2179,
+      "sha256": "dbff88c47c0b3e487e30507ba2f1903364f7134082abb2a3b1059bba7b4566df"
+    },
+    {
+      "source_path": "postrun_geometry/IMPLEMENTATION_REVIEW.json",
+      "local_path": "project\\postrun_geometry\\IMPLEMENTATION_REVIEW.json",
+      "bytes": 2056,
+      "sha256": "aeb1363fdb211b7306751d6c48de09b7c3bd62f48915d0d117c204e9a322ed6b"
+    },
+    {
+      "source_path": "postrun_geometry/IMPLEMENTATION_REVIEW.md",
+      "local_path": "project\\postrun_geometry\\IMPLEMENTATION_REVIEW.md",
+      "bytes": 3524,
+      "sha256": "aab708efb77262c72af18e91a7c897b22c0a92d3dffaa79e6cc32e1137155f40"
+    },
+    {
+      "source_path": "postrun_geometry/INDEPENDENT_VERIFICATION.json",
+      "local_path": "project\\postrun_geometry\\INDEPENDENT_VERIFICATION.json",
+      "bytes": 883,
+      "sha256": "9f6c43a541db603a625cc81ad12f891edd3c41ea820b786cbd4cdad95ad5d091"
+    },
+    {
+      "source_path": "postrun_geometry/postrun_geometry.py",
+      "local_path": "project\\postrun_geometry\\postrun_geometry.py",
+      "bytes": 25900,
+      "sha256": "06da5aa70deebc10ed4e538b26d86f5ab3292c392c85e1ef2109a057db405092"
+    },
+    {
+      "source_path": "postrun_geometry/SEED_RESULTS.json",
+      "local_path": "project\\postrun_geometry\\SEED_RESULTS.json",
+      "bytes": 316197,
+      "sha256": "99f75bfb005cbe73314eb241486bb21581f7e857a1589e9fe47ecf4cab1261b0"
+    },
+    {
+      "source_path": "postrun_geometry/SEED_REPORT.md",
+      "local_path": "project\\postrun_geometry\\SEED_REPORT.md",
+      "bytes": 8448,
+      "sha256": "b27b095ff4999e9650896bd50ee9ff4ad57e83c8b466fc22589fd77e1d2193ca"
+    },
+    {
+      "source_path": "fixed_seven_sidecar/PROTOCOL.md",
+      "local_path": "project\\fixed_seven_sidecar\\PROTOCOL.md",
+      "bytes": 4666,
+      "sha256": "4d4c2c024ff3450167668c478960f09b8f25b19fb8043e07e86f6b71597d5370"
+    },
+    {
+      "source_path": "fixed_seven_sidecar/IMPLEMENTATION_REVIEW.json",
+      "local_path": "project\\fixed_seven_sidecar\\IMPLEMENTATION_REVIEW.json",
+      "bytes": 2583,
+      "sha256": "35269c1df08e07851dd2b2cfa740d49c351f71785abfc2334bf2eb6557e640c4"
+    },
+    {
+      "source_path": "fixed_seven_sidecar/IMPLEMENTATION_REVIEW.md",
+      "local_path": "project\\fixed_seven_sidecar\\IMPLEMENTATION_REVIEW.md",
+      "bytes": 2154,
+      "sha256": "5f93f84a7516aa84c3fd635b12f12a3bdee945e2dd51ad23e1fa6f56b9cfe119"
+    },
+    {
+      "source_path": "fixed_seven_sidecar/INDEPENDENT_VERIFICATION.json",
+      "local_path": "project\\fixed_seven_sidecar\\INDEPENDENT_VERIFICATION.json",
+      "bytes": 1292,
+      "sha256": "f91c51e91f90431300e4bef3f11024129bc652e2d526bc7210ef5858554f5579"
+    },
+    {
+      "source_path": "fixed_seven_sidecar/PREPARATION_PREFLIGHT.json",
+      "local_path": "project\\fixed_seven_sidecar\\PREPARATION_PREFLIGHT.json",
+      "bytes": 1841,
+      "sha256": "3af928803205e51d94806affcb75c151c3a6f60edd2a7198bfa66212d20f97a2"
+    },
+    {
+      "source_path": "fixed_seven_sidecar/fixed_seven.py",
+      "local_path": "project\\fixed_seven_sidecar\\fixed_seven.py",
+      "bytes": 35697,
+      "sha256": "3a11c1f90918437241eb6c26332fa87c7ef7b95f0b3f86493a0c8e908e627755"
+    },
+    {
+      "source_path": "fixed_seven_sidecar/SEED_FIXED7_RESULTS.json",
+      "local_path": "project\\fixed_seven_sidecar\\SEED_FIXED7_RESULTS.json",
+      "bytes": 29034,
+      "sha256": "c3a3871a39c324be0a6ad8d930f8938c542e337023a6c2d762ae9c8be086640a"
+    },
+    {
+      "source_path": "fixed_seven_sidecar/SEED_FIXED7_REPORT.md",
+      "local_path": "project\\fixed_seven_sidecar\\SEED_FIXED7_REPORT.md",
+      "bytes": 1483,
+      "sha256": "b8a7e7fcf22cc9e91004579d2ee666c359a6648a1a248c6ca80c3b9d23b856d0"
+    },
+    {
+      "source_path": "fixed_seven_completion/COMPATIBILITY_PROTOCOL.md",
+      "local_path": "project\\fixed_seven_completion\\COMPATIBILITY_PROTOCOL.md",
+      "bytes": 1696,
+      "sha256": "6196a76e85a84c74c421bda5dba1abe2aafc9a53f577c52240efb43dcc0e68cb"
+    },
+    {
+      "source_path": "fixed_seven_completion/seed_mask_compat.py",
+      "local_path": "project\\fixed_seven_completion\\seed_mask_compat.py",
+      "bytes": 4342,
+      "sha256": "cb8d7a7c50b186fbbb0d207fe0f53cad8e21b58d23e25c581e43273e3e755a41"
+    },
+    {
+      "source_path": "fixed_seven_completion/preflight.py",
+      "local_path": "project\\fixed_seven_completion\\preflight.py",
+      "bytes": 2103,
+      "sha256": "6826c4c16f877e79207d6f2a7b4081c9499c207e4d0f834ce45a6af998068654"
+    },
+    {
+      "source_path": "fixed_seven_completion/COMPATIBILITY_PREFLIGHT.json",
+      "local_path": "project\\fixed_seven_completion\\COMPATIBILITY_PREFLIGHT.json",
+      "bytes": 529,
+      "sha256": "d5c4a5f6090d2bc849071780dea460838b1bd9c61b3881a2ec35b0d67a5e7378"
+    },
+    {
+      "source_path": "fixed_seven_completion/COMPATIBILITY_HANDOFF.json",
+      "local_path": "project\\fixed_seven_completion\\COMPATIBILITY_HANDOFF.json",
+      "bytes": 1043,
+      "sha256": "18c36f6734c3ea603d475646ba83742e1b70f426c7e66b65faabdf6f5966615b"
+    },
+    {
+      "source_path": "fixed_seven_completion/COMPATIBILITY_REVIEW.json",
+      "local_path": "project\\fixed_seven_completion\\COMPATIBILITY_REVIEW.json",
+      "bytes": 1698,
+      "sha256": "6d4bfeb512901a582314778d8b70bb45e095e6882d348f84b4b09ec743943a3d"
+    },
+    {
+      "source_path": "fixed_seven_completion/ORIGINAL_SCHEMA_FAILURE.json",
+      "local_path": "project\\fixed_seven_completion\\ORIGINAL_SCHEMA_FAILURE.json",
+      "bytes": 512,
+      "sha256": "5aecf6e92195cb33fdffdda65cc128ccab3120ae4254656c5093f9cbadaad5f2"
+    },
+    {
+      "source_path": "fixed_seven_completion/SEED_COMPAT_EXECUTION.json",
+      "local_path": "project\\fixed_seven_completion\\SEED_COMPAT_EXECUTION.json",
+      "bytes": 915,
+      "sha256": "89c4041c85d7a68d0312dbda479e6fe2b4bccd42306dff4703d2db9a549f56f4"
+    }
+  ],
+  "excluded": [
+    "model checkpoints",
+    "validation prediction NPZ arrays",
+    "train feature caches",
+    "test data",
+    "unnecessary runtime binaries"
+  ],
+  "science": "F5 retained as provisional validation candidate; seed3 gain over fixed equal3 uncertain; fixed seven below F5; no new test"
+}

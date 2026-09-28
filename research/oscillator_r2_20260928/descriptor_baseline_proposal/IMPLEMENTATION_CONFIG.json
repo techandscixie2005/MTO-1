@@ -1,0 +1,69 @@
+{
+  "protocol_sha256": "0f5f0fadacf82a377583b90708f851035cc98321eb5b9d38f987406700f6dcf2",
+  "feature_columns": 803,
+  "elements": [
+    1,
+    6,
+    7,
+    8,
+    9
+  ],
+  "graph_factor": 1.3,
+  "radii_angstrom": {
+    "1": 0.31,
+    "6": 0.76,
+    "7": 0.71,
+    "8": 0.66,
+    "9": 0.57
+  },
+  "hash_bins": 512,
+  "radii": [
+    0,
+    1,
+    2
+  ],
+  "radial_centers_angstrom": [
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0,
+    4.5,
+    5.0,
+    5.5,
+    6.0,
+    6.5,
+    7.0,
+    7.5,
+    8.0
+  ],
+  "radial_width_angstrom": 0.5,
+  "learner": {
+    "n_estimators": 256,
+    "criterion": "squared_error",
+    "max_depth": 24,
+    "min_samples_leaf": 4,
+    "min_samples_split": 2,
+    "max_features": "sqrt",
+    "bootstrap": false,
+    "random_state": 20260929,
+    "n_jobs": 8,
+    "ccp_alpha": 0.0,
+    "min_impurity_decrease": 0.0,
+    "warm_start": false
+  },
+  "target": "pooled_train_scale_raw_f_ten_states",
+  "train_molecules": 120355,
+  "val_molecules": 6686,
+  "cpu_workers": 8,
+  "blas_threads": 1,
+  "process_memory_limit_bytes": 17179869184,
+  "wall_limit_seconds": 14400,
+  "preflight_train_rows": 16,
+  "test_access": false,
+  "raw_labels_sha256": "621dc8723fb6dc96681851a26e4f52fcb7747a4778e57a249a75d22f3af4c632",
+  "fixed_five_provenance_sha256": "6a1ef5ae13b7c1675fed75c0461c8a5d1d4c0f596e1029d90b263411cc43201b"
+}

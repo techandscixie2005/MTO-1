@@ -1,0 +1,153 @@
+{
+  "event": "FIT_COMPLETE",
+  "seed": 23,
+  "epochs": 100,
+  "steps": 188100,
+  "best_legacy_epoch": 53,
+  "best_raw_f_epoch": 53,
+  "best_legacy": 0.1783892699666912,
+  "best_raw_f_sse": 100.00044842171992,
+  "source_hashes": {
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/configs/mto_eta0.json": "e1b823aa48f491b7e0eaa8cc106fa712e6ba3e3256d36e23f091af6d9c07bdf9",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/dataset.py": "bb71448b7e7ddcca777d23509b46e1437fa553cac29a89f0900dccc97e34cadb",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/trainer.py": "78b9f6739540fd38b11cdbd216b5d3394db7b1cac6d653fe37e115630b7dc966",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/model_factory.py": "37ebb9884b3851ae7401232319be5611159e83b588a65236d732d862b7b3fbf9",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/objective.py": "c19dcb4da5d971c6ddc3d08269d6adc63afd6e327957a0f497c4fb43e6b9de8e",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/dataset.npz": "be8fadca203429575d70642b617730592693be40858dca7189c098a671596330",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/raw_labels.npz": "621dc8723fb6dc96681851a26e4f52fcb7747a4778e57a249a75d22f3af4c632",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/splits.json": "141d6c4ba9631de91b81076b56afc2239aa3632478895102d8024e13d79c93ca",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/normalization.json": "812a7b80d6259eb6106a5a534a8358a626713ec7ee53ad992fff6fcbabe59452",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/hashes.json": "ee33f69ef8de4dd917574f5df131103ba58638033f42abcb083b56205873314d",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/identity_audit_v2.json": "9d384425a90dd88fbc68f8b609a303872910bb21c69e0d0a19bcccaee49cb3c4",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/reports/initialization.json": "5c3fc8c388d7717ca34a9a65a3a2bb470ef1c6ff7832cd6ea41985d5c1f39dc4",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/reports/data_audit.json": "e8c14515c1692f93848987faf7a0d199cf7c16ab29786232ee077c4de3cb52ca",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta0/val_predictions.npz": "25acae64bb4e3e541048a8705045f7f639d1113d537dbbef71672752e8065890",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta01/val_predictions.npz": "9edffb5cd617469c78c8d83da7901ac90add69d89f27de7e8196a8736ae85500",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta1/val_predictions.npz": "a3808b9ad425abf4f6fcfed840d0ed8d1ff6fcf1557037a4e01932c734dc68bb",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta0/best.pt": "9f1963267cd0e5e35212baca6b4080cf986e73aed6e1662c4cb720afb9a4c136",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/gpu_health.py": "c0f82c09ed865361c055fee290ea3a2339c1fcf38c55cf92d3fb0dbd780afa17",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/data_ea.py": "8027dc8695b2ade12aac64c3e894a075b4d98ca667a24053129a951001b6e943",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/models_ea.py": "b47d50b8b32313d1c3e1f19f3e64e6f02ce42e91736e6da00f896f68965250b0",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/train_ea.py": "7c7b4d49db539566abd8c76da6fe3b7eabf96eaac3ac495997c5f074a49085dd",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/models.py": "a8d7bf8a8d89839f687a773f59f02b2a5d75abd6f47a59406e9eb3d1a40f4771",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/__init__.py": "8fe70f55031182c1d0012945907181ecc85278f7849599e15e3a16939fae67f1",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/constant.py": "1c3a8f9058ba6890c2f6730241136b35a552235b41f812288ce9cbdcc42ec856",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/detanet.py": "4083382f2d615d1573b9dbc2d2c456d00f9895d4dae144b6c62b26feff6eebcd",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/metrics.py": "677630dd1b97c7474c2f8a4cdda81d7e0f2a56a12dfd4b02bbb869329af4fec2",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/model_loader.py": "85507209b15efea567e686f4d99cf3be53dbf3779607d4b33e295d52c44505b3",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/__init__.py": "032b99150e38283d3695b394175d792c370be7dbbe38b58b94971143de9446de",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/acts.py": "6bcd255ac95b33e6ef6a982d87c8dd6b39c2f1a41996f2425c5ada1f0fe8256c",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/block.py": "38eb81b385fded74ac4ff3950ee2cbe6e7c7e7cc0873ec57ede64ef758460e35",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/edge_attention.py": "48a69aa9a83cfe225f8e55eeea4bab65120955aee2dc7ad02d414aef7b4e2fea",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/embedding.py": "07eff3330b5709fec463563d4ef53f857525ae85f55b8a3ab1e7c9ffb3c70ee8",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/message.py": "a76bae58dbb92447d6fb05230d7db826dc9defc929706e6f2c88c067ee5918cf",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/multilayer_perceptron.py": "5628a4cebadbbc493058edae808a64370ee2834fa4ccacc041f820bf9afb4d42",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/radial_basis.py": "cbbbf125bdb4b64e21a4d58ddb175bde489bb7a640375847f416f137881307ca",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/update.py": "65cda1be8fd5daa491779211ba37ec9c23b73e4a2da81444d21534584c0028a6",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/spectra_simulator.py": "cb36131b7dc855cd2c528d532f4d7742fc2da757d078e8732142dbeab4f0b67e",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/analysis_addendum/validation_comparison_addendum.py": "3e723f56039ef670e43a73936c5775a33fb0c5b90a77e53c591a7941025c3b00",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/eta0_seed_replication/SOURCE_PINS.json": "5aefb846d38f00b6ec2b7ff9cc7a0b6149eeac1c1dd1116cc378f8310e5bbe1e",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/eta0_seed_replication/PROTOCOL.md": "ceacc1d992aec0604f9b31b0fa0c71e2fe3303fbb417da72be115e04973473e8",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/eta0_seed_replication/RESOURCE_GATE_AMENDMENT.md": "061956126e2b3dcfa165ca3262c7a159262653428c17000df5db182fa7c60d2b"
+  },
+  "code_hashes": {
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/eta0_seed_replication/common.py": "b30136664affff2560a01009a7e7029c1d1443cc7b23ab341c3adccdbacfe3f3",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/eta0_seed_replication/data_adapter.py": "a6c8df922d939a01ded36288561bc1c0ef0aae884d6ea3c6912b0c0b720f3f28",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/eta0_seed_replication/train.py": "b4ea40d9adc3caeca5db81cdfcfeb4db892d46c9062ab1456a3db04d384babfc",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/eta0_seed_replication/preflight.py": "b4b3e2021ed696a3ad5be96bc0aba2c5aee07c535b81074603df897b0c1d9ec3",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/eta0_seed_replication/launch.py": "796ff0557413f71a18fc23a1f92d7397883fe2ef4cd43f2e6e06d0977d28b7e2",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/eta0_seed_replication/summarize.py": "2228ae0a039f7bd6304d8ea04d984ccfe8f9efaf7c7dde91b227eac6413707dd",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/eta0_seed_replication/SOURCE_PINS.json": "5aefb846d38f00b6ec2b7ff9cc7a0b6149eeac1c1dd1116cc378f8310e5bbe1e",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/eta0_seed_replication/ORDER_PLAN.json": "2cd71223598340a957d98babf064d17accb85719eba29eb091f279746dfd9c87",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/eta0_seed_replication/PROTOCOL.md": "ceacc1d992aec0604f9b31b0fa0c71e2fe3303fbb417da72be115e04973473e8"
+  },
+  "initial_hash": "84be1f3d16ebca6aa2aaee1a5e4ddcee56916c9827b6127f17bbbaf00121e9c7",
+  "order_hashes_sha256": "2cd71223598340a957d98babf064d17accb85719eba29eb091f279746dfd9c87",
+  "checkpoint_hashes": {
+    "initial": "7f0fa7dea90717592eb14a1a5ea4cc4f9f3d90cd6f5b1440c8ee80b56c115d1a",
+    "legacy": "7c28a2fe204f8804d05d3dc58bb9acf853f2d0505ce83a9f66819f02fd485a18",
+    "raw_f": "b85ee449646dd75cd52f29e0f95a8eeb5f356ad34269ef64c3621590f5173cdb",
+    "final100": "3260434dc1460002db5c393f732323d78077722c79c3057287f18c8b5c75f734",
+    "last": "adda8967c795c32e4da6e1ba67f108c206043ff84d219452de14394d6d53fa9c"
+  },
+  "val_prediction_hashes": {
+    "epoch0": "5b1ab38f25f8a31d27d1a5486229488bf86d9463bb830b17dc88c35f946dc027",
+    "best_legacy": "97b58fcafecfa6f69a5afabdd0c6a5dba0f5be03af3aef1f5d6f5e44b01f0bd6",
+    "best_raw_f": "97b58fcafecfa6f69a5afabdd0c6a5dba0f5be03af3aef1f5d6f5e44b01f0bd6",
+    "final100": "99ca1651a8dcc9a6befda6d1f9e042712dc5c780f902fd348ce31c5fa116385e"
+  },
+  "fixed_metrics_sha256": "3a86cc03c0faac6cf40f98887dc3c5890a0a58fc9255c08803d0ff145f40cf12",
+  "gpu_before": {
+    "index": 1,
+    "uuid": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+    "memory_MiB": 13,
+    "temperature_C": "32 C",
+    "ecc": {
+      "volatile": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0
+      },
+      "aggregate": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0,
+        "sram_threshold_exceeded": "No"
+      },
+      "remap": {
+        "remapped_row_corr": "0",
+        "remapped_row_unc": "0",
+        "remapped_row_pending": "No",
+        "remapped_row_failure": "No"
+      },
+      "repair": {
+        "channel_repair_pending": "No",
+        "tpc_repair_pending": "No"
+      }
+    },
+    "apps": []
+  },
+  "gpu_after": {
+    "index": 1,
+    "uuid": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+    "memory_MiB": 5377,
+    "temperature_C": "58 C",
+    "ecc": {
+      "volatile": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0
+      },
+      "aggregate": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0,
+        "sram_threshold_exceeded": "No"
+      },
+      "remap": {
+        "remapped_row_corr": "0",
+        "remapped_row_unc": "0",
+        "remapped_row_pending": "No",
+        "remapped_row_failure": "No"
+      },
+      "repair": {
+        "channel_repair_pending": "No",
+        "tpc_repair_pending": "No"
+      }
+    },
+    "apps": [
+      859155
+    ]
+  },
+  "seconds": 16254.35858689621,
+  "time": 1790637645.3536742,
+  "test_batches": 0
+}

@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "reviewed_at": "2026-09-29T07:31:49.799763+08:00",
+  "adapter_sha256": "cb8d7a7c50b186fbbb0d207fe0f53cad8e21b58d23e25c581e43273e3e755a41",
+  "protocol_sha256": "6196a76e85a84c74c421bda5dba1abe2aafc9a53f577c52240efb43dcc0e68cb",
+  "preflight_sha256": "d5c4a5f6090d2bc849071780dea460838b1bd9c61b3881a2ec35b0d67a5e7378",
+  "original_script_sha256": "3a11c1f90918437241eb6c26332fa87c7ef7b95f0b3f86493a0c8e908e627755",
+  "original_review_sha256": "35269c1df08e07851dd2b2cfa740d49c351f71785abfc2334bf2eb6557e640c4",
+  "handoff_sha256": "18c36f6734c3ea603d475646ba83742e1b70f426c7e66b65faabdf6f5966615b",
+  "original_failure_sha256": "5aecf6e92195cb33fdffdda65cc128ccab3120ae4254656c5093f9cbadaad5f2",
+  "independent_checks": [
+    "Eight synthetic compatibility checks rerun without modifying preflight output.",
+    "Both real completed seed terminal hashes match handoff; exact selected saved-array hashes/IDs/indices/FP64 f and E labels align to frozen all-true reference. No F7 mixture computed during review.",
+    "Only exact seed23/37 legacy paths use compatibility loader. All other inputs retain original strict loader, and original family/source/selection/checkpoint/hash gates execute unchanged.",
+    "Original sealed source/review hashes unchanged; prior schema failure preserved."
+  ],
+  "scope": "One corrected seed completed saved-array call using isolated adapter; no model inference, fitting, test, alternate checkpoint/weights or source changes.",
+  "limits": "Missing mask is accepted only because authoritative fixed validation mask is wholly true and exact identities/truth/hash are enforced. This is not permission to assume unknown masks valid generally."
+}

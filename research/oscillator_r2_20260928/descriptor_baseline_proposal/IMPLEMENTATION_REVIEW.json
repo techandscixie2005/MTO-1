@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "timestamp": "2026-09-29T07:43:48.654743+08:00",
+  "scope": "Independent exact-code and synthetic/fixed-16-TRAIN preflight review. One approved protocol fit only after separately bound FIT_AUTHORIZATION and fresh CPU admission; no run performed by reviewer.",
+  "handoff_sha256": "5ad296e40efd7cc7311e86e0b97e855e8781c6cbec0741a2fd37bc91e2eb52cf",
+  "source_hashes": {
+    "CONDITIONAL_PROTOCOL.md": "0f5f0fadacf82a377583b90708f851035cc98321eb5b9d38f987406700f6dcf2",
+    "PROVENANCE.json": "312b63ec3548d0293c9cb66857d7d23d28f5f0df8c32e574482599fb02000514",
+    "FEASIBILITY.md": "86f79009b41e69f2769cb1e631d0b87fc8c744487258be0ce256bb9a9d690162",
+    "IMPLEMENTATION_AUTHORIZATION.md": "25d2d72d18ed0513ce4417497929b64bf7e9cb7a21cbe273d0612265c85d2606",
+    "FIT_TIMING_AUTHORIZATION.md": "b8f35e52612c9606b6540a20e65406042845af53527cf650cdbbe99d3fd4ae45",
+    "IMPLEMENTATION_CONFIG.json": "5a8c5db1dfa225f97ac08a976ec5bc3fdc98c4fecd53d88c8842217520e278cb",
+    "features.py": "78fcaa8a097a44c4fcc75dbbf9880e91b192e2a01c21e94f1378aff193bc9e5a",
+    "array_io.py": "032d40ed53561cd4a4b2b0971a132bebc9106f87397613021932dad92b15fedd",
+    "resource_guard.py": "6455800edc6e244f24b6051469921d34f22b17727673442dcab02270a0814878",
+    "execution_gate.py": "7fbb5362a19d5d5df50dd8b938c827f5e739cee8c3f271c139554beb558af250",
+    "fit_worker.py": "d426385cdb2658f9979d0d8326294a0ee8a2ab25ec9db67853ec02f9c39aacf3",
+    "run.py": "532c5f537acd0d65aa4967f97ba2cde26351717c18ffb750077609846c7c77c2",
+    "preflight.py": "23343b148ade7ac83ea4b939df5f3fe673c11a56807ace1b75df52b2576c9734",
+    "SOURCE_SEAL.json": "5c2ab2f81fd427bdf2b3330797eaaf2c8ea7fa957917c2fc8698ac4e6e07139b",
+    "IMPLEMENTATION_PREFLIGHT.json": "cf5bfa41dc83e8d257d4e7416d98d63a93a848381efc169048d976b441b4b948"
+  },
+  "source_seal_sha256": "5c2ab2f81fd427bdf2b3330797eaaf2c8ea7fa957917c2fc8698ac4e6e07139b",
+  "preflight_sha256": "cf5bfa41dc83e8d257d4e7416d98d63a93a848381efc169048d976b441b4b948",
+  "protocol_sha256": "0f5f0fadacf82a377583b90708f851035cc98321eb5b9d38f987406700f6dcf2",
+  "fit_worker_sha256": "d426385cdb2658f9979d0d8326294a0ee8a2ab25ec9db67853ec02f9c39aacf3",
+  "resource_guard_sha256": "6455800edc6e244f24b6051469921d34f22b17727673442dcab02270a0814878",
+  "supervisor_sha256": "532c5f537acd0d65aa4967f97ba2cde26351717c18ffb750077609846c7c77c2",
+  "execution_gate_sha256": "7fbb5362a19d5d5df50dd8b938c827f5e739cee8c3f271c139554beb558af250",
+  "independent_checks": {
+    "source_hashes_current": true,
+    "source_seal_prefit_hashes_verified": 16,
+    "fixed_train_descriptor_hashes_reproduced": 16,
+    "hand_computed_two_atom_feature_fixtures": 3,
+    "random_orthogonal_invariance": true,
+    "actual_synthetic_child_address_space_limit_bytes": 17179869184,
+    "actual_synthetic_child_affinity_count": 8,
+    "schema_columns": 803,
+    "single_common_target_scale": true,
+    "raw_train_FP64_labels_no_oracle_E": true,
+    "train_freeze_before_validation": true,
+    "prescribed_two_contrasts_only": true,
+    "reported_signed_errors_and_separate_feature_timings": true
+  },
+  "conditions": [
+    "Executor must write a dated FIT_AUTHORIZATION with approved=true, one_run=true and exact review/protocol/source-seal hashes under root standing authorization.",
+    "Fresh admission must pass; maximum 8 CPUs, 16 GiB address-space/RSS envelope and total four-hour features/fit/evaluation budget. Resource exhaustion is INCOMPLETE_RESOURCE, no retuning, extension or partial-forest score.",
+    "Single full TRAIN fit only; validation follows frozen forest/schema/target-scale/TRAIN-ID artifact. Exactly standalone D and fixed half-D/half-F5. No test.",
+    "All runtime forests, feature tables and prediction arrays remain server-only."
+  ],
+  "limits": [
+    "A successful 16-row/synthetic preflight does not establish full-data fit feasibility; resource gates remain mandatory.",
+    "Geometry graph is a deterministic Z+coordinate representation with no bond order/aromaticity labels.",
+    "The result tests this fixed descriptor/learner combination only; reused-validation bootstrap is descriptive.",
+    "Watchdog resource accounting is sampled; RLIMIT_AS is a hard per-process bound and CPU affinity limits execution to eight selected logical CPUs."
+  ]
+}
