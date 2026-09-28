@@ -1,0 +1,61 @@
+recorded trace_weight.json: {
+  "mean_E2_train": 47.478104650939535,
+  "definition": "mean over train-only (molecule,state) entries with mask_A & mask_E of E_true^2; computed once, frozen, shared by training and validation; never rescaled per state or per batch",
+  "train_valid_entries": 1203550,
+  "independent_recomputation": 47.4781046505673,
+  "independent_relative_difference": 7.840077562474425e-12,
+  "shipped_train_E_rms_eV": 6.890435737378263,
+  "all_split_mean_for_contrast": 47.482254535393885,
+  "relative_difference_from_all_split": 8.740627884916202e-05,
+  "train_only_equals_all_split_required": false,
+  "frozen
+
+mean_E2_train = 47.478105
+train molecules=120355  states=10  valid (m,E) pairs=1203550
+
+--- effective sample size under w = E^2/mean_E2 (train, valid pairs) ---
+nominal N      = 1203550
+N_eff          = 1122853.8
+N_eff / N      = 0.93295  (1 in 1 samples carries the gradient)
+
+--- how concentrated is the weight ---
+  top   0.5% of pairs (   6018) carry   0.85% of total weight
+  top   1.0% of pairs (  12036) carry   1.62% of total weight
+  top   2.0% of pairs (  24071) carry   3.10% of total weight
+  top   5.0% of pairs (  60178) carry   7.34% of total weight
+  top  10.0% of pairs ( 120355) carry  14.06% of total weight
+  top  25.0% of pairs ( 300888) carry  32.75% of total weight
+
+--- per excited state (weight = E^2 share) ---
+state       mean_E2      w_share    N_valid
+1           30.5715       6.439%     120355
+2           36.8552       7.763%     120355
+3           41.1477       8.667%     120355
+4           44.8191       9.440%     120355
+5           47.8351      10.075%     120355
+6           50.4518      10.626%     120355
+7           52.7863      11.118%     120355
+8           54.8693      11.557%     120355
+9           56.8221      11.968%     120355
+10          58.6230      12.347%     120355
+
+--- does the TRACE head generalize worse than the E head? ---
+(history vector: [le+ls+lq, le, ls, lq]; for eta=0 groups only ls is meaningful)
+
+  c=64 weighted
+    G1   ep78    LE tr/va=0.0210/0.0271 (x1.29)   Ls tr/va=0.0226/0.1302 (x5.76)
+    G2   ep77    Ls tr/va=0.0274/0.1385 (x5.05)
+    G3   ep76    LE tr/va=0.0323/0.0365 (x1.13)   Ls tr/va=0.0708/0.1373 (x1.94)
+    G4   ep78    Ls tr/va=0.0642/0.1383 (x2.16)
+
+  c=16 weighted
+    G1   ep224   LE tr/va=0.0195/0.0297 (x1.52)   Ls tr/va=0.0133/0.1614 (x12.13)
+    G2   ep220   Ls tr/va=0.0117/0.1734 (x14.77)
+    G3   ep219   LE tr/va=0.0237/0.0319 (x1.34)   Ls tr/va=0.0273/0.1412 (x5.17)
+    G4   ep214   Ls tr/va=0.0149/0.2493 (x16.69)
+
+  c=16 UNWEIGHTED
+    G1   ep148   LE tr/va=0.0212/0.0319 (x1.51)   Ls tr/va=0.0163/0.1761 (x10.81)
+    G2   ep144   Ls tr/va=0.0145/0.1896 (x13.11)
+    G3   ep152   LE tr/va=0.0292/0.0359 (x1.23)   Ls tr/va=0.0513/0.1588 (x3.09)
+    G4   ep152   Ls tr/va=0.0169/0.1700 (x10.03)

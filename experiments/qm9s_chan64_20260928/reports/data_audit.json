@@ -1,0 +1,64 @@
+{
+  "molecules": 133727,
+  "states": 10,
+  "counts": {
+    "train": 120355,
+    "val": 6686,
+    "test": 6686
+  },
+  "all_masks_valid": true,
+  "excluded_only_because_not_in_frozen_ids": 158,
+  "zero_printed_f": 25079,
+  "raw_f_vs_A_derived": {
+    "mae": 2.4865487175549468e-05,
+    "rmse": 2.8783509835458965e-05,
+    "max_abs": 7.4988082667371e-05,
+    "quantiles_abs": [
+      2.4840616140542815e-05,
+      4.4963843641033026e-05,
+      4.951328958654069e-05,
+      7.4988082667371e-05
+    ],
+    "printed_f_on_1e_minus4_grid_max_residual": 3.637978807091713e-12,
+    "abs_difference_gt_5e_minus5": 1277,
+    "zero_printed_but_positive_derived": 25007
+  },
+  "source_arrays_sha256": {
+    "part-00000.npz": "373afad120db9609d5025cbf32098ed65fef55d79841dcf777c759b17c738c11",
+    "part-00001.npz": "086f93377ff2537e41c8d9f5050f122f2702c45364b9f7bcbf139021c19b3245",
+    "part-00002.npz": "e46963ace5e88530202b7683aa3a2b04ddf46f20ac0c3d7005448e3bef026e57",
+    "part-00003.npz": "8df13360f8a6e9459cb00b1a65071deb96758fd101eda18eafb6c5b37a429ae2",
+    "part-00004.npz": "cdea3f40dacc74f7fe5fb21ead8c037730b0dd9b9565f143d28a49b738b9d665",
+    "part-00005.npz": "ab0f6e0abfcadc8e45a57a6800a1830a67549cf7f857b44b8b09f83970ed6196",
+    "part-00006.npz": "d935a8e5cded244d89a31271546e7ec475275c185e057e978c406368df1dcc30",
+    "part-00007.npz": "34cc69c5fd740dfd7a7399add17757bc392acfe8d21ac7d5d69495cc40d08204",
+    "part-00008.npz": "7adf83fe993209ec1e0aee5541c4a4425ae8cb788c4588b21191d4f3a409dfda",
+    "part-00009.npz": "7440309f4c7111cc5df67b0b43d252b6594f5bb29399a692aac2d5927bc76b7f",
+    "part-00010.npz": "239d7e20b1700b4f8dbf6dbebfccc06176343ac71a131a3f9ec30b6b38fa6911",
+    "part-00011.npz": "c7e291c73474d5e1293a51ddee9a8b10f700653c8da565a43ecdddda09a22d1c",
+    "part-00012.npz": "4ea7fe8201d144147893987737c9d74cecef8ed3dba942e2ae593222ed8ec755",
+    "part-00013.npz": "e0fc0c29e8879dd4e4512bc057b9b14bcbf351125568f4670dadb66b366468b6",
+    "part-00014.npz": "fe7fa52af11c30100518c6c1452d4f95f0e5a0d305f6e4845f4689b97badf566",
+    "part-00015.npz": "df082877702f94283adfb7108f0329aa846452a1c19a1604272ccfc49cb4b2fb",
+    "part-00016.npz": "03ff4b18cee6d41b23c098ea9393f39ada4c67dd2870cbf5af557bce26b1d688",
+    "part-00017.npz": "bee544b7b1262cc56e8d876a4fef2d369bc301cc00bcbc6412bd9be8d4601ca0",
+    "part-00018.npz": "d76419269a95932679b30745463cbb8589476c1eea81b3eb1899eb0b60f21fad",
+    "part-00019.npz": "989ba273b84152fd3c3d78ac9b3951d8faf8717140a06d97ec6c0bdb373999d8",
+    "part-00020.npz": "80462732d81e0348837e8aa6d2007bac492e731ed8fcd781462edccfcedde7f3",
+    "part-00021.npz": "13699c9e2ec2201e2dc1b17b413a8721fa14160e6cc3192e7329ee487b1d082b",
+    "part-00022.npz": "e9e98496f58c3d112f84a40cfc435e787d02899e887841d683c0fa34bfdbded9",
+    "part-00023.npz": "de2e1b98a4bd0136b789e57390adb6e4b407b79d5710b43c964d6830ba293c0f",
+    "part-00024.npz": "d7aeced0706b243c8bbec1b50352eaae4c25ae542b8083d7779337b585e72f2d",
+    "part-00025.npz": "d8cc30fcd4cf0241f72c9b521adc0d3d04084a2bcfcb00a5b30a922a9e9bf604",
+    "part-00026.npz": "e010c295391c3f68eeaca2f46450f98f1a5117fad40f14fdae2868009787e28c"
+  },
+  "baseline_hashes": {
+    "dataset.npz": "be8fadca203429575d70642b617730592693be40858dca7189c098a671596330",
+    "splits.json": "141d6c4ba9631de91b81076b56afc2239aa3632478895102d8024e13d79c93ca",
+    "normalization.json": "812a7b80d6259eb6106a5a534a8358a626713ec7ee53ad992fff6fcbabe59452",
+    "identity_audit_v2.json": "9d384425a90dd88fbc68f8b609a303872910bb21c69e0d0a19bcccaee49cb3c4"
+  },
+  "raw_labels_sha256": "621dc8723fb6dc96681851a26e4f52fcb7747a4778e57a249a75d22f3af4c632",
+  "target_policy": "Original oscillator_strength is retained for DetaNet and common f/spectrum truth. No clipping or outlier removal.",
+  "evaluation_status": "Label provenance audit only; no current model test evaluation."
+}

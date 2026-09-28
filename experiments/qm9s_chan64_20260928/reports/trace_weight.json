@@ -1,0 +1,15 @@
+{
+  "mean_E2_train": 47.478104650939535,
+  "definition": "mean over train-only (molecule,state) entries with mask_A & mask_E of E_true^2; computed once, frozen, shared by training and validation; never rescaled per state or per batch",
+  "train_valid_entries": 1203550,
+  "independent_recomputation": 47.4781046505673,
+  "independent_relative_difference": 7.840077562474425e-12,
+  "shipped_train_E_rms_eV": 6.890435737378263,
+  "all_split_mean_for_contrast": 47.482254535393885,
+  "relative_difference_from_all_split": 8.740627884916202e-05,
+  "train_only_equals_all_split_required": false,
+  "frozen_stats_file": "data/trace_weight.json",
+  "frozen_stats_sha256": "39ef096cc0e608c62b0f0cabebf4de96f4941bb83560a11ecff9f91bae997ef2",
+  "normalization_sha256_unchanged": "812a7b80d6259eb6106a5a534a8358a626713ec7ee53ad992fff6fcbabe59452",
+  "source": "train only, mask_A & mask_E, computed once in prepare.py"
+}

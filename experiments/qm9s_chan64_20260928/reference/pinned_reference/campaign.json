@@ -1,0 +1,18 @@
+{
+  "name": "qm9s_eta_Ef_20260926",
+  "classification": "additional exploratory experiment; old test set previously analyzed",
+  "baseline_commit": "bcf67d2a80b1d5ba35706582387f528537b5283c",
+  "detanet_commit": "4f92e643ab64651b91c4a1392cf389ddfd0d89f0",
+  "detanet_configuration_status": "confirmed",
+  "runs": [
+    {"name": "mto_eta0", "gpu": 1, "trainer": "trainer.py"},
+    {"name": "mto_eta01", "gpu": 2, "trainer": "trainer.py"},
+    {"name": "mto_eta1", "gpu": 4, "trainer": "trainer.py"},
+    {"name": "detanet_ef", "gpu": 6, "trainer": "trainer_detanet.py"}
+  ],
+  "fourth_run": "original DetaNet simultaneous 10E + 10f; paper settings first, user-approved documented fallbacks",
+  "selection": "Each MTO best by own validation L_eta; compare the three best checkpoints by common validation spectrum MSE, then freeze before test",
+  "spectrum": {"min_eV": 0, "max_eV": 21, "step_eV": 0.02, "sigma_eV": 0.2, "unit_integral_gaussian": true, "clip_predictions": false},
+  "reference_f": "original oscillator_strength",
+  "max_total_training_groups": 4
+}

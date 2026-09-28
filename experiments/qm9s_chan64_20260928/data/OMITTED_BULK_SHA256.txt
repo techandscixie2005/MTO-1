@@ -1,0 +1,7 @@
+# Bulk payloads deliberately NOT shipped. They are byte-pinned by
+# data/hashes.json and frozen_reference/data/hashes.json; the source
+# directory stays authoritative. Verify with: sha256sum <file>
+
+dataset.npz                     524746908 bytes  be8fadca203429575d70642b617730592693be40858dca7189c098a671596330
+raw_labels.npz                  122763080 bytes  621dc8723fb6dc96681851a26e4f52fcb7747a4778e57a249a75d22f3af4c632
+identity_audit_v2.json           15917497 bytes  9d384425a90dd88fbc68f8b609a303872910bb21c69e0d0a19bcccaee49cb3c4

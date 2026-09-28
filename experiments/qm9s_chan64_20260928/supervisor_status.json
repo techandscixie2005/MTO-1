@@ -1,0 +1,224 @@
+{
+  "time": 1790589453.688393,
+  "pid": 566447,
+  "runs": {
+    "G1": {
+      "state": "RUNNING",
+      "pid": 566461,
+      "gpu": 1,
+      "log": "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/logs/G1.log"
+    },
+    "G2": {
+      "state": "RUNNING",
+      "pid": 566514,
+      "gpu": 2,
+      "log": "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/logs/G2.log"
+    },
+    "G3": {
+      "state": "RUNNING",
+      "pid": 566521,
+      "gpu": 4,
+      "log": "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/logs/G3.log"
+    },
+    "G4": {
+      "state": "RUNNING",
+      "pid": 566532,
+      "gpu": 6,
+      "log": "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/logs/G4.log"
+    }
+  },
+  "health": {
+    "0": {
+      "uuid": "GPU-3399225d-00bd-4a9c-f7a9-2f098b642221",
+      "ecc_counts": [
+        0,
+        0,
+        0,
+        42,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "clean": false,
+      "row_remapper": {
+        "remapped_row_corr": "2",
+        "remapped_row_unc": "0",
+        "remapped_row_pending": "No",
+        "remapped_row_failure": "No",
+        "row_remapper_histogram": ""
+      },
+      "memory_MiB": 10
+    },
+    "1": {
+      "uuid": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+      "ecc_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "clean": true,
+      "row_remapper": {
+        "remapped_row_corr": "0",
+        "remapped_row_unc": "0",
+        "remapped_row_pending": "No",
+        "remapped_row_failure": "No",
+        "row_remapper_histogram": ""
+      },
+      "memory_MiB": 5001
+    },
+    "2": {
+      "uuid": "GPU-cb4dc1ea-9ea3-e426-bdeb-df0bef8a23fa",
+      "ecc_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "clean": true,
+      "row_remapper": {
+        "remapped_row_corr": "0",
+        "remapped_row_unc": "0",
+        "remapped_row_pending": "No",
+        "remapped_row_failure": "No",
+        "row_remapper_histogram": ""
+      },
+      "memory_MiB": 5001
+    },
+    "3": {
+      "uuid": "GPU-a880cea5-eef3-822f-7fea-ba7e5a27e95f",
+      "ecc_counts": [
+        0,
+        0,
+        0,
+        90,
+        352,
+        0,
+        0,
+        0,
+        68,
+        187
+      ],
+      "clean": false,
+      "row_remapper": {
+        "remapped_row_corr": "0",
+        "remapped_row_unc": "2",
+        "remapped_row_pending": "Yes",
+        "remapped_row_failure": "No",
+        "row_remapper_histogram": ""
+      },
+      "memory_MiB": 10
+    },
+    "4": {
+      "uuid": "GPU-e212aefc-f1d6-cc7a-5594-e87abeaf1184",
+      "ecc_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "clean": true,
+      "row_remapper": {
+        "remapped_row_corr": "0",
+        "remapped_row_unc": "0",
+        "remapped_row_pending": "No",
+        "remapped_row_failure": "No",
+        "row_remapper_histogram": ""
+      },
+      "memory_MiB": 5255
+    },
+    "5": {
+      "uuid": "GPU-71f357f3-3436-a616-b8af-50160d18f30d",
+      "ecc_counts": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "clean": false,
+      "row_remapper": {
+        "remapped_row_corr": "0",
+        "remapped_row_unc": "0",
+        "remapped_row_pending": "No",
+        "remapped_row_failure": "No",
+        "row_remapper_histogram": ""
+      },
+      "memory_MiB": 10
+    },
+    "6": {
+      "uuid": "GPU-2431a641-8045-a10b-4aa0-2769010e0708",
+      "ecc_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "clean": true,
+      "row_remapper": {
+        "remapped_row_corr": "0",
+        "remapped_row_unc": "0",
+        "remapped_row_pending": "No",
+        "remapped_row_failure": "No",
+        "row_remapper_histogram": ""
+      },
+      "memory_MiB": 5255
+    },
+    "7": {
+      "uuid": "GPU-93962521-99fe-32d5-e4a3-07531bc3c227",
+      "ecc_counts": [
+        0,
+        0,
+        0,
+        3,
+        2,
+        0,
+        0,
+        0,
+        2,
+        2
+      ],
+      "clean": false,
+      "row_remapper": {
+        "remapped_row_corr": "0",
+        "remapped_row_unc": "1",
+        "remapped_row_pending": "Yes",
+        "remapped_row_failure": "No",
+        "row_remapper_histogram": ""
+      },
+      "memory_MiB": 10
+    }
+  }
+}

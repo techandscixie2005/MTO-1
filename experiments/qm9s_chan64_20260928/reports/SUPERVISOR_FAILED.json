@@ -1,0 +1,4 @@
+{
+  "traceback": "Traceback (most recent call last):\n  File \"/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/supervisor.py\", line 84, in <module>\n    try:main()\n  File \"/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/supervisor.py\", line 32, in main\n    assert json.loads((ROOT/'reports/system_preflight.json').read_text())['passed']\n  File \"/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/pathlib.py\", line 1134, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n  File \"/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/pathlib.py\", line 1119, in open\n    return self._accessor.open(self, mode, buffering, encoding, errors,\nFileNotFoundError: [Errno 2] No such file or directory: '/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/reports/system_preflight.json'\n",
+  "time": 1790578007.7824473
+}
