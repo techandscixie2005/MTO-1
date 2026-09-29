@@ -1,0 +1,941 @@
+{
+  "project": "MTO-1",
+  "updated_at": "2026-09-29T07:41:22.576117+08:00",
+  "primary_objective": "Improve pooled raw native oscillator-strength R2; maximize validation-selected R2 while preserving honest historical-test limits.",
+  "coordinator": "root remains research orchestrator and decision owner",
+  "monitor": {
+    "automation_id": "qm9s-e-a",
+    "status": "ACTIVE",
+    "interval_hours": 4,
+    "next_due_at": "2026-09-29T10:29:29+08:00",
+    "scopes": [
+      "eta0_seed_replication seeds 23 and 37 (fixed 100 epochs)",
+      "scratch_readout_comparison MTO GPU2 and native GPU5 arms (fixed 100 epochs)",
+      "legacy G3 terminal FIT_COMPLETE; G2 remains intentional ADMIN_STOPPED partial-campaign history",
+      "future receipt-pinned authorized runs added only after reviewed launch receipt"
+    ],
+    "last_full_check_at": "2026-09-29T06:30:11+08:00",
+    "last_check_report_path": "monitoring/FULL_CHECK_20260929_0629.md",
+    "active_workers_snapshot": {
+      "observed_at": "2026-09-29T06:30:11+08:00",
+      "basis": "scheduled full check; pinned PID/start/cwd/cmdline matched at 06:29:39; these are snapshot metrics, not current liveness claims",
+      "workers": [
+        {
+          "label": "eta0_seed23",
+          "pid": 859155,
+          "start_ticks": 1246891523,
+          "gpu": 1,
+          "gpu_uuid": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+          "epoch": 83,
+          "steps": 154400,
+          "best_epoch": 53,
+          "latest_complete_epoch": 81,
+          "latest_raw_f_r2": 0.3496044,
+          "best_observed_interim_raw_f_validation_r2": 0.368703,
+          "not_final_selected_primary_metric": true
+        },
+        {
+          "label": "eta0_seed37",
+          "pid": 859334,
+          "start_ticks": 1246893027,
+          "gpu": 6,
+          "gpu_uuid": "GPU-2431a641-8045-a10b-4aa0-2769010e0708",
+          "epoch": 82,
+          "steps": 152900,
+          "best_epoch": 44,
+          "latest_complete_epoch": 81,
+          "latest_raw_f_r2": 0.3560038,
+          "best_observed_interim_raw_f_validation_r2": 0.39445,
+          "not_final_selected_primary_metric": true
+        },
+        {
+          "label": "scratch_mto",
+          "pid": 879890,
+          "start_ticks": 1247080802,
+          "gpu": 2,
+          "gpu_uuid": "GPU-cb4dc1ea-9ea3-e426-bdeb-df0bef8a23fa",
+          "epoch": 68,
+          "steps": 127700,
+          "best_epoch": 16,
+          "latest_complete_epoch": 67,
+          "latest_raw_f_r2": 0.3340615,
+          "best_observed_interim_raw_f_validation_r2": 0.373499,
+          "not_final_selected_primary_metric": true
+        },
+        {
+          "label": "scratch_native",
+          "pid": 880266,
+          "start_ticks": 1247085838,
+          "gpu": 5,
+          "gpu_uuid": "GPU-71f357f3-3436-a616-b8af-50160d18f30d",
+          "epoch": 88,
+          "steps": 163900,
+          "best_epoch": 21,
+          "latest_complete_epoch": 86,
+          "latest_raw_f_r2": 0.2414353,
+          "best_observed_interim_raw_f_validation_r2": 0.34378,
+          "not_final_selected_primary_metric": true
+        }
+      ],
+      "gpu_health": {
+        "gpu1": "ECC corrected/uncorrected 0/0; no pending remap/repair",
+        "gpu2": "ECC corrected/uncorrected 0/0; no pending remap/repair",
+        "gpu5": "ECC corrected/uncorrected 1/0, unchanged from admission; no pending remap/repair/failure",
+        "gpu6": "ECC corrected/uncorrected 0/0; no pending remap/repair"
+      },
+      "intervention": "none",
+      "metrics_interpretation": "Interim best-observed raw-f validation values are descriptive only; not final protocol-selected primary metrics."
+    },
+    "last_lifecycle_event_note": "seed23, seed37, and scratch native FIT_COMPLETE; only scratch MTO remains in event-only watch verified 07:25:27, armed 07:25:47; no full-check status claim.",
+    "active_event_watch": {
+      "watch_id": "local-exec-session-42075",
+      "armed_at": "2026-09-29T07:25:47.882796+08:00",
+      "deadline": "2026-09-29T10:29:29+08:00",
+      "observation_mode": "identity and terminal markers only; no metrics/log/GPU polling",
+      "workers": [
+        {
+          "label": "scratch_mto",
+          "pid": 879890,
+          "start_ticks": 1247080802,
+          "cwd": "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison",
+          "cmd_suffix": "train.py mto",
+          "identity_match_observed": true,
+          "verified_at": "2026-09-29T07:25:27.470239+08:00"
+        }
+      ]
+    }
+  },
+  "benchmarks": {
+    "single_eta0_validation_native_f_r2": 0.4052941183,
+    "single_eta0_historical_test_native_f_r2": 0.45581511,
+    "equal_three_eta_validation_native_f_r2": 0.4494214633,
+    "equal_three_eta_historical_test_native_f_r2": 0.48510176,
+    "ensemble_historical_test_delta_r2": 0.02928666,
+    "ensemble_connectivity_group_bootstrap_95ci_delta_r2": [
+      0.003586,
+      0.056691
+    ],
+    "ensemble_test_sse_reduction_fraction": 0.0538,
+    "test_status": "Historical split reused and previously exposed; all test metrics are exploratory, not a new generalization estimate.",
+    "provisional_fixed_five_validation_native_f_r2": 0.487699605,
+    "provisional_fixed_five_validation_native_f_sse": 81.151578,
+    "best_measured_historical_test_native_f_r2": 0.48510176,
+    "best_measured_historical_test_candidate": "equal_three_eta",
+    "fixed_five_test_evaluated": false
+  },
+  "rounds": [
+    {
+      "id": "round01_calibration",
+      "status": "complete_uncertain",
+      "paths": [
+        "calibration/REPORT.md",
+        "calibration/validation_crossfit.json",
+        "calibration/frozen_choice.json",
+        "calibration/exploratory_test.json"
+      ],
+      "decision": "Do not continue test-fitted calibration; uncertainty includes no gain and bright-tail SSE worsened."
+    },
+    {
+      "id": "round02_loss_pilot",
+      "status": "complete_validation_only_no_promotion",
+      "last_verified_queue_snapshot_at": "2026-09-28T22:57:13.966+08:00",
+      "queue_pid": 785736,
+      "snapshot_state": "WAIT_G2_FINISH",
+      "waiting_for_pid": 566514,
+      "paths": [
+        "CODE_REVIEW.md",
+        "SCIENTIFIC_AUDIT_AND_PROTOCOL.md",
+        "pilot_config.json",
+        "pilot_queue.py",
+        "g2_retire.py",
+        "pilot_queue_admin.py",
+        "G2_ADMIN_STOPPED.json",
+        "G2_RETIREMENT.md",
+        "G2_RETIREMENT_AMENDMENT_REVIEW.json",
+        "G2_RETIREMENT_AMENDMENT_REVIEW.md",
+        "runs/control/queue_launch_receipt.json"
+      ],
+      "decision": "All selected checkpoints are epoch0 numerical ties; no meaningful oscillator-strength gain, no promotion, no test.",
+      "queue_state_at_execution_receipt": "RUNNING",
+      "active_arm": "control",
+      "active_worker_pid": 785960,
+      "gpu": 2,
+      "epoch0_native_f_validation_r2": 0.4052941077,
+      "next_arms": [
+        "weighted",
+        "direct_f_matched"
+      ],
+      "previous_queue_pid": 762340,
+      "previous_queue_outcome": "exited without workers after G2 administrative stop",
+      "queue_state": "ALL_COMPLETE",
+      "summary_path": "pilot_summary.json",
+      "test_evaluation": false,
+      "selected_arms": {
+        "control": {
+          "epoch": 0,
+          "native_f_validation_r2": 0.4052941076636265
+        },
+        "weighted": {
+          "epoch": 0,
+          "native_f_validation_r2": 0.40529410889613404,
+          "delta_vs_control": 1.232507547255025e-09,
+          "bootstrap_ci95": [
+            -1.656309207652572e-08,
+            1.7572897908447377e-08
+          ]
+        },
+        "direct_f_matched": {
+          "epoch": 0,
+          "native_f_validation_r2": 0.4052941280338356,
+          "delta_vs_control": 2.037020892170021e-08,
+          "bootstrap_ci95": [
+            -1.8976681616149942e-09,
+            5.096803209446318e-08
+          ]
+        }
+      },
+      "epoch20_native_f_validation_r2": {
+        "control": 0.3093488847914624,
+        "weighted": 0.30657218659536034,
+        "direct_f_matched": 0.31736450271360983
+      }
+    },
+    {
+      "id": "round03_equal_three_ensemble",
+      "status": "complete_exploratory",
+      "weights": {
+        "mto_eta0": 0.3333333333,
+        "mto_eta01": 0.3333333333,
+        "mto_eta1": 0.3333333333
+      },
+      "validation_native_f_r2": 0.4494214633,
+      "historical_test_native_f_r2": 0.48510176,
+      "historical_test_delta_r2": 0.02928666,
+      "group_bootstrap_95ci": [
+        0.003586,
+        0.056691
+      ],
+      "paths": [
+        "ensemble_diagnostic/FROZEN_CHOICE.json",
+        "ensemble_diagnostic/ENSEMBLE_TEST_REPORT.md",
+        "ensemble_diagnostic/EXPLORATORY_TEST.json",
+        "ensemble_diagnostic/GROUP_BOOTSTRAP_SENSITIVITY.json",
+        "ensemble_diagnostic/ENSEMBLE_REVIEW.md"
+      ],
+      "caveats": [
+        "Three model forward passes at inference",
+        "historical test is exposed and exploratory",
+        "upper 1 percent bright-transition SSE worsens",
+        "state slots 7 and 8 regress"
+      ]
+    },
+    {
+      "id": "round04_architecture_screen",
+      "status": "complete_validation_only_reviewed_no_promotion",
+      "queue_pid": 778242,
+      "waiting_resources": "Historical launch admission note only; current resource ownership must be rediscovered",
+      "epoch0_retained_residual_validation_native_f_r2": 0.4052941298,
+      "baseline_gate": "passed",
+      "paths": [
+        "architecture/ARCHITECTURE_PROTOCOL.md",
+        "architecture/ARCHITECTURE_CODE_REVIEW.md",
+        "architecture/EXECUTION_REVIEW.json",
+        "architecture/ARCH_QUEUE_STATUS.json",
+        "architecture/runs/<arm>/status.json",
+        "completion_receipts/ARCHIVE_MANIFEST.json",
+        "completion_receipts/RETAINED_RESIDUAL_COMPLETION.json",
+        "completion_receipts/RETAINED_RESIDUAL_COMPLETION.md",
+        "completion_receipts/RETAINED_RESIDUAL_SCIENTIFIC_INTERPRETATION.md",
+        "completion_receipts/G1_COMPLETION_REASSIGNMENT.json",
+        "DETANET_SCALED_BASELINE_FEASIBILITY.md",
+        "architecture/ARCHITECTURE_RESULTS.md",
+        "architecture/ARCHITECTURE_RESULTS.json",
+        "architecture/runs/original/FIT_COMPLETE.json",
+        "architecture/runs/retained_residual/FIT_COMPLETE.json",
+        "architecture/runs/direct_f/FIT_COMPLETE.json",
+        "architecture/runs/independent_trace/FIT_COMPLETE.json",
+        "architecture/runs/<arm>/queue_launch_receipt.json",
+        "architecture/INDEPENDENT_COMPLETION_AUDIT.json",
+        "analysis_addendum/ARCHITECTURE_VALIDATION_ADDENDUM.md",
+        "analysis_addendum/ARCHITECTURE_VALIDATION_ADDENDUM.json",
+        "completion_receipts/ARCHITECTURE_SCIENTIFIC_DECISION.md",
+        "frozen_residual/FROZEN_RESIDUAL_PROTOCOL.md",
+        "completion_receipts/FINAL20_REPLAY_RESULTS.json",
+        "completion_receipts/FINAL20_REPLAY_INDEPENDENT_REVIEW.md"
+      ],
+      "whole_screen_complete": true,
+      "screen_result_promotion": "none; independently reviewed validation-only screen; no test evaluation and no candidate reaches the +0.01 R2 promotion threshold",
+      "completed_arm_receipts": {
+        "retained_residual": {
+          "fit_complete": true,
+          "fixed_epochs": 20,
+          "gpu": 5,
+          "selected_best_epoch": 0,
+          "selected_validation_raw_native_f_r2": 0.4052941297965861,
+          "final_epoch": 20,
+          "final_validation_raw_native_f_r2": 0.3049378537297114,
+          "selected_minus_eta0_r2": 1.1455487780587248e-08,
+          "interpretation": "selected checkpoint numerically reproduces eta0; no single-model gain; final continuation worsened validation; arm only, not a matched architecture conclusion",
+          "completion_record": "completion_receipts/RETAINED_RESIDUAL_COMPLETION.json",
+          "interpretation_record": "completion_receipts/RETAINED_RESIDUAL_SCIENTIFIC_INTERPRETATION.md"
+        }
+      },
+      "matched_control_pending_at_completion_receipt": false,
+      "last_known_queue_state": "ALL_COMPLETE, exit_code 0 at architecture/ARCH_QUEUE_STATUS.json; terminal summary generated",
+      "deferred_next_action": "Root-authorized preparation of one frozen-eta0 residual-head-only 20-epoch validation diagnostic under frozen_residual/FROZEN_RESIDUAL_PROTOCOL.md, conditional on implementation review PASS, preflight PASS, resource admission, and queue receipt. No launch claimed. No test evaluation.",
+      "last_completed_worker": {
+        "arm": "retained_residual",
+        "pid": 778585,
+        "gpu": 5,
+        "state": "FIT_COMPLETE per completion receipt; process not claimed currently active"
+      },
+      "queue_terminal_receipt": {
+        "state": "ALL_COMPLETE",
+        "exit_code": 0,
+        "finished_arms": [
+          "original",
+          "retained_residual",
+          "direct_f",
+          "independent_trace"
+        ],
+        "path": "architecture/ARCH_QUEUE_STATUS.json"
+      },
+      "analysis_review_status": "independent scientific decision complete; promote none",
+      "validation_summary": {
+        "metric": "pooled raw native-f R2; best epoch selected by validation f SSE",
+        "epochs": 20,
+        "test_evaluation": "none",
+        "arms": {
+          "original": {
+            "best_epoch": 0,
+            "r2": 0.4052941152198205,
+            "delta_vs_original": 0.0
+          },
+          "retained_residual": {
+            "best_epoch": 0,
+            "r2": 0.4052941297965861,
+            "delta_vs_original": 1.4576765585223075e-08,
+            "final_epoch20_r2": 0.3049378537297114
+          },
+          "direct_f": {
+            "best_epoch": 1,
+            "r2": 0.36925006503234203,
+            "delta_vs_original": -0.03604405018747841,
+            "paired_bootstrap_ci95": [
+              -0.1096793226397856,
+              0.007561942458292267
+            ],
+            "bootstrap_positive_fraction": 0.0875
+          },
+          "independent_trace": {
+            "best_epoch": 1,
+            "r2": 0.3720225609675717,
+            "delta_vs_original": -0.0332715542522488,
+            "paired_bootstrap_ci95": [
+              -0.09941435844870743,
+              0.00823556386029235
+            ],
+            "bootstrap_positive_fraction": 0.0865
+          }
+        },
+        "promotion": "none; summary awaits independent review; no test and no benchmark change"
+      },
+      "final20_validation_replay": {
+        "state": "complete_validation_only_independently_reviewed",
+        "path": "completion_receipts/FINAL20_REPLAY_RESULTS.json",
+        "raw_native_f_validation_r2": {
+          "frozen_eta0": 0.4052941183410983,
+          "changed_base": 0.27896725245221476,
+          "emitted_final20": 0.3049378477187813
+        },
+        "sse": {
+          "frozen_eta0": 94.20512092938401,
+          "changed_base": 114.2160844068195,
+          "emitted_final20": 110.10218013388642,
+          "final20_minus_eta0": 15.897059204502412
+        },
+        "interpretation": "Inference decomposition of the jointly trained checkpoint, not a retraining counterfactual; final20 does not beat epoch0 or the unchanged eta0 source. Error is concentrated: the largest deterioration molecule contributes 72.97% of net SSE increase; top 10 contribute 97.27%. No test split accessed.",
+        "runtime_arrays_archived": false
+      }
+    },
+    {
+      "id": "round05_frozen_residual_head_only",
+      "status": "complete_validation_only_no_promotion",
+      "paths": [
+        "frozen_residual/FROZEN_RESIDUAL_PROTOCOL.md",
+        "frozen_residual/IMPLEMENTATION_HANDOFF.json",
+        "frozen_residual/IMPLEMENTATION_REVIEW.md",
+        "frozen_residual/PREFLIGHT.json",
+        "frozen_residual/INDEPENDENT_RUN_AUDIT.json",
+        "frozen_residual/FROZEN_RESIDUAL_RESULTS.json",
+        "frozen_residual/FROZEN_RESIDUAL_RESULTS.md",
+        "frozen_residual/FROZEN_ERROR_DECOMPOSITION.json",
+        "frozen_residual/FROZEN_VS_ENSEMBLE_VALIDATION.json",
+        "frozen_residual/WORSTCASE_14562_VALIDATION.json",
+        "frozen_residual/ROUND_REPORT.md",
+        "frozen_residual/run/FIT_COMPLETE.json",
+        "frozen_residual/run/history.jsonl",
+        "frozen_residual/run/status.json",
+        "frozen_residual/run/train.log",
+        "frozen_residual/SCIENTIFIC_RESULT_REVIEW.md"
+      ],
+      "decision": "One 20-epoch frozen-eta0 residual-head-only validation diagnostic is authorized for preparation, conditional on implementation review PASS, preflight PASS, resource admission and a launch receipt. No training launch is recorded yet; no test evaluation.",
+      "run_state": "FIT_COMPLETE; independent run audit PASS; scientific result review complete",
+      "best_epoch": 2,
+      "epochs_completed": 20,
+      "optimizer_steps": 37620,
+      "baseline_validation_raw_native_f_r2": 0.4052941183410983,
+      "selected_validation_raw_native_f_r2": 0.406789903,
+      "selected_delta_r2": 0.0014957847,
+      "final_epoch20_validation_raw_native_f_r2": 0.404299111,
+      "promotion": "none; gain below prespecified +0.01 R2 threshold; no test evaluation, no extension",
+      "interpretation": "Small validation-selected gain; final epoch regresses below baseline. One-seed exploratory result; uncertainty conditions on selected checkpoint. Fixed-base protection and Gram-information limits are discussed in the independent review."
+    },
+    {
+      "id": "round06_frozen_gram_probe",
+      "status": "runtime_gate_failed_before_fit_review_pending_repair",
+      "path": "frozen_gram_probe/FROZEN_GRAM_PROBE_PROTOCOL.md",
+      "protocol_sha256": "c7f6f6ede884e663d5af579e6add91f49552128ff39ce7dc0bdb73088777fa32",
+      "decision": "Bounded two-arm frozen-Gram probe protocol approved. Implementation/preflight are underway. No full fit or launch is recorded; launch remains conditional on independent review and runtime gates.",
+      "worker_pid_at_launch": 846525,
+      "worker_state_at_check": "process exited; FAILED.json present; no PROBE_COMPLETE or model metrics",
+      "failure_path": "frozen_gram_probe/FAILED.json",
+      "failure": "Frozen cache mismatch h max=2.384185791015625e-06",
+      "model_result": false,
+      "intervention": "Hold automatic retry. Root-authorized resource-only plan permits corrected Gram work on healthy idle GPU2 after reviewed repair; no retry launched at this check."
+    },
+    {
+      "id": "round07_eta0_seed_replication",
+      "status": "protocol_prepared_no_training_launched",
+      "path": "eta0_seed_replication/PROTOCOL.md",
+      "decision": "Seed protocol exists; no seed run had launched at the 02:29 full check."
+    },
+    {
+      "id": "round_chan64_campaign_closeout",
+      "status": "complete_partial_campaign_provisional_validation_candidate_only",
+      "paths": [
+        "chan64_campaign_completion/CAMPAIGN_REPORT.md",
+        "chan64_campaign_completion/SCIENTIFIC_CLOSEOUT_REVIEW.md",
+        "chan64_campaign_completion/ARCHIVE_ALLOWLIST.json"
+      ],
+      "decision": "Fixed-five ensemble is a provisional validation candidate (R2 0.487699605, SSE 81.151578; 6.95% lower SSE than old three). The fixed-five candidate has no test evaluation. Best measured historical test remains original fixed-three R2 0.48510176 and is exploratory; G2 intentional ADMIN_STOPPED, so campaign remains explicitly partial."
+    }
+  ],
+  "chan64_plateau_decision": {
+    "state": "executed_intentional_administrative_stop",
+    "g2_epoch": 215,
+    "cursor": 114496,
+    "best_epoch": 41,
+    "best_objective": 0.12957936948799922,
+    "last_checkpoint_sha256": "f437e1ee9a0f569cc6b788e5df12ad3278d28fa867853e5067fca7f71dce7cfa",
+    "best_checkpoint_sha256": "1894f778b2d98a99cc390237c0516d98279375f140ad4b5ea72ac8d08012bd1a",
+    "resumable": true,
+    "original_queue_pid": 762340,
+    "original_queue_outcome": "exited_without_workers",
+    "provenance": [
+      "ADMIN_STOPPED",
+      "STOPPED_REQUIRES_EXPLICIT_RESUME",
+      "CAMPAIGN_BLOCKED expected"
+    ],
+    "prohibition": "No FIT_COMPLETE was forged; other chan64 arms continue; analyze eventual original campaign as partial."
+  },
+  "gpu_policy": {
+    "exclude": [
+      3,
+      7
+    ],
+    "guarded": [
+      5
+    ],
+    "clean_when_free": [
+      1,
+      4,
+      6
+    ],
+    "preserve_unrelated": {
+      "gpu": 0,
+      "job": "SpecGPT"
+    },
+    "notes": "GPU2 is allocated to replacement matched loss pilot queue PID 785736. User authorized architecture changes and broad GPU use; resource admission and active ownership locks still apply."
+  },
+  "publication": {
+    "repository": "techandscixie2005/MTO-1",
+    "branch": "codex/oscillator-r2-research-20260928",
+    "state": "ssh_branch_confirmed",
+    "owner_ssh_authentication": "verified",
+    "pushed": true,
+    "source": "verified D: archive copies only",
+    "local_status": "D:\\MTO\\archives\\oscillator_r2_20260928\\PUBLICATION_STATUS.md",
+    "commit": "25f208aee122ad09e5737a737e4fcef993fab954",
+    "base_main_commit": "1de09d232379eb05a999cb67f58f084476b107b6",
+    "verified_at": "2026-09-29T00:13:53+08:00",
+    "verification": "SSH ls-remote returned the exact branch commit; 70 additions confined to research/oscillator_r2_20260928/",
+    "draft_pr": "not_created_github_integration_403"
+  },
+  "decision_rules": [
+    "Root remains orchestrator.",
+    "Select and tune with validation only.",
+    "Keep frozen choices and reviews immutable.",
+    "Do not claim generalization from the exposed historical test; require a newly sealed molecule-disjoint holdout.",
+    "Archive only lightweight code, protocols, reviews, logs, and summarized metrics after D: hash verification.",
+    "Treat completed architecture arms as partial evidence only. Do not promote an architecture or update benchmarks until the matched screen completes and is reviewed."
+  ],
+  "g2_retirement_execution_receipt": {
+    "state": "ADMIN_STOPPED",
+    "pid": 566514,
+    "gpu": 2,
+    "epoch": 215,
+    "cursor": 114496,
+    "train_count": 120355,
+    "best_epoch": 41,
+    "best_objective": 0.12957936948799922,
+    "last_checkpoint_sha256": "f437e1ee9a0f569cc6b788e5df12ad3278d28fa867853e5067fca7f71dce7cfa",
+    "best_checkpoint_sha256": "1894f778b2d98a99cc390237c0516d98279375f140ad4b5ea72ac8d08012bd1a",
+    "checkpoints_retained_resumable": true,
+    "fit_complete_forged": false,
+    "original_queue_exited_without_workers": true,
+    "original_campaign_state": "STOPPED_REQUIRES_EXPLICIT_RESUME; expected CAMPAIGN_BLOCKED; intentional incomplete campaign",
+    "partial_campaign_analysis": "Required after remaining original chan64 jobs finish; label explicitly as partial and administratively stopped."
+  },
+  "targeted_resource_check": {
+    "type": "targeted_G4_and_architecture_resource_check_not_four_hour_monitor",
+    "recorded_at": "2026-09-29T00:13:53+08:00",
+    "receipt": "G4_COMPLETION_REASSIGNMENT.json",
+    "g4": {
+      "state": "FIT_COMPLETE",
+      "reason": "early_stop",
+      "completed_epoch": 223,
+      "best_epoch": 71,
+      "best_validation_objective": 0.13636913722659028,
+      "nonimproving_epochs": 152,
+      "former_pid": 566532,
+      "former_process_absent": true,
+      "oracle_E_validation_f_r2_diagnostic_only": 0.34833500406629203,
+      "native_f_available": false
+    },
+    "architecture_original": {
+      "state": "launched",
+      "pid": 790200,
+      "gpu": 6
+    },
+    "next_four_hour_monitor_due_at": "2026-09-29T02:29:29+08:00"
+  },
+  "legacy_chan64_completion_receipts": {
+    "G1": {
+      "state": "natural FIT_COMPLETE",
+      "completed_epoch": 227,
+      "best_epoch": 75,
+      "former_pid": 566461,
+      "gpu_released": 1,
+      "reassignment_receipt": "completion_receipts/G1_COMPLETION_REASSIGNMENT.json",
+      "reassigned_to": {
+        "arm": "independent_trace",
+        "pid_at_launch_receipt": 799963,
+        "gpu": 1
+      },
+      "note": "Completion/reassignment receipt only; no current-health claim."
+    },
+    "G3": {
+      "state": "natural FIT_COMPLETE",
+      "completed_epoch": 326,
+      "best_epoch": 174,
+      "best_val": 0.5248532128786919,
+      "steps": 613206,
+      "former_pid": 566521,
+      "former_start_ticks": 1242573486,
+      "receipt": "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/runs/G3/FIT_COMPLETE.json",
+      "receipt_sha256": "319cb32bce7bfde222d9bd98e2c734ecdb4b0a029396a9165eb02e16afb38130",
+      "observed_at": "2026-09-29T04:21:18.805429+08:00",
+      "gpu_released": 4,
+      "note": "Terminal receipt found only after pinned process disappeared; no other active worker health check was performed."
+    }
+  },
+  "latest_scheduled_health_check": {
+    "scheduled_for": "2026-09-29T02:29:29+08:00",
+    "completed_at": "2026-09-29T02:31:01+08:00",
+    "report": "monitoring/FULL_CHECK_20260929_0229_CORRECTED.md",
+    "loss_queue": "ALL_COMPLETE; no arm promoted",
+    "legacy_G3": {
+      "state": "RUNNING",
+      "pid": 566521,
+      "start_ticks": 1242573486,
+      "gpu": 4,
+      "epoch": 281,
+      "cursor": 108800,
+      "steps": 528380,
+      "native_f_r2_available": false
+    },
+    "gram_probe": {
+      "state": "FAILED before fit at feature identity gate",
+      "pid": 846525,
+      "no_model_result": true
+    },
+    "gpu_health_snapshot": {
+      "gpu2": "idle, ECC 0",
+      "gpu4": "G3, ECC 0",
+      "gpu6": "idle, ECC 0"
+    },
+    "intervention": "No G3 action; hold Gram retry until reviewed repair; preserve GPU3/7 exclusion and GPU0 unrelated job.",
+    "original_report_note": "Original report path contains six-byte literal placeholder; corrected historical report is additive. No new health poll."
+  },
+  "research_updates_20260929_0410": {
+    "basis": "verified launch and review receipts supplied by executor/scientist; no runtime health probe performed",
+    "next_four_hour_monitor_due_at": "2026-09-29T06:29:29+08:00",
+    "seed_replication": {
+      "state": "launched",
+      "review_sha256": "088be0c334d88b46ce39f7f3b5097cb6150a517d83cb0432b1a8fe847dcc1808",
+      "arms": [
+        {
+          "seed": 23,
+          "pid": 859155,
+          "start_ticks": 1246891523,
+          "gpu": 1,
+          "gpu_uuid": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+          "receipt_sha256": "af79442051f60dc0fd29e11c670ca3949237f312323f09a0d2b2829a8dfdfa3d",
+          "epochs": 100,
+          "fresh_initialization": true
+        },
+        {
+          "seed": 37,
+          "pid": 859334,
+          "start_ticks": 1246893027,
+          "gpu": 6,
+          "gpu_uuid": "GPU-2431a641-8045-a10b-4aa0-2769010e0708",
+          "receipt_sha256": "789d6b8fb4f5390b2313e33a2e107a915aa8c560ddf5e2fae32892f1500ed879",
+          "epochs": 100,
+          "fresh_initialization": true
+        }
+      ]
+    },
+    "gram_attempts": {
+      "attempt1": "pre-fit cache identity failure; no scientific result",
+      "attempt2": "independently reviewed and launched; scientific evaluation completed but report writing failed under ASCII; audited report recovery underway, no refit/inference"
+    },
+    "loss_pilot_review": {
+      "path": "completion_receipts/LOSS_PILOT_SCIENTIFIC_REVIEW.md",
+      "sha256": "5ba23d7a312cea6e101fef67737632307f617de4140ff4c57906481c40abaebc",
+      "disposition": "no promotion/test/extension; epoch0 variants are numerical ties"
+    },
+    "recorded_at": "2026-09-29T03:00:24+08:00"
+  },
+  "research_updates_20260929_0300": {
+    "basis": "review and launch receipts only; no fresh health metrics",
+    "next_four_hour_monitor_due_at": "2026-09-29T06:29:29+08:00",
+    "loss_pilot_review": {
+      "path": "completion_receipts/LOSS_PILOT_SCIENTIFIC_REVIEW.md",
+      "sha256": "5ba23d7a312cea6e101fef67737632307f617de4140ff4c57906481c40abaebc",
+      "decision": "numerical ties; no promotion/test/extension"
+    },
+    "gram_probe": {
+      "attempt1": "pre-fit cache-gate failure; no model result",
+      "attempt2": "reviewed, fixed probe completed saved numerical evaluation; original Markdown output failed ASCII writing; additive recovered report and postprocess review completed",
+      "scientific_review": "frozen_gram_probe/SCIENTIFIC_RESULT_REVIEW.md",
+      "scientific_review_sha256": "cc8d3aeea23c18ba2f721f8e48e948a1cca30085230b902b599f947bd4d13eed",
+      "postprocess_review_sha256": "7d9f406ac182da6ee5cceec227f2ccf02f062cb050a4893d66877ef4225843dc",
+      "no_refit_or_new_inference": true
+    },
+    "seed_replication": {
+      "state": "launched; scheduled monitor will inspect progress",
+      "implementation_review_sha256": "088be0c334d88b46ce39f7f3b5097cb6150a517d83cb0432b1a8fe847dcc1808",
+      "arms": [
+        {
+          "seed": 23,
+          "pid": 859155,
+          "start_ticks": 1246891523,
+          "gpu": 1,
+          "gpu_uuid": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+          "receipt_sha256": "af79442051f60dc0fd29e11c670ca3949237f312323f09a0d2b2829a8dfdfa3d",
+          "epochs": 100,
+          "fresh_initialization": true
+        },
+        {
+          "seed": 37,
+          "pid": 859334,
+          "start_ticks": 1246893027,
+          "gpu": 6,
+          "gpu_uuid": "GPU-2431a641-8045-a10b-4aa0-2769010e0708",
+          "receipt_sha256": "789d6b8fb4f5390b2313e33a2e107a915aa8c560ddf5e2fae32892f1500ed879",
+          "epochs": 100,
+          "fresh_initialization": true
+        }
+      ]
+    },
+    "recorded_at": "2026-09-29T03:00:24+08:00"
+  },
+  "research_updates_20260929T032103+0800": {
+    "recorded_at": "2026-09-29T03:21:03+08:00",
+    "basis": "reviewed protocol, preflight and immutable launch receipts; no current health poll",
+    "next_four_hour_monitor_due_at": "2026-09-29T06:29:29+08:00",
+    "scratch_readout_comparison": {
+      "state": "both reviewed fixed-100-epoch arms launched; receipt identity only, no current health claim",
+      "protocol_path": "scratch_readout_comparison/PROTOCOL.md",
+      "implementation_review_sha256": "6226b1c68226ce8a5ed6ddf74c630bce32dd88e0fadc46b0de12e8e4d005c3e2",
+      "preflight_sha256": "7719140e4bc0fcf5566eb6e90aa0d450bb27f3e217eb17a727a06116eec02e3c",
+      "arms": [
+        {
+          "arm": "mto",
+          "pid": 879890,
+          "start_ticks": 1247080802,
+          "gpu": 2,
+          "receipt_path": "scratch_readout_comparison/runs/mto/LAUNCH_RECEIPT.json",
+          "receipt_sha256": "d4bf260b73e6db099742c7bcef8be0c4834adad2202c99486b7130be0873d39c",
+          "epochs": 100
+        },
+        {
+          "arm": "native",
+          "pid": 880266,
+          "start_ticks": 1247085838,
+          "gpu": 5,
+          "receipt_path": "scratch_readout_comparison/runs/native/LAUNCH_RECEIPT.json",
+          "receipt_sha256": "cd006ac90880c3f2b7e17d5a65aa064070e8eed72f5b7d272949b0378507b837",
+          "epochs": 100,
+          "gpu5_admission_review_sha256": "ce61348caab6b1367787e18eeb89e2dfe5cf91349ad4e0602d2bf0dff9d4183d"
+        }
+      ]
+    },
+    "geometry_error_audit": {
+      "state": "completed, D-staged, strong reviewer acknowledged packet; no promotion or causal/label-error claim",
+      "report_sha256": "bc97cdb2c1c949cf53eed6c5ab0610c1254b9f4405e37a28a5707affdbdc4d70",
+      "metrics_sha256": "b088b23a5098149c5a127623a5a9315f6d4c979a501eeb3fd0af46285eaccbbd",
+      "all_validation_molecules_retained": true
+    }
+  },
+  "research_updates_20260929_0325": {
+    "recorded_at": "2026-09-29T03:25:14+08:00",
+    "basis": "independent geometry review and immutable scratch arm receipts; no new health check",
+    "next_four_hour_monitor_due_at": "2026-09-29T06:29:29+08:00",
+    "geometry_error_audit": {
+      "state": "independently reviewed descriptive audit",
+      "review_path": "geometry_error_audit/INDEPENDENT_SCIENTIFIC_REVIEW.md",
+      "review_sha256": "cbfff434ea9d2df1f06b713f53788f803c960cec12b38547920138bece294e5c",
+      "no_causal_or_label_error_claim": true,
+      "all_validation_molecules_retained": true,
+      "no_benchmark_change": true
+    },
+    "scratch_readout_comparison": {
+      "state": "both reviewed fixed-100-epoch arms launched; receipt identity only, no current health claim",
+      "protocol_path": "scratch_readout_comparison/PROTOCOL.md",
+      "implementation_review_sha256": "6226b1c68226ce8a5ed6ddf74c630bce32dd88e0fadc46b0de12e8e4d005c3e2",
+      "preflight_sha256": "7719140e4bc0fcf5566eb6e90aa0d450bb27f3e217eb17a727a06116eec02e3c",
+      "arms": [
+        {
+          "arm": "mto",
+          "pid": 879890,
+          "start_ticks": 1247080802,
+          "gpu": 2,
+          "receipt_path": "scratch_readout_comparison/runs/mto/LAUNCH_RECEIPT.json",
+          "receipt_sha256": "d4bf260b73e6db099742c7bcef8be0c4834adad2202c99486b7130be0873d39c",
+          "epochs": 100
+        },
+        {
+          "arm": "native",
+          "pid": 880266,
+          "start_ticks": 1247085838,
+          "gpu": 5,
+          "receipt_path": "scratch_readout_comparison/runs/native/LAUNCH_RECEIPT.json",
+          "receipt_sha256": "cd006ac90880c3f2b7e17d5a65aa064070e8eed72f5b7d272949b0378507b837",
+          "epochs": 100,
+          "gpu5_admission_review_sha256": "ce61348caab6b1367787e18eeb89e2dfe5cf91349ad4e0602d2bf0dff9d4183d"
+        }
+      ]
+    },
+    "authorized_reuse": "fixed train-derived geometry bins may be used for post-run saved-prediction diagnostics only; no new inference/trainer edits"
+  },
+  "latest_publication": {
+    "recorded_at": "2026-09-29T03:59:28+08:00",
+    "branch": "codex/oscillator-r2-research-20260928",
+    "commit": "72a6186fccaf0940ca5032ed4c8327cab8912f38",
+    "parent_commit": "a0eb756cbf7df144d460c87f37d02f8b22510271",
+    "main_unchanged": true,
+    "verified_tree": "512552483ce973e3d767393b40b0f59bf3bb3f51",
+    "research_only_additions": 15,
+    "source_files": 12,
+    "source_bytes": 130677,
+    "D_source_manifest_sha256": "701830bc2d34bd0ab932d17ae6273777abc906612765a5d735fac182913b29c5",
+    "classification": "postrun geometry preparation only; no completed study outcomes",
+    "next_full_check_due_at": "2026-09-29T06:29:29+08:00"
+  },
+  "latest_lifecycle_event": {
+    "observed_at": "2026-09-29T07:24:03+08:00",
+    "worker": "eta0_seed_replication/seed37",
+    "event": "FIT_COMPLETE",
+    "pid": 859334,
+    "start_ticks": 1246893027,
+    "gpu": 6,
+    "marker_path": "eta0_seed_replication/runs/seed37/FIT_COMPLETE.json",
+    "marker_sha256": "48294d9a1340ee874af8e975bf7973965d9b40050312bc4fb1372a0e69d1adb2",
+    "epochs": 100,
+    "steps": 188100,
+    "best_raw_f_epoch": 44,
+    "best_raw_f_sse": 95.92205202626212,
+    "gpu_after_ecc_corrected": 0,
+    "gpu_after_ecc_uncorrected": 0,
+    "gpu_after_remap_pending": false,
+    "gpu_after_remap_failure": false,
+    "scope_note": "terminal event only, not a full health check; other worker states not asserted"
+  },
+  "research_updates_20260929_chan64_closeout": {
+    "recorded_at": "2026-09-29T04:43:30+08:00",
+    "basis": "reviewed campaign closeout and D-stage verified allowlist; no live health poll or new training",
+    "next_full_check_due_at": "2026-09-29T06:29:29+08:00",
+    "monitor_last_full_check_preserved_at": "2026-09-29T02:31:01+08:00",
+    "campaign_state": "closed_partial_campaign_G2_intentionally_ADMIN_STOPPED; G1/G3/G4 natural FIT_COMPLETE; no G2 FIT_COMPLETE forged",
+    "candidate": {
+      "name": "fixed five-model equal-weight native-f ensemble",
+      "status": "provisional validation candidate; no promotion; five-way test unevaluated",
+      "validation_native_f_r2": 0.487699605,
+      "validation_native_f_sse": 81.151578,
+      "sse_reduction_vs_old_three_validation_fraction": 0.0695,
+      "replay_evidence": "fixed weights, selected components and saved-array audit; see chan64_campaign_completion/CAMPAIGN_REPORT.md and SCIENTIFIC_CLOSEOUT_REVIEW.md"
+    },
+    "known_test": {
+      "best_measured_historical_native_f_r2": 0.48510176,
+      "candidate": "original fixed three-model ensemble",
+      "five_model_test_evaluated": false,
+      "interpretation": "historically reused/exposed test; exploratory only, not a fresh generalization estimate"
+    },
+    "archive": {
+      "allowlist_path": "research/oscillator_r2_20260928/chan64_campaign_completion/ARCHIVE_ALLOWLIST.json",
+      "allowlist_sha256": "73f1bb9db9691b3eecca97d24e859373e8b8f2cf048441681642e6541ca38b01",
+      "D_manifest_path": "D:\\MTO\\archives\\oscillator_r2_20260928\\chan64_campaign_completion\\D_STAGE_MANIFEST.json"
+    }
+  },
+  "research_updates_20260929_0630_full_monitor_check": {
+    "recorded_at": "2026-09-29T06:34:03+08:00",
+    "scheduled_slot_at": "2026-09-29T06:29:29+08:00",
+    "started_at": "2026-09-29T06:29:39+08:00",
+    "ended_at": "2026-09-29T06:30:11+08:00",
+    "report_path": "monitoring/FULL_CHECK_20260929_0629.md",
+    "report_sha256": "45608fb4f95ae451a6c297b75dd4c38171269eaf4f5579baba90d6bfb9c58d27",
+    "next_due_at": "2026-09-29T10:29:29+08:00",
+    "worker_snapshot": [
+      {
+        "label": "eta0_seed23",
+        "pid": 859155,
+        "start_ticks": 1246891523,
+        "gpu": 1,
+        "gpu_uuid": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+        "epoch": 83,
+        "steps": 154400,
+        "best_validation_raw_f_r2": 0.368703,
+        "best_epoch": 53,
+        "latest_complete_epoch": 81,
+        "latest_raw_f_r2": 0.3496044
+      },
+      {
+        "label": "eta0_seed37",
+        "pid": 859334,
+        "start_ticks": 1246893027,
+        "gpu": 6,
+        "gpu_uuid": "GPU-2431a641-8045-a10b-4aa0-2769010e0708",
+        "epoch": 82,
+        "steps": 152900,
+        "best_validation_raw_f_r2": 0.39445,
+        "best_epoch": 44,
+        "latest_complete_epoch": 81,
+        "latest_raw_f_r2": 0.3560038
+      },
+      {
+        "label": "scratch_mto",
+        "pid": 879890,
+        "start_ticks": 1247080802,
+        "gpu": 2,
+        "gpu_uuid": "GPU-cb4dc1ea-9ea3-e426-bdeb-df0bef8a23fa",
+        "epoch": 68,
+        "steps": 127700,
+        "best_validation_raw_f_r2": 0.373499,
+        "best_epoch": 16,
+        "latest_complete_epoch": 67,
+        "latest_raw_f_r2": 0.3340615
+      },
+      {
+        "label": "scratch_native",
+        "pid": 880266,
+        "start_ticks": 1247085838,
+        "gpu": 5,
+        "gpu_uuid": "GPU-71f357f3-3436-a616-b8af-50160d18f30d",
+        "epoch": 88,
+        "steps": 163900,
+        "best_validation_raw_f_r2": 0.34378,
+        "best_epoch": 21,
+        "latest_complete_epoch": 86,
+        "latest_raw_f_r2": 0.2414353
+      }
+    ],
+    "decision": "No intervention; continue fixed runs to 100 epochs despite interim validation declines. No new test or promotion.",
+    "metrics_interpretation": "Interim best-observed raw-f validation values are descriptive only; not final protocol-selected primary metrics."
+  },
+  "lifecycle_event_history": [
+    {
+      "observed_at": "2026-09-29T07:00:11+08:00",
+      "worker": "scratch_readout_comparison/native",
+      "event": "FIT_COMPLETE",
+      "pid": 880266,
+      "start_ticks": 1247085838,
+      "gpu": 5,
+      "marker_path": "scratch_readout_comparison/runs/native/FIT_COMPLETE.json",
+      "marker_sha256": "31ade59511a4fde1b323201de387ae873c31f83d5dfa49f595faae7cc5b31abb",
+      "epochs": 100,
+      "steps": 188100,
+      "best_raw_f_epoch": 21,
+      "best_raw_f_sse": 103.94902793560838,
+      "best_joint_epoch": 21,
+      "best_joint_objective": 0.6680877956843397,
+      "gpu_after_ecc_corrected": 1,
+      "gpu_after_ecc_uncorrected": 0,
+      "gpu_after_remap_pending": false,
+      "gpu_after_remap_failure": false,
+      "scope_note": "terminal event only, not a full health check; no other worker health asserted"
+    },
+    {
+      "observed_at": "2026-09-29T07:21:11+08:00",
+      "worker": "eta0_seed_replication/seed23",
+      "event": "FIT_COMPLETE",
+      "pid": 859155,
+      "start_ticks": 1246891523,
+      "gpu": 1,
+      "marker_path": "eta0_seed_replication/runs/seed23/FIT_COMPLETE.json",
+      "marker_sha256": "e68fe95736dd448d35318b691f63c3a98ab51b26db26e2b495cc6d4026ee8697",
+      "epochs": 100,
+      "steps": 188100,
+      "best_raw_f_epoch": 53,
+      "best_raw_f_sse": 100.00044842171992,
+      "gpu_after_ecc_corrected": 0,
+      "gpu_after_ecc_uncorrected": 0,
+      "gpu_after_remap_pending": false,
+      "gpu_after_remap_failure": false,
+      "scope_note": "terminal event only, not a full health check; other worker states not asserted"
+    },
+    {
+      "observed_at": "2026-09-29T07:24:03+08:00",
+      "worker": "eta0_seed_replication/seed37",
+      "event": "FIT_COMPLETE",
+      "pid": 859334,
+      "start_ticks": 1246893027,
+      "gpu": 6,
+      "marker_path": "eta0_seed_replication/runs/seed37/FIT_COMPLETE.json",
+      "marker_sha256": "48294d9a1340ee874af8e975bf7973965d9b40050312bc4fb1372a0e69d1adb2",
+      "epochs": 100,
+      "steps": 188100,
+      "best_raw_f_epoch": 44,
+      "best_raw_f_sse": 95.92205202626212,
+      "gpu_after_ecc_corrected": 0,
+      "gpu_after_ecc_uncorrected": 0,
+      "gpu_after_remap_pending": false,
+      "gpu_after_remap_failure": false,
+      "scope_note": "terminal event only, not a full health check; other worker states not asserted"
+    }
+  ],
+  "research_updates_20260929_seed_family_closeout": {
+    "classification": "root scientific closeout from completed seed23/37 and fixed-seven saved-array secondary; no active resource health claim",
+    "recorded_at": "2026-09-29T07:41:22.576025+08:00",
+    "scientific_closeout_sha256": "0031fc71c9a48088e9fd73d1b6dd896be948fb42431db1eea32be5df2015a787",
+    "independent_verification_sha256": "f702b783d5c760e1cab33b96187b06f89c1f997afe67e40d557f61edc83f5302",
+    "decision": "Retain exploratory F5 validation candidate R2 0.48769960489832564 over F7_seed R2 0.4866909506554217; no seed extension, mixture search or test. Small F7 difference uncertain; bright-tail improvements and rare-case concentration remain diagnostic.",
+    "primary_seed3_val_r2": 0.45295507476174857,
+    "fixed3_val_r2": 0.4494214632744171,
+    "f5_test_status": "unevaluated",
+    "historical_fixed3_test_r2": 0.48510176,
+    "scratch_status": "not inferred from this seed closeout"
+  }
+}

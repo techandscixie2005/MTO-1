@@ -1,0 +1,34 @@
+{
+  "candidate": "F5 exact equal native-f mean eta0/eta01/eta1/G1/G3",
+  "candidate_freeze_sha256": "46a8153e490e16f03bae0927bee4954f2cba95977050fb9f788aa9dbacda4855",
+  "decision_at": "2026-09-29T09:10:40.245258+08:00",
+  "decision_basis": "primary pooled raw-f R2 improvement, exact frozen recipe, independent saved-array and provenance PASS",
+  "decision_owner": "root research coordinator",
+  "delta_r2_vs_eta0": 0.052809789762408,
+  "delta_r2_vs_old3": 0.0235231342992425,
+  "eta0_historical_test_r2": 0.45581510931020497,
+  "event": "FINAL_CAMPAIGN_RESEARCH_CHAMPION_DECISION",
+  "final_test_results_sha256": "374b04f5edc19217e383068de1728c0348e63275c657eb7a4214903394e8b784",
+  "historical_reused_test_pooled_raw_f_r2": 0.508624899072613,
+  "historical_reused_test_sse": 93.17893015272713,
+  "independent_review_sha256": "cf671c550cfdbc930e57b10b1388fbcab6caa37a9fe1b6d8b458c46782f89259",
+  "limitations": [
+    "five neural forwards vs three for old3",
+    "state 7 SSE worsened vs old3",
+    "TRAIN q99 bright-tail SSE worsened vs old3",
+    "five-molecule low-q2 error concentration",
+    "repeated validation and historical-test reuse limit generalization claims"
+  ],
+  "old3_historical_test_r2": 0.4851017647733705,
+  "pretest_published_commit": "aba91bc88c22f280a6adde1cd3002579c7b7e410",
+  "prohibited_next_actions": [
+    "further fit",
+    "additional inference or test query",
+    "recipe change or weight search"
+  ],
+  "relative_test_sse_reduction_vs_old3": 0.04568502,
+  "scientific_closeout_sha256": "311079934d12f1e7e626c273c50a05fa9b6bc52d9d4d58856d1595559b375f5d",
+  "status": "complete_no_further_experiment",
+  "test_status": "exploratory_historical_reused_split_not_fresh_holdout",
+  "validation_pooled_raw_f_r2": 0.48769960489832564
+}

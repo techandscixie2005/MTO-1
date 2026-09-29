@@ -1,0 +1,139 @@
+{
+  "passed": true,
+  "timestamp": "2026-09-29T09:03:31.545916+08:00",
+  "classification": "Independent completed saved-array and pinned-source audit; no model inference, training or evaluation rerun",
+  "result_sha256": "374b04f5edc19217e383068de1728c0348e63275c657eb7a4214903394e8b784",
+  "complete_sha256": "3c4cc676b3f4fb1d459ce09486e30a983682e3667a33eb6d421aaaf4e6746eee",
+  "script_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "metrics": {
+    "eta0": {
+      "sse": 103.19319359905259,
+      "sst": 189.62892091371282,
+      "r2": 0.45581510931020497,
+      "mae": 0.017715985499805374,
+      "rmse": 0.03928640961252484,
+      "mean_signed_error": -0.00034947647847379025,
+      "overprediction_fraction": 0.6385731379000897
+    },
+    "old3": {
+      "sse": 97.63959672640082,
+      "sst": 189.62892091371282,
+      "r2": 0.4851017647733705,
+      "mae": 0.017265143957446737,
+      "rmse": 0.03821464261322939,
+      "mean_signed_error": -0.0005766174310869849,
+      "overprediction_fraction": 0.6443912653305415
+    },
+    "F5": {
+      "sse": 93.17893015272713,
+      "sst": 189.62892091371282,
+      "r2": 0.508624899072613,
+      "mae": 0.016277304021934794,
+      "rmse": 0.03733152005158319,
+      "mean_signed_error": -0.0021669249632925987,
+      "overprediction_fraction": 0.6016153155848041
+    }
+  },
+  "delta_r2": 0.023523134299242465,
+  "paired_bootstrap_independent": {
+    "molecule": {
+      "units": 6686,
+      "quantiles": [
+        0.009246644613091333,
+        0.024806035535460833,
+        0.03913374393711255
+      ],
+      "positive_fraction": 0.999
+    },
+    "connectivity_group": {
+      "units": 6671,
+      "quantiles": [
+        0.009644332708517084,
+        0.023908141508979894,
+        0.03900201119281695
+      ],
+      "positive_fraction": 0.9995
+    }
+  },
+  "array_hashes": {
+    "mto_eta0": "8ad125c55200c55de7c8873ab3261651d6025c45fd48d1b26751b30819bc515b",
+    "mto_eta01": "fe413eb652e6c00d52f4717c645dd38877a07c234c1101f068166764802b7ae8",
+    "mto_eta1": "3b1ab83687aec969daf8a58e5d2eb9ed8b7c085986c4e3866867fc4da3e44b43",
+    "G1": "2c58573a87bc77e03c30e0155c967b18d0c2b78ad2c4ae3f7ffac35384f69dc4",
+    "G3": "34d3ae6dade317ef9181cca423457a718e16ebad18b9155d9576c7fa38c1ea29"
+  },
+  "state_sse_gain_old3_minus_F5": [
+    0.2408818405909186,
+    0.48310236927034256,
+    0.5627440656718552,
+    0.8681755709579367,
+    0.5473709490242509,
+    0.5785456172405923,
+    -0.76131435047139,
+    0.48585453978574067,
+    1.0840403392249605,
+    0.3712656323784675
+  ],
+  "TRAIN_tail_sse_gain": {
+    "q90": {
+      "bright": 0.45146804484288366,
+      "below": 4.00919852883079
+    },
+    "q99": {
+      "bright": -1.1994453403171401,
+      "below": 5.660111913990814
+    }
+  },
+  "TRAIN_q2_sse_gain": [
+    {
+      "bin": 0,
+      "molecules": 0,
+      "sse_gain": 0.0
+    },
+    {
+      "bin": 1,
+      "molecules": 5,
+      "sse_gain": -1.5185546731357324
+    },
+    {
+      "bin": 2,
+      "molecules": 58,
+      "sse_gain": 0.9757504555806875
+    },
+    {
+      "bin": 3,
+      "molecules": 629,
+      "sse_gain": 1.2636587451541033
+    },
+    {
+      "bin": 4,
+      "molecules": 2645,
+      "sse_gain": 2.0472903430530582
+    },
+    {
+      "bin": 5,
+      "molecules": 3349,
+      "sse_gain": 1.6925217030215565
+    }
+  ],
+  "largest_positive_molecule_net_gain_fraction": 0.1289242672053918,
+  "top10_positive_net_gain_fraction": 0.33952719807178816,
+  "molecules_improved": 4052,
+  "molecules_worsened": 2634,
+  "checks": [
+    "all125 frozen source/artifact hashes",
+    "publication-bound authorization and chronological STARTED/COMPLETE",
+    "5 checkpoint hashes/selected G epochs",
+    "5 immutable prediction hashes and exact raw FP64 truth/IDs/masks",
+    "new native-f E-times-FP64trace arithmetic",
+    "all original split indices/IDs",
+    "metrics/state/tail/geometry/concentration",
+    "independent2000 molecule/group bootstrap",
+    "GPU4 UUID/ECC unchanged and only worker before completion",
+    "no candidate change or new recipe"
+  ],
+  "limitations": [
+    "Historical test reused and candidate selected adaptively on validation; bootstrap omits selection/adaptation uncertainty.",
+    "Two complete new checkpoint dataset passes from reviewed source and receipts; no independent re-execution."
+  ]
+}

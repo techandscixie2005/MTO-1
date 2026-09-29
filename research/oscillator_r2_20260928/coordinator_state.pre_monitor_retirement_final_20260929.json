@@ -54,7 +54,6 @@
     "final_outcome_D_publication": "pending",
     "historical_test_reused": true,
     "independent_review_sha256": "cf671c550cfdbc930e57b10b1388fbcab6caa37a9fe1b6d8b458c46782f89259",
-    "monitoring_retired": true,
     "no_more_fit_inference_test_or_recipe_change": true,
     "reused_historical_test_raw_f_r2": 0.508624899072613,
     "scientific_closeout_sha256": "311079934d12f1e7e626c273c50a05fa9b6bc52d9d4d58856d1595559b375f5d",
@@ -343,18 +342,14 @@
     "last_check_report_path": "monitoring/FULL_CHECK_20260929_0629.md",
     "last_full_check_at": "2026-09-29T06:30:11+08:00",
     "last_lifecycle_event_note": "seed23, seed37, and scratch native FIT_COMPLETE; only scratch MTO remains in event-only watch verified 07:25:27, armed 07:25:47; no full-check status claim.",
-    "monitoring_state_sha256": "ea0bcfb7582a7e4660b735b5c961253c4c506a19e1cfc624a36f4f80173ac349",
-    "next_due_at": null,
-    "retirement_basis": "All authorized training and final F5 evaluation complete; historical snapshots remain as dated records.",
-    "retirement_receipt_path": "monitoring/HEARTBEAT_RETIREMENT_RECEIPT_20260929.json",
-    "retirement_receipt_sha256": "2e92dd443482fac14f6fab79b3fd63ea363410a03d1ac06dd33e6afd5dbacce1",
+    "next_due_at": "2026-09-29T10:29:29+08:00",
     "scopes": [
       "eta0_seed_replication seeds 23 and 37 (fixed 100 epochs)",
       "scratch_readout_comparison MTO GPU2 and native GPU5 arms (fixed 100 epochs)",
       "legacy G3 terminal FIT_COMPLETE; G2 remains intentional ADMIN_STOPPED partial-campaign history",
       "future receipt-pinned authorized runs added only after reviewed launch receipt"
     ],
-    "status": "PAUSED_CAMPAIGN_COMPLETE"
+    "status": "ACTIVE"
   },
   "primary_objective": "Improve pooled raw native oscillator-strength R2; maximize validation-selected R2 while preserving honest historical-test limits.",
   "project": "MTO-1",
@@ -961,5 +956,5 @@
     "recorded_at": "2026-09-29T00:13:53+08:00",
     "type": "targeted_G4_and_architecture_resource_check_not_four_hour_monitor"
   },
-  "updated_at": "2026-09-29T09:15:09.525001+08:00"
+  "updated_at": "2026-09-29T09:10:40.245258+08:00"
 }

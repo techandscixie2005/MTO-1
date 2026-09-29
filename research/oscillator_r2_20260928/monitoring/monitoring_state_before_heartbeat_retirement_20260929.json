@@ -1,11 +1,11 @@
 {
   "automation_id": "qm9s-e-a",
   "automation_name": "MTO oscillator-strength research - 4-hour checks",
-  "automation_status": "PAUSED",
+  "automation_status": "ACTIVE",
   "interval_hours": 4,
   "first_health_check_at": "2026-09-28T22:29:29+08:00",
-  "next_check_due_at": null,
-  "monitor_role": "Retired after completion of all authorized MTO fit/probe jobs and final F5 historical-test evaluation; no active training monitoring remains.",
+  "next_check_due_at": "2026-09-29T10:29:29+08:00",
+  "monitor_role": "archive_and_monitor sub-agent: perform compact scheduled health checks, archive reviewed lightweight round records through D: first, and report actionable issues to the coordinator",
   "active_campaign_at_first_check": "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925",
   "supervisor_pid": 566447,
   "trainer_pids": {
@@ -414,8 +414,8 @@
     "scope_note": "terminal event, not a scheduled full health check"
   },
   "active_event_watch": null,
-  "current_workers_state_as_of": "2026-09-29T09:14:35+08:00",
-  "current_workers_note": "All authorized experiment jobs are terminal. The single authorized final F5 evaluation has TEST_COMPLETE and independent PASS; no future fit or probe is authorized. Do not run empty periodic GPU/log/metric polls.",
+  "current_workers_state_as_of": "2026-09-29T08:04:31.850584851+08:00",
+  "current_workers_note": "All previously pinned fit workers have terminal receipts; the scratch MTO receipt was independently re-read at 07:59:46+08. No active fit job is authorized as of this state write.",
   "completed_descriptor_probe": {
     "state": "PROBE_COMPLETE; independent closeout accepted; no promotion, tuning, extension, further fit, or test",
     "observed_at": "2026-09-29T07:48:32+08:00",
@@ -437,41 +437,5 @@
     "known_fit_jobs_terminal": true,
     "pending_work": "scientific completion summaries/reviews and D-first archival; these are not active training",
     "next_due_action": "At 10:29:29+08, inspect launch receipts for newly authorized jobs; if none, report no active jobs without a GPU/log/metrics sweep."
-  },
-  "automation_retirement": {
-    "recorded_at": "2026-09-29T09:14:35+08:00",
-    "automation_id": "qm9s-e-a",
-    "automation_name": "MTO oscillator-strength research — 4-hour checks",
-    "status": "PAUSED",
-    "interval_hours": 4,
-    "rrule": "FREQ=HOURLY;INTERVAL=4",
-    "target_thread_id": "01a0e868-88e9-7dd2-b83c-d4763f2b5577",
-    "scheduler_timing_was_not_exposed": true,
-    "last_scheduled_full_check_at": "2026-09-29T06:30:11+08:00",
-    "next_slot_at_retirement": "2026-09-29T10:29:29+08:00",
-    "no_duplicate_created": true,
-    "reason": "All authorized experiment jobs are terminal; final evaluation is complete and independently reviewed; no additional experiment is authorized.",
-    "local_automation_toml_sha256": "825739dd99c24b6a96858deb4a7a0b199bf9ebb5e299d781c0fe6c2196d9f887"
-  },
-  "final_evaluation": {
-    "state": "TEST_COMPLETE; independent review PASS; no more experiment authorized",
-    "started_at_utc": "2026-09-29T00:59:20.990962+00:00",
-    "completed_at_utc": "2026-09-29T00:59:45.996809+00:00",
-    "pid": 999213,
-    "start_ticks": "1249122244",
-    "physical_gpu": 4,
-    "gpu_uuid": "GPU-e212aefc-f1d6-cc7a-5594-e87abeaf1184",
-    "started_sha256": "19025a98b092673aa60ac1c0e428a2daf7ffcfde8af44307fa081ee76a8d0fe8",
-    "test_complete_sha256": "3c4cc676b3f4fb1d459ce09486e30a983682e3667a33eb6d421aaaf4e6746eee",
-    "test_results_sha256": "374b04f5edc19217e383068de1728c0348e63275c657eb7a4214903394e8b784",
-    "test_report_sha256": "08afb758d93b67fb5fc8181f0821a89dc64c5a14938274f6570e683ebc9a2887",
-    "independent_completion_review_sha256": "cf671c550cfdbc930e57b10b1388fbcab6caa37a9fe1b6d8b458c46782f89259",
-    "scientific_closeout_sha256": "311079934d12f1e7e626c273c50a05fa9b6bc52d9d4d58856d1595559b375f5d",
-    "f5_test_r2": 0.508624899072613,
-    "old3_test_r2": 0.4851017647733705,
-    "eta0_test_r2": 0.455815109310205,
-    "test_reused_historical": true,
-    "execution_authorized_once": true,
-    "test_access_complete": true
   }
 }

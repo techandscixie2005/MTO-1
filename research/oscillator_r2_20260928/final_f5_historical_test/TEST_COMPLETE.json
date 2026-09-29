@@ -1,0 +1,47 @@
+{
+  "event": "TEST_COMPLETE",
+  "time": 1790643585.9968092,
+  "started_sha256": "19025a98b092673aa60ac1c0e428a2daf7ffcfde8af44307fa081ee76a8d0fe8",
+  "result_sha256": "374b04f5edc19217e383068de1728c0348e63275c657eb7a4214903394e8b784",
+  "report_sha256": "08afb758d93b67fb5fc8181f0821a89dc64c5a14938274f6570e683ebc9a2887",
+  "runtime_prediction_hashes": {
+    "G1": "2c58573a87bc77e03c30e0155c967b18d0c2b78ad2c4ae3f7ffac35384f69dc4",
+    "G3": "34d3ae6dade317ef9181cca423457a718e16ebad18b9155d9576c7fa38c1ea29"
+  },
+  "gpu_after": {
+    "index": 4,
+    "uuid": "GPU-e212aefc-f1d6-cc7a-5594-e87abeaf1184",
+    "memory_MiB": 543,
+    "temperature_C": "33 C",
+    "ecc": {
+      "volatile": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0
+      },
+      "aggregate": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0,
+        "sram_threshold_exceeded": "No"
+      },
+      "remap": {
+        "remapped_row_corr": "0",
+        "remapped_row_unc": "0",
+        "remapped_row_pending": "No",
+        "remapped_row_failure": "No"
+      },
+      "repair": {
+        "channel_repair_pending": "No",
+        "tpc_repair_pending": "No"
+      }
+    },
+    "apps": [
+      999213
+    ]
+  }
+}

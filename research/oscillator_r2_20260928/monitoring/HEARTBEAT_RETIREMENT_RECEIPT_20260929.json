@@ -1,0 +1,19 @@
+{
+  "event": "EXPERIMENT_MONITOR_HEARTBEAT_PAUSED_AFTER_FINAL_CLOSEOUT",
+  "recorded_at": "2026-09-29T09:14:35+08:00",
+  "automation_id": "qm9s-e-a",
+  "automation_status": "PAUSED",
+  "interval_hours": 4,
+  "target_thread_id": "01a0e868-88e9-7dd2-b83c-d4763f2b5577",
+  "no_duplicate_created": true,
+  "last_scheduled_full_check_at": "2026-09-29T06:30:11+08:00",
+  "scheduled_slot_preserved_in_history": "2026-09-29T10:29:29+08:00",
+  "scheduler_timing_exposed": false,
+  "local_automation_toml_sha256": "825739dd99c24b6a96858deb4a7a0b199bf9ebb5e299d781c0fe6c2196d9f887",
+  "pre_retirement_monitoring_state_sha256": "249cb6552a135f1633b99270d01d89eaadf6244dd9999fb74576f70140d3d3e8",
+  "pre_retirement_snapshot_path": "monitoring/monitoring_state_before_heartbeat_retirement_20260929.json",
+  "final_monitoring_state_path": "monitoring_state.json",
+  "final_evaluation_marker_sha256": "3c4cc676b3f4fb1d459ce09486e30a983682e3667a33eb6d421aaaf4e6746eee",
+  "review_sha256": "cf671c550cfdbc930e57b10b1388fbcab6caa37a9fe1b6d8b458c46782f89259",
+  "reason": "All authorized experiment jobs are terminal, and final F5 historical-test evaluation is independently reviewed. No more experiment is authorized."
+}

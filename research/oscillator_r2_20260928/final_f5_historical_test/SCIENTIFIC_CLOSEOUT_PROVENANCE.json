@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-09-29T09:05:28.309815+08:00",
+  "classification": "Final independent saved-artifact closeout provenance",
+  "files": {
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/final_f5_historical_test/CANDIDATE_FREEZE.json": "46a8153e490e16f03bae0927bee4954f2cba95977050fb9f788aa9dbacda4855",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/final_f5_historical_test/PROTOCOL.md": "05afd33a04567cfab711a95d10734d0bcf8841dcf4f08c7ebcc036efafaf4e94",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/final_f5_historical_test/IMPLEMENTATION_REVIEW.json": "07dbcf0efb98e4ab9a3e631b450fa40382b5e73265a7285e18eba6505ac9812e",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/final_f5_historical_test/EXECUTION_AUTHORIZATION.json": "f6b44a211dd87d5c7f1870311d08cf74281d477c374173eca0d52286b68d081f",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/final_f5_historical_test/STARTED.json": "19025a98b092673aa60ac1c0e428a2daf7ffcfde8af44307fa081ee76a8d0fe8",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/final_f5_historical_test/TEST_COMPLETE.json": "3c4cc676b3f4fb1d459ce09486e30a983682e3667a33eb6d421aaaf4e6746eee",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/final_f5_historical_test/TEST_RESULTS.json": "374b04f5edc19217e383068de1728c0348e63275c657eb7a4214903394e8b784",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/final_f5_historical_test/TEST_REPORT.md": "08afb758d93b67fb5fc8181f0821a89dc64c5a14938274f6570e683ebc9a2887",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/final_f5_historical_test/EXECUTION_INTEGRITY_AUDIT.json": "67bc592225735a441fce0f471140287e3dc8d078fb7a35292a8e2a105e3c1b30",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/final_f5_historical_test/independent_completion_review.py": "674122f9943d5f5c14d5079f894601d04862616c9625d3e2c4dd8d5d46093992",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/final_f5_historical_test/INDEPENDENT_COMPLETION_REVIEW.json": "cf671c550cfdbc930e57b10b1388fbcab6caa37a9fe1b6d8b458c46782f89259",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/final_f5_historical_test/SCIENTIFIC_CLOSEOUT.md": "311079934d12f1e7e626c273c50a05fa9b6bc52d9d4d58856d1595559b375f5d"
+  },
+  "runtime_arrays_server_only": true,
+  "initial_audit_draft_note": "An initial review draft recorded the empty stdin stream hash because the script was piped to Python. That draft was preserved as INDEPENDENT_COMPLETION_REVIEW_INITIAL.json. The final audit was run from the saved script path with its correct source digest; all numerical results stayed unchanged. The draft is not the final review or publication artifact.",
+  "no_model_forward_in_independent_review": true
+}

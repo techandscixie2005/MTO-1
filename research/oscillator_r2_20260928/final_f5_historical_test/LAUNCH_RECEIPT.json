@@ -1,0 +1,16 @@
+{
+  "authorization_sha256": "f6b44a211dd87d5c7f1870311d08cf74281d477c374173eca0d52286b68d081f",
+  "cmdline": [
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/bin/python",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/final_f5_historical_test/evaluate.py",
+    "--evaluate"
+  ],
+  "cwd": "/home/inspur/MTO-1/research/oscillator_r2_20260928/final_f5_historical_test",
+  "evaluator_sha256": "aa4fdb125a099d0858e0a24430dd6676b0adecee1d33879469244390b39998ab",
+  "event": "FINAL_F5_TEST_LAUNCHED",
+  "gpu_requested_physical_index": 4,
+  "initial_poll": null,
+  "pid": 999213,
+  "process_start_ticks": "1249122244",
+  "timestamp_utc": "2026-09-29T00:59:17.938646+00:00"
+}

@@ -1,0 +1,49 @@
+{
+  "event": "TEST_STARTED",
+  "time": 1790643560.9909625,
+  "pid": 999213,
+  "process_start_ticks": "1249122244",
+  "cwd": "/home/inspur/MTO-1/research/oscillator_r2_20260928/final_f5_historical_test",
+  "gpu_before": {
+    "index": 4,
+    "uuid": "GPU-e212aefc-f1d6-cc7a-5594-e87abeaf1184",
+    "memory_MiB": 10,
+    "temperature_C": "31 C",
+    "ecc": {
+      "volatile": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0
+      },
+      "aggregate": {
+        "sram_correctable": 0,
+        "sram_uncorrectable_parity": 0,
+        "sram_uncorrectable_secded": 0,
+        "dram_correctable": 0,
+        "dram_uncorrectable": 0,
+        "sram_threshold_exceeded": "No"
+      },
+      "remap": {
+        "remapped_row_corr": "0",
+        "remapped_row_unc": "0",
+        "remapped_row_pending": "No",
+        "remapped_row_failure": "No"
+      },
+      "repair": {
+        "channel_repair_pending": "No",
+        "tpc_repair_pending": "No"
+      }
+    },
+    "apps": []
+  },
+  "preflight_sha256": "da209894bc4a78bb50241742a2cb5bcfe1651bc1882408247ab6f3f6dc967c91",
+  "review_sha256": "07dbcf0efb98e4ab9a3e631b450fa40382b5e73265a7285e18eba6505ac9812e",
+  "authorization_sha256": "f6b44a211dd87d5c7f1870311d08cf74281d477c374173eca0d52286b68d081f",
+  "publication_commit": "aba91bc88c22f280a6adde1cd3002579c7b7e410",
+  "archive_manifest_sha256": "c62f12e07b6284cfdf3db4ba4c08d915f8f77c0349430430991ece6a2e218b29",
+  "freeze_sha256": "46a8153e490e16f03bae0927bee4954f2cba95977050fb9f788aa9dbacda4855",
+  "protocol_sha256": "05afd33a04567cfab711a95d10734d0bcf8841dcf4f08c7ebcc036efafaf4e94",
+  "script_sha256": "aa4fdb125a099d0858e0a24430dd6676b0adecee1d33879469244390b39998ab"
+}

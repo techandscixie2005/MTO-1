@@ -1,0 +1,288 @@
+{
+  "archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round23_final_closeout",
+  "source_root": "/home/inspur/MTO-1/research/oscillator_r2_20260928",
+  "remote_allowlist_path": "FINAL_OUTCOME_ARCHIVE_ALLOWLIST.json",
+  "remote_allowlist_sha256": "234de9c632d9b245f50927364b6b67498de25cd289f6b8cfa112d7cd638fff09",
+  "entry_count": 38,
+  "total_source_bytes": 418306,
+  "verified_remote_to_D": true,
+  "substantive_readback": "PASS",
+  "test_runtime_arrays_checkpoints_caches_excluded": true,
+  "remote_entries": [
+    {
+      "relative_path": "CONSOLIDATED_RESEARCH_CLOSEOUT_20260929_FINAL.md",
+      "bytes": 11522,
+      "sha256": "6ed509e1dbafdbd0113daf8cfa899f7b17fd639a1b15cc5f8e181140bc53df3b",
+      "remote_to_D": "PASS",
+      "substantive_readback": "PASS"
+    },
+    {
+      "relative_path": "RESEARCH_STATUS.md",
+      "bytes": 22494,
+      "sha256": "772d5d06c58ffb87cb302437f2c950e63dee94162731caf429bf3db8d0dbc2c1",
+      "remote_to_D": "PASS",
+      "substantive_readback": "PASS"
+    },
+    {
+      "relative_path": "coordinator_state.json",
+      "bytes": 43526,
+      "sha256": "a043cb72f66887c9bb81b641dcc6da6a3882ba171a6546393e7ac4fe3896e182",
+      "remote_to_D": "PASS",
+      "substantive_readback": "PASS"
+    },
+    {
+      "relative_path": "coordinator_state.pre_final_decision_20260929_091040.json",
+      "bytes": 41787,
+      "sha256": "28548a670f8d58eddfbff10d180fa731663c29173569e266c4761aa79070848a",
+      "remote_to_D": "PASS",
+      "substantive_readback": "PASS"
+    },
+    {
+      "relative_path": "coordinator_state.pre_monitor_retirement_final_20260929.json",
+      "bytes": 43080,
+      "sha256": "3d53c4f59a56ad8a84af76b22e66594f8567b4fb8c5925bfd057bd8e9350a960",
+      "remote_to_D": "PASS",
+      "substantive_readback": "PASS"
+    },
+    {
+      "relative_path": "final_f5_historical_test/CANDIDATE_FREEZE.json",
+      "bytes": 34457,
+      "sha256": "46a8153e490e16f03bae0927bee4954f2cba95977050fb9f788aa9dbacda4855",
+      "remote_to_D": "PASS",
+      "substantive_readback": "PASS"
+    },
+    {
+      "relative_path": "final_f5_historical_test/EVALUATION_STDOUT.log",
+      "bytes": 17343,
+      "sha256": "14e492501c8735b4557d446cd35a9a226e0f40b368637870843e399713174f69",
+      "remote_to_D": "PASS",
+      "substantive_readback": "PASS"
+    },
+    {
+      "relative_path": "final_f5_historical_test/EXECUTION_AUTHORIZATION.json",
+      "bytes": 1274,
+      "sha256": "f6b44a211dd87d5c7f1870311d08cf74281d477c374173eca0d52286b68d081f",
+      "remote_to_D": "PASS",
+      "substantive_readback": "PASS"
+    },
+    {
+      "relative_path": "final_f5_historical_test/EXECUTION_INTEGRITY_AUDIT.json",
+      "bytes": 1994,
+      "sha256": "67bc592225735a441fce0f471140287e3dc8d078fb7a35292a8e2a105e3c1b30",
+      "remote_to_D": "PASS",
+      "substantive_readback": "PASS"
+    },
+    {
+      "relative_path": "final_f5_historical_test/IMPLEMENTATION_HANDOFF.json",
+      "bytes": 2327,
+      "sha256": "3a47540909607cdab80cf77edd761dd9db4f2061a950ad6a7f57beb379266d06",
+      "remote_to_D": "PASS",
+      "substantive_readback": "PASS"
+    },
+    {
+      "relative_path": "final_f5_historical_test/IMPLEMENTATION_REVIEW.json",
+      "bytes": 3685,
+      "sha256": "07dbcf0efb98e4ab9a3e631b450fa40382b5e73265a7285e18eba6505ac9812e",
+      "remote_to_D": "PASS",
+      "substantive_readback": "PASS"
+    },
+    {
+      "relative_path": "final_f5_historical_test/IMPLEMENTATION_REVIEW.md",
+      "bytes": 1750,
+      "sha256": "49262d92ae7d96f7348060f4ac3a3fb0c232b9b883c8380e1c2916230520f6e0",
+      "remote_to_D": "PASS",
+      "substantive_readback": "PASS"
+    },
+    {
+      "relative_path": "final_f5_historical_test/INDEPENDENT_CANDIDATE_IDENTITY_VERIFICATION.json",
+      "bytes": 1557,
+      "sha256": "e9b6888a38c7ae3128ff6c3dc0d8ecc17b32965ebb17935d2e5b21b3fb1f7ac2",
+      "remote_to_D": "PASS",
+      "substantive_readback": "PASS"
+    },
+    {
+      "relative_path": "final_f5_historical_test/INDEPENDENT_COMPLETION_REVIEW.json",
+      "bytes": 4312,
+      "sha256": "cf671c550cfdbc930e57b10b1388fbcab6caa37a9fe1b6d8b458c46782f89259",
+      "remote_to_D": "PASS",
+      "substantive_readback": "PASS"
+    },
+    {
+      "relative_path": "final_f5_historical_test/INDEPENDENT_COMPLETION_REVIEW_INITIAL.json",
+      "bytes": 4312,
+      "sha256": "492c67db69b1d8cf95c2824ea10945eb96870e3ab3c85aad503633207386a741",
+      "remote_to_D": "PASS",
+      "substantive_readback": "PASS"
+    },
+    {
+      "relative_path": "final_f5_historical_test/INDEPENDENT_FREEZE_HASH_VERIFICATION.json",
+      "bytes": 21265,
+      "sha256": "0c57a47fccd116dec3bdea0b3b49f0e3179087dc4e6b8afb4d52ce79d98de124",
+      "remote_to_D": "PASS",
+      "substantive_readback": "PASS"
+    },
+    {
+      "relative_path": "final_f5_historical_test/LAUNCH_RECEIPT.json",
+      "bytes": 691,
+      "sha256": "14075ec639fc39c8fdb4b089ec478edb6e4baf2ba15c96d236ffceb3fb3bdf6b",
+      "remote_to_D": "PASS",
+      "substantive_readback": "PASS"
+    },
+    {
+      "relative_path": "final_f5_historical_test/PREFLIGHT.json",
+      "bytes": 2212,
+      "sha256": "da209894bc4a78bb50241742a2cb5bcfe1651bc1882408247ab6f3f6dc967c91",
+      "remote_to_D": "PASS",
+      "substantive_readback": "PASS"
+    },
+    {
+      "relative_path": "final_f5_historical_test/PREFLIGHT_BEFORE_FIXED_ROW_REVIEW.json",
+      "bytes": 1683,
+      "sha256": "0d56f06777d02f05689c73a98d993a280912c33eec312c478504342bcdc05553",
+      "remote_to_D": "PASS",
+      "substantive_readback": "PASS"
+    },
+    {
+      "relative_path": "final_f5_historical_test/PREFLIGHT_BEFORE_SINGLE_USE_FIXTURE.json",
+      "bytes": 2148,
+      "sha256": "05e34aced1943e322c16776b5e57f851b6c6615d5d4e4b08036286e5d44af9fa",
+      "remote_to_D": "PASS",
+      "substantive_readback": "PASS"
+    },
+    {
+      "relative_path": "final_f5_historical_test/PREFLIGHT_INITIAL.json",
+      "bytes": 1566,
+      "sha256": "8cf2c0378212235f7e15b2b04882017552c734c24bd568e496616377a843b632",
+      "remote_to_D": "PASS",
+      "substantive_readback": "PASS"
+    },
+    {
+      "relative_path": "final_f5_historical_test/PRE_TEST_PREPARATION_ARCHIVE_ALLOWLIST.json",
+      "bytes": 3065,
+      "sha256": "74845a05635575954b965a055f9d9400bbb543cadd647d9d44a8d785f7937d3d",
+      "remote_to_D": "PASS",
+      "substantive_readback": "PASS"
+    },
+    {
+      "relative_path": "final_f5_historical_test/PRE_TEST_PREPARATION_REPORT.md",
+      "bytes": 1775,
+      "sha256": "291beb4a1ba0171b5e241df9f1745280af0befaec9f6e4ca6816cddd2bfff473",
+      "remote_to_D": "PASS",
+      "substantive_readback": "PASS"
+    },
+    {
+      "relative_path": "final_f5_historical_test/PROTOCOL.md",
+      "bytes": 8523,
+      "sha256": "05afd33a04567cfab711a95d10734d0bcf8841dcf4f08c7ebcc036efafaf4e94",
+      "remote_to_D": "PASS",
+      "substantive_readback": "PASS"
+    },
+    {
+      "relative_path": "final_f5_historical_test/PROVENANCE.json",
+      "bytes": 616,
+      "sha256": "aa4b916f25f73117b5a27da884776a81477f150dd57a44d9b88f89b8b83654f8",
+      "remote_to_D": "PASS",
+      "substantive_readback": "PASS"
+    },
+    {
+      "relative_path": "final_f5_historical_test/ROOT_FINAL_DECISION.json",
+      "bytes": 1764,
+      "sha256": "88e1aaf9aa58055f1aa0a813c61e1614d884567847a35624ccbec7941a1b167b",
+      "remote_to_D": "PASS",
+      "substantive_readback": "PASS"
+    },
+    {
+      "relative_path": "final_f5_historical_test/ROOT_PROTOCOL_ACCEPTANCE.json",
+      "bytes": 748,
+      "sha256": "f6b7b94e61515250e364105df9ba516efc444233666d30d2b4465e7b20765e1a",
+      "remote_to_D": "PASS",
+      "substantive_readback": "PASS"
+    },
+    {
+      "relative_path": "final_f5_historical_test/SCIENTIFIC_CLOSEOUT.md",
+      "bytes": 4197,
+      "sha256": "311079934d12f1e7e626c273c50a05fa9b6bc52d9d4d58856d1595559b375f5d",
+      "remote_to_D": "PASS",
+      "substantive_readback": "PASS"
+    },
+    {
+      "relative_path": "final_f5_historical_test/SCIENTIFIC_CLOSEOUT_PROVENANCE.json",
+      "bytes": 2712,
+      "sha256": "377d53ebe1d8ab449c378e2f1e3e0d42e341fc2d4e6b245963c2dd278c35141f",
+      "remote_to_D": "PASS",
+      "substantive_readback": "PASS"
+    },
+    {
+      "relative_path": "final_f5_historical_test/STARTED.json",
+      "bytes": 1801,
+      "sha256": "19025a98b092673aa60ac1c0e428a2daf7ffcfde8af44307fa081ee76a8d0fe8",
+      "remote_to_D": "PASS",
+      "substantive_readback": "PASS"
+    },
+    {
+      "relative_path": "final_f5_historical_test/TEST_COMPLETE.json",
+      "bytes": 1432,
+      "sha256": "3c4cc676b3f4fb1d459ce09486e30a983682e3667a33eb6d421aaaf4e6746eee",
+      "remote_to_D": "PASS",
+      "substantive_readback": "PASS"
+    },
+    {
+      "relative_path": "final_f5_historical_test/TEST_REPORT.md",
+      "bytes": 1007,
+      "sha256": "08afb758d93b67fb5fc8181f0821a89dc64c5a14938274f6570e683ebc9a2887",
+      "remote_to_D": "PASS",
+      "substantive_readback": "PASS"
+    },
+    {
+      "relative_path": "final_f5_historical_test/TEST_RESULTS.json",
+      "bytes": 38707,
+      "sha256": "374b04f5edc19217e383068de1728c0348e63275c657eb7a4214903394e8b784",
+      "remote_to_D": "PASS",
+      "substantive_readback": "PASS"
+    },
+    {
+      "relative_path": "final_f5_historical_test/evaluate.py",
+      "bytes": 34437,
+      "sha256": "aa4fdb125a099d0858e0a24430dd6676b0adecee1d33879469244390b39998ab",
+      "remote_to_D": "PASS",
+      "substantive_readback": "PASS"
+    },
+    {
+      "relative_path": "final_f5_historical_test/independent_completion_review.py",
+      "bytes": 11572,
+      "sha256": "674122f9943d5f5c14d5079f894601d04862616c9625d3e2c4dd8d5d46093992",
+      "remote_to_D": "PASS",
+      "substantive_readback": "PASS"
+    },
+    {
+      "relative_path": "monitoring/HEARTBEAT_RETIREMENT_RECEIPT_20260929.json",
+      "bytes": 1202,
+      "sha256": "2e92dd443482fac14f6fab79b3fd63ea363410a03d1ac06dd33e6afd5dbacce1",
+      "remote_to_D": "PASS",
+      "substantive_readback": "PASS"
+    },
+    {
+      "relative_path": "monitoring/monitoring_state_before_heartbeat_retirement_20260929.json",
+      "bytes": 18905,
+      "sha256": "249cb6552a135f1633b99270d01d89eaadf6244dd9999fb74576f70140d3d3e8",
+      "remote_to_D": "PASS",
+      "substantive_readback": "PASS"
+    },
+    {
+      "relative_path": "monitoring_state.json",
+      "bytes": 20858,
+      "sha256": "ea0bcfb7582a7e4660b735b5c961253c4c506a19e1cfc624a36f4f80173ac349",
+      "remote_to_D": "PASS",
+      "substantive_readback": "PASS"
+    }
+  ],
+  "local_control_files": [
+    {
+      "relative_path": "monitoring/automation.toml",
+      "bytes": 784,
+      "sha256": "825739dd99c24b6a96858deb4a7a0b199bf9ebb5e299d781c0fe6c2196d9f887",
+      "source": "local Codex automation configuration after pause",
+      "substantive_readback": "PAUSED; original cadence and thread preserved"
+    }
+  ]
+}

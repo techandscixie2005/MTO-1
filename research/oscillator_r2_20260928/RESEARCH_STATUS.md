@@ -1,5 +1,13 @@
 # MTO-1 oscillator-strength research status
 
+## Final campaign decision (2026-09-29)
+
+The research coordinator adopted the frozen **F5 equal native-f ensemble** of eta0, eta01, eta1, G1, and G3 as this campaign's pooled raw-f R² champion. Its validation R² is **0.48769960489832564**. On the reused historical test, its R² is **0.508624899072613**, versus **0.4851017647733705** for the original equal-three ensemble and **0.45581510931020497** for eta0. Relative to equal-three, F5 adds **0.0235231343 R²** and reduces test SSE by **4.5685%**. The independent saved-array/provenance review passed. This historical test has been exposed in earlier work; the result is exploratory and is not an untouched generalization estimate.
+
+F5 needs five model forwards versus three for equal-three. State 7 and the TRAIN-defined q99 brightest slice worsen even as pooled R² improves; the five-molecule low-q2 group also worsens. No molecule was excluded. The exact recipe, checkpoint identities, test authorization, result and health receipts, paired uncertainty, and remaining errors are in [the frozen F5 record](final_f5_historical_test/PROTOCOL.md), [test report](final_f5_historical_test/TEST_REPORT.md), [independent scientific closeout](final_f5_historical_test/SCIENTIFIC_CLOSEOUT.md), and [root decision](final_f5_historical_test/ROOT_FINAL_DECISION.json). The [final consolidated report](CONSOLIDATED_RESEARCH_CLOSEOUT_20260929_FINAL.md) summarizes every completed round. No more fitting, inference, test queries, or recipe changes are planned in this campaign. The four-hour experiment heartbeat is paused after the final terminal check; its retirement receipt is in `monitoring/HEARTBEAT_RETIREMENT_RECEIPT_20260929.json`. A future claim of generalization would require a new molecule-disjoint holdout.
+
+The dated handoff sections below preserve the earlier research chronology; references to pending runs or provisional F5 status reflect their state when written and are superseded by this final decision.
+
 Updated 2026-09-28. This file is a handoff index for the ongoing research campaign. It does not replace sealed protocols, reviews, or per-round result records.
 
 ## Objective and decision rules
@@ -151,3 +159,15 @@ Next scheduled full monitor remains **2026-09-29T06:29:29+08:00**.
 
 Root authorized reuse of the fixed training-derived shape bins for saved-prediction diagnostics after the seed and scratch runs complete. Do not modify active trainers or run new inference for those comparisons.
 
+
+
+## Publication receipt (2026-09-29T03:59:28+08:00)
+
+The D-first postrun geometry preparation bundle was published on `codex/oscillator-r2-research-20260928` at commit `72a6186fccaf0940ca5032ed4c8327cab8912f38` (parent `a0eb756cbf7df144d460c87f37d02f8b22510271`). The verified tree contains 15 research-only additions; main is unchanged. The bundle is preparation only, with no completed study outcomes.
+
+The next scheduled full monitoring check remains **2026-09-29T06:29:29+08:00**; this publication record is not a health check.
+
+
+## Legacy G3 terminal receipt (2026-09-29T04:23:57+08:00)
+
+A pinned lifecycle wait observed legacy G3 PID 566521 (start_ticks 1242573486) exit at 2026-09-29T04:21:18.805429+08:00. Its terminal receipt `experiments/qm9s_chan64_20260928/runs/G3/FIT_COMPLETE.json` (SHA-256 `319cb32bce7bfde222d9bd98e2c734ecdb4b0a029396a9165eb02e16afb38130`) records natural `FIT_COMPLETE`, epoch 326, best epoch 174, best objective 0.5248532128786919, 613206 steps, early stopping. This records only the terminal event; no other worker was polled. Next full scheduled monitor remains **2026-09-29T06:29:29+08:00**.
