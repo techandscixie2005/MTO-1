@@ -1,0 +1,672 @@
+{
+  "prepared_at_utc": "2026-09-29T18:07:03.815353+00:00",
+  "archive": "D:\\MTO\\archives\\single_model_20260929\\round02_frozen_preparation",
+  "download_receipt_sha256": "fde40e3b5d52f54bfe8412e3d96385d134fb4c39733b84b7a6f01a45ef1ebfc4",
+  "branch": "codex/single-model-20260929",
+  "parent": "2589d0f501a9d864aa9ae6449e80e3e14d1cc8ae",
+  "tree": "77a08082dfc24a2fac31df6e904793cc0e0934c3",
+  "staged_count": 94,
+  "new_records_bytes": 523691,
+  "files": [
+    {
+      "path": "ENVIRONMENT.json",
+      "bytes": 664,
+      "sha256": "e0f74f293f0201a5782f7d9f1b77f3ae2cb78f919aa7b34e2951e6a4d794fbf3",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/ENVIRONMENT.json",
+      "blob": "155372056ee2045d83d5eabd1c837c4895521c0b"
+    },
+    {
+      "path": "FROZEN_MANIFEST.json",
+      "bytes": 9577,
+      "sha256": "eaf2c75e239f7c04717adb97220cc35731df8d1a598b14b7b014c6754bf5ebd3",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/FROZEN_MANIFEST.json",
+      "blob": "833f9cd53b31efbd77f3827629b5f21d86dfe3d1"
+    },
+    {
+      "path": "GPU_SMOKE.json",
+      "bytes": 7255,
+      "sha256": "ddef1af4c7c1ea5ab2669ee83318ec930fefce9ce40a2c93b8476c2f0a3d9720",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/GPU_SMOKE.json",
+      "blob": "70f91861af82c4d6f7a96eead4fb6026a8e996a0"
+    },
+    {
+      "path": "PROTOCOL.md",
+      "bytes": 9589,
+      "sha256": "56bd706cc375c2106adc75e733305fe8c4e3e2e6af04d6556b77ba5c8250b643",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/PROTOCOL.md",
+      "blob": "eef068d51c9feb9afb15ad1142a216fdf34d22f9"
+    },
+    {
+      "path": "SECONDARY_CALIBRATION_POLICY.md",
+      "bytes": 1812,
+      "sha256": "8092ddc70875271501d76690f87a2a21d16457cbab9d1719d22fc1e828414c5c",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/SECONDARY_CALIBRATION_POLICY.md",
+      "blob": "b39daba7ea4a4ba0bffc2ae7516c82fb4d7b5e05"
+    },
+    {
+      "path": "architecture/PREFLIGHT.json",
+      "bytes": 3664,
+      "sha256": "76fe3660d1660084506b919b32fd76292c9deada97ffcab3946f6d6a3d135d9f",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/architecture/PREFLIGHT.json",
+      "blob": "117541ee32892a24d76bfe4449934abe05fba57e"
+    },
+    {
+      "path": "architecture/model.py",
+      "bytes": 6588,
+      "sha256": "b61413830ac8cfb78298dda55c11a1cfb2c398c264a797016045d8fd638c7b93",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/architecture/model.py",
+      "blob": "6e7c5c6a89f927b83191346a5098c8f791c580fe"
+    },
+    {
+      "path": "architecture/preflight.py",
+      "bytes": 8718,
+      "sha256": "181b77812f32145aca061474ae1f96674dd373f0baffd0a8d4b382b42dc59683",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/architecture/preflight.py",
+      "blob": "325d38c10528e5e7981110b5805c9de544663407"
+    },
+    {
+      "path": "current_state/COORDINATOR.md",
+      "bytes": 10409,
+      "sha256": "c11bdd34b95299a8a61ac06e97a55a7b67fb40937488e7b10dfee59b59818dac",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/current_state/COORDINATOR.md",
+      "blob": "1f5bcf3849826e15786be67e8a6ec0ff35b1ab88"
+    },
+    {
+      "path": "current_state/ROUND01_DECISION.md",
+      "bytes": 5958,
+      "sha256": "63faac0929ee1ad7cc59d030839c0a4f69fcc865ddbcb20eadae1cff2e8a95a6",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/current_state/ROUND01_DECISION.md",
+      "blob": "97183da1cdd1580289da171b8214cc0afe0c5167"
+    },
+    {
+      "path": "current_state/monitor.md",
+      "bytes": 5318,
+      "sha256": "37aee9716b9e4e611bd0fe808ffc2be0b12c98b9c61258739a26ddde1004b90e",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/current_state/monitor.md",
+      "blob": "fda213080ec3b1d279b912d6912fd0d46e1e558a"
+    },
+    {
+      "path": "environment_capture.py",
+      "bytes": 900,
+      "sha256": "4a91dde49841a7924245188067ec4f69fa56bc384b91e951cd6104e8f47a47bd",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/environment_capture.py",
+      "blob": "ad4e1235695d4432afb0bbebba76a1ec8baa8dda"
+    },
+    {
+      "path": "freeze.py",
+      "bytes": 2868,
+      "sha256": "f422d48363615ec1ceb497a1a8d8109a391603b94a655f71eb69f015df566405",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/freeze.py",
+      "blob": "63e0ee0ba8e2586841e08ee67d3d61e001438657"
+    },
+    {
+      "path": "gpu_smoke.py",
+      "bytes": 2711,
+      "sha256": "fc9db3f2961f6a287764bf7446ed34e0a434a67df519957d3551c117b72cc18e",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/gpu_smoke.py",
+      "blob": "9e03253433ff1663ff2909e571043aa6b5b723df"
+    },
+    {
+      "path": "launch.py",
+      "bytes": 5536,
+      "sha256": "7c645b2a27d743bf06c7902ed06886d660b8c01c593f1d2d133d4d452ccfa0a9",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/launch.py",
+      "blob": "0e5d746510884e7fd8ff7e523440077459a3dbf7"
+    },
+    {
+      "path": "metrics.py",
+      "bytes": 3696,
+      "sha256": "6a4e1e9d0c0820df781c4ed496177ac270673ff17f3a70a07a5049e11e800ebf",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/metrics.py",
+      "blob": "d3d9253cfca35590412983d6d394664d115dc367"
+    },
+    {
+      "path": "ops/FAILED_ROUND_ARCHIVE_POLICY.md",
+      "bytes": 2034,
+      "sha256": "20088f451d404c83f2d73d378839540d83242cb3e48807ab2a79ab8dc3555a0a",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/ops/FAILED_ROUND_ARCHIVE_POLICY.md",
+      "blob": "6c79dec52167f46921b5c90901f362d4d9982acf"
+    },
+    {
+      "path": "ops/PUBLISH_COMMAND.ps1",
+      "bytes": 1020,
+      "sha256": "3ba097e13c6ac57f0623ebbbf8cf63f7f9a892943d3323517b82ddbe2347fbee",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/ops/PUBLISH_COMMAND.ps1",
+      "blob": "7f28561dd05554e22852959efa70dab471b27d0a"
+    },
+    {
+      "path": "ops/ROUND01_PUBLICATION_RECEIPT.json",
+      "bytes": 497,
+      "sha256": "e45d0f3a61e3b19046abc3ce13cf11f377a285357ba4e0a9923cd563baf28e2c",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/ops/ROUND01_PUBLICATION_RECEIPT.json",
+      "blob": "166bf630a42c0a50b72ee6207587a4c4df6a976c"
+    },
+    {
+      "path": "ops/ROUND02_ARCHIVE_PREPARATION.json",
+      "bytes": 21031,
+      "sha256": "a7b1c7f79dc93bd14d0cfb4cbaa802bf2f73e1ce39282e50b17732790057a132",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/ops/ROUND02_ARCHIVE_PREPARATION.json",
+      "blob": "1ac8c159f0dd78875522b1d2f19bd4da38f09d81"
+    },
+    {
+      "path": "ops/ROUND02_DEPENDENCY_RESTORE.md",
+      "bytes": 1003,
+      "sha256": "420e326a57628d63170b3f12ccf80a5ecc8797ea02197499000ae7ec433b418d",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/ops/ROUND02_DEPENDENCY_RESTORE.md",
+      "blob": "612056998e8265b5a073bd0cb938ff98b8007bcd"
+    },
+    {
+      "path": "ops/ROUND02_PREPARATION_ALLOWLIST.txt",
+      "bytes": 4886,
+      "sha256": "10a5188b8887e4e7a6c85039ac98a70eea5412b52c23c5d70cea9161caa1fb6e",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/ops/ROUND02_PREPARATION_ALLOWLIST.txt",
+      "blob": "7671eb3914669367630000f8a111c60737f3fdb0"
+    },
+    {
+      "path": "ops/download_records.py",
+      "bytes": 2709,
+      "sha256": "c646bd67ac401bd0a27c491d8c40bd1012684f73364d7a953a29cf543346899d",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/ops/download_records.py",
+      "blob": "5491d53a329fe4eed63e6df5d3e4eeaff7ddf8b1"
+    },
+    {
+      "path": "ops/monitor.py",
+      "bytes": 9670,
+      "sha256": "b21e028b6741d7522df194c6d7094c7d37b6ef07b7e6aec633691cb61859d263",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/ops/monitor.py",
+      "blob": "b8eb7c94d9ba6b368c6307c10cd55b00d19b8ae4"
+    },
+    {
+      "path": "ops/package_records.py",
+      "bytes": 4060,
+      "sha256": "88e8465e51d967f9a0476da130ce43115c2026a7fe212f7ce3cd8f8bfd5ea3d6",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/ops/package_records.py",
+      "blob": "f17ecee7c2bb32fe13850a7b3fb3d110e5c740e5"
+    },
+    {
+      "path": "ops/prepare_round02_archive.py",
+      "bytes": 6088,
+      "sha256": "25ceaaed17e30080abbfd30617bb7221a4830cfc3b22d4a36cab20b5ca0bb140",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/ops/prepare_round02_archive.py",
+      "blob": "9959c234ac949d17bf791c56f5c753b9cffb0870"
+    },
+    {
+      "path": "ops/publish_records.py",
+      "bytes": 7633,
+      "sha256": "aef600496ec0c3d35582b4c7ce96c17022bdda3caa0db7cd85ca7d26729059dc",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/ops/publish_records.py",
+      "blob": "dff5dad454c97ece2bbb7ac9c7b59c0519f94eb7"
+    },
+    {
+      "path": "ops/register_run.py",
+      "bytes": 2561,
+      "sha256": "2ee480a01cfcb4b1f5acd84323c679cf27a90b142387f097d2d563d29e06aa37",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/ops/register_run.py",
+      "blob": "ebf74189565e76f663a9af1891b0e85bbf4835dc"
+    },
+    {
+      "path": "ops/registry.json",
+      "bytes": 5131,
+      "sha256": "d06f9a9e978f906ef61bd3f034596b09a4dd3249ca7f4fa3ff9302a896e72920",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/ops/registry.json",
+      "blob": "523a2f375a6bcfbb1cdefa690231fba67bb1e49d"
+    },
+    {
+      "path": "ops/ssh_proxy.py",
+      "bytes": 1328,
+      "sha256": "df0f75d49904b1170be0af14764ce995bfcc8daf308c34678ae37d7e33082461",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/ops/ssh_proxy.py",
+      "blob": "e4bf44077cb17e1c64cf4a5b71e8f3d81d00005c"
+    },
+    {
+      "path": "ops/verify_staged_records.py",
+      "bytes": 2540,
+      "sha256": "17310e107e50fc3eed34400d6f003a8e497ccc80cb8e49144b8668b366185a30",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/ops/verify_staged_records.py",
+      "blob": "add4945e604c5b678af08e596b0a7eec1c7c98e3"
+    },
+    {
+      "path": "reports/velocity_audit/audit_velocity_labels.py",
+      "bytes": 9908,
+      "sha256": "f156319e6941bef1a945e3b69e2b754865f0bb662747c8f695d037cf98a119b7",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/reports/velocity_audit/audit_velocity_labels.py",
+      "blob": "6c6c9688ef4db4215546091fd5e53d453f9fbc49"
+    },
+    {
+      "path": "round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/configs/mto_eta0.json",
+      "bytes": 685,
+      "sha256": "e1b823aa48f491b7e0eaa8cc106fa712e6ba3e3256d36e23f091af6d9c07bdf9",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/configs/mto_eta0.json",
+      "blob": "5cb8b636b2f4e954ca52b83de4160ebf22f0f414"
+    },
+    {
+      "path": "round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/data_metadata/hashes.json",
+      "bytes": 360,
+      "sha256": "ee33f69ef8de4dd917574f5df131103ba58638033f42abcb083b56205873314d",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/data_metadata/hashes.json",
+      "blob": "9585def723788d909b3ed9a2e50a10a1f4102a67"
+    },
+    {
+      "path": "round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/data_metadata/normalization.json",
+      "bytes": 462,
+      "sha256": "812a7b80d6259eb6106a5a534a8358a626713ec7ee53ad992fff6fcbabe59452",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/data_metadata/normalization.json",
+      "blob": "a0d866fe4504baacbd265d5e4d18639d5eaf1c70"
+    },
+    {
+      "path": "round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/dataset.py",
+      "bytes": 1381,
+      "sha256": "bb71448b7e7ddcca777d23509b46e1437fa553cac29a89f0900dccc97e34cadb",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/dataset.py",
+      "blob": "fde2bc9b7f8b8920dd9dc37a17d6a1413f5a9f6b"
+    },
+    {
+      "path": "round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/data_ea.py",
+      "bytes": 1324,
+      "sha256": "8027dc8695b2ade12aac64c3e894a075b4d98ca667a24053129a951001b6e943",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/data_ea.py",
+      "blob": "73dc86c2b5c0aa8adfb166664efe620900887411"
+    },
+    {
+      "path": "round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/models_ea.py",
+      "bytes": 3687,
+      "sha256": "b47d50b8b32313d1c3e1f19f3e64e6f02ce42e91736e6da00f896f68965250b0",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/models_ea.py",
+      "blob": "44983ba7ad8da0e3423b69dadf193749f6ddf31f"
+    },
+    {
+      "path": "round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/train_ea.py",
+      "bytes": 7637,
+      "sha256": "7c7b4d49db539566abd8c76da6fe3b7eabf96eaac3ac495997c5f074a49085dd",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/train_ea.py",
+      "blob": "c1f5329b35639e0cc96d8c3ce357a600c2c193d9"
+    },
+    {
+      "path": "round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/models.py",
+      "bytes": 10195,
+      "sha256": "a8d7bf8a8d89839f687a773f59f02b2a5d75abd6f47a59406e9eb3d1a40f4771",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/models.py",
+      "blob": "4f4ba35d660d522916aa893a203ab71715e019d0"
+    },
+    {
+      "path": "round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/__init__.py",
+      "bytes": 235,
+      "sha256": "8fe70f55031182c1d0012945907181ecc85278f7849599e15e3a16939fae67f1",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/__init__.py",
+      "blob": "f68b2db540b256ec70342b2f81f0823924c3e004"
+    },
+    {
+      "path": "round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/constant.py",
+      "bytes": 3241,
+      "sha256": "1c3a8f9058ba6890c2f6730241136b35a552235b41f812288ce9cbdcc42ec856",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/constant.py",
+      "blob": "cfa7e558dbd44b2c824a03a7bc09e02527afba81"
+    },
+    {
+      "path": "round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/detanet.py",
+      "bytes": 20754,
+      "sha256": "4083382f2d615d1573b9dbc2d2c456d00f9895d4dae144b6c62b26feff6eebcd",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/detanet.py",
+      "blob": "a5bf440200b539a66beacc91c1ebaf7c266f46f6"
+    },
+    {
+      "path": "round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/metrics.py",
+      "bytes": 1386,
+      "sha256": "677630dd1b97c7474c2f8a4cdda81d7e0f2a56a12dfd4b02bbb869329af4fec2",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/metrics.py",
+      "blob": "aa00acaf33239b403d30967684e0a135a04c1017"
+    },
+    {
+      "path": "round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/model_loader.py",
+      "bytes": 12371,
+      "sha256": "85507209b15efea567e686f4d99cf3be53dbf3779607d4b33e295d52c44505b3",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/model_loader.py",
+      "blob": "9fc4767e1370057edff0d5eef78aecdc8970a08e"
+    },
+    {
+      "path": "round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/__init__.py",
+      "bytes": 306,
+      "sha256": "032b99150e38283d3695b394175d792c370be7dbbe38b58b94971143de9446de",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/__init__.py",
+      "blob": "b1a0732bb96250885d9ba22a9a8b7c3269f1aa05"
+    },
+    {
+      "path": "round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/acts.py",
+      "bytes": 1889,
+      "sha256": "6bcd255ac95b33e6ef6a982d87c8dd6b39c2f1a41996f2425c5ada1f0fe8256c",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/acts.py",
+      "blob": "242f2d670fa2887bd94b1ef0b9e8607ff0fabb34"
+    },
+    {
+      "path": "round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/block.py",
+      "bytes": 1008,
+      "sha256": "38eb81b385fded74ac4ff3950ee2cbe6e7c7e7cc0873ec57ede64ef758460e35",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/block.py",
+      "blob": "eaf06583a3dca2324dbad2a69bcf90605f2f7171"
+    },
+    {
+      "path": "round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/edge_attention.py",
+      "bytes": 2754,
+      "sha256": "48a69aa9a83cfe225f8e55eeea4bab65120955aee2dc7ad02d414aef7b4e2fea",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/edge_attention.py",
+      "blob": "ccf686b30ce7dd05f5f7d86d7ddcabeac2633088"
+    },
+    {
+      "path": "round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/embedding.py",
+      "bytes": 4311,
+      "sha256": "07eff3330b5709fec463563d4ef53f857525ae85f55b8a3ab1e7c9ffb3c70ee8",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/embedding.py",
+      "blob": "05353663ed2075185f9ce637094d73585b74acba"
+    },
+    {
+      "path": "round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/message.py",
+      "bytes": 2020,
+      "sha256": "a76bae58dbb92447d6fb05230d7db826dc9defc929706e6f2c88c067ee5918cf",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/message.py",
+      "blob": "2266970e5dae98d112dbff57244c5bae3961ecc7"
+    },
+    {
+      "path": "round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/multilayer_perceptron.py",
+      "bytes": 2237,
+      "sha256": "5628a4cebadbbc493058edae808a64370ee2834fa4ccacc041f820bf9afb4d42",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/multilayer_perceptron.py",
+      "blob": "b14a8da13600134a5f7bad0d768cbe8f7e8a3988"
+    },
+    {
+      "path": "round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/radial_basis.py",
+      "bytes": 4178,
+      "sha256": "cbbbf125bdb4b64e21a4d58ddb175bde489bb7a640375847f416f137881307ca",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/radial_basis.py",
+      "blob": "83791d599dcb11d87dbba20039df7da48964dca4"
+    },
+    {
+      "path": "round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/update.py",
+      "bytes": 3719,
+      "sha256": "65cda1be8fd5daa491779211ba37ec9c23b73e4a2da81444d21534584c0028a6",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/update.py",
+      "blob": "642c893f8319bd74152e6f9dfdf85474a8be24b9"
+    },
+    {
+      "path": "round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/spectra_simulator.py",
+      "bytes": 9886,
+      "sha256": "cb36131b7dc855cd2c528d532f4d7742fc2da757d078e8732142dbeab4f0b67e",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/spectra_simulator.py",
+      "blob": "e39e40d8672cbeb7642903ab5c24b9de1a120268"
+    },
+    {
+      "path": "round02_dependency_sources/research/oscillator_r2_20260928/architecture/prepare.py",
+      "bytes": 6698,
+      "sha256": "fd1f172b243430c2f715cf08b7eea729350583e8d8a0d13413ff5299d684f702",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_dependency_sources/research/oscillator_r2_20260928/architecture/prepare.py",
+      "blob": "c0a62321429e16f2c09159bd4924702f7805c66d"
+    },
+    {
+      "path": "round02_dependency_sources/research/oscillator_r2_20260928/architecture/stats.json",
+      "bytes": 785,
+      "sha256": "a539509addf32d7fe1496a8bba708a7daeef55a7e5ee975f9e01c69746de2253",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_dependency_sources/research/oscillator_r2_20260928/architecture/stats.json",
+      "blob": "c06fff30c45bf55fcd22205634f2f333eb8cdb9a"
+    },
+    {
+      "path": "round02_dependency_sources/research/oscillator_r2_20260928/frozen_residual/config.json",
+      "bytes": 1096,
+      "sha256": "2ba4fbd592898d0717362f4bbe9812d25a4b1e1b35a2f13395f359a7572f3d38",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_dependency_sources/research/oscillator_r2_20260928/frozen_residual/config.json",
+      "blob": "506038707b225cb36d3a3edc12dbc1b89c5818e6"
+    },
+    {
+      "path": "round02_dependency_sources/research/oscillator_r2_20260928/frozen_residual/train.py",
+      "bytes": 14521,
+      "sha256": "b77bb5dff6c58d281de3b4683a673002d2beb8724480be8b2877cf16913d640d",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_dependency_sources/research/oscillator_r2_20260928/frozen_residual/train.py",
+      "blob": "32382c571edba792e1a079366f5d744adbde88cf"
+    },
+    {
+      "path": "round02_frozen/CACHE_COMPLETE.json",
+      "bytes": 23739,
+      "sha256": "2cffa5004595395260ec0fec61b89271a49952d254b5756aa985d2c2830bb483",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_frozen/CACHE_COMPLETE.json",
+      "blob": "16da59c588b180b3453a82786ed1600d3d55d656"
+    },
+    {
+      "path": "round02_frozen/CACHE_EXECUTION.log",
+      "bytes": 1310,
+      "sha256": "6f9f9283e17eb72f77a94307540acb5fa1ef6299db345eca0bbd6a7d91781560",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_frozen/CACHE_EXECUTION.log",
+      "blob": "0aee239c30824691a5966a036dbe0343f261f973"
+    },
+    {
+      "path": "round02_frozen/CACHE_GPU_ADMISSION.xml",
+      "bytes": 18005,
+      "sha256": "9e59c00290c0dea71bcbe3835ac736b220c46a5987c6511106a9cf5fa05f1a0f",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_frozen/CACHE_GPU_ADMISSION.xml",
+      "blob": "381da3d50d7b2b3d6e3f45ac26d4be170ff260d5"
+    },
+    {
+      "path": "round02_frozen/FREEZE_EXECUTION.log",
+      "bytes": 129,
+      "sha256": "c59de8302c7c7eadc64e3465b90a4792cbbdd4ff0d96e0c0ffde3046966e2eb8",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_frozen/FREEZE_EXECUTION.log",
+      "blob": "abf6bd9c23850d89e76a7ef8c5914760243b26bd"
+    },
+    {
+      "path": "round02_frozen/FROZEN_MANIFEST.json",
+      "bytes": 12498,
+      "sha256": "6ea090e28201f55cb6125fbf43ebb306645bc94893c53e138d764dce25e22f6e",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_frozen/FROZEN_MANIFEST.json",
+      "blob": "94437992c052bd6de3d3b2fd3ed71c9cdf07a156"
+    },
+    {
+      "path": "round02_frozen/INDEPENDENT_PRELAUNCH_REVIEW.json",
+      "bytes": 15315,
+      "sha256": "38e0d09ad8d007c5ee7036a9da5fc279ec63019bbca84ee25a0cc8774f4f6452",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_frozen/INDEPENDENT_PRELAUNCH_REVIEW.json",
+      "blob": "6dc50dbc403ca29c45afe83f59da650280230c33"
+    },
+    {
+      "path": "round02_frozen/INFERENCE_PREFLIGHT.json",
+      "bytes": 930,
+      "sha256": "e7e9020e3cc89adc4731db7f0e600d1d9b2363fb746830a926656c8216522ad0",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_frozen/INFERENCE_PREFLIGHT.json",
+      "blob": "e3d43a75314679f7cb926265dbb8996930e2b940"
+    },
+    {
+      "path": "round02_frozen/INFERENCE_PREFLIGHT_EXECUTION.log",
+      "bytes": 930,
+      "sha256": "e7e9020e3cc89adc4731db7f0e600d1d9b2363fb746830a926656c8216522ad0",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_frozen/INFERENCE_PREFLIGHT_EXECUTION.log",
+      "blob": "e3d43a75314679f7cb926265dbb8996930e2b940"
+    },
+    {
+      "path": "round02_frozen/INFERENCE_PREFLIGHT_INITIAL_MODE_CHECK.log",
+      "bytes": 384,
+      "sha256": "7e0aaa1d74a84294def0628a0457a8e74132f8990c6a13472cfc5bfaa145d218",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_frozen/INFERENCE_PREFLIGHT_INITIAL_MODE_CHECK.log",
+      "blob": "8e47f9cdca452592b5c3072a387a0a9fcc4ff312"
+    },
+    {
+      "path": "round02_frozen/PREFLIGHT.json",
+      "bytes": 25358,
+      "sha256": "3cde66293dcde54ac54ef921ed2c904fc8ec88298f23e816da69b03f0d50881c",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_frozen/PREFLIGHT.json",
+      "blob": "25613f1cd0a4943da88cf023bec6116c2db53c17"
+    },
+    {
+      "path": "round02_frozen/PREFLIGHT_EXECUTION.log",
+      "bytes": 84,
+      "sha256": "0722af135c907ff73462e5ae720148802ca49d68fd096ce5feae4835e39866ca",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_frozen/PREFLIGHT_EXECUTION.log",
+      "blob": "4846c9807400927260e967228ea3b812cae402f0"
+    },
+    {
+      "path": "round02_frozen/PREFLIGHT_GPU_ADMISSION.xml",
+      "bytes": 18005,
+      "sha256": "0b5f26f6e5640ded6db569fc6ffc34027ea91f08e0e3e4304ee22502a2baf664",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_frozen/PREFLIGHT_GPU_ADMISSION.xml",
+      "blob": "ac033e55f20f20034694ebe676585523ef34eec7"
+    },
+    {
+      "path": "round02_frozen/PROTOCOL.md",
+      "bytes": 8728,
+      "sha256": "4e1de3327d4f0c275ce4dc836b509423c27f5ce148d187246a0ffd1fff6cbc47",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_frozen/PROTOCOL.md",
+      "blob": "e99c01f7eff7194d007a350b78918fe4830edd76"
+    },
+    {
+      "path": "round02_frozen/RESUME_GPU_ADMISSION.xml",
+      "bytes": 18005,
+      "sha256": "bcee4fc5139021a7c51d6533d87a9ac80072d1e9ad43fed15973f06fb9c68f78",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_frozen/RESUME_GPU_ADMISSION.xml",
+      "blob": "8615ffedcd99e6418cf0d71bb7e83030b7cf33b0"
+    },
+    {
+      "path": "round02_frozen/RESUME_PREFLIGHT.json",
+      "bytes": 1487,
+      "sha256": "862802d5161b2d326000d7c8c790238e61f73b658b57355f89d832e83ab21dad",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_frozen/RESUME_PREFLIGHT.json",
+      "blob": "a75b6bd08a6e221338ac39cf298be3381d175c42"
+    },
+    {
+      "path": "round02_frozen/RESUME_PREFLIGHT_EXECUTION.log",
+      "bytes": 1487,
+      "sha256": "862802d5161b2d326000d7c8c790238e61f73b658b57355f89d832e83ab21dad",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_frozen/RESUME_PREFLIGHT_EXECUTION.log",
+      "blob": "a75b6bd08a6e221338ac39cf298be3381d175c42"
+    },
+    {
+      "path": "round02_frozen/RESUME_PREFLIGHT_INITIAL_DEVICE_CHECK.log",
+      "bytes": 1925,
+      "sha256": "fad503387368a42b286e6b9579d38990c9d5d3f8b34947f19a2bd0a54bf154c4",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_frozen/RESUME_PREFLIGHT_INITIAL_DEVICE_CHECK.log",
+      "blob": "4be76141b22808ee29de6cbfafbb45759193c9d5"
+    },
+    {
+      "path": "round02_frozen/VARIANCE_PROVENANCE.json",
+      "bytes": 2460,
+      "sha256": "d1e5837f496c5c19f294aa8601a2f8d0d37e0a4ae6446b1927103318e38326b9",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_frozen/VARIANCE_PROVENANCE.json",
+      "blob": "43bf32a3ed0d729f88c783f56f98b7089ef5ed81"
+    },
+    {
+      "path": "round02_frozen/cache_access.py",
+      "bytes": 1338,
+      "sha256": "ec160455be2400419a80b554bb7fb61c7d99e1f71fde7464a29482343d64822e",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_frozen/cache_access.py",
+      "blob": "4b9e08e82c564ad465d708f813100ba9f9308f47"
+    },
+    {
+      "path": "round02_frozen/config.json",
+      "bytes": 1358,
+      "sha256": "6c21c3b74499485e61a9b903aba605126fbb176193da265a70e3d96654551f9e",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_frozen/config.json",
+      "blob": "8a4cbba5f8a7c3f42113757bef8484cd86a4ea17"
+    },
+    {
+      "path": "round02_frozen/freeze_round.py",
+      "bytes": 2698,
+      "sha256": "ba4f2894973014ac519187d7b3ef8152c00353cf612fa29a5c12db2b5e9f541a",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_frozen/freeze_round.py",
+      "blob": "3740cc26dc3780b7db963ab93934feaf89549dc3"
+    },
+    {
+      "path": "round02_frozen/independent_prelaunch_review.py",
+      "bytes": 7348,
+      "sha256": "01963ac2b88a30d3a911c6a94ae217f5cc0a8cb9e9514bdaa1a1675fffee9c50",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_frozen/independent_prelaunch_review.py",
+      "blob": "fcfbb61ad8fb3464a6d2804599ec2dc13c3f5c3d"
+    },
+    {
+      "path": "round02_frozen/inference_preflight.py",
+      "bytes": 3229,
+      "sha256": "1235c210fc9352ea1fe5d76e2889fa7fff47ca78ed5efdde930795bde21f6299",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_frozen/inference_preflight.py",
+      "blob": "0760c9da9236b9776201a37c0fc7b062b4c8a724"
+    },
+    {
+      "path": "round02_frozen/launch_round.py",
+      "bytes": 3881,
+      "sha256": "df3ac38a0a7c60bca8e46585fcd964474c4f0a52a3ec8a4bbdd83dac3ddd4230",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_frozen/launch_round.py",
+      "blob": "836ad6d94b22072ae89633871acaa66f9c722404"
+    },
+    {
+      "path": "round02_frozen/model_frozen.py",
+      "bytes": 3537,
+      "sha256": "80186d72ce95634c926b6aeafa376e528ff0bb3204446acd6ce034220fe34569",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_frozen/model_frozen.py",
+      "blob": "173254df2b207f25d76038da8fd02e7bea3fea0d"
+    },
+    {
+      "path": "round02_frozen/predictor.py",
+      "bytes": 679,
+      "sha256": "6f5424edb16a8fdda4706b647056fba2c79a45d09c969e64b53ace2441330ae8",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_frozen/predictor.py",
+      "blob": "2db085a1c0918675017ca6787884eea7991f995d"
+    },
+    {
+      "path": "round02_frozen/preflight.py",
+      "bytes": 7311,
+      "sha256": "85faae8583abcdf6903a941df483e8ff7ec8f21974ba0e2482ea7368c914897b",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_frozen/preflight.py",
+      "blob": "0a7d18ea38aa617f9d9b82a26968e6009de32937"
+    },
+    {
+      "path": "round02_frozen/prepare_cache.py",
+      "bytes": 3946,
+      "sha256": "37adfa4c1ef7cb68e231306550fb179a54ed8dd1cf5490db82f53245aa298c5b",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_frozen/prepare_cache.py",
+      "blob": "fc5a324a5a7e4a308e3d964c5073a7e13499bb35"
+    },
+    {
+      "path": "round02_frozen/resume_preflight.py",
+      "bytes": 3913,
+      "sha256": "e8039ddfdb4e1e7c6ec33032ceb816588fb111f5ab7f419bae89f55dff5c0ad7",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_frozen/resume_preflight.py",
+      "blob": "e311fc17661645165d95cc36ca893418c795debd"
+    },
+    {
+      "path": "round02_frozen/train_frozen.py",
+      "bytes": 11006,
+      "sha256": "c54b154a5fc7e32e8bfac9703175fbd21e4b50004cfbe61dc4c030eb5375368f",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_frozen/train_frozen.py",
+      "blob": "31df9d87c6842d6cedb14bb22a77d07a44c3a609"
+    },
+    {
+      "path": "round02_frozen/variance_provenance.py",
+      "bytes": 3581,
+      "sha256": "4a7af2dcaba4bb755e89dade6266a2cca25db9807f36b9e75ca454f065fbc7e5",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round02_frozen/variance_provenance.py",
+      "blob": "7bd17f28a8e276b4f3dca06d6417b852e6e8a89f"
+    },
+    {
+      "path": "round_config.json",
+      "bytes": 1842,
+      "sha256": "3d3c60b2e9dc590e35969d668f1c14fbf83d5c37419366ce250f67f3aff7cc93",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/round_config.json",
+      "blob": "c9f37485207abcdf571bb20a6952a8c87acc6efe"
+    },
+    {
+      "path": "train.py",
+      "bytes": 12660,
+      "sha256": "4661f90d1885d8dbe30d59a8c50a1dfdc851d5df9a1ad4f41325e53b4888fe8c",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/train.py",
+      "blob": "ebe2a4652df6fba26ec536b2df61a7396bcacd0a"
+    },
+    {
+      "path": "ARCHIVE_MANIFEST.json",
+      "bytes": 17548,
+      "sha256": "6bc961ceb3c513d710c1a18cd39a98e7b7b725febefe454c2364a255830bb30e",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/ARCHIVE_MANIFEST.json",
+      "blob": "b602ae2973c0430ed6fa8c707df6521d1301018e"
+    },
+    {
+      "path": "LOCAL_DOWNLOAD_RECEIPT.json",
+      "bytes": 549,
+      "sha256": "fde40e3b5d52f54bfe8412e3d96385d134fb4c39733b84b7a6f01a45ef1ebfc4",
+      "git_path": "research/single_model_20260929/round02_frozen_preparation/LOCAL_DOWNLOAD_RECEIPT.json",
+      "blob": "c1446925f70a5e261783f3c2e215668f0e753ded"
+    }
+  ],
+  "diff_stat": ".../ARCHIVE_MANIFEST.json                          | 469 ++++++++++\n .../round02_frozen_preparation/ENVIRONMENT.json    |  20 +\n .../FROZEN_MANIFEST.json                           | 125 +++\n .../round02_frozen_preparation/GPU_SMOKE.json      | 262 ++++++\n .../LOCAL_DOWNLOAD_RECEIPT.json                    |  10 +\n .../round02_frozen_preparation/PROTOCOL.md         |  52 ++\n .../SECONDARY_CALIBRATION_POLICY.md                |  11 +\n .../architecture/PREFLIGHT.json                    | 100 +++\n .../architecture/model.py                          | 155 ++++\n .../architecture/preflight.py                      | 178 ++++\n .../current_state/COORDINATOR.md                   |  86 ++\n .../current_state/ROUND01_DECISION.md              |  39 +\n .../current_state/monitor.md                       |  44 +\n .../environment_capture.py                         |  21 +\n .../round02_frozen_preparation/freeze.py           |  60 ++\n .../round02_frozen_preparation/gpu_smoke.py        |  60 ++\n .../round02_frozen_preparation/launch.py           |  99 +++\n .../round02_frozen_preparation/metrics.py          |  73 ++\n .../ops/FAILED_ROUND_ARCHIVE_POLICY.md             |  11 +\n .../ops/PUBLISH_COMMAND.ps1                        |  12 +\n .../ops/ROUND01_PUBLICATION_RECEIPT.json           |  11 +\n .../ops/ROUND02_ARCHIVE_PREPARATION.json           | 395 +++++++++\n .../ops/ROUND02_DEPENDENCY_RESTORE.md              |   7 +\n .../ops/ROUND02_PREPARATION_ALLOWLIST.txt          |  92 ++\n .../ops/download_records.py                        |  54 ++\n .../round02_frozen_preparation/ops/monitor.py      | 192 +++++\n .../ops/package_records.py                         |  79 ++\n .../ops/prepare_round02_archive.py                 |  95 +++\n .../ops/publish_records.py                         | 131 +++\n .../round02_frozen_preparation/ops/register_run.py |  50 ++\n .../round02_frozen_preparation/ops/registry.json   | 128 +++\n .../round02_frozen_preparation/ops/ssh_proxy.py    |  41 +\n .../ops/verify_staged_records.py                   |  49 ++\n .../velocity_audit/audit_velocity_labels.py        | 178 ++++\n .../qm9s_eta_Ef_20260926/configs/mto_eta0.json     |  35 +\n .../qm9s_eta_Ef_20260926/data_metadata/hashes.json |   6 +\n .../data_metadata/normalization.json               |  20 +\n .../experiments/qm9s_eta_Ef_20260926/dataset.py    |  24 +\n .../frozen_reference/data_ea.py                    |  22 +\n .../frozen_reference/models_ea.py                  |  68 ++\n .../frozen_reference/train_ea.py                   | 109 +++\n .../frozen_reference/upstream/models.py            | 219 +++++\n .../upstream/vendor/detanet_model/__init__.py      |   5 +\n .../upstream/vendor/detanet_model/constant.py      |  96 +++\n .../upstream/vendor/detanet_model/detanet.py       | 403 +++++++++\n .../upstream/vendor/detanet_model/metrics.py       |  38 +\n .../upstream/vendor/detanet_model/model_loader.py  | 351 ++++++++\n .../vendor/detanet_model/modules/__init__.py       |   8 +\n .../upstream/vendor/detanet_model/modules/acts.py  |  55 ++\n .../upstream/vendor/detanet_model/modules/block.py |  30 +\n .../vendor/detanet_model/modules/edge_attention.py |  66 ++\n .../vendor/detanet_model/modules/embedding.py      |  76 ++\n .../vendor/detanet_model/modules/message.py        |  39 +\n .../detanet_model/modules/multilayer_perceptron.py |  62 ++\n .../vendor/detanet_model/modules/radial_basis.py   | 106 +++\n .../vendor/detanet_model/modules/update.py         |  80 ++\n .../vendor/detanet_model/spectra_simulator.py      | 221 +++++\n .../oscillator_r2_20260928/architecture/prepare.py |  82 ++\n .../oscillator_r2_20260928/architecture/stats.json |  26 +\n .../frozen_residual/config.json                    |  31 +\n .../frozen_residual/train.py                       | 250 ++++++\n .../round02_frozen/CACHE_COMPLETE.json             | 231 +++++\n .../round02_frozen/CACHE_EXECUTION.log             |  20 +\n .../round02_frozen/CACHE_GPU_ADMISSION.xml         | 414 +++++++++\n .../round02_frozen/FREEZE_EXECUTION.log            |   1 +\n .../round02_frozen/FROZEN_MANIFEST.json            | 135 +++\n .../INDEPENDENT_PRELAUNCH_REVIEW.json              | 152 ++++\n .../round02_frozen/INFERENCE_PREFLIGHT.json        |  17 +\n .../INFERENCE_PREFLIGHT_EXECUTION.log              |  17 +\n .../INFERENCE_PREFLIGHT_INITIAL_MODE_CHECK.log     |   6 +\n .../round02_frozen/PREFLIGHT.json                  | 940 +++++++++++++++++++++\n .../round02_frozen/PREFLIGHT_EXECUTION.log         |   1 +\n .../round02_frozen/PREFLIGHT_GPU_ADMISSION.xml     | 414 +++++++++\n .../round02_frozen/PROTOCOL.md                     |  56 ++\n .../round02_frozen/RESUME_GPU_ADMISSION.xml        | 414 +++++++++\n .../round02_frozen/RESUME_PREFLIGHT.json           |  31 +\n .../round02_frozen/RESUME_PREFLIGHT_EXECUTION.log  |  31 +\n .../RESUME_PREFLIGHT_INITIAL_DEVICE_CHECK.log      |  20 +\n .../round02_frozen/VARIANCE_PROVENANCE.json        |  37 +\n .../round02_frozen/cache_access.py                 |  28 +\n .../round02_frozen/config.json                     |  36 +\n .../round02_frozen/freeze_round.py                 |  39 +\n .../round02_frozen/independent_prelaunch_review.py |  98 +++\n .../round02_frozen/inference_preflight.py          |  58 ++\n .../round02_frozen/launch_round.py                 |  63 ++\n .../round02_frozen/model_frozen.py                 |  83 ++\n .../round02_frozen/predictor.py                    |  12 +\n .../round02_frozen/preflight.py                    | 113 +++\n .../round02_frozen/prepare_cache.py                |  73 ++\n .../round02_frozen/resume_preflight.py             |  66 ++\n .../round02_frozen/train_frozen.py                 | 166 ++++\n .../round02_frozen/variance_provenance.py          |  61 ++\n .../round02_frozen_preparation/round_config.json   |  40 +\n .../round02_frozen_preparation/train.py            | 228 +++++\n 94 files changed, 10018 insertions(+)",
+  "human_or_agent_content_review_required_before_publish": true
+}

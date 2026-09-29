@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "CPU_only": true,
+  "dataset_or_model_loaded": false,
+  "fit": false,
+  "symmetry_and_PSD": {
+    "rotation": 8.881784197001252e-16,
+    "reflection": 0.0,
+    "inversion": 0.0,
+    "translation": 1.2878587085651816e-14,
+    "atom_permutation_A": 8.881784197001252e-16,
+    "atom_permutation_P": 1.1102230246251565e-16,
+    "neutrality": 1.1102230246251565e-16,
+    "minimum_P_eigenvalue": -8.328088817897365e-17,
+    "minimum_A_eigenvalue": 0.3045836195308413
+  },
+  "centrosymmetric_dimer": {
+    "P_C_trace_A": 2.0,
+    "Gaussian_trace_A": 1.7293294335267746,
+    "invariant_fixed_rank_scalar_factor_trace_A": 0.0,
+    "atom_indexed_pair_factor_trace_A": 1.4952901448310176
+  },
+  "span_restriction": {
+    "planar_out_of_plane_Azz": 0.0,
+    "reflection_invariant_target_Azz": 1.0,
+    "irreducible_squared_error_lower_bound_for_that_target": 1.0,
+    "linear_perpendicular_Ayy_Azz": [
+      0.0,
+      0.0
+    ],
+    "one_atom_trace_A": 0.0,
+    "general_rank_bound": "rank(A)<=min(3,rank(CR),rank(P))"
+  },
+  "coherent_dark_example": {
+    "neutral_charge_sum": 0.0,
+    "nonzero_P_Frobenius_norm": 6.0,
+    "trace_diagonal_terms": 2.0,
+    "trace_pair_cross_terms": -2.0,
+    "trace_A": -2.220446049250313e-16
+  },
+  "nonidentifiability": {
+    "different_neutral_P_same_A_max_abs": 0.0,
+    "P_difference_norm": 6.0,
+    "factor_right_orthogonal_gauge": "B and B O give same P"
+  },
+  "kernel_constraints": {
+    "symmetric_positive_entry_kernel_min_eig": -0.2237739202856998,
+    "centered_bad_kernel_min_eig": -0.16666666666666674,
+    "BBt_no_eigendecomposition_derivative_finite_at_identity": true
+  },
+  "residual_rejection": {
+    "additive_PSD_trace_before": 3.0,
+    "after": 3.3000000000000003,
+    "zero_initialized_factor_loss_gradient_max_abs": 0.0
+  },
+  "verdict": "Reject general replacement. Atom-indexed covariance avoids scalar-factor inversion collapse but nuclear-span and physical-identifiability constraints remain. No model design or fit proposed."
+}

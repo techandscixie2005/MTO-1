@@ -1,0 +1,625 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-09-29T16:24:20.994227+00:00",
+  "monitor_pid": 1132619,
+  "cadence_hours": 4,
+  "mode": "read_only_no_signals_no_restarts",
+  "registry_sha256": "d06f9a9e978f906ef61bd3f034596b09a4dd3249ca7f4fa3ff9302a896e72920",
+  "gpu_snapshot": {
+    "query_returncode": 0,
+    "query_error": "",
+    "gpus": [
+      {
+        "index": 0,
+        "uuid": "GPU-3399225d-00bd-4a9c-f7a9-2f098b642221",
+        "name": "NVIDIA A800 80GB PCIe",
+        "temperature_c": "39 C",
+        "memory_used": "4371 MiB",
+        "utilization": "13 %",
+        "ecc_volatile": {
+          "sram_correctable": "0",
+          "sram_uncorrectable_parity": "0",
+          "sram_uncorrectable_secded": "0",
+          "dram_correctable": "0",
+          "dram_uncorrectable": "0"
+        },
+        "ecc_aggregate": {
+          "sram_correctable": "0",
+          "sram_uncorrectable_parity": "0",
+          "sram_uncorrectable_secded": "0",
+          "dram_correctable": "42",
+          "dram_uncorrectable": "0",
+          "sram_threshold_exceeded": "No"
+        },
+        "remapped_rows": {
+          "remapped_row_corr": "2",
+          "remapped_row_unc": "0",
+          "remapped_row_pending": "No",
+          "remapped_row_failure": "No"
+        },
+        "compute_processes": [
+          {
+            "pid": "7104",
+            "name": "/usr/lib/xorg/Xorg",
+            "used_memory": "4 MiB"
+          },
+          {
+            "pid": "712998",
+            "name": "/home/inspur/Documents/SpecGPT/envs/specgpt/bin/python",
+            "used_memory": "4354 MiB"
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "uuid": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+        "name": "NVIDIA A800 80GB PCIe",
+        "temperature_c": "40 C",
+        "memory_used": "4141 MiB",
+        "utilization": "51 %",
+        "ecc_volatile": {
+          "sram_correctable": "0",
+          "sram_uncorrectable_parity": "0",
+          "sram_uncorrectable_secded": "0",
+          "dram_correctable": "0",
+          "dram_uncorrectable": "0"
+        },
+        "ecc_aggregate": {
+          "sram_correctable": "0",
+          "sram_uncorrectable_parity": "0",
+          "sram_uncorrectable_secded": "0",
+          "dram_correctable": "0",
+          "dram_uncorrectable": "0",
+          "sram_threshold_exceeded": "No"
+        },
+        "remapped_rows": {
+          "remapped_row_corr": "0",
+          "remapped_row_unc": "0",
+          "remapped_row_pending": "No",
+          "remapped_row_failure": "No"
+        },
+        "compute_processes": [
+          {
+            "pid": "7104",
+            "name": "/usr/lib/xorg/Xorg",
+            "used_memory": "4 MiB"
+          },
+          {
+            "pid": "1132183",
+            "name": "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/bin/python",
+            "used_memory": "4124 MiB"
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "uuid": "GPU-cb4dc1ea-9ea3-e426-bdeb-df0bef8a23fa",
+        "name": "NVIDIA A800 80GB PCIe",
+        "temperature_c": "37 C",
+        "memory_used": "4143 MiB",
+        "utilization": "38 %",
+        "ecc_volatile": {
+          "sram_correctable": "0",
+          "sram_uncorrectable_parity": "0",
+          "sram_uncorrectable_secded": "0",
+          "dram_correctable": "0",
+          "dram_uncorrectable": "0"
+        },
+        "ecc_aggregate": {
+          "sram_correctable": "0",
+          "sram_uncorrectable_parity": "0",
+          "sram_uncorrectable_secded": "0",
+          "dram_correctable": "0",
+          "dram_uncorrectable": "0",
+          "sram_threshold_exceeded": "No"
+        },
+        "remapped_rows": {
+          "remapped_row_corr": "0",
+          "remapped_row_unc": "0",
+          "remapped_row_pending": "No",
+          "remapped_row_failure": "No"
+        },
+        "compute_processes": [
+          {
+            "pid": "7104",
+            "name": "/usr/lib/xorg/Xorg",
+            "used_memory": "4 MiB"
+          },
+          {
+            "pid": "1132188",
+            "name": "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/bin/python",
+            "used_memory": "4126 MiB"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "uuid": "GPU-a880cea5-eef3-822f-7fea-ba7e5a27e95f",
+        "name": "NVIDIA A800 80GB PCIe",
+        "temperature_c": "31 C",
+        "memory_used": "10 MiB",
+        "utilization": "0 %",
+        "ecc_volatile": {
+          "sram_correctable": "0",
+          "sram_uncorrectable_parity": "0",
+          "sram_uncorrectable_secded": "0",
+          "dram_correctable": "68",
+          "dram_uncorrectable": "187"
+        },
+        "ecc_aggregate": {
+          "sram_correctable": "0",
+          "sram_uncorrectable_parity": "0",
+          "sram_uncorrectable_secded": "0",
+          "dram_correctable": "90",
+          "dram_uncorrectable": "352",
+          "sram_threshold_exceeded": "No"
+        },
+        "remapped_rows": {
+          "remapped_row_corr": "0",
+          "remapped_row_unc": "2",
+          "remapped_row_pending": "Yes",
+          "remapped_row_failure": "No"
+        },
+        "compute_processes": [
+          {
+            "pid": "7104",
+            "name": "/usr/lib/xorg/Xorg",
+            "used_memory": "4 MiB"
+          }
+        ]
+      },
+      {
+        "index": 4,
+        "uuid": "GPU-e212aefc-f1d6-cc7a-5594-e87abeaf1184",
+        "name": "NVIDIA A800 80GB PCIe",
+        "temperature_c": "37 C",
+        "memory_used": "4143 MiB",
+        "utilization": "41 %",
+        "ecc_volatile": {
+          "sram_correctable": "0",
+          "sram_uncorrectable_parity": "0",
+          "sram_uncorrectable_secded": "0",
+          "dram_correctable": "0",
+          "dram_uncorrectable": "0"
+        },
+        "ecc_aggregate": {
+          "sram_correctable": "0",
+          "sram_uncorrectable_parity": "0",
+          "sram_uncorrectable_secded": "0",
+          "dram_correctable": "0",
+          "dram_uncorrectable": "0",
+          "sram_threshold_exceeded": "No"
+        },
+        "remapped_rows": {
+          "remapped_row_corr": "0",
+          "remapped_row_unc": "0",
+          "remapped_row_pending": "No",
+          "remapped_row_failure": "No"
+        },
+        "compute_processes": [
+          {
+            "pid": "7104",
+            "name": "/usr/lib/xorg/Xorg",
+            "used_memory": "4 MiB"
+          },
+          {
+            "pid": "1132193",
+            "name": "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/bin/python",
+            "used_memory": "4126 MiB"
+          }
+        ]
+      },
+      {
+        "index": 5,
+        "uuid": "GPU-71f357f3-3436-a616-b8af-50160d18f30d",
+        "name": "NVIDIA A800 80GB PCIe",
+        "temperature_c": "32 C",
+        "memory_used": "10 MiB",
+        "utilization": "0 %",
+        "ecc_volatile": {
+          "sram_correctable": "0",
+          "sram_uncorrectable_parity": "0",
+          "sram_uncorrectable_secded": "0",
+          "dram_correctable": "1",
+          "dram_uncorrectable": "0"
+        },
+        "ecc_aggregate": {
+          "sram_correctable": "0",
+          "sram_uncorrectable_parity": "0",
+          "sram_uncorrectable_secded": "0",
+          "dram_correctable": "1",
+          "dram_uncorrectable": "0",
+          "sram_threshold_exceeded": "No"
+        },
+        "remapped_rows": {
+          "remapped_row_corr": "0",
+          "remapped_row_unc": "0",
+          "remapped_row_pending": "No",
+          "remapped_row_failure": "No"
+        },
+        "compute_processes": [
+          {
+            "pid": "7104",
+            "name": "/usr/lib/xorg/Xorg",
+            "used_memory": "4 MiB"
+          }
+        ]
+      },
+      {
+        "index": 6,
+        "uuid": "GPU-2431a641-8045-a10b-4aa0-2769010e0708",
+        "name": "NVIDIA A800 80GB PCIe",
+        "temperature_c": "38 C",
+        "memory_used": "4143 MiB",
+        "utilization": "35 %",
+        "ecc_volatile": {
+          "sram_correctable": "0",
+          "sram_uncorrectable_parity": "0",
+          "sram_uncorrectable_secded": "0",
+          "dram_correctable": "0",
+          "dram_uncorrectable": "0"
+        },
+        "ecc_aggregate": {
+          "sram_correctable": "0",
+          "sram_uncorrectable_parity": "0",
+          "sram_uncorrectable_secded": "0",
+          "dram_correctable": "0",
+          "dram_uncorrectable": "0",
+          "sram_threshold_exceeded": "No"
+        },
+        "remapped_rows": {
+          "remapped_row_corr": "0",
+          "remapped_row_unc": "0",
+          "remapped_row_pending": "No",
+          "remapped_row_failure": "No"
+        },
+        "compute_processes": [
+          {
+            "pid": "7104",
+            "name": "/usr/lib/xorg/Xorg",
+            "used_memory": "4 MiB"
+          },
+          {
+            "pid": "1132198",
+            "name": "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/bin/python",
+            "used_memory": "4126 MiB"
+          }
+        ]
+      },
+      {
+        "index": 7,
+        "uuid": "GPU-93962521-99fe-32d5-e4a3-07531bc3c227",
+        "name": "NVIDIA A800 80GB PCIe",
+        "temperature_c": "33 C",
+        "memory_used": "10 MiB",
+        "utilization": "0 %",
+        "ecc_volatile": {
+          "sram_correctable": "0",
+          "sram_uncorrectable_parity": "0",
+          "sram_uncorrectable_secded": "0",
+          "dram_correctable": "2",
+          "dram_uncorrectable": "2"
+        },
+        "ecc_aggregate": {
+          "sram_correctable": "0",
+          "sram_uncorrectable_parity": "0",
+          "sram_uncorrectable_secded": "0",
+          "dram_correctable": "3",
+          "dram_uncorrectable": "2",
+          "sram_threshold_exceeded": "No"
+        },
+        "remapped_rows": {
+          "remapped_row_corr": "0",
+          "remapped_row_unc": "1",
+          "remapped_row_pending": "Yes",
+          "remapped_row_failure": "No"
+        },
+        "compute_processes": [
+          {
+            "pid": "7104",
+            "name": "/usr/lib/xorg/Xorg",
+            "used_memory": "4 MiB"
+          }
+        ]
+      }
+    ]
+  },
+  "runs": [
+    {
+      "id": "control_1790699021761399963",
+      "run_dir": "runs/control",
+      "gpu_uuid": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+      "restart_action": "none",
+      "process_identity": {
+        "pid": 1132183,
+        "start_ticks": 1254668652,
+        "uid": 1000,
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929",
+        "argv_sha256": "15193ef38184899207de551ede1d8885feb09746a4bd4a93a634e2c98d8e9528",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "process_state": "R"
+      },
+      "identity_matches": true,
+      "files": {
+        "status_path": {
+          "exists": true,
+          "bytes": 326,
+          "mtime_utc": "2026-09-29T16:23:54.215595+00:00",
+          "age_seconds": 27.6,
+          "content": {
+            "state": "running",
+            "pid": 1132183,
+            "arm": "control",
+            "epoch": 1,
+            "completed_epoch": 0,
+            "cursor": 64,
+            "train_count": 120355,
+            "last_update_unix": 1790699034.2165124,
+            "best_epoch": 0,
+            "best_r2": 0.40529411423352635,
+            "manifest_sha256": "eaf2c75e239f7c04717adb97220cc35731df8d1a598b14b7b014c6754bf5ebd3"
+          }
+        },
+        "log_path": {
+          "exists": true,
+          "bytes": 71,
+          "mtime_utc": "2026-09-29T16:23:53.899595+00:00",
+          "age_seconds": 27.9
+        },
+        "completion_path": {
+          "exists": false
+        },
+        "failure_path": {
+          "exists": false
+        }
+      },
+      "checkpoints": {
+        "runs/control/last.pt": {
+          "exists": true,
+          "bytes": 6452664,
+          "mtime_utc": "2026-09-29T16:23:53.893595+00:00",
+          "age_seconds": 27.9
+        },
+        "runs/control/best.pt": {
+          "exists": true,
+          "bytes": 6437116,
+          "mtime_utc": "2026-09-29T16:23:53.736595+00:00",
+          "age_seconds": 28.1
+        }
+      },
+      "state": "RUNNING_IDENTITY_MATCH",
+      "observed_gpu_uuids": [
+        "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800"
+      ]
+    },
+    {
+      "id": "adapter_1790699021984516935",
+      "run_dir": "runs/adapter",
+      "gpu_uuid": "GPU-cb4dc1ea-9ea3-e426-bdeb-df0bef8a23fa",
+      "restart_action": "none",
+      "process_identity": {
+        "pid": 1132188,
+        "start_ticks": 1254668674,
+        "uid": 1000,
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929",
+        "argv_sha256": "7ab520c26545dfc3c5951c800d21809b3827dec3223fea9cae74e1dfe4a4cf07",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "process_state": "S"
+      },
+      "identity_matches": true,
+      "files": {
+        "status_path": {
+          "exists": true,
+          "bytes": 325,
+          "mtime_utc": "2026-09-29T16:23:55.649595+00:00",
+          "age_seconds": 26.2,
+          "content": {
+            "state": "running",
+            "pid": 1132188,
+            "arm": "adapter",
+            "epoch": 1,
+            "completed_epoch": 0,
+            "cursor": 64,
+            "train_count": 120355,
+            "last_update_unix": 1790699035.650089,
+            "best_epoch": 0,
+            "best_r2": 0.40529411625292844,
+            "manifest_sha256": "eaf2c75e239f7c04717adb97220cc35731df8d1a598b14b7b014c6754bf5ebd3"
+          }
+        },
+        "log_path": {
+          "exists": true,
+          "bytes": 71,
+          "mtime_utc": "2026-09-29T16:23:55.333596+00:00",
+          "age_seconds": 26.5
+        },
+        "completion_path": {
+          "exists": false
+        },
+        "failure_path": {
+          "exists": false
+        }
+      },
+      "checkpoints": {
+        "runs/adapter/last.pt": {
+          "exists": true,
+          "bytes": 6452728,
+          "mtime_utc": "2026-09-29T16:23:55.327595+00:00",
+          "age_seconds": 26.5
+        },
+        "runs/adapter/best.pt": {
+          "exists": true,
+          "bytes": 6437116,
+          "mtime_utc": "2026-09-29T16:23:55.172596+00:00",
+          "age_seconds": 26.6
+        }
+      },
+      "state": "RUNNING_IDENTITY_MATCH",
+      "observed_gpu_uuids": [
+        "GPU-cb4dc1ea-9ea3-e426-bdeb-df0bef8a23fa"
+      ]
+    },
+    {
+      "id": "decorrelation_1790699022218490143",
+      "run_dir": "runs/decorrelation",
+      "gpu_uuid": "GPU-e212aefc-f1d6-cc7a-5594-e87abeaf1184",
+      "restart_action": "none",
+      "process_identity": {
+        "pid": 1132193,
+        "start_ticks": 1254668698,
+        "uid": 1000,
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929",
+        "argv_sha256": "64f6ba0b5b0feb5656e8957c08743f81ec2292b9fe4a932381360fbd0f575ad4",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "process_state": "S"
+      },
+      "identity_matches": true,
+      "files": {
+        "status_path": {
+          "exists": true,
+          "bytes": 331,
+          "mtime_utc": "2026-09-29T16:23:55.864596+00:00",
+          "age_seconds": 25.9,
+          "content": {
+            "state": "running",
+            "pid": 1132193,
+            "arm": "decorrelation",
+            "epoch": 1,
+            "completed_epoch": 0,
+            "cursor": 64,
+            "train_count": 120355,
+            "last_update_unix": 1790699035.8650434,
+            "best_epoch": 0,
+            "best_r2": 0.4052941062033284,
+            "manifest_sha256": "eaf2c75e239f7c04717adb97220cc35731df8d1a598b14b7b014c6754bf5ebd3"
+          }
+        },
+        "log_path": {
+          "exists": true,
+          "bytes": 76,
+          "mtime_utc": "2026-09-29T16:23:55.514596+00:00",
+          "age_seconds": 26.3
+        },
+        "completion_path": {
+          "exists": false
+        },
+        "failure_path": {
+          "exists": false
+        }
+      },
+      "checkpoints": {
+        "runs/decorrelation/last.pt": {
+          "exists": true,
+          "bytes": 6452664,
+          "mtime_utc": "2026-09-29T16:23:55.507596+00:00",
+          "age_seconds": 26.3
+        },
+        "runs/decorrelation/best.pt": {
+          "exists": true,
+          "bytes": 6437116,
+          "mtime_utc": "2026-09-29T16:23:55.350595+00:00",
+          "age_seconds": 26.5
+        }
+      },
+      "state": "RUNNING_IDENTITY_MATCH",
+      "observed_gpu_uuids": [
+        "GPU-e212aefc-f1d6-cc7a-5594-e87abeaf1184"
+      ]
+    },
+    {
+      "id": "both_1790699022426165198",
+      "run_dir": "runs/both",
+      "gpu_uuid": "GPU-2431a641-8045-a10b-4aa0-2769010e0708",
+      "restart_action": "none",
+      "process_identity": {
+        "pid": 1132198,
+        "start_ticks": 1254668718,
+        "uid": 1000,
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929",
+        "argv_sha256": "a33c78c1c94778365fcadfce9e29831000fa0d64372aba815a68e5445a616156",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "process_state": "S"
+      },
+      "identity_matches": true,
+      "files": {
+        "status_path": {
+          "exists": true,
+          "bytes": 322,
+          "mtime_utc": "2026-09-29T16:23:55.841596+00:00",
+          "age_seconds": 26.0,
+          "content": {
+            "state": "running",
+            "pid": 1132198,
+            "arm": "both",
+            "epoch": 1,
+            "completed_epoch": 0,
+            "cursor": 64,
+            "train_count": 120355,
+            "last_update_unix": 1790699035.8423603,
+            "best_epoch": 0,
+            "best_r2": 0.4052941291061617,
+            "manifest_sha256": "eaf2c75e239f7c04717adb97220cc35731df8d1a598b14b7b014c6754bf5ebd3"
+          }
+        },
+        "log_path": {
+          "exists": true,
+          "bytes": 67,
+          "mtime_utc": "2026-09-29T16:23:55.516596+00:00",
+          "age_seconds": 26.3
+        },
+        "completion_path": {
+          "exists": false
+        },
+        "failure_path": {
+          "exists": false
+        }
+      },
+      "checkpoints": {
+        "runs/both/last.pt": {
+          "exists": true,
+          "bytes": 6452664,
+          "mtime_utc": "2026-09-29T16:23:55.511595+00:00",
+          "age_seconds": 26.3
+        },
+        "runs/both/best.pt": {
+          "exists": true,
+          "bytes": 6437116,
+          "mtime_utc": "2026-09-29T16:23:55.354595+00:00",
+          "age_seconds": 26.5
+        }
+      },
+      "state": "RUNNING_IDENTITY_MATCH",
+      "observed_gpu_uuids": [
+        "GPU-2431a641-8045-a10b-4aa0-2769010e0708"
+      ]
+    }
+  ],
+  "incidents": [
+    {
+      "run_id": "control_1790699021761399963",
+      "previous_state": null,
+      "state": "RUNNING_IDENTITY_MATCH",
+      "action": "Record transition; coordinator reviews failure recovery. No job altered."
+    },
+    {
+      "run_id": "adapter_1790699021984516935",
+      "previous_state": null,
+      "state": "RUNNING_IDENTITY_MATCH",
+      "action": "Record transition; coordinator reviews failure recovery. No job altered."
+    },
+    {
+      "run_id": "decorrelation_1790699022218490143",
+      "previous_state": null,
+      "state": "RUNNING_IDENTITY_MATCH",
+      "action": "Record transition; coordinator reviews failure recovery. No job altered."
+    },
+    {
+      "run_id": "both_1790699022426165198",
+      "previous_state": null,
+      "state": "RUNNING_IDENTITY_MATCH",
+      "action": "Record transition; coordinator reviews failure recovery. No job altered."
+    }
+  ],
+  "interventions": [],
+  "next_check_by_utc": "2026-09-29T20:24:21.812001+00:00"
+}

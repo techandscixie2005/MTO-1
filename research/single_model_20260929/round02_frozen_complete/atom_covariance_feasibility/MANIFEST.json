@@ -1,0 +1,24 @@
+{
+  "status": "bounded_CPU_feasibility_complete_general_replacement_rejected",
+  "files": {
+    "synthetic_audit.py": {
+      "sha256": "2ced450d6cfe3ddd5db9e9d98518971a343269e8415f17376945e0366664d4e2",
+      "bytes": 6079
+    },
+    "SYNTHETIC_RESULTS.json": {
+      "sha256": "ff38b8f8135834ea12cfb30a5af60a866d47bdb3bd6ed945be682b0550d9730b",
+      "bytes": 2004
+    },
+    "VERDICT.md": {
+      "sha256": "b9e6eb601defb25d192145741180d61882fc08e60558cbd05dbef4869c710da6",
+      "bytes": 6616
+    }
+  },
+  "read_only_backbone_sources": {
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/models.py": "a8d7bf8a8d89839f687a773f59f02b2a5d75abd6f47a59406e9eb3d1a40f4771",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/models_ea.py": "b47d50b8b32313d1c3e1f19f3e64e6f02ce42e91736e6da00f896f68965250b0"
+  },
+  "no_model_data_labels_or_GPU_loaded": true,
+  "no_fit_or_frozen_source_changes": true,
+  "round02_remains_only_fit": true
+}

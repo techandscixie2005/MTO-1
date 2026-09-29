@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "split_seed": 20260930,
+  "policy": "sorted resolved originalTRAIN group keys, RNG shuffle, whole-group prefix until at least24071; unresolved groups fit-only; originalTRAIN order preserved in each part",
+  "metadata": {
+    "train_groups": 120127,
+    "duplicate_train_groups": 218,
+    "duplicate_train_records": 446,
+    "unresolved_train_groups": 266,
+    "unresolved_train_records": 278,
+    "heldout_groups": 24032,
+    "target_heldout_rows": 24071,
+    "fit_molecules": 96284,
+    "heldout_molecules": 24071
+  },
+  "fit_indices_sha256": "b7b00dfe514ae57f3dd609a60dc259625007a5f43288ff75e2c83a3a7e71da37",
+  "heldout_indices_sha256": "9547ca89feff3301f5e4c6fcd736be7a9186878a9fcb1fec8695c5c12d60707b",
+  "no_groups_broken_or_labels_excluded": true,
+  "split_arrays_written": false,
+  "target_labels_loaded": false,
+  "source_initialization": "fresh torch-seeded model_factory.build; no trained checkpoint transfer",
+  "existing_initial_model_target_clean_for_new_holdout": false,
+  "required_subset_only_target_statistics": [
+    "E_state_mean",
+    "sE2",
+    "sA2",
+    "any future f moments"
+  ],
+  "normalization_definitions": {
+    "sE2": "mean((E_fit-E_state_mean_fit)^2)",
+    "sA2": "mean(sum_ij(A_fit_ij^2))",
+    "n_ref": "median atom count of fit subset (geometry only)"
+  },
+  "fixed_source_epoch": 33,
+  "heldout_or_outerval_or_test_source_selection_allowed": false,
+  "cost": {
+    "historical_full_train_mean_epoch_seconds": 149.47576512861997,
+    "historical_first33_mean_epoch_seconds": 150.90570524797747,
+    "rough_80pct_33epoch_minutes": 65.76933665659278,
+    "planning_range_minutes": [
+      60,
+      75
+    ],
+    "not_a_runtime_guarantee": true
+  },
+  "no_model_inference_fit_or_GPU": true,
+  "source_hashes": {
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/data/identity_audit_v2.json": "9d384425a90dd88fbc68f8b609a303872910bb21c69e0d0a19bcccaee49cb3c4",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/splits.json": "141d6c4ba9631de91b81076b56afc2239aa3632478895102d8024e13d79c93ca",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/normalization.json": "812a7b80d6259eb6106a5a534a8358a626713ec7ee53ad992fff6fcbabe59452",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/model_factory.py": "37ebb9884b3851ae7401232319be5611159e83b588a65236d732d862b7b3fbf9",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/trainer.py": "78b9f6739540fd38b11cdbd216b5d3394db7b1cac6d653fe37e115630b7dc966",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/preflight.py": "d41080907c01a196637b28760b59c9a43f17ae4204c9a4c057c116170e6fe38c",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/models_ea.py": "b47d50b8b32313d1c3e1f19f3e64e6f02ce42e91736e6da00f896f68965250b0",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/reports/initialization.json": "5c3fc8c388d7717ca34a9a65a3a2bb470ef1c6ff7832cd6ea41985d5c1f39dc4",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta0/history.jsonl": "57f2f6e7d53f52b733c15e30aff74d9687710237517be347bc96a76823c83769",
+    "/home/inspur/MTO-1/research/single_model_20260929/clean_source_feasibility/audit_clean_source.py": "4a4facc25183df59ada9806047704b8c072f2121277f5bb1bdbe67853d8b6a25"
+  }
+}

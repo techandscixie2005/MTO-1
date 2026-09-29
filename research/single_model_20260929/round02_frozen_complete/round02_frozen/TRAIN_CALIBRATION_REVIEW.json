@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "scope": "Source and saved FP64 moment algebra independently checked; no second prediction pass.",
+  "train_native_r2": 0.646103560045011,
+  "train_OLS_slope": 1.0035907457980948,
+  "train_OLS_intercept": 9.052058725423501e-05,
+  "historical_validation_coefficients": {
+    "alpha": 0.8511830211044088,
+    "beta": 0.003725185373211049,
+    "already_existing": true
+  },
+  "all_valid_train_labels_and_zeros_retained": true,
+  "no_coefficients_applied_or_scored": true,
+  "no_new_fit_GPU_or_model_inference_by_reviewer": true,
+  "interpretation": "TRAIN residual relation differs from previously measured validation relation. This motivates, but does not prove, an in-sample-feature distribution hypothesis; no causal conclusion or deployment improvement follows.",
+  "historical_comparability": "Historical affine_clip uses ordinary least squares followed by nonnegative slope and output clipping. Both pooled coefficient pairs here are positive, so clipping is inactive for nonnegative native f.",
+  "input_sha256": "8b231626d62514171c69687f03810ccca2f25163b4490d323cbf9e9c06adef36",
+  "script_sha256": "534e4a9bcc1fb4f261b82e220fd2d03ae93e38586950662083683d139f7cb0e5"
+}

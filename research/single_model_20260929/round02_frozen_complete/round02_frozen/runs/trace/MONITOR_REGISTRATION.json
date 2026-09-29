@@ -1,0 +1,26 @@
+{
+  "id": "round02_trace_1790705186282980177",
+  "registered_at_utc": "2026-09-29T18:06:26.330147+00:00",
+  "identity": {
+    "pid": 1158193,
+    "start_ticks": 1255285104,
+    "uid": 1000,
+    "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round02_frozen",
+    "argv_sha256": "e2e2d014a5e1358f1d1a634051ef35dea14e2a9ac3fc5e6e806fd6ab93a31167",
+    "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+    "process_state": "R"
+  },
+  "run_dir": "round02_frozen/runs/trace",
+  "gpu_uuid": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+  "status_path": "round02_frozen/runs/trace/status.json",
+  "log_path": "round02_frozen/runs/trace/train.log",
+  "completion_path": "round02_frozen/runs/trace/FIT_COMPLETE.json",
+  "failure_path": "round02_frozen/runs/trace/FAILED.json",
+  "checkpoint_paths": [
+    "round02_frozen/runs/trace/last.pt",
+    "round02_frozen/runs/trace/best.pt"
+  ],
+  "stale_after_seconds": 28800,
+  "monitor": true,
+  "restart_policy": "coordinator_review_required"
+}

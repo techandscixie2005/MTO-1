@@ -1,0 +1,40 @@
+{
+  "pooled": {
+    "count": 1203550,
+    "native_sse": 1069.507414606393,
+    "native_mse": 0.0008886273230080952,
+    "native_r2": 0.646103560045011,
+    "mean_prediction": 0.023189318939874914,
+    "mean_label": 0.023363106476673185,
+    "prediction_population_variance": 0.0016108160609895783,
+    "label_population_variance": 0.002510981243894731,
+    "unconstrained_affine_slope": 1.0035907457980948,
+    "unconstrained_affine_intercept": 9.052058725423501e-05,
+    "affine_applied_or_scored": false,
+    "moments": {
+      "sum_prediction": 27909.50481008645,
+      "sum_label": 28118.666800000014,
+      "sum_prediction_squared": 2585.9000786990746,
+      "sum_label_squared": 3679.030882519999,
+      "sum_cross_product": 2597.7117733063405
+    }
+  },
+  "per_state_slopes": [
+    0.9778842012554521,
+    0.9462646113494292,
+    0.9544607525852887,
+    0.9444626880401294,
+    1.0449206120791008,
+    0.9752292322423441,
+    1.0823927563768443,
+    0.9791822754581081,
+    1.1166491654691886,
+    1.1466489009641438
+  ],
+  "historical_fixed_validation_coefficients": {
+    "alpha": 0.8511830211044088,
+    "beta": 0.003725185373211049,
+    "already_existing": true
+  },
+  "seconds": 3.564190149307251
+}

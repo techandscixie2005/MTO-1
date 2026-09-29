@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "manifest_sha256": "6ea090e28201f55cb6125fbf43ebb306645bc94893c53e138d764dce25e22f6e",
+  "source_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round02_frozen/summarize_frozen.py": "403b49554b3a9d8823fac0038ca1ae2517218493ef40e9f9223c5e22769a6ad7",
+    "/home/inspur/MTO-1/research/single_model_20260929/summarize.py": "3b5ccd924631d8eff9dbff881748b6def90635b5feb57cac5b6b0304beeb4d7b",
+    "/home/inspur/MTO-1/research/single_model_20260929/metrics.py": "6a4e1e9d0c0820df781c4ed496177ac270673ff17f3a70a07a5049e11e800ebf"
+  },
+  "input_hashes": {
+    "terminal_replay_sha256": "505cd1564fe6713137bf73b0ac9b1533d39da63427db0fc8b2fa207ba8ab44d8",
+    "anchor_array_sha256": "41ab39ee7f2aa7bb548a919ac21d1a4c78500d5878673bcbc6e4488afd0b3e26",
+    "trace": {
+      "FIT_COMPLETE.json": "a0c79075d0098a2774a885d3e583c910d87983c236a4e569fd265464e079e324",
+      "history.jsonl": "c8f6ec1644a3e6004e15f986500dd2385118af25ad9c956278dfc025b48c232d",
+      "best.pt": "af4d4bded1f0c21ad464bd4b3c6b4d04dabfbbdac8643b7471ad6d46bd525037",
+      "last.pt": "cd922a1816df2939c6d3bb71e6aedc7eafb8c1632b9e269f2dbc2f766273d171",
+      "best_validation_predictions.npz": "3d4c7ebdbe69665324757312d4889bd9ca8c9fac78a84104df1ba7d8d98a6858"
+    },
+    "raw_f": {
+      "FIT_COMPLETE.json": "8c69a30f691245045bb1e59dcc508de86694a7392bf87b2e5ba3835c8ce03e7f",
+      "history.jsonl": "d4782d6cfa1280b52a0ec649d94151eaee9c5fbb0ed6f62217bc114727f63136",
+      "best.pt": "12f72255109c6a67d4d3ef740b75bbc23df76ef862f94bf6a2f33d58c0467e32",
+      "last.pt": "9b4f6945f85db0ccc83b49766c70b40207c15d14721d2e41f3e9686977e31b98",
+      "best_validation_predictions.npz": "78eeba3b64ed6680eeaa1d424ca858bd574e85cf7a3a6fe94d82d5dcd807f14e"
+    },
+    "round01_control_history_sha256": "8406c2af591ee220c4c5d143540ef2072ba219870e683a2ca86ff4d67c399d54"
+  },
+  "output_hashes": {
+    "ROUND02_RESULTS.json": "aff9f6121290a440a64c5c77c247e23adb4c4f413c7187910e63360be3c952d3",
+    "ROUND02_RESULTS.md": "c5414c2286c074344126ddbdc075ab626f92a8a17a88b46a8db34c3ac6bd69ad"
+  },
+  "bootstrap_seed": 20260930,
+  "bootstrap_draws": 2000,
+  "all_labels_retained": true,
+  "test_evaluated": false
+}

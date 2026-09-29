@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "device": "cpu",
+  "fixture": "two synthetic geometries, nonzeroF, one composite checkpoint in memory",
+  "E_A_bitwise_equal": true,
+  "frozen_parameters_and_nonpersistent_buffers_verified": true,
+  "original_base_checkpoint_opened_during_inference": false,
+  "dataset_or_cache_opened_during_inference": false,
+  "filesystem_paths_opened_during_guard": [],
+  "qc_labels_used": false,
+  "fit_performed": false,
+  "source_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round02_frozen/inference_preflight.py": "1235c210fc9352ea1fe5d76e2889fa7fff47ca78ed5efdde930795bde21f6299",
+    "/home/inspur/MTO-1/research/single_model_20260929/round02_frozen/predictor.py": "6f5424edb16a8fdda4706b647056fba2c79a45d09c969e64b53ace2441330ae8",
+    "/home/inspur/MTO-1/research/single_model_20260929/round02_frozen/model_frozen.py": "80186d72ce95634c926b6aeafa376e528ff0bb3204446acd6ce034220fe34569"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "status": "independent_round02_and_TRAIN_supplement_PASS_no_promotion",
+  "files": {
+    "independent_terminal_review.py": {
+      "sha256": "1929a360b4723d327eb2a64bba40ace19ab9bdea1938e54b4d13c9c0445aff46",
+      "bytes": 11076
+    },
+    "INDEPENDENT_TERMINAL_REVIEW.json": {
+      "sha256": "5b2927efafe7c3d4812d1fdc38536f5658eb3150861ab389c00382bfa5bdb473",
+      "bytes": 4571
+    },
+    "INDEPENDENT_SCIENTIFIC_REVIEW.md": {
+      "sha256": "5c90c29e15b3509b070da4fb32a590b2f2d785a8bd0a9b62b91610dc3c4c07e1",
+      "bytes": 7416
+    },
+    "review_train_moments.py": {
+      "sha256": "534e4a9bcc1fb4f261b82e220fd2d03ae93e38586950662083683d139f7cb0e5",
+      "bytes": 3303
+    },
+    "TRAIN_CALIBRATION_REVIEW.json": {
+      "sha256": "ba738704f72a9ff2c16112c182f27d51381f0e3ea104779cdba139384aaee8d0",
+      "bytes": 1195
+    },
+    "SINGLE_MODEL_RESEARCH_REPORT.md": {
+      "sha256": "f1b4895ec38e2f637b3e57640503c1e55d0e3774666b3a7d3631ccf85c273436",
+      "bytes": 20795
+    }
+  },
+  "no_fit_or_frozen_source_changes": true,
+  "root_next_decision_pending": false,
+  "root_decision": {
+    "path": "/home/inspur/MTO-1/research/single_model_20260929/current_state/ROUND02_DECISION.md",
+    "sha256": "7af972b9b369aa3922c0ec2ea3b72f3aac48eeb57ee4e6c771a48567d36ff2d6"
+  }
+}

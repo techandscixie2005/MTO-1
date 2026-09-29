@@ -1,0 +1,18 @@
+/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/lib/python3.10/site-packages/e3nn/o3/_wigner.py:10: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  _Jd, _W3j_flat, _W3j_indices = torch.load(os.path.join(os.path.dirname(__file__), 'constants.pt'))
+# Frozen-F objective pilot
+
+Each row is one model and one checkpoint. Original parameters and all buffers stayed frozen. No test inference or prediction averaging. Validation is reused; independent-seed confirmation remains necessary.
+
+| Arm | Selected epoch | Native R2 | Delta vs epoch0 | Fixed calibration R2 | Epoch20 native R2 |
+|---|---:|---:|---:|---:|---:|
+| trace | 2 | 0.405407830 | +0.000113700 | 0.417538722 | 0.403125542 |
+| raw_f | 1 | 0.405387525 | +0.000093404 | 0.417865155 | 0.402157980 |
+
+Selected raw-f minus trace R2: -0.000020306.
+Priority over the zero-update anchor (>=.003): none.
+Raw-f objective also passes >=.003 against the active trace control: False.
+
+Every state, true-bright tail, selected true/predicted brightness-bin partition, train loss/movement/clip trajectory, exact checkpoint path/hash and descriptive bootstrap interval appears in ROUND02_RESULTS.json.
+F changes both E and A through the frozen decoder. Fixed calibration is secondary and was never refit. Base representations remain in-sample for TRAIN; freezing does not remove inherited overfit.
+The raw-f coefficient1 gives a different gradient scale from the trace objective. No scale or schedule was adapted to validation. The shared base_objective field means LE+Ls; objective-specific validation values are computed explicitly in aligned records.

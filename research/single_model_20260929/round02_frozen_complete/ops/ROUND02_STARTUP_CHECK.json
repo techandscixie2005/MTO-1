@@ -1,0 +1,108 @@
+{
+  "passed": true,
+  "checked_at_utc": "2026-09-29T18:09:17.052539+00:00",
+  "monitor_record": "CHECK_20260929T180917Z.json",
+  "type": "one targeted startup check; periodic cadence unchanged",
+  "runs": [
+    {
+      "arm": "trace",
+      "id": "round02_trace_1790705186282980177",
+      "pid": 1158193,
+      "gpu": 1,
+      "uuid": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+      "pinned_identity": {
+        "pid": 1158193,
+        "start_ticks": 1255285104,
+        "uid": 1000,
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round02_frozen",
+        "argv_sha256": "e2e2d014a5e1358f1d1a634051ef35dea14e2a9ac3fc5e6e806fd6ab93a31167",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "process_state": "R"
+      },
+      "observed_identity": {
+        "pid": 1158193,
+        "start_ticks": 1255285104,
+        "uid": 1000,
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round02_frozen",
+        "argv_sha256": "e2e2d014a5e1358f1d1a634051ef35dea14e2a9ac3fc5e6e806fd6ab93a31167",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "process_state": "R"
+      },
+      "identity_matches": true,
+      "authoritative_monitor_state": "RUNNING_IDENTITY_MATCH",
+      "latest_complete_epoch": 6,
+      "seconds": 22.539883613586426,
+      "latest_raw_f_r2": 0.4048930299728011,
+      "best_epoch": 2,
+      "best_raw_f_r2": 0.40540783960243243,
+      "epoch_zero_raw_f_r2": 0.40529413038477524,
+      "checkpoints_stat_only": {
+        "best.pt": {
+          "exists": true,
+          "bytes": 6462012,
+          "mtime_utc": "2026-09-29T18:07:39.438841+00:00",
+          "age_seconds": 97.6
+        },
+        "last.pt": {
+          "exists": true,
+          "bytes": 6552432,
+          "mtime_utc": "2026-09-29T18:09:11.197845+00:00",
+          "age_seconds": 5.9
+        }
+      },
+      "healthy_gpu": true
+    },
+    {
+      "arm": "raw_f",
+      "id": "round02_raw_f_1790705186486661348",
+      "pid": 1158198,
+      "gpu": 2,
+      "uuid": "GPU-cb4dc1ea-9ea3-e426-bdeb-df0bef8a23fa",
+      "pinned_identity": {
+        "pid": 1158198,
+        "start_ticks": 1255285124,
+        "uid": 1000,
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round02_frozen",
+        "argv_sha256": "2843029c11153fa0c622bdbc6f98b960dc63cf6601271cf0095078b4a1128cfc",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "process_state": "R"
+      },
+      "observed_identity": {
+        "pid": 1158198,
+        "start_ticks": 1255285124,
+        "uid": 1000,
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round02_frozen",
+        "argv_sha256": "2843029c11153fa0c622bdbc6f98b960dc63cf6601271cf0095078b4a1128cfc",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "process_state": "S"
+      },
+      "identity_matches": true,
+      "authoritative_monitor_state": "RUNNING_IDENTITY_MATCH",
+      "latest_complete_epoch": 6,
+      "seconds": 23.39784336090088,
+      "latest_raw_f_r2": 0.4045132656003767,
+      "best_epoch": 1,
+      "best_raw_f_r2": 0.40538752791523547,
+      "epoch_zero_raw_f_r2": 0.405294120099694,
+      "checkpoints_stat_only": {
+        "best.pt": {
+          "exists": true,
+          "bytes": 6462012,
+          "mtime_utc": "2026-09-29T18:07:21.206840+00:00",
+          "age_seconds": 115.8
+        },
+        "last.pt": {
+          "exists": true,
+          "bytes": 6552432,
+          "mtime_utc": "2026-09-29T18:09:11.378844+00:00",
+          "age_seconds": 5.7
+        }
+      },
+      "healthy_gpu": true
+    }
+  ],
+  "unrelated_gpu0_preserved": true,
+  "checkpoint_contents_loaded": false,
+  "interventions": [],
+  "four_hour_schedule_unchanged": true
+}

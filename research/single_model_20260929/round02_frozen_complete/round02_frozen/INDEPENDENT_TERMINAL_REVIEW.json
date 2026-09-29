@@ -1,0 +1,99 @@
+{
+  "passed": true,
+  "frozen_manifest_sha256": "6ea090e28201f55cb6125fbf43ebb306645bc94893c53e138d764dce25e22f6e",
+  "fresh_frozen_hash_count": 64,
+  "arms": {
+    "trace": {
+      "selected_epoch": 2,
+      "selected_native_r2": 0.4054078301948254,
+      "selected_fixed_calibrated_r2": 0.41753872224506694,
+      "selected_native_delta_vs_epoch0": 0.00011369981005016072,
+      "fixed20_native_r2": 0.40312554230245856,
+      "fixed20_state_SSE_delta_vs_epoch0": [
+        -0.030761797879740538,
+        -0.08290921711927446,
+        -0.10557233114169495,
+        -0.09704902289149686,
+        -0.01228106204016477,
+        -0.046177717285758035,
+        0.6307723343245613,
+        -0.0662735221482631,
+        0.21241146202378403,
+        -0.05864124777623836
+      ],
+      "all_original_model_tensors_bitwise_unchanged": true,
+      "adapter_weights_changed": true,
+      "original_and_nonpersistent_buffers_verified_by_terminal_loader": true,
+      "order_optimizer_RNG_resume_and_selection_verified": true,
+      "selected_arrays_metrics_independently_recomputed": true,
+      "all_brightness_partitions_verified": true,
+      "total_clipped_epoch_fractions": 0.0,
+      "maximum_preclip_gradient_norm": 0.5155208706855774,
+      "last_adapter_movement": {
+        "mean_relative": 0.060460131615400314,
+        "maximum_relative": 0.10054963827133179,
+        "rms_relative": 0.0619688481092453,
+        "mean_absolute": 0.33069080114364624
+      }
+    },
+    "raw_f": {
+      "selected_epoch": 1,
+      "selected_native_r2": 0.4053875245724601,
+      "selected_fixed_calibrated_r2": 0.41786515453984197,
+      "selected_native_delta_vs_epoch0": 9.340447276606767e-05,
+      "fixed20_native_r2": 0.40215797977552725,
+      "fixed20_state_SSE_delta_vs_epoch0": [
+        -0.0207743853544593,
+        -0.08236704879219303,
+        -0.09967718342962595,
+        -0.0919775814658621,
+        -0.016182551843492377,
+        -0.040402959768927715,
+        0.7827534184399312,
+        -0.1113856762684442,
+        0.24247583191529287,
+        -0.06567767548114745
+      ],
+      "all_original_model_tensors_bitwise_unchanged": true,
+      "adapter_weights_changed": true,
+      "original_and_nonpersistent_buffers_verified_by_terminal_loader": true,
+      "order_optimizer_RNG_resume_and_selection_verified": true,
+      "selected_arrays_metrics_independently_recomputed": true,
+      "all_brightness_partitions_verified": true,
+      "total_clipped_epoch_fractions": 0.0,
+      "maximum_preclip_gradient_norm": 2.2795586585998535,
+      "last_adapter_movement": {
+        "mean_relative": 0.04973394796252251,
+        "maximum_relative": 0.0919414833188057,
+        "rms_relative": 0.051324982196092606,
+        "mean_absolute": 0.269993394613266
+      }
+    }
+  },
+  "no_arm_promoted": true,
+  "strongest_eligible_calibrated_baseline_unchanged": true,
+  "no_new_model_inference_GPU_fit_or_test_by_reviewer": true,
+  "decoded_validation_labels": 66860,
+  "decoded_test_label_rows": 0,
+  "input_hashes": {
+    "trace": {
+      "FIT_COMPLETE.json": "a0c79075d0098a2774a885d3e583c910d87983c236a4e569fd265464e079e324",
+      "history.jsonl": "c8f6ec1644a3e6004e15f986500dd2385118af25ad9c956278dfc025b48c232d",
+      "best.pt": "af4d4bded1f0c21ad464bd4b3c6b4d04dabfbbdac8643b7471ad6d46bd525037",
+      "last.pt": "cd922a1816df2939c6d3bb71e6aedc7eafb8c1632b9e269f2dbc2f766273d171",
+      "best_validation_predictions.npz": "3d4c7ebdbe69665324757312d4889bd9ca8c9fac78a84104df1ba7d8d98a6858"
+    },
+    "raw_f": {
+      "FIT_COMPLETE.json": "8c69a30f691245045bb1e59dcc508de86694a7392bf87b2e5ba3835c8ce03e7f",
+      "history.jsonl": "d4782d6cfa1280b52a0ec649d94151eaee9c5fbb0ed6f62217bc114727f63136",
+      "best.pt": "12f72255109c6a67d4d3ef740b75bbc23df76ef862f94bf6a2f33d58c0467e32",
+      "last.pt": "9b4f6945f85db0ccc83b49766c70b40207c15d14721d2e41f3e9686977e31b98",
+      "best_validation_predictions.npz": "78eeba3b64ed6680eeaa1d424ca858bd574e85cf7a3a6fe94d82d5dcd807f14e"
+    }
+  },
+  "analysis_receipt_sha256": "f1c5d94aa04b60a5d6edb5d07f012313295f7fd4c1a072084c8dbc6426e59f6a",
+  "terminal_replay_sha256": "505cd1564fe6713137bf73b0ac9b1533d39da63427db0fc8b2fa207ba8ab44d8",
+  "plot_and_checkpoint_inventory_verified": true,
+  "review_script_sha256": "1929a360b4723d327eb2a64bba40ace19ab9bdea1938e54b4d13c9c0445aff46",
+  "scope": "Selected raw-f/calibrated/state/tail/energy metrics independently recomputed. Terminal final-epoch geometry replay and partition algebra checked, without duplicate model inference. Bootstrap is descriptive reused-validation evidence."
+}

@@ -1,0 +1,19 @@
+{
+  "arm": "trace",
+  "attempt": "round02_trace_1790705186282980177",
+  "pid": 1158193,
+  "gpu": 1,
+  "gpu_uuid": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+  "manifest_sha256": "6ea090e28201f55cb6125fbf43ebb306645bc94893c53e138d764dce25e22f6e",
+  "review_sha256": "38e0d09ad8d007c5ee7036a9da5fc279ec63019bbca84ee25a0cc8774f4f6452",
+  "command": [
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/bin/python",
+    "/home/inspur/MTO-1/research/single_model_20260929/round02_frozen/train_frozen.py",
+    "--arm",
+    "trace"
+  ],
+  "publication_receipt": "../ops/ROUND02_PUBLICATION_RECEIPT.json",
+  "publication_receipt_sha256": "2b5ce4a5125a467ab195dbe63b82016a5a5dc0e887b8f4ade9bcb207983b680d",
+  "launched_at_unix": 1790705186.2853632,
+  "monitor_registration_returncode": 0
+}

@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "manifest_sha256": "6ea090e28201f55cb6125fbf43ebb306645bc94893c53e138d764dce25e22f6e",
+  "metadata_only": true,
+  "weights_optimizer_rng_contents_exported": false,
+  "source_sha256": "1459b8e43e98091c82579e01e0641a6d734237a3c51df7d2d80ad773cd12d506",
+  "arms": {
+    "trace": {
+      "completed_epoch": 20,
+      "selected_epoch": 2,
+      "optimizer": "Adam_AMSGrad",
+      "optimizer_parameter_tensors": 9,
+      "optimizer_steps": 37620,
+      "all_rng_components_present": true,
+      "cache_receipt_sha256": "2cffa5004595395260ec0fec61b89271a49952d254b5756aa985d2c2830bb483",
+      "full_history_preserved": true,
+      "files": [
+        {
+          "path": "/home/inspur/MTO-1/research/single_model_20260929/round02_frozen/runs/trace/best.pt",
+          "bytes": 6462012,
+          "sha256": "af4d4bded1f0c21ad464bd4b3c6b4d04dabfbbdac8643b7471ad6d46bd525037"
+        },
+        {
+          "path": "/home/inspur/MTO-1/research/single_model_20260929/round02_frozen/runs/trace/last.pt",
+          "bytes": 6592944,
+          "sha256": "cd922a1816df2939c6d3bb71e6aedc7eafb8c1632b9e269f2dbc2f766273d171"
+        },
+        {
+          "path": "/home/inspur/MTO-1/research/single_model_20260929/round02_frozen/runs/trace/selected_epoch_000.pt",
+          "bytes": 6462012,
+          "sha256": "d6cc3619e327c2db2652484e9a096cca2f7897e9fcfa382e136921db2b72b62a"
+        },
+        {
+          "path": "/home/inspur/MTO-1/research/single_model_20260929/round02_frozen/runs/trace/selected_epoch_001.pt",
+          "bytes": 6462012,
+          "sha256": "7b9c5d38965fc09e1460d55a736e095a0af61493de76e2b2ce5d6aa54e9a3fd3"
+        },
+        {
+          "path": "/home/inspur/MTO-1/research/single_model_20260929/round02_frozen/runs/trace/selected_epoch_002.pt",
+          "bytes": 6462012,
+          "sha256": "af4d4bded1f0c21ad464bd4b3c6b4d04dabfbbdac8643b7471ad6d46bd525037"
+        }
+      ]
+    },
+    "raw_f": {
+      "completed_epoch": 20,
+      "selected_epoch": 1,
+      "optimizer": "Adam_AMSGrad",
+      "optimizer_parameter_tensors": 9,
+      "optimizer_steps": 37620,
+      "all_rng_components_present": true,
+      "cache_receipt_sha256": "2cffa5004595395260ec0fec61b89271a49952d254b5756aa985d2c2830bb483",
+      "full_history_preserved": true,
+      "files": [
+        {
+          "path": "/home/inspur/MTO-1/research/single_model_20260929/round02_frozen/runs/raw_f/best.pt",
+          "bytes": 6462012,
+          "sha256": "12f72255109c6a67d4d3ef740b75bbc23df76ef862f94bf6a2f33d58c0467e32"
+        },
+        {
+          "path": "/home/inspur/MTO-1/research/single_model_20260929/round02_frozen/runs/raw_f/last.pt",
+          "bytes": 6592944,
+          "sha256": "9b4f6945f85db0ccc83b49766c70b40207c15d14721d2e41f3e9686977e31b98"
+        },
+        {
+          "path": "/home/inspur/MTO-1/research/single_model_20260929/round02_frozen/runs/raw_f/selected_epoch_000.pt",
+          "bytes": 6462012,
+          "sha256": "cc84dab444baae16a7cf7f80ac942d3a5117cddcfd50265aaff9da73b8acf9ab"
+        },
+        {
+          "path": "/home/inspur/MTO-1/research/single_model_20260929/round02_frozen/runs/raw_f/selected_epoch_001.pt",
+          "bytes": 6462012,
+          "sha256": "12f72255109c6a67d4d3ef740b75bbc23df76ef862f94bf6a2f33d58c0467e32"
+        }
+      ]
+    }
+  }
+}

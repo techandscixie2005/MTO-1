@@ -1,0 +1,111 @@
+{
+  "passed": true,
+  "selected_epoch33_matching_Adam_available": false,
+  "exact_preserved_moment_control_feasible_from_retained_selected_checkpoint": false,
+  "checkpoints": {
+    "best.pt": {
+      "path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta0/best.pt",
+      "bytes": 6420750,
+      "sha256": "9f1963267cd0e5e35212baca6b4080cf986e73aed6e1662c4cb720afb9a4c136",
+      "top_level_keys": [
+        "model",
+        "epoch",
+        "val",
+        "val_spectrum",
+        "config",
+        "fingerprint"
+      ],
+      "epoch": 33,
+      "state": {},
+      "optimizer_state_count": 0,
+      "learning_rates": [],
+      "scheduler_last_epoch": null
+    },
+    "last.pt": {
+      "path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta0/last.pt",
+      "bytes": 25364818,
+      "sha256": "00c1c44748cc97805a80dbc0fb07ba9f0efe4a97b95a0a50a62259dc198ba407",
+      "top_level_keys": [
+        "model",
+        "optimizer",
+        "scheduler",
+        "state",
+        "config",
+        "fingerprint",
+        "rng_numpy",
+        "rng_torch",
+        "rng_cuda",
+        "rng_python",
+        "rng_numpy_global"
+      ],
+      "epoch": null,
+      "state": {
+        "epoch": 237,
+        "cursor": 0,
+        "best_epoch": 33,
+        "steps": 443916,
+        "bad_epochs": 203
+      },
+      "optimizer_state_count": 135,
+      "learning_rates": [
+        0.000125
+      ],
+      "scheduler_last_epoch": 236
+    }
+  },
+  "run_checkpoint_inventory": [
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta0/best.pt",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta0/last.pt"
+  ],
+  "original_trajectory_reference": {
+    "33": {
+      "epoch": 33,
+      "lr": 0.001,
+      "original_LE_plus_Ls": 0.17222687388978386,
+      "best_epoch": 33
+    },
+    "34": {
+      "epoch": 34,
+      "lr": 0.001,
+      "original_LE_plus_Ls": 0.190984267519685,
+      "best_epoch": 33
+    },
+    "236": {
+      "epoch": 236,
+      "lr": 0.000125,
+      "original_LE_plus_Ls": 0.21236581113963937,
+      "best_epoch": 33
+    }
+  },
+  "original_trajectory_is_not_matched_gentle_continuation": true,
+  "historical_reset_evidence": [
+    "SCIENTIFIC_AUDIT_AND_PROTOCOL.md:21",
+    "architecture/ARCHITECTURE_PROTOCOL.md:43"
+  ],
+  "scope": "Source-run metadata and available eta0-named path inventory; not a claim about unknown external backups.",
+  "no_optimizer_reconstruction_no_model_inference_no_fit": true,
+  "no_tensor_or_array_export": true,
+  "source_hashes": {
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/trainer.py": "78b9f6739540fd38b11cdbd216b5d3394db7b1cac6d653fe37e115630b7dc966",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta0/history.jsonl": "57f2f6e7d53f52b733c15e30aff74d9687710237517be347bc96a76823c83769",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/SCIENTIFIC_AUDIT_AND_PROTOCOL.md": "437d21eb939f28d6d68da1c1e41ffcc44d21a71bf83794881c41d9f60ebd91f3",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/ARCHITECTURE_PROTOCOL.md": "6bcf24872bbdf6207757223da4280560c4b9183c46e6254a207bb5966a8d8a95",
+    "/home/inspur/MTO-1/research/single_model_20260929/optimizer_state_audit/audit_metadata.py": "5d2d502c79357a50d5755e8ef097a38d04735f34336f3a1e21a2e6d0402d8dc3"
+  },
+  "completed_backup_checked": {
+    "path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/backups/mto_completed_20260927.tar.gz",
+    "members": [
+      {
+        "member": "runs/mto_eta0/best.pt",
+        "sha256": "9f1963267cd0e5e35212baca6b4080cf986e73aed6e1662c4cb720afb9a4c136",
+        "identical_to_current": true
+      },
+      {
+        "member": "runs/mto_eta0/last.pt",
+        "sha256": "00c1c44748cc97805a80dbc0fb07ba9f0efe4a97b95a0a50a62259dc198ba407",
+        "identical_to_current": true
+      }
+    ],
+    "archive_not_downloaded": true
+  }
+}
