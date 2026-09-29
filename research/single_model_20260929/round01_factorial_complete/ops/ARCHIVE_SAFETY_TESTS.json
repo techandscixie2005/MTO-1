@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "allow_text_metric": true,
+    "reject_best.pt": true,
+    "reject_predictions.npz": true,
+    "reject_key.txt": true,
+    "reject_binary.txt": true,
+    "reject_../escape.json": true,
+    "reject_/etc/passwd": true
+  },
+  "passed": true
+}

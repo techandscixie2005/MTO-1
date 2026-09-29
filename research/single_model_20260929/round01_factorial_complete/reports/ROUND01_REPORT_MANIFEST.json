@@ -1,0 +1,65 @@
+{
+  "status": "round01_complete_independent_review_pass_no_promotion",
+  "files": {
+    "AUXILIARY_LABEL_AVAILABILITY.md": {
+      "sha256": "81dcb21430448074d3ad9d5328a6b3f25a3e8a8e16d1f56d8fe516e9bcfdb179",
+      "bytes": 4679
+    },
+    "INDEPENDENT_SCIENTIFIC_REVIEW.md": {
+      "sha256": "34cf26c3af5f6b4fcf1b3b77f11dba03944bf8a056991c80d189cca362d9571d",
+      "bytes": 4549
+    },
+    "INDEPENDENT_TERMINAL_INTEGRITY.json": {
+      "sha256": "18324c8d32a6b2c81b2d67ca5e7502b5918fb5b060407bafc25d78fc8333930c",
+      "bytes": 110783
+    },
+    "INFERENCE_ACCESS_AUDIT.json": {
+      "sha256": "21759f4098bb38fef521b47d819f8b84f835f1e81abdd31c5a318457336b127f",
+      "bytes": 2860
+    },
+    "SINGLE_MODEL_RESEARCH_REPORT.md": {
+      "sha256": "a85339197cbf2f088ed7e5fcc38f9d719044e2ad7e3878092f57a02a40da7864",
+      "bytes": 17865
+    },
+    "audit_inference_access.py": {
+      "sha256": "a4705f3dd88358526fb3172941138caef871951a028fa712f84aa31ce59612c5",
+      "bytes": 3125
+    },
+    "frozen_cache_feasibility/CPU_CACHE_FEASIBILITY.json": {
+      "sha256": "51d9fee83866d5092b0dd6d47bdbf109ba5d91676d75d1a76e2a2c9d65d8f8a6",
+      "bytes": 2466
+    },
+    "frozen_cache_feasibility/FEASIBILITY.md": {
+      "sha256": "7cb81b5f2af1255549ddf12787c317bb8c89c7a49875002ef08c04ef6f520888",
+      "bytes": 8583
+    },
+    "frozen_cache_feasibility/FEASIBILITY_MANIFEST.json": {
+      "sha256": "9eae6d6e9a1d6e02c630363a3d1a06d11c7e515f483d772eec4a7ce164bb8405",
+      "bytes": 592
+    },
+    "frozen_cache_feasibility/cpu_cache_feasibility.py": {
+      "sha256": "78d5c1c513469c800512a3d43deba6f635b2dfe83989bd648227a5be8a5a0853",
+      "bytes": 8002
+    },
+    "independent_terminal_review.py": {
+      "sha256": "5c55ca6d8db55dc44e9e91a8791293e4a721bf68b25e8e4640dc961780fdcdb8",
+      "bytes": 18865
+    },
+    "velocity_audit/VELOCITY_TRAIN_AUDIT.json": {
+      "sha256": "1012bf34bb1532e16a6b3c965e0979b2933737472cad2ff4b4f86018c63eba54",
+      "bytes": 8699
+    },
+    "velocity_audit/VELOCITY_TRAIN_AUDIT.md": {
+      "sha256": "f40d002a8322c487d11502ab90b13a5a846368c7a82283fa5e4c8d1dab9ebcab",
+      "bytes": 5460
+    },
+    "velocity_audit/audit_velocity_labels.py": {
+      "sha256": "f156319e6941bef1a945e3b69e2b754865f0bb662747c8f695d037cf98a119b7",
+      "bytes": 9908
+    }
+  },
+  "no_fit_launched_by_review": true,
+  "no_test_evaluation": true,
+  "publication_ready_for_round01_archive": true,
+  "archive_policy": "lightweight_allowlist_only; no weights datasets predictions caches"
+}

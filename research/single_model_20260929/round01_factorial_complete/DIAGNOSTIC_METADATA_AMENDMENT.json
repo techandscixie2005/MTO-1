@@ -1,0 +1,24 @@
+{
+  "created_at_utc": "2026-09-29T16:53:58.990953+00:00",
+  "independent_reviewer": "history_baseline",
+  "fit_sources_changed": false,
+  "subset_or_bin_definitions_changed": false,
+  "amendments": [
+    {
+      "config": "GAP_AUDIT_CONFIG.json",
+      "original_config_sha256": "d12d842f4da56cc20b980584463872437ababb8b2ea8050e0b5c9c853fd73ab3",
+      "updated_config_sha256": "3922edfb92660cd1b1d95e0652fa38cb3f0156cdf9a90c42709cb5ce45930bee",
+      "original_script_sha256": "c13b3f69daaf9ec78b4d276643ca1eab62a435c5ea1bd7b44277d8eedc86b548",
+      "updated_script_sha256": "0a2420025a65f3bc661501a6172f47d0642b980479b099d0fe35aead5b3fb434",
+      "reason": "Move validation f/mask reads after terminal gate; thresholds unchanged"
+    },
+    {
+      "config": "MECHANISM_CONFIG.json",
+      "original_config_sha256": "0a96345d69b8c633d81c578c802c8e841967f059ebe6f4eb2415da4e2bd6cc90",
+      "updated_config_sha256": "885293680b1998e3e3347666ab8b9e6d508486ead26da179c9e0574a54d68af5",
+      "original_script_sha256": "16e769341bb746df4ce139d92f0a1ae430c786ffdf831dcd99fa9518ad3bade1",
+      "updated_script_sha256": "2c54f069f70730bb6e16594c0aa7a46dc369e6ead0386210e49b51c8fc0bc69f",
+      "reason": "Label drift R2 as baseline-output agreement rather than target predictive accuracy; subset/statistics unchanged"
+    }
+  ]
+}

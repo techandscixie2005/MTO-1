@@ -1,0 +1,25 @@
+{
+  "definition": {
+    "definition": "minimum energy difference to adjacent printed root; eV; no relabeling",
+    "training_quantiles": [
+      0.1,
+      0.25,
+      0.5,
+      0.75,
+      0.9
+    ],
+    "unique_cutoffs_eV": [
+      0.028699999999999726,
+      0.055200000000001026,
+      0.10550000000000015,
+      0.19810000000000016,
+      0.38159999999999983
+    ],
+    "interval_convention": "lower_inclusive_upper_exclusive",
+    "training_label_count": 1203550,
+    "source_energy": "raw_labels.npz E",
+    "selection_use": false,
+    "script_sha256": "c13b3f69daaf9ec78b4d276643ca1eab62a435c5ea1bd7b44277d8eedc86b548"
+  },
+  "created_at_utc": "2026-09-29T16:33:09.753049+00:00"
+}

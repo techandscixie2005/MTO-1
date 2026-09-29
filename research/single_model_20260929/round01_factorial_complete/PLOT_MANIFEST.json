@@ -1,0 +1,38 @@
+{
+  "source_sha256": "55982f1fe42a319a0955c4cd8f2354812c52fcb42d01ba5e29e68214c94c5679",
+  "matplotlib_version": "3.10.8",
+  "input_history_sha256": {
+    "control": "8406c2af591ee220c4c5d143540ef2072ba219870e683a2ca86ff4d67c399d54",
+    "adapter": "2564e44df7ea31cce34be08613ec43eab5970795347f100c79b3b76e731bafcc",
+    "decorrelation": "670ecb04542541a7a4e92b0045ed7bde2017fa8c69f366dfbff3cce5c7a56b81",
+    "both": "1e36bbccf1f7345c78745050f75754197f08635636f8a258a540f720560649e1"
+  },
+  "output_sha256": "7dab58ccce55076d32488af689c89851b1add93f3dd4bfa97be9b66bb2608a1c",
+  "epochs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "aggregate_metrics_only": true,
+  "predictions_averaged": false,
+  "reference": "control epoch0 from the same runtime evaluator",
+  "output": "/home/inspur/MTO-1/research/single_model_20260929/ALIGNED_VALIDATION_CURVES.svg"
+}

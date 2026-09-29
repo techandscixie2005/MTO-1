@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "scope": "Independent review of nonlaunchable source-contract and configuration preparation only",
+  "reviewer": "science_implementation subagent",
+  "fit_launch_approved": false,
+  "candidate_selected": null,
+  "new_test_or_validation_inference": false,
+  "findings": [],
+  "verified": [
+    "Existing frozen pilot source is not modified",
+    "Both source checkpoints pinned to exact bytes, epochs53/44, legacy selection, seed-specific configs and tensor schemas",
+    "Builder preserves the frozen model architecture and data/normalization source",
+    "Matched control and candidate retain identical source weights, learning rule, primary metric and within-seed order RNG",
+    "All existing config fields except explicitly listed source/seed/roster/round differences remain fixed",
+    "Generator emits specs only with GPU null and launch_enabled false; no runner or subprocess launch exists",
+    "Promotion record must name one candidate, immutable analysis evidence, seeds23/37, no test and no averaging, and a root-defined practical confirmation threshold",
+    "CPU_CHECKS source hashes independently rechecked against current files",
+    "Readme distinguishes synthetic order tests from actual data-order hashes and distinguishes conditional continuation from matched end-to-end budgets"
+  ],
+  "required_before_any_future_fit": [
+    "Root decision after full current-round analysis",
+    "Independent review of separate runtime source loader, namespace, source-contract/promotion pins, freeze and GPU assignments",
+    "Full validation epoch-zero replay for each source under the generalized runtime",
+    "Matched source/reset RNG and exact checkpoint transactions retained",
+    "Server-to-D archive followed by inspected commit/push and monitor registration"
+  ],
+  "scientific_limits": [
+    "Seed23/37 source runs had100-epoch budgets versus historical seed11's different budget; paired within-seed continuation effects are interpretable, absolute across-seed scores are not causal architecture comparisons",
+    "The reused validation split is not a fresh holdout",
+    "For a control-only schedule confirmation, comparing each independently trained source against its own epoch0 is appropriate; an identical duplicate control continuation would add no distinct treatment",
+    "O3 equivariance of the adapter is established, but electronic state-phase covariance is not implied"
+  ],
+  "source_hashes": {
+    "contracts.py": "bb5deee90238a3cc8a0de15c99d236f40d1ca9411afd9665335dc8d8202dab96",
+    "capture_contracts.py": "2d7ede6d47e960229154190bfb5b55a4912b180645f5044089c293966784fb29",
+    "generate.py": "bfaaabdf4f8a9b7be961769c17da62031249fa220789152aac1bcd7539ee64c8",
+    "check_preparation.py": "9b39226333afb89660c43f1ed8858a53ad7d32ef830332854cb9d8235d5f6dcd",
+    "SOURCE_CONTRACTS.json": "0689723edd153ddc96416554742eef41f10f68bd7b8279e200c3cc5d6a963d39",
+    "CPU_CHECKS.json": "15b0d8270fd663e75e94978a143d17c43fdbeebb9ed9b12409b2a6b7c67dee8a",
+    "README.md": "f853d844bd28df84331c253a148de070f0e2701a5ca884feebf101d32bbe30bc"
+  }
+}

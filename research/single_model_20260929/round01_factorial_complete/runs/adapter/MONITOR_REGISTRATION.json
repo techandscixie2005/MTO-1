@@ -1,0 +1,26 @@
+{
+  "id": "adapter_1790699021984516935",
+  "registered_at_utc": "2026-09-29T16:23:42.032137+00:00",
+  "identity": {
+    "pid": 1132188,
+    "start_ticks": 1254668674,
+    "uid": 1000,
+    "cwd": "/home/inspur/MTO-1/research/single_model_20260929",
+    "argv_sha256": "7ab520c26545dfc3c5951c800d21809b3827dec3223fea9cae74e1dfe4a4cf07",
+    "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+    "process_state": "R"
+  },
+  "run_dir": "runs/adapter",
+  "gpu_uuid": "GPU-cb4dc1ea-9ea3-e426-bdeb-df0bef8a23fa",
+  "status_path": "runs/adapter/status.json",
+  "log_path": "runs/adapter/train.log",
+  "completion_path": "runs/adapter/FIT_COMPLETE.json",
+  "failure_path": "runs/adapter/FAILED.json",
+  "checkpoint_paths": [
+    "runs/adapter/last.pt",
+    "runs/adapter/best.pt"
+  ],
+  "stale_after_seconds": 28800,
+  "monitor": true,
+  "restart_policy": "coordinator_review_required"
+}

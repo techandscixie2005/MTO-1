@@ -1,0 +1,10 @@
+{
+  "installed_at_utc": "2026-09-29T15:53:02.628156+00:00",
+  "schedule": "0 */4 * * * /usr/bin/python3 /home/inspur/MTO-1/research/single_model_20260929/ops/monitor.py --root /home/inspur/MTO-1/research/single_model_20260929 >> /home/inspur/MTO-1/research/single_model_20260929/monitoring/cron.log 2>&1",
+  "timezone": "server local time Asia/Shanghai; 00:00,04:00,08:00,12:00,16:00,20:00",
+  "cadence_hours": 4,
+  "unrelated_entries_preserved": true,
+  "before_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "after_sha256": "13caacb74408db396e9eae0d0929aec97d102c41c00c2f5b138da9d0417b330e",
+  "mode": "read_only; never starts, signals, or restarts training jobs"
+}

@@ -1,0 +1,158 @@
+{
+  "seed": 20260930,
+  "device": "cpu",
+  "torch": "2.5.1+cu121",
+  "numpy": "2.2.6",
+  "python": "3.10.19",
+  "actual_molecular_data_loaded": false,
+  "GPU_API_called": false,
+  "full_response_invariance": {
+    "common_basis_f_max_error": 1.7763568394002505e-14,
+    "eigenvector_sign_strength_max_error": 0.0,
+    "latent_permutation_f_max_error": 1.4210854715202004e-14,
+    "strength_sum_minus_trace_Q": 3.552713678800501e-15,
+    "f_sum_minus_two_thirds_trace_HQ": 7.105427357601002e-15
+  },
+  "unsorted_identity_counterexample": {
+    "original_E": [
+      2.0,
+      1.0,
+      3.0
+    ],
+    "original_f": [
+      0.26666666666666666,
+      0.6,
+      1.0
+    ],
+    "eigh_E": [
+      1.0,
+      2.0,
+      3.0
+    ],
+    "eigh_f": [
+      0.6,
+      0.26666666666666666,
+      1.0
+    ],
+    "max_f_change_at_zero_adapter": 0.3333333333333333
+  },
+  "exact_degeneracy": {
+    "same_H_residual": 2.0293072715139053e-17,
+    "strengths_basis_I": [
+      1.0,
+      1.0
+    ],
+    "strengths_basis_rotated": [
+      1.8,
+      0.19999999999999993
+    ],
+    "subspace_total_error": 0.0,
+    "same_total_f": 2.6666666666666665
+  },
+  "eigengrad": {
+    "rows": [
+      {
+        "gap": 0.1,
+        "strength": 1.0,
+        "gradient": -16.00000000000002,
+        "gradient_finite": true,
+        "gap_times_gradient": -1.6000000000000023
+      },
+      {
+        "gap": 0.001,
+        "strength": 1.0,
+        "gradient": -1599.999999999821,
+        "gradient_finite": true,
+        "gap_times_gradient": -1.5999999999998211
+      },
+      {
+        "gap": 1e-06,
+        "strength": 1.0,
+        "gradient": -1599999.9997763555,
+        "gradient_finite": true,
+        "gap_times_gradient": -1.5999999997763554
+      },
+      {
+        "gap": 1e-09,
+        "strength": 1.0,
+        "gradient": -1599999867.6154175,
+        "gradient_finite": true,
+        "gap_times_gradient": -1.5999998676154177
+      },
+      {
+        "gap": 0.0,
+        "strength": 1.0,
+        "gradient": null,
+        "gradient_finite": false,
+        "gap_times_gradient": null
+      }
+    ],
+    "finite_difference_gap": 0.001,
+    "finite_difference_step": 1e-08,
+    "finite_difference_gradient": -1599.9999996851866,
+    "autograd_gradient": -1599.999999999821,
+    "relative_gradient_error": 1.9664653905240284e-10
+  },
+  "redistribution_conservation": {
+    "strength_total_before": 5.0,
+    "strength_total_after": 5.0,
+    "f_total_before": 4.666666666666666,
+    "f_total_after": 6.666666666666666,
+    "does_not_claim_full_TRK_sum_rule": true
+  },
+  "operator_nonidentifiability": {
+    "same_initial_f_max_error": 0.0,
+    "different_mixed_strengths_max_error": 0.8,
+    "minimum_eigenvalues_Q": [
+      0.19999999999999996,
+      1.0
+    ]
+  },
+  "identity_rotation_trainability": {
+    "diagonal_Q_rotation_gradient_at_identity": 0.0,
+    "coherent_Q_rotation_gradient_at_identity": -1.6
+  },
+  "stable_adapter": {
+    "exact_identity_strength": true,
+    "identity_pair_logit_gradient_l2": 0.10805596668318823,
+    "orthogonality_max_error": 7.02327085377874e-13,
+    "strength_total_error": 1.3291590050812374e-12,
+    "row_sign_gauge_strength_max_error": 0.0,
+    "row_sign_gauge_U_covariance_max_error": 0.0,
+    "permutation_strength_max_error": 0.0,
+    "naive_fixed_rotation_row_sign_failure_max_error": 0.23808638843173657,
+    "zero_factors_forward_and_gradient_finite": true,
+    "near_gap_gradients": [
+      {
+        "gap": 0.1,
+        "gradient_l2": 0.14047275668814463,
+        "finite": true
+      },
+      {
+        "gap": 1e-06,
+        "gradient_l2": 0.14407458622559538,
+        "finite": true
+      },
+      {
+        "gap": 0.0,
+        "gradient_l2": 0.14407462224425094,
+        "finite": true
+      }
+    ]
+  },
+  "spatial_symmetry": {
+    "even_factor_Gram_O3_max_error": 3.552713678800501e-15,
+    "centrosymmetric_even_C_strength": 1.0,
+    "ordinary_polar_vector_fixed_by_inversion_must_be_zero": true,
+    "even_factor_rank_bound_for_symmetric_3x3_C": 6,
+    "not_a_physical_rank3_dipole_Gram": true
+  },
+  "minimal_adapter_limits": {
+    "same_per_state_A_different_latent_C_prediction_max_error": 0.14099952161915486,
+    "degenerate_subspace_rotation_without_covariant_pair_operator_changes_subspace_total": 0.0006246627980006636,
+    "all_dark_target_equal_energy_example_strength_total": 5.0,
+    "minimum_possible_squared_strength_error_from_fixed_total_for_two_dark_states": 12.5,
+    "arbitrary_latent_factor_gauge_and_full_degenerate_subspace_gauge_not_solved": true
+  },
+  "all_tests_passed": true
+}

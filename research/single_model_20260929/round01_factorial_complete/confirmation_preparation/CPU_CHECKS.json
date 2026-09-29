@@ -1,0 +1,93 @@
+{
+  "passed": true,
+  "checks": {
+    "missing_promotion_rejected": true,
+    "seed23_wrong_epoch_rejected": true,
+    "seed23_wrong_order_seed_rejected": true,
+    "seed23_wrong_hash_rejected": true,
+    "seed37_wrong_epoch_rejected": true,
+    "seed37_wrong_order_seed_rejected": true,
+    "seed37_wrong_hash_rejected": true,
+    "invalid_allow_test_evaluation_rejected": true,
+    "invalid_prediction_averaging_rejected": true,
+    "invalid_candidate_rejected": true,
+    "invalid_status_rejected": true
+  },
+  "seeds": {
+    "23": {
+      "epoch": 53,
+      "model_tensors": 178,
+      "config_seed": 23,
+      "checkpoint_sha256": "7c28a2fe204f8804d05d3dc58bb9acf853f2d0505ce83a9f66819f02fd485a18",
+      "validation_replay_expectation": 0.36870884832620643,
+      "synthetic_paired_order_hashes": [
+        "01746c7dfc420905d49d9cd8bc252d2fc41b17d815432d9cd5a964039a53c42e",
+        "3b2c2a8a6d293d1eb3e9e3997a1833cf72d2bdb4dc7d911e73f28d9669242823",
+        "9d723ee3d10aeb7b29256f656e0ff35cbf728dfe9e4506446c02c84823aadbaf",
+        "ba401b1a819adc2438f1dc5d5626050af007474854d843898f2723635be9d71e",
+        "4ccd5f7b9562e9d1f22e9bcae153a442d50fcc6e9de1e7619a2bfc4916e07472",
+        "d57c7cefbc8696e2a69c64e939ff436133a4942e969d15f6eaadc62f0e0b4aff",
+        "9d1c0a7347e653b93c28d2ba21e86eb0f8a1a2ff6fc464e93b5314940fd4d9aa",
+        "705659071e49da3187f885e41e2aad5af336baf43f92ebcc60f58ec59e2c3deb",
+        "440f0e440e28eca7d5ad49e451d959fca49ffab2ba36d6786ea5f1508d6d64ab",
+        "790501dbd22be4b953ab4c367d3750e1b1f383f70a5a48fefa91cd133de20a64",
+        "76172817cec97a613f9f5a18f722e9f7fc450eb860bdfd187e457c69ea1eee50",
+        "ebd31cfdb7ff8b8aa2cf17db16be9729bdab9c86fe861ed793a60144dd360a97",
+        "9aa03deb94ba5526e726feaeed026ffcf87191cab69c9967e06e33a2bd2f150f",
+        "1a9838e3654eaeb21082b93fc05b44baccb1b6311138c06bcb177888c07c729f",
+        "86a5a6d45141d8b89bb1224da7567cb0f0e2f420b49d14dc2e41084d3d427975",
+        "5c8b8ae6ddf4311c470c06f41cc05312d4b17c898f6eb6e694eb581ec93c598e",
+        "913074c89310ea3ad9888c8f199cca9bf5bcd075915a8b6be114a6d56d21e442",
+        "ca6852d8b4feb8947adea6c655a9cf2dee3ac8012f0211c76588e54a50b682aa",
+        "2d21e10f707215910ff6e5ad4ecad690be95d42e6ead8411a17885783404d126",
+        "d445ee562119f57b81ac68f200a0c58eb35efdce4743641409a526e35567a222"
+      ],
+      "order_hashes_are_actual_data_order": false
+    },
+    "37": {
+      "epoch": 44,
+      "model_tensors": 178,
+      "config_seed": 37,
+      "checkpoint_sha256": "9570b5b3743be89cd8ca3f7f75a95bc43cd8445336a3d73694858c79ae05dd82",
+      "validation_replay_expectation": 0.39445533914883546,
+      "synthetic_paired_order_hashes": [
+        "5d460b2adce39d8ee871a13a95e13cc4490ac6b0dcdacd8b646b1692fdd8045b",
+        "32d4f5ab4d6cb1fd2a43e04824cb9e47f32279183f48291d36720206bf9477f2",
+        "36629af8f6698b8a6ac47b64791e73a1c5fb1b3225a243a691a78d5fb4036727",
+        "c8df24438b816a3e45653e4936cdb486003ccb7b0576a437220f1325d333be4e",
+        "5416f1430cfc13c144e2a164f76be3eedabc3782edf844ab2fa6c18d1634f361",
+        "a03ba5c32c69ca4637f6baa73bc6ecd4ef83e0b5cdec481a1eea62c331388df5",
+        "25c2ff87456872eb17f9f3ae1adbce7756675d869c845f6cc28c791b1101f99c",
+        "acd8a28f23fa3600882758599246e066f6edc49385cca825b8b66df21f03cc6c",
+        "c0d24e96e09fbfbdb40a7d8dca79fa1380eca928737d8333b6093164c728c309",
+        "bd0d194fd8faebe93eb89bf3e2e15711c83fc52e2d3f648c08bc5fb72b16d1cf",
+        "777eb263a9672ad1be38e5c2facca60cd33d89ccbbe707e1455bd8a1037f167a",
+        "e5e7146c1ad47e8f73787ae2a361259231c0f05ba6ba3d0be9c87303014c1029",
+        "ecadfdf06287a0c81ddd850d4a24d2d9b231ecd75b1fa41853c498cf61c2dfb4",
+        "8efe26ed2fcc279b9abb571818e15a12e32a186cac404f9fb506d7eb7e96945c",
+        "8e86522d096143b8a2145261f17e339c7d2bec0014c6e4b8f96ab68ed9109a1f",
+        "4eb57fefdf58fb15ca99cbedcc4919fd86a1031a876d4ec3384c27338dfd1f66",
+        "e162136f1df07d16f39ddb465e134bf94d22b65157c6a16c530e5e900aa1368f",
+        "9753aece830fdc5c56a923e6bf8e4dc8cbb22a5647fa1869c577a6b404afa505",
+        "b90605be75a40dfc7b36c183c732763114f1cf1e164874fa8cd3d746c4fa9e6e",
+        "bfc5bfdec1b84809b3ab16858d29cbeaa5b11d47047c7a7d20d97739124faa63"
+      ],
+      "order_hashes_are_actual_data_order": false
+    }
+  },
+  "all_four_candidate_schemas_per_seed_tested": true,
+  "candidate_selected": null,
+  "fit_launched": false,
+  "dataset_loaded": false,
+  "test_loaded": false,
+  "gpu_used": false,
+  "new_validation_inference": false,
+  "optimizer_and_model_resume": "Inherited frozen training loop, not reimplemented or rerun",
+  "source_hashes": {
+    "contracts.py": "bb5deee90238a3cc8a0de15c99d236f40d1ca9411afd9665335dc8d8202dab96",
+    "capture_contracts.py": "2d7ede6d47e960229154190bfb5b55a4912b180645f5044089c293966784fb29",
+    "generate.py": "bfaaabdf4f8a9b7be961769c17da62031249fa220789152aac1bcd7539ee64c8",
+    "check_preparation.py": "9b39226333afb89660c43f1ed8858a53ad7d32ef830332854cb9d8235d5f6dcd",
+    "SOURCE_CONTRACTS.json": "0689723edd153ddc96416554742eef41f10f68bd7b8279e200c3cc5d6a963d39"
+  }
+}

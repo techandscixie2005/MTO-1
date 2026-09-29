@@ -1,0 +1,19 @@
+{
+  "prepared_at_utc": "2026-09-29T16:11:20.411868+00:00",
+  "frozen_manifest_sha256": "eaf2c75e239f7c04717adb97220cc35731df8d1a598b14b7b014c6754bf5ebd3",
+  "independent_review_passed": true,
+  "dependency_copies_match_frozen_source_hashes": true,
+  "copied_dependency_count": 23,
+  "source_and_settings_frozen_before_fit": true,
+  "trained_new_pilot_jobs": false,
+  "download_required_before_git_staging": true,
+  "excluded_server_only_artifacts": [
+    "baselines/calibrated_eta0.pt",
+    "raw datasets",
+    "prediction arrays",
+    "__pycache__"
+  ],
+  "initial_manual_health_snapshot_superseded": "monitoring/CHECK_20260929T155302Z.json; see ops/README.md",
+  "git_transport": "Direct SSH22/SSH443/HTTPS443 failed. Scoped HTTPS proxy from enabled Windows system settings127.0.0.1:7890 succeeded; existing credential helper only. No global config changes.",
+  "github_read_verified_main": "69bf39fcc98a0b25242c8ecad47ce8c5f6b4385e"
+}

@@ -1,0 +1,19 @@
+{
+  "arm": "decorrelation",
+  "attempt": "decorrelation_1790699022218490143",
+  "pid": 1132193,
+  "gpu": 4,
+  "gpu_uuid": "GPU-e212aefc-f1d6-cc7a-5594-e87abeaf1184",
+  "manifest_sha256": "eaf2c75e239f7c04717adb97220cc35731df8d1a598b14b7b014c6754bf5ebd3",
+  "review_sha256": "ee1d5a4b4263660c6a94dce3c583b20a7eb8eff606192f1163de6713a1a60317",
+  "publication_receipt": "ops/ROUND00_PUBLICATION_RECEIPT.json",
+  "publication_receipt_sha256": "c22a75d2acfe0c4edc13ef88b6efee06c7ef1dce1b1512dcba4a0646fbc5bbd5",
+  "launched_at_unix": 1790699022.2207007,
+  "command": [
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/bin/python",
+    "/home/inspur/MTO-1/research/single_model_20260929/train.py",
+    "--arm",
+    "decorrelation"
+  ],
+  "monitor_registration_returncode": 0
+}

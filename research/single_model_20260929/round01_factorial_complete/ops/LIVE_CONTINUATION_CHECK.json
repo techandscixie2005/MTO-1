@@ -1,0 +1,157 @@
+{
+  "observed_at_utc": "2026-09-29T17:14:31.542323+00:00",
+  "snapshot_utc": "2026-09-29T17:12:55.909732+00:00",
+  "kind": "coordinator-requested authoritative continuation check",
+  "scheduled_four_hour_cadence_unchanged": true,
+  "runs": [
+    {
+      "arm": "control",
+      "pid": 1132183,
+      "start_ticks": 1254668652,
+      "live_identity_reverified": true,
+      "process_present_at_replay": true,
+      "natural_terminal_exit_at_replay": false,
+      "monitor_state": "RUNNING_IDENTITY_MATCH",
+      "status_state": "running",
+      "completed_epoch_status": 19,
+      "latest_complete_history_epoch": 19,
+      "latest_complete_raw_f_r2": 0.36765178203617555,
+      "best_epoch": 0,
+      "best_raw_f_r2": 0.40529411423352635,
+      "last_epoch_seconds": 153.67884396016598,
+      "expected_gpu_uuid": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+      "observed_gpu_uuids": [
+        "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800"
+      ],
+      "checkpoint_metadata": {
+        "runs/control/last.pt": {
+          "exists": true,
+          "bytes": 25282048,
+          "mtime_utc": "2026-09-29T17:12:10.848710+00:00",
+          "age_seconds": 45.9
+        },
+        "runs/control/best.pt": {
+          "exists": true,
+          "bytes": 6437116,
+          "mtime_utc": "2026-09-29T16:23:53.736595+00:00",
+          "age_seconds": 2943.0
+        }
+      },
+      "failure_marker_exists": false,
+      "completion_marker_exists": false
+    },
+    {
+      "arm": "adapter",
+      "pid": 1132188,
+      "start_ticks": 1254668674,
+      "live_identity_reverified": false,
+      "process_present_at_replay": false,
+      "natural_terminal_exit_at_replay": true,
+      "monitor_state": "RUNNING_IDENTITY_MATCH",
+      "status_state": "complete",
+      "completed_epoch_status": 20,
+      "latest_complete_history_epoch": 20,
+      "latest_complete_raw_f_r2": 0.36621088899385534,
+      "best_epoch": 0,
+      "best_raw_f_r2": 0.4052941174029687,
+      "last_epoch_seconds": 162.7531819306314,
+      "expected_gpu_uuid": "GPU-cb4dc1ea-9ea3-e426-bdeb-df0bef8a23fa",
+      "observed_gpu_uuids": [
+        "GPU-cb4dc1ea-9ea3-e426-bdeb-df0bef8a23fa"
+      ],
+      "checkpoint_metadata": {
+        "runs/adapter/last.pt": {
+          "exists": true,
+          "bytes": 25343096,
+          "mtime_utc": "2026-09-29T17:12:56.165711+00:00",
+          "age_seconds": 0.5
+        },
+        "runs/adapter/best.pt": {
+          "exists": true,
+          "bytes": 6437116,
+          "mtime_utc": "2026-09-29T16:23:55.172596+00:00",
+          "age_seconds": 2941.5
+        }
+      },
+      "failure_marker_exists": false,
+      "completion_marker_exists": true
+    },
+    {
+      "arm": "decorrelation",
+      "pid": 1132193,
+      "start_ticks": 1254668698,
+      "live_identity_reverified": true,
+      "process_present_at_replay": true,
+      "natural_terminal_exit_at_replay": false,
+      "monitor_state": "RUNNING_IDENTITY_MATCH",
+      "status_state": "running",
+      "completed_epoch_status": 19,
+      "latest_complete_history_epoch": 19,
+      "latest_complete_raw_f_r2": 0.3677438796142407,
+      "best_epoch": 0,
+      "best_raw_f_r2": 0.4052941062033284,
+      "last_epoch_seconds": 158.4779542312026,
+      "expected_gpu_uuid": "GPU-e212aefc-f1d6-cc7a-5594-e87abeaf1184",
+      "observed_gpu_uuids": [
+        "GPU-e212aefc-f1d6-cc7a-5594-e87abeaf1184"
+      ],
+      "checkpoint_metadata": {
+        "runs/decorrelation/last.pt": {
+          "exists": true,
+          "bytes": 25279232,
+          "mtime_utc": "2026-09-29T17:10:56.888707+00:00",
+          "age_seconds": 119.8
+        },
+        "runs/decorrelation/best.pt": {
+          "exists": true,
+          "bytes": 6437116,
+          "mtime_utc": "2026-09-29T16:23:55.350595+00:00",
+          "age_seconds": 2941.4
+        }
+      },
+      "failure_marker_exists": false,
+      "completion_marker_exists": false
+    },
+    {
+      "arm": "both",
+      "pid": 1132198,
+      "start_ticks": 1254668718,
+      "live_identity_reverified": true,
+      "process_present_at_replay": true,
+      "natural_terminal_exit_at_replay": false,
+      "monitor_state": "RUNNING_IDENTITY_MATCH",
+      "status_state": "running",
+      "completed_epoch_status": 19,
+      "latest_complete_history_epoch": 19,
+      "latest_complete_raw_f_r2": 0.3672980609958756,
+      "best_epoch": 0,
+      "best_raw_f_r2": 0.4052941291061617,
+      "last_epoch_seconds": 156.21181561984122,
+      "expected_gpu_uuid": "GPU-2431a641-8045-a10b-4aa0-2769010e0708",
+      "observed_gpu_uuids": [
+        "GPU-2431a641-8045-a10b-4aa0-2769010e0708"
+      ],
+      "checkpoint_metadata": {
+        "runs/both/last.pt": {
+          "exists": true,
+          "bytes": 25340280,
+          "mtime_utc": "2026-09-29T17:12:52.318711+00:00",
+          "age_seconds": 4.4
+        },
+        "runs/both/best.pt": {
+          "exists": true,
+          "bytes": 6437116,
+          "mtime_utc": "2026-09-29T16:23:55.354595+00:00",
+          "age_seconds": 2941.4
+        }
+      },
+      "failure_marker_exists": false,
+      "completion_marker_exists": false
+    }
+  ],
+  "gpu0_unrelated_pid_present": true,
+  "owned_failures": false,
+  "interventions": [],
+  "no_checkpoint_contents_loaded": true,
+  "next_scheduled_server_local_check": "2026-09-30T04:00:00+08:00"
+}

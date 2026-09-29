@@ -1,0 +1,145 @@
+{
+  "status": "bounded_train_label_audit_complete",
+  "sample_size_molecules": 4096,
+  "sample_seed": 20260930,
+  "sampling": "uniform_without_replacement_from_frozen_train_IDs",
+  "sample_IDs_sha256": "b3989514228b801fe9b863a47c7950b41efc4fa5db3e670aa307bc91c327d8ce",
+  "sample_ID_dtype": "int64",
+  "all_sample_IDs_in_frozen_train": true,
+  "decoded_validation_label_rows": 0,
+  "decoded_test_label_rows": 0,
+  "compressed_byte_note": "NPZ streams skip nonselected bytes without decoding them as label rows",
+  "model_inference": false,
+  "gpu_used": false,
+  "raw_logs_loaded": false,
+  "optional_missing_policy": "extractor initializes NaN; presence requires finite components/fV, never zero fill",
+  "coverage": {
+    "state_slots": 40960,
+    "present_state_labels": 40960,
+    "scalar_length_mask_true": 40960,
+    "finite_positive_energy": 40960,
+    "finite_velocity_vectors": 40960,
+    "finite_velocity_strength": 40960,
+    "velocity_reconstruction_pairs": 40960,
+    "finite_length_strength": 40960,
+    "all_zero_velocity_vectors": 56,
+    "printed_zero_velocity_strength": 680,
+    "negative_velocity_strength": 0
+  },
+  "energy_eV": {
+    "count": 40960,
+    "min": 0.6008,
+    "max": 18.9494,
+    "mean": 6.810404184570314,
+    "median": 6.988,
+    "p90": 7.8887,
+    "p99": 8.474786999999997
+  },
+  "formula": "fV=(2/3)*sum(p_AU**2)/(E_eV/27.211386245988)",
+  "velocity_reconstruction": {
+    "signed_residual": {
+      "count": 40960,
+      "min": -0.00017075983224368319,
+      "max": 0.00018221887550273763,
+      "mean": -3.590357416377033e-08,
+      "median": 1.403123400054579e-07,
+      "p90": 4.2051385285744174e-05,
+      "p99": 6.625364256843046e-05
+    },
+    "absolute_residual": {
+      "count": 40960,
+      "min": 0.0,
+      "max": 0.00018221887550273763,
+      "mean": 2.698143232627152e-05,
+      "median": 2.540884496724828e-05,
+      "p90": 4.9329212021771486e-05,
+      "p99": 7.671786938674257e-05
+    },
+    "rmse": 3.236123219265754e-05,
+    "absolute_residual_le_1e_minus4_count": 40862,
+    "four_decimal_grid_max_error_after_scale": {
+      "energy_eV": 1.4551915228366852e-11,
+      "velocity_components": 9.094947017729282e-13,
+      "printed_velocity_f": 1.8189894035458565e-12
+    },
+    "rounding_interval_overlap_count": 40960,
+    "rounding_interval_failure_count": 0,
+    "rounding_bound_assumption": "Independent plus/minus5e-5 rounding of E_eV, each velocity component, and printed fV"
+  },
+  "velocity_vs_length": {
+    "signed_difference": {
+      "count": 40960,
+      "min": -0.07540000000000002,
+      "max": 0.0375,
+      "mean": -0.000650634765625,
+      "median": 0.0,
+      "p90": 0.0016000000000000007,
+      "p99": 0.004899999999999995
+    },
+    "absolute_difference": {
+      "count": 40960,
+      "min": 0.0,
+      "max": 0.07540000000000002,
+      "mean": 0.0016801611328125,
+      "median": 0.0006999999999999992,
+      "p90": 0.003799999999999998,
+      "p99": 0.017800000000000003
+    },
+    "rmse": 0.0039307701043537575,
+    "agreement_r2_not_model_accuracy": 0.9936272324539577,
+    "relative_abs_difference_length_at_least_1e_minus3": {
+      "count": 36284,
+      "min": 0.0,
+      "max": 25.0,
+      "mean": 0.1309979298385428,
+      "median": 0.07391304347826087,
+      "p90": 0.28083973979893573,
+      "p99": 1.0
+    },
+    "ratio_subset_note": "Threshold only avoids unstable relative denominators; all present labels use absolute diagnostics"
+  },
+  "limitations": [
+    "Sample coverage does not establish full TRAIN coverage",
+    "No independent Gaussian imaginary/sign convention audit from original logs",
+    "Norm reconstruction cannot identify electronic phase or vector-gauge alignment",
+    "No duplicate/ambiguous optional-table audit beyond existing parser",
+    "No magnetic-label analysis or new auxiliary objective"
+  ],
+  "primary_reference": "https://pyscf.org/_modules/pyscf/tdscf/rhf.html",
+  "source_hashes": {
+    "/home/inspur/datasets/QM9S/qm9s_td_extracted_20260925/extract_qm9s.py": "71ddb1625f6aa5e73e9c38b738b23e80d0100303049804d60219835eda86fa9b",
+    "/home/inspur/datasets/QM9S/qm9s_td_extracted_20260925/dataset_manifest.json": "fc848263753bb8311a07bdf39299193f8b6fb3ff0f35fef329c81a8255580959",
+    "/home/inspur/datasets/QM9S/qm9s_td_extracted_20260925/README.md": "6e8b54b2620f0b0cb8090cdeaaa3a4eebac306e6c68d8b79073b290293d4b4b9",
+    "/home/inspur/datasets/QM9S/qm9s_td_extracted_20260925/validation_report.json": "877f7376e977bfe1c0b979cb97e3c507769e21f599021bb451fb1ac12ae2c4c9"
+  },
+  "array_shard_hashes": {
+    "/home/inspur/datasets/QM9S/qm9s_td_extracted_20260925/arrays/part-00000.npz": "373afad120db9609d5025cbf32098ed65fef55d79841dcf777c759b17c738c11",
+    "/home/inspur/datasets/QM9S/qm9s_td_extracted_20260925/arrays/part-00001.npz": "086f93377ff2537e41c8d9f5050f122f2702c45364b9f7bcbf139021c19b3245",
+    "/home/inspur/datasets/QM9S/qm9s_td_extracted_20260925/arrays/part-00002.npz": "e46963ace5e88530202b7683aa3a2b04ddf46f20ac0c3d7005448e3bef026e57",
+    "/home/inspur/datasets/QM9S/qm9s_td_extracted_20260925/arrays/part-00003.npz": "8df13360f8a6e9459cb00b1a65071deb96758fd101eda18eafb6c5b37a429ae2",
+    "/home/inspur/datasets/QM9S/qm9s_td_extracted_20260925/arrays/part-00004.npz": "cdea3f40dacc74f7fe5fb21ead8c037730b0dd9b9565f143d28a49b738b9d665",
+    "/home/inspur/datasets/QM9S/qm9s_td_extracted_20260925/arrays/part-00005.npz": "ab0f6e0abfcadc8e45a57a6800a1830a67549cf7f857b44b8b09f83970ed6196",
+    "/home/inspur/datasets/QM9S/qm9s_td_extracted_20260925/arrays/part-00006.npz": "d935a8e5cded244d89a31271546e7ec475275c185e057e978c406368df1dcc30",
+    "/home/inspur/datasets/QM9S/qm9s_td_extracted_20260925/arrays/part-00007.npz": "34cc69c5fd740dfd7a7399add17757bc392acfe8d21ac7d5d69495cc40d08204",
+    "/home/inspur/datasets/QM9S/qm9s_td_extracted_20260925/arrays/part-00008.npz": "7adf83fe993209ec1e0aee5541c4a4425ae8cb788c4588b21191d4f3a409dfda",
+    "/home/inspur/datasets/QM9S/qm9s_td_extracted_20260925/arrays/part-00009.npz": "7440309f4c7111cc5df67b0b43d252b6594f5bb29399a692aac2d5927bc76b7f",
+    "/home/inspur/datasets/QM9S/qm9s_td_extracted_20260925/arrays/part-00010.npz": "239d7e20b1700b4f8dbf6dbebfccc06176343ac71a131a3f9ec30b6b38fa6911",
+    "/home/inspur/datasets/QM9S/qm9s_td_extracted_20260925/arrays/part-00011.npz": "c7e291c73474d5e1293a51ddee9a8b10f700653c8da565a43ecdddda09a22d1c",
+    "/home/inspur/datasets/QM9S/qm9s_td_extracted_20260925/arrays/part-00012.npz": "4ea7fe8201d144147893987737c9d74cecef8ed3dba942e2ae593222ed8ec755",
+    "/home/inspur/datasets/QM9S/qm9s_td_extracted_20260925/arrays/part-00013.npz": "e0fc0c29e8879dd4e4512bc057b9b14bcbf351125568f4670dadb66b366468b6",
+    "/home/inspur/datasets/QM9S/qm9s_td_extracted_20260925/arrays/part-00014.npz": "fe7fa52af11c30100518c6c1452d4f95f0e5a0d305f6e4845f4689b97badf566",
+    "/home/inspur/datasets/QM9S/qm9s_td_extracted_20260925/arrays/part-00015.npz": "df082877702f94283adfb7108f0329aa846452a1c19a1604272ccfc49cb4b2fb",
+    "/home/inspur/datasets/QM9S/qm9s_td_extracted_20260925/arrays/part-00016.npz": "03ff4b18cee6d41b23c098ea9393f39ada4c67dd2870cbf5af557bce26b1d688",
+    "/home/inspur/datasets/QM9S/qm9s_td_extracted_20260925/arrays/part-00017.npz": "bee544b7b1262cc56e8d876a4fef2d369bc301cc00bcbc6412bd9be8d4601ca0",
+    "/home/inspur/datasets/QM9S/qm9s_td_extracted_20260925/arrays/part-00018.npz": "d76419269a95932679b30745463cbb8589476c1eea81b3eb1899eb0b60f21fad",
+    "/home/inspur/datasets/QM9S/qm9s_td_extracted_20260925/arrays/part-00019.npz": "989ba273b84152fd3c3d78ac9b3951d8faf8717140a06d97ec6c0bdb373999d8",
+    "/home/inspur/datasets/QM9S/qm9s_td_extracted_20260925/arrays/part-00020.npz": "80462732d81e0348837e8aa6d2007bac492e731ed8fcd781462edccfcedde7f3",
+    "/home/inspur/datasets/QM9S/qm9s_td_extracted_20260925/arrays/part-00021.npz": "13699c9e2ec2201e2dc1b17b413a8721fa14160e6cc3192e7329ee487b1d082b",
+    "/home/inspur/datasets/QM9S/qm9s_td_extracted_20260925/arrays/part-00022.npz": "e9e98496f58c3d112f84a40cfc435e787d02899e887841d683c0fa34bfdbded9",
+    "/home/inspur/datasets/QM9S/qm9s_td_extracted_20260925/arrays/part-00023.npz": "de2e1b98a4bd0136b789e57390adb6e4b407b79d5710b43c964d6830ba293c0f",
+    "/home/inspur/datasets/QM9S/qm9s_td_extracted_20260925/arrays/part-00024.npz": "d7aeced0706b243c8bbec1b50352eaae4c25ae542b8083d7779337b585e72f2d",
+    "/home/inspur/datasets/QM9S/qm9s_td_extracted_20260925/arrays/part-00025.npz": "d8cc30fcd4cf0241f72c9b521adc0d3d04084a2bcfcb00a5b30a922a9e9bf604",
+    "/home/inspur/datasets/QM9S/qm9s_td_extracted_20260925/arrays/part-00026.npz": "e010c295391c3f68eeaca2f46450f98f1a5117fad40f14fdae2868009787e28c"
+  },
+  "code_sha256": "f156319e6941bef1a945e3b69e2b754865f0bb662747c8f695d037cf98a119b7"
+}

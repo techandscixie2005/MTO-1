@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "synthetic_molecules": 2,
+  "dataset_loaded": false,
+  "qc_labels_loaded": false,
+  "test_evaluated": false,
+  "gpu_used": false,
+  "fit_launched": false,
+  "checkpoint_written": false,
+  "synthetic_optimizer_steps_discarded": 1,
+  "initial_identity_output_max_abs_error": 0.0,
+  "nonidentity_output_max_abs_error": 0.0,
+  "LE_Ls_adapter_gradient_max_abs_error": 0.0,
+  "post_synthetic_step_output_max_abs_error": 0.0,
+  "energy_sum_adapter_gradient_norm": 1.6390057802200317,
+  "trace_A_sum_adapter_gradient_norm": 0.1864617019891739,
+  "frozen_parameters_bitwise_unchanged": true,
+  "all_named_buffers_including_nonpersistent_bitwise_unchanged": true,
+  "optimizer_only_adapter_parameters": true,
+  "adapter_trainable_parameters": 4016,
+  "dropout_probabilities": {
+    "core.blocks.0.update.drop": 0.0,
+    "core.blocks.1.update.drop": 0.0,
+    "core.blocks.2.update.drop": 0.0
+  },
+  "batchnorm_modules": [],
+  "cache_shapes": {
+    "0e": [
+      2,
+      11,
+      16,
+      1
+    ],
+    "1o": [
+      2,
+      11,
+      16,
+      3
+    ],
+    "2e": [
+      2,
+      11,
+      16,
+      5
+    ]
+  },
+  "float32_bytes_per_molecule": 6336,
+  "estimated_120355_training_molecule_cache_bytes": 762569280,
+  "source_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/reports/frozen_cache_feasibility/cpu_cache_feasibility.py": "78d5c1c513469c800512a3d43deba6f635b2dfe83989bd648227a5be8a5a0853",
+    "/home/inspur/MTO-1/research/single_model_20260929/architecture/model.py": "b61413830ac8cfb78298dda55c11a1cfb2c398c264a797016045d8fd638c7b93",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/models_ea.py": "b47d50b8b32313d1c3e1f19f3e64e6f02ce42e91736e6da00f896f68965250b0",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/models.py": "a8d7bf8a8d89839f687a773f59f02b2a5d75abd6f47a59406e9eb3d1a40f4771",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/configs/mto_eta0.json": "e1b823aa48f491b7e0eaa8cc106fa712e6ba3e3256d36e23f091af6d9c07bdf9",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/normalization.json": "812a7b80d6259eb6106a5a534a8358a626713ec7ee53ad992fff6fcbabe59452"
+  },
+  "limitations": [
+    "Synthetic CPU parity only; no real TRAIN cache or GPU parity checked",
+    "Same geometry and edge/batch arithmetic; cross-device/cache-batch numerical tolerance still needed",
+    "No architecture or optimization schedule selected"
+  ]
+}

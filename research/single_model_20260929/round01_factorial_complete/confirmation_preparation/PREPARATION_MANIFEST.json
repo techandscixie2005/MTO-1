@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "status": "preparation_only_pending_independent_review",
+  "candidate_selected": null,
+  "launch_enabled": false,
+  "files": {
+    "contracts.py": {
+      "sha256": "bb5deee90238a3cc8a0de15c99d236f40d1ca9411afd9665335dc8d8202dab96",
+      "bytes": 7029
+    },
+    "capture_contracts.py": {
+      "sha256": "2d7ede6d47e960229154190bfb5b55a4912b180645f5044089c293966784fb29",
+      "bytes": 3451
+    },
+    "generate.py": {
+      "sha256": "bfaaabdf4f8a9b7be961769c17da62031249fa220789152aac1bcd7539ee64c8",
+      "bytes": 1475
+    },
+    "check_preparation.py": {
+      "sha256": "9b39226333afb89660c43f1ed8858a53ad7d32ef830332854cb9d8235d5f6dcd",
+      "bytes": 5638
+    },
+    "README.md": {
+      "sha256": "f853d844bd28df84331c253a148de070f0e2701a5ca884feebf101d32bbe30bc",
+      "bytes": 8385
+    },
+    "HANDOFF.md": {
+      "sha256": "d9912a281d2e0844775464ee3308809004bf35c45a873c6ba1e3c155b772a028",
+      "bytes": 3913
+    },
+    "SOURCE_CONTRACTS.json": {
+      "sha256": "0689723edd153ddc96416554742eef41f10f68bd7b8279e200c3cc5d6a963d39",
+      "bytes": 21227
+    },
+    "CPU_CHECKS.json": {
+      "sha256": "15b0d8270fd663e75e94978a143d17c43fdbeebb9ed9b12409b2a6b7c67dee8a",
+      "bytes": 5061
+    }
+  },
+  "excluded": [
+    "__pycache__",
+    "checkpoints",
+    "datasets",
+    "predictions"
+  ],
+  "frozen_pilot_unmodified": true
+}

@@ -1,0 +1,206 @@
+{
+  "control": {
+    "whole": 6.120635479306344,
+    "per_state": [
+      {
+        "state": 1,
+        "sse_change": -0.17977527488850908
+      },
+      {
+        "state": 2,
+        "sse_change": -0.5217271046406209
+      },
+      {
+        "state": 3,
+        "sse_change": -0.7366310028564476
+      },
+      {
+        "state": 4,
+        "sse_change": -1.031787098304239
+      },
+      {
+        "state": 5,
+        "sse_change": -0.32132284758832164
+      },
+      {
+        "state": 6,
+        "sse_change": -0.6369300724163427
+      },
+      {
+        "state": 7,
+        "sse_change": 9.301650496398413
+      },
+      {
+        "state": 8,
+        "sse_change": 1.558882716937127
+      },
+      {
+        "state": 9,
+        "sse_change": -0.5613956530387121
+      },
+      {
+        "state": 10,
+        "sse_change": -0.7503286802960076
+      }
+    ],
+    "brightness_bins": {
+      "true_dim__pred_dim": -1.849428535323412,
+      "true_dim__pred_bright": 10.007418006443698,
+      "true_bright__pred_dim": -1.0715152072110996,
+      "true_bright__pred_bright": -0.9658387846028473
+    }
+  },
+  "adapter": {
+    "whole": 6.191030389332738,
+    "per_state": [
+      {
+        "state": 1,
+        "sse_change": -0.1792918765139322
+      },
+      {
+        "state": 2,
+        "sse_change": -0.5200422977438777
+      },
+      {
+        "state": 3,
+        "sse_change": -0.7352634592804632
+      },
+      {
+        "state": 4,
+        "sse_change": -1.0284476123789954
+      },
+      {
+        "state": 5,
+        "sse_change": -0.32367328109404525
+      },
+      {
+        "state": 6,
+        "sse_change": -0.629917906188231
+      },
+      {
+        "state": 7,
+        "sse_change": 9.37433204636842
+      },
+      {
+        "state": 8,
+        "sse_change": 1.545082681252424
+      },
+      {
+        "state": 9,
+        "sse_change": -0.5596476088720994
+      },
+      {
+        "state": 10,
+        "sse_change": -0.7521002962164651
+      }
+    ],
+    "brightness_bins": {
+      "true_dim__pred_dim": -1.8449999157312575,
+      "true_dim__pred_bright": 10.068579443151831,
+      "true_bright__pred_dim": -1.0646176333013102,
+      "true_bright__pred_bright": -0.9679315047865424
+    }
+  },
+  "decorrelation": {
+    "whole": 6.1073768226507354,
+    "per_state": [
+      {
+        "state": 1,
+        "sse_change": -0.17993359846660684
+      },
+      {
+        "state": 2,
+        "sse_change": -0.5217542294445643
+      },
+      {
+        "state": 3,
+        "sse_change": -0.7328477234752455
+      },
+      {
+        "state": 4,
+        "sse_change": -1.0323601601103256
+      },
+      {
+        "state": 5,
+        "sse_change": -0.3201659871561411
+      },
+      {
+        "state": 6,
+        "sse_change": -0.6377719924314036
+      },
+      {
+        "state": 7,
+        "sse_change": 9.284599286589033
+      },
+      {
+        "state": 8,
+        "sse_change": 1.5612698682847057
+      },
+      {
+        "state": 9,
+        "sse_change": -0.5627618620302925
+      },
+      {
+        "state": 10,
+        "sse_change": -0.7508967791084
+      }
+    ],
+    "brightness_bins": {
+      "true_dim__pred_dim": -1.8436041832762768,
+      "true_dim__pred_bright": 9.993510435539235,
+      "true_bright__pred_dim": -1.0763410878044226,
+      "true_bright__pred_bright": -0.9661883418077668
+    }
+  },
+  "both": {
+    "whole": 6.177481407328344,
+    "per_state": [
+      {
+        "state": 1,
+        "sse_change": -0.1794193782846878
+      },
+      {
+        "state": 2,
+        "sse_change": -0.5200344121737803
+      },
+      {
+        "state": 3,
+        "sse_change": -0.7315718967526434
+      },
+      {
+        "state": 4,
+        "sse_change": -1.028999185675258
+      },
+      {
+        "state": 5,
+        "sse_change": -0.3226012677903469
+      },
+      {
+        "state": 6,
+        "sse_change": -0.6307990265038708
+      },
+      {
+        "state": 7,
+        "sse_change": 9.357198181673379
+      },
+      {
+        "state": 8,
+        "sse_change": 1.5469645366632818
+      },
+      {
+        "state": 9,
+        "sse_change": -0.5607876073263931
+      },
+      {
+        "state": 10,
+        "sse_change": -0.7524685365013113
+      }
+    ],
+    "brightness_bins": {
+      "true_dim__pred_dim": -1.83934026293457,
+      "true_dim__pred_bright": 10.054573471784412,
+      "true_bright__pred_dim": -1.0693234046025317,
+      "true_bright__pred_bright": -0.9684283969189522
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "passed": true,
+  "torch_load_calls": [
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/lib/python3.10/site-packages/e3nn/o3/constants.pt",
+    "/home/inspur/MTO-1/research/single_model_20260929/baselines/calibrated_eta0.pt"
+  ],
+  "trained_checkpoint_load_calls": [
+    "/home/inspur/MTO-1/research/single_model_20260929/baselines/calibrated_eta0.pt"
+  ],
+  "fixed_library_constant_load_calls": [
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/lib/python3.10/site-packages/e3nn/o3/constants.pt"
+  ],
+  "checkpoint_sha256": "bcb0e51d8d877983abd02ab768892a8f8f8d3dfe0f73f4ec43d30c21c16b3db9",
+  "original_base_checkpoint_opened": false,
+  "config_embedded": true,
+  "training_normalization_embedded": true,
+  "synthetic_geometry_only": true,
+  "synthetic_accuracy_claim": false,
+  "gpu_used": false,
+  "dataset_loaded": false,
+  "test_evaluated": false,
+  "output_shapes": {
+    "E": [
+      1,
+      10
+    ],
+    "A": [
+      1,
+      10,
+      3,
+      3
+    ],
+    "f_native": [
+      1,
+      10
+    ],
+    "f": [
+      1,
+      10
+    ]
+  },
+  "payload_summary": {
+    "format": "mto.calibrated_eta0.single_checkpoint.v1",
+    "config": {
+      "seed": 11,
+      "model": "mto",
+      "states": 10,
+      "mto_channels": 16,
+      "query_dim": 32,
+      "router_hidden": 128,
+      "head_hidden": 128,
+      "initial_energy_min_eV": 2.0,
+      "initial_energy_max_eV": 13.0,
+      "sigma_eV": 0.2,
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "batch_size": 64,
+      "max_epochs": 1000,
+      "min_epochs": 200,
+      "early_patience": 150,
+      "plateau_patience": 50,
+      "min_lr": 1e-06,
+      "grad_clip": 5.0,
+      "loss_weights": [
+        1.0,
+        1.0
+      ],
+      "dtype": "float32",
+      "amp": false,
+      "tf32": false,
+      "energy_initialization": "train_state_means",
+      "optimizer": "Adam_AMSGrad",
+      "num_threads": 2,
+      "checkpoint_seconds": 600,
+      "name": "mto_eta0",
+      "gpu": 1,
+      "eta": 0.0
+    },
+    "normalization": {
+      "sE2": 0.5378066634062587,
+      "sA2": 0.1324285377060015,
+      "E_state_mean": [
+        5.421341604420222,
+        5.998760536745472,
+        6.361654586016313,
+        6.653866559760626,
+        6.882784631299063,
+        7.07458686884628,
+        7.240946362843382,
+        7.385605422292411,
+        7.518560084749401,
+        7.6388871413734405
+      ],
+      "n_ref": 18.0,
+      "source": "train_only",
+      "definition_E": "mean_na((E_na-mean_n_train(E_na))^2)",
+      "definition_A": "mean_na(sum_ij(A_naij^2))"
+    },
+    "checkpoint_keys": [
+      "calibration",
+      "config",
+      "format",
+      "model",
+      "normalization",
+      "output_consistency",
+      "selection",
+      "source_checkpoint_sha256"
+    ]
+  },
+  "code_dependency": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference"
+}
