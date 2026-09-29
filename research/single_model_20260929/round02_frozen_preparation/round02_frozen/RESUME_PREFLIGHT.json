@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "arm": "trace",
+      "next_update_bitwise_equal": true,
+      "optimizer_bitwise_equal": true,
+      "next_order_equal": true,
+      "preclip_norm": 0.03720274567604065,
+      "frozen_all_parameters_buffers_unchanged": true
+    },
+    {
+      "arm": "raw_f",
+      "next_update_bitwise_equal": true,
+      "optimizer_bitwise_equal": true,
+      "next_order_equal": true,
+      "preclip_norm": 0.12052448838949203,
+      "frozen_all_parameters_buffers_unchanged": true
+    }
+  ],
+  "discarded_updates_only": true,
+  "test_inference": false,
+  "source_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round02_frozen/config.json": "6c21c3b74499485e61a9b903aba605126fbb176193da265a70e3d96654551f9e",
+    "/home/inspur/MTO-1/research/single_model_20260929/round02_frozen/model_frozen.py": "80186d72ce95634c926b6aeafa376e528ff0bb3204446acd6ce034220fe34569",
+    "/home/inspur/MTO-1/research/single_model_20260929/round02_frozen/cache_access.py": "ec160455be2400419a80b554bb7fb61c7d99e1f71fde7464a29482343d64822e",
+    "/home/inspur/MTO-1/research/single_model_20260929/round02_frozen/train_frozen.py": "c54b154a5fc7e32e8bfac9703175fbd21e4b50004cfbe61dc4c030eb5375368f",
+    "/home/inspur/MTO-1/research/single_model_20260929/round02_frozen/resume_preflight.py": "e8039ddfdb4e1e7c6ec33032ceb816588fb111f5ab7f419bae89f55dff5c0ad7"
+  },
+  "cache_receipt_sha256": "2cffa5004595395260ec0fec61b89271a49952d254b5756aa985d2c2830bb483"
+}

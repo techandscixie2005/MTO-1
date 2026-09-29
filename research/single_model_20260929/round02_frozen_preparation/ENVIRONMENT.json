@@ -1,0 +1,20 @@
+{
+  "python_executable": "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/bin/python",
+  "python_version": "3.10.19",
+  "packages": {
+    "torch": "2.5.1+cu121",
+    "e3nn": "0.4.4",
+    "numpy": "2.2.6",
+    "torch-scatter": "2.1.2+pt25cu121",
+    "torch-cluster": "1.6.3+pt25cu121",
+    "torch-geometric": "2.7.0",
+    "scipy": "1.15.3",
+    "sympy": "1.13.1",
+    "opt-einsum": "3.4.0",
+    "opt-einsum-fx": "0.1.4"
+  },
+  "torch_file": "/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/__init__.py",
+  "cuda_build_version": "12.1",
+  "cudnn_version": 90100,
+  "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35"
+}

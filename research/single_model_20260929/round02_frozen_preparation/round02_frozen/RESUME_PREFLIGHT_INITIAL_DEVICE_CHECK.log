@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "/home/inspur/MTO-1/research/single_model_20260929/round02_frozen/resume_preflight.py", line 66, in <module>
+    if __name__=='__main__':main()
+  File "/home/inspur/MTO-1/research/single_model_20260929/round02_frozen/resume_preflight.py", line 54, in main
+    assert same(opts[0].state_dict(),opts[1].state_dict())
+  File "/home/inspur/MTO-1/research/single_model_20260929/round02_frozen/resume_preflight.py", line 35, in same
+    if isinstance(a,dict):return a.keys()==b.keys() and all(same(a[k],b[k]) for k in a)
+  File "/home/inspur/MTO-1/research/single_model_20260929/round02_frozen/resume_preflight.py", line 35, in <genexpr>
+    if isinstance(a,dict):return a.keys()==b.keys() and all(same(a[k],b[k]) for k in a)
+  File "/home/inspur/MTO-1/research/single_model_20260929/round02_frozen/resume_preflight.py", line 35, in same
+    if isinstance(a,dict):return a.keys()==b.keys() and all(same(a[k],b[k]) for k in a)
+  File "/home/inspur/MTO-1/research/single_model_20260929/round02_frozen/resume_preflight.py", line 35, in <genexpr>
+    if isinstance(a,dict):return a.keys()==b.keys() and all(same(a[k],b[k]) for k in a)
+  File "/home/inspur/MTO-1/research/single_model_20260929/round02_frozen/resume_preflight.py", line 35, in same
+    if isinstance(a,dict):return a.keys()==b.keys() and all(same(a[k],b[k]) for k in a)
+  File "/home/inspur/MTO-1/research/single_model_20260929/round02_frozen/resume_preflight.py", line 35, in <genexpr>
+    if isinstance(a,dict):return a.keys()==b.keys() and all(same(a[k],b[k]) for k in a)
+  File "/home/inspur/MTO-1/research/single_model_20260929/round02_frozen/resume_preflight.py", line 34, in same
+    if isinstance(a,torch.Tensor):return torch.equal(a,b)
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cpu and cuda:0! (when checking argument for argument other in method wrapper_CUDA__equal)
