@@ -1,0 +1,206 @@
+{
+  "schema_version": 1,
+  "scope": "/home/inspur/MTO-1/research/single_model_20260929",
+  "cadence_hours": 4,
+  "preferred_gpu_uuids": [
+    "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+    "GPU-cb4dc1ea-9ea3-e426-bdeb-df0bef8a23fa",
+    "GPU-e212aefc-f1d6-cc7a-5594-e87abeaf1184",
+    "GPU-2431a641-8045-a10b-4aa0-2769010e0708"
+  ],
+  "gpu_policy": {
+    "0": "Reserved by unrelated SpecGPT job. Do not touch.",
+    "1": "Preferred; baseline uncorrected ECC=0, remap pending=no.",
+    "2": "Preferred; baseline uncorrected ECC=0, remap pending=no.",
+    "3": "Excluded: volatile/aggregate uncorrected ECC=187/352; remap pending=yes.",
+    "4": "Preferred; baseline uncorrected ECC=0, remap pending=no.",
+    "5": "Reserve: one historical corrected ECC; uncorrected=0, pending=no; requires new admission.",
+    "6": "Preferred; baseline uncorrected ECC=0, remap pending=no.",
+    "7": "Excluded: volatile/aggregate uncorrected ECC=2/2; remap pending=yes."
+  },
+  "restart_policy": "Coordinator reviews recorded failure, identity, healthy resource admission, and resumable checkpoint before any owned-run restart. Monitor never signals any process.",
+  "runs": [
+    {
+      "id": "control_1790699021761399963",
+      "registered_at_utc": "2026-09-29T16:23:41.797353+00:00",
+      "identity": {
+        "pid": 1132183,
+        "start_ticks": 1254668652,
+        "uid": 1000,
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929",
+        "argv_sha256": "15193ef38184899207de551ede1d8885feb09746a4bd4a93a634e2c98d8e9528",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "process_state": "R"
+      },
+      "run_dir": "runs/control",
+      "gpu_uuid": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+      "status_path": "runs/control/status.json",
+      "log_path": "runs/control/train.log",
+      "completion_path": "runs/control/FIT_COMPLETE.json",
+      "failure_path": "runs/control/FAILED.json",
+      "checkpoint_paths": [
+        "runs/control/last.pt",
+        "runs/control/best.pt"
+      ],
+      "stale_after_seconds": 28800,
+      "monitor": true,
+      "restart_policy": "coordinator_review_required"
+    },
+    {
+      "id": "adapter_1790699021984516935",
+      "registered_at_utc": "2026-09-29T16:23:42.032137+00:00",
+      "identity": {
+        "pid": 1132188,
+        "start_ticks": 1254668674,
+        "uid": 1000,
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929",
+        "argv_sha256": "7ab520c26545dfc3c5951c800d21809b3827dec3223fea9cae74e1dfe4a4cf07",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "process_state": "R"
+      },
+      "run_dir": "runs/adapter",
+      "gpu_uuid": "GPU-cb4dc1ea-9ea3-e426-bdeb-df0bef8a23fa",
+      "status_path": "runs/adapter/status.json",
+      "log_path": "runs/adapter/train.log",
+      "completion_path": "runs/adapter/FIT_COMPLETE.json",
+      "failure_path": "runs/adapter/FAILED.json",
+      "checkpoint_paths": [
+        "runs/adapter/last.pt",
+        "runs/adapter/best.pt"
+      ],
+      "stale_after_seconds": 28800,
+      "monitor": true,
+      "restart_policy": "coordinator_review_required"
+    },
+    {
+      "id": "decorrelation_1790699022218490143",
+      "registered_at_utc": "2026-09-29T16:23:42.265118+00:00",
+      "identity": {
+        "pid": 1132193,
+        "start_ticks": 1254668698,
+        "uid": 1000,
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929",
+        "argv_sha256": "64f6ba0b5b0feb5656e8957c08743f81ec2292b9fe4a932381360fbd0f575ad4",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "process_state": "R"
+      },
+      "run_dir": "runs/decorrelation",
+      "gpu_uuid": "GPU-e212aefc-f1d6-cc7a-5594-e87abeaf1184",
+      "status_path": "runs/decorrelation/status.json",
+      "log_path": "runs/decorrelation/train.log",
+      "completion_path": "runs/decorrelation/FIT_COMPLETE.json",
+      "failure_path": "runs/decorrelation/FAILED.json",
+      "checkpoint_paths": [
+        "runs/decorrelation/last.pt",
+        "runs/decorrelation/best.pt"
+      ],
+      "stale_after_seconds": 28800,
+      "monitor": true,
+      "restart_policy": "coordinator_review_required"
+    },
+    {
+      "id": "both_1790699022426165198",
+      "registered_at_utc": "2026-09-29T16:23:42.460485+00:00",
+      "identity": {
+        "pid": 1132198,
+        "start_ticks": 1254668718,
+        "uid": 1000,
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929",
+        "argv_sha256": "a33c78c1c94778365fcadfce9e29831000fa0d64372aba815a68e5445a616156",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "process_state": "R"
+      },
+      "run_dir": "runs/both",
+      "gpu_uuid": "GPU-2431a641-8045-a10b-4aa0-2769010e0708",
+      "status_path": "runs/both/status.json",
+      "log_path": "runs/both/train.log",
+      "completion_path": "runs/both/FIT_COMPLETE.json",
+      "failure_path": "runs/both/FAILED.json",
+      "checkpoint_paths": [
+        "runs/both/last.pt",
+        "runs/both/best.pt"
+      ],
+      "stale_after_seconds": 28800,
+      "monitor": true,
+      "restart_policy": "coordinator_review_required"
+    },
+    {
+      "id": "round02_trace_1790705186282980177",
+      "registered_at_utc": "2026-09-29T18:06:26.330147+00:00",
+      "identity": {
+        "pid": 1158193,
+        "start_ticks": 1255285104,
+        "uid": 1000,
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round02_frozen",
+        "argv_sha256": "e2e2d014a5e1358f1d1a634051ef35dea14e2a9ac3fc5e6e806fd6ab93a31167",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "process_state": "R"
+      },
+      "run_dir": "round02_frozen/runs/trace",
+      "gpu_uuid": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+      "status_path": "round02_frozen/runs/trace/status.json",
+      "log_path": "round02_frozen/runs/trace/train.log",
+      "completion_path": "round02_frozen/runs/trace/FIT_COMPLETE.json",
+      "failure_path": "round02_frozen/runs/trace/FAILED.json",
+      "checkpoint_paths": [
+        "round02_frozen/runs/trace/last.pt",
+        "round02_frozen/runs/trace/best.pt"
+      ],
+      "stale_after_seconds": 28800,
+      "monitor": true,
+      "restart_policy": "coordinator_review_required"
+    },
+    {
+      "id": "round02_raw_f_1790705186486661348",
+      "registered_at_utc": "2026-09-29T18:06:26.533821+00:00",
+      "identity": {
+        "pid": 1158198,
+        "start_ticks": 1255285124,
+        "uid": 1000,
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round02_frozen",
+        "argv_sha256": "2843029c11153fa0c622bdbc6f98b960dc63cf6601271cf0095078b4a1128cfc",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "process_state": "R"
+      },
+      "run_dir": "round02_frozen/runs/raw_f",
+      "gpu_uuid": "GPU-cb4dc1ea-9ea3-e426-bdeb-df0bef8a23fa",
+      "status_path": "round02_frozen/runs/raw_f/status.json",
+      "log_path": "round02_frozen/runs/raw_f/train.log",
+      "completion_path": "round02_frozen/runs/raw_f/FIT_COMPLETE.json",
+      "failure_path": "round02_frozen/runs/raw_f/FAILED.json",
+      "checkpoint_paths": [
+        "round02_frozen/runs/raw_f/last.pt",
+        "round02_frozen/runs/raw_f/best.pt"
+      ],
+      "stale_after_seconds": 28800,
+      "monitor": true,
+      "restart_policy": "coordinator_review_required"
+    },
+    {
+      "id": "round03_source33_1790707949921845597",
+      "registered_at_utc": "2026-09-29T18:52:29.968487+00:00",
+      "identity": {
+        "pid": 1174422,
+        "start_ticks": 1255561468,
+        "uid": 1000,
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round03_transfer",
+        "argv_sha256": "c4fab5910b610129e21da0843081de65b10747db2ad9ca72657061cbe8c77a7e",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "process_state": "R"
+      },
+      "run_dir": "round03_transfer/runs/source33",
+      "gpu_uuid": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+      "status_path": "round03_transfer/runs/source33/status.json",
+      "log_path": "round03_transfer/runs/source33/train.log",
+      "completion_path": "round03_transfer/runs/source33/FIT_COMPLETE.json",
+      "failure_path": "round03_transfer/runs/source33/FAILED.json",
+      "checkpoint_paths": [
+        "round03_transfer/runs/source33/last.pt",
+        "round03_transfer/runs/source33/source_final.pt"
+      ],
+      "stale_after_seconds": 28800,
+      "monitor": true,
+      "restart_policy": "coordinator_review_required"
+    }
+  ]
+}

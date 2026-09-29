@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "manifest_sha256": "93674b785f0f93fb2671fca83941e9af2961ab665c3814a027791fbb3109ed37",
+  "source_files_checked": 69,
+  "fixed_epochs": 33,
+  "optimizer_updates": 49665,
+  "all_orders_reproduced": true,
+  "final_equals_resumable_last": true,
+  "source_process_state": "absent",
+  "OS_exit_code_observed": false,
+  "validation_attempts_after_coefficient_freeze": 1,
+  "coefficient_receipt_sha256": "cb1c355304033fed9a00f759925b84ded8e0b31ead4639652e68f943d1d54ce6",
+  "same_full_base_in_both_exports": true,
+  "valid_calibration_labels": 240710,
+  "valid_validation_labels": 66860,
+  "aggregate_metric_arithmetic_passed": true,
+  "native_r2": 0.40529412436957246,
+  "historical_affine_r2": 0.418119243896242,
+  "in_sample_r2": 0.40202435096643296,
+  "heldout_source_r2": 0.41637451473820386,
+  "nonlinear_preparation_gate_passed": true,
+  "checkpoint_hashes": {
+    "in_sample": {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round03_transfer/affine/in_sample.pt",
+      "sha256": "3f618f960492af279c6d569ee5b79cf1b43af86ba48d5d4fd53b38cb66d63387"
+    },
+    "heldout_source": {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round03_transfer/affine/heldout_source.pt",
+      "sha256": "291b80c87afc0c841781d3c7e1b376f6008a13d955291110d5305280d75df398"
+    }
+  },
+  "reviewed_unix": 1790712405.7156568,
+  "reviewer_no_inference_no_fitting_no_raw_label_decode": true,
+  "evaluation_gpu1_placement_observed": true,
+  "evaluation_launch_receipt_sha256": "ed7f69b39d1315d150fb960b1fb3f9c4c219c65db2350afe93971055d1ead262",
+  "completed_affine_fit_gpu_placement_verified": false,
+  "scope_note": "Independent source/hash, CPU checkpoint/order and aggregate checks. Reuses source-reviewed numerical replay of saved predictions; does not refit or decode raw labels.",
+  "source_sha256": "f2eca4071941ea6fb3725ec4c840c013b6cf99b4bfc604e0412e6a5570f14e81",
+  "analysis_receipt_sha256": "1dff1f5389e124bbbc873e774fa13d0a2437997d15f3a71fd3539fc0e32f7477"
+}

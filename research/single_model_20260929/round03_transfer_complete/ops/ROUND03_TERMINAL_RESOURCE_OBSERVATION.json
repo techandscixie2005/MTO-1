@@ -1,0 +1,25 @@
+{
+  "recorded_local_time": "2026-09-30T04:02:53+08:00",
+  "scope": "Requested independent source terminal check and bounded resource discrepancy follow-up",
+  "terminal_receipt": "monitoring/ROUND03_HEARTBEAT_20260929T195916.json",
+  "source_completed_epoch": 33,
+  "source_original_process_exited": true,
+  "source_final_sha256": "769026edf4e999799dd201c3e8f2ad3393e25ef9b3a5a99b23f7ce59ffc984ec",
+  "source_last_sha256": "52f2884b4869ae87d85ba56875021ff3d42383cd53bfad356362d213883499c9",
+  "checkpoint_hashes_match_terminal": true,
+  "gpu0_observation": {"pid": 1186535, "executable": "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/bin/python", "memory_mib": 504},
+  "same_snapshot_gpu1": {"uuid": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800", "memory_used": "13 MiB", "utilization": "0 %", "listed_processes": [{"pid": 7104, "name": "/usr/lib/xorg/Xorg", "memory_mib": 4}], "pid1186535_listed": false},
+  "pid1186535_argv_start_cwd_captured": false,
+  "bounded_followup": {
+    "commands": ["ps -p 1186535 -o pid,ppid,lstart,etime,args", "readlink /proc/1186535/cwd", "nvidia-smi --query-compute-apps=pid,gpu_uuid,used_gpu_memory --format=csv,noheader"],
+    "pid_already_absent": true,
+    "remaining_compute_apps": [{"pid": 712998, "gpu_uuid": "GPU-3399225d-00bd-4a9c-f7a9-2f098b642221", "memory_mib": 4354}],
+    "interpretation": "Science reported affine fit exit0 and frozen coefficient/export receipts, and held validation for externally bound GPU1 visibility. No contemporaneous argv/start/cwd for PID1186535 was captured. Full fit placement remains uncertain: allocation size alone cannot distinguish an incidental context from model inference or demonstrate harm."
+  },
+  "interventions": [],
+  "checkpoint_tensors_loaded": false,
+  "affine_or_inference_executed_by_monitor": false,
+  "gpu_locks_acquired_by_monitor": false,
+  "schedules_unchanged": true,
+  "pending": "Science operational device provenance explanation; preserve this original observation."
+}

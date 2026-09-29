@@ -1,0 +1,14 @@
+{
+  "state": "complete",
+  "completed_epoch": 33,
+  "manifest_sha256": "93674b785f0f93fb2671fca83941e9af2961ab665c3814a027791fbb3109ed37",
+  "fixed_epoch_selection": true,
+  "checkpoint": "/home/inspur/MTO-1/research/single_model_20260929/round03_transfer/runs/source33/source_final.pt",
+  "checkpoint_sha256": "769026edf4e999799dd201c3e8f2ad3393e25ef9b3a5a99b23f7ce59ffc984ec",
+  "last_checkpoint_sha256": "52f2884b4869ae87d85ba56875021ff3d42383cd53bfad356362d213883499c9",
+  "initial_model_tensor_sha256": "700349ff3855c1d461b24d5b0bf9d2efa038ab143c1385e427e5b2ab9d679b90",
+  "fit_index_sha256": "b7b00dfe514ae57f3dd609a60dc259625007a5f43288ff75e2c83a3a7e71da37",
+  "steps": 49665,
+  "heldout_or_outer_labels_used_during_fit": false,
+  "test_evaluated": false
+}

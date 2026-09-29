@@ -1,0 +1,145 @@
+{
+  "checked_at_utc": "2026-09-29T19:49:27.702150+00:00",
+  "kind": "dedicated four-hour heartbeat observation",
+  "run_id": "round03_source33_1790707949921845597",
+  "run_dir": "round03_transfer/runs/source33",
+  "registry_sha256": "49fe51912c5ea370efe88756118c4d46f9fafbb553fbef028960df2218f4a423",
+  "pinned_identity": {
+    "pid": 1174422,
+    "start_ticks": 1255561468,
+    "uid": 1000,
+    "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round03_transfer",
+    "argv_sha256": "c4fab5910b610129e21da0843081de65b10747db2ad9ca72657061cbe8c77a7e",
+    "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+    "process_state": "R"
+  },
+  "observed_identity": {
+    "pid": 1174422,
+    "start_ticks": 1255561468,
+    "uid": 1000,
+    "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round03_transfer",
+    "argv_sha256": "c4fab5910b610129e21da0843081de65b10747db2ad9ca72657061cbe8c77a7e",
+    "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+    "process_state": "S"
+  },
+  "identity_matches": true,
+  "original_source_process_exited": false,
+  "state": "RUNNING_IDENTITY_MATCH",
+  "latest_complete_epoch": 28,
+  "latest_epoch_seconds": 113.8775007724762,
+  "latest_train_losses": {
+    "total": 0.1325074019714751,
+    "energy": 0.028600415732731827,
+    "trace": 0.1039069862295349
+  },
+  "source_fit_has_no_validation_fields": true,
+  "gpu": {
+    "index": 1,
+    "uuid": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+    "name": "NVIDIA A800 80GB PCIe",
+    "temperature_c": "51 C",
+    "memory_used": "6283 MiB",
+    "utilization": "39 %",
+    "ecc_volatile": {
+      "sram_correctable": "0",
+      "sram_uncorrectable_parity": "0",
+      "sram_uncorrectable_secded": "0",
+      "dram_correctable": "0",
+      "dram_uncorrectable": "0"
+    },
+    "ecc_aggregate": {
+      "sram_correctable": "0",
+      "sram_uncorrectable_parity": "0",
+      "sram_uncorrectable_secded": "0",
+      "dram_correctable": "0",
+      "dram_uncorrectable": "0",
+      "sram_threshold_exceeded": "No"
+    },
+    "remapped_rows": {
+      "remapped_row_corr": "0",
+      "remapped_row_unc": "0",
+      "remapped_row_pending": "No",
+      "remapped_row_failure": "No"
+    },
+    "compute_processes": [
+      {
+        "pid": "7104",
+        "name": "/usr/lib/xorg/Xorg",
+        "used_memory": "4 MiB"
+      },
+      {
+        "pid": "1174422",
+        "name": "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/bin/python",
+        "used_memory": "6266 MiB"
+      }
+    ]
+  },
+  "healthy_owned_gpu": true,
+  "unrelated_gpu0_observed_processes": [
+    {
+      "pid": "7104",
+      "name": "/usr/lib/xorg/Xorg",
+      "used_memory": "4 MiB"
+    },
+    {
+      "pid": "712998",
+      "name": "/home/inspur/Documents/SpecGPT/envs/specgpt/bin/python",
+      "used_memory": "4354 MiB"
+    }
+  ],
+  "status_log_checkpoint_metadata": {
+    "status_path": {
+      "exists": true,
+      "bytes": 260,
+      "mtime_utc": "2026-09-29T19:49:22.725082+00:00",
+      "age_seconds": 4.2,
+      "content": {
+        "state": "training",
+        "pid": 1174422,
+        "epoch": 29,
+        "completed_epoch": 28,
+        "cursor": 64000,
+        "fit_molecules": 96284,
+        "last_update_unix": 1790711362.7256086,
+        "manifest_sha256": "93674b785f0f93fb2671fca83941e9af2961ab665c3814a027791fbb3109ed37"
+      }
+    },
+    "log_path": {
+      "exists": true,
+      "bytes": 10548,
+      "mtime_utc": "2026-09-29T19:48:04.494079+00:00",
+      "age_seconds": 82.4
+    },
+    "completion_path": {
+      "exists": false
+    },
+    "failure_path": {
+      "exists": false
+    }
+  },
+  "checkpoints_stat_only": {
+    "round03_transfer/runs/source33/last.pt": {
+      "exists": true,
+      "bytes": 25213074,
+      "mtime_utc": "2026-09-29T19:48:04.474079+00:00",
+      "age_seconds": 82.4
+    },
+    "round03_transfer/runs/source33/source_final.pt": {
+      "exists": false
+    }
+  },
+  "terminal_record": null,
+  "completed_checkpoint_hashes": {},
+  "completion_gate_verified_for_science": false,
+  "manifest_sha256": "93674b785f0f93fb2671fca83941e9af2961ab665c3814a027791fbb3109ed37",
+  "review_sha256": "a6807aae55c59f254f2048b1d696a754f130075e32ef4763dfa1c94f4fb1c04c",
+  "publication_receipt_sha256": "1b28241ea82319087cc6681c0d36caf18a837ee8fc3b84fc6287429d0174df37",
+  "context_hashes": {
+    "current_state/COORDINATOR.md": "915a0ff493f426b4ea7e22444aad72f2af4636798da4d4958f56219f21f24207",
+    "ops/ROUND03_RUNTIME_HANDOFF.md": "ebe3e2b6515d7b26151ef02dfc7a8b07c0175bbceef9b4c4ffa6d6bcc69ce5aa"
+  },
+  "checkpoint_tensors_loaded": false,
+  "interventions": [],
+  "affine_commands_executed": false,
+  "periodic_schedules_unchanged": true
+}

@@ -1,0 +1,43 @@
+{
+  "status": "shared_Input_frame_supported_by_provenance_but_no_direct_frame_alignment_test",
+  "no_evidence_of_frame_mismatch": true,
+  "route_distribution": {
+    "#p td=(nstates=10) b3lyp/TZVP nosymm geom=check guess=read": 133885
+  },
+  "coordinate_frame_distribution": {
+    "Input": 133727,
+    "None": 158
+  },
+  "unambiguous_single_calculation_count": 133727,
+  "extractor_geometry_policy": "last Standard before first label if any, otherwise last pre-label orientation; unambiguous valid record requires exactly one pre-label geometry table",
+  "electric_vector_policy": "copy labeled electric XYZ; replace only with electronic-transition rows2/3/4 when every component agrees within5.1e-5; no rotation",
+  "velocity_vector_policy": "copy labeled velocity XYZ without rotation; no separate vector-frame label",
+  "downstream_curation": "prepare_round.py asserts all curated positions and A equal extracted values after FP32 conversion; dataset.py passes them through without rotation. This is reviewed historical code/provenance, not a rerun of all-data assertions.",
+  "historical_spotcheck": {
+    "files": 108,
+    "states": 810,
+    "checked": "Input coordinates and electric table components separately against original logs",
+    "not_checked": "rotation identity tying vector axes to geometry; velocity orientation"
+  },
+  "bounded_existing_record_metadata_sample": {
+    "basis_printed": "TZVP (5D, 7F)",
+    "coordinate_frame": "Input",
+    "orientation_table_count_before_labels": 1,
+    "electric_dipole_table_count": 1,
+    "unambiguous_single_calculation": true
+  },
+  "basis_sample_does_not_prove_all_record_basis_conventions": true,
+  "conclusion": "No parser rotation or mixed-geometry join is apparent. All complete records use Input coordinates and routes include nosymm, consistent with a shared input convention. Code and magnitude reconstruction alone do not independently certify vector-to-geometry alignment.",
+  "interpretation": "Do not infer a mismatch from performance or claim full frame verification. Current eta0 LE+Ls uses trace(A), which is unchanged by a pure orthogonal frame rotation; future directional A or vector objectives need stronger provenance.",
+  "no_raw_log_acquisition_model_fit_or_data_edits": true,
+  "source_hashes": {
+    "/home/inspur/datasets/QM9S/qm9s_td_extracted_20260925/dataset_manifest.json": "fc848263753bb8311a07bdf39299193f8b6fb3ff0f35fef329c81a8255580959",
+    "/home/inspur/datasets/QM9S/qm9s_td_extracted_20260925/extract_qm9s.py": "71ddb1625f6aa5e73e9c38b738b23e80d0100303049804d60219835eda86fa9b",
+    "/home/inspur/datasets/QM9S/qm9s_td_extracted_20260925/verify_source_samples.py": "322cf49902ea7bf745aefe758cf26b4de3ae10aefa8d59a0eec5be2875352738",
+    "/home/inspur/datasets/QM9S/qm9s_td_extracted_20260925/source_spotcheck_report.json": "01e281dd50454787c88233f907314dadba0a76edbc42103c7be2ab149b2b1acf",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/prepare_round.py": "7f1015342e5863890db4df06cfd66a4e36ee070e94c330e8823d603f32ac1461",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/dataset.py": "bb71448b7e7ddcca777d23509b46e1437fa553cac29a89f0900dccc97e34cadb",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/reports/data_audit.json": "e8c14515c1692f93848987faf7a0d199cf7c16ab29786232ee077c4de3cb52ca"
+  },
+  "script_sha256": "90c241c60803c334f4870ba343b4205ec6edc309b9e8e774bb29fd1a9c8d5074"
+}

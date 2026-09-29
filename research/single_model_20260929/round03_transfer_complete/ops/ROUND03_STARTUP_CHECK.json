@@ -1,0 +1,72 @@
+{
+  "passed": true,
+  "checked_at_utc": "2026-09-29T18:55:38.728224+00:00",
+  "monitor_record": "CHECK_20260929T185538Z.json",
+  "run_id": "round03_source33_1790707949921845597",
+  "pid": 1174422,
+  "physical_gpu": 1,
+  "gpu_uuid": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+  "pinned_identity": {
+    "pid": 1174422,
+    "start_ticks": 1255561468,
+    "uid": 1000,
+    "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round03_transfer",
+    "argv_sha256": "c4fab5910b610129e21da0843081de65b10747db2ad9ca72657061cbe8c77a7e",
+    "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+    "process_state": "R"
+  },
+  "observed_identity": {
+    "pid": 1174422,
+    "start_ticks": 1255561468,
+    "uid": 1000,
+    "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round03_transfer",
+    "argv_sha256": "c4fab5910b610129e21da0843081de65b10747db2ad9ca72657061cbe8c77a7e",
+    "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+    "process_state": "R"
+  },
+  "identity_matches": true,
+  "authoritative_state": "RUNNING_IDENTITY_MATCH",
+  "manifest_sha256": "93674b785f0f93fb2671fca83941e9af2961ab665c3814a027791fbb3109ed37",
+  "first_epoch_seconds": 124.60011744499207,
+  "latest_complete_epoch": 1,
+  "latest_epoch_seconds": 124.60011744499207,
+  "latest_training_losses": {
+    "total": 0.36854801242644514,
+    "energy": 0.13435496624099055,
+    "trace": 0.23419304647625352
+  },
+  "fixed_source_epochs": 33,
+  "source_progress_has_no_validation_fields": true,
+  "data_access_metadata": {
+    "global_rows": 96284,
+    "geometry_members": [
+      "ids",
+      "z",
+      "pos",
+      "edge"
+    ],
+    "target_members": [
+      "E",
+      "A",
+      "mask_E",
+      "mask_A"
+    ],
+    "raw_f_decoded": false,
+    "calibration_validation_test_target_rows_decoded": 0,
+    "fit_index_sha256": "b7b00dfe514ae57f3dd609a60dc259625007a5f43288ff75e2c83a3a7e71da37"
+  },
+  "last_checkpoint_stat_only": {
+    "exists": true,
+    "bytes": 25207314,
+    "mtime_utc": "2026-09-29T18:54:45.032952+00:00",
+    "age_seconds": 53.7
+  },
+  "source_final_stat_only": {
+    "exists": false
+  },
+  "source_final_not_expected_until_epoch33": true,
+  "unrelated_gpu0_preserved": true,
+  "checkpoint_contents_loaded": false,
+  "four_hour_schedule_unchanged": true,
+  "interventions": []
+}

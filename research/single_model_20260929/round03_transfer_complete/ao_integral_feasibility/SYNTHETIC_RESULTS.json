@@ -1,0 +1,77 @@
+{
+  "passed": true,
+  "scope": "analytic Gaussian toy plus AO-pair algebra, not target-basis or dataset reconstruction",
+  "no_model_dataset_GPU_install_or_fitting": true,
+  "primitive_exponent_bohr_minus2": 0.8,
+  "onsite": {
+    "mu_z": [
+      0.0,
+      0.0,
+      0.5590169943749475
+    ],
+    "A_zz": 0.31250000000000006,
+    "nuclear_point_charge_span_dimension": 0,
+    "isotropic_three_component_aggregate_A": [
+      [
+        0.31250000000000006,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.31250000000000006,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.31250000000000006
+      ]
+    ],
+    "single_atom_degeneracy_caveat": "Individual directional transition is a local algebra example; an isolated spherical atom cannot choose a physical unique direction from geometry."
+  },
+  "PSD_and_origin": {
+    "min_covariance_eigenvalue": 0.0,
+    "K_times_vecS_norm": 0.0,
+    "origin_shift_max_A_error": 0.0
+  },
+  "symmetry": {
+    "proper_and_improper_joint_transformation_max_errors": [
+      2.7755575615628914e-16,
+      3.3306690738754696e-16
+    ],
+    "AO_permutation_error": 0.0,
+    "inversion_T_sign_change_covariance_error": 0.0,
+    "electronic_state_phase_flip_A_error": 0.0
+  },
+  "nonorthogonal_basis": {
+    "transported_coefficients_A_error": 2.7755575615628914e-16,
+    "correct_overlap_charge_max_abs": 2.0903417885520525e-16,
+    "naive_trace_zero_overlap_charge": 0.6799999999999998,
+    "naive_trace_zero_origin_A_drift": 1.484673706072033,
+    "recomputed_Euclidean_projector_basis_A_drift": 1.3798485296774774
+  },
+  "coherence": {
+    "PSD_cross_terms_strength": 0.0,
+    "diagonal_only_strength": 2.0
+  },
+  "unidentified_density": {
+    "neutral_dark_component_A_error": 0.0,
+    "covariance_Frobenius_change": 2.449489742783178
+  },
+  "exact_electronic_degeneracy": {
+    "individual_A_change": 0.15625000000000003,
+    "group_sum_A_error": 5.551115123125783e-17
+  },
+  "overlap_conditioning": {
+    "smallest_eigenvalue": 1e-12,
+    "inverse_square_root_spectral_norm": 1000000.0
+  },
+  "cost_scaling": {
+    "dense_pair_covariance": "O(M^4)",
+    "rank_r_factors": "O(r*M^2)",
+    "illustrative_M_100_real_symmetric_pair_dimension": 5050,
+    "illustrative_dense_FP64_bytes_per_state": 204020000
+  },
+  "script_sha256": "0d0a3d136f4e4d30f86ddba71bb8149a8457a43cc3f55adb233f6918e34e2aa0"
+}

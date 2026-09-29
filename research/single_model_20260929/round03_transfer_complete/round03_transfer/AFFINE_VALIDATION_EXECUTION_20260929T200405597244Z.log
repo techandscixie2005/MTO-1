@@ -1,0 +1,686 @@
+/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/lib/python3.10/site-packages/e3nn/o3/_wigner.py:10: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  _Jd, _W3j_flat, _W3j_indices = torch.load(os.path.join(os.path.dirname(__file__), 'constants.pt'))
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+{
+  "manifest_sha256": "93674b785f0f93fb2671fca83941e9af2961ab665c3814a027791fbb3109ed37",
+  "coefficient_receipt_sha256": "cb1c355304033fed9a00f759925b84ded8e0b31ead4639652e68f943d1d54ce6",
+  "export_receipt_sha256": "26d766b668035f83e533a5899381bedba7af0635a9ee7bc7f3a4ea0c18fac065",
+  "maps": {
+    "in_sample": {
+      "alpha": 1.0180950011215777,
+      "beta": -0.0002909346448593461,
+      "count": 240710,
+      "zero_target_count": 4546,
+      "mean_prediction": 0.023159477597812193,
+      "mean_target": 0.023287613726060412,
+      "centered_denominator": 402.840505241057,
+      "native_calibration_subset_metrics": {
+        "count": 240710,
+        "sse": 214.01178119652187,
+        "sst": 631.4271330403243,
+        "r2": 0.6610665427599631,
+        "rmse": 0.029817537517134667,
+        "mae": 0.015994325052402444
+      },
+      "in_subset_affine_fit_metrics_descriptive": {
+        "count": 240710,
+        "sse": 213.87586476210777,
+        "sst": 631.4271330403243,
+        "r2": 0.6612817955220034,
+        "rmse": 0.029808067624825733,
+        "mae": 0.016012116626331865
+      }
+    },
+    "heldout_source": {
+      "alpha": 0.9025853252242239,
+      "beta": 0.0018285582112617521,
+      "count": 240710,
+      "zero_target_count": 4546,
+      "mean_prediction": 0.023775099057219567,
+      "mean_target": 0.023287613726060412,
+      "centered_denominator": 336.81945974091053,
+      "native_calibration_subset_metrics": {
+        "count": 240710,
+        "sse": 360.2871923503666,
+        "sst": 631.4271330403243,
+        "r2": 0.4294081240766734,
+        "rmse": 0.038688094991524556,
+        "mae": 0.018661329174038906
+      },
+      "in_subset_affine_fit_metrics_descriptive": {
+        "count": 240710,
+        "sse": 357.03370125890564,
+        "sst": 631.4271330403243,
+        "r2": 0.43456072351565433,
+        "rmse": 0.03851301684752994,
+        "mae": 0.01863344710608706
+      }
+    }
+  },
+  "metrics": {
+    "native": {
+      "raw_f": {
+        "count": 66860,
+        "sse": 94.20511997443612,
+        "sst": 158.4062371581119,
+        "r2": 0.40529412436957246,
+        "rmse": 0.03753652523222766,
+        "mae": 0.017785608381106592
+      },
+      "per_state": [
+        {
+          "count": 6686,
+          "sse": 2.1794692566940204,
+          "sst": 12.61879869940323,
+          "r2": 0.8272839349757524,
+          "rmse": 0.018054779445556866,
+          "mae": 0.007922164925164319
+        },
+        {
+          "count": 6686,
+          "sse": 4.819212781814683,
+          "sst": 18.235775544983547,
+          "r2": 0.7357275664022749,
+          "rmse": 0.026847562674657273,
+          "mae": 0.014923084895033018
+        },
+        {
+          "count": 6686,
+          "sse": 6.475522071753758,
+          "sst": 15.7967115661382,
+          "r2": 0.5900715130081456,
+          "rmse": 0.031121047603056676,
+          "mae": 0.01720435439722279
+        },
+        {
+          "count": 6686,
+          "sse": 8.503344847709693,
+          "sst": 13.942564171212982,
+          "r2": 0.39011614052554044,
+          "rmse": 0.035662493856977624,
+          "mae": 0.019264421414392167
+        },
+        {
+          "count": 6686,
+          "sse": 9.985052543684965,
+          "sst": 17.24040983047562,
+          "r2": 0.42083438608086143,
+          "rmse": 0.03864488249971574,
+          "mae": 0.01918522369753664
+        },
+        {
+          "count": 6686,
+          "sse": 10.058171971909605,
+          "sst": 13.289132092503738,
+          "r2": 0.2431280009938862,
+          "rmse": 0.03878612049010174,
+          "mae": 0.019530168655059757
+        },
+        {
+          "count": 6686,
+          "sse": 13.891143025904254,
+          "sst": 14.621334553797487,
+          "r2": 0.049940142276792776,
+          "rmse": 0.04558120533371822,
+          "mae": 0.02022097552326662
+        },
+        {
+          "count": 6686,
+          "sse": 15.561690398900025,
+          "sst": 22.45326726314837,
+          "r2": 0.3069298015064029,
+          "rmse": 0.04824421000305042,
+          "mae": 0.02093983293947137
+        },
+        {
+          "count": 6686,
+          "sse": 12.070259049955448,
+          "sst": 17.279348696118756,
+          "r2": 0.3014633096288728,
+          "rmse": 0.042488862980889844,
+          "mae": 0.019539598632782533
+        },
+        {
+          "count": 6686,
+          "sse": 10.661254026109678,
+          "sst": 12.54413376511068,
+          "r2": 0.15010041938789775,
+          "rmse": 0.039931990542636735,
+          "mae": 0.019126258731136724
+        }
+      ],
+      "bright_tail": {
+        "q90": {
+          "threshold_train_raw_f": 0.0549,
+          "count": 6650,
+          "sse": 60.47105220820115,
+          "sst": 64.32639110899399,
+          "r2": 0.05993401517365382,
+          "rmse": 0.09535927490026301,
+          "mae": 0.06744747855902049
+        },
+        "q99": {
+          "threshold_train_raw_f": 0.2412,
+          "count": 639,
+          "sse": 30.903120625713857,
+          "sst": 15.872315394397496,
+          "r2": -0.946982520056389,
+          "rmse": 0.21991291712869662,
+          "mae": 0.1638873854195929
+        }
+      }
+    },
+    "historical_validation_fit": {
+      "raw_f": {
+        "count": 66860,
+        "sse": 92.17354104911337,
+        "sst": 158.4062371581119,
+        "r2": 0.418119243896242,
+        "rmse": 0.03712957259073239,
+        "mae": 0.01821906614074963
+      },
+      "per_state": [
+        {
+          "count": 6686,
+          "sse": 2.277078101066378,
+          "sst": 12.61879869940323,
+          "r2": 0.8195487418961628,
+          "rmse": 0.01845464847711158,
+          "mae": 0.009444723662721831
+        },
+        {
+          "count": 6686,
+          "sse": 4.82313615447774,
+          "sst": 18.235775544983547,
+          "r2": 0.7355124193879141,
+          "rmse": 0.026858488895264074,
+          "mae": 0.015588536548950559
+        },
+        {
+          "count": 6686,
+          "sse": 6.339250052168884,
+          "sst": 15.7967115661382,
+          "r2": 0.5986981198189573,
+          "rmse": 0.030791848075301432,
+          "mae": 0.01773072236147883
+        },
+        {
+          "count": 6686,
+          "sse": 8.194269900520744,
+          "sst": 13.942564171212982,
+          "r2": 0.41228386687727503,
+          "rmse": 0.03500837449599797,
+          "mae": 0.019606203144817036
+        },
+        {
+          "count": 6686,
+          "sse": 10.138538136823614,
+          "sst": 17.24040983047562,
+          "r2": 0.4119317210834589,
+          "rmse": 0.038940765390742045,
+          "mae": 0.01962028092670356
+        },
+        {
+          "count": 6686,
+          "sse": 9.677759767067371,
+          "sst": 13.289132092503738,
+          "r2": 0.2717538135897908,
+          "rmse": 0.03804558203987845,
+          "mae": 0.01966183336347051
+        },
+        {
+          "count": 6686,
+          "sse": 12.846763903615294,
+          "sst": 14.621334553797487,
+          "r2": 0.1213685825772517,
+          "rmse": 0.0438342606025792,
+          "mae": 0.020366501440880536
+        },
+        {
+          "count": 6686,
+          "sse": 15.6070252987103,
+          "sst": 22.45326726314837,
+          "r2": 0.3049107234239592,
+          "rmse": 0.04831443231719854,
+          "mae": 0.021130398235435787
+        },
+        {
+          "count": 6686,
+          "sse": 11.738020565632889,
+          "sst": 17.279348696118756,
+          "r2": 0.3206907984749765,
+          "rmse": 0.041900021606130586,
+          "mae": 0.019711110476806855
+        },
+        {
+          "count": 6686,
+          "sse": 10.531699169030166,
+          "sst": 12.54413376511068,
+          "r2": 0.16042834314137733,
+          "rmse": 0.03968862347748114,
+          "mae": 0.0193303512462308
+        }
+      ],
+      "bright_tail": {
+        "q90": {
+          "threshold_train_raw_f": 0.0549,
+          "count": 6650,
+          "sse": 64.32264341160715,
+          "sst": 64.32639110899399,
+          "r2": 5.826065044578499e-05,
+          "rmse": 0.09834926515552952,
+          "mae": 0.07004557088545413
+        },
+        "q99": {
+          "threshold_train_raw_f": 0.2412,
+          "count": 639,
+          "sse": 34.21121869190941,
+          "sst": 15.872315394397496,
+          "r2": -1.1554018958056402,
+          "rmse": 0.2313842764729688,
+          "mae": 0.17888208628544822
+        }
+      }
+    },
+    "in_sample": {
+      "raw_f": {
+        "count": 66860,
+        "sse": 94.72307247558712,
+        "sst": 158.4062371581119,
+        "r2": 0.40202435096643296,
+        "rmse": 0.03763957423037486,
+        "mae": 0.017819878821166094
+      },
+      "per_state": [
+        {
+          "count": 6686,
+          "sse": 2.203292181774124,
+          "sst": 12.61879869940323,
+          "r2": 0.8253960432954428,
+          "rmse": 0.018153186127592803,
+          "mae": 0.00792336797169003
+        },
+        {
+          "count": 6686,
+          "sse": 4.868340947476237,
+          "sst": 18.235775544983547,
+          "r2": 0.7330335123139053,
+          "rmse": 0.02698406080379292,
+          "mae": 0.01497036420646019
+        },
+        {
+          "count": 6686,
+          "sse": 6.5293831546456325,
+          "sst": 15.7967115661382,
+          "r2": 0.5866618740673847,
+          "rmse": 0.03125020647169753,
+          "mae": 0.017242376414396486
+        },
+        {
+          "count": 6686,
+          "sse": 8.570264838484338,
+          "sst": 13.942564171212982,
+          "r2": 0.3853164501706764,
+          "rmse": 0.03580254796372231,
+          "mae": 0.019309277993198967
+        },
+        {
+          "count": 6686,
+          "sse": 9.98457714246091,
+          "sst": 17.24040983047562,
+          "r2": 0.42086196090238415,
+          "rmse": 0.038643962522427425,
+          "mae": 0.019199805140527524
+        },
+        {
+          "count": 6686,
+          "sse": 10.12401935288198,
+          "sst": 13.289132092503738,
+          "r2": 0.23817302120182593,
+          "rmse": 0.038912873050368536,
+          "mae": 0.019577393301160498
+        },
+        {
+          "count": 6686,
+          "sse": 14.047192956375715,
+          "sst": 14.621334553797487,
+          "r2": 0.039267386660860826,
+          "rmse": 0.0458365147433059,
+          "mae": 0.02026379463288554
+        },
+        {
+          "count": 6686,
+          "sse": 15.578417806480793,
+          "sst": 22.45326726314837,
+          "r2": 0.3061848138222175,
+          "rmse": 0.04827013211680547,
+          "mae": 0.020980425629371875
+        },
+        {
+          "count": 6686,
+          "sse": 12.134685763843823,
+          "sst": 17.279348696118756,
+          "r2": 0.29773477130133463,
+          "rmse": 0.042602107223831454,
+          "mae": 0.019576139835988562
+        },
+        {
+          "count": 6686,
+          "sse": 10.68289833116356,
+          "sst": 12.54413376511068,
+          "r2": 0.14837496704027664,
+          "rmse": 0.039972504630157356,
+          "mae": 0.019155843085981287
+        }
+      ],
+      "bright_tail": {
+        "q90": {
+          "threshold_train_raw_f": 0.0549,
+          "count": 6650,
+          "sse": 60.06474173068875,
+          "sst": 64.32639110899399,
+          "r2": 0.06625040368088331,
+          "rmse": 0.09503837114332955,
+          "mae": 0.06721843523065936
+        },
+        "q99": {
+          "threshold_train_raw_f": 0.2412,
+          "count": 639,
+          "sse": 30.585079130659448,
+          "sst": 15.872315394397496,
+          "r2": -0.9269450216100901,
+          "rmse": 0.2187783663902947,
+          "mae": 0.16303416450273403
+        }
+      }
+    },
+    "heldout_source": {
+      "raw_f": {
+        "count": 66860,
+        "sse": 92.44991702989823,
+        "sst": 158.4062371581119,
+        "r2": 0.41637451473820386,
+        "rmse": 0.03718519615238152,
+        "mae": 0.01780584004620389
+      },
+      "per_state": [
+        {
+          "count": 6686,
+          "sse": 2.180958551597219,
+          "sst": 12.61879869940323,
+          "r2": 0.8271659130515838,
+          "rmse": 0.01806094707077158,
+          "mae": 0.00847765943530658
+        },
+        {
+          "count": 6686,
+          "sse": 4.741662625514099,
+          "sst": 18.235775544983547,
+          "r2": 0.7399802046358003,
+          "rmse": 0.026630672820939328,
+          "mae": 0.015022311018369714
+        },
+        {
+          "count": 6686,
+          "sse": 6.326510456669087,
+          "sst": 15.7967115661382,
+          "r2": 0.5995045911814594,
+          "rmse": 0.030760892286586697,
+          "mae": 0.017281365938508583
+        },
+        {
+          "count": 6686,
+          "sse": 8.249898667615549,
+          "sst": 13.942564171212982,
+          "r2": 0.40829401490946704,
+          "rmse": 0.03512700487339255,
+          "mae": 0.01922311380915278
+        },
+        {
+          "count": 6686,
+          "sse": 10.063624359735558,
+          "sst": 17.24040983047562,
+          "r2": 0.41627696448687457,
+          "rmse": 0.03879663175993731,
+          "mae": 0.01924717931222782
+        },
+        {
+          "count": 6686,
+          "sse": 9.779122546414264,
+          "sst": 13.289132092503738,
+          "r2": 0.26412631928532293,
+          "rmse": 0.03824430368493506,
+          "mae": 0.019389918925625072
+        },
+        {
+          "count": 6686,
+          "sse": 13.157648995654391,
+          "sst": 14.621334553797487,
+          "r2": 0.10010615328974493,
+          "rmse": 0.04436147340218943,
+          "mae": 0.020088657260745973
+        },
+        {
+          "count": 6686,
+          "sse": 15.558498535083725,
+          "sst": 22.45326726314837,
+          "r2": 0.30707195737970605,
+          "rmse": 0.04823926205583842,
+          "mae": 0.02082938127043678
+        },
+        {
+          "count": 6686,
+          "sse": 11.817885139080651,
+          "sst": 17.279348696118756,
+          "r2": 0.3160688318226279,
+          "rmse": 0.04204232220013253,
+          "mae": 0.019446084340449133
+        },
+        {
+          "count": 6686,
+          "sse": 10.57410715253369,
+          "sst": 12.54413376511068,
+          "r2": 0.1570476407112522,
+          "rmse": 0.0397684502706976,
+          "mae": 0.019052729151216478
+        }
+      ],
+      "bright_tail": {
+        "q90": {
+          "threshold_train_raw_f": 0.0549,
+          "count": 6650,
+          "sse": 63.19788428225149,
+          "sst": 64.32639110899399,
+          "r2": 0.017543450009971262,
+          "rmse": 0.09748559506640636,
+          "mae": 0.06934209298210714
+        },
+        "q99": {
+          "threshold_train_raw_f": 0.2412,
+          "count": 639,
+          "sse": 33.00876795387592,
+          "sst": 15.872315394397496,
+          "r2": -1.0796441561088894,
+          "rmse": 0.2272815739470115,
+          "mae": 0.1726827117936708
+        }
+      }
+    }
+  },
+  "energy": {
+    "count": 66860,
+    "sse": 1013.3249644548038,
+    "sst": 66156.66699740554,
+    "r2": 0.984682950178029,
+    "rmse": 0.1231093915677222,
+    "mae": 0.09138826413408496
+  },
+  "heldout_minus_in_sample_r2": 0.014350163771770896,
+  "heldout_minus_native_r2": 0.011080390368631399,
+  "nonlinear_preparation_gate_passed": true,
+  "standalone_geometry_replay": {
+    "in_sample": {
+      "max_abs_f": 1.2788847936207048e-07,
+      "checkpoint_sha256": "3f618f960492af279c6d569ee5b79cf1b43af86ba48d5d4fd53b38cb66d63387"
+    },
+    "heldout_source": {
+      "max_abs_f": 9.509224552228801e-08,
+      "checkpoint_sha256": "291b80c87afc0c841781d3c7e1b376f6008a13d955291110d5305280d75df398"
+    }
+  },
+  "validation_molecules": 6686,
+  "test_evaluated": false,
+  "validation_reused_historically": true,
+  "prediction_averaging": false,
+  "validation_completed_unix": 1790712258.0906553,
+  "validation_arrays_sha256": "1c4d4d8b44d19a57a2bd46ccfd0f8b054564ca1cc628a65d73a4629dc8c5e92a"
+}

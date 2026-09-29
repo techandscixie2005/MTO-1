@@ -1,0 +1,15 @@
+{
+  "manifest_sha256": "93674b785f0f93fb2671fca83941e9af2961ab665c3814a027791fbb3109ed37",
+  "coefficient_receipt_sha256": "cb1c355304033fed9a00f759925b84ded8e0b31ead4639652e68f943d1d54ce6",
+  "checkpoints": {
+    "in_sample": {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round03_transfer/affine/in_sample.pt",
+      "sha256": "3f618f960492af279c6d569ee5b79cf1b43af86ba48d5d4fd53b38cb66d63387"
+    },
+    "heldout_source": {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round03_transfer/affine/heldout_source.pt",
+      "sha256": "291b80c87afc0c841781d3c7e1b376f6008a13d955291110d5305280d75df398"
+    }
+  },
+  "single_model_single_checkpoint": true
+}

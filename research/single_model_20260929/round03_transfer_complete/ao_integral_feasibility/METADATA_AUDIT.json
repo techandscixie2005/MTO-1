@@ -1,0 +1,35 @@
+{
+  "source_path": "/home/inspur/datasets/QM9S/qm9s_td_extracted_20260925/dataset_manifest.json",
+  "source_sha256": "fc848263753bb8311a07bdf39299193f8b6fb3ff0f35fef329c81a8255580959",
+  "metadata": {
+    "route_section_distribution": {
+      "#p td=(nstates=10) b3lyp/TZVP nosymm geom=check guess=read": 133885
+    },
+    "program_version_distribution": {
+      "ES64L-G16RevB.01 20-Dec-2017": 133885
+    },
+    "rpa_flag_distribution": {
+      "T": 133727
+    },
+    "coordinate_frame_distribution": {
+      "Input": 133727,
+      "None": 158
+    },
+    "charge_multiplicity_distribution": {
+      "(0, 1)": 133727,
+      "(None, None)": 158
+    },
+    "units": {
+      "positions": "angstrom",
+      "energy": "eV",
+      "wavelength": "nm",
+      "transition_dipole": "atomic units",
+      "A": "atomic units squared",
+      "oscillator_strength": "dimensionless"
+    },
+    "connectivity": "Not supplied by extraction; no bonds or SMILES inferred. Geometry optimization protocol not inferred from TD geom=check."
+  },
+  "pyscf_installed_in_pinned_runtime": false,
+  "exact_basis_coefficients_order_cartesian_spherical_cross_program_parity_audited": false,
+  "raw_labels_logs_or_geometry_arrays_read": false
+}

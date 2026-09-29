@@ -1,0 +1,16 @@
+{
+  "attempt": "round03_source33_1790707949921845597",
+  "pid": 1174422,
+  "gpu": 1,
+  "gpu_uuid": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+  "manifest_sha256": "93674b785f0f93fb2671fca83941e9af2961ab665c3814a027791fbb3109ed37",
+  "review_sha256": "a6807aae55c59f254f2048b1d696a754f130075e32ef4763dfa1c94f4fb1c04c",
+  "publication_receipt_sha256": "1b28241ea82319087cc6681c0d36caf18a837ee8fc3b84fc6287429d0174df37",
+  "command": [
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/bin/python",
+    "/home/inspur/MTO-1/research/single_model_20260929/round03_transfer/train_source.py"
+  ],
+  "launched_at_unix": 1790707949.9246175,
+  "fixed_source_epochs": 33,
+  "monitor_registration_returncode": 0
+}

@@ -1,0 +1,10 @@
+version = 1
+id = "qm9s-e-a"
+kind = "heartbeat"
+name = "MTO single-model research — 4-hour monitoring"
+prompt = "Continue the authorized MTO single-model oscillator-strength research on SSH USTC-A800 at /home/inspur/MTO-1. Read the persistent coordinator plan and handoffs in C:\\Users\\master\\Documents\\ChatGPT\\MTO\\research_state and the current round records first. Use a dedicated monitoring subagent to check explicitly registered active experiments, GPU health, logs, validation metrics, and resumable checkpoints every four hours. Preserve unrelated jobs. Diagnose failures and safely resume only owned experiments with identity and checkpoint checks; record actions and avoid repeated blind restarts. Delegate detailed execution and analysis while the coordinator decides next controlled ablations. Keep one model and one checkpoint per predictor, frozen splits and valid raw-f evaluation, validation checkpoint selection, per-state and bright-tail metrics, and separate historical-test evidence from fresh holdout evidence. After each experimental round, first download all lightweight records to D:\\MTO\\archives\\, then inspect the exact staged files and commit and push only code, settings, logs, results, objectives, analysis and next decisions. Never upload weights, checkpoints, optimizer states, raw datasets, caches or credentials. Stay quiet while state is unchanged or non-actionable; notify only on meaningful progress, completion, failure, or required user action. If no experiments remain active, verify archive/publication and persist the next decision; do not create duplicate monitors."
+status = "ACTIVE"
+rrule = "FREQ=HOURLY;INTERVAL=4"
+target_thread_id = "01a0edd8-8c03-75d1-aeb0-953f11af6433"
+created_at = 1790348530898
+updated_at = 1790696994000
