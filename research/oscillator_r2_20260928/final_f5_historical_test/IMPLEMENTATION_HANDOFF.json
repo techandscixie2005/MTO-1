@@ -1,0 +1,31 @@
+{
+  "classification": "Exact-source final F5 historical-test implementation handoff, preparation only",
+  "timestamp_unix": 1790642060.7196343,
+  "files": {
+    "evaluator": "/home/inspur/MTO-1/research/oscillator_r2_20260928/final_f5_historical_test/evaluate.py",
+    "freeze": "/home/inspur/MTO-1/research/oscillator_r2_20260928/final_f5_historical_test/CANDIDATE_FREEZE.json",
+    "protocol": "/home/inspur/MTO-1/research/oscillator_r2_20260928/final_f5_historical_test/PROTOCOL.md",
+    "preflight": "/home/inspur/MTO-1/research/oscillator_r2_20260928/final_f5_historical_test/PREFLIGHT.json",
+    "freeze_provenance": "/home/inspur/MTO-1/research/oscillator_r2_20260928/final_f5_historical_test/PROVENANCE.json",
+    "tail_erratum_json": "/home/inspur/MTO-1/research/oscillator_r2_20260928/TAIL_THRESHOLD_PROVENANCE_ERRATUM.json",
+    "tail_erratum_md": "/home/inspur/MTO-1/research/oscillator_r2_20260928/TAIL_THRESHOLD_PROVENANCE_ERRATUM.md",
+    "geometry_code": "/home/inspur/MTO-1/research/oscillator_r2_20260928/geometry_error_audit/geometry_error_audit.py",
+    "gpu_health": "/home/inspur/MTO-1/research/oscillator_r2_20260928/architecture/gpu_health.py",
+    "historical_test_metadata": "/home/inspur/MTO-1/research/oscillator_r2_20260928/ensemble_diagnostic/EXPLORATORY_TEST.json"
+  },
+  "hashes": {
+    "evaluator": "aa4fdb125a099d0858e0a24430dd6676b0adecee1d33879469244390b39998ab",
+    "freeze": "46a8153e490e16f03bae0927bee4954f2cba95977050fb9f788aa9dbacda4855",
+    "protocol": "05afd33a04567cfab711a95d10734d0bcf8841dcf4f08c7ebcc036efafaf4e94",
+    "preflight": "da209894bc4a78bb50241742a2cb5bcfe1651bc1882408247ab6f3f6dc967c91",
+    "freeze_provenance": "aa4b916f25f73117b5a27da884776a81477f150dd57a44d9b88f89b8b83654f8",
+    "tail_erratum_json": "a87213de17df836b6a9fe4233e2fb6c242988c19bd0419005f0bbd1b10cfe52f",
+    "tail_erratum_md": "cc5933b34067bec9276f2dc25ce684b3db4d60bfa43228984eb4add50464184c",
+    "geometry_code": "cda3735529a57e83a6183ef82a85fc022022517404681bff0635a9bf91e54472",
+    "gpu_health": "c0f82c09ed865361c055fee290ea3a2339c1fcf38c55cf92d3fb0dbd780afa17",
+    "historical_test_metadata": "c85de6aae489ea43cf8b0559b29813d86e670878bcc6fe1c67cc4fac05b9e6a6"
+  },
+  "preflight_test_array_access": false,
+  "preflight_model_forward": false,
+  "execution_authorization_exists": false
+}

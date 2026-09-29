@@ -1,0 +1,81 @@
+{
+  "classification": "Frozen F5 final historical-test preparation only; no execution, test array access or model forward",
+  "time": 1790642720.6530712,
+  "root": "/home/inspur/MTO-1/research/oscillator_r2_20260928",
+  "entries": [
+    {
+      "relative_path": "final_f5_historical_test/CANDIDATE_FREEZE.json",
+      "bytes": 34457,
+      "sha256": "46a8153e490e16f03bae0927bee4954f2cba95977050fb9f788aa9dbacda4855"
+    },
+    {
+      "relative_path": "final_f5_historical_test/PROTOCOL.md",
+      "bytes": 8523,
+      "sha256": "05afd33a04567cfab711a95d10734d0bcf8841dcf4f08c7ebcc036efafaf4e94"
+    },
+    {
+      "relative_path": "final_f5_historical_test/PROVENANCE.json",
+      "bytes": 616,
+      "sha256": "aa4b916f25f73117b5a27da884776a81477f150dd57a44d9b88f89b8b83654f8"
+    },
+    {
+      "relative_path": "final_f5_historical_test/ROOT_PROTOCOL_ACCEPTANCE.json",
+      "bytes": 748,
+      "sha256": "f6b7b94e61515250e364105df9ba516efc444233666d30d2b4465e7b20765e1a"
+    },
+    {
+      "relative_path": "final_f5_historical_test/INDEPENDENT_FREEZE_HASH_VERIFICATION.json",
+      "bytes": 21265,
+      "sha256": "0c57a47fccd116dec3bdea0b3b49f0e3179087dc4e6b8afb4d52ce79d98de124"
+    },
+    {
+      "relative_path": "final_f5_historical_test/INDEPENDENT_CANDIDATE_IDENTITY_VERIFICATION.json",
+      "bytes": 1557,
+      "sha256": "e9b6888a38c7ae3128ff6c3dc0d8ecc17b32965ebb17935d2e5b21b3fb1f7ac2"
+    },
+    {
+      "relative_path": "final_f5_historical_test/evaluate.py",
+      "bytes": 34437,
+      "sha256": "aa4fdb125a099d0858e0a24430dd6676b0adecee1d33879469244390b39998ab"
+    },
+    {
+      "relative_path": "final_f5_historical_test/PREFLIGHT.json",
+      "bytes": 2212,
+      "sha256": "da209894bc4a78bb50241742a2cb5bcfe1651bc1882408247ab6f3f6dc967c91"
+    },
+    {
+      "relative_path": "final_f5_historical_test/IMPLEMENTATION_HANDOFF.json",
+      "bytes": 2327,
+      "sha256": "3a47540909607cdab80cf77edd761dd9db4f2061a950ad6a7f57beb379266d06"
+    },
+    {
+      "relative_path": "final_f5_historical_test/IMPLEMENTATION_REVIEW.json",
+      "bytes": 3685,
+      "sha256": "07dbcf0efb98e4ab9a3e631b450fa40382b5e73265a7285e18eba6505ac9812e"
+    },
+    {
+      "relative_path": "final_f5_historical_test/IMPLEMENTATION_REVIEW.md",
+      "bytes": 1750,
+      "sha256": "49262d92ae7d96f7348060f4ac3a3fb0c232b9b883c8380e1c2916230520f6e0"
+    },
+    {
+      "relative_path": "final_f5_historical_test/PRE_TEST_PREPARATION_REPORT.md",
+      "bytes": 1775,
+      "sha256": "291beb4a1ba0171b5e241df9f1745280af0befaec9f6e4ca6816cddd2bfff473"
+    },
+    {
+      "relative_path": "TAIL_THRESHOLD_PROVENANCE_ERRATUM.md",
+      "bytes": 2487,
+      "sha256": "cc5933b34067bec9276f2dc25ce684b3db4d60bfa43228984eb4add50464184c"
+    },
+    {
+      "relative_path": "TAIL_THRESHOLD_PROVENANCE_ERRATUM.json",
+      "bytes": 2419,
+      "sha256": "a87213de17df836b6a9fe4233e2fb6c242988c19bd0419005f0bbd1b10cfe52f"
+    }
+  ],
+  "total_source_bytes": 118258,
+  "runtime_arrays_checkpoints_excluded": true,
+  "test_access": false,
+  "execution_authorization": false
+}

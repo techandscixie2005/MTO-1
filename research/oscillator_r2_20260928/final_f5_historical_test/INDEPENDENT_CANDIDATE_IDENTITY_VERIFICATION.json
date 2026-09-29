@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "timestamp": "2026-09-29T08:32:05.075781+08:00",
+  "scope": "CPU checkpoint hash/metadata and pinned saved validation arithmetic only; no model forward or test arrays",
+  "components": {
+    "mto_eta0": {
+      "checkpoint_sha256": "9f1963267cd0e5e35212baca6b4080cf986e73aed6e1662c4cb720afb9a4c136",
+      "epoch": 33,
+      "validation_prediction_sha256": "25acae64bb4e3e541048a8705045f7f639d1113d537dbbef71672752e8065890"
+    },
+    "mto_eta01": {
+      "checkpoint_sha256": "1e787adfd1deddbd4f366e68cdd70a408ab3169167c07018abfe6fa363f4be2d",
+      "epoch": 33,
+      "validation_prediction_sha256": "9edffb5cd617469c78c8d83da7901ac90add69d89f27de7e8196a8736ae85500"
+    },
+    "mto_eta1": {
+      "checkpoint_sha256": "90c14c65359c1fa5ea3f1a495c83b1ed72d67707f213ce450dbf283ffc5ac9d0",
+      "epoch": 25,
+      "validation_prediction_sha256": "a3808b9ad425abf4f6fcfed840d0ed8d1ff6fcf1557037a4e01932c734dc68bb"
+    },
+    "G1": {
+      "checkpoint_sha256": "3718c223eb40cc6a40d710bd3b9086b5a3209b6d0eb440f7265f1444510e153f",
+      "epoch": 75,
+      "validation_prediction_sha256": "7c5fef99d9547c3fbe42c26fc7506287fc37a6cbc58f10d1900447a4724cfb5d"
+    },
+    "G3": {
+      "checkpoint_sha256": "f0ac00a5a19496e656d4b28969aae4f4ab0ecde3062fc9a92b92af10db0e322d",
+      "epoch": 174,
+      "validation_prediction_sha256": "55310a8f3924c5e5b2edd58c60a95dec0216b159672358ca2ff9609f5129adce"
+    }
+  },
+  "validation_f5_sse": 81.15157788267025,
+  "validation_f5_r2": 0.48769960489832564,
+  "molecules": 6686,
+  "all_masks_valid": true
+}

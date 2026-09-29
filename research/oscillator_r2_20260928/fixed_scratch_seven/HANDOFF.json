@@ -1,0 +1,32 @@
+{
+  "classification": "Implementation handoff for exact-hash independent review; fixture only, no actual scratch or seed results consumed by this preflight",
+  "timestamp_unix": 1790640504.9449372,
+  "hashes": {
+    "script": "931855b647b80b97645e3ba6d01d88a84c645455ed4dfc09b3306ad0a65e5f4d",
+    "protocol": "42570bafcfc2bf00b7f7ba1a68713787e32476f2859ab980ed6254b6d658f037",
+    "preflight": "ee39e614e8b2d65324a5ce4712758275f39a172ef97e90ea9cfb16275c35c4b3",
+    "amendment": "5c315badf8c93408693250453197dec6cecaeb0b6f89c193adb1f8f4af30b364",
+    "provenance": "dbb69f131508b21ff22f67ebe1c1ee0ba97ac855ccb2731bdfab3e679491f16c",
+    "fixed7_source": "3a11c1f90918437241eb6c26332fa87c7ef7b95f0b3f86493a0c8e908e627755",
+    "seed_compat_source": "cb8d7a7c50b186fbbb0d207fe0f53cad8e21b58d23e25c581e43273e3e755a41",
+    "scratch_source_pins": "c4db1881dc5b6c89e73bfacac1e9338ec68d3629ee45983d237973da373cf302",
+    "postrun_review": "aeb1363fdb211b7306751d6c48de09b7c3bd62f48915d0d117c204e9a322ed6b",
+    "scratch_review": "6226b1c68226ce8a5ed6ddf74c630bce32dd88e0fadc46b0de12e8e4d005c3e2",
+    "seed_compat_review": "6d4bfeb512901a582314778d8b70bb45e095e6882d348f84b4b09ec743943a3d"
+  },
+  "files": {
+    "script": "/home/inspur/MTO-1/research/oscillator_r2_20260928/fixed_scratch_seven/fixed_scratch7.py",
+    "protocol": "/home/inspur/MTO-1/research/oscillator_r2_20260928/fixed_scratch_seven/PROTOCOL.md",
+    "preflight": "/home/inspur/MTO-1/research/oscillator_r2_20260928/fixed_scratch_seven/PREFLIGHT.json",
+    "amendment": "/home/inspur/MTO-1/research/oscillator_r2_20260928/postrun_geometry/FIXED_SCRATCH_SEVEN_SECONDARY_AMENDMENT.md",
+    "provenance": "/home/inspur/MTO-1/research/oscillator_r2_20260928/postrun_geometry/FIXED_SCRATCH_SEVEN_SECONDARY_PROVENANCE.json",
+    "fixed7_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/fixed_seven_sidecar/fixed_seven.py",
+    "seed_compat_source": "/home/inspur/MTO-1/research/oscillator_r2_20260928/fixed_seven_completion/seed_mask_compat.py",
+    "scratch_source_pins": "/home/inspur/MTO-1/research/oscillator_r2_20260928/fixed_seven_sidecar/SCRATCH_SOURCE_PINS.json",
+    "postrun_review": "/home/inspur/MTO-1/research/oscillator_r2_20260928/postrun_geometry/IMPLEMENTATION_REVIEW.json",
+    "scratch_review": "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/IMPLEMENTATION_REVIEW.json",
+    "seed_compat_review": "/home/inspur/MTO-1/research/oscillator_r2_20260928/fixed_seven_completion/COMPATIBILITY_REVIEW.json"
+  },
+  "actual_completed_mode_executed": false,
+  "test_access": false
+}

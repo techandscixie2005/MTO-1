@@ -1,0 +1,107 @@
+{
+  "timestamp": "2026-09-29T08:44:27.472439+08:00",
+  "passed": true,
+  "script_sha256": "aa4fdb125a099d0858e0a24430dd6676b0adecee1d33879469244390b39998ab",
+  "freeze_sha256": "46a8153e490e16f03bae0927bee4954f2cba95977050fb9f788aa9dbacda4855",
+  "protocol_sha256": "05afd33a04567cfab711a95d10734d0bcf8841dcf4f08c7ebcc036efafaf4e94",
+  "preflight_sha256": "da209894bc4a78bb50241742a2cb5bcfe1651bc1882408247ab6f3f6dc967c91",
+  "handoff_sha256": "3a47540909607cdab80cf77edd761dd9db4f2061a950ad6a7f57beb379266d06",
+  "reviewer": "backbone_baseline_audit",
+  "scope": "Independent code review plus repeated synthetic/saved-validation/CPU-checkpoint checks only. No evaluate/run_test, model forward, GPU snapshot, test prediction or test-row consumption.",
+  "validation": {
+    "eta0": {
+      "count": 66860,
+      "sse": 94.20512092938401,
+      "sst": 158.4062371581119,
+      "r2": 0.4052941183410983,
+      "mae": 0.017785608345899415,
+      "rmse": 0.037536525422479664,
+      "mean_signed_error": -0.0003239182921283121,
+      "overprediction_fraction": 0.6387825306610828
+    },
+    "old3": {
+      "count": 66860,
+      "sse": 87.2150742627189,
+      "sst": 158.4062371581119,
+      "r2": 0.4494214632744171,
+      "mae": 0.017345038638210148,
+      "rmse": 0.03611707668926027,
+      "mean_signed_error": -0.000511999750944044,
+      "overprediction_fraction": 0.6457523182769968
+    },
+    "F5": {
+      "count": 66860,
+      "sse": 81.15157788267025,
+      "sst": 158.4062371581119,
+      "r2": 0.48769960489832564,
+      "mae": 0.016334465778657103,
+      "rmse": 0.0348389693055272,
+      "mean_signed_error": -0.002058141678671824,
+      "overprediction_fraction": 0.6025426263834879
+    }
+  },
+  "validation_adapter": [
+    {
+      "rows": 64,
+      "exact_tensor_keys": [
+        "batch",
+        "edge_index",
+        "n",
+        "pos",
+        "z"
+      ]
+    },
+    {
+      "rows": 30,
+      "exact_tensor_keys": [
+        "batch",
+        "edge_index",
+        "n",
+        "pos",
+        "z"
+      ]
+    }
+  ],
+  "synthetic": {
+    "group_bootstrap": true,
+    "integer_molecule_order_ge12_checked": true,
+    "changed_source_checkpoint_hash_and_incomplete_split_rejected": true,
+    "preexisting_partial_marker_and_prediction_rejected": true,
+    "misaligned_ids_indices_fp64_truth_mask_nonfinite_rejected": true,
+    "changed_array_hash_and_output_overwrite_rejected": true,
+    "missing_or_changed_authorization_rejected": true
+  },
+  "independent_bootstrap_recomputation": {
+    "molecule": {
+      "units": 12,
+      "draws": 2000,
+      "seed": 20260929,
+      "delta_r2_p2p5_p50_p97p5": [
+        -0.04855711918739441,
+        0.011226716355313976,
+        0.07827978988747554
+      ],
+      "positive_fraction": 0.6845
+    },
+    "group": {
+      "units": 9,
+      "draws": 2000,
+      "seed": 20260929,
+      "delta_r2_p2p5_p50_p97p5": [
+        -0.04796596104025547,
+        0.011132231724827739,
+        0.09946569217552918
+      ],
+      "positive_fraction": 0.663
+    }
+  },
+  "group_contribution_arithmetic_passed": true,
+  "execution_without_authorization_rejected": true,
+  "execution_authorized": false,
+  "remaining_gates": [
+    "D-first byte-verified archiving and SSH publication of accepted freeze/protocol/code/preflight/review and completed studies",
+    "Separate explicit root EXECUTION_AUTHORIZATION bound to publication and exact hashes",
+    "Fresh healthy idle physical GPU4 admission, shared lock and exclusive STARTED before any test consumption"
+  ],
+  "interpretation_limit": "Validation-selected, historically reused-test comparison; not fresh holdout confirmation. No candidate change, retries or iterative queries authorized."
+}

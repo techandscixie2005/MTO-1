@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "classification": "Synthetic plus saved-validation-only preparation; no test bytes/member or model forward",
+  "time": 1790642060.3172557,
+  "script_sha256": "aa4fdb125a099d0858e0a24430dd6676b0adecee1d33879469244390b39998ab",
+  "freeze_sha256": "46a8153e490e16f03bae0927bee4954f2cba95977050fb9f788aa9dbacda4855",
+  "protocol_sha256": "05afd33a04567cfab711a95d10734d0bcf8841dcf4f08c7ebcc036efafaf4e94",
+  "validation": {
+    "eta0": {
+      "count": 66860,
+      "sse": 94.20512092938401,
+      "sst": 158.4062371581119,
+      "r2": 0.4052941183410983,
+      "mae": 0.017785608345899415,
+      "rmse": 0.037536525422479664,
+      "mean_signed_error": -0.0003239182921283121,
+      "overprediction_fraction": 0.6387825306610828
+    },
+    "old3": {
+      "count": 66860,
+      "sse": 87.2150742627189,
+      "sst": 158.4062371581119,
+      "r2": 0.4494214632744171,
+      "mae": 0.017345038638210148,
+      "rmse": 0.03611707668926027,
+      "mean_signed_error": -0.000511999750944044,
+      "overprediction_fraction": 0.6457523182769968
+    },
+    "F5": {
+      "count": 66860,
+      "sse": 81.15157788267025,
+      "sst": 158.4062371581119,
+      "r2": 0.48769960489832564,
+      "mae": 0.016334465778657103,
+      "rmse": 0.0348389693055272,
+      "mean_signed_error": -0.002058141678671824,
+      "overprediction_fraction": 0.6025426263834879
+    }
+  },
+  "validation_input_adapter_equivalence": [
+    {
+      "rows": 64,
+      "exact_tensor_keys": [
+        "batch",
+        "edge_index",
+        "n",
+        "pos",
+        "z"
+      ]
+    },
+    {
+      "rows": 30,
+      "exact_tensor_keys": [
+        "batch",
+        "edge_index",
+        "n",
+        "pos",
+        "z"
+      ]
+    }
+  ],
+  "synthetic": {
+    "group_bootstrap": true,
+    "integer_molecule_order_ge12_checked": true,
+    "changed_source_checkpoint_hash_and_incomplete_split_rejected": true,
+    "preexisting_partial_marker_and_prediction_rejected": true,
+    "misaligned_ids_indices_fp64_truth_mask_nonfinite_rejected": true,
+    "changed_array_hash_and_output_overwrite_rejected": true,
+    "missing_or_changed_authorization_rejected": true
+  },
+  "test_array_opened_or_hashed": false,
+  "model_forward": false
+}

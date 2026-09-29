@@ -1,0 +1,581 @@
+{
+  "classification": "Pretest publication: reviewed scratch/F7 outcomes and frozen F5 candidate/evaluator preparation only",
+  "base_published_commit": "3d064bf6bedd8eb6dd35d53915246d4d22084640",
+  "archive_manifest_sha256": {
+    "round21": "5676a48e6ac487b8ee9fe7af29a6d734bcbeba10aff9fe5f93f434236b8a0b13",
+    "round22": "c62f12e07b6284cfdf3db4ba4c08d915f8f77c0349430430991ece6a2e218b29",
+    "coordination": "eaf272c2dde1c95e51047dfc008c25fdf8d4dddac67353394d1e0dafeb29f157"
+  },
+  "allowlist_sha256": {
+    "scratch_pair": "0fd0dd8359c8a6b61b9e2502946ec8dc5669423268b7f60383fc959358dc6617",
+    "fixed_scratch7": "2801ad1977e00ccd6f2d5cf512c1428dc45405a47ed55abb9a09acba27fc3337",
+    "final_f5_pretest": "74845a05635575954b965a055f9d9400bbb543cadd647d9d44a8d785f7937d3d"
+  },
+  "science": "F5 provisional validation R2 .487699605. Scratch native .343781976, MTO .373492948, fixed seven scratch .480594453; none promotes over F5. Historical F5 test unevaluated.",
+  "execution_authorization": false,
+  "test_access_in_this_batch": false,
+  "excluded": [
+    "superseded synthesis drafts v1/v2",
+    "checkpoints",
+    "optimizer states",
+    "NPZ/NPY predictions",
+    "raw data",
+    "feature caches",
+    "fitted binaries",
+    "test outputs"
+  ],
+  "files": [
+    {
+      "path": "CONSOLIDATED_RESEARCH_CLOSEOUT_DRAFT_20260929_v3.md",
+      "bytes": 9366,
+      "sha256": "a411705fb2fd3088690496b59a93d323269d70e13fc763fb0d2b335bfd68ed82",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\coordination_docs\\CONSOLIDATED_RESEARCH_CLOSEOUT_DRAFT_20260929_v3.md"
+    },
+    {
+      "path": "FINAL_CANDIDATE_SELECTION_POLICY.md",
+      "bytes": 2061,
+      "sha256": "a4bfa21410c97b1b29bf03db85f3fdd3f52cf160200cb67be4467090807d46ee",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\coordination_docs\\FINAL_CANDIDATE_SELECTION_POLICY.md"
+    },
+    {
+      "path": "FINAL_CANDIDATE_SELECTION_PROVENANCE.json",
+      "bytes": 861,
+      "sha256": "9253563119b5af83f445e409670d8f132fd4631da144634efb8ee5667ab1dc5b",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\coordination_docs\\FINAL_CANDIDATE_SELECTION_PROVENANCE.json"
+    },
+    {
+      "path": "TAIL_THRESHOLD_PROVENANCE_ERRATUM.json",
+      "bytes": 2419,
+      "sha256": "a87213de17df836b6a9fe4233e2fb6c242988c19bd0419005f0bbd1b10cfe52f",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\coordination_docs\\TAIL_THRESHOLD_PROVENANCE_ERRATUM.json"
+    },
+    {
+      "path": "TAIL_THRESHOLD_PROVENANCE_ERRATUM.md",
+      "bytes": 2487,
+      "sha256": "cc5933b34067bec9276f2dc25ce684b3db4d60bfa43228984eb4add50464184c",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\coordination_docs\\TAIL_THRESHOLD_PROVENANCE_ERRATUM.md"
+    },
+    {
+      "path": "final_f5_historical_test/CANDIDATE_FREEZE.json",
+      "bytes": 34457,
+      "sha256": "46a8153e490e16f03bae0927bee4954f2cba95977050fb9f788aa9dbacda4855",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round22_f5_evaluator_pretest\\final_f5_historical_test\\CANDIDATE_FREEZE.json"
+    },
+    {
+      "path": "final_f5_historical_test/D_STAGE_MANIFEST_PRETEST.json",
+      "bytes": 5293,
+      "sha256": "c62f12e07b6284cfdf3db4ba4c08d915f8f77c0349430430991ece6a2e218b29",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round22_f5_evaluator_pretest\\D_STAGE_MANIFEST.json"
+    },
+    {
+      "path": "final_f5_historical_test/IMPLEMENTATION_HANDOFF.json",
+      "bytes": 2327,
+      "sha256": "3a47540909607cdab80cf77edd761dd9db4f2061a950ad6a7f57beb379266d06",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round22_f5_evaluator_pretest\\final_f5_historical_test\\IMPLEMENTATION_HANDOFF.json"
+    },
+    {
+      "path": "final_f5_historical_test/IMPLEMENTATION_REVIEW.json",
+      "bytes": 3685,
+      "sha256": "07dbcf0efb98e4ab9a3e631b450fa40382b5e73265a7285e18eba6505ac9812e",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round22_f5_evaluator_pretest\\final_f5_historical_test\\IMPLEMENTATION_REVIEW.json"
+    },
+    {
+      "path": "final_f5_historical_test/IMPLEMENTATION_REVIEW.md",
+      "bytes": 1750,
+      "sha256": "49262d92ae7d96f7348060f4ac3a3fb0c232b9b883c8380e1c2916230520f6e0",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round22_f5_evaluator_pretest\\final_f5_historical_test\\IMPLEMENTATION_REVIEW.md"
+    },
+    {
+      "path": "final_f5_historical_test/INDEPENDENT_CANDIDATE_IDENTITY_VERIFICATION.json",
+      "bytes": 1557,
+      "sha256": "e9b6888a38c7ae3128ff6c3dc0d8ecc17b32965ebb17935d2e5b21b3fb1f7ac2",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round22_f5_evaluator_pretest\\final_f5_historical_test\\INDEPENDENT_CANDIDATE_IDENTITY_VERIFICATION.json"
+    },
+    {
+      "path": "final_f5_historical_test/INDEPENDENT_FREEZE_HASH_VERIFICATION.json",
+      "bytes": 21265,
+      "sha256": "0c57a47fccd116dec3bdea0b3b49f0e3179087dc4e6b8afb4d52ce79d98de124",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round22_f5_evaluator_pretest\\final_f5_historical_test\\INDEPENDENT_FREEZE_HASH_VERIFICATION.json"
+    },
+    {
+      "path": "final_f5_historical_test/PREFLIGHT.json",
+      "bytes": 2212,
+      "sha256": "da209894bc4a78bb50241742a2cb5bcfe1651bc1882408247ab6f3f6dc967c91",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round22_f5_evaluator_pretest\\final_f5_historical_test\\PREFLIGHT.json"
+    },
+    {
+      "path": "final_f5_historical_test/PRE_TEST_PREPARATION_ARCHIVE_ALLOWLIST.json",
+      "bytes": 3065,
+      "sha256": "74845a05635575954b965a055f9d9400bbb543cadd647d9d44a8d785f7937d3d",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round22_f5_evaluator_pretest\\final_f5_historical_test\\PRE_TEST_PREPARATION_ARCHIVE_ALLOWLIST.json"
+    },
+    {
+      "path": "final_f5_historical_test/PRE_TEST_PREPARATION_REPORT.md",
+      "bytes": 1775,
+      "sha256": "291beb4a1ba0171b5e241df9f1745280af0befaec9f6e4ca6816cddd2bfff473",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round22_f5_evaluator_pretest\\final_f5_historical_test\\PRE_TEST_PREPARATION_REPORT.md"
+    },
+    {
+      "path": "final_f5_historical_test/PROTOCOL.md",
+      "bytes": 8523,
+      "sha256": "05afd33a04567cfab711a95d10734d0bcf8841dcf4f08c7ebcc036efafaf4e94",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round22_f5_evaluator_pretest\\final_f5_historical_test\\PROTOCOL.md"
+    },
+    {
+      "path": "final_f5_historical_test/PROVENANCE.json",
+      "bytes": 616,
+      "sha256": "aa4b916f25f73117b5a27da884776a81477f150dd57a44d9b88f89b8b83654f8",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round22_f5_evaluator_pretest\\final_f5_historical_test\\PROVENANCE.json"
+    },
+    {
+      "path": "final_f5_historical_test/ROOT_PROTOCOL_ACCEPTANCE.json",
+      "bytes": 748,
+      "sha256": "f6b7b94e61515250e364105df9ba516efc444233666d30d2b4465e7b20765e1a",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round22_f5_evaluator_pretest\\final_f5_historical_test\\ROOT_PROTOCOL_ACCEPTANCE.json"
+    },
+    {
+      "path": "final_f5_historical_test/evaluate.py",
+      "bytes": 34437,
+      "sha256": "aa4fdb125a099d0858e0a24430dd6676b0adecee1d33879469244390b39998ab",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round22_f5_evaluator_pretest\\final_f5_historical_test\\evaluate.py"
+    },
+    {
+      "path": "fixed_scratch_seven/F7_SCRATCH_ARCHIVE_ALLOWLIST.json",
+      "bytes": 2585,
+      "sha256": "2801ad1977e00ccd6f2d5cf512c1428dc45405a47ed55abb9a09acba27fc3337",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\fixed_scratch_seven\\F7_SCRATCH_ARCHIVE_ALLOWLIST.json"
+    },
+    {
+      "path": "fixed_scratch_seven/F7_SCRATCH_REPORT.md",
+      "bytes": 1254,
+      "sha256": "250512d8167e8e6d50b2983f85c5ea8624e34932560e6a45a743d6d80288fc8c",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\fixed_scratch_seven\\F7_SCRATCH_REPORT.md"
+    },
+    {
+      "path": "fixed_scratch_seven/F7_SCRATCH_RESULTS.json",
+      "bytes": 30918,
+      "sha256": "8643e3cd9f72d27242e58a71fbd3dd9d1f8421f7f8e8f10466da3ebff0c73357",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\fixed_scratch_seven\\F7_SCRATCH_RESULTS.json"
+    },
+    {
+      "path": "fixed_scratch_seven/HANDOFF.json",
+      "bytes": 2593,
+      "sha256": "03ba145cf6bf8e4a46fbadd4b32ac4d561ed7da0bef5a75be6b3c85e77107eee",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\fixed_scratch_seven\\HANDOFF.json"
+    },
+    {
+      "path": "fixed_scratch_seven/IMPLEMENTATION_REVIEW.json",
+      "bytes": 3422,
+      "sha256": "d8beba2517e3c121ec571e16be13dac735e344315937ab8b057ca9b49bf7fe7b",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\fixed_scratch_seven\\IMPLEMENTATION_REVIEW.json"
+    },
+    {
+      "path": "fixed_scratch_seven/IMPLEMENTATION_REVIEW.md",
+      "bytes": 1842,
+      "sha256": "d0a04982c192ea583f98756f73922d6a9b93955854064ea7545458ed6879c37a",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\fixed_scratch_seven\\IMPLEMENTATION_REVIEW.md"
+    },
+    {
+      "path": "fixed_scratch_seven/INDEPENDENT_RESULT_REVIEW.json",
+      "bytes": 20811,
+      "sha256": "dfb9a4ae71f861149982cf06076db6cf0037b70c7ca3b399b6559b570834467b",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\fixed_scratch_seven\\INDEPENDENT_RESULT_REVIEW.json"
+    },
+    {
+      "path": "fixed_scratch_seven/PREFLIGHT.json",
+      "bytes": 942,
+      "sha256": "ee39e614e8b2d65324a5ce4712758275f39a172ef97e90ea9cfb16275c35c4b3",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\fixed_scratch_seven\\PREFLIGHT.json"
+    },
+    {
+      "path": "fixed_scratch_seven/PROTOCOL.md",
+      "bytes": 3013,
+      "sha256": "42570bafcfc2bf00b7f7ba1a68713787e32476f2859ab980ed6254b6d658f037",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\fixed_scratch_seven\\PROTOCOL.md"
+    },
+    {
+      "path": "fixed_scratch_seven/SCIENTIFIC_CLOSEOUT.md",
+      "bytes": 3172,
+      "sha256": "c442bfcfbff1abf18b05bd5b31861797c996580a3d1f6c829bcf848de799e28a",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\fixed_scratch_seven\\SCIENTIFIC_CLOSEOUT.md"
+    },
+    {
+      "path": "fixed_scratch_seven/SCIENTIFIC_PROVENANCE.json",
+      "bytes": 816,
+      "sha256": "15d47c9993e4fc03f5d32066730c42e7aaaedd5b7c0cf9d8dc4d7d5fac3010d2",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\fixed_scratch_seven\\SCIENTIFIC_PROVENANCE.json"
+    },
+    {
+      "path": "fixed_scratch_seven/fixed_scratch7.py",
+      "bytes": 19097,
+      "sha256": "931855b647b80b97645e3ba6d01d88a84c645455ed4dfc09b3306ad0a65e5f4d",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\fixed_scratch_seven\\fixed_scratch7.py"
+    },
+    {
+      "path": "fixed_scratch_seven/independent_result_review.py",
+      "bytes": 6508,
+      "sha256": "c5706a9eb5b4f4b697db55070c9191b016e2e4b6654b3f331f0450315e733a5e",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\fixed_scratch_seven\\independent_result_review.py"
+    },
+    {
+      "path": "postrun_geometry/FIXED_SCRATCH_SEVEN_SECONDARY_AMENDMENT.md",
+      "bytes": 6336,
+      "sha256": "5c315badf8c93408693250453197dec6cecaeb0b6f89c193adb1f8f4af30b364",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\postrun_geometry\\FIXED_SCRATCH_SEVEN_SECONDARY_AMENDMENT.md"
+    },
+    {
+      "path": "postrun_geometry/FIXED_SCRATCH_SEVEN_SECONDARY_PROVENANCE.json",
+      "bytes": 4215,
+      "sha256": "dbb69f131508b21ff22f67ebe1c1ee0ba97ac855ccb2731bdfab3e679491f16c",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\postrun_geometry\\FIXED_SCRATCH_SEVEN_SECONDARY_PROVENANCE.json"
+    },
+    {
+      "path": "postrun_geometry/SCRATCH_REPORT.md",
+      "bytes": 6055,
+      "sha256": "ded9bbfc158b97395ae4d91497c4887e622e6045f858cd8dc8f8649357c32240",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\postrun_geometry\\SCRATCH_REPORT.md"
+    },
+    {
+      "path": "postrun_geometry/SCRATCH_RESULTS.json",
+      "bytes": 198125,
+      "sha256": "748efebdb2046c9e339d39f520d11262108d0c12f1c711814b428f8f1c14b710",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\postrun_geometry\\SCRATCH_RESULTS.json"
+    },
+    {
+      "path": "scratch_readout_comparison/ACTIVE_LAUNCH_ARCHIVE_ALLOWLIST.json",
+      "bytes": 6616,
+      "sha256": "152c53a231bdc28828e268174431af2b5c3e0877b1cd1d08f48d3952f78e0092",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\ACTIVE_LAUNCH_ARCHIVE_ALLOWLIST.json"
+    },
+    {
+      "path": "scratch_readout_comparison/GPU5_ADMISSION.json",
+      "bytes": 14856,
+      "sha256": "11afe0f6946d1c904ff82b3ae4fa185f4598208d4801a37a6664b6ef231e0d9c",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\GPU5_ADMISSION.json"
+    },
+    {
+      "path": "scratch_readout_comparison/GPU5_ADMISSION_REVIEW.json",
+      "bytes": 3758,
+      "sha256": "ce61348caab6b1367787e18eeb89e2dfe5cf91349ad4e0602d2bf0dff9d4183d",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\GPU5_ADMISSION_REVIEW.json"
+    },
+    {
+      "path": "scratch_readout_comparison/IMPLEMENTATION_HANDOFF.json",
+      "bytes": 14020,
+      "sha256": "bbbc40128effa784539168b00e275f3d0f023dfb913cd6a24336a710f150a6a9",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\IMPLEMENTATION_HANDOFF.json"
+    },
+    {
+      "path": "scratch_readout_comparison/IMPLEMENTATION_REVIEW.json",
+      "bytes": 13708,
+      "sha256": "6226b1c68226ce8a5ed6ddf74c630bce32dd88e0fadc46b0de12e8e4d005c3e2",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\IMPLEMENTATION_REVIEW.json"
+    },
+    {
+      "path": "scratch_readout_comparison/IMPLEMENTATION_REVIEW.md",
+      "bytes": 4622,
+      "sha256": "e77feb109394bff335370cb3cc4044dbf0d46c6434e3d78ff076d4e6b0ed4ab5",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\IMPLEMENTATION_REVIEW.md"
+    },
+    {
+      "path": "scratch_readout_comparison/INITIALIZATION.json",
+      "bytes": 91423,
+      "sha256": "a906e86581f3fed70c93f4922f96a28b292b16f86de6b813fc21121668ee644d",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\INITIALIZATION.json"
+    },
+    {
+      "path": "scratch_readout_comparison/ORDER_PLAN.json",
+      "bytes": 19036,
+      "sha256": "f01da11c7ac29a89cb2914a69b7e7b4d9b4ef67120240513fc5ca59b460a6bce",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\ORDER_PLAN.json"
+    },
+    {
+      "path": "scratch_readout_comparison/PREFLIGHT.json",
+      "bytes": 16415,
+      "sha256": "7719140e4bc0fcf5566eb6e90aa0d450bb27f3e217eb17a727a06116eec02e3c",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\PREFLIGHT.json"
+    },
+    {
+      "path": "scratch_readout_comparison/PROTOCOL.md",
+      "bytes": 11628,
+      "sha256": "9be3d271f86afac91a2b20957b4edee86bad6a14b0bd9058c564254ad8b151b2",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\PROTOCOL.md"
+    },
+    {
+      "path": "scratch_readout_comparison/RESULTS.json",
+      "bytes": 71246,
+      "sha256": "827763806c6b4f75e2c915eaf090ec4b480b79a0800db8296475c2b845dda665",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\RESULTS.json"
+    },
+    {
+      "path": "scratch_readout_comparison/RESULTS.md",
+      "bytes": 778,
+      "sha256": "52f53c79cf1f2ad57ff58a3edeb1e70488219dc0d471bd8aea29ed102eb3342e",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\RESULTS.md"
+    },
+    {
+      "path": "scratch_readout_comparison/SOURCE_PINS.json",
+      "bytes": 8687,
+      "sha256": "6dbb539d294e876d5a1cd785ce52991c747ca3b2ddcdf2652b43222afc6c1f9d",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\SOURCE_PINS.json"
+    },
+    {
+      "path": "scratch_readout_comparison/common.py",
+      "bytes": 6244,
+      "sha256": "2ae185a3fcc834c9420f44b943b206bb85a66984eeb678085c82ec73127dac78",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\common.py"
+    },
+    {
+      "path": "scratch_readout_comparison/completion_receipts/D_STAGE_MANIFEST_PRETEST.json",
+      "bytes": 32619,
+      "sha256": "5676a48e6ac487b8ee9fe7af29a6d734bcbeba10aff9fe5f93f434236b8a0b13",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\D_STAGE_MANIFEST.json"
+    },
+    {
+      "path": "scratch_readout_comparison/completion_receipts/GEOMETRY_INDEPENDENT_VERIFICATION.json",
+      "bytes": 427,
+      "sha256": "8302a116d37260af117c9725c072be078555a9039bd79bf62f39ed28ba0a3b23",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\completion_receipts\\GEOMETRY_INDEPENDENT_VERIFICATION.json"
+    },
+    {
+      "path": "scratch_readout_comparison/completion_receipts/MTO_INDEPENDENT_VERIFICATION.json",
+      "bytes": 6445,
+      "sha256": "f5db86566a297d49a5c82036bf51c4880b6f38c3e827ffc45d820908072d9771",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\completion_receipts\\MTO_INDEPENDENT_VERIFICATION.json"
+    },
+    {
+      "path": "scratch_readout_comparison/completion_receipts/NATIVE_ARCHIVE_ALLOWLIST.json",
+      "bytes": 3306,
+      "sha256": "f8bb57005bffb214ee92cacb2ef61eeff8d3082471d1c6da9a05fae3a0871139",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\completion_receipts\\NATIVE_ARCHIVE_ALLOWLIST.json"
+    },
+    {
+      "path": "scratch_readout_comparison/completion_receipts/NATIVE_COMPLETION_AUDIT.json",
+      "bytes": 3557,
+      "sha256": "02cb1b0a41c27e9c93ba838dc894e6467eafedb2500e31a09178383e5c4b9f3e",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\completion_receipts\\NATIVE_COMPLETION_AUDIT.json"
+    },
+    {
+      "path": "scratch_readout_comparison/completion_receipts/NATIVE_COMPLETION_AUDIT.md",
+      "bytes": 1327,
+      "sha256": "ea0b562317d7ea0480fa5bfcf01f76aab3189ee35a7c937f3b34c2d6c87fe008",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\completion_receipts\\NATIVE_COMPLETION_AUDIT.md"
+    },
+    {
+      "path": "scratch_readout_comparison/completion_receipts/NATIVE_INDEPENDENT_REVIEW_PROVENANCE.json",
+      "bytes": 778,
+      "sha256": "aca2cf38d0b73893d9fd365c5ac4e4bcc44d84ddde557ed288aadc911713fb88",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\completion_receipts\\NATIVE_INDEPENDENT_REVIEW_PROVENANCE.json"
+    },
+    {
+      "path": "scratch_readout_comparison/completion_receipts/NATIVE_INDEPENDENT_SCIENTIFIC_REVIEW.md",
+      "bytes": 2887,
+      "sha256": "5e5768da11bbf56e1e53d65899dd1db8d6e7323ed0aa8997e40a66f1d87dcdb7",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\completion_receipts\\NATIVE_INDEPENDENT_SCIENTIFIC_REVIEW.md"
+    },
+    {
+      "path": "scratch_readout_comparison/completion_receipts/NATIVE_INDEPENDENT_VERIFICATION.json",
+      "bytes": 1735,
+      "sha256": "364483bafade15cb997eb193352c9f3c39db02e66055e83214cdd7af28a63d40",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\completion_receipts\\NATIVE_INDEPENDENT_VERIFICATION.json"
+    },
+    {
+      "path": "scratch_readout_comparison/completion_receipts/PAIRED_ARCHIVE_ALLOWLIST.json",
+      "bytes": 11553,
+      "sha256": "0fd0dd8359c8a6b61b9e2502946ec8dc5669423268b7f60383fc959358dc6617",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\completion_receipts\\PAIRED_ARCHIVE_ALLOWLIST.json"
+    },
+    {
+      "path": "scratch_readout_comparison/completion_receipts/PAIRED_COMPLETION_REPORT.md",
+      "bytes": 3381,
+      "sha256": "69a24f33f3aea5642ff53eb674d658335448d7666e37eb893811aa5861556620",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\completion_receipts\\PAIRED_COMPLETION_REPORT.md"
+    },
+    {
+      "path": "scratch_readout_comparison/completion_receipts/PAIRED_INDEPENDENT_VERIFICATION.json",
+      "bytes": 13367,
+      "sha256": "4fa11f42271c8e37319a15ce38acdbdca05d52b65319c42daf10c6505c0f6241",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\completion_receipts\\PAIRED_INDEPENDENT_VERIFICATION.json"
+    },
+    {
+      "path": "scratch_readout_comparison/completion_receipts/PAIRED_SCIENTIFIC_CLOSEOUT.md",
+      "bytes": 6327,
+      "sha256": "b54584bff06fc3c1a14764026542d662c4c751d9373a903c62ae316f55c7fcba",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\completion_receipts\\PAIRED_SCIENTIFIC_CLOSEOUT.md"
+    },
+    {
+      "path": "scratch_readout_comparison/completion_receipts/PAIRED_SCIENTIFIC_PROVENANCE.json",
+      "bytes": 1944,
+      "sha256": "b0c012b2c8f03a0ce8f0d2e40b90f067094b4bcc7127eafa9c1981b8ee451179",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\completion_receipts\\PAIRED_SCIENTIFIC_PROVENANCE.json"
+    },
+    {
+      "path": "scratch_readout_comparison/completion_receipts/audit_native.py",
+      "bytes": 7566,
+      "sha256": "3cdf02687b208f2f976f636d25dd06fc7fc7de1e79ce0de9d6c292b2fd4c7062",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\completion_receipts\\audit_native.py"
+    },
+    {
+      "path": "scratch_readout_comparison/completion_receipts/independent_mto_completion.py",
+      "bytes": 7082,
+      "sha256": "df1fca27111113f83857bf21893d8398f648e2ef7044526bdac2940b4490983c",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\completion_receipts\\independent_mto_completion.py"
+    },
+    {
+      "path": "scratch_readout_comparison/completion_receipts/independent_paired_saved_arrays.py",
+      "bytes": 5623,
+      "sha256": "3767f758ff74f2767d2c62ee77cd664715720d58896bae74e6209beb189d15a5",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\completion_receipts\\independent_paired_saved_arrays.py"
+    },
+    {
+      "path": "scratch_readout_comparison/config.json",
+      "bytes": 1044,
+      "sha256": "9ecb34590a64e389edbc455dbd22293593ce6c6e01c7d10b90b9cb5f6ec35048",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\config.json"
+    },
+    {
+      "path": "scratch_readout_comparison/data_adapter.py",
+      "bytes": 2841,
+      "sha256": "a6c8df922d939a01ded36288561bc1c0ef0aae884d6ea3c6912b0c0b720f3f28",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\data_adapter.py"
+    },
+    {
+      "path": "scratch_readout_comparison/launch.py",
+      "bytes": 4057,
+      "sha256": "b4283b6ec127f76f13284363c20e06fcee4b3052968a3f228f3d719aab0bb7e6",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\launch.py"
+    },
+    {
+      "path": "scratch_readout_comparison/model.py",
+      "bytes": 4569,
+      "sha256": "150905f92a6837e309ca8773295319a7e55054ccf8cf2b53c8c4aab9d1918ebc",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\model.py"
+    },
+    {
+      "path": "scratch_readout_comparison/preflight.py",
+      "bytes": 13875,
+      "sha256": "b2aa9133c10e301e6be0390f2fd8475cd4a4f37c3e83f1064818d7ff33c6ef07",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\preflight.py"
+    },
+    {
+      "path": "scratch_readout_comparison/prepare.py",
+      "bytes": 4898,
+      "sha256": "addfb8b77897a994caf32b2730647d75a74e950f53a2f3ada964f85ddada9029",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\prepare.py"
+    },
+    {
+      "path": "scratch_readout_comparison/runs/mto/FIT_COMPLETE.json",
+      "bytes": 14840,
+      "sha256": "7d8838482001cbcafe9e29a059daa6ce20127debf0e518e3a437bd2594a488e3",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\runs\\mto\\FIT_COMPLETE.json"
+    },
+    {
+      "path": "scratch_readout_comparison/runs/mto/FIXED_CHECKPOINT_METRICS.json",
+      "bytes": 37479,
+      "sha256": "ffd6d7cc2c689e390934e6e35c1901439e697ac6c53f57bbe954ebbeed6c6005",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\runs\\mto\\FIXED_CHECKPOINT_METRICS.json"
+    },
+    {
+      "path": "scratch_readout_comparison/runs/mto/LAUNCH_RECEIPT.json",
+      "bytes": 13401,
+      "sha256": "d4bf260b73e6db099742c7bcef8be0c4834adad2202c99486b7130be0873d39c",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\runs\\mto\\LAUNCH_RECEIPT.json"
+    },
+    {
+      "path": "scratch_readout_comparison/runs/mto/RUN_MANIFEST.json",
+      "bytes": 15122,
+      "sha256": "6c2984eb549a22754212f7bdc92ce734bf9421119bb0637bb6a07364ea8288bc",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\runs\\mto\\RUN_MANIFEST.json"
+    },
+    {
+      "path": "scratch_readout_comparison/runs/mto/epoch0_val.json",
+      "bytes": 4201,
+      "sha256": "88f792f3dfc0c842e9cc93d846274d0de1d826e0a6280bf74ec03516b5e4ff03",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\runs\\mto\\epoch0_val.json"
+    },
+    {
+      "path": "scratch_readout_comparison/runs/mto/history.jsonl",
+      "bytes": 96607,
+      "sha256": "b9746c3f60aead009653ea0df042e6167665aecf0e5ca05c67c550c518dc85d1",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\runs\\mto\\history.jsonl"
+    },
+    {
+      "path": "scratch_readout_comparison/runs/mto/status.json",
+      "bytes": 76,
+      "sha256": "64d54c9c2d9d1b1e6221f9b8cd8557b1a07190b3ddd5f9e9a336042d639b5a45",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\runs\\mto\\status.json"
+    },
+    {
+      "path": "scratch_readout_comparison/runs/mto/train.log",
+      "bytes": 150,
+      "sha256": "eb0d65bb4a37f5c9d69543dcba77634edb892db9b04cb53e942bf887370ed77e",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\runs\\mto\\train.log"
+    },
+    {
+      "path": "scratch_readout_comparison/runs/native/FIT_COMPLETE.json",
+      "bytes": 14844,
+      "sha256": "31ade59511a4fde1b323201de387ae873c31f83d5dfa49f595faae7cc5b31abb",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\runs\\native\\FIT_COMPLETE.json"
+    },
+    {
+      "path": "scratch_readout_comparison/runs/native/FIXED_CHECKPOINT_METRICS.json",
+      "bytes": 37520,
+      "sha256": "4b1baf0940d08349073537372ecb830d6132dbff96810f0a6fb64ac27150c71b",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\runs\\native\\FIXED_CHECKPOINT_METRICS.json"
+    },
+    {
+      "path": "scratch_readout_comparison/runs/native/LAUNCH_RECEIPT.json",
+      "bytes": 13534,
+      "sha256": "cd006ac90880c3f2b7e17d5a65aa064070e8eed72f5b7d272949b0378507b837",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\runs\\native\\LAUNCH_RECEIPT.json"
+    },
+    {
+      "path": "scratch_readout_comparison/runs/native/RUN_MANIFEST.json",
+      "bytes": 15125,
+      "sha256": "786d497b938d4fb215ce0e3390ed9c52194248bfa5a145f2a17d4c378a4b8b6c",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\runs\\native\\RUN_MANIFEST.json"
+    },
+    {
+      "path": "scratch_readout_comparison/runs/native/epoch0_val.json",
+      "bytes": 4201,
+      "sha256": "88f792f3dfc0c842e9cc93d846274d0de1d826e0a6280bf74ec03516b5e4ff03",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\runs\\native\\epoch0_val.json"
+    },
+    {
+      "path": "scratch_readout_comparison/runs/native/history.jsonl",
+      "bytes": 96670,
+      "sha256": "a842c836c3fa4c75ba4b19704389ad404207981e477166271e57b6fcf81efa28",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\runs\\native\\history.jsonl"
+    },
+    {
+      "path": "scratch_readout_comparison/runs/native/status.json",
+      "bytes": 79,
+      "sha256": "db143f746da1ea9fdaf7dd7b0f85afacbd467acf9ad595527bd2c71db28f7110",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\runs\\native\\status.json"
+    },
+    {
+      "path": "scratch_readout_comparison/runs/native/train.log",
+      "bytes": 154,
+      "sha256": "7b5eca51131abbc62355d857fe1f95427781418e65fc3a2aa7a2b72c7117c533",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\runs\\native\\train.log"
+    },
+    {
+      "path": "scratch_readout_comparison/stats.json",
+      "bytes": 1015,
+      "sha256": "39d2d8d281f5f3a74aedf276026bbba4d3df614375dc212f639c1ae24b4b0140",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\stats.json"
+    },
+    {
+      "path": "scratch_readout_comparison/summarize.py",
+      "bytes": 6551,
+      "sha256": "f8710b40b4f0aa52eeb9ee6fd6ab94ea51c2cbffeee5189810f9c3eb07308892",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\summarize.py"
+    },
+    {
+      "path": "scratch_readout_comparison/train.py",
+      "bytes": 15620,
+      "sha256": "28263e384b823a8a7c9a7f8a0ed1c7860eb34e2829397e97ab7fb183ecd8f796",
+      "source_archive": "D:\\MTO\\archives\\oscillator_r2_20260928\\round21_scratch_readout_pair_completion\\scratch_readout_comparison\\train.py"
+    }
+  ]
+}

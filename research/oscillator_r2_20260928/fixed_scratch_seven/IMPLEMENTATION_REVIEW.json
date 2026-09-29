@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "timestamp": "2026-09-29T08:10:06.740430+08:00",
+  "script_sha256": "931855b647b80b97645e3ba6d01d88a84c645455ed4dfc09b3306ad0a65e5f4d",
+  "protocol_sha256": "42570bafcfc2bf00b7f7ba1a68713787e32476f2859ab980ed6254b6d658f037",
+  "preflight_sha256": "ee39e614e8b2d65324a5ce4712758275f39a172ef97e90ea9cfb16275c35c4b3",
+  "amendment_sha256": "5c315badf8c93408693250453197dec6cecaeb0b6f89c193adb1f8f4af30b364",
+  "provenance_sha256": "dbb69f131508b21ff22f67ebe1c1ee0ba97ac855ccb2731bdfab3e679491f16c",
+  "fixed7_source_sha256": "3a11c1f90918437241eb6c26332fa87c7ef7b95f0b3f86493a0c8e908e627755",
+  "compat_source_sha256": "cb8d7a7c50b186fbbb0d207fe0f53cad8e21b58d23e25c581e43273e3e755a41",
+  "handoff_sha256": "03ba145cf6bf8e4a46fbadd4b32ac4d561ed7da0bef5a75be6b3c85e77107eee",
+  "exact_dependency_hashes": {
+    "script": "931855b647b80b97645e3ba6d01d88a84c645455ed4dfc09b3306ad0a65e5f4d",
+    "protocol": "42570bafcfc2bf00b7f7ba1a68713787e32476f2859ab980ed6254b6d658f037",
+    "preflight": "ee39e614e8b2d65324a5ce4712758275f39a172ef97e90ea9cfb16275c35c4b3",
+    "amendment": "5c315badf8c93408693250453197dec6cecaeb0b6f89c193adb1f8f4af30b364",
+    "provenance": "dbb69f131508b21ff22f67ebe1c1ee0ba97ac855ccb2731bdfab3e679491f16c",
+    "fixed7_source": "3a11c1f90918437241eb6c26332fa87c7ef7b95f0b3f86493a0c8e908e627755",
+    "seed_compat_source": "cb8d7a7c50b186fbbb0d207fe0f53cad8e21b58d23e25c581e43273e3e755a41",
+    "scratch_source_pins": "c4db1881dc5b6c89e73bfacac1e9338ec68d3629ee45983d237973da373cf302",
+    "postrun_review": "aeb1363fdb211b7306751d6c48de09b7c3bd62f48915d0d117c204e9a322ed6b",
+    "scratch_review": "6226b1c68226ce8a5ed6ddf74c630bce32dd88e0fadc46b0de12e8e4d005c3e2",
+    "seed_compat_review": "6d4bfeb512901a582314778d8b70bb45e095e6882d348f84b4b09ec743943a3d"
+  },
+  "scope": "Exactly one completed saved-array F7_scratch secondary under root standing authorization; no inference/test or new mixture.",
+  "independent_verification": [
+    "Read complete isolated implementation and protocol against frozen amendment; no original source edits.",
+    "Verified all handoff source/dependency/review hashes current.",
+    "Independently reran fixture in temporary output directory without mutating sealed preflight; F5, seven-way arithmetic and molecule/group bootstrap matched.",
+    "Actual isolated scratch loader synthetic success without mask and rejection of wrong array/checkpoint hashes, IDs, FP64 f/E truth, false optional or authoritative mask passed.",
+    "Instrumented missing/invalid second terminal prevents any selected scratch loader call.",
+    "Both actual scratch terminals/source/selection artifacts independently audited separately; no actual F7_scratch arithmetic executed by reviewer.",
+    "Exactly seven equal individual means, eta0 once; only F5 and prescribed F7_seed_legacy contrasts; seed reference reproduces bound prior completed result."
+  ],
+  "conditions": [
+    "Both scratch genuine 100-epoch/188100-step terminal/source/checkpoint/raw-selected array gates must pass at execution.",
+    "Missing authoritative all-valid masks or changed raw FP64 labels/IDs/hashes fail closed.",
+    "Preserve all molecules/states; no weight/subset/raw-seed-seven/all-nine search.",
+    "Only saved-array arithmetic permitted; no model inference, fitting or test.",
+    "Root final candidate-selection policy remains unchanged; no automatic test authorization."
+  ]
+}

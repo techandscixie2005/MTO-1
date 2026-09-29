@@ -1,0 +1,9 @@
+# Fixed scratch seven: independent implementation review
+
+2026-09-29T08:10:06.740430+08:00: **PASS** for script `931855b647b80b97645e3ba6d01d88a84c645455ed4dfc09b3306ad0a65e5f4d`, protocol `42570bafcfc2bf00b7f7ba1a68713787e32476f2859ab980ed6254b6d658f037` and preflight `ee39e614e8b2d65324a5ce4712758275f39a172ef97e90ea9cfb16275c35c4b3`. Complete source/dependency bindings and conditions are in IMPLEMENTATION_REVIEW.json.
+
+The isolated source implements the frozen (5 F5 + scratch native raw-selected + scratch MTO raw-selected)/7 mean and only its two prescribed references: F5 and existing F7_seed_legacy. It retains the original native-minus-MTO primary comparison. Both genuine scratch terminals, unchanged reviewed source/preflight maps and selected checkpoint/prediction hashes precede scratch loading. The omitted mask field is resolved by pinned authoritative all-valid masks and exact IDs/indices/raw FP64 f/E labels; the array hash is verified before loading. No mask comes from predictions.
+
+I reran the fixture in a temporary output directory, preserving the sealed preflight. F5 and synthetic seven-way arithmetic reproduced. Actual loader negative cases passed for changed hashes, IDs, f/E labels and false masks; the instrumented family gate stopped missing/invalid second terminals before loading. The existing seed-seven result is reproduced and bound to its reviewed compatibility receipt. Reporting uses the frozen paired bootstrap, full/state/tail/concentration/q2 and signed-error definitions, with explicit five/seven forward counts and selection limits.
+
+Root's standing authorization permits exactly one saved-array completed call after this PASS. No model inference, fitting, test access, filtering or additional recipe is permitted. I have not executed actual F7_scratch arithmetic or inspected its future result.

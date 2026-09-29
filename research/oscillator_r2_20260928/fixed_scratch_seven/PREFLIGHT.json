@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "classification": "frozen F5 arrays plus synthetic scratch/seed values only; no actual scratch/seed outcome reads",
+  "time": 1790640481.588359,
+  "script_sha256": "931855b647b80b97645e3ba6d01d88a84c645455ed4dfc09b3306ad0a65e5f4d",
+  "protocol_sha256": "42570bafcfc2bf00b7f7ba1a68713787e32476f2859ab980ed6254b6d658f037",
+  "amendment_sha256": "5c315badf8c93408693250453197dec6cecaeb0b6f89c193adb1f8f4af30b364",
+  "provenance_sha256": "dbb69f131508b21ff22f67ebe1c1ee0ba97ac855ccb2731bdfab3e679491f16c",
+  "F5_r2": 0.48769960489832564,
+  "synthetic_seven_r2": 0.4843562211164263,
+  "synthetic_pair_r2": 0.4843562211164263,
+  "synthetic_molecule_and_group_bootstrap": true,
+  "missing_invalid_terminal_rejection": true,
+  "selected_loader_called_only_after_both_terminals": true,
+  "actual_compat_loader_synthetic_schema_and_negative_cases": true,
+  "actual_scratch_or_seed_outcome_access": false,
+  "test_access": false
+}

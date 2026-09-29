@@ -1,0 +1,177 @@
+{
+  "passed": true,
+  "timestamp": "2026-09-29T08:02:56.923890+08:00",
+  "scope": "Completed MTO saved artifacts and CPU checkpoint comparisons only; no inference/test",
+  "script_sha256": "df1fca27111113f83857bf21893d8398f648e2ef7044526bdac2940b4490983c",
+  "evidence_sha256": {
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/runs/mto/FIT_COMPLETE.json": "7d8838482001cbcafe9e29a059daa6ce20127debf0e518e3a437bd2594a488e3",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/runs/mto/RUN_MANIFEST.json": "6c2984eb549a22754212f7bdc92ce734bf9421119bb0637bb6a07364ea8288bc",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/runs/mto/LAUNCH_RECEIPT.json": "d4bf260b73e6db099742c7bcef8be0c4834adad2202c99486b7130be0873d39c",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/runs/mto/history.jsonl": "b9746c3f60aead009653ea0df042e6167665aecf0e5ca05c67c550c518dc85d1",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/runs/mto/FIXED_CHECKPOINT_METRICS.json": "ffd6d7cc2c689e390934e6e35c1901439e697ac6c53f57bbe954ebbeed6c6005",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/IMPLEMENTATION_REVIEW.json": "6226b1c68226ce8a5ed6ddf74c630bce32dd88e0fadc46b0de12e8e4d005c3e2",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/PREFLIGHT.json": "7719140e4bc0fcf5566eb6e90aa0d450bb27f3e217eb17a727a06116eec02e3c",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/completion_receipts/NATIVE_INDEPENDENT_VERIFICATION.json": "364483bafade15cb997eb193352c9f3c39db02e66055e83214cdd7af28a63d40"
+  },
+  "source_count": 58,
+  "code_count": 10,
+  "updates": 188100,
+  "orders_exact_and_matched_native": 100,
+  "copied_initial_core_tensors_equal": 149,
+  "selections": {
+    "raw_f": {
+      "epoch": 16,
+      "metric": 99.24262458728838
+    },
+    "joint": {
+      "epoch": 41,
+      "metric": 0.6340856579180574
+    }
+  },
+  "saved_validation": {
+    "epoch0": {
+      "sse": 158.0511526973256,
+      "r2": 0.002241606562700449,
+      "mae": 0.024611250635125464,
+      "E_mae": 0.5592830654660749,
+      "state_sse": [
+        12.61930599947538,
+        18.23591141320989,
+        15.79671165259885,
+        13.94350114283349,
+        17.242608225037802,
+        13.290970558784693,
+        14.641021720595669,
+        22.455292332000017,
+        17.280314863607906,
+        12.545514789181643
+      ],
+      "q90_bright_sse": 140.7143904392156,
+      "below_q90_sse": 17.33676225810999,
+      "case14562_sse": 0.005514462180054833
+    },
+    "best_raw_f": {
+      "sse": 99.24262458728838,
+      "r2": 0.3734929484611761,
+      "mae": 0.018380240088076386,
+      "E_mae": 0.11831199233583158,
+      "state_sse": [
+        2.653404911306681,
+        6.54263822150402,
+        7.9143221334373255,
+        8.533097228171323,
+        10.237669143541536,
+        10.327612438622126,
+        14.69700764596619,
+        16.033276120122384,
+        12.156082196747372,
+        10.14751454786942
+      ],
+      "q90_bright_sse": 65.9634707249699,
+      "below_q90_sse": 33.27915386231848,
+      "case14562_sse": 3.2959764749529343
+    },
+    "best_joint": {
+      "sse": 99.95705538231758,
+      "r2": 0.36898283062840354,
+      "mae": 0.017727910548872176,
+      "E_mae": 0.10737545410313722,
+      "state_sse": [
+        2.1594242197297366,
+        5.346142288818047,
+        6.629071351689437,
+        8.52058796043551,
+        9.602877512770359,
+        10.502107925271577,
+        19.42019213740619,
+        16.48630898152515,
+        10.962877730929133,
+        10.327465273742487
+      ],
+      "q90_bright_sse": 61.767480575756906,
+      "below_q90_sse": 38.189574806560664,
+      "case14562_sse": 7.551858191088401
+    },
+    "final100": {
+      "sse": 114.54206624376874,
+      "r2": 0.2769093673411388,
+      "mae": 0.017650500493694883,
+      "E_mae": 0.10027986913150419,
+      "state_sse": [
+        2.249406905010004,
+        5.812973730984501,
+        7.072996049108324,
+        9.28421373852287,
+        10.441809102373163,
+        11.7900729709395,
+        23.532565243561425,
+        18.435879102705314,
+        13.486697820969637,
+        12.435451579593892
+      ],
+      "q90_bright_sse": 65.03354651403902,
+      "below_q90_sse": 49.50851972972973,
+      "case14562_sse": 8.983275570682922
+    }
+  },
+  "completion_train_metrics": {
+    "initial": {
+      "count": 1203550,
+      "sse": 3015.3378286892876,
+      "sst": 3022.091476089505,
+      "r2": 0.002234759421960386,
+      "mae": 0.024802033765859825,
+      "rmse": 0.05005366924513699
+    },
+    "raw_f": {
+      "count": 1203550,
+      "sse": 1458.2478091080068,
+      "sst": 3022.091476089505,
+      "r2": 0.5174706587654536,
+      "mae": 0.01766564226378741,
+      "rmse": 0.03480836286682881
+    },
+    "joint": {
+      "count": 1203550,
+      "sse": 772.3691580388058,
+      "sst": 3022.091476089505,
+      "r2": 0.7444256190953464,
+      "mae": 0.014891831314451428,
+      "rmse": 0.025332636595340664
+    },
+    "final100": {
+      "count": 1203550,
+      "sse": 284.09007649230415,
+      "sst": 3022.091476089505,
+      "r2": 0.9059955402607772,
+      "mae": 0.009820221967696031,
+      "rmse": 0.015363705127593599
+    }
+  },
+  "completion_replay_maxima": {
+    "initial": {
+      "f": 0.0,
+      "E": 0.0
+    },
+    "raw_f": {
+      "f": 3.5762786865234375e-07,
+      "E": 1.9073486328125e-06
+    },
+    "joint": {
+      "f": 4.76837158203125e-07,
+      "E": 1.9073486328125e-06
+    },
+    "final100": {
+      "f": 8.046627044677734e-07,
+      "E": 1.9073486328125e-06
+    }
+  },
+  "health_ecc_unchanged": true,
+  "mask_alignment": "Scratch saved NPZ omits mask field; exact IDs/indices/FP64 f and E truth agree with pinned all-valid reference masks. No prediction-derived mask.",
+  "limits": [
+    "Full TRAIN metrics are completion-time aggregates, not independently recomputed train predictions.",
+    "Replay maxima were generated during authorized training completion; this audit performed no model forward.",
+    "Small differences between completion-time replay aggregates and selected arrays do not alter checkpoint selection; headline scores use saved selected arrays.",
+    "Temporary alias leftovers are not authoritative; final aliases match selected versioned artifacts and terminal hashes."
+  ]
+}

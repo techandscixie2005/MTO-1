@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-09-29T08:16:55.494342+08:00",
+  "erratum_sha256": "cc5933b34067bec9276f2dc25ce684b3db4d60bfa43228984eb4add50464184c",
+  "historical_tail_origin": "validation",
+  "historical_thresholds": {
+    "q90": 0.0546,
+    "q99": 0.2377
+  },
+  "prospective_final_tail_origin": "TRAIN only",
+  "prospective_thresholds": {
+    "q90": 0.0549,
+    "q99": 0.2412
+  },
+  "quantile_method": "numpy linear pooled raw FP64 f; bright ties included",
+  "train_rows": 120355,
+  "train_labels": 1203550,
+  "train_indices_sha256": "e892089924d3bd8c432c221f6c14382b240c39b4fa3cdbe03b9d6839ad61bafc",
+  "raw_labels_source_sha256": "621dc8723fb6dc96681851a26e4f52fcb7747a4778e57a249a75d22f3af4c632",
+  "audited_file_hashes": {
+    "ensemble_diagnostic/FROZEN_CHOICE.json": "ed917f216263d8e949192f83e5e9746551aebf17f79ed704252b87f92dec0dd3",
+    "ensemble_diagnostic/diagnose.py": "c45c42b24081379cd46e2fee65e9f3c12f95b8f1b49e637fb4c8cff265b35701",
+    "descriptor_baseline_proposal/CONDITIONAL_PROTOCOL.md": "0f5f0fadacf82a377583b90708f851035cc98321eb5b9d38f987406700f6dcf2",
+    "descriptor_baseline_proposal/IMPLEMENTATION_REVIEW.md": "e7a0ef217d7da34be7ed27c45c81c26d0b812be0bc81d4b24645432f24349a42",
+    "descriptor_baseline_proposal/SCIENTIFIC_CLOSEOUT.md": "5d52e6d296f8aafde34ffb66f1c4467544d2d1f9ce73b606a4ba13fe9ffbe664",
+    "scratch_readout_comparison/PROTOCOL.md": "9be3d271f86afac91a2b20957b4edee86bad6a14b0bd9058c564254ad8b151b2",
+    "scratch_readout_comparison/completion_receipts/PAIRED_SCIENTIFIC_CLOSEOUT.md": "b54584bff06fc3c1a14764026542d662c4c751d9373a903c62ae316f55c7fcba",
+    "eta0_seed_replication/completion_receipts/SEED_FAMILY_SCIENTIFIC_CLOSEOUT.md": "0031fc71c9a48088e9fd73d1b6dd896be948fb42431db1eea32be5df2015a787",
+    "fixed_scratch_seven/SCIENTIFIC_CLOSEOUT.md": "c442bfcfbff1abf18b05bd5b31861797c996580a3d1f6c829bcf848de799e28a",
+    "postrun_geometry/FIXED_SEVEN_SECONDARY_AMENDMENT.md": "675030449886676094b1226d6ea75d753752fdd7e3e7cc3c8e1a9441bb469c0e",
+    "postrun_geometry/FIXED_SCRATCH_SEVEN_SECONDARY_AMENDMENT.md": "5c315badf8c93408693250453197dec6cecaeb0b6f89c193adb1f8f4af30b364",
+    "geometry_error_audit/PROTOCOL.md": "901e7e9fea9375481ba73bfe0dc321e60bd1647bddbb2d09e8ef8e8a3cfc56d4",
+    "FINAL_CANDIDATE_SELECTION_POLICY.md": "a4bfa21410c97b1b29bf03db85f3fdd3f52cf160200cb67be4467090807d46ee"
+  },
+  "test_rows_read": false,
+  "sealed_historical_files_edited": false
+}

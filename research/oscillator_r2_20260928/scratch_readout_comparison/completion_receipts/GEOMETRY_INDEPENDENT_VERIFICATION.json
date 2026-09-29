@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "timestamp": "2026-09-29T08:05:49.279312+08:00",
+  "source_result_sha256": "748efebdb2046c9e339d39f520d11262108d0c12f1c711814b428f8f1c14b710",
+  "rows": 6686,
+  "checks": [
+    "Both raw-selected scratch arrays and exact fixed half mean full/state/frozen-q2/case14562/six-case SSE reproduce.",
+    "Train-derived geometry bins unchanged; all validation cases retained."
+  ],
+  "no_inference_test": true
+}
