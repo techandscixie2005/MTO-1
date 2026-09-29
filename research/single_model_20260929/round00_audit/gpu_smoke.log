@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "gpu_uuid": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+  "validation_seconds": 4.019952779635787,
+  "step_seconds": [
+    0.2849622070789337,
+    0.057202136144042015,
+    0.5409037675708532,
+    0.3347120173275471,
+    0.33617508597671986,
+    0.040885547176003456,
+    0.04066583886742592,
+    0.040603894740343094
+  ],
+  "median_warm_step_seconds": 0.18779878225177526,
+  "estimated_epoch_seconds": 357.26946219522506,
+  "thresholds": {
+    "q90": 0.0549,
+    "q99": 0.2412
+  },
+  "smoke_optimizer_steps_discarded": 8,
+  "production_checkpoint_written": false
+}
+epoch0_r2 0.40529412685150046

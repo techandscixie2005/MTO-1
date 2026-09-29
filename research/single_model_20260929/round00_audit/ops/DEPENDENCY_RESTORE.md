@@ -1,0 +1,5 @@
+# Restoring source dependencies
+
+The pilot's original runtime source root is `/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926`. The archive includes exact small source dependencies under `dependency_sources/`; `DEPENDENCY_SOURCE_RECEIPT.json` maps each archived file to its original server path and SHA256. `data_metadata/` contains only normalization statistics and cryptographic data hashes, and maps back to the original `data/` directory. No raw datasets or model files are included.
+
+To reproduce in the recorded server layout, restore those source/configuration files to the mapped paths and verify their SHA256 against both this receipt and `FROZEN_MANIFEST.json`. Provide the separately preserved server dataset files, frozen split files, and starting checkpoint whose hashes are recorded in the manifest. Do not substitute or regenerate splits. The manifest's source hashes seal all imported local `.py` files in the frozen reference tree. Package versions and Python executable are recorded in the science runtime environment receipt. This is an exact source snapshot; raw datasets and model weights remain server-only.

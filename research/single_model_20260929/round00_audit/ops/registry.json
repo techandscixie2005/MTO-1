@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "scope": "/home/inspur/MTO-1/research/single_model_20260929",
+  "cadence_hours": 4,
+  "preferred_gpu_uuids": [
+    "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+    "GPU-cb4dc1ea-9ea3-e426-bdeb-df0bef8a23fa",
+    "GPU-e212aefc-f1d6-cc7a-5594-e87abeaf1184",
+    "GPU-2431a641-8045-a10b-4aa0-2769010e0708"
+  ],
+  "gpu_policy": {
+    "0": "Reserved by unrelated SpecGPT job. Do not touch.",
+    "1": "Preferred; baseline uncorrected ECC=0, remap pending=no.",
+    "2": "Preferred; baseline uncorrected ECC=0, remap pending=no.",
+    "3": "Excluded: volatile/aggregate uncorrected ECC=187/352; remap pending=yes.",
+    "4": "Preferred; baseline uncorrected ECC=0, remap pending=no.",
+    "5": "Reserve: one historical corrected ECC; uncorrected=0, pending=no; requires new admission.",
+    "6": "Preferred; baseline uncorrected ECC=0, remap pending=no.",
+    "7": "Excluded: volatile/aggregate uncorrected ECC=2/2; remap pending=yes."
+  },
+  "restart_policy": "Coordinator reviews recorded failure, identity, healthy resource admission, and resumable checkpoint before any owned-run restart. Monitor never signals any process.",
+  "runs": []
+}

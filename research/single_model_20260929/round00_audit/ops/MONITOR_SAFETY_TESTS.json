@@ -1,0 +1,17 @@
+{
+  "checks": {
+    "own_identity_readable": true,
+    "reject_../outside.json": true,
+    "reject_/etc/passwd": true,
+    "running_identity": true,
+    "reject_reused_pid": true,
+    "absent_process": true,
+    "completion_recorded": true,
+    "failure_not_silenced": true,
+    "eight_gpus_detected": true,
+    "ecc_fields_detected": true,
+    "known_unhealthy_gpu_detected": true
+  },
+  "passed": true,
+  "test_kind": "read-only identity/containment/health safety checks"
+}
