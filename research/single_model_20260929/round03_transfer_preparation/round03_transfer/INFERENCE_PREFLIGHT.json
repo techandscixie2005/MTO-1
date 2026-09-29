@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "fixture": "two synthetic geometries and one checkpoint in memory",
+  "E_A_native_f_affine_f_bitwise_equal": true,
+  "one_uncomposed_map_on_native_f": true,
+  "original_checkpoint_data_or_cache_access_during_inference": false,
+  "opened_paths": [],
+  "zero_and_nonfinite_denominator_failures_rejected": true,
+  "OLS_known_fixture_exact": true,
+  "source_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round03_transfer/inference_preflight.py": "294925714a6e0fb1aa86ec82dfa7d6139d3bc6ac5343cf64d9dc0f49cb040fe3",
+    "/home/inspur/MTO-1/research/single_model_20260929/round03_transfer/predictor.py": "a1405bc54305b8654d92a3361e16373741849585ca14b625c098a0d9c7ff7e45",
+    "/home/inspur/MTO-1/research/single_model_20260929/round03_transfer/evaluation.py": "9beb9985cbeb67e5e9c82f05998d11240a69aa23ab319a40ceab7aa109717a4a",
+    "/home/inspur/MTO-1/research/single_model_20260929/round03_transfer/clean_source.py": "9cc59531ef672760da44dc89252f6dcc418ae33164002e7fd35f762024ee6051",
+    "/home/inspur/MTO-1/research/single_model_20260929/round03_transfer/source_config.json": "e1b823aa48f491b7e0eaa8cc106fa712e6ba3e3256d36e23f091af6d9c07bdf9",
+    "/home/inspur/MTO-1/research/single_model_20260929/round03_transfer/fit_normalization.json": "465df00112f6549aaf4d2e2ff0905014aeffd88bc21f39202e6f7772b67fedb3"
+  }
+}

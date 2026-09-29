@@ -1,0 +1,23 @@
+{
+  "sE2": 0.5384852554041385,
+  "sA2": 0.13127702708928576,
+  "E_state_mean": [
+    5.42297929666405,
+    6.00052653088775,
+    6.36285451269168,
+    6.655061129574953,
+    6.884594545303477,
+    7.0760864183041745,
+    7.2425603516681365,
+    7.3870868129701295,
+    7.519814657679383,
+    7.639991735906294
+  ],
+  "n_ref": 18.0,
+  "source": "round03_source_fit_only_96284",
+  "definition_E": "mean_na((E_fit_na-mean_n_fit(E_fit_na))^2)",
+  "definition_A": "mean_na(sum_ij(A_fit_naij^2))",
+  "definition_n_ref": "median fit-only atom count",
+  "raw_label_reduction_dtype": "float64",
+  "fit_indices_sha256": "b7b00dfe514ae57f3dd609a60dc259625007a5f43288ff75e2c83a3a7e71da37"
+}

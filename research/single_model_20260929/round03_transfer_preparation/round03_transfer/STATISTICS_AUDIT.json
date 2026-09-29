@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "fit_molecules": 96284,
+  "fit_valid_E_labels": 962840,
+  "fit_valid_A_labels": 962840,
+  "decoded_target_rows": 96284,
+  "decoded_target_members": [
+    "E",
+    "A",
+    "mask_E",
+    "mask_A"
+  ],
+  "decoded_calibration_validation_test_target_rows": 0,
+  "raw_f_decoded": false,
+  "all_fit_target_masks_valid": true,
+  "no_model_fit_or_GPU": true,
+  "initialization_requirement": "fresh torch seed11 MTOEA(config, fit_normalization); do not load initial_model.pt or full-TRAIN target statistics",
+  "target_statistics": {
+    "sE2": 0.5384852554041385,
+    "sA2": 0.13127702708928576,
+    "E_state_mean": [
+      5.42297929666405,
+      6.00052653088775,
+      6.36285451269168,
+      6.655061129574953,
+      6.884594545303477,
+      7.0760864183041745,
+      7.2425603516681365,
+      7.3870868129701295,
+      7.519814657679383,
+      7.639991735906294
+    ],
+    "n_ref": 18.0,
+    "source": "round03_source_fit_only_96284",
+    "definition_E": "mean_na((E_fit_na-mean_n_fit(E_fit_na))^2)",
+    "definition_A": "mean_na(sum_ij(A_fit_naij^2))",
+    "definition_n_ref": "median fit-only atom count",
+    "raw_label_reduction_dtype": "float64",
+    "fit_indices_sha256": "b7b00dfe514ae57f3dd609a60dc259625007a5f43288ff75e2c83a3a7e71da37"
+  },
+  "independent_formula_errors": {
+    "energy_second_moment_abs": 4.718447854656915e-14,
+    "A_block_sum_abs": 8.326672684688674e-17
+  },
+  "source_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round03_transfer/prepare_split_statistics.py": "0bb3343286f3656860bacfd8595f4d47fd1d3cccce18566a2a4e6e49774cb5c8",
+    "/home/inspur/MTO-1/research/single_model_20260929/clean_source_feasibility/audit_clean_source.py": "4a4facc25183df59ada9806047704b8c072f2121277f5bb1bdbe67853d8b6a25",
+    "/home/inspur/MTO-1/research/single_model_20260929/reports/velocity_audit/audit_velocity_labels.py": "f156319e6941bef1a945e3b69e2b754865f0bb662747c8f695d037cf98a119b7",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/model_factory.py": "37ebb9884b3851ae7401232319be5611159e83b588a65236d732d862b7b3fbf9",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/models_ea.py": "b47d50b8b32313d1c3e1f19f3e64e6f02ce42e91736e6da00f896f68965250b0",
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/data/identity_audit_v2.json": "9d384425a90dd88fbc68f8b609a303872910bb21c69e0d0a19bcccaee49cb3c4",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/splits.json": "141d6c4ba9631de91b81076b56afc2239aa3632478895102d8024e13d79c93ca",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/dataset.npz": "be8fadca203429575d70642b617730592693be40858dca7189c098a671596330",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/raw_labels.npz": "621dc8723fb6dc96681851a26e4f52fcb7747a4778e57a249a75d22f3af4c632"
+  },
+  "outputs": {
+    "split_manifest.json": "f1a3136de17435832498f662834ca4b1c7e5c4c1729b45792be1e1316391cfdd",
+    "fit_normalization.json": "465df00112f6549aaf4d2e2ff0905014aeffd88bc21f39202e6f7772b67fedb3"
+  },
+  "compressed_byte_note": "Nonselected compressed bytes are skipped without decoding labels; only fitting rows enter reductions."
+}
