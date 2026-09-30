@@ -1,0 +1,21 @@
+{
+  "status": "complete",
+  "mode": "audit",
+  "exit_code": 0,
+  "started_at_unix": 1790755494.4462,
+  "ended_at_unix": 1790755622.2533486,
+  "duration_seconds": 127.80714869499207,
+  "child_identity": {
+    "pid": 1286795,
+    "start_ticks": 1260315920,
+    "uid": 1000,
+    "cwd": "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930",
+    "argv_sha256": "f80411c8c700936a2fb2d0f3966f85b06c12aba102b3af1b06682bdf5b6baf29",
+    "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+    "process_state": "R"
+  },
+  "review_unchanged": true,
+  "source_manifest_unchanged": true,
+  "log_sha256": "3b699cdb1bb6259c99245136c8c0bd3bf750337aec4e344ccaf1bab420dfa912",
+  "output_sha256": "0419a5a856e084ad4e75cc67113d3dd290adf7826d235cedc9d2cf41df78dc80"
+}

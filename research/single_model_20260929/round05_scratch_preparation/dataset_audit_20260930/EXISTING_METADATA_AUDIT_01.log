@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "counts": {
+    "test": 6686,
+    "val": 6686,
+    "train": 120355
+  },
+  "pairwise_overlap": {
+    "test__val": {
+      "row_overlap": 0,
+      "id_overlap": 0,
+      "group_overlap": 0
+    },
+    "test__train": {
+      "row_overlap": 0,
+      "id_overlap": 0,
+      "group_overlap": 0
+    },
+    "val__train": {
+      "row_overlap": 0,
+      "id_overlap": 0,
+      "group_overlap": 0
+    }
+  },
+  "new_external_test_verified": false
+}

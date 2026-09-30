@@ -1,0 +1,465 @@
+{
+  "exact_aggregate_metadata_records_with_dataset_in_name": {
+    "EXISTING_DATASET_AUDIT.json": "e69286aef0f19f1ec4dbb63102c3811ce7219101ab1fde84b85286a886ac4fec",
+    "repair01_original/EXISTING_DATASET_AUDIT.json": "e69286aef0f19f1ec4dbb63102c3811ce7219101ab1fde84b85286a886ac4fec"
+  },
+  "excluded_entire_private_partition": true,
+  "files": [
+    {
+      "bytes": 6870,
+      "path": "BENCHMARK_V2_REPORT.md",
+      "sha256": "90ef4bb36aa0a06878e6ed4ae3bf5341bef54322c3aa9b66eea7d326753af947"
+    },
+    {
+      "bytes": 6784,
+      "path": "CORPUS_AUDIT.json",
+      "sha256": "644b6e6d5e2c7af1b2a6f234715a8d5acdaed9d596f746eba9f897c539f45a1c"
+    },
+    {
+      "bytes": 2823,
+      "path": "CURRENT_HANDOFF.md",
+      "sha256": "f20492243d9d9f06ed81e8589dd948e1b9bebd980585195a76bb2c970f0972cd"
+    },
+    {
+      "bytes": 4537,
+      "path": "EXISTING_DATASET_AUDIT.json",
+      "sha256": "e69286aef0f19f1ec4dbb63102c3811ce7219101ab1fde84b85286a886ac4fec"
+    },
+    {
+      "bytes": 459,
+      "path": "EXISTING_METADATA_AUDIT_01.log",
+      "sha256": "6cc7b7dc2760a53dcd22d5a18cc2f3d58f4a51ab9ca126f4e99c84489ce6e971"
+    },
+    {
+      "bytes": 2468,
+      "path": "IMPLEMENTATION_CONTRACT.md",
+      "sha256": "081f3abeec2fd0b302eef37ab9d8ceb05a9a2afc12e15685acac66257afee4e9"
+    },
+    {
+      "bytes": 2553,
+      "path": "INDEPENDENT_SPLIT_VERIFICATION.json",
+      "sha256": "395d415f854ed6948c4d7a11c0c1d7486193bb48f23bae76834a77148cc69ae2"
+    },
+    {
+      "bytes": 1471,
+      "path": "MATERIALIZATION_REVIEW.json",
+      "sha256": "9daba00d6855795bcd961c8ea91c484572d931f471832f5b848d32b51fcde250"
+    },
+    {
+      "bytes": 9711,
+      "path": "NEW_PARTITION_PROTOCOL.md",
+      "sha256": "73ca87a074fdd5e321cd7414c1f71008986d13c6617f8280f4ce5e97606a2a7c"
+    },
+    {
+      "bytes": 3363,
+      "path": "PRE_CORPUS_REVIEW.json",
+      "sha256": "deb1cd16e42f4b566ca23877a10870bf730367f547f7d85f49c73f46db261b16"
+    },
+    {
+      "bytes": 8964,
+      "path": "PUBLIC_DATA_AND_QC_REVIEW.md",
+      "sha256": "1f5e0f64cc112c4dbd1d82bd19282dc51b4537006809437d20d8af2410ced24d"
+    },
+    {
+      "bytes": 596,
+      "path": "REPAIR_AUDIT_EQUIVALENCE.json",
+      "sha256": "0237ff85d88372cfccadef5d36be7f6316dbd4db30b013959c394cde61805f99"
+    },
+    {
+      "bytes": 2591,
+      "path": "SERIALIZATION_REPAIR.md",
+      "sha256": "05481bdc4787638b86816d2b401b380a2f2e76126d6756e939d61d8c02c13a49"
+    },
+    {
+      "bytes": 1879,
+      "path": "SOURCE_MANIFEST.json",
+      "sha256": "2bcd4d256179ad99f6b88b34f50bba1a99facc9389a6438535662410c6783a38"
+    },
+    {
+      "bytes": 4408,
+      "path": "SPLIT_MANIFEST.json",
+      "sha256": "c8ce66ddb7209005b5feebfcddfc2bc30ee81d92fe63cce20f15c4abf3a07155"
+    },
+    {
+      "bytes": 1858,
+      "path": "SYNTHETIC_CHECKS.json",
+      "sha256": "a8668972b37dff51ebb0d293f04d888e5b151b506c8e89e836670ad8ccd7d851"
+    },
+    {
+      "bytes": 149,
+      "path": "SYNTHETIC_CHECKS_01.log",
+      "sha256": "8346896f6585fe46ba868fcf9dde381a9ab104e0d978ba81ccef48101063c2f0"
+    },
+    {
+      "bytes": 4155,
+      "path": "audit_existing_metadata.py",
+      "sha256": "0ead98abbdec74341ae5ac1dc88c24b6b2f27eac396058f1c754a9755108c5a5"
+    },
+    {
+      "bytes": 9286,
+      "path": "build_partition.py",
+      "sha256": "26b1ce20d76cd3d6c3a23ce7ba22d8d746f86b04dc1e6cb62f7d077685b2d326"
+    },
+    {
+      "bytes": 1578,
+      "path": "builder_settings.json",
+      "sha256": "9939b0acc75e788c955f360c30cb0c03f02b23cf6406df36259661cd49819546"
+    },
+    {
+      "bytes": 4174,
+      "path": "independent_materialization_review.py",
+      "sha256": "49303eae330ec51ef040a71e17a659e532c7f2a568196f2198d638d560a051b8"
+    },
+    {
+      "bytes": 4844,
+      "path": "independent_pre_corpus_review.py",
+      "sha256": "a784cac4717a826eb39c490b773ee1c365a67482d2d81d2ac339f60caea403a1"
+    },
+    {
+      "bytes": 12144,
+      "path": "independent_verify_partition.py",
+      "sha256": "a6459215c4ff2973aff12ca51d8caaa9c36601c5815f44f294118b97a9b4c847"
+    },
+    {
+      "bytes": 744,
+      "path": "ops/audit_attempt/COMPLETE.json",
+      "sha256": "15e0164610d273778fdd9873ee184a326b02f7f31291636685c78539a57b5a44"
+    },
+    {
+      "bytes": 1503,
+      "path": "ops/audit_attempt/LAUNCH_RECEIPT.json",
+      "sha256": "1027b92ea1e54defa5921b05755983f30ff44ece6ee41bd378253e963d8cf66c"
+    },
+    {
+      "bytes": 1377,
+      "path": "ops/audit_attempt/MONITOR_REGISTRATION.json",
+      "sha256": "822b3dba4ef8bd85aa734cc3584eaf89351901c3b973a4a8c4e91f74314c9dd9"
+    },
+    {
+      "bytes": 1377,
+      "path": "ops/audit_attempt/REGISTRATION_TOOL.log",
+      "sha256": "822b3dba4ef8bd85aa734cc3584eaf89351901c3b973a4a8c4e91f74314c9dd9"
+    },
+    {
+      "bytes": 1105,
+      "path": "ops/audit_attempt/stage.log",
+      "sha256": "3b699cdb1bb6259c99245136c8c0bd3bf750337aec4e344ccaf1bab420dfa912"
+    },
+    {
+      "bytes": 768,
+      "path": "ops/audit_attempt/status.json",
+      "sha256": "0a2f9e16366c43e9d23a3e64523160d456b44adefa72391e5433be76a5d0fda3"
+    },
+    {
+      "bytes": 747,
+      "path": "ops/audit_attempt_repair01/COMPLETE.json",
+      "sha256": "8ca7b785a6d0fd11d56c29d03e47670aff57810f209f3f1ad3849c8a211c1210"
+    },
+    {
+      "bytes": 1505,
+      "path": "ops/audit_attempt_repair01/LAUNCH_RECEIPT.json",
+      "sha256": "d84c88f678aa5ad868e427ab581cf889149af4e36a450cd09d1d9ad77540c10f"
+    },
+    {
+      "bytes": 1431,
+      "path": "ops/audit_attempt_repair01/MONITOR_REGISTRATION.json",
+      "sha256": "6668b053faf050bb8fa06f5a7f0c561cf2687f666c58c0bf53d2e002894001ce"
+    },
+    {
+      "bytes": 1431,
+      "path": "ops/audit_attempt_repair01/REGISTRATION_TOOL.log",
+      "sha256": "6668b053faf050bb8fa06f5a7f0c561cf2687f666c58c0bf53d2e002894001ce"
+    },
+    {
+      "bytes": 1105,
+      "path": "ops/audit_attempt_repair01/stage.log",
+      "sha256": "3985370bf9f06d5863607c9b0ffac4dfbd49bed78cdf704e94f00aee8a444ae4"
+    },
+    {
+      "bytes": 771,
+      "path": "ops/audit_attempt_repair01/status.json",
+      "sha256": "b1735a9bc9b810f63f6cc5b825128e6d6fa4e7f20b8aac8374b2f7be14a838fd"
+    },
+    {
+      "bytes": 693,
+      "path": "ops/audit_repair01_wrapper_launch.log",
+      "sha256": "b698198db76d294cf70308d56330c085ac2e11f85da24c2d8f482e0c89437c3c"
+    },
+    {
+      "bytes": 690,
+      "path": "ops/audit_wrapper_launch.log",
+      "sha256": "ce9029a42980a3b02ac95a1fe0d9c3e9607d791dbc2e9dade12ea2e95867bf0d"
+    },
+    {
+      "bytes": 662,
+      "path": "ops/independent_verification_attempt/COMPLETE.json",
+      "sha256": "c38ae871aec1fb270f6cebbcc6052ca55a42546c642df54187c05143b0fed0f1"
+    },
+    {
+      "bytes": 1543,
+      "path": "ops/independent_verification_attempt/LAUNCH_RECEIPT.json",
+      "sha256": "7fece506ab0e95e53887c54e11680fa9662b931b96d10254c16ea613fa156d69"
+    },
+    {
+      "bytes": 1496,
+      "path": "ops/independent_verification_attempt/MONITOR_REGISTRATION.json",
+      "sha256": "517668a1b9ea35887b050880d083660abf5fe351e8f7046124bc591108e5e216"
+    },
+    {
+      "bytes": 1496,
+      "path": "ops/independent_verification_attempt/REGISTRATION_TOOL.log",
+      "sha256": "517668a1b9ea35887b050880d083660abf5fe351e8f7046124bc591108e5e216"
+    },
+    {
+      "bytes": 338,
+      "path": "ops/independent_verification_attempt/stage.log",
+      "sha256": "207b626675bdad98d257c993e75ebaf04c5b01d2d764812e0da63c9ef5a06fc1"
+    },
+    {
+      "bytes": 685,
+      "path": "ops/independent_verification_attempt/status.json",
+      "sha256": "776709fe20066d788d9eade067295e053efe2ad659e9f8c2c3675b6e4f92c285"
+    },
+    {
+      "bytes": 689,
+      "path": "ops/materialize_attempt/FAILED.json",
+      "sha256": "78ed89699a031c7bf8a70778785385e2557001866f71f3659b48b2f480ee39de"
+    },
+    {
+      "bytes": 1519,
+      "path": "ops/materialize_attempt/LAUNCH_RECEIPT.json",
+      "sha256": "4c5a238205252157a52d45a0a77b5d58a071995f6e772f1a56e1f3f85aab348e"
+    },
+    {
+      "bytes": 1418,
+      "path": "ops/materialize_attempt/MONITOR_REGISTRATION.json",
+      "sha256": "585cd7c14d7ec9a8a98dd19fbbf650d66f89faaccc0c7254e081c9307d6a51f3"
+    },
+    {
+      "bytes": 1418,
+      "path": "ops/materialize_attempt/REGISTRATION_TOOL.log",
+      "sha256": "585cd7c14d7ec9a8a98dd19fbbf650d66f89faaccc0c7254e081c9307d6a51f3"
+    },
+    {
+      "bytes": 1484,
+      "path": "ops/materialize_attempt/stage.log",
+      "sha256": "f76b77587bcb843062b9f5236bbeca75bc737fc902a1b4cac8259bf1552ca61d"
+    },
+    {
+      "bytes": 711,
+      "path": "ops/materialize_attempt/status.json",
+      "sha256": "0df37923d3d0981b6d584b6e41276e27ee39a3806747dc8370d05079a0d715ee"
+    },
+    {
+      "bytes": 752,
+      "path": "ops/materialize_attempt_repair01/COMPLETE.json",
+      "sha256": "4a5e5528a8d10f44aa0f59f76aebaf100d401df0c90660bb3ef17b82bfafcf32"
+    },
+    {
+      "bytes": 1518,
+      "path": "ops/materialize_attempt_repair01/LAUNCH_RECEIPT.json",
+      "sha256": "52481e38414df716305250ba0408a87664f22233c94ee0ecbdc609c7efca3a77"
+    },
+    {
+      "bytes": 1472,
+      "path": "ops/materialize_attempt_repair01/MONITOR_REGISTRATION.json",
+      "sha256": "1e87d0d2b3dbe6889e61283a32b53cbd887c95067322a3d586a94c6bceb1fdfc"
+    },
+    {
+      "bytes": 1472,
+      "path": "ops/materialize_attempt_repair01/REGISTRATION_TOOL.log",
+      "sha256": "1e87d0d2b3dbe6889e61283a32b53cbd887c95067322a3d586a94c6bceb1fdfc"
+    },
+    {
+      "bytes": 1110,
+      "path": "ops/materialize_attempt_repair01/stage.log",
+      "sha256": "395a78292ed3da574a34485ce5e8f659459371d2e07c0166eb41c7f4ec5781bb"
+    },
+    {
+      "bytes": 776,
+      "path": "ops/materialize_attempt_repair01/status.json",
+      "sha256": "1f6cbe3282f26d123a44cd5f6aa0165dd1223e27df0a29b899efdff7ea2461ab"
+    },
+    {
+      "bytes": 698,
+      "path": "ops/materialize_repair01_wrapper_launch.log",
+      "sha256": "220b5aeea027ba1ffb0731be1dfcfbe58b563feca33ec34cc04848c4896e2470"
+    },
+    {
+      "bytes": 635,
+      "path": "ops/materialize_wrapper_launch.log",
+      "sha256": "377c3c2397cdc2586822f098f1518291af6210844346a9520ac42628e0c09e4b"
+    },
+    {
+      "bytes": 6784,
+      "path": "repair01_original/CORPUS_AUDIT.json",
+      "sha256": "0419a5a856e084ad4e75cc67113d3dd290adf7826d235cedc9d2cf41df78dc80"
+    },
+    {
+      "bytes": 3188,
+      "path": "repair01_original/CURRENT_HANDOFF.md",
+      "sha256": "d3d836c9c0e4227a586667560348e806fa6e315c0a6ce790472b805ef8c5c0c7"
+    },
+    {
+      "bytes": 4537,
+      "path": "repair01_original/EXISTING_DATASET_AUDIT.json",
+      "sha256": "e69286aef0f19f1ec4dbb63102c3811ce7219101ab1fde84b85286a886ac4fec"
+    },
+    {
+      "bytes": 459,
+      "path": "repair01_original/EXISTING_METADATA_AUDIT_01.log",
+      "sha256": "6cc7b7dc2760a53dcd22d5a18cc2f3d58f4a51ab9ca126f4e99c84489ce6e971"
+    },
+    {
+      "bytes": 2468,
+      "path": "repair01_original/IMPLEMENTATION_CONTRACT.md",
+      "sha256": "081f3abeec2fd0b302eef37ab9d8ceb05a9a2afc12e15685acac66257afee4e9"
+    },
+    {
+      "bytes": 1336,
+      "path": "repair01_original/MATERIALIZATION_REVIEW.json",
+      "sha256": "184058fce844926f9ed73e950718438f520b61ab44fc7f53ff3f8593947e7bdd"
+    },
+    {
+      "bytes": 9711,
+      "path": "repair01_original/NEW_PARTITION_PROTOCOL.md",
+      "sha256": "73ca87a074fdd5e321cd7414c1f71008986d13c6617f8280f4ce5e97606a2a7c"
+    },
+    {
+      "bytes": 2856,
+      "path": "repair01_original/PRE_CORPUS_REVIEW.json",
+      "sha256": "f64de41f384536d0bc1510f3f75fe59f87881d2b76b0bf05b77db7902fc03a45"
+    },
+    {
+      "bytes": 8964,
+      "path": "repair01_original/PUBLIC_DATA_AND_QC_REVIEW.md",
+      "sha256": "1f5e0f64cc112c4dbd1d82bd19282dc51b4537006809437d20d8af2410ced24d"
+    },
+    {
+      "bytes": 2391,
+      "path": "repair01_original/SNAPSHOT_MANIFEST.json",
+      "sha256": "a644dcc26a963ebf1eeea5661f4b942a610dc8e4da9e734756388bc3e74a2f00"
+    },
+    {
+      "bytes": 1879,
+      "path": "repair01_original/SOURCE_MANIFEST.json",
+      "sha256": "1315f7fcb6112c893ad0855b2144af7cf4711baadd7e6438ae5f96075d8dd042"
+    },
+    {
+      "bytes": 1776,
+      "path": "repair01_original/SYNTHETIC_CHECKS.json",
+      "sha256": "1ca088f8db35f63c4d46eb3cd98e6fc86bfb6bc46cae548f7cd6cf11856de9a9"
+    },
+    {
+      "bytes": 149,
+      "path": "repair01_original/SYNTHETIC_CHECKS_01.log",
+      "sha256": "8346896f6585fe46ba868fcf9dde381a9ab104e0d978ba81ccef48101063c2f0"
+    },
+    {
+      "bytes": 4155,
+      "path": "repair01_original/audit_existing_metadata.py",
+      "sha256": "0ead98abbdec74341ae5ac1dc88c24b6b2f27eac396058f1c754a9755108c5a5"
+    },
+    {
+      "bytes": 9124,
+      "path": "repair01_original/build_partition.py",
+      "sha256": "394b68d0bfd5a72010327d2dab69cb2494186b16ae158007520f3d71376c7519"
+    },
+    {
+      "bytes": 1578,
+      "path": "repair01_original/builder_settings.json",
+      "sha256": "9939b0acc75e788c955f360c30cb0c03f02b23cf6406df36259661cd49819546"
+    },
+    {
+      "bytes": 3749,
+      "path": "repair01_original/independent_materialization_review.py",
+      "sha256": "61e8dee7e801d25d3ef7ce8251555690e93d6820bcb3690f43fc1a41b1304ee4"
+    },
+    {
+      "bytes": 3444,
+      "path": "repair01_original/independent_pre_corpus_review.py",
+      "sha256": "90f08436ee8651b34d2c15725c9039012be9c10ea39e9c38913595ed913035bf"
+    },
+    {
+      "bytes": 12144,
+      "path": "repair01_original/independent_verify_partition.py",
+      "sha256": "a6459215c4ff2973aff12ca51d8caaa9c36601c5815f44f294118b97a9b4c847"
+    },
+    {
+      "bytes": 6784,
+      "path": "repair01_original/removed_current/CORPUS_AUDIT.json",
+      "sha256": "0419a5a856e084ad4e75cc67113d3dd290adf7826d235cedc9d2cf41df78dc80"
+    },
+    {
+      "bytes": 1336,
+      "path": "repair01_original/removed_current/MATERIALIZATION_REVIEW.json",
+      "sha256": "184058fce844926f9ed73e950718438f520b61ab44fc7f53ff3f8593947e7bdd"
+    },
+    {
+      "bytes": 2856,
+      "path": "repair01_original/removed_current/PRE_CORPUS_REVIEW.json",
+      "sha256": "f64de41f384536d0bc1510f3f75fe59f87881d2b76b0bf05b77db7902fc03a45"
+    },
+    {
+      "bytes": 1879,
+      "path": "repair01_original/removed_current/SOURCE_MANIFEST.json",
+      "sha256": "1315f7fcb6112c893ad0855b2144af7cf4711baadd7e6438ae5f96075d8dd042"
+    },
+    {
+      "bytes": 1776,
+      "path": "repair01_original/removed_current/SYNTHETIC_CHECKS.json",
+      "sha256": "1ca088f8db35f63c4d46eb3cd98e6fc86bfb6bc46cae548f7cd6cf11856de9a9"
+    },
+    {
+      "bytes": 3782,
+      "path": "repair01_original/run_independent_verification.py",
+      "sha256": "0013856d196baa2793a1a8c5e1fc46f88aa36ebcc1768335153f357caa2cbac3"
+    },
+    {
+      "bytes": 3952,
+      "path": "repair01_original/run_owned_builder.py",
+      "sha256": "772df7e1e878dc52c794971c0234828dd13b5d46d8c5604792edd9c430c1abdb"
+    },
+    {
+      "bytes": 11029,
+      "path": "repair01_original/split_core.py",
+      "sha256": "e9097c27625cb2669db8498b9ddc7befe094e0c2d17df6241aae3b6548e90719"
+    },
+    {
+      "bytes": 6275,
+      "path": "repair01_original/synthetic_split_checks.py",
+      "sha256": "b09f7b0b416005bf7a1a91bf38128e4e21a248a1807e3ea78346ec00178db16b"
+    },
+    {
+      "bytes": 4129,
+      "path": "run_independent_verification.py",
+      "sha256": "4c72acb96a88886b5aa52bc3c5e65120e2da14fceeaf9b6040e218b0459ca2da"
+    },
+    {
+      "bytes": 4155,
+      "path": "run_owned_builder.py",
+      "sha256": "602d03268c5b84db316da323cdadede6dd467668c6e5d8f6ea1d854c6ea28029"
+    },
+    {
+      "bytes": 11029,
+      "path": "split_core.py",
+      "sha256": "e9097c27625cb2669db8498b9ddc7befe094e0c2d17df6241aae3b6548e90719"
+    },
+    {
+      "bytes": 6648,
+      "path": "synthetic_split_checks.py",
+      "sha256": "f0da2b5467f29b263f562cf2a3ed97a06c611ac8a675291d9eeff84fd0c216db"
+    }
+  ],
+  "independent_verification_sha256": "395d415f854ed6948c4d7a11c0c1d7486193bb48f23bae76834a77148cc69ae2",
+  "no_raw_identifiers_memberships_targets_predictions_or_checkpoints_included": true,
+  "original_failed_and_repaired_attempts_included": true,
+  "passed": true,
+  "phase": "v2_split_preparation_complete",
+  "publication_note": "These exact JSON files are aggregate metadata, not raw datasets; retain explicit hash-bound mapping if the packer rejects their basenames. Never relax private_partition exclusions. D-first archive then inspected publication remains required.",
+  "record_count": 89,
+  "report_sha256": "90ef4bb36aa0a06878e6ed4ae3bf5341bef54322c3aa9b66eea7d326753af947",
+  "source_manifest_sha256": "2bcd4d256179ad99f6b88b34f50bba1a99facc9389a6438535662410c6783a38",
+  "split_manifest_sha256": "c8ce66ddb7209005b5feebfcddfc2bc30ee81d92fe63cce20f15c4abf3a07155",
+  "total_bytes": 281126
+}

@@ -1,0 +1,124 @@
+{
+  "passed": true,
+  "scope": "known project and known QM9S source metadata only",
+  "no_target_or_prediction_array_decoded": true,
+  "new_external_test_dataset_verified": false,
+  "known_qm9s_area_entries": [
+    ".upload-20260930-tdlog1-20000",
+    "qm9s_td_extracted_20260925"
+  ],
+  "experiment_dataset_file_inventory": [
+    {
+      "path": "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/data/dataset.npz",
+      "bytes": 524746908,
+      "targets_or_arrays_opened": false
+    },
+    {
+      "path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/dataset.npz",
+      "bytes": 524746908,
+      "targets_or_arrays_opened": false
+    },
+    {
+      "path": "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/data/dataset.npz",
+      "bytes": 524746908,
+      "targets_or_arrays_opened": false
+    },
+    {
+      "path": "/home/inspur/MTO-1/experiments/qm9s_pouter_trace_20260927/data/dataset.npz",
+      "bytes": 524746908,
+      "targets_or_arrays_opened": false
+    },
+    {
+      "path": "/home/inspur/MTO-1/experiments/qm9s_pouter_trace_wE_20260928/data/dataset.npz",
+      "bytes": 524746908,
+      "targets_or_arrays_opened": false
+    }
+  ],
+  "same_size_is_not_asserted_as_independent_content_hash_proof": true,
+  "existing_split_counts": {
+    "test": 6686,
+    "val": 6686,
+    "train": 120355
+  },
+  "existing_group_counts": {
+    "test": 6671,
+    "val": 6671,
+    "train": 120127
+  },
+  "existing_duplicate_groups": 247,
+  "unresolved_rows_by_partition": {
+    "test": 0,
+    "val": 0,
+    "train": 278
+  },
+  "existing_pairwise_overlap": {
+    "test__val": {
+      "row_overlap": 0,
+      "id_overlap": 0,
+      "group_overlap": 0
+    },
+    "test__train": {
+      "row_overlap": 0,
+      "id_overlap": 0,
+      "group_overlap": 0
+    },
+    "val__train": {
+      "row_overlap": 0,
+      "id_overlap": 0,
+      "group_overlap": 0
+    }
+  },
+  "chemical_identity_limitation": "Zero overlap under the audited conservative connectivity keys, not proof that heuristic bond perception identifies every chemical identity.",
+  "historical_exposure": {
+    "all_existing_splits": "historically used dataset",
+    "old_validation": "repeated tuning/calibration/selection exposure",
+    "old_test": "historical scores and diagnostics already exposed",
+    "new_partition_of_this_dataset": "cannot be called an independent external dataset"
+  },
+  "historical_qc_metadata": {
+    "route_section_distribution": {
+      "#p td=(nstates=10) b3lyp/TZVP nosymm geom=check guess=read": 133885
+    },
+    "program_version_distribution": {
+      "ES64L-G16RevB.01 20-Dec-2017": 133885
+    },
+    "rpa_flag_distribution": {
+      "T": 133727
+    },
+    "coordinate_frame_distribution": {
+      "Input": 133727,
+      "None": 158
+    },
+    "charge_multiplicity_distribution": {
+      "(0, 1)": 133727,
+      "(None, None)": 158
+    },
+    "state_symmetry_distribution": {
+      "Singlet-?Sym": 1337270
+    },
+    "units": {
+      "positions": "angstrom",
+      "energy": "eV",
+      "wavelength": "nm",
+      "transition_dipole": "atomic units",
+      "A": "atomic units squared",
+      "oscillator_strength": "dimensionless"
+    },
+    "label_policy": "All observed labeled roots retained in printed order. No predefined number of states, broadening, train/test split, or sample exclusion.",
+    "coordinate_policy": "Last Standard orientation before labels, otherwise last available orientation. Multiple geometry tables are flagged by unambiguous_single_calculation=False.",
+    "connectivity": "Not supplied by extraction; no bonds or SMILES inferred. Geometry optimization protocol not inferred from TD geom=check."
+  },
+  "validity_metadata": {
+    "source_log_count": 133885,
+    "normal_termination_count": 133727,
+    "response_convergence_reported_count": 133727,
+    "complete_geometry_count": 133727,
+    "complete_successful_scalar_records": 133727
+  },
+  "source_hashes": {
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/data/splits.json": "141d6c4ba9631de91b81076b56afc2239aa3632478895102d8024e13d79c93ca",
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/data/identity_audit_v2.json": "9d384425a90dd88fbc68f8b609a303872910bb21c69e0d0a19bcccaee49cb3c4",
+    "/home/inspur/datasets/QM9S/qm9s_td_extracted_20260925/dataset_manifest.json": "fc848263753bb8311a07bdf39299193f8b6fb3ff0f35fef329c81a8255580959",
+    "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930/audit_existing_metadata.py": "0ead98abbdec74341ae5ac1dc88c24b6b2f27eac396058f1c754a9755108c5a5"
+  }
+}

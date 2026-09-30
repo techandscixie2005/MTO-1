@@ -1,0 +1,23 @@
+{
+  "id": "round05_identity_diagnostic",
+  "registered_at_utc": "2026-09-30T09:02:07.381756+00:00",
+  "identity": {
+    "pid": 1299689,
+    "start_ticks": 1260659209,
+    "uid": 1000,
+    "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation",
+    "argv_sha256": "e5eabf53bdaf87dad0fc02541622151c057e8532b11b8b8c6ad2ee5251f061da",
+    "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+    "process_state": "R"
+  },
+  "run_dir": "round05_scratch_preparation/ops/gpu_identity_diagnostic_attempt",
+  "gpu_uuid": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+  "status_path": "round05_scratch_preparation/ops/gpu_identity_diagnostic_attempt/status.json",
+  "log_path": "round05_scratch_preparation/ops/gpu_identity_diagnostic_attempt/stage.log",
+  "completion_path": "round05_scratch_preparation/ops/gpu_identity_diagnostic_attempt/COMPLETE.json",
+  "failure_path": "round05_scratch_preparation/ops/gpu_identity_diagnostic_attempt/FAILED.json",
+  "checkpoint_paths": [],
+  "stale_after_seconds": 28800,
+  "monitor": true,
+  "restart_policy": "coordinator_review_required"
+}

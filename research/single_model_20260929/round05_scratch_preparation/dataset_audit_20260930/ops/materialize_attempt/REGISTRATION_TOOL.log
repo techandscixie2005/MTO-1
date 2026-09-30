@@ -1,0 +1,33 @@
+{
+  "id": "v2_split_materialize",
+  "registered_at_utc": "2026-09-30T08:10:09.944644+00:00",
+  "identity": {
+    "pid": 1287991,
+    "start_ticks": 1260347461,
+    "uid": 1000,
+    "cwd": "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930",
+    "argv_sha256": "e7589858d93772ea2a4dd77f2bef121da3339023f2f04f442df4eae85ec5448f",
+    "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+    "process_state": "S"
+  },
+  "run_dir": "dataset_audit_20260930/ops/materialize_attempt",
+  "resource_kind": "cpu",
+  "gpu_uuid": null,
+  "expected_gpu_allocations": 0,
+  "environment_constraints": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2"
+  },
+  "authorization_path": "dataset_audit_20260930/MATERIALIZATION_REVIEW.json",
+  "authorization_sha256": "184058fce844926f9ed73e950718438f520b61ab44fc7f53ff3f8593947e7bdd",
+  "status_path": "dataset_audit_20260930/ops/materialize_attempt/status.json",
+  "log_path": "dataset_audit_20260930/ops/materialize_attempt/stage.log",
+  "completion_path": "dataset_audit_20260930/ops/materialize_attempt/COMPLETE.json",
+  "failure_path": "dataset_audit_20260930/ops/materialize_attempt/FAILED.json",
+  "checkpoint_paths": [],
+  "stale_after_seconds": 28800,
+  "monitor": true,
+  "restart_policy": "coordinator_review_required",
+  "identity_role": "synchronous owned stage wrapper; child identities recorded in stage receipt"
+}

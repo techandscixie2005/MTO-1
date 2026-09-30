@@ -1,0 +1,33 @@
+{
+  "id": "v2_split_independent_verification",
+  "registered_at_utc": "2026-09-30T08:25:55.505771+00:00",
+  "identity": {
+    "pid": 1291738,
+    "start_ticks": 1260442017,
+    "uid": 1000,
+    "cwd": "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930",
+    "argv_sha256": "988ef5fc470e42c21bef9ed11e5024651b65aad3c411db2f16224fdcf415fae2",
+    "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+    "process_state": "S"
+  },
+  "run_dir": "dataset_audit_20260930/ops/independent_verification_attempt",
+  "resource_kind": "cpu",
+  "gpu_uuid": null,
+  "expected_gpu_allocations": 0,
+  "environment_constraints": {
+    "MKL_NUM_THREADS": "2",
+    "OMP_NUM_THREADS": "2",
+    "CUDA_VISIBLE_DEVICES": ""
+  },
+  "authorization_path": "dataset_audit_20260930/MATERIALIZATION_REVIEW.json",
+  "authorization_sha256": "9daba00d6855795bcd961c8ea91c484572d931f471832f5b848d32b51fcde250",
+  "status_path": "dataset_audit_20260930/ops/independent_verification_attempt/status.json",
+  "log_path": "dataset_audit_20260930/ops/independent_verification_attempt/stage.log",
+  "completion_path": "dataset_audit_20260930/ops/independent_verification_attempt/COMPLETE.json",
+  "failure_path": "dataset_audit_20260930/ops/independent_verification_attempt/FAILED.json",
+  "checkpoint_paths": [],
+  "stale_after_seconds": 28800,
+  "monitor": true,
+  "restart_policy": "coordinator_review_required",
+  "identity_role": "synchronous owned stage wrapper; child identities recorded in stage receipt"
+}

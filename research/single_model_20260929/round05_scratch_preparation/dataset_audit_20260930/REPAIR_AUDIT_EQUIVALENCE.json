@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "comparison": "Every parsed aggregate and planned private-array hash equal after removing ONLY source_manifest_sha256",
+  "old_source_manifest_sha256": "1315f7fcb6112c893ad0855b2144af7cf4711baadd7e6438ae5f96075d8dd042",
+  "new_source_manifest_sha256": "2bcd4d256179ad99f6b88b34f50bba1a99facc9389a6438535662410c6783a38",
+  "old_audit_sha256": "0419a5a856e084ad4e75cc67113d3dd290adf7826d235cedc9d2cf41df78dc80",
+  "new_audit_sha256": "644b6e6d5e2c7af1b2a6f234715a8d5acdaed9d596f746eba9f897c539f45a1c",
+  "all_array_hashes_unchanged": true,
+  "no_private_arrays_exist": true
+}

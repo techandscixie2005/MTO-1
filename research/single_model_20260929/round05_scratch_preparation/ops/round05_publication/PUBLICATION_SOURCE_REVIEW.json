@@ -1,0 +1,29 @@
+{
+  "aggregate_exceptions": {
+    "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930/EXISTING_DATASET_AUDIT.json": "e69286aef0f19f1ec4dbb63102c3811ce7219101ab1fde84b85286a886ac4fec",
+    "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930/repair01_original/EXISTING_DATASET_AUDIT.json": "e69286aef0f19f1ec4dbb63102c3811ce7219101ab1fde84b85286a886ac4fec"
+  },
+  "all82_frozen11_supplemental89_split_records_exact": true,
+  "all_sources_utf8_hash_size_checked": true,
+  "blocking_findings": [],
+  "external_dependencies_copied_and_original_hashes_verified": 17,
+  "frozen_manifest_sha256": "66269e04d73943bec48a6331c3ca45a9efcc12045e962fe897da6196af97c5e1",
+  "independent_preparation_review_sha256": "ef7d90250fd0491fba1432201416de983afa86ee6ae7ebf6e086735f5e10ff19",
+  "inventory_sha256": "41a8a9dbb68191c3cb24ced5beab3a5350dac5299333e575f9bbd9c6deb578bc",
+  "no_scientific_execution_or_target_decoding": true,
+  "passed": true,
+  "phase": "exact_lightweight_publication_source_and_inventory_review",
+  "prepare_script_sha256": "7faa6f1a83ca3f42a3cb56e499ac02baa5f5ba68a17114ac7368bd94c45f0af9",
+  "preserves_failed_and_repaired_stages": true,
+  "private_arrays_tensors_credentials_excluded": true,
+  "production_execution_authorized": false,
+  "publisher_script_sha256": "6d9b171f3c334d02edc2fd9f6b320920df4255bfa785551b879bb1b867efba94",
+  "readme_sha256": "22b615bff7f9bef544a4e55e44650533b153aaadf41a4b27d585473fe6d0fa49",
+  "record_count": 294,
+  "restore_mapping_sha256": "b43ddf2b9dc4371e9b02959692ccf5d86cd5042fde2a4fb077364ef3f34c6a5d",
+  "root_acceptance_sha256": "8fbd9c47e51cc3fcdda7af40737eecbe2065700fd9f6ba93c5205b9f49e6c6b8",
+  "source_review": "Manual inspection of exact allowlist/preparer/publisher, then independent current-byte/mapping/closure checks. Separate-index Git, expected refs/parent, --no-filters bytes, non-force atomic push and remote new-blob verification. Exact frozen_manifest_sha256 receipt alias correction reviewed before inventory creation.",
+  "stage_requires_separate_exact_tree_content_approval": true,
+  "supplemental_review_manifest_sha256": "ca33d0dc331d0ba6caae70b1d4291a7d1584e0f290b1d10b99c6f54ec6411185",
+  "total_bytes": 1685134
+}

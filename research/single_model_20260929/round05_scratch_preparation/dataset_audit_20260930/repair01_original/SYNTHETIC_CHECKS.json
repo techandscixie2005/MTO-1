@@ -1,0 +1,42 @@
+{
+  "checks": {
+    "all_candidate_links_and_ambiguous_component_propagation": true,
+    "all_five_connectivity_factors_exercised": true,
+    "all_rows_and_original_keys_verified": true,
+    "atom_permutation": true,
+    "complete_nonadjacent_radius_pairs": true,
+    "conformer_group_and_candidate_failure_retains_known_links": true,
+    "deterministic_whole_group_overshoot": true,
+    "exact_fp64_geometry_boundary": true,
+    "explicit_hydrogens_preserved": true,
+    "hydrogen_only_graph": true,
+    "immutable_write_idempotence": true,
+    "insufficient_eligible_rows_stop": true,
+    "missing_independent_review_fails": true,
+    "reflection": true,
+    "rotation": true,
+    "stereoisomers_conservatively_grouped": true,
+    "target_prediction_mask_members_rejected_before_open": true,
+    "tautomer_bond_order_family_grouped": true,
+    "translation": true,
+    "unequal_hash_collision_stops": true,
+    "unsanitized_isotope_charge_retention": true
+  },
+  "environment": {
+    "numpy": "2.2.6",
+    "python": "3.10.19",
+    "rdkit": "2025.09.4",
+    "scipy": "1.15.3"
+  },
+  "passed": true,
+  "real_dataset_or_labels_read": false,
+  "source_hashes": {
+    "IMPLEMENTATION_CONTRACT.md": "081f3abeec2fd0b302eef37ab9d8ceb05a9a2afc12e15685acac66257afee4e9",
+    "NEW_PARTITION_PROTOCOL.md": "73ca87a074fdd5e321cd7414c1f71008986d13c6617f8280f4ce5e97606a2a7c",
+    "build_partition.py": "394b68d0bfd5a72010327d2dab69cb2494186b16ae158007520f3d71376c7519",
+    "builder_settings.json": "9939b0acc75e788c955f360c30cb0c03f02b23cf6406df36259661cd49819546",
+    "split_core.py": "e9097c27625cb2669db8498b9ddc7befe094e0c2d17df6241aae3b6548e90719",
+    "synthetic_split_checks.py": "b09f7b0b416005bf7a1a91bf38128e4e21a248a1807e3ea78346ec00178db16b"
+  },
+  "synthetic_only": true
+}

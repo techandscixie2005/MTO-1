@@ -1,0 +1,38 @@
+{
+  "mode": "audit",
+  "command": [
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/bin/python",
+    "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930/build_partition.py",
+    "audit"
+  ],
+  "cwd": "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930",
+  "wrapper_identity": {
+    "pid": 1290108,
+    "start_ticks": 1260397755,
+    "uid": 1000,
+    "cwd": "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930",
+    "argv_sha256": "838246e08a97e6b22a1f71adfa51d5b1034d3dd8320a26d38e96867a200dc574",
+    "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+    "process_state": "R"
+  },
+  "review_sha256": "deb1cd16e42f4b566ca23877a10870bf730367f547f7d85f49c73f46db261b16",
+  "source_manifest_sha256": "2bcd4d256179ad99f6b88b34f50bba1a99facc9389a6438535662410c6783a38",
+  "wrapper_sha256": "602d03268c5b84db316da323cdadede6dd467668c6e5d8f6ea1d854c6ea28029",
+  "created_at_unix": 1790756312.83796,
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2"
+  },
+  "child_pid": 1290110,
+  "child_identity": {
+    "pid": 1290110,
+    "start_ticks": 1260397765,
+    "uid": 1000,
+    "cwd": "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930",
+    "argv_sha256": "f80411c8c700936a2fb2d0f3966f85b06c12aba102b3af1b06682bdf5b6baf29",
+    "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+    "process_state": "R"
+  },
+  "child_started_at_unix": 1790756312.8888412
+}

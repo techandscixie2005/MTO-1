@@ -1,0 +1,375 @@
+{
+  "schema_version": 1,
+  "kind": "scheduled_owned_job_receipt_check",
+  "delegate": "/root/qc_design for /root/monitor",
+  "canonical_record": "monitoring/CHECK_20260930T115345Z.json",
+  "canonical_sha256": "fa227b2dc0abfa979f572b017fe87ee99faebbb5350741f5c17fb1bf7332ec14",
+  "observed_at_utc": "2026-09-30T11:53:44.540342+00:00",
+  "receipt_created_utc": "2026-09-30T11:58:01.603670+00:00",
+  "registered_count_at_observation": 17,
+  "state_counts": {
+    "COMPLETE_MARKER_PRESENT": 15,
+    "FAILURE_MARKER_REVIEW_REQUIRED": 2
+  },
+  "all_original_wrappers_absent": true,
+  "owned_gpu_uuids_at_observation": [],
+  "monitor_incident_count": 8,
+  "incident_interpretation": "Eight newly observed registry state transitions: six completions and two previously documented failures; not eight new failures. No new preferred-GPU health incident.",
+  "preserved_known_failures": {
+    "v2_split_materialize": "Original JSON-key comparison failure before arrays; separate repaired materialization and independent verification complete.",
+    "round05_technical_preflight": "Original full-forward equality failure before optimizer update; zero-update diagnosis complete; later engineering amendment/retry is outside this observation."
+  },
+  "receipt_checks": [
+    {
+      "id": "v2_split_audit",
+      "canonical_state": "COMPLETE_MARKER_PRESENT",
+      "exit_code": 0,
+      "child_identity_recorded": {
+        "pid": 1286795,
+        "start_ticks": 1260315920,
+        "uid": 1000,
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930",
+        "argv_sha256": "f80411c8c700936a2fb2d0f3966f85b06c12aba102b3af1b06682bdf5b6baf29",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "process_state": "R"
+      },
+      "child_identity_observed": null,
+      "log_path": "dataset_audit_20260930/ops/audit_attempt/stage.log",
+      "log_sha256": "3b699cdb1bb6259c99245136c8c0bd3bf750337aec4e344ccaf1bab420dfa912",
+      "log_matches_terminal": true,
+      "outputs": [
+        {
+          "path": "dataset_audit_20260930/repair01_original/CORPUS_AUDIT.json",
+          "sha256": "0419a5a856e084ad4e75cc67113d3dd290adf7826d235cedc9d2cf41df78dc80",
+          "matches_terminal": true
+        }
+      ]
+    },
+    {
+      "id": "v2_split_materialize",
+      "canonical_state": "FAILURE_MARKER_REVIEW_REQUIRED",
+      "exit_code": 1,
+      "child_identity_recorded": {
+        "pid": 1287993,
+        "start_ticks": 1260347471,
+        "uid": 1000,
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930",
+        "argv_sha256": "d7c5c4c03758fbe15fc41edc2216009dcd5dc6c52b5f02b63fabca4e60cd2908",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "process_state": "R"
+      },
+      "child_identity_observed": null,
+      "log_path": "dataset_audit_20260930/ops/materialize_attempt/stage.log",
+      "log_sha256": "f76b77587bcb843062b9f5236bbeca75bc737fc902a1b4cac8259bf1552ca61d",
+      "log_matches_terminal": true,
+      "outputs": []
+    },
+    {
+      "id": "v2_split_audit_repair01",
+      "canonical_state": "COMPLETE_MARKER_PRESENT",
+      "exit_code": 0,
+      "child_identity_recorded": {
+        "pid": 1290110,
+        "start_ticks": 1260397765,
+        "uid": 1000,
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930",
+        "argv_sha256": "f80411c8c700936a2fb2d0f3966f85b06c12aba102b3af1b06682bdf5b6baf29",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "process_state": "R"
+      },
+      "child_identity_observed": null,
+      "log_path": "dataset_audit_20260930/ops/audit_attempt_repair01/stage.log",
+      "log_sha256": "3985370bf9f06d5863607c9b0ffac4dfbd49bed78cdf704e94f00aee8a444ae4",
+      "log_matches_terminal": true,
+      "outputs": [
+        {
+          "path": "dataset_audit_20260930/CORPUS_AUDIT.json",
+          "sha256": "644b6e6d5e2c7af1b2a6f234715a8d5acdaed9d596f746eba9f897c539f45a1c",
+          "matches_terminal": true
+        }
+      ]
+    },
+    {
+      "id": "v2_split_materialize_repair01",
+      "canonical_state": "COMPLETE_MARKER_PRESENT",
+      "exit_code": 0,
+      "child_identity_recorded": {
+        "pid": 1291096,
+        "start_ticks": 1260422781,
+        "uid": 1000,
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930",
+        "argv_sha256": "d7c5c4c03758fbe15fc41edc2216009dcd5dc6c52b5f02b63fabca4e60cd2908",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "process_state": "R"
+      },
+      "child_identity_observed": null,
+      "log_path": "dataset_audit_20260930/ops/materialize_attempt_repair01/stage.log",
+      "log_sha256": "395a78292ed3da574a34485ce5e8f659459371d2e07c0166eb41c7f4ec5781bb",
+      "log_matches_terminal": true,
+      "outputs": [
+        {
+          "path": "dataset_audit_20260930/SPLIT_MANIFEST.json",
+          "sha256": "c8ce66ddb7209005b5feebfcddfc2bc30ee81d92fe63cce20f15c4abf3a07155",
+          "matches_terminal": true
+        }
+      ]
+    },
+    {
+      "id": "v2_split_independent_verification",
+      "canonical_state": "COMPLETE_MARKER_PRESENT",
+      "exit_code": 0,
+      "child_identity_recorded": {
+        "pid": 1291740,
+        "start_ticks": 1260442027,
+        "uid": 1000,
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930",
+        "argv_sha256": "9dcb6e2218cd88eb9d65df3393d4b1895a148b0e7b5c3c6549a7af86a8d55f1c",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "process_state": "R"
+      },
+      "child_identity_observed": null,
+      "log_path": "dataset_audit_20260930/ops/independent_verification_attempt/stage.log",
+      "log_sha256": "207b626675bdad98d257c993e75ebaf04c5b01d2d764812e0da63c9ef5a06fc1",
+      "log_matches_terminal": true,
+      "outputs": [
+        {
+          "path": "dataset_audit_20260930/INDEPENDENT_SPLIT_VERIFICATION.json",
+          "sha256": "395d415f854ed6948c4d7a11c0c1d7486193bb48f23bae76834a77148cc69ae2",
+          "matches_terminal": true
+        }
+      ]
+    },
+    {
+      "id": "round05_train_statistics",
+      "canonical_state": "COMPLETE_MARKER_PRESENT",
+      "exit_code": 0,
+      "child_identity_recorded": {
+        "argv_sha256": "30663b8e9ae16e28505a480bbc8665174f22a841ada449e213fa638fef86ff54",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation",
+        "pid": 1295160,
+        "process_state": "R",
+        "start_ticks": 1260552022,
+        "uid": 1000
+      },
+      "child_identity_observed": null,
+      "log_path": "round05_scratch_preparation/ops/statistics_attempt/stage.log",
+      "log_sha256": "4d9cde591ef85c1c17bf9a0d6878a799b22e798370930f9254a666c06a038e4b",
+      "log_matches_terminal": true,
+      "outputs": [
+        {
+          "path": "round05_scratch_preparation/TRAIN_STATISTICS.json",
+          "sha256": "d3d0ed5af2646959be0abcb9cebb50d7cdb2ef7fb70d7e073fe12a8b697953ae",
+          "matches_terminal": true
+        },
+        {
+          "path": "round05_scratch_preparation/TRAIN_STATISTICS_AUDIT.json",
+          "sha256": "f93e32e63aaa12dc8f81f079e2b96f0d03a5fc5a9235ee98c01ff6fe9e435e02",
+          "matches_terminal": true
+        }
+      ]
+    },
+    {
+      "id": "round05_technical_preflight",
+      "canonical_state": "FAILURE_MARKER_REVIEW_REQUIRED",
+      "exit_code": 1,
+      "child_identity_recorded": {
+        "argv_sha256": "a8ffbd0715b7caf29d6f76650830c4f2a3c82197011605710b674bcea5b79599",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation",
+        "pid": 1298340,
+        "process_state": "R",
+        "start_ticks": 1260625795,
+        "uid": 1000
+      },
+      "child_identity_observed": null,
+      "log_path": "round05_scratch_preparation/ops/gpu_preflight_attempt/stage.log",
+      "log_sha256": "af75cab9c0fdb8ec8daa83a8ed3e02e4f36b9239aa67135ca03a9b90f9bbc1c1",
+      "log_matches_terminal": true,
+      "outputs": []
+    },
+    {
+      "id": "round05_identity_diagnostic",
+      "canonical_state": "COMPLETE_MARKER_PRESENT",
+      "exit_code": 0,
+      "child_identity_recorded": {
+        "argv_sha256": "e5eabf53bdaf87dad0fc02541622151c057e8532b11b8b8c6ad2ee5251f061da",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation",
+        "pid": 1299689,
+        "process_state": "R",
+        "start_ticks": 1260659209,
+        "uid": 1000
+      },
+      "child_identity_observed": null,
+      "log_path": "round05_scratch_preparation/ops/gpu_identity_diagnostic_attempt/stage.log",
+      "log_sha256": "103c5dfa248faa420287ebffb05c3fe9e4d37bb99ceccdaaf50c9c17b887cf89",
+      "log_matches_terminal": true,
+      "outputs": [
+        {
+          "path": "round05_scratch_preparation/GPU_IDENTITY_DIAGNOSTIC.json",
+          "sha256": "4221233ca22bb3cf0fdfb2091a20ae500d72c4ddf5fc4aec0e44277307b3d92c",
+          "matches_terminal": true
+        }
+      ]
+    }
+  ],
+  "all_receipt_hash_checks_pass": true,
+  "all_checked_children_absent": true,
+  "preferred_gpu_snapshot": [
+    {
+      "index": 1,
+      "uuid": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+      "name": "NVIDIA A800 80GB PCIe",
+      "temperature_c": "32 C",
+      "memory_used": "10 MiB",
+      "utilization": "0 %",
+      "ecc_volatile": {
+        "sram_correctable": "0",
+        "sram_uncorrectable_parity": "0",
+        "sram_uncorrectable_secded": "0",
+        "dram_correctable": "0",
+        "dram_uncorrectable": "0"
+      },
+      "ecc_aggregate": {
+        "sram_correctable": "0",
+        "sram_uncorrectable_parity": "0",
+        "sram_uncorrectable_secded": "0",
+        "dram_correctable": "0",
+        "dram_uncorrectable": "0",
+        "sram_threshold_exceeded": "No"
+      },
+      "remapped_rows": {
+        "remapped_row_corr": "0",
+        "remapped_row_unc": "0",
+        "remapped_row_pending": "No",
+        "remapped_row_failure": "No"
+      },
+      "compute_processes": [
+        {
+          "pid": "7104",
+          "name": "/usr/lib/xorg/Xorg",
+          "used_memory": "4 MiB"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "uuid": "GPU-cb4dc1ea-9ea3-e426-bdeb-df0bef8a23fa",
+      "name": "NVIDIA A800 80GB PCIe",
+      "temperature_c": "31 C",
+      "memory_used": "10 MiB",
+      "utilization": "0 %",
+      "ecc_volatile": {
+        "sram_correctable": "0",
+        "sram_uncorrectable_parity": "0",
+        "sram_uncorrectable_secded": "0",
+        "dram_correctable": "0",
+        "dram_uncorrectable": "0"
+      },
+      "ecc_aggregate": {
+        "sram_correctable": "0",
+        "sram_uncorrectable_parity": "0",
+        "sram_uncorrectable_secded": "0",
+        "dram_correctable": "0",
+        "dram_uncorrectable": "0",
+        "sram_threshold_exceeded": "No"
+      },
+      "remapped_rows": {
+        "remapped_row_corr": "0",
+        "remapped_row_unc": "0",
+        "remapped_row_pending": "No",
+        "remapped_row_failure": "No"
+      },
+      "compute_processes": [
+        {
+          "pid": "7104",
+          "name": "/usr/lib/xorg/Xorg",
+          "used_memory": "4 MiB"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "uuid": "GPU-e212aefc-f1d6-cc7a-5594-e87abeaf1184",
+      "name": "NVIDIA A800 80GB PCIe",
+      "temperature_c": "31 C",
+      "memory_used": "10 MiB",
+      "utilization": "0 %",
+      "ecc_volatile": {
+        "sram_correctable": "0",
+        "sram_uncorrectable_parity": "0",
+        "sram_uncorrectable_secded": "0",
+        "dram_correctable": "0",
+        "dram_uncorrectable": "0"
+      },
+      "ecc_aggregate": {
+        "sram_correctable": "0",
+        "sram_uncorrectable_parity": "0",
+        "sram_uncorrectable_secded": "0",
+        "dram_correctable": "0",
+        "dram_uncorrectable": "0",
+        "sram_threshold_exceeded": "No"
+      },
+      "remapped_rows": {
+        "remapped_row_corr": "0",
+        "remapped_row_unc": "0",
+        "remapped_row_pending": "No",
+        "remapped_row_failure": "No"
+      },
+      "compute_processes": [
+        {
+          "pid": "7104",
+          "name": "/usr/lib/xorg/Xorg",
+          "used_memory": "4 MiB"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "uuid": "GPU-2431a641-8045-a10b-4aa0-2769010e0708",
+      "name": "NVIDIA A800 80GB PCIe",
+      "temperature_c": "33 C",
+      "memory_used": "10 MiB",
+      "utilization": "0 %",
+      "ecc_volatile": {
+        "sram_correctable": "0",
+        "sram_uncorrectable_parity": "0",
+        "sram_uncorrectable_secded": "0",
+        "dram_correctable": "0",
+        "dram_uncorrectable": "0"
+      },
+      "ecc_aggregate": {
+        "sram_correctable": "0",
+        "sram_uncorrectable_parity": "0",
+        "sram_uncorrectable_secded": "0",
+        "dram_correctable": "0",
+        "dram_uncorrectable": "0",
+        "sram_threshold_exceeded": "No"
+      },
+      "remapped_rows": {
+        "remapped_row_corr": "0",
+        "remapped_row_unc": "0",
+        "remapped_row_pending": "No",
+        "remapped_row_failure": "No"
+      },
+      "compute_processes": [
+        {
+          "pid": "7104",
+          "name": "/usr/lib/xorg/Xorg",
+          "used_memory": "4 MiB"
+        }
+      ]
+    }
+  ],
+  "gpu_health_summary": "Preferred1/2/4/6 healthy/idle at observation. GPU0 unrelated SpecGPT preserved. GPUs3/7 remain excluded;GPU5 reserve.",
+  "cron_sha256": "13caacb74408db396e9eae0d0929aec97d102c41c00c2f5b138da9d0417b330e",
+  "cron_matches_previous_receipt": true,
+  "interventions": [],
+  "schedule_changes": [],
+  "scope_limits": [
+    "No fits, inference, targets, checkpoint loading, restart, signals, GPU admission, or publication.",
+    "Receipt checks cover original eight newly observed registrations; later retry not rechecked.",
+    "Existing heartbeat untouched; no duplicate automation created."
+  ]
+}

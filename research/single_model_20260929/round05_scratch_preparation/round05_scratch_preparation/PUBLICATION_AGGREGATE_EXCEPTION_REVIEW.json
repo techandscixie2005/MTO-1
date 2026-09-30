@@ -1,0 +1,12 @@
+{
+  "content_review": "Aggregate counts, QC methods/units/provenance, historical exposure, source file paths/sizes/hashes only. No molecule identities, row arrays, geometries, numeric target tables, predictions, fitted weights or credentials. Both server copies were independently opaque-hashed and are byte-identical.",
+  "exception_does_not_apply_to_any_other_path_or_hash": true,
+  "exceptions": {
+    "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930/EXISTING_DATASET_AUDIT.json": "e69286aef0f19f1ec4dbb63102c3811ce7219101ab1fde84b85286a886ac4fec",
+    "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930/repair01_original/EXISTING_DATASET_AUDIT.json": "e69286aef0f19f1ec4dbb63102c3811ce7219101ab1fde84b85286a886ac4fec"
+  },
+  "passed": true,
+  "private_partition_entirely_excluded": true,
+  "raw_binary_source_paths_are_metadata_not_permission_to_copy": true,
+  "scope": "exact_path_and_sha_aggregate_metadata_publication_exception"
+}

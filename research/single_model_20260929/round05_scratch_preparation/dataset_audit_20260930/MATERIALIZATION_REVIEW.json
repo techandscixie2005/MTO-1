@@ -1,0 +1,24 @@
+{
+  "aggregate_arithmetic_passed": true,
+  "audit_terminal_receipt_sha256": "8ca7b785a6d0fd11d56c29d03e47670aff57810f209f3f1ad3849c8a211c1210",
+  "components": 114572,
+  "corpus_audit_sha256": "644b6e6d5e2c7af1b2a6f234715a8d5acdaed9d596f746eba9f897c539f45a1c",
+  "counts": {
+    "test": 6686,
+    "train": 120355,
+    "val": 6686
+  },
+  "historical_exposure": "New test contains5989 oldTRAIN,361 oldvalidation,336 oldtest rows. No historical predictor is eligible; scratch initialization/newTRAINstats required.",
+  "independent_saved_array_reconstruction_still_required": true,
+  "limitations": "Component-disjoint under declared conservative rules, not absolute identity proof or external fresh data.",
+  "materialization_scope": "Write the exact private arrays already hashed in the approved aggregate after deterministic rebuild equality. No target decoding, statistics, model fitting or scoring.",
+  "no_findings": true,
+  "old_failed_materialization_preserved": true,
+  "passed": true,
+  "phase": "materialization",
+  "pre_corpus_review_sha256": "deb1cd16e42f4b566ca23877a10870bf730367f547f7d85f49c73f46db261b16",
+  "repair_old_new_scientific_aggregates_and_planned_array_hashes_exactly_equal": true,
+  "reviewer": "science_implementation, independent of builder author",
+  "reviewer_source_sha256": "49303eae330ec51ef040a71e17a659e532c7f2a568196f2198d638d560a051b8",
+  "source_manifest_sha256": "2bcd4d256179ad99f6b88b34f50bba1a99facc9389a6438535662410c6783a38"
+}

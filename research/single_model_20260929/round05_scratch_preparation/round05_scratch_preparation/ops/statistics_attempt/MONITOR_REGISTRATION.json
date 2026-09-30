@@ -1,0 +1,33 @@
+{
+  "id": "round05_train_statistics",
+  "registered_at_utc": "2026-09-30T08:44:15.458017+00:00",
+  "identity": {
+    "pid": 1295158,
+    "start_ticks": 1260552012,
+    "uid": 1000,
+    "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation",
+    "argv_sha256": "32b320ff4e4c55d15a7df6d83859bb1acbe66cd387122ac0e747ac780789331f",
+    "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+    "process_state": "S"
+  },
+  "run_dir": "round05_scratch_preparation/ops/statistics_attempt",
+  "resource_kind": "cpu",
+  "gpu_uuid": null,
+  "expected_gpu_allocations": 0,
+  "environment_constraints": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2"
+  },
+  "authorization_path": "round05_scratch_preparation/TRAIN_READER_REVIEW.json",
+  "authorization_sha256": "1b7a4ca182c0c28494d6f9b4e452563c4e98c8e2c9655501635c393187858689",
+  "status_path": "round05_scratch_preparation/ops/statistics_attempt/status.json",
+  "log_path": "round05_scratch_preparation/ops/statistics_attempt/stage.log",
+  "completion_path": "round05_scratch_preparation/ops/statistics_attempt/COMPLETE.json",
+  "failure_path": "round05_scratch_preparation/ops/statistics_attempt/FAILED.json",
+  "checkpoint_paths": [],
+  "stale_after_seconds": 28800,
+  "monitor": true,
+  "restart_policy": "coordinator_review_required",
+  "identity_role": "synchronous owned stage wrapper; child identities recorded in stage receipt"
+}

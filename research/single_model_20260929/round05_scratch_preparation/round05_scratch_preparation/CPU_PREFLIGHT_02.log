@@ -1,0 +1,58 @@
+{
+  "synthetic_geometry_only": true,
+  "real_geometry_or_targets_read": false,
+  "optimizer_updates": 0,
+  "train_statistics_sha256": "d3d0ed5af2646959be0abcb9cebb50d7cdb2ef7fb70d7e073fe12a8b697953ae",
+  "initial_base_tensor_sha256": "231dfaf3ffc8056e851ddac34e941fa34eee3af0f7ff9687ecab6d24d6fa1cd2",
+  "initial_full_tensor_sha256": "3c5d20463a6aa1d4e7c25ee5e57e0ceaa53c17e5a89af35d7761b58e58d661f9",
+  "initialization_external_data_reads": [],
+  "identity_E_A_bitwise_equal": true,
+  "parameters": {
+    "base": 1552092,
+    "adapter": 4016
+  },
+  "adapter_O3": [
+    {
+      "determinant": 1,
+      "max_abs_error": 8.881784197001252e-16,
+      "orth_error": 0.0
+    },
+    {
+      "determinant": -1,
+      "max_abs_error": 8.881784197001252e-16,
+      "orth_error": 0.0
+    }
+  ],
+  "mask_nan_zero_one_valid_checks": true,
+  "full_model_O3": [
+    {
+      "determinant": 1,
+      "E_max_abs": 0.0,
+      "A_max_abs": 1.1175870895385742e-08,
+      "native_f_max_abs": 5.224227148668943e-09
+    },
+    {
+      "determinant": -1,
+      "E_max_abs": 0.0,
+      "A_max_abs": 9.313225746154785e-09,
+      "native_f_max_abs": 5.224227148668943e-09
+    }
+  ],
+  "permutation_translation": {
+    "E_max_abs": 0.0,
+    "A_max_abs": 9.313225746154785e-09
+  },
+  "one_checkpoint_load_and_forward_access_pass": true,
+  "one_checkpoint_E_A_bitwise_equal": true,
+  "source_hashes": {
+    "cpu_preflight.py": "745adce0eb432f007bcc18d00d2d9c06a063e3e8d04099b14adb5066229828a8",
+    "fresh_model.py": "16ec3eb14eeafa3265ba0f35abf4ff174a2a20f155b408ed133635fa73a8c314",
+    "runtime.py": "fb54c5073e261455ef43036f3d1f65bdaf89714fc9ddc690ec0ec3a773074f94",
+    "predictor.py": "5b4801a4851c01f035fa7d1f05b9e2817318acfe155ae611e57f3425dfc407e6",
+    "model_config.json": "ff24143918e722d34a126b172f7d311c2a673a21c6756c89077fa05b05d6592f",
+    "config.json": "9b1d3d866077d7f971ac03a25435f007d84fc6ee8fe1fa8136b232974c03ec9c"
+  },
+  "adapter_math_sha256": "b61413830ac8cfb78298dda55c11a1cfb2c398c264a797016045d8fd638c7b93",
+  "seconds": 6.578594207763672,
+  "passed": true
+}

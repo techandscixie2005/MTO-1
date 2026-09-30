@@ -33,7 +33,8 @@ Round04 的拟合误差下降，但验证表现未改善；不能据此认定所
 - [Round04 完整结果、逐态/亮尾指标和命令](research/single_model_20260929/round04_fonly_complete/round04_fonly_preparation/ROUND04_REPORT.md)；[独立终审](research/single_model_20260929/round04_fonly_complete/round04_fonly_preparation/INDEPENDENT_TERMINAL_REVIEW.md)；[最终决定](research/single_model_20260929/round04_fonly_complete/current_state/ROUND04_DECISION.md)。
 - 保留的服务器 checkpoint：`/home/inspur/MTO-1/research/single_model_20260929/baselines/calibrated_eta0.pt`；SHA256：`bcb0e51d8d877983abd02ab768892a8f8f8d3dfe0f73f4ec43d30c21c16b3db9`。
 - 推理仅需元素与几何及其派生图；配置、训练归一化与固定校准均包含在一个 checkpoint 中，不需量子化学标签。校准只改 f，输出 E/A 一般不再严格重构该 f；这不是已识别的物理响应算符。
-- 新版 QM9S 分子组 90/5/5 划分目前仅有协议，**尚未生成或验证**。拟使用固定 seed 20260930、全新初始化和仅 TRAIN 统计；旧划分保持不变。这是历史数据的新分区，不是独立外部新数据。外部 UV–Vis 数据的方法兼容性与分子重叠仍待审计；不得用新测试调参。
+- 新版 QM9S v2 分子组划分已按固定 seed 20260930 生成并通过独立重建核验：TRAIN / VALID / TEST 为 **120,355 / 6,686 / 6,686**，在已审计的保守分组规则下无跨分区重叠；278 个身份含糊样本仅进入 TRAIN。[划分协议与限制](research/single_model_20260929/round05_scratch_preparation/dataset_audit_20260930/BENCHMARK_V2_REPORT.md)。这是历史暴露数据的新分区，不是独立外部新数据；必须全新初始化并仅使用新 TRAIN 统计，新 TEST 目标保持封存，不得用其调参。外部 UV–Vis 数据的方法兼容性与分子重叠仍待审计。
+- **Round05 准备已完成；截至本次发布，正式训练尚未启动，没有新的准确率结果。** 新划分上将比较原模型、右侧共享 F、原始 M 弱去相关及两者联合；共同协议固定为 seed 11、60 epoch、原 LE+Ls 和学习率 0.001。仅完成了 128 个 TRAIN 分子的 12 次可丢弃技术更新；原始失败、显式工程修订及独立审查均保留。[冻结协议](research/single_model_20260929/round05_scratch_preparation/round05_scratch_preparation/PROTOCOL.md) · [准备报告](research/single_model_20260929/round05_scratch_preparation/round05_scratch_preparation/PREPARATION_REPORT.md) · [独立审查](research/single_model_20260929/round05_scratch_preparation/round05_scratch_preparation/INDEPENDENT_PREPARATION_REVIEW.md)。正式执行还需单独绑定授权；技术通过不证明精度提升。
 - 当前研究发布只包含轻量源码、设置、日志、汇总结果及审计记录，先下载到 `D:\MTO\archives\` 校验，再提交。此次不新增模型权重、优化器、原始数据、成员/预测数组、缓存或凭据；下面旧归档中已有的历史文件保持原样。
 
 ## 历史项目与运行文档

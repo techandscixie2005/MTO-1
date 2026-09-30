@@ -1,0 +1,37 @@
+{
+  "review_date": "2026-09-30",
+  "scope": "Read-only source and primary literature verification; no real model outputs, targets, model loading or GPU access.",
+  "decoder_sources": [
+    {
+      "path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/models_ea.py",
+      "sha256": "b47d50b8b32313d1c3e1f19f3e64e6f02ce42e91736e6da00f896f68965250b0",
+      "energy_line": 22,
+      "psd_return_line": 27,
+      "energy_operator": "torch.nn.functional.softplus",
+      "tensor_operator": "C @ C.transpose(-1,-2)"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/architecture/model.py",
+      "sha256": "b61413830ac8cfb78298dda55c11a1cfb2c398c264a797016045d8fd638c7b93",
+      "energy_line": 82,
+      "psd_output_line": 87,
+      "energy_operator": "torch.nn.functional.softplus",
+      "tensor_operator": "C @ C.transpose(-1,-2)"
+    }
+  ],
+  "gate_domain_conclusion": "For finite decoder outputs, E>=0 and trace(A)>=0 imply sum(E_H*trace(A)/s0)>=0. log1p has a valid domain without clamps. Underflow to zero is allowed; nonfinite outputs must trigger existing finite checks rather than repair.",
+  "primary_literature": {
+    "title": "Latent unified smooth Hamiltonians for excited state chemistry",
+    "authors": ["David Juergens", "Martin Stoehr", "Andreas E. Hillers-Bendtsen", "O. Jonathan Fajen", "Todd J. Martinez"],
+    "identifier": "arXiv:2609.01871v1",
+    "submitted_date": "2026-09-01",
+    "abstract_url": "https://arxiv.org/abs/2609.01871",
+    "abstract_open_success": true,
+    "pdf_url": "https://arxiv.org/pdf/2609.01871",
+    "pdf_open_success": true,
+    "html_url": "https://arxiv.org/html/2609.01871v1",
+    "html_open_success": false,
+    "abstract_examples": ["thymine", "azobenzene"],
+    "citation_scope": "Primary precedent for a shared latent Hamiltonian/operator framework only; not validation of the proposed common congruence, QC reconstruction, symmetry handling, or transfer gains on QM9S."
+  }
+}

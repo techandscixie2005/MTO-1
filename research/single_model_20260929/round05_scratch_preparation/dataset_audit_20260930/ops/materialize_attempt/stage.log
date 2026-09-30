@@ -1,0 +1,15 @@
+{"stage": "identity", "rows": 20000}
+{"stage": "identity", "rows": 40000}
+{"stage": "identity", "rows": 60000}
+{"stage": "identity", "rows": 80000}
+{"stage": "identity", "rows": 100000}
+{"stage": "identity", "rows": 120000}
+{"stage": "components_complete", "rows": 133727, "components": 114572, "largest_component": 14, "original_key_union_merges": 258, "heavy_formula_union_merges": 18897, "geometry_union_merges": 0, "geometry_matching_pairs": 83, "formula_buckets": 621, "ambiguous_rows_before_propagation": 278, "ambiguity_reasons": {"cached_disconnected": 275, "previously_unresolved": 278}, "candidate_rows": 278, "candidate_failures": 0, "component_size_histogram": {"1": 101012, "2": 9843, "3": 2625, "4": 696, "5": 199, "6": 108, "7": 45, "8": 17, "9": 12, "10": 6, "11": 4, "12": 3, "14": 2}, "hash_collision_guard_passed": true}
+Traceback (most recent call last):
+  File "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930/build_partition.py", line 127, in <module>
+    if __name__=='__main__':main()
+  File "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930/build_partition.py", line 126, in main
+    else:prepare(args.mode)
+  File "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930/build_partition.py", line 113, in prepare
+    assert read(ROOT/'CORPUS_AUDIT.json')==audit,'Idempotence: current audit differs from approved result'
+AssertionError: Idempotence: current audit differs from approved result

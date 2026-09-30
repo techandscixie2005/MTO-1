@@ -1,0 +1,24 @@
+{
+  "decode_ledger_entries": 8,
+  "independent_full_statistics_recomputation": false,
+  "limitations": [
+    "Metadata and source review cannot independently reproduce every FP64 statistic without a second TRAIN reduction; no such redundant reduction was run."
+  ],
+  "passed": true,
+  "phase": "completed_train_statistics_review",
+  "q90": 0.0549,
+  "q99": 0.2406,
+  "reader_review_sha256": "1b7a4ca182c0c28494d6f9b4e452563c4e98c8e2c9655501635c393187858689",
+  "review_basis": "Reviewed reduction source, synthetic scalar references, exact reader/source/split/index bindings and completed actual-decode ledger; no additional real target read. Owned wrapper exit0 receipt inspected.",
+  "source_hashes": {
+    "common.py": "50a1ef987cbc635b3b5692364281498e66587b112d5573c765fea360470038cd",
+    "partition_data.py": "9aaa08bb8878803cc42961d336345d5fa53f5aad30d8cfdf135d0fd35dd6757d",
+    "prepare_train_statistics.py": "ecab67351bbf0227609aa30117001853556731960573fdbc04761cef250db207"
+  },
+  "split_manifest_sha256": "c8ce66ddb7209005b5feebfcddfc2bc30ee81d92fe63cce20f15c4abf3a07155",
+  "statistics_audit_sha256": "f93e32e63aaa12dc8f81f079e2b96f0d03a5fc5a9235ee98c01ff6fe9e435e02",
+  "statistics_sha256": "d3d0ed5af2646959be0abcb9cebb50d7cdb2ef7fb70d7e073fe12a8b697953ae",
+  "train_rows": 120355,
+  "valid_state_labels": 1203550,
+  "validation_or_test_numeric_rows": 0
+}

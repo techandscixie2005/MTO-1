@@ -1,0 +1,202 @@
+{
+  "array_metadata": {
+    "component_index.npy": {
+      "archive_allowed": false,
+      "content_sha256": "85debdea2d2865f0ae93d9ee0b8330c1cbaff18ed015af6165def9350a3f8a6c",
+      "dtype": "int64",
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930/private_partition/component_index.npy",
+      "sha256": "483d373c5ace2e00f9123f73f7068a05221a2e1bb14ba1333f6b91cd1d4352a4",
+      "shape": [
+        133727
+      ]
+    },
+    "ids.npy": {
+      "archive_allowed": false,
+      "content_sha256": "4ee6dd8067367bf5431aa5428b590ab09edbdca73157c0cb783d02c418d92a80",
+      "dtype": "int64",
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930/private_partition/ids.npy",
+      "sha256": "059aeb452f3e8128a82a21f1fa5b755ffb84ec5376b7a27f3677e34254adbd18",
+      "shape": [
+        133727
+      ]
+    },
+    "test_indices.npy": {
+      "archive_allowed": false,
+      "content_sha256": "91e4a8ab85e5ef064189f03bc4332f8aada453caca95312208e69811ceac4d47",
+      "dtype": "int64",
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930/private_partition/test_indices.npy",
+      "sha256": "c5c65be9219a4c8c3d797dd19bde006b25459e2d5e50d425a32737ef6cad3692",
+      "shape": [
+        6686
+      ]
+    },
+    "train_indices.npy": {
+      "archive_allowed": false,
+      "content_sha256": "3a45ef8d8878106644668f6a49e9333c9a95711c73c41c75cf9c206be056b2ea",
+      "dtype": "int64",
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930/private_partition/train_indices.npy",
+      "sha256": "8ff3ca690cf63051701d66c3dd438228457bc3b4d7b92fa5511bd943de1176cc",
+      "shape": [
+        120355
+      ]
+    },
+    "train_only_mask.npy": {
+      "archive_allowed": false,
+      "content_sha256": "25e27d1cb2cb01e88ba96de762db8fe263be15340896c1c4ca038c37561787b3",
+      "dtype": "bool",
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930/private_partition/train_only_mask.npy",
+      "sha256": "7911c116f1f7091f39ac817e4a825c728acd081d05aaa53bb6d68cb5bfafb8b4",
+      "shape": [
+        133727
+      ]
+    },
+    "val_indices.npy": {
+      "archive_allowed": false,
+      "content_sha256": "d6622068bd30e7060df11638b64c60e565189d3c2ce4375172e9892e9e0bfd7b",
+      "dtype": "int64",
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930/private_partition/val_indices.npy",
+      "sha256": "be13afee03e4e72418b3979040c765cd94ee02c8a1b220cc87d83e08d7d239fb",
+      "shape": [
+        6686
+      ]
+    }
+  },
+  "assignment": "Whole components shuffled once by PCG64; TEST then VALID until each reaches6686; remainder and ambiguous linked components TRAIN.",
+  "claim_limitations": [
+    "New partition of historically used QM9S, not independent external data.",
+    "Disjoint under audited conservative graph/formula/geometry rules; heuristic connectivity does not prove absolute chemical identity.",
+    "Fresh initialization and new TRAIN-only target statistics required; old models/calibration are ineligible."
+  ],
+  "counts": {
+    "test": 6686,
+    "train": 120355,
+    "val": 6686
+  },
+  "decoded_dataset_members": [
+    "ids.npy",
+    "z.npy",
+    "pos.npy"
+  ],
+  "disjointness": {
+    "all_rows_once": true,
+    "ambiguous_components_train_only": true,
+    "cross_partition_geometry_pairs": 0,
+    "cross_partition_heavy_formula_keys": 0,
+    "cross_partition_original_keys": 0,
+    "pairwise_overlap": {
+      "train__test": {
+        "components": 0,
+        "ids": 0,
+        "rows": 0
+      },
+      "train__val": {
+        "components": 0,
+        "ids": 0,
+        "rows": 0
+      },
+      "val__test": {
+        "components": 0,
+        "ids": 0,
+        "rows": 0
+      }
+    }
+  },
+  "environment": {
+    "numpy": "2.2.6",
+    "python": "3.10.19",
+    "rdkit": "2025.09.4",
+    "scipy": "1.15.3"
+  },
+  "grouping": {
+    "ambiguity_reasons": {
+      "cached_disconnected": 275,
+      "previously_unresolved": 278
+    },
+    "ambiguous_rows_before_propagation": 278,
+    "candidate_failures": 0,
+    "candidate_rows": 278,
+    "component_size_histogram": {
+      "1": 101012,
+      "2": 9843,
+      "3": 2625,
+      "4": 696,
+      "5": 199,
+      "6": 108,
+      "7": 45,
+      "8": 17,
+      "9": 12,
+      "10": 6,
+      "11": 4,
+      "12": 3,
+      "14": 2
+    },
+    "components": 114572,
+    "formula_buckets": 621,
+    "geometry_matching_pairs": 83,
+    "geometry_union_merges": 0,
+    "hash_collision_guard_passed": true,
+    "heavy_formula_union_merges": 18897,
+    "largest_component": 14,
+    "original_key_union_merges": 258,
+    "rows": 133727
+  },
+  "heldout_target_rows": 6686,
+  "inputs": {
+    "dataset": {
+      "path": "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/data/dataset.npz",
+      "sha256": "be8fadca203429575d70642b617730592693be40858dca7189c098a671596330"
+    },
+    "identities": {
+      "path": "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/data/identity_audit_v2.json",
+      "sha256": "9d384425a90dd88fbc68f8b609a303872910bb21c69e0d0a19bcccaee49cb3c4"
+    },
+    "old_inner_calibration": {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round03_transfer/data/calibration_indices.npy",
+      "sha256": "e1253725889748b75ae98b06683579da5bc535dbbb130fec7ce117c5e2106ba0"
+    },
+    "old_inner_fit": {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round03_transfer/data/fit_indices.npy",
+      "sha256": "39ccc1e6a0f98222a96463229677a8b335d93c169acba2f3262cbe79599692f9"
+    },
+    "old_splits": {
+      "path": "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/data/splits.json",
+      "sha256": "141d6c4ba9631de91b81076b56afc2239aa3632478895102d8024e13d79c93ca"
+    }
+  },
+  "materialized_by_this_receipt": false,
+  "old_exposure_intersections": {
+    "test": {
+      "old_inner_calibration": 1138,
+      "old_inner_fit": 4851,
+      "old_test": 336,
+      "old_train": 5989,
+      "old_val": 361
+    },
+    "train": {
+      "old_inner_calibration": 21721,
+      "old_inner_fit": 86598,
+      "old_test": 6032,
+      "old_train": 108319,
+      "old_val": 6004
+    },
+    "val": {
+      "old_inner_calibration": 1212,
+      "old_inner_fit": 4835,
+      "old_test": 318,
+      "old_train": 6047,
+      "old_val": 321
+    }
+  },
+  "overshoot": {
+    "test": 0,
+    "val": 0
+  },
+  "partition_name": "qm9s_group_v2_seed20260930",
+  "passed": true,
+  "private_identity_signatures_sha256": "ebcd760f24e55638d1d9dd4736d2c1aefb2dc065f00957299a0524c67c0b6331",
+  "seed": 20260930,
+  "source_manifest_sha256": "1315f7fcb6112c893ad0855b2144af7cf4711baadd7e6438ae5f96075d8dd042",
+  "target_prediction_members_decoded": [],
+  "train_only_components": 263,
+  "train_only_rows_after_propagation": 278
+}

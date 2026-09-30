@@ -1,0 +1,33 @@
+{
+  "findings": [],
+  "independent_review_source_sha256": "90f08436ee8651b34d2c15725c9039012be9c10ea39e9c38913595ed913035bf",
+  "limitations": [
+    "Bond perception is heuristic; overlap absence is under the documented rules, not proof of absolute identity.",
+    "New partition contains historically exposed records and is not independent external data.",
+    "The approved single executor must avoid concurrent writes; immutable output behavior is not a multi-writer scheduler."
+  ],
+  "passed": true,
+  "phase": "pre_corpus",
+  "review_basis": "Read all six frozen source/protocol/settings files and all 21 synthetic check definitions; verified actual closure and receipt bytes. No corpus or target decoding by this review.",
+  "reviewer": "science_implementation, independent of builder author",
+  "scope": "Allows target-blind corpus aggregate audit only under existing root authority. Does not authorize private split materialization, target statistics, model preparation, training or test scoring.",
+  "source_hashes": {
+    "IMPLEMENTATION_CONTRACT.md": "081f3abeec2fd0b302eef37ab9d8ceb05a9a2afc12e15685acac66257afee4e9",
+    "NEW_PARTITION_PROTOCOL.md": "73ca87a074fdd5e321cd7414c1f71008986d13c6617f8280f4ce5e97606a2a7c",
+    "build_partition.py": "394b68d0bfd5a72010327d2dab69cb2494186b16ae158007520f3d71376c7519",
+    "builder_settings.json": "9939b0acc75e788c955f360c30cb0c03f02b23cf6406df36259661cd49819546",
+    "split_core.py": "e9097c27625cb2669db8498b9ddc7befe094e0c2d17df6241aae3b6548e90719",
+    "synthetic_split_checks.py": "b09f7b0b416005bf7a1a91bf38128e4e21a248a1807e3ea78346ec00178db16b"
+  },
+  "source_manifest_sha256": "1315f7fcb6112c893ad0855b2144af7cf4711baadd7e6438ae5f96075d8dd042",
+  "synthetic_checks_sha256": "1ca088f8db35f63c4d46eb3cd98e6fc86bfb6bc46cae548f7cd6cf11856de9a9",
+  "verified_design": [
+    "IdentityArchive allows only ids/z/pos and rejects other members before ZIP open.",
+    "Existing full keys, conservative heavy/formula keys, and all five ambiguous-row candidate keys are unioned, with complete-component TRAIN propagation.",
+    "Complete cKDTree query_pairs p=inf eps=0 and direct FP64 bound implement the fixed geometry safeguard; no nearest-only truncation.",
+    "Smallest-row DSU representatives, ascending minimum-ID component ordering and one PCG64 shuffle implement deterministic TEST then validation assignment with retained overshoot.",
+    "Every valid-corpus row is retained once; original-key, heavy-key, component, row, ID and geometry safeguards are explicitly checked.",
+    "Audit and materialization are separated by exact source/synthetic and source/corpus review gates; different existing outputs fail instead of being replaced.",
+    "Old split and inner-split arrays enter exposure counts only; no target statistics, prediction or checkpoint accesses exist in the builder."
+  ]
+}

@@ -1,0 +1,13 @@
+# Science implementation — Round05 preparation accepted; production blocked
+
+Authoritative current handoff: research_state/round05_scratch_preparation/PREPARATION_STATUS.md (mirrored server in the same campaign namespace). Read it before any action. Round04 remains COMPLETE/published at8497e0ba; never rerun it.
+
+Round05 preparation is complete and frozen at manifest66269e04d73943bec48a6331c3ca45a9efcc12045e962fe897da6196af97c5e1 (82 files). Final independent review passed at SHA ef7d90250fd0491fba1432201416de983afa86ee6ae7ebf6e086735f5e10ff19. Root accepted preparation in ROUND05_PREPARATION_ACCEPTANCE.md; QC now owns D-first archive/publication. No production fit or validation/TEST target access has occurred. Exactly12 isolated discarded updates completed; all owned preparation processes are terminal and GPU1 lock released.
+
+New v2 split c8ce66dd and independent verifier395d415f are sealed. Reader/statistics and CPU synthetic checks passed. Successful GPU preflight c0a62e24 and independent result review4071eca0 verify all arms, exact RNG/order, model replay<=1.1921e-7 and optimizer<=2.9802e-8. Root accepted the explicit full-forward CUDA parity amendment234b0ea5 after zero-update diagnosis; all original failure evidence remains preserved. The final I/O-only fsync change has exact executed-source snapshot, mapping and independent AST continuity review876e2ea4; no further updates were run.
+
+Science remains sole model executor. History owns independent closure and publication inspection; QC owns D-first archival publication. Full60-epoch fitting still requires verified publication and a distinct bound root execution authorization. The frozen unauthorized template is not permission. Do not repeat any completed preparation stage. No test scoring, old checkpoint reuse, averaging, unreviewed objective change or new QC implementation is authorized.
+
+The final preparation report SHA is 1fedd7b8886d00cb5371af62083ddf39e203bde7b8e5a55476fb50a88b0581a1. Its final authorization-check wording is covered by the supplemental review manifest. This operational handoff remains outside the scientific source closure.
+
+Fixed prospective control/F/decor/both settings: fresh seed11/order11, original LE+Ls, LR.001 AMSGrad, batch64, WD0, clip5, FP32, lambda.001,60epochs. The launcher separately locks/admit GPUs1/2/4/6, prebinds UUIDs before interpreter imports and registers owned identities. The new split is historically exposed, so old predictors are ineligible and it is not an external fresh dataset. See the full protocol for selection/promotion/recovery and access boundaries. All arrays/weights/optimizer states stay server-only.

@@ -1,0 +1,8 @@
+{"stage": "identity", "rows": 20000}
+{"stage": "identity", "rows": 40000}
+{"stage": "identity", "rows": 60000}
+{"stage": "identity", "rows": 80000}
+{"stage": "identity", "rows": 100000}
+{"stage": "identity", "rows": 120000}
+{"stage": "components_complete", "rows": 133727, "components": 114572, "largest_component": 14, "original_key_union_merges": 258, "heavy_formula_union_merges": 18897, "geometry_union_merges": 0, "geometry_matching_pairs": 83, "formula_buckets": 621, "ambiguous_rows_before_propagation": 278, "ambiguity_reasons": {"cached_disconnected": 275, "previously_unresolved": 278}, "candidate_rows": 278, "candidate_failures": 0, "component_size_histogram": {"1": 101012, "2": 9843, "3": 2625, "4": 696, "5": 199, "6": 108, "7": 45, "8": 17, "9": 12, "10": 6, "11": 4, "12": 3, "14": 2}, "hash_collision_guard_passed": true}
+{"passed": true, "mode": "audit", "counts": {"test": 6686, "val": 6686, "train": 120355}, "components": 114572, "train_only_rows": 278, "corpus_audit_sha256": "644b6e6d5e2c7af1b2a6f234715a8d5acdaed9d596f746eba9f897c539f45a1c", "private_arrays_materialized": false}

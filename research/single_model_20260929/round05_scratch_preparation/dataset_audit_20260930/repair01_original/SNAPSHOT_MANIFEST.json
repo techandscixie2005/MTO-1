@@ -1,0 +1,28 @@
+{
+  "scope": "Pre-repair text sources and receipts; failed operational attempt retained separately under original ops paths",
+  "files": {
+    "CORPUS_AUDIT.json": "0419a5a856e084ad4e75cc67113d3dd290adf7826d235cedc9d2cf41df78dc80",
+    "CURRENT_HANDOFF.md": "d3d836c9c0e4227a586667560348e806fa6e315c0a6ce790472b805ef8c5c0c7",
+    "EXISTING_DATASET_AUDIT.json": "e69286aef0f19f1ec4dbb63102c3811ce7219101ab1fde84b85286a886ac4fec",
+    "EXISTING_METADATA_AUDIT_01.log": "6cc7b7dc2760a53dcd22d5a18cc2f3d58f4a51ab9ca126f4e99c84489ce6e971",
+    "IMPLEMENTATION_CONTRACT.md": "081f3abeec2fd0b302eef37ab9d8ceb05a9a2afc12e15685acac66257afee4e9",
+    "MATERIALIZATION_REVIEW.json": "184058fce844926f9ed73e950718438f520b61ab44fc7f53ff3f8593947e7bdd",
+    "NEW_PARTITION_PROTOCOL.md": "73ca87a074fdd5e321cd7414c1f71008986d13c6617f8280f4ce5e97606a2a7c",
+    "PRE_CORPUS_REVIEW.json": "f64de41f384536d0bc1510f3f75fe59f87881d2b76b0bf05b77db7902fc03a45",
+    "PUBLIC_DATA_AND_QC_REVIEW.md": "1f5e0f64cc112c4dbd1d82bd19282dc51b4537006809437d20d8af2410ced24d",
+    "SOURCE_MANIFEST.json": "1315f7fcb6112c893ad0855b2144af7cf4711baadd7e6438ae5f96075d8dd042",
+    "SYNTHETIC_CHECKS.json": "1ca088f8db35f63c4d46eb3cd98e6fc86bfb6bc46cae548f7cd6cf11856de9a9",
+    "SYNTHETIC_CHECKS_01.log": "8346896f6585fe46ba868fcf9dde381a9ab104e0d978ba81ccef48101063c2f0",
+    "audit_existing_metadata.py": "0ead98abbdec74341ae5ac1dc88c24b6b2f27eac396058f1c754a9755108c5a5",
+    "build_partition.py": "394b68d0bfd5a72010327d2dab69cb2494186b16ae158007520f3d71376c7519",
+    "builder_settings.json": "9939b0acc75e788c955f360c30cb0c03f02b23cf6406df36259661cd49819546",
+    "independent_materialization_review.py": "61e8dee7e801d25d3ef7ce8251555690e93d6820bcb3690f43fc1a41b1304ee4",
+    "independent_pre_corpus_review.py": "90f08436ee8651b34d2c15725c9039012be9c10ea39e9c38913595ed913035bf",
+    "independent_verify_partition.py": "a6459215c4ff2973aff12ca51d8caaa9c36601c5815f44f294118b97a9b4c847",
+    "run_independent_verification.py": "0013856d196baa2793a1a8c5e1fc46f88aa36ebcc1768335153f357caa2cbac3",
+    "run_owned_builder.py": "772df7e1e878dc52c794971c0234828dd13b5d46d8c5604792edd9c430c1abdb",
+    "split_core.py": "e9097c27625cb2669db8498b9ddc7befe094e0c2d17df6241aae3b6548e90719",
+    "synthetic_split_checks.py": "b09f7b0b416005bf7a1a91bf38128e4e21a248a1807e3ea78346ec00178db16b"
+  },
+  "no_private_arrays_created": true
+}
