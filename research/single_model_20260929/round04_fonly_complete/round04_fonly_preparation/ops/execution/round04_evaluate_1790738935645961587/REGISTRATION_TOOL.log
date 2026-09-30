@@ -1,0 +1,33 @@
+{
+  "id": "round04_evaluate_1790738935645961587",
+  "registered_at_utc": "2026-09-30T03:28:55.693645+00:00",
+  "identity": {
+    "pid": 1250583,
+    "start_ticks": 1258659994,
+    "uid": 1000,
+    "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round04_fonly_preparation",
+    "argv_sha256": "749b6ddb3d561000daea3a3a0a142d0d7a1a7aef6b2c82eef406b583df75d6b9",
+    "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+    "process_state": "S"
+  },
+  "run_dir": "round04_fonly_preparation/ops/execution/round04_evaluate_1790738935645961587",
+  "resource_kind": "cpu",
+  "gpu_uuid": null,
+  "expected_gpu_allocations": 0,
+  "environment_constraints": {
+    "MKL_NUM_THREADS": "2",
+    "OMP_NUM_THREADS": "2",
+    "CUDA_VISIBLE_DEVICES": ""
+  },
+  "authorization_path": "round04_fonly_preparation/PRODUCTION_EXECUTION_AUTHORIZATION.json",
+  "authorization_sha256": "530db555da8badefb773b945e16f5e5ccce9c54fc796f78ec0d6a420b9dc6b97",
+  "status_path": "round04_fonly_preparation/ops/execution/round04_evaluate_1790738935645961587/status.json",
+  "log_path": "round04_fonly_preparation/ops/execution/round04_evaluate_1790738935645961587/stage.log",
+  "completion_path": "round04_fonly_preparation/ops/execution/round04_evaluate_1790738935645961587/COMPLETE.json",
+  "failure_path": "round04_fonly_preparation/ops/execution/round04_evaluate_1790738935645961587/FAILED.json",
+  "checkpoint_paths": [],
+  "stale_after_seconds": 28800,
+  "monitor": true,
+  "restart_policy": "coordinator_review_required",
+  "identity_role": "synchronous owned stage wrapper; child identities recorded in stage receipt"
+}

@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "reviewer": "history_baseline",
+  "scope": "Current source/terminal/private-file hashes and independent aggregate arithmetic; no target/prediction arrays decoded, no model loading, no inference or coefficient refit.",
+  "source_manifest_sha256": "79e5e6b6aa87f04808ddbf5e0f1b766a52226d71ef8edcb7b5bf1a0fc0e7467f",
+  "terminal_manifest_sha256": "8c5defec95b7eb2d06e16cb960b5d82f8981aae9ec153e2519dfc47ef8b3a396",
+  "report_sha256": "4cdeafe40f86145b9020debf2d76d32a0771ddb7e914adc73a2df16e96a8e010",
+  "review_script_sha256": "a576d6ae005ec4ad64485906757406c7f4e97afb5f6fe7ad35b70b3b12698786",
+  "source_entries_verified": 51,
+  "terminal_entries_verified": 26,
+  "permit": {
+    "authorization_sha256": "530db555da8badefb773b945e16f5e5ccce9c54fc796f78ec0d6a420b9dc6b97",
+    "source_manifest_sha256": "79e5e6b6aa87f04808ddbf5e0f1b766a52226d71ef8edcb7b5bf1a0fc0e7467f",
+    "independent_review_sha256": "b7953db3597dc98eebe820a3c44341b933cc16128e02c22672a114cdd60e5d49",
+    "publication_receipt_sha256": "268ed5c05a615f2e1694cfde2f757a67ac1a828019755b649f767a8e5c0bb88f"
+  },
+  "private_file_hashes_only": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round04_fonly_preparation/production/coefficients_in_sample.pt": "30ce156f58cc96df4c733250b10d0882a253bc043047e3a00eebeaa97e85194c",
+    "/home/inspur/MTO-1/research/single_model_20260929/round04_fonly_preparation/production/in_sample.pt": "f43897f1bc23b2981d617f3f0bd11fbc84499f6c2d162eb13227934ef989981f",
+    "/home/inspur/MTO-1/research/single_model_20260929/round04_fonly_preparation/production/coefficients_heldout_source.pt": "4ccf0fd613487b9d9f76eae4a804a5bfead07ccbbb5e4a1654688f040659c3f8",
+    "/home/inspur/MTO-1/research/single_model_20260929/round04_fonly_preparation/production/heldout_source.pt": "5330d4028f460043883c08f66c4653cf75f0cb5a82a8716c7554b8f2b15619af"
+  },
+  "stages": {
+    "fit_export": {
+      "wrapper_pid": 1250294,
+      "child_pid": 1250296,
+      "start": 1790738868.256879,
+      "end": 1790738882.6563697,
+      "exit_code": 0
+    },
+    "evaluate": {
+      "wrapper_pid": 1250583,
+      "child_pid": 1250588,
+      "start": 1790738935.6999693,
+      "end": 1790738940.4853885,
+      "exit_code": 0
+    }
+  },
+  "two_solves_one_evaluation": true,
+  "all_66860_labels_and_state_tail_bin_arithmetic_verified": true,
+  "confirmation_eligible": {
+    "in_sample": false,
+    "heldout_source": false
+  },
+  "incumbent_retained": true,
+  "limits": [
+    "Private checkpoint schemas/base equality rely on reviewed unchanged execution assertions plus passed execution/parity receipts; this audit hashes files without reloading models.",
+    "No fresh holdout evidence; old validation reused and historical affine incumbent was fitted on it.",
+    "Current scientific conclusion is a negative result for the fixed hinge protocol, not universal failure of nonlinear models."
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "attempt": "round04_evaluate_1790738935645961587",
+  "stage": "evaluate",
+  "permit": {
+    "authorization_sha256": "530db555da8badefb773b945e16f5e5ccce9c54fc796f78ec0d6a420b9dc6b97",
+    "source_manifest_sha256": "79e5e6b6aa87f04808ddbf5e0f1b766a52226d71ef8edcb7b5bf1a0fc0e7467f",
+    "independent_review_sha256": "b7953db3597dc98eebe820a3c44341b933cc16128e02c22672a114cdd60e5d49",
+    "publication_receipt_sha256": "268ed5c05a615f2e1694cfde2f757a67ac1a828019755b649f767a8e5c0bb88f"
+  },
+  "exit_code": 0,
+  "started_at_unix": 1790738935.6999693,
+  "ended_at_unix": 1790738940.4853885,
+  "duration_seconds": 4.785419225692749,
+  "child_identity": {
+    "pid": 1250588,
+    "start_ticks": 1258660046,
+    "uid": 1000,
+    "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round04_fonly_preparation",
+    "argv_sha256": "53c099cb74b65200109234a1b7493caadd82089c04923488dec6d189bff66ad1",
+    "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+    "process_state": "R"
+  },
+  "child_pid": 1250588,
+  "log_sha256": "d7e26b7ccda976009facb339dfe9acd87f6a7d1beeb6ded8fc833ab36124f2a8",
+  "authorization_unchanged": true,
+  "output_receipt_hashes": {
+    "VALIDATION_COMPLETE.json": "f90ec70cd384fbcbc7570f3f07c0048a26ea95da7c7d8324ffcc29731509d3cb"
+  }
+}

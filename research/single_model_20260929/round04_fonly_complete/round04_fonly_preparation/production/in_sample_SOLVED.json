@@ -1,0 +1,72 @@
+{
+  "arm": "in_sample",
+  "permit": {
+    "authorization_sha256": "530db555da8badefb773b945e16f5e5ccce9c54fc796f78ec0d6a420b9dc6b97",
+    "source_manifest_sha256": "79e5e6b6aa87f04808ddbf5e0f1b766a52226d71ef8edcb7b5bf1a0fc0e7467f",
+    "independent_review_sha256": "b7953db3597dc98eebe820a3c44341b933cc16128e02c22672a114cdd60e5d49",
+    "publication_receipt_sha256": "268ed5c05a615f2e1694cfde2f757a67ac1a828019755b649f767a8e5c0bb88f"
+  },
+  "path": "/home/inspur/MTO-1/research/single_model_20260929/round04_fonly_preparation/production/coefficients_in_sample.pt",
+  "sha256": "30ce156f58cc96df4c733250b10d0882a253bc043047e3a00eebeaa97e85194c",
+  "shape": [
+    4
+  ],
+  "dtype": "float64",
+  "design": {
+    "rows": 240710,
+    "columns": 4,
+    "rank": 4,
+    "singular_values": [
+      628.5543450381538,
+      427.1422280080971,
+      125.88898246412971,
+      60.906440899437946
+    ],
+    "condition_number": 10.31999794694873,
+    "rcond": 1e-12,
+    "maximum_condition_number": 100000000.0,
+    "passed": true
+  },
+  "fitting_diagnostics": {
+    "unclipped": {
+      "count": 240710,
+      "sse": 213.1316092256858,
+      "sst": 631.4271330403243,
+      "r2": 0.6624604834457205,
+      "rmse": 0.029756158651859255,
+      "mae": 0.016048517232263696
+    },
+    "clipped": {
+      "count": 240710,
+      "sse": 213.1316092256858,
+      "sst": 631.4271330403243,
+      "r2": 0.6624604834457205,
+      "rmse": 0.029756158651859255,
+      "mae": 0.016048517232263696
+    },
+    "affine_unclipped": {
+      "count": 240710,
+      "sse": 213.87592732074617,
+      "sst": 631.4271330403243,
+      "r2": 0.661281696447011,
+      "rmse": 0.02980807198425168,
+      "mae": 0.016012260124772224
+    },
+    "affine_clipped": {
+      "count": 240710,
+      "sse": 213.87586476210777,
+      "sst": 631.4271330403243,
+      "r2": 0.6612817955220034,
+      "rmse": 0.029808067624825733,
+      "mae": 0.016012116626331865
+    },
+    "all_segment_slopes_nonnegative": true,
+    "clamp_count": 0,
+    "source_input_range": [
+      8.140212339487653e-06,
+      3.033629781298622
+    ],
+    "source_upper_knot_count": 1600
+  },
+  "solved_at_unix": 1790738872.086672
+}

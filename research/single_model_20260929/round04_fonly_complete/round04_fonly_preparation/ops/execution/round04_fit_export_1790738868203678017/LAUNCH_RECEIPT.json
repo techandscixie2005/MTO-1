@@ -1,0 +1,52 @@
+{
+  "attempt": "round04_fit_export_1790738868203678017",
+  "stage": "fit_export",
+  "permit": {
+    "authorization_sha256": "530db555da8badefb773b945e16f5e5ccce9c54fc796f78ec0d6a420b9dc6b97",
+    "source_manifest_sha256": "79e5e6b6aa87f04808ddbf5e0f1b766a52226d71ef8edcb7b5bf1a0fc0e7467f",
+    "independent_review_sha256": "b7953db3597dc98eebe820a3c44341b933cc16128e02c22672a114cdd60e5d49",
+    "publication_receipt_sha256": "268ed5c05a615f2e1694cfde2f757a67ac1a828019755b649f767a8e5c0bb88f"
+  },
+  "command": [
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/bin/python",
+    "/home/inspur/MTO-1/research/single_model_20260929/round04_fonly_preparation/production_entry.py",
+    "fit_export",
+    "--authorization",
+    "/home/inspur/MTO-1/research/single_model_20260929/round04_fonly_preparation/PRODUCTION_EXECUTION_AUTHORIZATION.json",
+    "--manifest",
+    "/home/inspur/MTO-1/research/single_model_20260929/round04_fonly_preparation/FROZEN_MANIFEST.json",
+    "--review",
+    "/home/inspur/MTO-1/research/single_model_20260929/round04_fonly_preparation/INDEPENDENT_PREPARATION_REVIEW.json",
+    "--publication",
+    "/home/inspur/MTO-1/research/single_model_20260929/ops/ROUND04_PREPARATION_PUBLICATION_RECEIPT.json"
+  ],
+  "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round04_fonly_preparation",
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2"
+  },
+  "wrapper_identity": {
+    "pid": 1250294,
+    "start_ticks": 1258653249,
+    "uid": 1000,
+    "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round04_fonly_preparation",
+    "argv_sha256": "cb16dbd52ab7e4460212cc74fd87ee04fcf28721cff0a800784a478588bb555c",
+    "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+    "process_state": "R"
+  },
+  "created_at_unix": 1790738868.2042906,
+  "wrapper_sha256": "bd6551a266e7c66cb12c8005e29c02f6d460cce7c1330ede75d98a70e758a911",
+  "registrar_sha256": "47ba35fea821ddefa456725e5d37f595294d2911c85626e039528aedd3b739e2",
+  "child_pid": 1250296,
+  "child_identity": {
+    "pid": 1250296,
+    "start_ticks": 1258653301,
+    "uid": 1000,
+    "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round04_fonly_preparation",
+    "argv_sha256": "ee920a3ab356984010f621a0aee4a1f03512d546d99628fa0dfd377354718e92",
+    "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+    "process_state": "R"
+  },
+  "child_started_at_unix": 1790738868.256879
+}

@@ -1,0 +1,21 @@
+{
+  "permit": {
+    "authorization_sha256": "530db555da8badefb773b945e16f5e5ccce9c54fc796f78ec0d6a420b9dc6b97",
+    "source_manifest_sha256": "79e5e6b6aa87f04808ddbf5e0f1b766a52226d71ef8edcb7b5bf1a0fc0e7467f",
+    "independent_review_sha256": "b7953db3597dc98eebe820a3c44341b933cc16128e02c22672a114cdd60e5d49",
+    "publication_receipt_sha256": "268ed5c05a615f2e1694cfde2f757a67ac1a828019755b649f767a8e5c0bb88f"
+  },
+  "coefficient_receipt_sha256": "5af2b43db952ae3de3570b43ebdfcca3349c945cca0d846efbbe3e61b97cb65b",
+  "exports": {
+    "in_sample": {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round04_fonly_preparation/production/in_sample.pt",
+      "sha256": "f43897f1bc23b2981d617f3f0bd11fbc84499f6c2d162eb13227934ef989981f",
+      "coefficient_tensor_sha256": "30ce156f58cc96df4c733250b10d0882a253bc043047e3a00eebeaa97e85194c"
+    },
+    "heldout_source": {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round04_fonly_preparation/production/heldout_source.pt",
+      "sha256": "5330d4028f460043883c08f66c4653cf75f0cb5a82a8716c7554b8f2b15619af",
+      "coefficient_tensor_sha256": "4ccf0fd613487b9d9f76eae4a804a5bfead07ccbbb5e4a1654688f040659c3f8"
+    }
+  }
+}
