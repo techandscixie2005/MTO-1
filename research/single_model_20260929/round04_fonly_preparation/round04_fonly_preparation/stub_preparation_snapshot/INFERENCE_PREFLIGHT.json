@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "CPU_only": true,
+  "synthetic_geometries_only": true,
+  "real_head_fit": false,
+  "real_geometry_or_target_arrays_opened": false,
+  "outer_validation_or_test_access": false,
+  "base_checkpoint_sha256": "9f1963267cd0e5e35212baca6b4080cf986e73aed6e1662c4cb720afb9a4c136",
+  "base_tensor_sha256": "be433e432c79276495f542b3012891c8954e84e8aba0b6e1b14c3299096f4bef",
+  "base_buffer_tensor_sha256": "adb39655044e81d62b057e7848d2d1239a2b2b51febe2bbd2e8e45597f3032bf",
+  "fixtures": [
+    {
+      "fixture": "synthetic_hand_set_nonlinear",
+      "E_A_bitwise_equal": true,
+      "scalar_numpy_torch_max_abs": 1.3877787807814457e-17,
+      "all_parameters_frozen": true,
+      "base_state_and_buffers_unchanged": true,
+      "one_checkpoint_bytes": 6415432
+    },
+    {
+      "fixture": "existing_heldout_affine_anchor",
+      "E_A_bitwise_equal": true,
+      "scalar_numpy_torch_max_abs": 0.0,
+      "all_parameters_frozen": true,
+      "base_state_and_buffers_unchanged": true,
+      "one_checkpoint_bytes": 6415432
+    }
+  ],
+  "external_paths_opened_during_one_file_load_or_forward": [],
+  "original_base_data_cache_or_source_access_during_inference": false,
+  "tampered_scale_rejected": true,
+  "input_hashes": {
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/configs/mto_eta0.json": "e1b823aa48f491b7e0eaa8cc106fa712e6ba3e3256d36e23f091af6d9c07bdf9",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/normalization.json": "812a7b80d6259eb6106a5a534a8358a626713ec7ee53ad992fff6fcbabe59452",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta0/best.pt": "9f1963267cd0e5e35212baca6b4080cf986e73aed6e1662c4cb720afb9a4c136"
+  },
+  "source_hashes": {
+    "inference_preflight.py": "048c6fc08ff86517202b17e1e2784aa4dc843a9cd9963ff59b7e08512815b845",
+    "predictor.py": "32c4c6cb4f756ebcb8822bd1c7afb496a30dddc33ca7e4e1a169cfb3be6a4492",
+    "backbone.py": "cffc7d73f070548f7efcc6cd5f0d01bab4b6dcedb0b4da094eb8da99bb981eef",
+    "scalar_map.py": "90178306cbbb1a0d903876ddfd7af445b706c593b4aefb9a1c9c611a5d78b3b1",
+    "common.py": "4444fb94dd5dc37b82c818bc53df347f078e39dcff35d374acbda4b23736df27",
+    "settings.json": "705bb56ed3ec41708745aaad39efea4267d0de14f1320e74a401ba588b0377ce"
+  }
+}

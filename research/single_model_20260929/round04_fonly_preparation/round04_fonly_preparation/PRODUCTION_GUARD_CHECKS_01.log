@@ -1,0 +1,34 @@
+/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/lib/python3.10/site-packages/e3nn/o3/_wigner.py:10: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  _Jd, _W3j_flat, _W3j_indices = torch.load(os.path.join(os.path.dirname(__file__), 'constants.pt'))
+{
+  "passed": true,
+  "synthetic_fixtures_only": true,
+  "real_data_solve": false,
+  "real_cache_or_validation_values_opened": false,
+  "model_inference": false,
+  "negative_gate_and_state_checks": {
+    "missing_authority_before_stage_import": true,
+    "synthetic_or_preparation_authority_rejected": true,
+    "uncertain_interrupted_solve_not_repeated": true,
+    "completed_scoring_refused": true,
+    "interrupted_scoring_requires_review": true,
+    "actual_completed_evaluator_refuses_before_input_reads": true
+  },
+  "solve_state_decisions": {
+    "new": "solve_once",
+    "recover_receipt": "recover_receipt_without_solve",
+    "retain": "verify_existing"
+  },
+  "immutable_synthetic_coefficients_preserved": true,
+  "partial_export_resumed_without_solve": true,
+  "temporary_fixture_files_removed": true,
+  "source_hashes": {
+    "production_guard_checks.py": "be16402010674673bd65d81f63a530291bef719385e91ab6efeae26a1fe7c8d5",
+    "production_entry.py": "473ff787cfa085340c1ae22820846454c7f182054a3f8dbe5338b3e6106e2fd5",
+    "production_stages.py": "04496de870fc1d5619b6168bdfffe8af28f369bd5b7dfbd9d5624bcd4669d2aa",
+    "stage_state.py": "33e9bb76ec6f0524ebdb954dfbfa281998daa35165527393f7037fefd9970eb5",
+    "execution_gate.py": "8e0be8974d29dc832646cf5cbe3476d8ac6321af8c4609a5194e6596118f4fdc",
+    "common.py": "95d8e8859a436f7e87375c9e4b09a052aad7f6c67bcef38fc6fd813ef222719b",
+    "settings.json": "69fd0730591b6d78d594bfd5f34e3f1aa3c88e1301cd37c98fbf6a09b767113f"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "passed": true,
+  "target_free_calibration_design_audit": true,
+  "actual_target_or_energy_fields_decoded": [],
+  "decoded_members": [
+    "full_baseline_native_f.npy",
+    "ids.npy",
+    "indices.npy",
+    "mask_f.npy",
+    "source_native_f.npy"
+  ],
+  "coefficient_solver_called": false,
+  "model_inference": false,
+  "outer_validation_or_test_access": false,
+  "same_rows_and_masks_for_both_sources": true,
+  "valid_labels": 240710,
+  "indices_sha256": "9547ca89feff3301f5e4c6fcd736be7a9186878a9fcb1fec8695c5c12d60707b",
+  "ids_sha256": "e7919897a1804e5435efba32f3c07d109a82b023e2111f65d5c802cd396e5296",
+  "mask_sha256": "5329a9d754d9c5756c423e6db086b8c9d191253c0eb4a8501bdf8a7c7f38a6c2",
+  "zero_target_count_from_published_receipt_only": 4546,
+  "zero_target_count_newly_recomputed": false,
+  "sources": {
+    "in_sample": {
+      "design": {
+        "rows": 240710,
+        "columns": 4,
+        "rank": 4,
+        "singular_values": [
+          628.5543450381538,
+          427.1422280080971,
+          125.88898246412971,
+          60.906440899437946
+        ],
+        "condition_number": 10.31999794694873,
+        "rcond": 1e-12,
+        "maximum_condition_number": 100000000.0,
+        "passed": true
+      },
+      "valid_count": 240710,
+      "prediction_min": 8.140212339487653e-06,
+      "prediction_max": 3.033629781298622,
+      "support_counts": {
+        "below_q90": 224596,
+        "q90_to_q99": 14514,
+        "at_or_above_q99": 1600
+      },
+      "negative_native_count": 0,
+      "native_array_sha256": "c4ad33e1955088d1ddbbe2c143bcd68927d17daebcea77843858e378b830ed9e"
+    },
+    "heldout_source": {
+      "design": {
+        "rows": 240710,
+        "columns": 4,
+        "rank": 4,
+        "singular_values": [
+          603.3757247805241,
+          395.3505269889415,
+          117.98815579841491,
+          62.5144509678253
+        ],
+        "condition_number": 9.651779955502885,
+        "rcond": 1e-12,
+        "maximum_condition_number": 100000000.0,
+        "passed": true
+      },
+      "valid_count": 240710,
+      "prediction_min": 1.4033526591273092e-05,
+      "prediction_max": 3.272603287543654,
+      "support_counts": {
+        "below_q90": 223004,
+        "q90_to_q99": 16454,
+        "at_or_above_q99": 1252
+      },
+      "negative_native_count": 0,
+      "native_array_sha256": "a32b522642515a12a6d056a4c0759772a19a1b902e1c82daa19054c712c449bb"
+    }
+  },
+  "input_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round03_transfer/affine/calibration_predictions.npz": "defe63f703b405b09af84a5fe5c05c742fc645385a5311e708f2bd6611c5c675",
+    "/home/inspur/MTO-1/research/single_model_20260929/round03_transfer/affine_stage.py": "60ebbcea16c1db716ec769a834e4b0e459ba59a9a602378f616fcda8f7b5b2ed",
+    "/home/inspur/MTO-1/research/single_model_20260929/round03_transfer/affine/COEFFICIENTS_FROZEN.json": "cb1c355304033fed9a00f759925b84ded8e0b31ead4639652e68f943d1d54ce6",
+    "/home/inspur/MTO-1/research/single_model_20260929/round03_transfer/split_manifest.json": "f1a3136de17435832498f662834ca4b1c7e5c4c1729b45792be1e1316391cfdd"
+  },
+  "source_hashes": {
+    "audit_design.py": "f57bf957ac009296ab2e4db91fc06bd6740e6b9ad35d3c761bd4fbe69f438cef",
+    "scalar_map.py": "90178306cbbb1a0d903876ddfd7af445b706c593b4aefb9a1c9c611a5d78b3b1",
+    "common.py": "4444fb94dd5dc37b82c818bc53df347f078e39dcff35d374acbda4b23736df27",
+    "settings.json": "705bb56ed3ec41708745aaad39efea4267d0de14f1320e74a401ba588b0377ce"
+  }
+}

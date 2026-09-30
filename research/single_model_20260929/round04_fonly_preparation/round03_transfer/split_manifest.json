@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "seed": 20260930,
+  "arrays": {
+    "fit": {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round03_transfer/data/fit_indices.npy",
+      "sha256": "39ccc1e6a0f98222a96463229677a8b335d93c169acba2f3262cbe79599692f9",
+      "indices_sha256": "b7b00dfe514ae57f3dd609a60dc259625007a5f43288ff75e2c83a3a7e71da37",
+      "molecules": 96284,
+      "dtype": "int64",
+      "ids_sha256": "1d9b47c40f5289d1947c5ba530ca19df0a868a5f045a233b543f09ecc9348a16",
+      "archive_allowed": false
+    },
+    "calibration": {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round03_transfer/data/calibration_indices.npy",
+      "sha256": "e1253725889748b75ae98b06683579da5bc535dbbb130fec7ce117c5e2106ba0",
+      "indices_sha256": "9547ca89feff3301f5e4c6fcd736be7a9186878a9fcb1fec8695c5c12d60707b",
+      "molecules": 24071,
+      "dtype": "int64",
+      "ids_sha256": "e7919897a1804e5435efba32f3c07d109a82b023e2111f65d5c802cd396e5296",
+      "archive_allowed": false
+    }
+  },
+  "group_metadata": {
+    "train_groups": 120127,
+    "duplicate_train_groups": 218,
+    "duplicate_train_records": 446,
+    "unresolved_train_groups": 266,
+    "unresolved_train_records": 278,
+    "heldout_groups": 24032,
+    "target_heldout_rows": 24071,
+    "fit_molecules": 96284,
+    "heldout_molecules": 24071
+  },
+  "policy": "shuffle sorted resolved original TRAIN groups; whole-group prefix until 24071 held rows; unresolved groups fit-only; original TRAIN order within each subset",
+  "all_original_train_rows_assigned_once": true,
+  "no_group_broken": true,
+  "outer_splits_unchanged": true,
+  "labels_used_for_split": false,
+  "source_hashes": {
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/data/identity_audit_v2.json": "9d384425a90dd88fbc68f8b609a303872910bb21c69e0d0a19bcccaee49cb3c4",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/splits.json": "141d6c4ba9631de91b81076b56afc2239aa3632478895102d8024e13d79c93ca",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/dataset.npz": "be8fadca203429575d70642b617730592693be40858dca7189c098a671596330",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/raw_labels.npz": "621dc8723fb6dc96681851a26e4f52fcb7747a4778e57a249a75d22f3af4c632"
+  }
+}

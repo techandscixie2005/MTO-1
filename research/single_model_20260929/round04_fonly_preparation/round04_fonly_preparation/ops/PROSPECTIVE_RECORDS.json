@@ -1,0 +1,48 @@
+{
+  "status": "prospective_only_not_frozen_not_archived_not_published",
+  "namespace": "round04_fonly_preparation",
+  "owner": "/root/monitor",
+  "observed_preparation_decision_sha256": "1d3abc4f7cbbe5e313828a177f11a6d9435307ca607a3cb43fefc74c46d5b8ab",
+  "observed_coordinator_sha256": "d133197fa29a549728c2eb7e19faa5509db3e7a426dc8d0f0d60740a72bbb70f",
+  "independent_protocol_review_sha256": "e04e7f8b6a5f7a7bd0932fb195e34671f0a8d2cc3ff6d9651bbc091d3f8b5fd6",
+  "decision_and_handoff_hashes_must_be_refreshed_at_finalization": true,
+  "known_operational_records": [
+    "current_state/ROUND04_PREPARATION_DECISION.md",
+    "monitoring/CHECK_20260929T234954Z.json",
+    "monitoring/CLOSED_CAMPAIGN_20260929T234953.json",
+    "monitoring/ROUND03_PUBLICATION_WORDING_CORRECTION_20260929T2350.json",
+    "ops/HEARTBEAT_CLOSED_CHECK_20260929T2350.json",
+    "ops/record_completed_campaign_check.py",
+    "ops/ROUND03_COMPLETION_PUBLICATION_RECEIPT.json",
+    "round04_fonly_preparation/ops/ARCHIVE_CHECKLIST.md"
+  ],
+  "original_proposal_records": [
+    "round04_fonly_preparation/PROPOSED_PROTOCOL.md",
+    "round04_fonly_preparation/RATIONALE.md",
+    "round04_fonly_preparation/PROPOSAL_MANIFEST.json"
+  ],
+  "protocol_review_records": [
+    "round04_fonly_preparation/INDEPENDENT_PROTOCOL_REVIEW.md",
+    "round04_fonly_preparation/INDEPENDENT_PROTOCOL_REVIEW.json"
+  ],
+  "pending_exact_inventory": [
+    "preserved documents-only snapshot paths and hashes",
+    "final protocol and independent protocol review",
+    "source closure and exact settings/environment/CPU commands",
+    "synthetic CPU tests and failure-case records",
+    "read-only calibration contract/rank/support aggregate audit",
+    "synthetic-geometry one-checkpoint/access receipts",
+    "independent source/preflight review and final report manifest",
+    "root preparation closeout decision"
+  ],
+  "future_archive_directory": "D:/MTO/archives/single_model_20260929/round04_fonly_preparation",
+  "required_parent": "current remotely verified research-branch descendant of4f9ae50647f957ac7d68ab1a20200a79fa527cf9",
+  "archive_first_then_inspected_commit_push": true,
+  "real_data_fit_or_solve_authorized": false,
+  "validation_values_or_test_access_authorized": false,
+  "gpu_allocation_or_launch_authorized": false,
+  "fitted_tensors_coefficients_arrays_data_caches_credentials_allowed": false,
+  "synthetic_hand_set_test_constants_allowed_if_labeled": true,
+  "completed_snapshots_may_be_modified": false,
+  "monitor_schedule_changes_authorized": false
+}

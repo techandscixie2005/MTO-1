@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "array_or_model_access": false,
+  "exact_unchanged_files": {
+    "audit_design.py": true,
+    "inference_preflight.py": true,
+    "predictor.py": true,
+    "backbone.py": true
+  },
+  "exact_unchanged_function_AST": {
+    "scalar_map.basis": true,
+    "scalar_map.design_diagnostics": true,
+    "scalar_map.require_design": true,
+    "scalar_map.apply_map": true,
+    "scalar_map.affine_parameters": true,
+    "common.require_cpu": true,
+    "common.sha": true,
+    "common.read_json": true,
+    "common.source_hashes": true,
+    "common.settings": true,
+    "common.require_preparation_authority": true
+  },
+  "explained_changes": [
+    "atomic_json now fsyncs output file and directory",
+    "solver extracted a shared function; current synthetic recovery tests exercise it",
+    "production runner/settings were added behind separate external execution authority"
+  ],
+  "design_receipt_sha256": "dbb0fd8a36a3eab697033111c7e8350ec235d966fa60bfe9ee0694552ad67594",
+  "inference_receipt_sha256": "fdee1f6ac375f0da3a41202d0cc7f1df9d0fb610e67ba7c36fe7e3ab6414f780",
+  "settings_basis_and_solver_unchanged": true,
+  "source_hashes": {
+    "check_preflight_continuity.py": "2de177420a509bc77ded73de92ba1948ade5e273e66884072d16be2057225bb4",
+    "audit_design.py": "f57bf957ac009296ab2e4db91fc06bd6740e6b9ad35d3c761bd4fbe69f438cef",
+    "inference_preflight.py": "048c6fc08ff86517202b17e1e2784aa4dc843a9cd9963ff59b7e08512815b845",
+    "predictor.py": "32c4c6cb4f756ebcb8822bd1c7afb496a30dddc33ca7e4e1a169cfb3be6a4492",
+    "backbone.py": "cffc7d73f070548f7efcc6cd5f0d01bab4b6dcedb0b4da094eb8da99bb981eef",
+    "scalar_map.py": "2f11fc4b09003e6da2953476038095b70b1b184ca25e872f0542509b67312e52",
+    "common.py": "95d8e8859a436f7e87375c9e4b09a052aad7f6c67bcef38fc6fd813ef222719b",
+    "settings.json": "69fd0730591b6d78d594bfd5f34e3f1aa3c88e1301cd37c98fbf6a09b767113f"
+  }
+}

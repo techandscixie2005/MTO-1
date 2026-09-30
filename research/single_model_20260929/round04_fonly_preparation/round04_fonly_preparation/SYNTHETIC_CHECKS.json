@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "synthetic_only": true,
+  "real_target_solve": false,
+  "array_or_checkpoint_reads": false,
+  "known_recovery_max_abs": 1.5135462327897642e-16,
+  "synthetic_design": {
+    "rows": 10,
+    "columns": 4,
+    "rank": 4,
+    "singular_values": [
+      43.23031119270471,
+      5.175165199732411,
+      1.965608505972661,
+      0.6033226764586564
+    ],
+    "condition_number": 71.6537151337575,
+    "rcond": 1e-12,
+    "maximum_condition_number": 100000000.0,
+    "passed": true
+  },
+  "affine_nesting_max_abs": [
+    2.220446049250313e-16,
+    3.469446951953614e-18
+  ],
+  "continuity_and_linear_tail": true,
+  "clamp_check": true,
+  "failure_checks": {
+    "nonfinite_prediction": true,
+    "nonfinite_target": true,
+    "rank_deficient": true,
+    "ill_conditioned_full_rank": true,
+    "too_few_rows": true,
+    "invalid_coefficient_count": true,
+    "non_synthetic_solve_request": true,
+    "real_dataset_sized_solve": true,
+    "absent_production_authority": true,
+    "execution_binding_phase": true,
+    "execution_binding_source_manifest_sha256": true,
+    "execution_binding_independent_review_sha256": true,
+    "execution_binding_publication_receipt_sha256": true,
+    "execution_binding_maximum_real_data_solves": true,
+    "execution_binding_test_access_authorized": true,
+    "publication_remote_verified": true,
+    "publication_download_before_stage_before_commit_push": true
+  },
+  "source_hashes": {
+    "synthetic_checks.py": "f7997b1e8a3b754ba7ffd2e1d8e21ef70890703980efcc9640dcc10b4499d55a",
+    "scalar_map.py": "2f11fc4b09003e6da2953476038095b70b1b184ca25e872f0542509b67312e52",
+    "execution_gate.py": "8e0be8974d29dc832646cf5cbe3476d8ac6321af8c4609a5194e6596118f4fdc",
+    "common.py": "95d8e8859a436f7e87375c9e4b09a052aad7f6c67bcef38fc6fd813ef222719b",
+    "settings.json": "69fd0730591b6d78d594bfd5f34e3f1aa3c88e1301cd37c98fbf6a09b767113f"
+  }
+}

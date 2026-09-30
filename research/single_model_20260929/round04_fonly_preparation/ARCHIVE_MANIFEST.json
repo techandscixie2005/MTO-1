@@ -1,0 +1,604 @@
+{
+  "round_id": "round04_fonly_preparation",
+  "packaged_at_utc": "2026-09-30T00:33:37.614577+00:00",
+  "source_root": "/home/inspur/MTO-1/research/single_model_20260929",
+  "policy": "Explicit text-only allowlist; no checkpoints, weights, optimizer states, raw data, caches, credentials.",
+  "files": [
+    {
+      "path": "ENVIRONMENT.json",
+      "bytes": 664,
+      "sha256": "e0f74f293f0201a5782f7d9f1b77f3ae2cb78f919aa7b34e2951e6a4d794fbf3"
+    },
+    {
+      "path": "current_state/COORDINATOR.md",
+      "bytes": 12265,
+      "sha256": "d133197fa29a549728c2eb7e19faa5509db3e7a426dc8d0f0d60740a72bbb70f"
+    },
+    {
+      "path": "current_state/ROUND04_PREPARATION_CLOSEOUT.md",
+      "bytes": 4951,
+      "sha256": "191d28eab7e5af3e6bd417b0f3ea354588a9d9f0a011e9dba8c24baf7d9c0a84"
+    },
+    {
+      "path": "current_state/ROUND04_PREPARATION_DECISION.md",
+      "bytes": 5138,
+      "sha256": "1d3abc4f7cbbe5e313828a177f11a6d9435307ca607a3cb43fefc74c46d5b8ab"
+    },
+    {
+      "path": "current_state/monitor.md",
+      "bytes": 10887,
+      "sha256": "bc5a291780acbe7b594e7b30382286bdc7eb42062d2077cf7a7a269354f8cab7"
+    },
+    {
+      "path": "current_state/science_implementation.md",
+      "bytes": 2987,
+      "sha256": "7fd12cf24fe60ac9d813ff69f2ae38a339237455b1aa13c79d4a9420cceb08f4"
+    },
+    {
+      "path": "monitoring/CHECK_20260929T234954Z.json",
+      "bytes": 246507,
+      "sha256": "a0993421aee0a2ba48bade22457dc8491fbcd47b449dc4dc98215feffa008f9c"
+    },
+    {
+      "path": "monitoring/CLOSED_CAMPAIGN_20260929T234953.json",
+      "bytes": 9042,
+      "sha256": "4b3b5a93ec7e8db6699a19e72cea0c450533e1a9b6ed548cc9deca8a5d8d4164"
+    },
+    {
+      "path": "monitoring/ROUND03_PUBLICATION_WORDING_CORRECTION_20260929T2350.json",
+      "bytes": 1721,
+      "sha256": "438441e8962b3b70138fe96959fed52b56dcc203811b3ad288d5ca5f4afd21d4"
+    },
+    {
+      "path": "ops/FAILED_ROUND_ARCHIVE_POLICY.md",
+      "bytes": 2034,
+      "sha256": "20088f451d404c83f2d73d378839540d83242cb3e48807ab2a79ab8dc3555a0a"
+    },
+    {
+      "path": "ops/HEARTBEAT_CLOSED_CHECK_20260929T2350.json",
+      "bytes": 410,
+      "sha256": "7423dabd389b0a38363fd7be1336d967fcdcc9ff7770cc9fdf28f277c3a83e41"
+    },
+    {
+      "path": "ops/PUBLISH_COMMAND.ps1",
+      "bytes": 1020,
+      "sha256": "3ba097e13c6ac57f0623ebbbf8cf63f7f9a892943d3323517b82ddbe2347fbee"
+    },
+    {
+      "path": "ops/ROUND03_COMPLETION_PUBLICATION_RECEIPT.json",
+      "bytes": 1524,
+      "sha256": "ffac1aa2c625ecd2b3e933494eb84f0e8b99efc063f94fdf31b9343144b85c1c"
+    },
+    {
+      "path": "ops/download_records.py",
+      "bytes": 2709,
+      "sha256": "c646bd67ac401bd0a27c491d8c40bd1012684f73364d7a953a29cf543346899d"
+    },
+    {
+      "path": "ops/package_records.py",
+      "bytes": 4088,
+      "sha256": "f27de83406c7f0a3379b1a2fdaf63ceeea50fe6084a1c3bf3aeccd2d3e7132fd"
+    },
+    {
+      "path": "ops/publish_records.py",
+      "bytes": 7633,
+      "sha256": "aef600496ec0c3d35582b4c7ce96c17022bdda3caa0db7cd85ca7d26729059dc"
+    },
+    {
+      "path": "ops/record_completed_campaign_check.py",
+      "bytes": 6335,
+      "sha256": "aa7324d5cc983c91ee40dc007fdee8c552700e3c4e0d810026588538a2997baa"
+    },
+    {
+      "path": "ops/ssh_proxy.py",
+      "bytes": 1328,
+      "sha256": "df0f75d49904b1170be0af14764ce995bfcc8daf308c34678ae37d7e33082461"
+    },
+    {
+      "path": "ops/verify_staged_records.py",
+      "bytes": 2540,
+      "sha256": "17310e107e50fc3eed34400d6f003a8e497ccc80cb8e49144b8668b366185a30"
+    },
+    {
+      "path": "reports/velocity_audit/audit_velocity_labels.py",
+      "bytes": 9908,
+      "sha256": "f156319e6941bef1a945e3b69e2b754865f0bb662747c8f695d037cf98a119b7"
+    },
+    {
+      "path": "round03_transfer/FROZEN_MANIFEST.json",
+      "bytes": 13040,
+      "sha256": "93674b785f0f93fb2671fca83941e9af2961ab665c3814a027791fbb3109ed37"
+    },
+    {
+      "path": "round03_transfer/split_manifest.json",
+      "bytes": 2268,
+      "sha256": "f1a3136de17435832498f662834ca4b1c7e5c4c1729b45792be1e1316391cfdd"
+    },
+    {
+      "path": "round04_fonly_preparation/DESIGN_AUDIT.json",
+      "bytes": 3483,
+      "sha256": "dbb0fd8a36a3eab697033111c7e8350ec235d966fa60bfe9ee0694552ad67594"
+    },
+    {
+      "path": "round04_fonly_preparation/DESIGN_AUDIT_01.log",
+      "bytes": 3483,
+      "sha256": "dbb0fd8a36a3eab697033111c7e8350ec235d966fa60bfe9ee0694552ad67594"
+    },
+    {
+      "path": "round04_fonly_preparation/FREEZE_PREPARATION_01.log",
+      "bytes": 101,
+      "sha256": "647091d07c1eed1acf225d70aff74e5e9812209bd57c9b6f56b7c086003e13f6"
+    },
+    {
+      "path": "round04_fonly_preparation/FROZEN_MANIFEST.json",
+      "bytes": 12694,
+      "sha256": "79e5e6b6aa87f04808ddbf5e0f1b766a52226d71ef8edcb7b5bf1a0fc0e7467f"
+    },
+    {
+      "path": "round04_fonly_preparation/INDEPENDENT_GATE_CHECKS.json",
+      "bytes": 4628,
+      "sha256": "bc684fba8f84af1935a15d258f5d5082158a6131104f6b42929a94246ca96e94"
+    },
+    {
+      "path": "round04_fonly_preparation/INDEPENDENT_GATE_CHECKS_01.log",
+      "bytes": 5709,
+      "sha256": "38db5dc7ce34e9cb2dd4f9471d5d022df46f891b69e79d6a2e79060fa17ee13d"
+    },
+    {
+      "path": "round04_fonly_preparation/INDEPENDENT_PREPARATION_INTEGRITY.json",
+      "bytes": 10362,
+      "sha256": "80cb582d65929c69b4c0a65df54be0b875553e7e4db4f38c6ef565381ba000a9"
+    },
+    {
+      "path": "round04_fonly_preparation/INDEPENDENT_PREPARATION_INTEGRITY_01.log",
+      "bytes": 10363,
+      "sha256": "2ed86022402649b17b42a0e2a49ba1dff4bec75e42732511c3d9ae7206de3755"
+    },
+    {
+      "path": "round04_fonly_preparation/INDEPENDENT_PREPARATION_REVIEW.json",
+      "bytes": 11186,
+      "sha256": "b7953db3597dc98eebe820a3c44341b933cc16128e02c22672a114cdd60e5d49"
+    },
+    {
+      "path": "round04_fonly_preparation/INDEPENDENT_PREPARATION_REVIEW.md",
+      "bytes": 7555,
+      "sha256": "0c5763e9700a1b2dc4770a14df7a4a45a04a178884cca9e1e753b61b197f90ae"
+    },
+    {
+      "path": "round04_fonly_preparation/INDEPENDENT_PROTOCOL_REVIEW.json",
+      "bytes": 783,
+      "sha256": "e04e7f8b6a5f7a7bd0932fb195e34671f0a8d2cc3ff6d9651bbc091d3f8b5fd6"
+    },
+    {
+      "path": "round04_fonly_preparation/INDEPENDENT_PROTOCOL_REVIEW.md",
+      "bytes": 7129,
+      "sha256": "88cf0ed28e76be8070fb4253bdf7df17d5ab2d8b256e827e7efed005a732a691"
+    },
+    {
+      "path": "round04_fonly_preparation/INDEPENDENT_REVIEW_MANIFEST.json",
+      "bytes": 2287,
+      "sha256": "018fbb2b54eca2b2d2eaaf8815c39171af9190b55c587fb66a81d02e8ffaa13b"
+    },
+    {
+      "path": "round04_fonly_preparation/INFERENCE_PREFLIGHT.json",
+      "bytes": 2247,
+      "sha256": "fdee1f6ac375f0da3a41202d0cc7f1df9d0fb610e67ba7c36fe7e3ab6414f780"
+    },
+    {
+      "path": "round04_fonly_preparation/INFERENCE_PREFLIGHT_01.log",
+      "bytes": 54928,
+      "sha256": "2765169610130c8d79bf96ec52b3700bce7b22579ef54dd3f667b5a85917c063"
+    },
+    {
+      "path": "round04_fonly_preparation/PREFLIGHT_CONTINUITY.json",
+      "bytes": 1891,
+      "sha256": "ca863c5b5062321d87c56ab99b2dd70600d71243291b8a2459147cd7903e04e2"
+    },
+    {
+      "path": "round04_fonly_preparation/PREFLIGHT_CONTINUITY_01.log",
+      "bytes": 1891,
+      "sha256": "ca863c5b5062321d87c56ab99b2dd70600d71243291b8a2459147cd7903e04e2"
+    },
+    {
+      "path": "round04_fonly_preparation/PREPARATION_AUTHORIZATION.md",
+      "bytes": 5138,
+      "sha256": "1d3abc4f7cbbe5e313828a177f11a6d9435307ca607a3cb43fefc74c46d5b8ab"
+    },
+    {
+      "path": "round04_fonly_preparation/PREPARATION_PHASE.md",
+      "bytes": 4160,
+      "sha256": "6cba24b07d8dfe326b87daad46ed43120bddb6201fea4bd22906ba1277c842fb"
+    },
+    {
+      "path": "round04_fonly_preparation/PREPARATION_RESULTS.md",
+      "bytes": 4969,
+      "sha256": "5c43ce7dd1c92c9ab434aa1754d02dea05f64f038e2af15db3480f184931d7fa"
+    },
+    {
+      "path": "round04_fonly_preparation/PRODUCTION_GUARD_CHECKS.json",
+      "bytes": 1489,
+      "sha256": "45d1f4db2b55fd73013e47d7ac0648cad75edd3b3fbefc91f2dc5aa6ca8261bb"
+    },
+    {
+      "path": "round04_fonly_preparation/PRODUCTION_GUARD_CHECKS_01.log",
+      "bytes": 2570,
+      "sha256": "283af09e10c115c0ba3ec88462631abade9499851c40f8469c98ed6eb06cbb34"
+    },
+    {
+      "path": "round04_fonly_preparation/PROPOSAL_MANIFEST.json",
+      "bytes": 1968,
+      "sha256": "780a92a55824d173904c838cb2fe72c5c69013a1c186554a25358fbcc7d111a5"
+    },
+    {
+      "path": "round04_fonly_preparation/PROPOSED_PROTOCOL.md",
+      "bytes": 15093,
+      "sha256": "6f10115e03b5861aeafa9b0ae0928da14d59863645549c7af1ffbd65dca1d48f"
+    },
+    {
+      "path": "round04_fonly_preparation/RATIONALE.md",
+      "bytes": 6309,
+      "sha256": "8448f14d58d9b0693b36599c6d7c296bed113b80906a6d84c72950627a755155"
+    },
+    {
+      "path": "round04_fonly_preparation/RUNNER_HANDOFF.md",
+      "bytes": 7980,
+      "sha256": "0890a1a60485e1492f678831f609bc89f71dbb76d19c14743c73d502b4848e75"
+    },
+    {
+      "path": "round04_fonly_preparation/SYNTHETIC_CHECKS.json",
+      "bytes": 1893,
+      "sha256": "de1377925235c38f603c164eccb4217a38d985627f759ed53d700a0998da9720"
+    },
+    {
+      "path": "round04_fonly_preparation/SYNTHETIC_CHECKS_01.log",
+      "bytes": 1893,
+      "sha256": "aefa02ac05569486fcb5b3437300803d9a57764f175be69e256b3089abe507f2"
+    },
+    {
+      "path": "round04_fonly_preparation/SYNTHETIC_CHECKS_02.log",
+      "bytes": 1893,
+      "sha256": "375400e0421abb1d9210affd20eba84de0d1732c46c3ec736f657be55838ba92"
+    },
+    {
+      "path": "round04_fonly_preparation/SYNTHETIC_CHECKS_03.log",
+      "bytes": 1893,
+      "sha256": "de1377925235c38f603c164eccb4217a38d985627f759ed53d700a0998da9720"
+    },
+    {
+      "path": "round04_fonly_preparation/audit_design.py",
+      "bytes": 4972,
+      "sha256": "f57bf957ac009296ab2e4db91fc06bd6740e6b9ad35d3c761bd4fbe69f438cef"
+    },
+    {
+      "path": "round04_fonly_preparation/backbone.py",
+      "bytes": 593,
+      "sha256": "cffc7d73f070548f7efcc6cd5f0d01bab4b6dcedb0b4da094eb8da99bb981eef"
+    },
+    {
+      "path": "round04_fonly_preparation/check_preflight_continuity.py",
+      "bytes": 2559,
+      "sha256": "2de177420a509bc77ded73de92ba1948ade5e273e66884072d16be2057225bb4"
+    },
+    {
+      "path": "round04_fonly_preparation/common.py",
+      "bytes": 2141,
+      "sha256": "95d8e8859a436f7e87375c9e4b09a052aad7f6c67bcef38fc6fd813ef222719b"
+    },
+    {
+      "path": "round04_fonly_preparation/dependency_sources/experiments/qm9s_eta_Ef_20260926/configs/mto_eta0.json",
+      "bytes": 685,
+      "sha256": "e1b823aa48f491b7e0eaa8cc106fa712e6ba3e3256d36e23f091af6d9c07bdf9"
+    },
+    {
+      "path": "round04_fonly_preparation/dependency_sources/experiments/qm9s_eta_Ef_20260926/data_metadata/normalization.json",
+      "bytes": 462,
+      "sha256": "812a7b80d6259eb6106a5a534a8358a626713ec7ee53ad992fff6fcbabe59452"
+    },
+    {
+      "path": "round04_fonly_preparation/dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/data_ea.py",
+      "bytes": 1324,
+      "sha256": "8027dc8695b2ade12aac64c3e894a075b4d98ca667a24053129a951001b6e943"
+    },
+    {
+      "path": "round04_fonly_preparation/dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/models_ea.py",
+      "bytes": 3687,
+      "sha256": "b47d50b8b32313d1c3e1f19f3e64e6f02ce42e91736e6da00f896f68965250b0"
+    },
+    {
+      "path": "round04_fonly_preparation/dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/train_ea.py",
+      "bytes": 7637,
+      "sha256": "7c7b4d49db539566abd8c76da6fe3b7eabf96eaac3ac495997c5f074a49085dd"
+    },
+    {
+      "path": "round04_fonly_preparation/dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/models.py",
+      "bytes": 10195,
+      "sha256": "a8d7bf8a8d89839f687a773f59f02b2a5d75abd6f47a59406e9eb3d1a40f4771"
+    },
+    {
+      "path": "round04_fonly_preparation/dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/__init__.py",
+      "bytes": 235,
+      "sha256": "8fe70f55031182c1d0012945907181ecc85278f7849599e15e3a16939fae67f1"
+    },
+    {
+      "path": "round04_fonly_preparation/dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/constant.py",
+      "bytes": 3241,
+      "sha256": "1c3a8f9058ba6890c2f6730241136b35a552235b41f812288ce9cbdcc42ec856"
+    },
+    {
+      "path": "round04_fonly_preparation/dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/detanet.py",
+      "bytes": 20754,
+      "sha256": "4083382f2d615d1573b9dbc2d2c456d00f9895d4dae144b6c62b26feff6eebcd"
+    },
+    {
+      "path": "round04_fonly_preparation/dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/metrics.py",
+      "bytes": 1386,
+      "sha256": "677630dd1b97c7474c2f8a4cdda81d7e0f2a56a12dfd4b02bbb869329af4fec2"
+    },
+    {
+      "path": "round04_fonly_preparation/dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/model_loader.py",
+      "bytes": 12371,
+      "sha256": "85507209b15efea567e686f4d99cf3be53dbf3779607d4b33e295d52c44505b3"
+    },
+    {
+      "path": "round04_fonly_preparation/dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/__init__.py",
+      "bytes": 306,
+      "sha256": "032b99150e38283d3695b394175d792c370be7dbbe38b58b94971143de9446de"
+    },
+    {
+      "path": "round04_fonly_preparation/dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/acts.py",
+      "bytes": 1889,
+      "sha256": "6bcd255ac95b33e6ef6a982d87c8dd6b39c2f1a41996f2425c5ada1f0fe8256c"
+    },
+    {
+      "path": "round04_fonly_preparation/dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/block.py",
+      "bytes": 1008,
+      "sha256": "38eb81b385fded74ac4ff3950ee2cbe6e7c7e7cc0873ec57ede64ef758460e35"
+    },
+    {
+      "path": "round04_fonly_preparation/dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/edge_attention.py",
+      "bytes": 2754,
+      "sha256": "48a69aa9a83cfe225f8e55eeea4bab65120955aee2dc7ad02d414aef7b4e2fea"
+    },
+    {
+      "path": "round04_fonly_preparation/dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/embedding.py",
+      "bytes": 4311,
+      "sha256": "07eff3330b5709fec463563d4ef53f857525ae85f55b8a3ab1e7c9ffb3c70ee8"
+    },
+    {
+      "path": "round04_fonly_preparation/dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/message.py",
+      "bytes": 2020,
+      "sha256": "a76bae58dbb92447d6fb05230d7db826dc9defc929706e6f2c88c067ee5918cf"
+    },
+    {
+      "path": "round04_fonly_preparation/dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/multilayer_perceptron.py",
+      "bytes": 2237,
+      "sha256": "5628a4cebadbbc493058edae808a64370ee2834fa4ccacc041f820bf9afb4d42"
+    },
+    {
+      "path": "round04_fonly_preparation/dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/radial_basis.py",
+      "bytes": 4178,
+      "sha256": "cbbbf125bdb4b64e21a4d58ddb175bde489bb7a640375847f416f137881307ca"
+    },
+    {
+      "path": "round04_fonly_preparation/dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/update.py",
+      "bytes": 3719,
+      "sha256": "65cda1be8fd5daa491779211ba37ec9c23b73e4a2da81444d21534584c0028a6"
+    },
+    {
+      "path": "round04_fonly_preparation/dependency_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/spectra_simulator.py",
+      "bytes": 9886,
+      "sha256": "cb36131b7dc855cd2c528d532f4d7742fc2da757d078e8732142dbeab4f0b67e"
+    },
+    {
+      "path": "round04_fonly_preparation/documents_only_snapshot/INDEPENDENT_PROTOCOL_REVIEW.json",
+      "bytes": 783,
+      "sha256": "e04e7f8b6a5f7a7bd0932fb195e34671f0a8d2cc3ff6d9651bbc091d3f8b5fd6"
+    },
+    {
+      "path": "round04_fonly_preparation/documents_only_snapshot/INDEPENDENT_PROTOCOL_REVIEW.md",
+      "bytes": 7129,
+      "sha256": "88cf0ed28e76be8070fb4253bdf7df17d5ab2d8b256e827e7efed005a732a691"
+    },
+    {
+      "path": "round04_fonly_preparation/documents_only_snapshot/PROPOSAL_MANIFEST.json",
+      "bytes": 1968,
+      "sha256": "780a92a55824d173904c838cb2fe72c5c69013a1c186554a25358fbcc7d111a5"
+    },
+    {
+      "path": "round04_fonly_preparation/documents_only_snapshot/PROPOSED_PROTOCOL.md",
+      "bytes": 15093,
+      "sha256": "6f10115e03b5861aeafa9b0ae0928da14d59863645549c7af1ffbd65dca1d48f"
+    },
+    {
+      "path": "round04_fonly_preparation/documents_only_snapshot/RATIONALE.md",
+      "bytes": 6309,
+      "sha256": "8448f14d58d9b0693b36599c6d7c296bed113b80906a6d84c72950627a755155"
+    },
+    {
+      "path": "round04_fonly_preparation/execution_gate.py",
+      "bytes": 3455,
+      "sha256": "70078ab5506d7a1930687093a31d8ac1eb80dc16bd2d521b454a117a2a5e04bd"
+    },
+    {
+      "path": "round04_fonly_preparation/freeze_preparation.py",
+      "bytes": 3392,
+      "sha256": "fa29706aa80c813ec272f26ec34389f12b05c8c7f254c90d152f9658341b579a"
+    },
+    {
+      "path": "round04_fonly_preparation/independent_gate_checks.py",
+      "bytes": 11896,
+      "sha256": "da72b888316f674282df42e33e174de81c664731a10e234a1209542976f946b2"
+    },
+    {
+      "path": "round04_fonly_preparation/independent_preparation_integrity.py",
+      "bytes": 3070,
+      "sha256": "bfe3bf4f6442f819aa70cb3fdda67e08851dd5990d607371f7ab723b5f3aae22"
+    },
+    {
+      "path": "round04_fonly_preparation/inference_preflight.py",
+      "bytes": 5516,
+      "sha256": "048c6fc08ff86517202b17e1e2784aa4dc843a9cd9963ff59b7e08512815b845"
+    },
+    {
+      "path": "round04_fonly_preparation/ops/ARCHIVE_ALLOWLIST.txt",
+      "bytes": 7907,
+      "sha256": "229d2a00e562b3d75ecb5548960659b0e7c86b77616eca7eef1b45bf4d276101"
+    },
+    {
+      "path": "round04_fonly_preparation/ops/ARCHIVE_CHECKLIST.md",
+      "bytes": 6083,
+      "sha256": "dab69c37d247ffeafd7363c473ff13bf17420497824481f98aad175adaaa8173"
+    },
+    {
+      "path": "round04_fonly_preparation/ops/ARCHIVE_INVENTORY.json",
+      "bytes": 44340,
+      "sha256": "4c0f7c7df58b42f5cf21e92edc21b73a518a37647932e663ef357c50bd6a9ea2"
+    },
+    {
+      "path": "round04_fonly_preparation/ops/DEPENDENCY_RESTORE.md",
+      "bytes": 1422,
+      "sha256": "539aebb850ca565ff466d7eec7340080a6475f806e6d890e090811ec44220021"
+    },
+    {
+      "path": "round04_fonly_preparation/ops/HEARTBEAT_BEFORE_PUBLICATION.toml",
+      "bytes": 3634,
+      "sha256": "28c5946f5661b84d6528afcaaf9539b16a62820dbe4d26385872967fe779e236"
+    },
+    {
+      "path": "round04_fonly_preparation/ops/INHERITED_DEPENDENCY_VERIFICATION.json",
+      "bytes": 898,
+      "sha256": "2409c32d79d6e113e4b91317905be3c56fa4de6c8bbcca40718f9e8979ce80e4"
+    },
+    {
+      "path": "round04_fonly_preparation/ops/PROSPECTIVE_RECORDS.json",
+      "bytes": 2532,
+      "sha256": "193bc06783f0a46eeef7ac8b6e20a25841a8f238b1803b35893e019a50dbad65"
+    },
+    {
+      "path": "round04_fonly_preparation/ops/finalize_preparation_archive.py",
+      "bytes": 11012,
+      "sha256": "da741c639371bebe97f8f201a85ddc470e1c2b8a308db782208a240c719ce73f"
+    },
+    {
+      "path": "round04_fonly_preparation/predictor.py",
+      "bytes": 3176,
+      "sha256": "32c4c6cb4f756ebcb8822bd1c7afb496a30dddc33ca7e4e1a169cfb3be6a4492"
+    },
+    {
+      "path": "round04_fonly_preparation/production_entry.py",
+      "bytes": 779,
+      "sha256": "473ff787cfa085340c1ae22820846454c7f182054a3f8dbe5338b3e6106e2fd5"
+    },
+    {
+      "path": "round04_fonly_preparation/production_guard_checks.py",
+      "bytes": 4977,
+      "sha256": "be16402010674673bd65d81f63a530291bef719385e91ab6efeae26a1fe7c8d5"
+    },
+    {
+      "path": "round04_fonly_preparation/production_stages.py",
+      "bytes": 17692,
+      "sha256": "04496de870fc1d5619b6168bdfffe8af28f369bd5b7dfbd9d5624bcd4669d2aa"
+    },
+    {
+      "path": "round04_fonly_preparation/scalar_map.py",
+      "bytes": 3377,
+      "sha256": "2f11fc4b09003e6da2953476038095b70b1b184ca25e872f0542509b67312e52"
+    },
+    {
+      "path": "round04_fonly_preparation/settings.json",
+      "bytes": 1460,
+      "sha256": "69fd0730591b6d78d594bfd5f34e3f1aa3c88e1301cd37c98fbf6a09b767113f"
+    },
+    {
+      "path": "round04_fonly_preparation/stage_state.py",
+      "bytes": 744,
+      "sha256": "33e9bb76ec6f0524ebdb954dfbfa281998daa35165527393f7037fefd9970eb5"
+    },
+    {
+      "path": "round04_fonly_preparation/stub_preparation_snapshot/DESIGN_AUDIT.json",
+      "bytes": 3483,
+      "sha256": "dbb0fd8a36a3eab697033111c7e8350ec235d966fa60bfe9ee0694552ad67594"
+    },
+    {
+      "path": "round04_fonly_preparation/stub_preparation_snapshot/DESIGN_AUDIT_01.log",
+      "bytes": 3483,
+      "sha256": "dbb0fd8a36a3eab697033111c7e8350ec235d966fa60bfe9ee0694552ad67594"
+    },
+    {
+      "path": "round04_fonly_preparation/stub_preparation_snapshot/INFERENCE_PREFLIGHT.json",
+      "bytes": 2247,
+      "sha256": "fdee1f6ac375f0da3a41202d0cc7f1df9d0fb610e67ba7c36fe7e3ab6414f780"
+    },
+    {
+      "path": "round04_fonly_preparation/stub_preparation_snapshot/INFERENCE_PREFLIGHT_01.log",
+      "bytes": 54928,
+      "sha256": "2765169610130c8d79bf96ec52b3700bce7b22579ef54dd3f667b5a85917c063"
+    },
+    {
+      "path": "round04_fonly_preparation/stub_preparation_snapshot/PREPARATION_PHASE.md",
+      "bytes": 3062,
+      "sha256": "0d025cff88e8112c932ba1eb253bc3f240061d518c9aeef6892a51a20f61ad69"
+    },
+    {
+      "path": "round04_fonly_preparation/stub_preparation_snapshot/SYNTHETIC_CHECKS.json",
+      "bytes": 1893,
+      "sha256": "aefa02ac05569486fcb5b3437300803d9a57764f175be69e256b3089abe507f2"
+    },
+    {
+      "path": "round04_fonly_preparation/stub_preparation_snapshot/SYNTHETIC_CHECKS_01.log",
+      "bytes": 1893,
+      "sha256": "aefa02ac05569486fcb5b3437300803d9a57764f175be69e256b3089abe507f2"
+    },
+    {
+      "path": "round04_fonly_preparation/stub_preparation_snapshot/audit_design.py",
+      "bytes": 4972,
+      "sha256": "f57bf957ac009296ab2e4db91fc06bd6740e6b9ad35d3c761bd4fbe69f438cef"
+    },
+    {
+      "path": "round04_fonly_preparation/stub_preparation_snapshot/backbone.py",
+      "bytes": 593,
+      "sha256": "cffc7d73f070548f7efcc6cd5f0d01bab4b6dcedb0b4da094eb8da99bb981eef"
+    },
+    {
+      "path": "round04_fonly_preparation/stub_preparation_snapshot/common.py",
+      "bytes": 1939,
+      "sha256": "4444fb94dd5dc37b82c818bc53df347f078e39dcff35d374acbda4b23736df27"
+    },
+    {
+      "path": "round04_fonly_preparation/stub_preparation_snapshot/execution_gate.py",
+      "bytes": 2978,
+      "sha256": "0da942f7046d03a124db3fb6ab4c8f162254c08717a58d1a6f8c9d3ef70a4d99"
+    },
+    {
+      "path": "round04_fonly_preparation/stub_preparation_snapshot/inference_preflight.py",
+      "bytes": 5516,
+      "sha256": "048c6fc08ff86517202b17e1e2784aa4dc843a9cd9963ff59b7e08512815b845"
+    },
+    {
+      "path": "round04_fonly_preparation/stub_preparation_snapshot/predictor.py",
+      "bytes": 3176,
+      "sha256": "32c4c6cb4f756ebcb8822bd1c7afb496a30dddc33ca7e4e1a169cfb3be6a4492"
+    },
+    {
+      "path": "round04_fonly_preparation/stub_preparation_snapshot/scalar_map.py",
+      "bytes": 3032,
+      "sha256": "90178306cbbb1a0d903876ddfd7af445b706c593b4aefb9a1c9c611a5d78b3b1"
+    },
+    {
+      "path": "round04_fonly_preparation/stub_preparation_snapshot/settings.json",
+      "bytes": 1160,
+      "sha256": "705bb56ed3ec41708745aaad39efea4267d0de14f1320e74a401ba588b0377ce"
+    },
+    {
+      "path": "round04_fonly_preparation/stub_preparation_snapshot/synthetic_checks.py",
+      "bytes": 5045,
+      "sha256": "f7997b1e8a3b754ba7ffd2e1d8e21ef70890703980efcc9640dcc10b4499d55a"
+    },
+    {
+      "path": "round04_fonly_preparation/synthetic_checks.py",
+      "bytes": 5045,
+      "sha256": "f7997b1e8a3b754ba7ffd2e1d8e21ef70890703980efcc9640dcc10b4499d55a"
+    }
+  ],
+  "total_bytes": 924606
+}

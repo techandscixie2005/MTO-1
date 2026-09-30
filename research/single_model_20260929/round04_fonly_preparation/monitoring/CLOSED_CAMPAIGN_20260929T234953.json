@@ -1,0 +1,223 @@
+{
+  "checked_at_utc": "2026-09-29T23:52:17.117631+00:00",
+  "kind": "scheduled four-hour completed-campaign check",
+  "monitor_record": "monitoring/CHECK_20260929T234954Z.json",
+  "monitor_record_sha256": "a0993421aee0a2ba48bade22457dc8491fbcd47b449dc4dc98215feffa008f9c",
+  "registered_runs": [
+    {
+      "id": "control_1790699021761399963",
+      "run_dir": "runs/control",
+      "state": "COMPLETE_MARKER_PRESENT",
+      "original_pid_observed": false,
+      "completed_epoch": 20,
+      "registered_gpu_uuid": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+      "owned_gpu_process_observed": false,
+      "checkpoint_stat_metadata": {
+        "runs/control/last.pt": {
+          "exists": true,
+          "bytes": 25284800,
+          "mtime_utc": "2026-09-29T17:14:43.314716+00:00",
+          "age_seconds": 23711.3
+        },
+        "runs/control/best.pt": {
+          "exists": true,
+          "bytes": 6437116,
+          "mtime_utc": "2026-09-29T16:23:53.736595+00:00",
+          "age_seconds": 26760.9
+        }
+      }
+    },
+    {
+      "id": "adapter_1790699021984516935",
+      "run_dir": "runs/adapter",
+      "state": "COMPLETE_MARKER_PRESENT",
+      "original_pid_observed": false,
+      "completed_epoch": 20,
+      "registered_gpu_uuid": "GPU-cb4dc1ea-9ea3-e426-bdeb-df0bef8a23fa",
+      "owned_gpu_process_observed": false,
+      "checkpoint_stat_metadata": {
+        "runs/adapter/last.pt": {
+          "exists": true,
+          "bytes": 25343096,
+          "mtime_utc": "2026-09-29T17:12:56.165711+00:00",
+          "age_seconds": 23818.5
+        },
+        "runs/adapter/best.pt": {
+          "exists": true,
+          "bytes": 6437116,
+          "mtime_utc": "2026-09-29T16:23:55.172596+00:00",
+          "age_seconds": 26759.4
+        }
+      }
+    },
+    {
+      "id": "decorrelation_1790699022218490143",
+      "run_dir": "runs/decorrelation",
+      "state": "COMPLETE_MARKER_PRESENT",
+      "original_pid_observed": false,
+      "completed_epoch": 20,
+      "registered_gpu_uuid": "GPU-e212aefc-f1d6-cc7a-5594-e87abeaf1184",
+      "owned_gpu_process_observed": false,
+      "checkpoint_stat_metadata": {
+        "runs/decorrelation/last.pt": {
+          "exists": true,
+          "bytes": 25284800,
+          "mtime_utc": "2026-09-29T17:16:13.697719+00:00",
+          "age_seconds": 23620.9
+        },
+        "runs/decorrelation/best.pt": {
+          "exists": true,
+          "bytes": 6437116,
+          "mtime_utc": "2026-09-29T16:23:55.350595+00:00",
+          "age_seconds": 26759.3
+        }
+      }
+    },
+    {
+      "id": "both_1790699022426165198",
+      "run_dir": "runs/both",
+      "state": "COMPLETE_MARKER_PRESENT",
+      "original_pid_observed": false,
+      "completed_epoch": 20,
+      "registered_gpu_uuid": "GPU-2431a641-8045-a10b-4aa0-2769010e0708",
+      "owned_gpu_process_observed": false,
+      "checkpoint_stat_metadata": {
+        "runs/both/last.pt": {
+          "exists": true,
+          "bytes": 25343096,
+          "mtime_utc": "2026-09-29T17:15:28.517718+00:00",
+          "age_seconds": 23666.1
+        },
+        "runs/both/best.pt": {
+          "exists": true,
+          "bytes": 6437116,
+          "mtime_utc": "2026-09-29T16:23:55.354595+00:00",
+          "age_seconds": 26759.3
+        }
+      }
+    },
+    {
+      "id": "round02_trace_1790705186282980177",
+      "run_dir": "round02_frozen/runs/trace",
+      "state": "COMPLETE_MARKER_PRESENT",
+      "original_pid_observed": false,
+      "completed_epoch": 20,
+      "registered_gpu_uuid": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+      "owned_gpu_process_observed": false,
+      "checkpoint_stat_metadata": {
+        "round02_frozen/runs/trace/last.pt": {
+          "exists": true,
+          "bytes": 6592944,
+          "mtime_utc": "2026-09-29T18:14:14.599857+00:00",
+          "age_seconds": 20140.0
+        },
+        "round02_frozen/runs/trace/best.pt": {
+          "exists": true,
+          "bytes": 6462012,
+          "mtime_utc": "2026-09-29T18:07:39.438841+00:00",
+          "age_seconds": 20535.2
+        }
+      }
+    },
+    {
+      "id": "round02_raw_f_1790705186486661348",
+      "run_dir": "round02_frozen/runs/raw_f",
+      "state": "COMPLETE_MARKER_PRESENT",
+      "original_pid_observed": false,
+      "completed_epoch": 20,
+      "registered_gpu_uuid": "GPU-cb4dc1ea-9ea3-e426-bdeb-df0bef8a23fa",
+      "owned_gpu_process_observed": false,
+      "checkpoint_stat_metadata": {
+        "round02_frozen/runs/raw_f/last.pt": {
+          "exists": true,
+          "bytes": 6592944,
+          "mtime_utc": "2026-09-29T18:14:20.224857+00:00",
+          "age_seconds": 20134.4
+        },
+        "round02_frozen/runs/raw_f/best.pt": {
+          "exists": true,
+          "bytes": 6462012,
+          "mtime_utc": "2026-09-29T18:07:21.206840+00:00",
+          "age_seconds": 20553.4
+        }
+      }
+    },
+    {
+      "id": "round03_source33_1790707949921845597",
+      "run_dir": "round03_transfer/runs/source33",
+      "state": "COMPLETE_MARKER_PRESENT",
+      "original_pid_observed": false,
+      "completed_epoch": 33,
+      "registered_gpu_uuid": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+      "owned_gpu_process_observed": false,
+      "checkpoint_stat_metadata": {
+        "round03_transfer/runs/source33/last.pt": {
+          "exists": true,
+          "bytes": 25214098,
+          "mtime_utc": "2026-09-29T19:58:05.706102+00:00",
+          "age_seconds": 13908.9
+        },
+        "round03_transfer/runs/source33/source_final.pt": {
+          "exists": true,
+          "bytes": 6415566,
+          "mtime_utc": "2026-09-29T19:58:05.757102+00:00",
+          "age_seconds": 13908.9
+        }
+      }
+    }
+  ],
+  "registered_run_count": 7,
+  "active_owned_jobs": 0,
+  "owned_failure_incidents": 0,
+  "round03_protocol_review_decision_publication_bindings_verified": true,
+  "source_epoch33_complete": true,
+  "coefficient_export_validation_complete": true,
+  "pending_authorized_continuation": false,
+  "pending_round03_archive": false,
+  "publication_commit": "4f9ae50647f957ac7d68ab1a20200a79fa527cf9",
+  "completion_receipt_sha256": "ffac1aa2c625ecd2b3e933494eb84f0e8b99efc063f94fdf31b9343144b85c1c",
+  "validation_reopened": false,
+  "fits_launched_or_restarted": false,
+  "checkpoint_tensors_or_raw_arrays_loaded": false,
+  "interventions": [],
+  "schedules_unchanged": true,
+  "cron_command": "0 */4 * * * /usr/bin/python3 /home/inspur/MTO-1/research/single_model_20260929/ops/monitor.py --root /home/inspur/MTO-1/research/single_model_20260929 >> /home/inspur/MTO-1/research/single_model_20260929/monitoring/cron.log 2>&1",
+  "cron_sha256": "13caacb74408db396e9eae0d0929aec97d102c41c00c2f5b138da9d0417b330e",
+  "matching_cron_count": 1,
+  "automation_verification": {
+    "checked_at_utc": "2026-09-29T23:54:33.076812+00:00",
+    "id": "qm9s-e-a",
+    "status": "ACTIVE",
+    "rrule": "FREQ=HOURLY;INTERVAL=4",
+    "four_hour_schedule": true,
+    "target_thread_matches": true,
+    "matching_automation_count": 1,
+    "matching_ids": [
+      "qm9s-e-a"
+    ],
+    "source_sha256": "28c5946f5661b84d6528afcaaf9539b16a62820dbe4d26385872967fe779e236",
+    "configuration_changed": false
+  },
+  "handoff_sha256": {
+    "current_state/COORDINATOR.md": "f485d4d237f9d79aa2b1a7e412673295811c72badcdb969c56218839c173e1cd",
+    "current_state/monitor.md": "0d04fdbba98d3e45480ff9b354f68f481f2c9d3a2cad0a468a98da26aed6866c",
+    "current_state/science_implementation.md": "c845d9025b882a6fb1b1f482b9bc45998ac02eceee1d70b438c50a75d93efc8f",
+    "ops/ROUND03_RUNTIME_HANDOFF.md": "c845d9025b882a6fb1b1f482b9bc45998ac02eceee1d70b438c50a75d93efc8f"
+  },
+  "stale_operational_wording": [
+    {
+      "path": "current_state/science_implementation.md",
+      "line": 66,
+      "text": "Preparation commit: 1b34e839335177e1fd582944549be4f181dee3c0, descending Round02 completion bdc28c351b941a58dae49f833284e13cf5fdc46b. Preparation manifest SHA256 93674b785f0f93fb2671fca83941e9af2961ab665c3814a027791fbb3109ed37. Completion publication is owned by monitor and pending in this handoff. All checkpoints, optimizer states, datasets, indices, calibration/validation arrays and caches remain server-only.",
+      "disposition": "Flagged to coordinator; authoritative completion receipt supersedes this operational wording. No sealed snapshot edited."
+    },
+    {
+      "path": "ops/ROUND03_RUNTIME_HANDOFF.md",
+      "line": 66,
+      "text": "Preparation commit: 1b34e839335177e1fd582944549be4f181dee3c0, descending Round02 completion bdc28c351b941a58dae49f833284e13cf5fdc46b. Preparation manifest SHA256 93674b785f0f93fb2671fca83941e9af2961ab665c3814a027791fbb3109ed37. Completion publication is owned by monitor and pending in this handoff. All checkpoints, optimizer states, datasets, indices, calibration/validation arrays and caches remain server-only.",
+      "disposition": "Flagged to coordinator; authoritative completion receipt supersedes this operational wording. No sealed snapshot edited."
+    }
+  ],
+  "experiment_state_changed": false,
+  "parent_notified_only_of_stale_operational_wording": true
+}

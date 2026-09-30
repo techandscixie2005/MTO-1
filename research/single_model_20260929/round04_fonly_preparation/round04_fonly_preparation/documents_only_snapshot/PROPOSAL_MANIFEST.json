@@ -1,0 +1,27 @@
+{
+  "status": "protocol_only_pending_independent_review",
+  "previous_completed_commit": "4f9ae50647f957ac7d68ab1a20200a79fa527cf9",
+  "documents": {
+    "PROPOSED_PROTOCOL.md": "6f10115e03b5861aeafa9b0ae0928da14d59863645549c7af1ffbd65dca1d48f",
+    "RATIONALE.md": "8448f14d58d9b0693b36599c6d7c296bed113b80906a6d84c72950627a755155"
+  },
+  "published_inputs_read": {
+    "research_state/ROUND03_DECISION.md": "10afc8f99dfdf04e27a1a9277118cb2f5a04b60ef2e523af9ee833d5bf7c485a",
+    "research_state/single_model_20260929/round03_transfer/config.json": "7087e81b79e35ebd28519d73cf54d4971b09fb922a937d2e769283438b2990cd",
+    "research_state/single_model_20260929/round03_transfer/evaluation.py": "9beb9985cbeb67e5e9c82f05998d11240a69aa23ab319a40ceab7aa109717a4a",
+    "research_state/single_model_20260929/round03_transfer/affine_stage.py": "60ebbcea16c1db716ec769a834e4b0e459ba59a9a602378f616fcda8f7b5b2ed",
+    "research_state/single_model_20260929/round03_transfer/ROUND03_RESULTS.json": "3e7104c9cb0bb89335a1e06e412367782dbec35e145900f3ce6bb4743faeae74",
+    "research_state/single_model_20260929/round03_transfer/ANALYSIS_RECEIPT.json": "1dff1f5389e124bbbc873e774fa13d0a2437997d15f3a71fd3539fc0e32f7477",
+    "research_state/single_model_20260929/round03_transfer/INDEPENDENT_SCIENTIFIC_REVIEW.md": "abe62903fe69e3f3402a3e44795433156470c82c68c3d0d41548f2ef4ee92bc5"
+  },
+  "allowed_current_work": "Documents and independent review only",
+  "fitting_array_or_label_reads": false,
+  "checkpoint_or_model_reads": false,
+  "model_inference": false,
+  "training_or_solver_execution": false,
+  "implementation_created": false,
+  "previous_completed_records_modified": false,
+  "proposed_function": "Four fixed scalar basis coefficients; shared across states; no additional inputs",
+  "proposed_solver": "FP64 SVD least squares; rcond=1e-12; rank4; maximum condition1e8; no fallback",
+  "head_coefficients_or_checkpoints_to_be_archived": false
+}

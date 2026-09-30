@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "scope": "Protocol and preparation boundaries only; implementation/preflight approval pending; no production execution",
+  "document_hashes": {
+    "PROPOSED_PROTOCOL.md": "6f10115e03b5861aeafa9b0ae0928da14d59863645549c7af1ffbd65dca1d48f",
+    "RATIONALE.md": "8448f14d58d9b0693b36599c6d7c296bed113b80906a6d84c72950627a755155"
+  },
+  "review_text_sha256": "88cf0ed28e76be8070fb4253bdf7df17d5ab2d8b256e827e7efed005a732a691",
+  "root_preparation_decision_sha256": "1d3abc4f7cbbe5e313828a177f11a6d9435307ca607a3cb43fefc74c46d5b8ab",
+  "fit_authorized": false,
+  "reviewer_array_access": false,
+  "reviewer_model_or_solver_execution": false,
+  "unresolved_protocol_findings": [],
+  "staging_finding_resolved": true,
+  "later_implementation_review_required": true
+}

@@ -1,0 +1,146 @@
+/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/lib/python3.10/site-packages/e3nn/o3/_wigner.py:10: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  _Jd, _W3j_flat, _W3j_indices = torch.load(os.path.join(os.path.dirname(__file__), 'constants.pt'))
+{
+  "passed": true,
+  "reviewer_owned_tests": true,
+  "synthetic_files_and_hand_set_coefficients_only": true,
+  "production_directory_or_target_cache_used": false,
+  "trained_model_forward": false,
+  "real_coefficient_solves": 0,
+  "validation_or_test_array_access": false,
+  "negative_entry_checks": {
+    "missing_authority": {
+      "rejected": true,
+      "substantive_imports": 0,
+      "non_synthetic_data_reads": 0,
+      "filesystem_unchanged": true
+    },
+    "wrong_scope": {
+      "rejected": true,
+      "substantive_imports": 0,
+      "non_synthetic_data_reads": 0,
+      "filesystem_unchanged": true
+    },
+    "fit_not_authorized": {
+      "rejected": true,
+      "substantive_imports": 0,
+      "non_synthetic_data_reads": 0,
+      "filesystem_unchanged": true
+    },
+    "validation_not_authorized": {
+      "rejected": true,
+      "substantive_imports": 0,
+      "non_synthetic_data_reads": 0,
+      "filesystem_unchanged": true
+    },
+    "test_access_requested": {
+      "rejected": true,
+      "substantive_imports": 0,
+      "non_synthetic_data_reads": 0,
+      "filesystem_unchanged": true
+    },
+    "too_many_solves": {
+      "rejected": true,
+      "substantive_imports": 0,
+      "non_synthetic_data_reads": 0,
+      "filesystem_unchanged": true
+    },
+    "too_many_evaluations": {
+      "rejected": true,
+      "substantive_imports": 0,
+      "non_synthetic_data_reads": 0,
+      "filesystem_unchanged": true
+    },
+    "authority_manifest": {
+      "rejected": true,
+      "substantive_imports": 0,
+      "non_synthetic_data_reads": 0,
+      "filesystem_unchanged": true
+    },
+    "authority_review": {
+      "rejected": true,
+      "substantive_imports": 0,
+      "non_synthetic_data_reads": 0,
+      "filesystem_unchanged": true
+    },
+    "authority_publication": {
+      "rejected": true,
+      "substantive_imports": 0,
+      "non_synthetic_data_reads": 0,
+      "filesystem_unchanged": true
+    },
+    "review_failed": {
+      "rejected": true,
+      "substantive_imports": 0,
+      "non_synthetic_data_reads": 0,
+      "filesystem_unchanged": true
+    },
+    "review_manifest": {
+      "rejected": true,
+      "substantive_imports": 0,
+      "non_synthetic_data_reads": 0,
+      "filesystem_unchanged": true
+    },
+    "review_closure": {
+      "rejected": true,
+      "substantive_imports": 0,
+      "non_synthetic_data_reads": 0,
+      "filesystem_unchanged": true
+    },
+    "remote_unverified": {
+      "rejected": true,
+      "substantive_imports": 0,
+      "non_synthetic_data_reads": 0,
+      "filesystem_unchanged": true
+    },
+    "archive_order_false": {
+      "rejected": true,
+      "substantive_imports": 0,
+      "non_synthetic_data_reads": 0,
+      "filesystem_unchanged": true
+    },
+    "publication_manifest": {
+      "rejected": true,
+      "substantive_imports": 0,
+      "non_synthetic_data_reads": 0,
+      "filesystem_unchanged": true
+    },
+    "publication_review": {
+      "rejected": true,
+      "substantive_imports": 0,
+      "non_synthetic_data_reads": 0,
+      "filesystem_unchanged": true
+    },
+    "changed_source": {
+      "rejected": true,
+      "substantive_imports": 0,
+      "non_synthetic_data_reads": 0,
+      "filesystem_unchanged": true
+    }
+  },
+  "stage_recovery_checks": {
+    "partial_receipts_recovered_without_solve": true,
+    "frozen_reentry_preserves_every_file": true,
+    "changed_frozen_coefficients_rejected": true,
+    "interrupted_solve_without_tensor_rejected": true,
+    "completed_and_attempted_evaluation_rejected_before_reads": true,
+    "counters": {
+      "calibration_reads": 0,
+      "solver_calls": 0,
+      "actual_model_exports": 0
+    },
+    "synthetic_tensors_only": true
+  },
+  "source_hashes": {
+    "independent_gate_checks.py": "da72b888316f674282df42e33e174de81c664731a10e234a1209542976f946b2",
+    "production_entry.py": "473ff787cfa085340c1ae22820846454c7f182054a3f8dbe5338b3e6106e2fd5",
+    "execution_gate.py": "70078ab5506d7a1930687093a31d8ac1eb80dc16bd2d521b454a117a2a5e04bd",
+    "production_stages.py": "04496de870fc1d5619b6168bdfffe8af28f369bd5b7dfbd9d5624bcd4669d2aa",
+    "stage_state.py": "33e9bb76ec6f0524ebdb954dfbfa281998daa35165527393f7037fefd9970eb5",
+    "common.py": "95d8e8859a436f7e87375c9e4b09a052aad7f6c67bcef38fc6fd813ef222719b",
+    "scalar_map.py": "2f11fc4b09003e6da2953476038095b70b1b184ca25e872f0542509b67312e52",
+    "predictor.py": "32c4c6cb4f756ebcb8822bd1c7afb496a30dddc33ca7e4e1a169cfb3be6a4492",
+    "backbone.py": "cffc7d73f070548f7efcc6cd5f0d01bab4b6dcedb0b4da094eb8da99bb981eef",
+    "settings.json": "69fd0730591b6d78d594bfd5f34e3f1aa3c88e1301cd37c98fbf6a09b767113f"
+  }
+}

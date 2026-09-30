@@ -1,0 +1,23 @@
+{
+  "corrected_at_utc": "2026-09-29T23:55:37.075871+00:00",
+  "parent_authorization": "Correct only stale publication sentence in current operational runtime/science handoffs and local mirrors; preserve all frozen/archived snapshots.",
+  "scheduled_check": "monitoring/CLOSED_CAMPAIGN_20260929T234953.json",
+  "current_server_paths": [
+    "/home/inspur/MTO-1/research/single_model_20260929/ops/ROUND03_RUNTIME_HANDOFF.md",
+    "/home/inspur/MTO-1/research/single_model_20260929/current_state/science_implementation.md"
+  ],
+  "local_mirrors": [
+    "C:\\Users\\master\\Documents\\ChatGPT\\MTO\\research_state\\ROUND03_RUNTIME_HANDOFF.md",
+    "C:\\Users\\master\\Documents\\ChatGPT\\MTO\\research_state\\science_implementation.md",
+    "C:\\Users\\master\\Documents\\ChatGPT\\MTO\\research_state\\single_model_20260929\\ops\\ROUND03_RUNTIME_HANDOFF.md"
+  ],
+  "before_sha256": "c845d9025b882a6fb1b1f482b9bc45998ac02eceee1d70b438c50a75d93efc8f",
+  "after_sha256": "d4073a79233dcb79e9a4e64fb2c82d937e25d25ca8d4e9f29b16e11116d72622",
+  "old_sentence": "Completion publication is owned by monitor and pending in this handoff.",
+  "new_sentence": "Completion publication is verified at [commit 4f9ae506](https://github.com/techandscixie2005/MTO-1/commit/4f9ae50647f957ac7d68ab1a20200a79fa527cf9); the [completion receipt](/home/inspur/MTO-1/research/single_model_20260929/ops/ROUND03_COMPLETION_PUBLICATION_RECEIPT.json) has SHA256 ffac1aa2c625ecd2b3e933494eb84f0e8b99efc063f94fdf31b9343144b85c1c.",
+  "only_exact_sentence_replaced": true,
+  "archived_or_frozen_snapshots_edited": false,
+  "terminal_commands_or_settings_changed": false,
+  "new_fit_or_inference": false,
+  "schedules_changed": false
+}
