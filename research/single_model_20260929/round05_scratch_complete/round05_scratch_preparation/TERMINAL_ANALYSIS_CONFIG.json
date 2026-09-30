@@ -1,0 +1,15 @@
+{
+  "scope": "round05_saved_validation_outputs_only",
+  "policies": ["selected_best", "fixed60"],
+  "bootstrap_seed": 20260930,
+  "bootstrap_draws": 2000,
+  "bootstrap_unit": "audited identity component within validation",
+  "bootstrap_interval_percentiles": [2.5, 97.5],
+  "uncertainty_limit": "Post-training descriptive paired validation uncertainty; not corrected for checkpoint selection, reused validation or training-seed variability.",
+  "error_quantiles": [0.5, 0.9, 0.99, 0.999, 1.0],
+  "top_error_fraction": 0.01,
+  "model_inference": false,
+  "test_access": false,
+  "raw_dataset_target_access": false,
+  "selection_or_promotion_change": false
+}

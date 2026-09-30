@@ -1,0 +1,245 @@
+{
+  "schema_version": 1,
+  "scope": "one independent Round05 startup identity/resource check; no model/data/tensor values loaded",
+  "checked_at_utc": "2026-09-30T12:29:17.430898+00:00",
+  "supplement_recorded_at_utc": "2026-09-30T12:31:30.709586+00:00",
+  "canonical_record": "CHECK_20260930T122918Z.json",
+  "canonical_sha256": "2ae63b827b2078445a14807ac1a5bdc23011e8cd4943fabb0df32e62ff4be0b9",
+  "passed": true,
+  "runs": [
+    {
+      "id": "round05_control_1790771316371909087",
+      "gpu_index": 1,
+      "gpu_uuid": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+      "identity": {
+        "pid": 1328593,
+        "start_ticks": 1261898113,
+        "uid": 1000,
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation",
+        "argv_sha256": "0484aff2dbfd16a8e2d8c80773d4fdec6ca2694b04b1916cabc43d932f72209c",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "process_state": "S"
+      },
+      "identity_matches": true,
+      "observed_gpu_uuids": [
+        "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800"
+      ],
+      "selected_environment": {
+        "MKL_NUM_THREADS": "2",
+        "OMP_NUM_THREADS": "2",
+        "CUDA_VISIBLE_DEVICES": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800"
+      },
+      "shared_lock_path": "/tmp/mto_pouter_gpu_1.lock",
+      "inherited_shared_lock_descriptors": [
+        {
+          "fd": 4,
+          "fdinfo": "pos:\t0\nflags:\t0100001\nmnt_id:\t30\nino:\t196621235\nlock:\t1: FLOCK  ADVISORY  WRITE 1328590 103:03:196621235 0 EOF\n"
+        }
+      ],
+      "status_at_canonical_observation": {
+        "completed_epoch": 0,
+        "cursor": 12800,
+        "epoch": 1,
+        "last_update_unix": 1790771350.5707083,
+        "manifest_sha256": "66269e04d73943bec48a6331c3ca45a9efcc12045e962fe897da6196af97c5e1",
+        "pid": 1328593,
+        "state": "training"
+      },
+      "checkpoint_file_metadata_only": {
+        "round05_scratch_preparation/runs/control/last.pt": {
+          "exists": true,
+          "bytes": 6453560,
+          "mtime_utc": "2026-09-30T12:28:53.272447+00:00",
+          "age_seconds": 25.0
+        },
+        "round05_scratch_preparation/runs/control/best.pt": {
+          "exists": true,
+          "bytes": 6453240,
+          "mtime_utc": "2026-09-30T12:28:53.288447+00:00",
+          "age_seconds": 25.0
+        }
+      },
+      "launch_receipt_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/runs/control/attempts/round05_control_1790771316371909087/LAUNCH_RECEIPT.json",
+      "launch_receipt_sha256": "32065a00ec955ad827482b97f611cc92df3bb6e20041062565bfdcd87dd6cc80",
+      "admission_receipt_sha256": "b4bc14a404033e295512a6a0a9511ad7d712797527437154d798e09b0d32546a"
+    },
+    {
+      "id": "round05_adapter_1790771316605474432",
+      "gpu_index": 2,
+      "gpu_uuid": "GPU-cb4dc1ea-9ea3-e426-bdeb-df0bef8a23fa",
+      "identity": {
+        "pid": 1328598,
+        "start_ticks": 1261898136,
+        "uid": 1000,
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation",
+        "argv_sha256": "21e4d3079d2410e6947f151bf4feb62bd1538d0e68e1f4ba3ead100d58d84f10",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "process_state": "S"
+      },
+      "identity_matches": true,
+      "observed_gpu_uuids": [
+        "GPU-cb4dc1ea-9ea3-e426-bdeb-df0bef8a23fa"
+      ],
+      "selected_environment": {
+        "MKL_NUM_THREADS": "2",
+        "OMP_NUM_THREADS": "2",
+        "CUDA_VISIBLE_DEVICES": "GPU-cb4dc1ea-9ea3-e426-bdeb-df0bef8a23fa"
+      },
+      "shared_lock_path": "/tmp/mto_pouter_gpu_2.lock",
+      "inherited_shared_lock_descriptors": [
+        {
+          "fd": 4,
+          "fdinfo": "pos:\t0\nflags:\t0100001\nmnt_id:\t30\nino:\t196621236\nlock:\t1: FLOCK  ADVISORY  WRITE 1328590 103:03:196621236 0 EOF\n"
+        }
+      ],
+      "status_at_canonical_observation": {
+        "completed_epoch": 0,
+        "cursor": 12800,
+        "epoch": 1,
+        "last_update_unix": 1790771350.679461,
+        "manifest_sha256": "66269e04d73943bec48a6331c3ca45a9efcc12045e962fe897da6196af97c5e1",
+        "pid": 1328598,
+        "state": "training"
+      },
+      "checkpoint_file_metadata_only": {
+        "round05_scratch_preparation/runs/adapter/last.pt": {
+          "exists": true,
+          "bytes": 6453560,
+          "mtime_utc": "2026-09-30T12:28:52.833447+00:00",
+          "age_seconds": 25.4
+        },
+        "round05_scratch_preparation/runs/adapter/best.pt": {
+          "exists": true,
+          "bytes": 6453304,
+          "mtime_utc": "2026-09-30T12:28:52.849447+00:00",
+          "age_seconds": 25.4
+        }
+      },
+      "launch_receipt_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/runs/adapter/attempts/round05_adapter_1790771316605474432/LAUNCH_RECEIPT.json",
+      "launch_receipt_sha256": "4be4ee31101609e4e4a155771e41ebe15c3e21204f5a3ff872e5ae9d136fe963",
+      "admission_receipt_sha256": "dd184382c0a521e49d1633df0c11e40170be538a0990b15292d9a62fe7293279"
+    },
+    {
+      "id": "round05_decorrelation_1790771316835845292",
+      "gpu_index": 4,
+      "gpu_uuid": "GPU-e212aefc-f1d6-cc7a-5594-e87abeaf1184",
+      "identity": {
+        "pid": 1328603,
+        "start_ticks": 1261898159,
+        "uid": 1000,
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation",
+        "argv_sha256": "f0092ee7ecdb164c6cab99c1d882fd099878aa4f9e13c032afd172c3db81908c",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "process_state": "R"
+      },
+      "identity_matches": true,
+      "observed_gpu_uuids": [
+        "GPU-e212aefc-f1d6-cc7a-5594-e87abeaf1184"
+      ],
+      "selected_environment": {
+        "MKL_NUM_THREADS": "2",
+        "OMP_NUM_THREADS": "2",
+        "CUDA_VISIBLE_DEVICES": "GPU-e212aefc-f1d6-cc7a-5594-e87abeaf1184"
+      },
+      "shared_lock_path": "/tmp/mto_pouter_gpu_4.lock",
+      "inherited_shared_lock_descriptors": [
+        {
+          "fd": 4,
+          "fdinfo": "pos:\t0\nflags:\t0100001\nmnt_id:\t30\nino:\t196621237\nlock:\t1: FLOCK  ADVISORY  WRITE 1328590 103:03:196621237 0 EOF\n"
+        }
+      ],
+      "status_at_canonical_observation": {
+        "completed_epoch": 0,
+        "cursor": 12800,
+        "epoch": 1,
+        "last_update_unix": 1790771350.9077742,
+        "manifest_sha256": "66269e04d73943bec48a6331c3ca45a9efcc12045e962fe897da6196af97c5e1",
+        "pid": 1328603,
+        "state": "training"
+      },
+      "checkpoint_file_metadata_only": {
+        "round05_scratch_preparation/runs/decorrelation/last.pt": {
+          "exists": true,
+          "bytes": 6453560,
+          "mtime_utc": "2026-09-30T12:28:53.806447+00:00",
+          "age_seconds": 24.5
+        },
+        "round05_scratch_preparation/runs/decorrelation/best.pt": {
+          "exists": true,
+          "bytes": 6453304,
+          "mtime_utc": "2026-09-30T12:28:53.822447+00:00",
+          "age_seconds": 24.5
+        }
+      },
+      "launch_receipt_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/runs/decorrelation/attempts/round05_decorrelation_1790771316835845292/LAUNCH_RECEIPT.json",
+      "launch_receipt_sha256": "bab8b80d443f77bc4f96c09dd92ea942c862de619fc052b08cf15097a5c56430",
+      "admission_receipt_sha256": "ae354bf25a7112e0f9c1fae0317b979604dd226f75efab25826462a1b88b1e2a"
+    },
+    {
+      "id": "round05_both_1790771317058319159",
+      "gpu_index": 6,
+      "gpu_uuid": "GPU-2431a641-8045-a10b-4aa0-2769010e0708",
+      "identity": {
+        "pid": 1328608,
+        "start_ticks": 1261898182,
+        "uid": 1000,
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation",
+        "argv_sha256": "e3e705f7b58b30d14e5163b7abb37196da4273625e9478c76275fde162c2ccb2",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "process_state": "R"
+      },
+      "identity_matches": true,
+      "observed_gpu_uuids": [
+        "GPU-2431a641-8045-a10b-4aa0-2769010e0708"
+      ],
+      "selected_environment": {
+        "MKL_NUM_THREADS": "2",
+        "OMP_NUM_THREADS": "2",
+        "CUDA_VISIBLE_DEVICES": "GPU-2431a641-8045-a10b-4aa0-2769010e0708"
+      },
+      "shared_lock_path": "/tmp/mto_pouter_gpu_6.lock",
+      "inherited_shared_lock_descriptors": [
+        {
+          "fd": 4,
+          "fdinfo": "pos:\t0\nflags:\t0100001\nmnt_id:\t30\nino:\t196621238\nlock:\t1: FLOCK  ADVISORY  WRITE 1328590 103:03:196621238 0 EOF\n"
+        }
+      ],
+      "status_at_canonical_observation": {
+        "completed_epoch": 0,
+        "cursor": 12800,
+        "epoch": 1,
+        "last_update_unix": 1790771351.1154683,
+        "manifest_sha256": "66269e04d73943bec48a6331c3ca45a9efcc12045e962fe897da6196af97c5e1",
+        "pid": 1328608,
+        "state": "training"
+      },
+      "checkpoint_file_metadata_only": {
+        "round05_scratch_preparation/runs/both/last.pt": {
+          "exists": true,
+          "bytes": 6453560,
+          "mtime_utc": "2026-09-30T12:28:53.324447+00:00",
+          "age_seconds": 25.0
+        },
+        "round05_scratch_preparation/runs/both/best.pt": {
+          "exists": true,
+          "bytes": 6453304,
+          "mtime_utc": "2026-09-30T12:28:53.340447+00:00",
+          "age_seconds": 24.9
+        }
+      },
+      "launch_receipt_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/runs/both/attempts/round05_both_1790771317058319159/LAUNCH_RECEIPT.json",
+      "launch_receipt_sha256": "488f9c109164988c04ecc33ecfd8ea714de331b0ec81e3dcc2f47fcb515e6ffb",
+      "admission_receipt_sha256": "09732d4cbe7da03ab0bf4f70420e2f257a33082a9e155c3ce5d3daff0c5602e1"
+    }
+  ],
+  "registered_count": 22,
+  "incident_interpretation": "Four first-observed transitions to RUNNING_IDENTITY_MATCH, not failures.",
+  "lock_verification_note": "An initial supplemental assertion incorrectly required /proc/locks owner PID to equal child PID. Source inspection confirmed pass_fds inheritance; all four child fdinfo records prove the inherited exclusive FLOCK descriptors. No lock was acquired/released by the monitor, and no scientific failure is inferred.",
+  "preferred_gpu_health": "All admitted1/2/4/6 zero uncorrectable ECC and no pending/failure remaps in canonical snapshot; unrelated GPU0 SpecGPT untouched.",
+  "authorization_sha256": "07308b113557d2196cefc951a603f3f1a5093009eaae1576412f1e393bb8162c",
+  "publication_receipt_sha256": "fbdcbb4ce7e2b86ae6c906affeb4e7c08a57fc9e48e58a60d485dd61c7a4eba5",
+  "cron_sha256": "13caacb74408db396e9eae0d0929aec97d102c41c00c2f5b138da9d0417b330e",
+  "interventions": [],
+  "next_progress_owner": "science owns first-epoch and resumable metadata review; dedicated monitor keeps existing four-hour schedule",
+  "no_extension_or_test_authorization": true
+}

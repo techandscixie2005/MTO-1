@@ -1,0 +1,187 @@
+{
+  "arms": {
+    "adapter": {
+      "all_observed_order_hashes_match": true,
+      "best": {
+        "checkpoint": "selected/epoch_001_1790771499656038878.pt",
+        "checkpoint_sha256": "b4a359c1ea1c4f27b9c58ffaa29d9226d3a376f24e844f3223d29088b952a63f",
+        "epoch": 1,
+        "predictions": "selected/predictions_001_1790771499656038878.npz",
+        "predictions_sha256": "c3fc44d0dec40fcf14dddc25a2c8a8f9e70bb37464de9be0adcf1f0a88e86c54",
+        "r2": 0.17724110360587408,
+        "sse": 144.37655272886508
+      },
+      "committed_steps": 1881,
+      "data_access_sha256": "e586c57d2f7576d3c407f4d053d0995f62ad46d68e6b07247986ae9366a41b9c",
+      "epoch0_r2": -0.06655042341570905,
+      "first_epoch_r2": 0.17724110360587408,
+      "first_epoch_seconds": 166.7996964454651,
+      "launch_receipt_sha256": "4be4ee31101609e4e4a155771e41ebe15c3e21204f5a3ff872e5ae9d136fe963",
+      "observed_completed_epoch": 1,
+      "observed_identity": {
+        "argv_sha256": "21e4d3079d2410e6947f151bf4feb62bd1538d0e68e1f4ba3ead100d58d84f10",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation",
+        "pid": 1328598,
+        "process_state": "R",
+        "start_ticks": 1261898136,
+        "uid": 1000
+      },
+      "optimizer_state_entries": 144,
+      "optimizer_step_values": [
+        1881
+      ],
+      "read_last_checkpoint_bytes": 25290232,
+      "read_last_checkpoint_sha256": "39d125cf5d363d0a835281446c08ea2e19d40d15a51dcf9b52e9f5e10337258e",
+      "rng_keys": [
+        "cuda",
+        "numpy",
+        "order",
+        "python",
+        "torch"
+      ],
+      "test_numeric_rows": 0,
+      "train_and_validation_ledgers_match_exact_partitions": true
+    },
+    "both": {
+      "all_observed_order_hashes_match": true,
+      "best": {
+        "checkpoint": "selected/epoch_001_1790771501416730039.pt",
+        "checkpoint_sha256": "a97d2ec5ceda59aeb4f0e8ba1b6b6bab425084aaed14a0b6bcad17e640a22937",
+        "epoch": 1,
+        "predictions": "selected/predictions_001_1790771501416730039.npz",
+        "predictions_sha256": "eebfc782383de33ce51d68352a2ac5d9f8e8c244685a775f5ca9082fed06bfed",
+        "r2": 0.1826719072931411,
+        "sse": 143.4235630761841
+      },
+      "committed_steps": 1881,
+      "data_access_sha256": "e586c57d2f7576d3c407f4d053d0995f62ad46d68e6b07247986ae9366a41b9c",
+      "epoch0_r2": -0.06655042341244544,
+      "first_epoch_r2": 0.1826719072931411,
+      "first_epoch_seconds": 168.06987309455872,
+      "launch_receipt_sha256": "488f9c109164988c04ecc33ecfd8ea714de331b0ec81e3dcc2f47fcb515e6ffb",
+      "observed_completed_epoch": 1,
+      "observed_identity": {
+        "argv_sha256": "e3e705f7b58b30d14e5163b7abb37196da4273625e9478c76275fde162c2ccb2",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation",
+        "pid": 1328608,
+        "process_state": "R",
+        "start_ticks": 1261898182,
+        "uid": 1000
+      },
+      "optimizer_state_entries": 144,
+      "optimizer_step_values": [
+        1881
+      ],
+      "read_last_checkpoint_bytes": 25290232,
+      "read_last_checkpoint_sha256": "b4d550fce16fcd92cafdbd44b2c4fc9a2a8ce5a5230d6ff621890213f4c35eb3",
+      "rng_keys": [
+        "cuda",
+        "numpy",
+        "order",
+        "python",
+        "torch"
+      ],
+      "test_numeric_rows": 0,
+      "train_and_validation_ledgers_match_exact_partitions": true
+    },
+    "control": {
+      "all_observed_order_hashes_match": true,
+      "best": {
+        "checkpoint": "selected/epoch_001_1790771495969679637.pt",
+        "checkpoint_sha256": "462feb66916fed887c33270566129d6c99740d7d0f8de6712f946ee2ee57604b",
+        "epoch": 1,
+        "predictions": "selected/predictions_001_1790771495969679637.npz",
+        "predictions_sha256": "0b0e9989c43f922b4486bf80c1ae6fc292a162d5c038059962aacfb06b25ad76",
+        "r2": 0.173033493326902,
+        "sse": 145.11489815419796
+      },
+      "committed_steps": 1881,
+      "data_access_sha256": "e586c57d2f7576d3c407f4d053d0995f62ad46d68e6b07247986ae9366a41b9c",
+      "epoch0_r2": -0.06655042321707327,
+      "first_epoch_r2": 0.173033493326902,
+      "first_epoch_seconds": 162.67478132247925,
+      "launch_receipt_sha256": "32065a00ec955ad827482b97f611cc92df3bb6e20041062565bfdcd87dd6cc80",
+      "observed_completed_epoch": 1,
+      "observed_identity": {
+        "argv_sha256": "0484aff2dbfd16a8e2d8c80773d4fdec6ca2694b04b1916cabc43d932f72209c",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation",
+        "pid": 1328593,
+        "process_state": "S",
+        "start_ticks": 1261898113,
+        "uid": 1000
+      },
+      "optimizer_state_entries": 135,
+      "optimizer_step_values": [
+        1881
+      ],
+      "read_last_checkpoint_bytes": 25232000,
+      "read_last_checkpoint_sha256": "9ac70a0aabc0959e6f3493ec4fae46114e6ac451e069771b3836e9d07fb9d2b8",
+      "rng_keys": [
+        "cuda",
+        "numpy",
+        "order",
+        "python",
+        "torch"
+      ],
+      "test_numeric_rows": 0,
+      "train_and_validation_ledgers_match_exact_partitions": true
+    },
+    "decorrelation": {
+      "all_observed_order_hashes_match": true,
+      "best": {
+        "checkpoint": "selected/epoch_001_1790771496733415710.pt",
+        "checkpoint_sha256": "ab573dd75b2c981d1b090db8a6e7bbf69e8227c1a180ee0bf3ff00b2e7ec07ed",
+        "epoch": 1,
+        "predictions": "selected/predictions_001_1790771496733415710.npz",
+        "predictions_sha256": "61ef8a5afc57ca59ec4ab7d1e334e0290e4cd71b48ceb9cd7447c4caaeea462f",
+        "r2": 0.19622587975654682,
+        "sse": 141.0451314012125
+      },
+      "committed_steps": 1881,
+      "data_access_sha256": "e586c57d2f7576d3c407f4d053d0995f62ad46d68e6b07247986ae9366a41b9c",
+      "epoch0_r2": -0.06655042333247319,
+      "first_epoch_r2": 0.19622587975654682,
+      "first_epoch_seconds": 162.90418338775635,
+      "launch_receipt_sha256": "bab8b80d443f77bc4f96c09dd92ea942c862de619fc052b08cf15097a5c56430",
+      "observed_completed_epoch": 1,
+      "observed_identity": {
+        "argv_sha256": "f0092ee7ecdb164c6cab99c1d882fd099878aa4f9e13c032afd172c3db81908c",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation",
+        "pid": 1328603,
+        "process_state": "S",
+        "start_ticks": 1261898159,
+        "uid": 1000
+      },
+      "optimizer_state_entries": 135,
+      "optimizer_step_values": [
+        1881
+      ],
+      "read_last_checkpoint_bytes": 25232000,
+      "read_last_checkpoint_sha256": "5ffad88ee31fe32642d800f500e2101aedbe0220a193138ac4547e04a69f691d",
+      "rng_keys": [
+        "cuda",
+        "numpy",
+        "order",
+        "python",
+        "torch"
+      ],
+      "test_numeric_rows": 0,
+      "train_and_validation_ledgers_match_exact_partitions": true
+    }
+  },
+  "authorization_sha256": "07308b113557d2196cefc951a603f3f1a5093009eaae1576412f1e393bb8162c",
+  "checked_unix": 1790771525.1386409,
+  "checkpoint_tensors_loaded_on_cpu_only": true,
+  "manifest_sha256": "66269e04d73943bec48a6331c3ca45a9efcc12045e962fe897da6196af97c5e1",
+  "model_constructed": false,
+  "model_inference": false,
+  "passed": true,
+  "production_files_modified": false,
+  "raw_target_arrays_opened": false,
+  "scope": "read_only_committed_checkpoint_metadata",
+  "script_sha256": "fc9b0d63971ed89f7bba612a24563d4b62c0857ee91cbc5bb39adee4b41079fa"
+}

@@ -2,7 +2,28 @@
 
 ## 当前结果：单模型振子强度研究（2026-09-30）
 
-**目前保留 eta0（seed 11、epoch 33）及其固定仿射校准：一个模型、一个自包含 checkpoint，不平均多个模型或 checkpoint 的预测。目标 pooled raw-f R² = 0.60 尚未达到。**
+**QM9S v2 当前验证参考为原始 MTO（seed 11、epoch 45），pooled raw-f R² = 0.447169；目标 0.60 尚未达到。** 部署使用一个几何输入模型、一个自包含 checkpoint，不平均多个模型或 checkpoint 的预测。
+
+### Round05 完成：新划分上的四组从头训练
+
+四组均使用全新初始化和仅新 TRAIN 统计，按冻结协议完成 60 epoch、112,860 次更新。QM9S v2 的 TRAIN / VALID / TEST 为 120,355 / 6,686 / 6,686；这是按已审计保守分组规则得到的历史暴露数据新分区，**不是外部新留出集**。验证选择保留全部 66,860 个有效标签，包括零值。
+
+| 单模型 | 验证选中 epoch | 选中 checkpoint 的 pooled raw-f R² | 固定 epoch 60 R² |
+|---|---:|---:|---:|
+| **原始 MTO（v2 参考）** | **45** | **0.447169401** | **0.402691932** |
+| 右侧共享 F | 41 | 0.415020369 | 0.401177943 |
+| 原始 M 弱去相关 | 23 | 0.412399193 | 0.392013476 |
+| 两者联合 | 20 | 0.424966054 | 0.402391091 |
+
+所有修改组均未通过预先规定的相对原模型 **+0.003 R²** 分配门槛；本轮关闭，不延长训练或追加确认种子。F 的部分亮尾改善不能抵消 pooled 误差变差。完整逐态、亮尾、固定 epoch 60 对照及不确定性见[Round05 报告](research/single_model_20260929/round05_scratch_complete/round05_scratch_preparation/completion/ROUND05_REPORT.md)；[Round05 精确复现命令](research/single_model_20260929/round05_scratch_complete/round05_scratch_preparation/completion/ROUND05_REPRODUCE.md)；[独立科学审查](research/single_model_20260929/round05_scratch_complete/round05_scratch_preparation/completion/INDEPENDENT_SCIENTIFIC_REVIEW.md)；[最终决定](research/single_model_20260929/round05_scratch_complete/current_state/ROUND05_DECISION.md)。
+
+新 TEST 目标保持封存，**没有本轮 TEST 评分或独立种子确认**。按分子组件 bootstrap 的区间仅描述这些已选定 checkpoint 在复用验证集上的不确定性，不包含选模或跨种子不确定性。不能把本轮数字与下面旧划分的校准结果直接比较并宣称提升。
+
+v2 参考的服务器 checkpoint：`/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/runs/control/geometry_best.pt`；SHA256：`e71c63da8bb3b8214e014ca64946fecab97fbc210cb068c0b1a3eefa3bbf8f1e`。权重及预测数组保留在服务器，不随本次轻量归档发布。
+
+### 旧划分的单模型历史结果
+
+旧划分仍保留 eta0（seed 11、epoch 33）及其固定仿射校准，作为单独的历史证据。
 
 主指标把所有有效“分子 × 激发态”的原始振子强度 f 展平，计算 `R² = 1 − SSE/SST`，不是逐态 R² 的平均值，也不是展宽光谱分数。旧验证集含 6,686 个分子、66,860 个有效标签，包括零值。
 
@@ -31,10 +52,10 @@ Round04 的拟合误差下降，但验证表现未改善；不能据此认定所
 
 - [单模型完整报告、基线推理代码及配置](research/single_model_20260929/round03_transfer_complete/round03_transfer/SINGLE_MODEL_RESEARCH_REPORT.md)（记录到 Round03）；[Round03 精确复现命令](research/single_model_20260929/round03_transfer_complete/round03_transfer/ROUND03_REPRODUCE.md)。
 - [Round04 完整结果、逐态/亮尾指标和命令](research/single_model_20260929/round04_fonly_complete/round04_fonly_preparation/ROUND04_REPORT.md)；[独立终审](research/single_model_20260929/round04_fonly_complete/round04_fonly_preparation/INDEPENDENT_TERMINAL_REVIEW.md)；[最终决定](research/single_model_20260929/round04_fonly_complete/current_state/ROUND04_DECISION.md)。
-- 保留的服务器 checkpoint：`/home/inspur/MTO-1/research/single_model_20260929/baselines/calibrated_eta0.pt`；SHA256：`bcb0e51d8d877983abd02ab768892a8f8f8d3dfe0f73f4ec43d30c21c16b3db9`。
+- 旧划分保留的服务器 checkpoint：`/home/inspur/MTO-1/research/single_model_20260929/baselines/calibrated_eta0.pt`；SHA256：`bcb0e51d8d877983abd02ab768892a8f8f8d3dfe0f73f4ec43d30c21c16b3db9`。
 - 推理仅需元素与几何及其派生图；配置、训练归一化与固定校准均包含在一个 checkpoint 中，不需量子化学标签。校准只改 f，输出 E/A 一般不再严格重构该 f；这不是已识别的物理响应算符。
 - 新版 QM9S v2 分子组划分已按固定 seed 20260930 生成并通过独立重建核验：TRAIN / VALID / TEST 为 **120,355 / 6,686 / 6,686**，在已审计的保守分组规则下无跨分区重叠；278 个身份含糊样本仅进入 TRAIN。[划分协议与限制](research/single_model_20260929/round05_scratch_preparation/dataset_audit_20260930/BENCHMARK_V2_REPORT.md)。这是历史暴露数据的新分区，不是独立外部新数据；必须全新初始化并仅使用新 TRAIN 统计，新 TEST 目标保持封存，不得用其调参。外部 UV–Vis 数据的方法兼容性与分子重叠仍待审计。
-- **Round05 准备已完成；截至本次发布，正式训练尚未启动，没有新的准确率结果。** 新划分上将比较原模型、右侧共享 F、原始 M 弱去相关及两者联合；共同协议固定为 seed 11、60 epoch、原 LE+Ls 和学习率 0.001。仅完成了 128 个 TRAIN 分子的 12 次可丢弃技术更新；原始失败、显式工程修订及独立审查均保留。[冻结协议](research/single_model_20260929/round05_scratch_preparation/round05_scratch_preparation/PROTOCOL.md) · [准备报告](research/single_model_20260929/round05_scratch_preparation/round05_scratch_preparation/PREPARATION_REPORT.md) · [独立审查](research/single_model_20260929/round05_scratch_preparation/round05_scratch_preparation/INDEPENDENT_PREPARATION_REVIEW.md)。正式执行还需单独绑定授权；技术通过不证明精度提升。
+- Round05 已按独立绑定授权完成并关闭；共同设置为 seed 11、60 epoch、原 LE+Ls 和学习率 0.001。原始准备失败、工程修订及独立审查保留在[冻结协议](research/single_model_20260929/round05_scratch_preparation/round05_scratch_preparation/PROTOCOL.md)、[准备报告](research/single_model_20260929/round05_scratch_preparation/round05_scratch_preparation/PREPARATION_REPORT.md)和[准备独立审查](research/single_model_20260929/round05_scratch_preparation/round05_scratch_preparation/INDEPENDENT_PREPARATION_REVIEW.md)中。下一步仅获准拟定保持原始 PSD 读出的匹配损失对照方案；没有新训练或 TEST 评分授权，尚不能将本轮结果解释为已确立的因果机制。
 - 当前研究发布只包含轻量源码、设置、日志、汇总结果及审计记录，先下载到 `D:\MTO\archives\` 校验，再提交。此次不新增模型权重、优化器、原始数据、成员/预测数组、缓存或凭据；下面旧归档中已有的历史文件保持原样。
 
 ## 历史项目与运行文档

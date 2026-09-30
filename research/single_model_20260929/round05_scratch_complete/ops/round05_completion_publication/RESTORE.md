@@ -1,0 +1,7 @@
+# Round05 completion restoration
+
+This archive supplements immutable preparation commit 9de80e37e1586c2d3068b188ed2c242ee9883147. Restore preparation files from research/single_model_20260929/round05_scratch_preparation/ using its ops/round05_publication/RESTORE_MAPPING.json. That captures all 82 frozen inputs and 17 external sources, the split audit/repair, CPU/GPU failures, numerical diagnosis, explicit amendment and I/O continuity. Preserve their original absolute server layout and pinned environment.
+
+Then overlay the completion archive's campaign-relative text files under /home/inspur/MTO-1/research/single_model_20260929. The README snapshot belongs at repository README.md. Scientific source manifest remains 66269e04d73943bec48a6331c3ca45a9efcc12045e962fe897da6196af97c5e1. The final report/reproduction instructions distinguish already completed fits, metadata audits and saved-output analysis. Never repeat completed stages as an archival check.
+
+The 52-entry TERMINAL_MANIFEST.files is the public science allowlist. ANALYSIS_RECEIPT.input_hashes and terminal checkpoint/prediction paths are private provenance only: do not resolve those references into archive members. Models, optimizer states, prediction/split/identity arrays and raw data stay private server artifacts. Review and root decision authorize completion publication only, not new training or TEST scoring. Next-direction text is a proposal; the deferred QC design remains in the inherited preparation archive.

@@ -1,0 +1,78 @@
+{
+  "gate": {
+    "threshold": 0.003,
+    "eligible_noncontrol_arms": [],
+    "passed": false,
+    "automatic_extension_authorized": false
+  },
+  "comparisons": {
+    "selected_best": {
+      "control": {
+        "delta_r2_vs_control": 0.0,
+        "descriptive_percentile_interval": [
+          0.0,
+          0.0
+        ]
+      },
+      "adapter": {
+        "delta_r2_vs_control": -0.03214903256135615,
+        "descriptive_percentile_interval": [
+          -0.07860020436512644,
+          0.00753501910156289
+        ]
+      },
+      "decorrelation": {
+        "delta_r2_vs_control": -0.0347702086442746,
+        "descriptive_percentile_interval": [
+          -0.06013971808232073,
+          -0.010733952218984778
+        ]
+      },
+      "both": {
+        "delta_r2_vs_control": -0.02220334785867195,
+        "descriptive_percentile_interval": [
+          -0.050555745066849046,
+          0.0012259886092240047
+        ]
+      }
+    },
+    "fixed60": {
+      "control": {
+        "delta_r2_vs_control": 0.0,
+        "descriptive_percentile_interval": [
+          0.0,
+          0.0
+        ]
+      },
+      "adapter": {
+        "delta_r2_vs_control": -0.001513989000720306,
+        "descriptive_percentile_interval": [
+          -0.02393951633473355,
+          0.019846648792995344
+        ]
+      },
+      "decorrelation": {
+        "delta_r2_vs_control": -0.010678456410849857,
+        "descriptive_percentile_interval": [
+          -0.040390074378043116,
+          0.016983438760445505
+        ]
+      },
+      "both": {
+        "delta_r2_vs_control": -0.00030084143493047666,
+        "descriptive_percentile_interval": [
+          -0.027388581241678055,
+          0.03072675427478015
+        ]
+      }
+    }
+  },
+  "interaction": {
+    "selected_best": 0.0447158933469588,
+    "fixed60": 0.011891603976639686
+  },
+  "output_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/completion/ROUND05_RESULTS.json": "bf6920dd8c883460ecb83db3e44ec3debe98152a3f1521c869a5102b4203eb24",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/completion/ALIGNED_VALIDATION_AND_TRAIN_CURVES.svg": "23cfa4eeb3289380c4d20c8e1bb9beb8f7197a76086e7eb664173eeb2281025f"
+  }
+}

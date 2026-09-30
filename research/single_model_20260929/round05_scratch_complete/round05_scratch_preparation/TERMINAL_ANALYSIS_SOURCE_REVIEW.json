@@ -1,0 +1,29 @@
+{
+  "approved_access": [
+    "CPU checkpoint tensors for committed optimizer/history/config/RNG metadata and exact selected-versus-export tensor equality",
+    "Exact SHA-bound committed selected and fixed60 saved validation arrays; all8 truth and masks compared",
+    "Read-only component/validation-index metadata for chemical-group paired resampling"
+  ],
+  "blocking_findings": [],
+  "checks": [
+    "Every current frozen dependency and completed run contract checked before saved-array analysis",
+    "Pooled raw-f metric is all66860 states; per-state,TRAIN thresholds,bins,energy reconciled against logged records",
+    "Each policy preserves checkpoint identity; no best re-selection or prediction averaging",
+    "Cluster bootstrap samples entire identity components with replacement and recomputes pooled SST; same paired draw applies to all arms",
+    "No new raw label/member reads,model construction,forward pass,fit or TEST access",
+    "Completed analysis receipt prevents automatic repeated complete execution; records saved output/input/source hashes"
+  ],
+  "frozen_training_manifest_sha256": "66269e04d73943bec48a6331c3ca45a9efcc12045e962fe897da6196af97c5e1",
+  "limitations": [
+    "Bootstrap is descriptive conditional validation evidence, uncorrected for checkpoint selection/reused validation/seed uncertainty",
+    "Stored geometry buffer fingerprint is retained; terminal analysis does not reconstruct buffers or repeat preflight",
+    "Process absence/zombie evidence does not observe an OS exit code"
+  ],
+  "passed": true,
+  "phase": "post_terminal_saved_validation_analysis_source_review",
+  "review_basis": "Manual source inspection before science execution; no production source edits, array recomputation or model inference by reviewer.",
+  "source_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/TERMINAL_ANALYSIS_CONFIG.json": "5d574ea32849de3716f053b4695a292aeff189a698df7aa76a097b04b12ae01a",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/terminal_analysis.py": "a38afe4db84c9895c25b67b867795b6002c9b954a8e75028ba6d9152230cb02c"
+  }
+}

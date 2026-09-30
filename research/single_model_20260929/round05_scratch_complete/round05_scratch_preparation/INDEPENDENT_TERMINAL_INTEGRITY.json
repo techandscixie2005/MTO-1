@@ -1,0 +1,129 @@
+{
+  "all_244_validation_history_records_reconciled": true,
+  "all_60_orders_and_steps_matched": true,
+  "all_label_count": 66860,
+  "any_noncontrol_meets_point003_gate": false,
+  "arms": {
+    "adapter": {
+      "attempts": 1,
+      "checkpoint_and_selected_array_opaque_hashes": {
+        "best.pt": "451d566f6cf95a5a21edf7e9c4835ec8b151dc305a3b1ea2002a25f1df7db0bd",
+        "geometry_best.pt": "3f1a89a8d3ea0a2ebc0d2d27805b4a1ed2282b1f674e28b6b6c5a6b07b96db6c",
+        "last.pt": "1c80a1e9c513871d735221c0276d656716fd939413a039393f49a7ea5bad09c1",
+        "selected/epoch_041_1790778034376208709.pt": "451d566f6cf95a5a21edf7e9c4835ec8b151dc305a3b1ea2002a25f1df7db0bd",
+        "selected/predictions_041_1790778034376208709.npz": "2d195bb74c0d41aaaed6b9ba33ef7b71f313c1442d963a844d7fc0f124a39539"
+      },
+      "completed_epoch": 60,
+      "epoch0_r2": -0.06655042341570905,
+      "fixed60_r2": 0.40117794332959755,
+      "geometry_checkpoint_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/runs/adapter/geometry_best.pt",
+      "history_entries": 61,
+      "selected_epoch": 41,
+      "selected_r2": 0.4150203688044959,
+      "steps": 112860,
+      "sum_recorded_epoch_seconds": 9774.29273056984
+    },
+    "both": {
+      "attempts": 1,
+      "checkpoint_and_selected_array_opaque_hashes": {
+        "best.pt": "a8dbe98b6beac5aaf0bc47117d7c1b43f6216264e783365eccc5ed54c2a95d06",
+        "geometry_best.pt": "26fb828684167c491d5dcdbb7b25c3ec67ff0e8e482f0f421dac8fce2a4b9489",
+        "last.pt": "b51d44d84e721a0f7504c0d06283b7ed2486671d080e19f46c1700719187bebf",
+        "selected/epoch_020_1790774700288955290.pt": "a8dbe98b6beac5aaf0bc47117d7c1b43f6216264e783365eccc5ed54c2a95d06",
+        "selected/predictions_020_1790774700288955290.npz": "385c14c1bd97a04692904fc279bfc3db44fe79ee9710021484dde35ec5b04a18"
+      },
+      "completed_epoch": 60,
+      "epoch0_r2": -0.06655042341244544,
+      "fixed60_r2": 0.4023910908953874,
+      "geometry_checkpoint_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/runs/both/geometry_best.pt",
+      "history_entries": 61,
+      "selected_epoch": 20,
+      "selected_r2": 0.4249660535071801,
+      "steps": 112860,
+      "sum_recorded_epoch_seconds": 9891.073929071426
+    },
+    "control": {
+      "attempts": 1,
+      "checkpoint_and_selected_array_opaque_hashes": {
+        "best.pt": "72ad964fedc6eb297d8b36f8ceff71741e7c0d86b51f596700f7a94f18821c27",
+        "geometry_best.pt": "e71c63da8bb3b8214e014ca64946fecab97fbc210cb068c0b1a3eefa3bbf8f1e",
+        "last.pt": "5f09f0ea248e3b66c349419e40904a93fdbe17040dae0e7ba74b5ced6ad44359",
+        "selected/epoch_045_1790778546780975057.pt": "72ad964fedc6eb297d8b36f8ceff71741e7c0d86b51f596700f7a94f18821c27",
+        "selected/predictions_045_1790778546780975057.npz": "0a12c402439af2f38fc7384b6958b45c44d44c01fef9392d987d8c0f7037cc7b"
+      },
+      "completed_epoch": 60,
+      "epoch0_r2": -0.06655042321707327,
+      "fixed60_r2": 0.40269193233031786,
+      "geometry_checkpoint_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/runs/control/geometry_best.pt",
+      "history_entries": 61,
+      "selected_epoch": 45,
+      "selected_r2": 0.44716940136585204,
+      "steps": 112860,
+      "sum_recorded_epoch_seconds": 9566.682570934296
+    },
+    "decorrelation": {
+      "attempts": 1,
+      "checkpoint_and_selected_array_opaque_hashes": {
+        "best.pt": "da5a6def4c549a3158e9ef4d0b793ee2f2f624792034e72391501feb43f872ec",
+        "geometry_best.pt": "4261ca68cca693305c44ed00073d9890793436dad71f765752a022f093dc4cae",
+        "last.pt": "618bb2ec1ca1d457594b2be1191cecbd1b70d1de6b852dae71a7898dcdd4322b",
+        "selected/epoch_023_1790774975470220520.pt": "da5a6def4c549a3158e9ef4d0b793ee2f2f624792034e72391501feb43f872ec",
+        "selected/predictions_023_1790774975470220520.npz": "5afad2451ae9e271b7ff30dc866747931256167232c5cd0392b7d6d6bdda72dd"
+      },
+      "completed_epoch": 60,
+      "epoch0_r2": -0.06655042333247319,
+      "fixed60_r2": 0.392013475919468,
+      "geometry_checkpoint_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/runs/decorrelation/geometry_best.pt",
+      "history_entries": 61,
+      "selected_epoch": 23,
+      "selected_r2": 0.41239919272157743,
+      "steps": 112860,
+      "sum_recorded_epoch_seconds": 9455.870720386505
+    }
+  },
+  "array_or_checkpoint_tensor_values_decoded": false,
+  "blocking_findings": [],
+  "current_frozen_files_verified": 82,
+  "frozen_manifest_sha256": "66269e04d73943bec48a6331c3ca45a9efcc12045e962fe897da6196af97c5e1",
+  "inference_or_fit_rerun": false,
+  "input_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/FROZEN_MANIFEST.json": "66269e04d73943bec48a6331c3ca45a9efcc12045e962fe897da6196af97c5e1",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/PRODUCTION_EXECUTION_AUTHORIZATION.json": "07308b113557d2196cefc951a603f3f1a5093009eaae1576412f1e393bb8162c",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/runs/adapter/BEST.json": "dbc851cc3dd09d8ae3d2cfc6d573979683c965e75531c62de0311acc87be5ad7",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/runs/adapter/DATA_ACCESS.json": "e586c57d2f7576d3c407f4d053d0995f62ad46d68e6b07247986ae9366a41b9c",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/runs/adapter/FIT_COMPLETE.json": "1c7277b56ce99df25747f2080733f64834bfd30cc35acc75604e382500d3770b",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/runs/adapter/attempts/round05_adapter_1790771316605474432/LAUNCH_RECEIPT.json": "4be4ee31101609e4e4a155771e41ebe15c3e21204f5a3ff872e5ae9d136fe963",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/runs/adapter/history.jsonl": "4996a5cabf1fd0e0257b0a312c518076fcbe18e12a13d588d1dbf8493acaed3d",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/runs/adapter/status.json": "3a56c79ea52ad84eff31018df8218a8e81e0c51a87148fa02e2dfe673fc24b6b",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/runs/both/BEST.json": "e29cd991f178f5d7e5d471bba20c534c47364b0a250e6f1bf237935e3ebff36d",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/runs/both/DATA_ACCESS.json": "e586c57d2f7576d3c407f4d053d0995f62ad46d68e6b07247986ae9366a41b9c",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/runs/both/FIT_COMPLETE.json": "6f4a48ffc01a96884b91d02e1553bb3d01f2963c7840638ea42a07d3d543cdd0",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/runs/both/attempts/round05_both_1790771317058319159/LAUNCH_RECEIPT.json": "488f9c109164988c04ecc33ecfd8ea714de331b0ec81e3dcc2f47fcb515e6ffb",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/runs/both/history.jsonl": "442eacd808c73ee90db3e73d0063bab9e23dda52ada004d16841e74c62432b31",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/runs/both/status.json": "d6b35ef569dd652eee441f54b86a99a2b8e84163a0cbb0bb140de28e452a52e9",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/runs/control/BEST.json": "bfd089d312513fc5973312d9b21fc7fcac606be49af2875cd66febad3d876443",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/runs/control/DATA_ACCESS.json": "e586c57d2f7576d3c407f4d053d0995f62ad46d68e6b07247986ae9366a41b9c",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/runs/control/FIT_COMPLETE.json": "4e445df5c4a184cd4536a67c4af2359ff383241d4b59de1dc6063181dea41aaa",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/runs/control/attempts/round05_control_1790771316371909087/LAUNCH_RECEIPT.json": "32065a00ec955ad827482b97f611cc92df3bb6e20041062565bfdcd87dd6cc80",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/runs/control/history.jsonl": "1a80b04059ef569f71713d72ecac1178ce7c5206e9918c5e43da414a5d3870ac",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/runs/control/status.json": "b7c598c02d8747e94673a9357d381a1d4235bdd76d4d6302a398eb029e96c9aa",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/runs/decorrelation/BEST.json": "4fe0a77965886a1fb8110afacb347850d15b5c0f712f36d373fd3a0e6757fa92",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/runs/decorrelation/DATA_ACCESS.json": "e586c57d2f7576d3c407f4d053d0995f62ad46d68e6b07247986ae9366a41b9c",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/runs/decorrelation/FIT_COMPLETE.json": "5ece63f9b9812859cb05ce8dae93c7c196aaca1c79458f1bcd33e66011bf198e",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/runs/decorrelation/attempts/round05_decorrelation_1790771316835845292/LAUNCH_RECEIPT.json": "bab8b80d443f77bc4f96c09dd92ea942c862de619fc052b08cf15097a5c56430",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/runs/decorrelation/history.jsonl": "9c56588f40edd0c0873b892649ef1dc28ecb85c5e1b9b9a40a9aea7e05e59398",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/runs/decorrelation/status.json": "408831325ffccd15758937be01d92136ac75b9546d6165ac8c34bc54b74abf7a"
+  },
+  "passed": true,
+  "phase": "independent_terminal_metadata_and_hash_review",
+  "pooled_sst_from_history_consistent": 175.47856773304875,
+  "reviewer_script_sha256": "785a94927e21cbafd654acd01a282651721097332579cd4ebca6d390696ae10a",
+  "saved_array_metric_recomputation": "Reserved to science analysis; pending independent source/result review.",
+  "selected_deltas_vs_control": {
+    "adapter": -0.03214903256135615,
+    "both": -0.02220334785867195,
+    "decorrelation": -0.0347702086442746
+  },
+  "terminal_process_exit_evidence": "Separate owned-monitor receipt; this check does not infer OS exit status from absent PIDs.",
+  "test_numeric_rows": 0
+}

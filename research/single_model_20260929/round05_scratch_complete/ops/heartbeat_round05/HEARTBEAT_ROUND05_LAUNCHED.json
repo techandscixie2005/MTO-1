@@ -1,0 +1,22 @@
+{
+  "updated_at_utc": "2026-09-30T12:35:17.397627+00:00",
+  "id": "qm9s-e-a",
+  "kind": "heartbeat",
+  "status": "ACTIVE",
+  "rrule": "FREQ=HOURLY;INTERVAL=4",
+  "target_thread_id": "01a0edd8-8c03-75d1-aeb0-953f11af6433",
+  "changed_fields": [
+    "prompt",
+    "updated_at"
+  ],
+  "matching_automation_count": 1,
+  "no_duplicate_created": true,
+  "notification_and_schedule_fields_unchanged": true,
+  "before_sha256": "484f6cefe089592099491029654638895d43c6c46000e845d375496965ccd6f0",
+  "after_sha256": "5cc09617775a4932a76534528ac7ca208f504a47a4ee3a374c788b36fee721c6",
+  "prompt_sha256": "6954f99abc5e2ac7d32606734508c3ddcbe7c9ba7707784b68e498bc1856e611",
+  "tool": "mcp__codex_app__automation_update",
+  "official_documentation": "https://developers.openai.com/training/walkthroughs/scheduled-tasks",
+  "current_publication": "9de80e37e1586c2d3068b188ed2c242ee9883147",
+  "startup_receipt_sha256": "0ba8a3784e8386b78218372a56613b8b5b5316c90d6dc63bb363755b3e7e11cb"
+}

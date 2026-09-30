@@ -1,0 +1,18 @@
+{
+  "all8_reported_metric_groups_match_independent_history_audit": true,
+  "all_trajectory_snapshots_and_gate_arithmetic_match": true,
+  "analysis_receipt_sha256": "31bc94680894143e8171033e80f6fe3de5e65bc986ffd74462bc66ea08a7fd88",
+  "analysis_result_sha256": "bf6920dd8c883460ecb83db3e44ec3debe98152a3f1521c869a5102b4203eb24",
+  "analysis_source_review_sha256": "b1ffea47c33c04ad6499e8c64fa6d54c55f2f16bf3b67e245f76f5532c2f1ec3",
+  "any_noncontrol_meets_point003_gate": false,
+  "blocking_findings": [],
+  "bootstrap_not_recomputed_by_reviewer": true,
+  "bootstrap_review": "Source formula/resampling-unit and aggregate receipt review; conditional reused-validation uncertainty, not training-seed or selection-corrected uncertainty.",
+  "checkpoint_and_prediction_files_opaque_hashed_only_by_reviewer": true,
+  "no_array_decoding_or_model_inference_or_fitting_by_reviewer": true,
+  "passed": true,
+  "phase": "completed_saved_analysis_independent_aggregate_review",
+  "reviewer_script_sha256": "d426309b59587700c762ea70daeb0986710065b82219ede7a1c1bc6c65916839",
+  "source_input_output_hashes_verified": 54,
+  "terminal_integrity_sha256": "417950cf018f00cf40295eacf5f132cdb7d02a078a48749f5c1ae90fd18004ce"
+}

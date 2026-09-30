@@ -1,0 +1,26 @@
+{
+  "id": "round05_adapter_1790771316605474432",
+  "registered_at_utc": "2026-09-30T12:28:36.653653+00:00",
+  "identity": {
+    "pid": 1328598,
+    "start_ticks": 1261898136,
+    "uid": 1000,
+    "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation",
+    "argv_sha256": "21e4d3079d2410e6947f151bf4feb62bd1538d0e68e1f4ba3ead100d58d84f10",
+    "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+    "process_state": "R"
+  },
+  "run_dir": "round05_scratch_preparation/runs/adapter",
+  "gpu_uuid": "GPU-cb4dc1ea-9ea3-e426-bdeb-df0bef8a23fa",
+  "status_path": "round05_scratch_preparation/runs/adapter/status.json",
+  "log_path": "round05_scratch_preparation/runs/adapter/attempts/round05_adapter_1790771316605474432/train.log",
+  "completion_path": "round05_scratch_preparation/runs/adapter/FIT_COMPLETE.json",
+  "failure_path": "round05_scratch_preparation/runs/adapter/FAILED.json",
+  "checkpoint_paths": [
+    "round05_scratch_preparation/runs/adapter/last.pt",
+    "round05_scratch_preparation/runs/adapter/best.pt"
+  ],
+  "stale_after_seconds": 28800,
+  "monitor": true,
+  "restart_policy": "coordinator_review_required"
+}
