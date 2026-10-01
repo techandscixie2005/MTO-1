@@ -1,0 +1,19 @@
+{
+  "id": "qm9s-e-a",
+  "status": "ACTIVE",
+  "rrule": "FREQ=HOURLY;INTERVAL=4",
+  "target_thread_id": "01a0edd8-8c03-75d1-aeb0-953f11af6433",
+  "only_prompt_and_updated_at_changed": true,
+  "updated_using_app_tool": true,
+  "matching_active_heartbeat_count": 1,
+  "before_sha256": "ded896cdb39ed134b648b15d606412ebd9c487c413cd8fae16e7a4cfc2d6f18a",
+  "after_sha256": "4acfab73f0242d391783b599a434154669d9563fe760f526fc09424738e731dd",
+  "authorization_sha256": "2c6c7f75993719fb5386df162248461cd7355bd2f033ae0bfd2848c146d9d41c",
+  "startup_receipt_sha256": "04890f7236db1a50ba13663401ccf7f2c4805889e1e45a4d92f494a40f7a1f9f",
+  "active_owned_arms": [
+    "trace_control",
+    "raw_f"
+  ],
+  "fixed_epochs": 60,
+  "no_extension_seed_or_test_authority": true
+}

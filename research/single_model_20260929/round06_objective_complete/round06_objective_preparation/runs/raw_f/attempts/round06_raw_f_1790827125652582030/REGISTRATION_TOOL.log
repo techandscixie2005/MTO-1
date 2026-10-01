@@ -1,0 +1,26 @@
+{
+  "id": "round06_raw_f_1790827125652582030",
+  "registered_at_utc": "2026-10-01T03:58:45.698056+00:00",
+  "identity": {
+    "pid": 1450633,
+    "start_ticks": 1267479041,
+    "uid": 1000,
+    "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation",
+    "argv_sha256": "70da63ada91ea2c4c161edee21e6ed2e59d08e5ef4914fc3f55686978f7976bd",
+    "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+    "process_state": "R"
+  },
+  "run_dir": "round06_objective_preparation/runs/raw_f",
+  "gpu_uuid": "GPU-cb4dc1ea-9ea3-e426-bdeb-df0bef8a23fa",
+  "status_path": "round06_objective_preparation/runs/raw_f/status.json",
+  "log_path": "round06_objective_preparation/runs/raw_f/attempts/round06_raw_f_1790827125652582030/train.log",
+  "completion_path": "round06_objective_preparation/runs/raw_f/FIT_COMPLETE.json",
+  "failure_path": "round06_objective_preparation/runs/raw_f/FAILED.json",
+  "checkpoint_paths": [
+    "round06_objective_preparation/runs/raw_f/last.pt",
+    "round06_objective_preparation/runs/raw_f/best.pt"
+  ],
+  "stale_after_seconds": 28800,
+  "monitor": true,
+  "restart_policy": "coordinator_review_required"
+}

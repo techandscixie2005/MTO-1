@@ -1,0 +1,101 @@
+{
+  "passed": true,
+  "checked_unix": 1790827444.028115,
+  "scope": "read_only_committed_checkpoint_metadata",
+  "script_sha256": "4a2499f3550c005eb1b9951f1a3577764d9126ec42bbe1aaa436a12c40e75bb9",
+  "manifest_sha256": "4f1908d8f83c7a4622a8aadb511305da93465f8e29af3203327981c3c739d52b",
+  "authorization_sha256": "2c6c7f75993719fb5386df162248461cd7355bd2f033ae0bfd2848c146d9d41c",
+  "arms": {
+    "trace_control": {
+      "observed_identity": {
+        "pid": 1450628,
+        "start_ticks": 1267479018,
+        "uid": 1000,
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation",
+        "argv_sha256": "655691488b26c001c1212de5adc19cb953ac643e8773444c364cea6c6752918c",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "process_state": "R"
+      },
+      "launch_receipt_sha256": "89aa0d8fe62b92501de95dfb25481d595527a56a649d08beba0cda1221267c16",
+      "observed_completed_epoch": 1,
+      "committed_steps": 1881,
+      "read_last_checkpoint_sha256": "85ba16e95a6659255774e636a8ad24910ad01d068a1fef4e12f3bee456aa0947",
+      "read_last_checkpoint_bytes": 25232128,
+      "optimizer_state_entries": 135,
+      "optimizer_step_values": [
+        1881
+      ],
+      "rng_keys": [
+        "cuda",
+        "numpy",
+        "order",
+        "python",
+        "torch"
+      ],
+      "best": {
+        "epoch": 1,
+        "sse": 142.04976763969304,
+        "r2": 0.19050075758659113,
+        "checkpoint": "selected/epoch_001_1790827296945912351.pt",
+        "predictions": "selected/predictions_001_1790827296945912351.npz",
+        "predictions_sha256": "5d87d7b294f9b9e703f5531af9fa9ce5e905c72069027f5fcf33c4c2510b11d4",
+        "checkpoint_sha256": "1c54ec3d666624d6b6a01064ecc611c67f1c7472df839b4773866a5c372852ab"
+      },
+      "first_epoch_seconds": 155.429607629776,
+      "epoch0_r2": -0.0665504232755938,
+      "first_epoch_r2": 0.19050075758659113,
+      "all_observed_order_hashes_match": true,
+      "data_access_sha256": "e586c57d2f7576d3c407f4d053d0995f62ad46d68e6b07247986ae9366a41b9c",
+      "train_and_validation_ledgers_match_exact_partitions": true,
+      "test_numeric_rows": 0
+    },
+    "raw_f": {
+      "observed_identity": {
+        "pid": 1450633,
+        "start_ticks": 1267479041,
+        "uid": 1000,
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation",
+        "argv_sha256": "70da63ada91ea2c4c161edee21e6ed2e59d08e5ef4914fc3f55686978f7976bd",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "process_state": "R"
+      },
+      "launch_receipt_sha256": "bf32d3f9e0823f820796d9f8dc18c4a23648c5f952b42a1d10a383c17a8f2447",
+      "observed_completed_epoch": 1,
+      "committed_steps": 1881,
+      "read_last_checkpoint_sha256": "a6b11e274bf58bd2e53bb8d182d22e73a6299251c8ce52bca44ec7e89aa50adb",
+      "read_last_checkpoint_bytes": 25232128,
+      "optimizer_state_entries": 135,
+      "optimizer_step_values": [
+        1881
+      ],
+      "rng_keys": [
+        "cuda",
+        "numpy",
+        "order",
+        "python",
+        "torch"
+      ],
+      "best": {
+        "epoch": 1,
+        "sse": 141.0127304121803,
+        "r2": 0.19641052332556364,
+        "checkpoint": "selected/epoch_001_1790827303627160585.pt",
+        "predictions": "selected/predictions_001_1790827303627160585.npz",
+        "predictions_sha256": "e7db60b6a681f191749fb058d8597a26379fd1be79631d0e71b64f2c76b20fa6",
+        "checkpoint_sha256": "b410cab37fdf7b4f00c5fb7aa410d73a1a6391d824edea4bc24f4de8443e31f9"
+      },
+      "first_epoch_seconds": 160.6291468143463,
+      "epoch0_r2": -0.06655042323799143,
+      "first_epoch_r2": 0.19641052332556364,
+      "all_observed_order_hashes_match": true,
+      "data_access_sha256": "e586c57d2f7576d3c407f4d053d0995f62ad46d68e6b07247986ae9366a41b9c",
+      "train_and_validation_ledgers_match_exact_partitions": true,
+      "test_numeric_rows": 0
+    }
+  },
+  "model_constructed": false,
+  "model_inference": false,
+  "raw_target_arrays_opened": false,
+  "checkpoint_tensors_loaded_on_cpu_only": true,
+  "production_files_modified": false
+}

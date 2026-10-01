@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "scope": "round06_terminal_saved_validation_analysis_source_only",
+  "source_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/terminal_analysis.py": "75939c1b43a1a299efb132a1b7e8529831782b068f1b2d21a580d38a5e98c10e",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/TERMINAL_ANALYSIS_CONFIG.json": "633b8751c12c5bac772736e0da4fca647dfc0b5d220ef573550bc839f6822f85"
+  },
+  "local_server_bytes_match": true,
+  "no_model_checkpoint_or_prediction_arrays_read_by_reviewer": true,
+  "planned_execution": "Single CPU saved-output analysis; four committed validation arrays and CPU checkpoint payloads, no model construction/inference or raw dataset/test targets.",
+  "checks": [
+    "Unchanged134-source production authorization gate and terminal60/112860/history/order/initial/config bindings",
+    "Earliest pooled-SSE selection and exact selected/fixed60 checkpoint/prediction hashes",
+    "Geometry export tensors equal selected state, stored buffer fingerprint format; no claim of new buffer reconstruction",
+    "Actual saved optimizer group/betas/eps/AMSGrad/LR/weight decay and RNG categories",
+    "All66860labels and tenstates, true bright tails and complete true/pred brightness bins",
+    "FP64 SSE/SST metrics with identical truth/masks across four saved outputs",
+    "Seed20260930/2000 component-paired bootstrap with resampled pooled SST, conditional on selected reused validation",
+    "Published retained-reference aggregate hash only; no reference prediction reload or false paired interval",
+    "Dual+.003 candidate rule vs current control and retained.447169401, no changed selection or promotion",
+    "Immutable analysis receipt refusal and final input/source/output hashes"
+  ],
+  "interpretation_limits": [
+    "No seed confirmation or causal mechanism follows from this single-seed objective contrast.",
+    "Repeated control difference reflects realized same-declared-recipe variation; any operational/source differences are documented without assigning a cause.",
+    "Bootstrap excludes training-seed and checkpoint-selection uncertainty."
+  ],
+  "new_fit_test_or_extension_authorized": false
+}

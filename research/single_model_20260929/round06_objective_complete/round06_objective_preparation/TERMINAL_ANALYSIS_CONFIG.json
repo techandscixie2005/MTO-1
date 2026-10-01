@@ -1,0 +1,22 @@
+{
+  "scope": "round06_saved_validation_outputs_and_published_reference_aggregates_only",
+  "policies": ["selected_best", "fixed60"],
+  "bootstrap_seed": 20260930,
+  "bootstrap_draws": 2000,
+  "bootstrap_unit": "audited identity component within validation",
+  "bootstrap_interval_percentiles": [2.5, 97.5],
+  "uncertainty_limit": "Post-training descriptive paired validation uncertainty; not corrected for checkpoint selection, reused validation or training-seed variability.",
+  "error_quantiles": [0.5, 0.9, 0.99, 0.999, 1.0],
+  "top_error_fraction": 0.01,
+  "model_inference": false,
+  "test_access": false,
+  "raw_dataset_target_access": false,
+  "selection_or_promotion_change": false,
+  "retained_reference": {
+    "path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/completion/ROUND05_RESULTS.json",
+    "sha256": "bf6920dd8c883460ecb83db3e44ec3debe98152a3f1521c869a5102b4203eb24",
+    "arm": "control",
+    "policy": "selected_best",
+    "r2": 0.44716940136585204
+  }
+}

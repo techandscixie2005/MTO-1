@@ -1,0 +1,62 @@
+{
+  "gate": {
+    "threshold": 0.003,
+    "candidate": "raw_f",
+    "candidate_delta_r2_vs_contemporaneous_control": 0.017230600141614705,
+    "candidate_delta_r2_vs_retained_reference": -0.02514123395167256,
+    "passes_contemporaneous_comparison": true,
+    "passes_retained_reference_comparison": false,
+    "passed": false,
+    "eligible_arms": [],
+    "automatic_extension_authorized": false,
+    "automatic_seed_allocation_authorized": false
+  },
+  "comparisons": {
+    "selected_best": {
+      "trace_control": {
+        "delta_r2_vs_control": 0.0,
+        "descriptive_percentile_interval": [
+          0.0,
+          0.0
+        ]
+      },
+      "raw_f": {
+        "delta_r2_vs_control": 0.017230600141614705,
+        "descriptive_percentile_interval": [
+          -0.028419090440308197,
+          0.07010811974466859
+        ]
+      }
+    },
+    "fixed60": {
+      "trace_control": {
+        "delta_r2_vs_control": 0.0,
+        "descriptive_percentile_interval": [
+          0.0,
+          0.0
+        ]
+      },
+      "raw_f": {
+        "delta_r2_vs_control": 0.004607269901251265,
+        "descriptive_percentile_interval": [
+          -0.029977165314652877,
+          0.0392431967747609
+        ]
+      }
+    }
+  },
+  "reference_deltas": {
+    "selected_best": {
+      "trace_control": -0.042371834093287264,
+      "raw_f": -0.02514123395167256
+    },
+    "fixed60": {
+      "trace_control": -0.05811718517010023,
+      "raw_f": -0.05350991526884896
+    }
+  },
+  "output_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/completion/ROUND06_RESULTS.json": "e82562e570caa25f53cd2f7ce5b7ad1324a4270129ff9d8286d1a454beeb840c",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/completion/ALIGNED_VALIDATION_AND_TRAIN_CURVES.svg": "31482c7f43e48033fbc988a381d39b35c4cf2c68fb5e953447c77ac337e41dc0"
+  }
+}

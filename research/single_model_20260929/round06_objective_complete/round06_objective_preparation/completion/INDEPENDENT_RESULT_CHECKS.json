@@ -1,0 +1,27 @@
+{
+  "analysis_input_hashes_independently_rechecked": 31,
+  "conditional_component_intervals_include_zero_selected_and_fixed60": true,
+  "dual_allocation_gate_passed": false,
+  "input_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/TERMINAL_ANALYSIS_SOURCE_REVIEW.json": "c0b7c6e0b4725bd6de3f4d2748980220d8eac819347a101304880296a86a0b4b",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/completion/ANALYSIS_RECEIPT.json": "97fbf0625a5734021d27df57fd14565107ca6084340fcf18677ec04809125413",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/completion/CONTROL_REPEAT_CONTEXT.md": "f49ae5790f12837f91ce85a02b8439a550168ff805c0e78e573f7185b2a07abe",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/completion/INDEPENDENT_TERMINAL_METADATA.json": "91d3b8f9256373d4c077b10627fceb02f69704189f6cc2d808eeb7d068034c35",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/completion/ROUND06_RESULTS.json": "e82562e570caa25f53cd2f7ce5b7ad1324a4270129ff9d8286d1a454beeb840c",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/independent_terminal_results.py": "5935269c115722b6b185cbcd14a448dc05fd2c095f4c73fa11cb706dcc0fb079"
+  },
+  "no_new_seed_or_extension_or_TEST_authorized": true,
+  "no_repeated_inference_or_saved_array_reduction": true,
+  "passed": true,
+  "private_inputs_hashed_opaquely_only_never_decoded": true,
+  "scope": "independent_source_receipt_and_aggregate_result_review",
+  "selected_delta_r2_vs_control": 0.017230600141614705,
+  "selected_delta_r2_vs_retained_reference": -0.02514123395167256,
+  "selected_raw_f_improves_states_vs_current_control": [
+    7,
+    8,
+    9
+  ],
+  "selected_raw_f_reduces_false_bright_SSE_vs_control": true,
+  "selected_raw_f_worsens_MAE_energy_and_true_bright_tails_vs_control": true
+}

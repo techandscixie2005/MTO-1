@@ -1,0 +1,19 @@
+{
+  "authorized": true,
+  "scope": "round06_two_arm_60epoch_fit",
+  "epochs": 60,
+  "arms": [
+    "trace_control",
+    "raw_f"
+  ],
+  "test_access": false,
+  "historical_weights": false,
+  "frozen_manifest_sha256": "4f1908d8f83c7a4622a8aadb511305da93465f8e29af3203327981c3c739d52b",
+  "split_manifest_sha256": "c8ce66ddb7209005b5feebfcddfc2bc30ee81d92fe63cce20f15c4abf3a07155",
+  "independent_split_verification_sha256": "395d415f854ed6948c4d7a11c0c1d7486193bb48f23bae76834a77148cc69ae2",
+  "independent_review_sha256": "8d2dd32e954f533bdcdf298693b7d2c457eef5fb123824c3eeaddf026e33a986",
+  "publication_receipt": "/home/inspur/MTO-1/research/single_model_20260929/ops/ROUND06_PREPARATION_PUBLICATION_RECEIPT.json",
+  "publication_receipt_sha256": "43d63a5d6bd1bbd7d4f8b20fc8b0579511f9920a16987a4b2d2366a2000ec07a",
+  "decision_owner": "root",
+  "conditions": "Exact frozen two-arm60epoch protocol only; fresh GPU1/2 health/UUID admission, exclusive shared locks and owned registration. Science sole executor. No TEST access, extra seeds, extension, averaging or reuse of technical states. Preserve resumable checkpoints and diagnose genuine failures before explicit recovery."
+}

@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "scope": "read_only_first_epoch_inspector_source_continuity",
+  "source_sha256": "4a2499f3550c005eb1b9951f1a3577764d9126ec42bbe1aaa436a12c40e75bb9",
+  "previous_source_sha256": "fc9b0d63971ed89f7bba612a24563d4b62c0857ee91cbc5bb39adee4b41079fa",
+  "exact_changes": [
+    "arm tuple control/adapter/decorrelation/both becomes trace_control/raw_f",
+    "round05_resumable_v1 becomes round06_resumable_v1"
+  ],
+  "local_server_source_bytes_match": true,
+  "existing_source_syntax_valid": true,
+  "checkpoint_or_data_access_by_reviewer": false,
+  "model_inference_by_reviewer": false,
+  "inspector_scope": "CPU-load one committed last.pt inode per arm for metadata/optimizer/RNG/order/source/ledger checks; opaque prediction/best hashes only; no model construction or raw target arrays; single output refusal prevents repeat.",
+  "preserved_guards": [
+    "Empty CUDA and two-thread environment",
+    "Exact production authorization and full source closure",
+    "Both histories committed epoch>=1",
+    "Original owned active process identity and one launch attempt",
+    "No prior completed inspection output",
+    "All validation counts66860 and exact partition ledgers, no TEST rows"
+  ],
+  "production_fit_sources_modified": false,
+  "new_fit_or_inference_authorized_by_review": false
+}
