@@ -1,0 +1,128 @@
+{
+  "arrays": {
+    "component_index.npy": {
+      "archive_allowed": false,
+      "content_sha256": "85debdea2d2865f0ae93d9ee0b8330c1cbaff18ed015af6165def9350a3f8a6c",
+      "dtype": "int64",
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930/private_partition/component_index.npy",
+      "sha256": "483d373c5ace2e00f9123f73f7068a05221a2e1bb14ba1333f6b91cd1d4352a4",
+      "shape": [
+        133727
+      ]
+    },
+    "ids.npy": {
+      "archive_allowed": false,
+      "content_sha256": "4ee6dd8067367bf5431aa5428b590ab09edbdca73157c0cb783d02c418d92a80",
+      "dtype": "int64",
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930/private_partition/ids.npy",
+      "sha256": "059aeb452f3e8128a82a21f1fa5b755ffb84ec5376b7a27f3677e34254adbd18",
+      "shape": [
+        133727
+      ]
+    },
+    "test_indices.npy": {
+      "archive_allowed": false,
+      "content_sha256": "91e4a8ab85e5ef064189f03bc4332f8aada453caca95312208e69811ceac4d47",
+      "dtype": "int64",
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930/private_partition/test_indices.npy",
+      "sha256": "c5c65be9219a4c8c3d797dd19bde006b25459e2d5e50d425a32737ef6cad3692",
+      "shape": [
+        6686
+      ]
+    },
+    "train_indices.npy": {
+      "archive_allowed": false,
+      "content_sha256": "3a45ef8d8878106644668f6a49e9333c9a95711c73c41c75cf9c206be056b2ea",
+      "dtype": "int64",
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930/private_partition/train_indices.npy",
+      "sha256": "8ff3ca690cf63051701d66c3dd438228457bc3b4d7b92fa5511bd943de1176cc",
+      "shape": [
+        120355
+      ]
+    },
+    "train_only_mask.npy": {
+      "archive_allowed": false,
+      "content_sha256": "25e27d1cb2cb01e88ba96de762db8fe263be15340896c1c4ca038c37561787b3",
+      "dtype": "bool",
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930/private_partition/train_only_mask.npy",
+      "sha256": "7911c116f1f7091f39ac817e4a825c728acd081d05aaa53bb6d68cb5bfafb8b4",
+      "shape": [
+        133727
+      ]
+    },
+    "val_indices.npy": {
+      "archive_allowed": false,
+      "content_sha256": "d6622068bd30e7060df11638b64c60e565189d3c2ce4375172e9892e9e0bfd7b",
+      "dtype": "int64",
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930/private_partition/val_indices.npy",
+      "sha256": "be13afee03e4e72418b3979040c765cd94ee02c8a1b220cc87d83e08d7d239fb",
+      "shape": [
+        6686
+      ]
+    }
+  },
+  "corpus_audit_sha256": "644b6e6d5e2c7af1b2a6f234715a8d5acdaed9d596f746eba9f897c539f45a1c",
+  "counts": {
+    "test": 6686,
+    "train": 120355,
+    "val": 6686
+  },
+  "disjointness": {
+    "all_rows_once": true,
+    "ambiguous_components_train_only": true,
+    "cross_partition_geometry_pairs": 0,
+    "cross_partition_heavy_formula_keys": 0,
+    "cross_partition_original_keys": 0,
+    "pairwise_overlap": {
+      "train__test": {
+        "components": 0,
+        "ids": 0,
+        "rows": 0
+      },
+      "train__val": {
+        "components": 0,
+        "ids": 0,
+        "rows": 0
+      },
+      "val__test": {
+        "components": 0,
+        "ids": 0,
+        "rows": 0
+      }
+    }
+  },
+  "materialization_review_sha256": "9daba00d6855795bcd961c8ea91c484572d931f471832f5b848d32b51fcde250",
+  "old_exposure_intersections": {
+    "test": {
+      "old_inner_calibration": 1138,
+      "old_inner_fit": 4851,
+      "old_test": 336,
+      "old_train": 5989,
+      "old_val": 361
+    },
+    "train": {
+      "old_inner_calibration": 21721,
+      "old_inner_fit": 86598,
+      "old_test": 6032,
+      "old_train": 108319,
+      "old_val": 6004
+    },
+    "val": {
+      "old_inner_calibration": 1212,
+      "old_inner_fit": 4835,
+      "old_test": 318,
+      "old_train": 6047,
+      "old_val": 321
+    }
+  },
+  "old_splits_unchanged": true,
+  "partition_name": "qm9s_group_v2_seed20260930",
+  "passed": true,
+  "private_identity_signatures": {
+    "archive_allowed": false,
+    "path": "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930/private_partition/identity_components.json",
+    "sha256": "ebcd760f24e55638d1d9dd4736d2c1aefb2dc065f00957299a0524c67c0b6331"
+  },
+  "source_manifest_sha256": "2bcd4d256179ad99f6b88b34f50bba1a99facc9389a6438535662410c6783a38",
+  "targets_decoded": false
+}

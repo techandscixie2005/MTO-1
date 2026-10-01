@@ -1,0 +1,12 @@
+{
+  "seed": 11,
+  "model": "mto",
+  "states": 10,
+  "mto_channels": 16,
+  "query_dim": 32,
+  "router_hidden": 128,
+  "head_hidden": 128,
+  "initial_energy_min_eV": 2.0,
+  "initial_energy_max_eV": 13.0,
+  "sigma_eV": 0.2
+}

@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "stage": "metadata_only_preparation_freeze",
+  "exit_code": 0,
+  "frozen_manifest_sha256": "68c052e909d0fcbe1671084edf7de1968f81f8f5e333bbfc2431fe3181c8c203",
+  "source_files": 185,
+  "working_directory": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation",
+  "command": ["/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/bin/python", "freeze_preparation.py"],
+  "environment": {"CUDA_VISIBLE_DEVICES": "", "OMP_NUM_THREADS": "2", "MKL_NUM_THREADS": "2", "PYTHONUNBUFFERED": "1"},
+  "model_inference": false,
+  "target_numeric_decoding": false,
+  "optimizer_updates": 0,
+  "production_authorized": false,
+  "stdout": "{'files': 185, 'manifest_sha256': '68c052e909d0fcbe1671084edf7de1968f81f8f5e333bbfc2431fe3181c8c203'}"
+}

@@ -1,0 +1,23 @@
+{
+  "additional_model_inference": false,
+  "additional_optimizer_updates": 0,
+  "blocking_findings": [],
+  "checks_sha256": "9368c40972d72a661e06b482a43c1adeacab3b5685b040cdc278fd7200b350b6",
+  "executed_source_sha256": "17d2bb266704bb4a747d3b11b3ff0789f68e2bc5835230a45220d93a3f0bca76",
+  "final_closure_requirements": [
+    "Bind final training.py plus preserved executed snapshot, exact mapping, this review, independent_io_continuity.py and IO_CONTINUITY_CHECKS.json.",
+    "Retain every original preflight receipt unchanged. All mismatches outside this exact reviewed mapping remain fatal."
+  ],
+  "final_source_sha256": "c0147d25cf2a2b6cd0956a57bfcab069657618bc22712efa29feb1b6a9533cdd",
+  "freezer_exception_function_ast_sha256": "d3e9164cb8d96aef8b32cb9849da9094223edb29bcfffa389899250983916058",
+  "mapping_sha256": "f0b3af59de54885c849db25b31e72083e70a9fc03cd64ca337cff5e2d7067382",
+  "numerical_preflight_reexecution_required": false,
+  "passed": true,
+  "phase": "io_only_source_continuity_review",
+  "preserved_executed_source_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/io_continuity/training_executed.py",
+  "production_fit_authorized": false,
+  "review_basis": "Exact text diff and independent AST checks. Only two parent-directory fsync append blocks changed; every other training.py AST node is identical. Freezer mismatch exception inspected and limited to this exact source path, executed digest, preserved snapshot and final digest, with mapping-bound independent approval. No I/O runtime or scientific check rerun.",
+  "reviewer_script_sha256": "ead199501de254c6380c96f53172610ea4e8f9fe575a0f117f622d574bf89c5f",
+  "scientific_objective_step_selection_and_rng_unchanged": true,
+  "target_access": false
+}

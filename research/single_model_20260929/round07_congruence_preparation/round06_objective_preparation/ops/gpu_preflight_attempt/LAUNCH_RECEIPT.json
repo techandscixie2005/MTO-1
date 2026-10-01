@@ -1,0 +1,36 @@
+{
+  "child_identity": {
+    "argv_sha256": "c60c3f09965826f15d3288de747ca255765c316a8ccd8f2418071d496c90f38a",
+    "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+    "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation",
+    "pid": 1391707,
+    "process_state": "R",
+    "start_ticks": 1264696035,
+    "uid": 1000
+  },
+  "child_pid": 1391707,
+  "command": [
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/bin/python",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/gpu_preflight.py"
+  ],
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+    "MKL_NUM_THREADS": "2",
+    "OMP_NUM_THREADS": "2",
+    "PYTHONUNBUFFERED": "1"
+  },
+  "gpu": 1,
+  "gpu_uuid": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+  "registration_returncode": 0,
+  "review_sha256": "fbf76a414d89a459cf5fa3c956544a698b1f564c856622c107fa99b6dc592605",
+  "started_unix": 1790799295.5931234,
+  "wrapper_identity": {
+    "argv_sha256": "739dbc05251870dde064a599ba6e8397ceeb683594ffbaa71e4008870d06bab3",
+    "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+    "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation",
+    "pid": 1391704,
+    "process_state": "R",
+    "start_ticks": 1264696013,
+    "uid": 1000
+  }
+}

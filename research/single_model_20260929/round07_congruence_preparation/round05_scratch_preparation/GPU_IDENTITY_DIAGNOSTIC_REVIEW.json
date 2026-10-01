@@ -1,0 +1,21 @@
+{
+  "diagnostic_sha256": "4221233ca22bb3cf0fdfb2091a20ae500d72c4ddf5fc4aec0e44277307b3d92c",
+  "identity_F_exact_on_shared_M": true,
+  "interpretation": "Repeated same-model CUDA full forwards and raw M already vary; shared-M operations are exact on this fixture. This supports numerical execution variability upstream of coupling, not a demonstrated adapter defect. The diagnostic does not isolate a particular CUDA kernel and provides no accuracy evidence.",
+  "no_additional_inference_or_target_read_by_reviewer": true,
+  "observed_same_model_max_abs": {
+    "A": 9.313225746154785e-09,
+    "E": 9.5367431640625e-07,
+    "native_f": 3.833712106451892e-09
+  },
+  "optimizer_updates": 0,
+  "passed": true,
+  "phase": "completed_zero_update_identity_diagnostic_review",
+  "recommendation": "If root explicitly amends the engineering rule, retain CPU/shared-M exact identity and apply existing resume numeric bounds atol2e-6/rtol1e-5 to full GPU forward/export comparisons, reporting errors. Applying that bound to originally exact checks is an explicit post-diagnostic acceptance change.",
+  "retry_authorized_by_this_review": false,
+  "shared_M_original_wrapper_coupling_decoder_exact": true,
+  "source_bindings_verified": 47,
+  "source_review_sha256": "5196d474d540afafbcf70d7becdfd033d6683a046a317806afd23fa3b0ca2dc8",
+  "target_arrays_decoded": false,
+  "terminal_receipt_sha256": "b017f8a74366281ca0161a34f1b09869116da2c946dc648b8e943dd9eb9da74e"
+}

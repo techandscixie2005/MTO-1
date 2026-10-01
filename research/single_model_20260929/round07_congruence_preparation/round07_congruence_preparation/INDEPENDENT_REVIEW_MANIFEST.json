@@ -1,0 +1,18 @@
+{
+  "archive_rule": "Only explicit files and final source_hashes; private hash references are provenance only and must never be resolved into archive members.",
+  "files": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/FROZEN_MANIFEST.json": "68c052e909d0fcbe1671084edf7de1968f81f8f5e333bbfc2431fe3181c8c203",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/INDEPENDENT_FINAL_PREPARATION_CHECKS.json": "9fc3d7c78ccff95af0d961ffbfffef52b5dd21f83f5e0e92507599c53f006cd9",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/INDEPENDENT_FINAL_PREPARATION_CHECKS_01.log": "38b7596d02008821b1f35b819fe5aef8a631a35fc6871ffa78fa0a14937567f1",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/INDEPENDENT_PREPARATION_REVIEW.json": "e3ae0804141dc37fdbcb3797411a301e75dabe223eea4005d0c043197f423826",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/INDEPENDENT_PREPARATION_REVIEW.md": "4f01d4e2bc4d4ddd03287645b4d7edb61a9582baf360fc8801445f53f3771e17",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/PREPARATION_REPORT.md": "27e1e0c72bfcdceef11c3c55b07548d20b1e39d9b43ad8e04f026c883312350c",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/independent_final_preparation_checks.py": "2a8bfca0bf493ef648c9faf2c810c27ce0c47e121f5378188dd7d49bb8d0787d",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/ops/FREEZE_RECEIPT.json": "ad458ccfecfb87a0dda570089698ecd4e7f588e8469d31aa509435981a31b3a7",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/ops/freeze_preparation_01.log": "eccf9f0f84696014ab16ed62968e76584c22c582116997310b3ed4c421d5339f"
+  },
+  "independent_review_sha256": "e3ae0804141dc37fdbcb3797411a301e75dabe223eea4005d0c043197f423826",
+  "phase": "preparation_only",
+  "production_execution_authorized": false,
+  "source_manifest_sha256": "68c052e909d0fcbe1671084edf7de1968f81f8f5e333bbfc2431fe3181c8c203"
+}

@@ -1,0 +1,27 @@
+{
+  "E_A_C_analytical_gradients_within_frozen_tolerance": true,
+  "blocking_findings": [],
+  "cpu_preflight_sha256": "02c268678eb4b6293258ec99020d4f7f16c6d9f3244ccf122ea4ebae7a6e8bd9",
+  "initial_hashes_match_round05_fresh_random_model": true,
+  "log_sha256": "6deda14aef401790d9613460f9e664d11e744b731f9e4770557826aa0b8c257b",
+  "masked_gradients_and_zero_factor_case_passed": true,
+  "original_control_bitwise": true,
+  "passed": true,
+  "phase": "synthetic_CPU_evidence_review",
+  "production_authorized": false,
+  "raw_or_prediction_array_access_by_review": false,
+  "reviewer_reran_numerical_preflight": false,
+  "source_and_record_consistency_verified": true,
+  "source_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/ROUND06_PREPARATION_DECISION.md": "d8f7478f77bf660c32e75897d555b13f972e64abaac4385e2c9b44ab3e2e6458",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/TECHNICAL_PREFLIGHT_PLAN.md": "15a147a541e3a3a7eaf9be0cf562086996d1de298922ec5432d29d41e719585b",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/TRAIN_STATISTICS.json": "d3d0ed5af2646959be0abcb9cebb50d7cdb2ef7fb70d7e073fe12a8b697953ae",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/common.py": "50a1ef987cbc635b3b5692364281498e66587b112d5573c765fea360470038cd",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/config.json": "072189823f3334e8bee8b6a468442f7d0331d1b65bf6e4bd3a0cb50053e87b23",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/fresh_model.py": "16ec3eb14eeafa3265ba0f35abf4ff174a2a20f155b408ed133635fa73a8c314",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/model_config.json": "ff24143918e722d34a126b172f7d311c2a673a21c6756c89077fa05b05d6592f",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/objective.py": "a24c809d7e031332e5daba8ad0dbe82bf7cdf1acfc6d4bec923f9e4fc4ae3469",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/synthetic_checks.py": "b8897e29969ae4e92eb3c8aef76130aa1be6d7e43ff01b76793b6bbd15a1bc73"
+  },
+  "source_review_sha256": "b0c291527e83b69e85cda5a00d8478f104dcdd4c7e64b4750d747c27590bd55c"
+}
