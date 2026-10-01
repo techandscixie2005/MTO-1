@@ -1,0 +1,11 @@
+# Round06 preparation acceptance
+
+Root accepts preparation on 2026-10-01 Asia/Shanghai. Frozen manifest `4f1908d8f83c7a4622a8aadb511305da93465f8e29af3203327981c3c739d52b` binds134 files; independent review `8d2dd32e954f533bdcdf298693b7d2c457eef5fb123824c3eeaddf026e33a986` passes the exact source and completed evidence. Report `ad403888349872ff911d380b70be1feb93fff2351a4d5fe1a16c56e9a5a12925` records the limits.
+
+The six discarded TRAIN updates passed numerical model/Adam replay, exact RNG/order and standalone geometry inference checks. The raw-f intensity gradient norm was6.7829 times the trace term on the fixed fixture and all six updates clipped. These observations do not change the prespecified coefficient1, LR, clipping, budget or allocation rule. No accuracy result, validation/TEST scoring or production fit occurred. Preserve both the pre-admission missing mirror event and independent metadata checker repair.
+
+Accept the unchanged original-PSD two-arm60-epoch protocol, its new TRAIN statistics and fresh initialization, and the dual+.003 allocation gate against the contemporaneous trace control and retained v2 reference. TEST remains sealed. Shared congruence remains deferred. No physical transition-density interpretation or achievement of R².60 is claimed.
+
+Authorize the publication delegate to mirror this decision, download all explicit lightweight preparation/code/dependency/review/failure records to D:\MTO\archives\ and verify hashes before exact staged inspection, commit/non-force push to main and research, and remote byte verification. Preserve ancestry from f75a23c394c73262605b908f7eb280061e52901c. Update README concisely with preparation-only status and links while preserving all prior results. Keep model/optimizer/raw-data/prediction/identity arrays, caches and credentials private. Bind any necessary aggregate metadata exception to exact reviewed path and hash.
+
+Production remains blocked until verified publication and a separate exact root execution authorization. Science is the sole executor; fresh healthy GPU1/2 UUID admission, separate shared locks, registered identities and resumable state remain mandatory. No repeated completed technical stage, automatic seed/extension, averaging or TEST scoring is authorized here.

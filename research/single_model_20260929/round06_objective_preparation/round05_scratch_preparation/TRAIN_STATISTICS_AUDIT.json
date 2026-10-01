@@ -1,0 +1,142 @@
+{
+  "actual_decode_ledger": [
+    {
+      "archive": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/dataset.npz",
+      "archive_sha256": "be8fadca203429575d70642b617730592693be40858dca7189c098a671596330",
+      "dtype": "int64",
+      "field": "z",
+      "is_target_or_mask": false,
+      "numeric_decode_blocks": 12019,
+      "numeric_global_indices_sha256": "3a45ef8d8878106644668f6a49e9333c9a95711c73c41c75cf9c206be056b2ea",
+      "numeric_rows": 120355,
+      "partition": "train",
+      "shape": [
+        120355,
+        29
+      ]
+    },
+    {
+      "archive": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/raw_labels.npz",
+      "archive_sha256": "621dc8723fb6dc96681851a26e4f52fcb7747a4778e57a249a75d22f3af4c632",
+      "dtype": "int64",
+      "field": "ids",
+      "is_target_or_mask": false,
+      "numeric_decode_blocks": 12019,
+      "numeric_global_indices_sha256": "3a45ef8d8878106644668f6a49e9333c9a95711c73c41c75cf9c206be056b2ea",
+      "numeric_rows": 120355,
+      "partition": "train",
+      "shape": [
+        120355
+      ]
+    },
+    {
+      "archive": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/raw_labels.npz",
+      "archive_sha256": "621dc8723fb6dc96681851a26e4f52fcb7747a4778e57a249a75d22f3af4c632",
+      "dtype": "float64",
+      "field": "E",
+      "is_target_or_mask": true,
+      "numeric_decode_blocks": 12019,
+      "numeric_global_indices_sha256": "3a45ef8d8878106644668f6a49e9333c9a95711c73c41c75cf9c206be056b2ea",
+      "numeric_rows": 120355,
+      "partition": "train",
+      "shape": [
+        120355,
+        10
+      ]
+    },
+    {
+      "archive": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/raw_labels.npz",
+      "archive_sha256": "621dc8723fb6dc96681851a26e4f52fcb7747a4778e57a249a75d22f3af4c632",
+      "dtype": "float64",
+      "field": "A",
+      "is_target_or_mask": true,
+      "numeric_decode_blocks": 12019,
+      "numeric_global_indices_sha256": "3a45ef8d8878106644668f6a49e9333c9a95711c73c41c75cf9c206be056b2ea",
+      "numeric_rows": 120355,
+      "partition": "train",
+      "shape": [
+        120355,
+        10,
+        3,
+        3
+      ]
+    },
+    {
+      "archive": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/raw_labels.npz",
+      "archive_sha256": "621dc8723fb6dc96681851a26e4f52fcb7747a4778e57a249a75d22f3af4c632",
+      "dtype": "float64",
+      "field": "f",
+      "is_target_or_mask": true,
+      "numeric_decode_blocks": 12019,
+      "numeric_global_indices_sha256": "3a45ef8d8878106644668f6a49e9333c9a95711c73c41c75cf9c206be056b2ea",
+      "numeric_rows": 120355,
+      "partition": "train",
+      "shape": [
+        120355,
+        10
+      ]
+    },
+    {
+      "archive": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/raw_labels.npz",
+      "archive_sha256": "621dc8723fb6dc96681851a26e4f52fcb7747a4778e57a249a75d22f3af4c632",
+      "dtype": "bool",
+      "field": "mask_E",
+      "is_target_or_mask": true,
+      "numeric_decode_blocks": 12019,
+      "numeric_global_indices_sha256": "3a45ef8d8878106644668f6a49e9333c9a95711c73c41c75cf9c206be056b2ea",
+      "numeric_rows": 120355,
+      "partition": "train",
+      "shape": [
+        120355,
+        10
+      ]
+    },
+    {
+      "archive": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/raw_labels.npz",
+      "archive_sha256": "621dc8723fb6dc96681851a26e4f52fcb7747a4778e57a249a75d22f3af4c632",
+      "dtype": "bool",
+      "field": "mask_A",
+      "is_target_or_mask": true,
+      "numeric_decode_blocks": 12019,
+      "numeric_global_indices_sha256": "3a45ef8d8878106644668f6a49e9333c9a95711c73c41c75cf9c206be056b2ea",
+      "numeric_rows": 120355,
+      "partition": "train",
+      "shape": [
+        120355,
+        10
+      ]
+    },
+    {
+      "archive": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/raw_labels.npz",
+      "archive_sha256": "621dc8723fb6dc96681851a26e4f52fcb7747a4778e57a249a75d22f3af4c632",
+      "dtype": "bool",
+      "field": "mask_f",
+      "is_target_or_mask": true,
+      "numeric_decode_blocks": 12019,
+      "numeric_global_indices_sha256": "3a45ef8d8878106644668f6a49e9333c9a95711c73c41c75cf9c206be056b2ea",
+      "numeric_rows": 120355,
+      "partition": "train",
+      "shape": [
+        120355,
+        10
+      ]
+    }
+  ],
+  "compressed_transport_note": "ZIP seek/decompression may pass unselected bytes; only selected contiguous TRAIN blocks reach np.frombuffer.",
+  "decoded_validation_or_test_target_rows": 0,
+  "formula_crosscheck_abs": {
+    "sA2": 8.326672684688674e-17,
+    "sE2": 4.11448652926083e-13
+  },
+  "model_inference": false,
+  "model_updates": 0,
+  "passed": true,
+  "purpose": "new_train_statistics_only",
+  "reader_review_sha256": "1b7a4ca182c0c28494d6f9b4e452563c4e98c8e2c9655501635c393187858689",
+  "source_hashes": {
+    "common.py": "50a1ef987cbc635b3b5692364281498e66587b112d5573c765fea360470038cd",
+    "partition_data.py": "9aaa08bb8878803cc42961d336345d5fa53f5aad30d8cfdf135d0fd35dd6757d",
+    "prepare_train_statistics.py": "ecab67351bbf0227609aa30117001853556731960573fdbc04761cef250db207"
+  },
+  "statistics_sha256": "d3d0ed5af2646959be0abcb9cebb50d7cdb2ef7fb70d7e073fe12a8b697953ae"
+}

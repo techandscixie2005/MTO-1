@@ -1,0 +1,19 @@
+{
+  "archive_rule": "Only explicit files and final source_hashes; private hash references are provenance only and must never be resolved into archive members.",
+  "files": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/FROZEN_MANIFEST.json": "4f1908d8f83c7a4622a8aadb511305da93465f8e29af3203327981c3c739d52b",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/INDEPENDENT_FINAL_PREPARATION_CHECKS.json": "257a67a2f9b936b7498e9cc41374d77d260c4a40efd6524ade2f832e9caf1c74",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/INDEPENDENT_FINAL_PREPARATION_CHECKS_01.log": "3758e11103eb39b51677c8a8b5155fd17f742cf054b72d189ead15f18a6fc0c4",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/INDEPENDENT_FINAL_PREPARATION_CHECKS_02.log": "395737b27942bcbb9f9620a87c9200ccf0ac6cdf42856ba1ad9d91764a7d2eb0",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/INDEPENDENT_PREPARATION_REVIEW.json": "8d2dd32e954f533bdcdf298693b7d2c457eef5fb123824c3eeaddf026e33a986",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/INDEPENDENT_PREPARATION_REVIEW.md": "d7446a31f56cb7025c653843552d8fcdc0f0da498a1f9d7f9701d97fcad15c11",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/PREPARATION_REPORT.md": "ad403888349872ff911d380b70be1feb93fff2351a4d5fe1a16c56e9a5a12925",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/independent_final_preparation_checks.py": "684c5bfcd1d200ab26e9280926bca593677e8ec7cebc001f2576bf240f3a16d5",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/ops/FREEZE_RECEIPT.json": "486139471f4349d2fabbd9cb1ed4b1216f475d82a15cbe9ef46ad508ffed0b3d",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/reviewer_history/final_check_01/independent_final_preparation_checks.py": "3a417133e22a5ff5c7d43da6443f8d6a78ddab09369cd3ae179760ce811aef23"
+  },
+  "independent_review_sha256": "8d2dd32e954f533bdcdf298693b7d2c457eef5fb123824c3eeaddf026e33a986",
+  "phase": "preparation_only",
+  "production_execution_authorized": false,
+  "source_manifest_sha256": "4f1908d8f83c7a4622a8aadb511305da93465f8e29af3203327981c3c739d52b"
+}

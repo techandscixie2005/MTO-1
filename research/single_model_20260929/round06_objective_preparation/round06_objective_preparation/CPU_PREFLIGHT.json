@@ -1,0 +1,49 @@
+{
+  "checks": {
+    "FP32_loss_vs_independent_FP64_formula_abs": 6.871474904635022e-07,
+    "analytic_A_gradient_max_abs": 8.243207911817763e-07,
+    "analytic_C_gradient_max_abs": 9.268656935290664e-07,
+    "analytic_E_gradient_max_abs": 1.926020150033736e-07,
+    "changed_normalization_reject": true,
+    "empty_energy_reject": true,
+    "empty_f_reject": true,
+    "improper_O3_objective_invariance": true,
+    "invalid_sentinels_have_finite_valid_and_zero_invalid_gradients": true,
+    "invalid_sentinels_selected_before_nonlinear_arithmetic": true,
+    "nonfinite_not_silently_repaired": true,
+    "original_control_total_energy_trace_bitwise": true,
+    "proper_O3_objective_invariance": true,
+    "trace_intensity_has_no_direct_E_gradient": true,
+    "wrong_objective_reject": true,
+    "wrong_training_dtype_reject": true,
+    "zero_C_nonzero_target_has_zero_factor_but_live_A_gradient": true,
+    "zero_target_count_included": 2
+  },
+  "fresh_model_constructions": 2,
+  "gradient_and_loss_tolerance": {
+    "atol": 2e-06,
+    "rtol": 1e-05
+  },
+  "inherited82_current_pins_verified": true,
+  "inherited_original_model_preflight_manifest_sha256": "66269e04d73943bec48a6331c3ca45a9efcc12045e962fe897da6196af97c5e1",
+  "inherited_original_model_preflight_reference": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/FROZEN_MANIFEST.json",
+  "initial_base_tensor_sha256": "231dfaf3ffc8056e851ddac34e941fa34eee3af0f7ff9687ecab6d24d6fa1cd2",
+  "initial_full_tensor_sha256": "3c5d20463a6aa1d4e7c25ee5e57e0ceaa53c17e5a89af35d7761b58e58d661f9",
+  "model_updates": 0,
+  "passed": true,
+  "raw_or_prediction_array_access": false,
+  "source_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/ROUND06_PREPARATION_DECISION.md": "d8f7478f77bf660c32e75897d555b13f972e64abaac4385e2c9b44ab3e2e6458",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/TECHNICAL_PREFLIGHT_PLAN.md": "15a147a541e3a3a7eaf9be0cf562086996d1de298922ec5432d29d41e719585b",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/TRAIN_STATISTICS.json": "d3d0ed5af2646959be0abcb9cebb50d7cdb2ef7fb70d7e073fe12a8b697953ae",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/common.py": "50a1ef987cbc635b3b5692364281498e66587b112d5573c765fea360470038cd",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/config.json": "072189823f3334e8bee8b6a468442f7d0331d1b65bf6e4bd3a0cb50053e87b23",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/fresh_model.py": "16ec3eb14eeafa3265ba0f35abf4ff174a2a20f155b408ed133635fa73a8c314",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/model_config.json": "ff24143918e722d34a126b172f7d311c2a673a21c6756c89077fa05b05d6592f",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/objective.py": "a24c809d7e031332e5daba8ad0dbe82bf7cdf1acfc6d4bec923f9e4fc4ae3469",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/synthetic_checks.py": "b8897e29969ae4e92eb3c8aef76130aa1be6d7e43ff01b76793b6bbd15a1bc73"
+  },
+  "synthetic_only": true,
+  "train_statistics_sha256": "d3d0ed5af2646959be0abcb9cebb50d7cdb2ef7fb70d7e073fe12a8b697953ae",
+  "trained_checkpoint_access": false
+}

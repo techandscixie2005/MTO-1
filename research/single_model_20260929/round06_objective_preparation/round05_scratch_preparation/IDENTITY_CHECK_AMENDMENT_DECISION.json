@@ -1,0 +1,14 @@
+{
+  "accepted": true,
+  "scope": "round05_cuda_identity_preflight_amendment",
+  "decision_owner": "root",
+  "decision_date": "2026-09-30",
+  "diagnostic_sha256": "4221233ca22bb3cf0fdfb2091a20ae500d72c4ddf5fc4aec0e44277307b3d92c",
+  "independent_diagnostic_review_sha256": "1b0dc69bfc44fd700d5804dcf931ef0cb95ac352f612769cd2e565f678b67146",
+  "rationale": "Repeated forwards of the original model vary numerically, while identity F and CG/readout on shared raw representations remain exact. A numerical end-to-end GPU comparison is appropriate; no particular CUDA kernel or trajectory determinism is established.",
+  "amendment": "Explicit post-diagnostic change: independent GPU full-forward/export parity uses atol 2e-6 and rtol 1e-5. Record actual E/A/raw-f errors and bitwise flags. Preserve exact CPU/shared-M GPU identity and initial tensor hashes.",
+  "unchanged": "Original next-update/loss tolerances, exact RNG/order checks, first 128 TRAIN rows, two batches, scientific settings, and total 12 discarded optimizer updates remain fixed. No validation or TEST access.",
+  "retry_conditions": "Independent retry source review binds this decision; fresh GPU health/UUID admission and exclusive lock; distinct registered attempt with all prior failure evidence preserved. Science is sole executor.",
+  "production_authorized": false,
+  "next_gate": "Successful bounded preflight, final independent source closure review, root preparation acceptance and D-first publication precede a separate production authorization. Technical trained state is never reused."
+}

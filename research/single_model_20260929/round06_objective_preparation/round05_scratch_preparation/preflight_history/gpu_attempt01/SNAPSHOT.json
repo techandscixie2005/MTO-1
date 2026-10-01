@@ -1,0 +1,246 @@
+{
+  "optimizer_updates_before_failure": 0,
+  "reason": "Full-forward GPU bitwise identity assertion failed before the first update; numerical diagnosis pending.",
+  "records": [
+    {
+      "original": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/models_ea.py",
+      "sha256": "b47d50b8b32313d1c3e1f19f3e64e6f02ce42e91736e6da00f896f68965250b0",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/000_models_ea.py"
+    },
+    {
+      "original": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/models.py",
+      "sha256": "a8d7bf8a8d89839f687a773f59f02b2a5d75abd6f47a59406e9eb3d1a40f4771",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/001_models.py"
+    },
+    {
+      "original": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/__init__.py",
+      "sha256": "8fe70f55031182c1d0012945907181ecc85278f7849599e15e3a16939fae67f1",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/002___init__.py"
+    },
+    {
+      "original": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/constant.py",
+      "sha256": "1c3a8f9058ba6890c2f6730241136b35a552235b41f812288ce9cbdcc42ec856",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/003_constant.py"
+    },
+    {
+      "original": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/detanet.py",
+      "sha256": "4083382f2d615d1573b9dbc2d2c456d00f9895d4dae144b6c62b26feff6eebcd",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/004_detanet.py"
+    },
+    {
+      "original": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/metrics.py",
+      "sha256": "677630dd1b97c7474c2f8a4cdda81d7e0f2a56a12dfd4b02bbb869329af4fec2",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/005_metrics.py"
+    },
+    {
+      "original": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/model_loader.py",
+      "sha256": "85507209b15efea567e686f4d99cf3be53dbf3779607d4b33e295d52c44505b3",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/006_model_loader.py"
+    },
+    {
+      "original": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/__init__.py",
+      "sha256": "032b99150e38283d3695b394175d792c370be7dbbe38b58b94971143de9446de",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/007___init__.py"
+    },
+    {
+      "original": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/acts.py",
+      "sha256": "6bcd255ac95b33e6ef6a982d87c8dd6b39c2f1a41996f2425c5ada1f0fe8256c",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/008_acts.py"
+    },
+    {
+      "original": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/block.py",
+      "sha256": "38eb81b385fded74ac4ff3950ee2cbe6e7c7e7cc0873ec57ede64ef758460e35",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/009_block.py"
+    },
+    {
+      "original": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/edge_attention.py",
+      "sha256": "48a69aa9a83cfe225f8e55eeea4bab65120955aee2dc7ad02d414aef7b4e2fea",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/010_edge_attention.py"
+    },
+    {
+      "original": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/embedding.py",
+      "sha256": "07eff3330b5709fec463563d4ef53f857525ae85f55b8a3ab1e7c9ffb3c70ee8",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/011_embedding.py"
+    },
+    {
+      "original": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/message.py",
+      "sha256": "a76bae58dbb92447d6fb05230d7db826dc9defc929706e6f2c88c067ee5918cf",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/012_message.py"
+    },
+    {
+      "original": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/multilayer_perceptron.py",
+      "sha256": "5628a4cebadbbc493058edae808a64370ee2834fa4ccacc041f820bf9afb4d42",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/013_multilayer_perceptron.py"
+    },
+    {
+      "original": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/radial_basis.py",
+      "sha256": "cbbbf125bdb4b64e21a4d58ddb175bde489bb7a640375847f416f137881307ca",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/014_radial_basis.py"
+    },
+    {
+      "original": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/update.py",
+      "sha256": "65cda1be8fd5daa491779211ba37ec9c23b73e4a2da81444d21534584c0028a6",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/015_update.py"
+    },
+    {
+      "original": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/spectra_simulator.py",
+      "sha256": "cb36131b7dc855cd2c528d532f4d7742fc2da757d078e8732142dbeab4f0b67e",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/016_spectra_simulator.py"
+    },
+    {
+      "original": "/home/inspur/MTO-1/research/single_model_20260929/architecture/model.py",
+      "sha256": "b61413830ac8cfb78298dda55c11a1cfb2c398c264a797016045d8fd638c7b93",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/017_model.py"
+    },
+    {
+      "original": "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930/INDEPENDENT_SPLIT_VERIFICATION.json",
+      "sha256": "395d415f854ed6948c4d7a11c0c1d7486193bb48f23bae76834a77148cc69ae2",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/018_INDEPENDENT_SPLIT_VERIFICATION.json"
+    },
+    {
+      "original": "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930/SPLIT_MANIFEST.json",
+      "sha256": "c8ce66ddb7209005b5feebfcddfc2bc30ee81d92fe63cce20f15c4abf3a07155",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/019_SPLIT_MANIFEST.json"
+    },
+    {
+      "original": "/home/inspur/MTO-1/research/single_model_20260929/ops/monitor.py",
+      "sha256": "b21e028b6741d7522df194c6d7094c7d37b6ef07b7e6aec633691cb61859d263",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/020_monitor.py"
+    },
+    {
+      "original": "/home/inspur/MTO-1/research/single_model_20260929/ops/register_run.py",
+      "sha256": "2ee480a01cfcb4b1f5acd84323c679cf27a90b142387f097d2d563d29e06aa37",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/021_register_run.py"
+    },
+    {
+      "original": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/CPU_PREFLIGHT.json",
+      "sha256": "71d6e7fc61e4f36dc0763171f6c5ec32d327ceb60db510f6ac0c228c79373a1f",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/022_CPU_PREFLIGHT.json"
+    },
+    {
+      "original": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/ROUND05_PREPARATION_DECISION.md",
+      "sha256": "a7c0c6f14dd400c359c1ec7a9637f81bc2733056052d2dda0380a241f06e7223",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/023_ROUND05_PREPARATION_DECISION.md"
+    },
+    {
+      "original": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/TECHNICAL_PREFLIGHT_PLAN.md",
+      "sha256": "d0e8a2c842487490f064b5a437e1a2ce76be14aa704404288301e20a9a019e5b",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/024_TECHNICAL_PREFLIGHT_PLAN.md"
+    },
+    {
+      "original": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/TRAIN_READER_REVIEW.json",
+      "sha256": "1b7a4ca182c0c28494d6f9b4e452563c4e98c8e2c9655501635c393187858689",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/025_TRAIN_READER_REVIEW.json"
+    },
+    {
+      "original": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/TRAIN_STATISTICS.json",
+      "sha256": "d3d0ed5af2646959be0abcb9cebb50d7cdb2ef7fb70d7e073fe12a8b697953ae",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/026_TRAIN_STATISTICS.json"
+    },
+    {
+      "original": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/TRAIN_STATISTICS_AUDIT.json",
+      "sha256": "f93e32e63aaa12dc8f81f079e2b96f0d03a5fc5a9235ee98c01ff6fe9e435e02",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/027_TRAIN_STATISTICS_AUDIT.json"
+    },
+    {
+      "original": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/TRAIN_STATISTICS_REVIEW.json",
+      "sha256": "b4cabcd8f2128b87ec6b77e57b1ad9c0c3965e543df696918fc1ce57e1a4364b",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/028_TRAIN_STATISTICS_REVIEW.json"
+    },
+    {
+      "original": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/common.py",
+      "sha256": "50a1ef987cbc635b3b5692364281498e66587b112d5573c765fea360470038cd",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/029_common.py"
+    },
+    {
+      "original": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/config.json",
+      "sha256": "9b1d3d866077d7f971ac03a25435f007d84fc6ee8fe1fa8136b232974c03ec9c",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/030_config.json"
+    },
+    {
+      "original": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/cpu_preflight.py",
+      "sha256": "745adce0eb432f007bcc18d00d2d9c06a063e3e8d04099b14adb5066229828a8",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/031_cpu_preflight.py"
+    },
+    {
+      "original": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/fresh_model.py",
+      "sha256": "16ec3eb14eeafa3265ba0f35abf4ff174a2a20f155b408ed133635fa73a8c314",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/032_fresh_model.py"
+    },
+    {
+      "original": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/gpu_preflight.py",
+      "sha256": "0f3ff7d8886809e73fca8e44a9fe50cd3d73eea058e638f7892b8e785de9a887",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/033_gpu_preflight.py"
+    },
+    {
+      "original": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/model_config.json",
+      "sha256": "ff24143918e722d34a126b172f7d311c2a673a21c6756c89077fa05b05d6592f",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/034_model_config.json"
+    },
+    {
+      "original": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/partition_data.py",
+      "sha256": "9aaa08bb8878803cc42961d336345d5fa53f5aad30d8cfdf135d0fd35dd6757d",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/035_partition_data.py"
+    },
+    {
+      "original": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/predictor.py",
+      "sha256": "5b4801a4851c01f035fa7d1f05b9e2817318acfe155ae611e57f3425dfc407e6",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/036_predictor.py"
+    },
+    {
+      "original": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/resources.py",
+      "sha256": "0e86e15d8be5c1e0e94bf8f85eea56a121e3aa493cb9c262e9248727b5beb918",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/037_resources.py"
+    },
+    {
+      "original": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/run_gpu_preflight.py",
+      "sha256": "49bf9fe58ff72aac13bf2b5449ff9b320d2b0d51c653acceb14384741e9d2eea",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/038_run_gpu_preflight.py"
+    },
+    {
+      "original": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/runtime.py",
+      "sha256": "fb54c5073e261455ef43036f3d1f65bdaf89714fc9ddc690ec0ec3a773074f94",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/039_runtime.py"
+    },
+    {
+      "original": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/TECHNICAL_SOURCE_REVIEW.json",
+      "sha256": "01d59c9d0e5aa1908188894b54402c2eb280ff73c10ec911eccc583db71b2efa",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/040_TECHNICAL_SOURCE_REVIEW.json"
+    },
+    {
+      "original": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/ops/gpu_preflight_attempt/stage.log",
+      "sha256": "af75cab9c0fdb8ec8daa83a8ed3e02e4f36b9239aa67135ca03a9b90f9bbc1c1",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/041_stage.log"
+    },
+    {
+      "original": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/ops/gpu_preflight_attempt/MONITOR_REGISTRATION.json",
+      "sha256": "f9f3a6b9e0b7ac5c5e38808f518245b507d9708d78fcbc1913ae8e012185be85",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/042_MONITOR_REGISTRATION.json"
+    },
+    {
+      "original": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/ops/gpu_preflight_attempt/REGISTRATION_TOOL.log",
+      "sha256": "f9f3a6b9e0b7ac5c5e38808f518245b507d9708d78fcbc1913ae8e012185be85",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/043_REGISTRATION_TOOL.log"
+    },
+    {
+      "original": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/ops/gpu_preflight_attempt/status.json",
+      "sha256": "da08b33d21cac33321c9f36f4706f0bf000a6a96449220f57c1ad77b914d2840",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/044_status.json"
+    },
+    {
+      "original": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/ops/gpu_preflight_attempt/GPU_ADMISSION.xml",
+      "sha256": "3b4e5d6aeda346a765a87d548ba9d8ed83e5dbfd1995f63dc16600de58ae34d1",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/045_GPU_ADMISSION.xml"
+    },
+    {
+      "original": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/ops/gpu_preflight_attempt/FAILED.json",
+      "sha256": "da08b33d21cac33321c9f36f4706f0bf000a6a96449220f57c1ad77b914d2840",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/046_FAILED.json"
+    },
+    {
+      "original": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/ops/gpu_preflight_attempt/LAUNCH_RECEIPT.json",
+      "sha256": "8331e6ec549052d5d50c6fae1274739bea28a9e5f7d5fb35d8946c834f8a4403",
+      "snapshot": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/047_LAUNCH_RECEIPT.json"
+    }
+  ]
+}

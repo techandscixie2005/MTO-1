@@ -1,0 +1,21 @@
+{
+  "phase": "proposal_only",
+  "implementation_authorized": false,
+  "model_updates_authorized": false,
+  "files": {
+    "PROTOCOL_PROPOSAL.md": "aea5c76f422fb7cca286cd84f7bafaff230e2aa29b2ed3068fe7e4573f3245b6",
+    "PROPOSED_SETTINGS.json": "0238de653981e94105d9937ad65dd4a8b26a7f3659cbac00012fb3ef24c40047"
+  },
+  "reference_pins": {
+    "round05_completed_commit": "f75a23c394c73262605b908f7eb280061e52901c",
+    "round05_completion_publication_receipt_sha256": "73005b2f38668a2da841aa479c9cc30cae3034b01817a744d1d5435f51778354",
+    "round05_frozen_manifest": "66269e04d73943bec48a6331c3ca45a9efcc12045e962fe897da6196af97c5e1",
+    "train_statistics": "d3d0ed5af2646959be0abcb9cebb50d7cdb2ef7fb70d7e073fe12a8b697953ae",
+    "split_manifest": "c8ce66ddb7209005b5feebfcddfc2bc30ee81d92fe63cce20f15c4abf3a07155",
+    "split_verification": "395d415f854ed6948c4d7a11c0c1d7486193bb48f23bae76834a77148cc69ae2",
+    "base_model_math": "b61413830ac8cfb78298dda55c11a1cfb2c398c264a797016045d8fd638c7b93",
+    "historical_nonrepetition": "2e79980cb4040a4449892424c5f6c017f80c2a83856125f5c17d241946a31c07",
+    "round05_results": "bf6920dd8c883460ecb83db3e44ec3debe98152a3f1521c869a5102b4203eb24"
+  },
+  "scope": "Documentation/source review only; no raw arrays, prediction arrays, weights or model opened; no implementation or execution."
+}

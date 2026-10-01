@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "stage": "metadata_only_preparation_freeze",
+  "exit_code": 0,
+  "frozen_manifest_sha256": "4f1908d8f83c7a4622a8aadb511305da93465f8e29af3203327981c3c739d52b",
+  "source_files": 134,
+  "working_directory": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation",
+  "command": ["/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/bin/python", "freeze_preparation.py"],
+  "environment": {"CUDA_VISIBLE_DEVICES": "", "OMP_NUM_THREADS": "2", "MKL_NUM_THREADS": "2", "PYTHONUNBUFFERED": "1"},
+  "model_inference": false,
+  "target_numeric_decoding": false,
+  "optimizer_updates": 0,
+  "production_authorized": false,
+  "stdout": "{'files': 134, 'manifest_sha256': '4f1908d8f83c7a4622a8aadb511305da93465f8e29af3203327981c3c739d52b'}"
+}

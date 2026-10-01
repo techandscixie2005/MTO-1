@@ -1,0 +1,875 @@
+{
+  "files": [
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/models_ea.py",
+      "archive_path": "ops/round06_publication/external_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/models_ea.py",
+      "sha256": "b47d50b8b32313d1c3e1f19f3e64e6f02ce42e91736e6da00f896f68965250b0"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/models.py",
+      "archive_path": "ops/round06_publication/external_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/models.py",
+      "sha256": "a8d7bf8a8d89839f687a773f59f02b2a5d75abd6f47a59406e9eb3d1a40f4771"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/__init__.py",
+      "archive_path": "ops/round06_publication/external_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/__init__.py",
+      "sha256": "8fe70f55031182c1d0012945907181ecc85278f7849599e15e3a16939fae67f1"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/constant.py",
+      "archive_path": "ops/round06_publication/external_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/constant.py",
+      "sha256": "1c3a8f9058ba6890c2f6730241136b35a552235b41f812288ce9cbdcc42ec856"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/detanet.py",
+      "archive_path": "ops/round06_publication/external_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/detanet.py",
+      "sha256": "4083382f2d615d1573b9dbc2d2c456d00f9895d4dae144b6c62b26feff6eebcd"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/metrics.py",
+      "archive_path": "ops/round06_publication/external_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/metrics.py",
+      "sha256": "677630dd1b97c7474c2f8a4cdda81d7e0f2a56a12dfd4b02bbb869329af4fec2"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/model_loader.py",
+      "archive_path": "ops/round06_publication/external_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/model_loader.py",
+      "sha256": "85507209b15efea567e686f4d99cf3be53dbf3779607d4b33e295d52c44505b3"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/__init__.py",
+      "archive_path": "ops/round06_publication/external_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/__init__.py",
+      "sha256": "032b99150e38283d3695b394175d792c370be7dbbe38b58b94971143de9446de"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/acts.py",
+      "archive_path": "ops/round06_publication/external_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/acts.py",
+      "sha256": "6bcd255ac95b33e6ef6a982d87c8dd6b39c2f1a41996f2425c5ada1f0fe8256c"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/block.py",
+      "archive_path": "ops/round06_publication/external_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/block.py",
+      "sha256": "38eb81b385fded74ac4ff3950ee2cbe6e7c7e7cc0873ec57ede64ef758460e35"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/edge_attention.py",
+      "archive_path": "ops/round06_publication/external_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/edge_attention.py",
+      "sha256": "48a69aa9a83cfe225f8e55eeea4bab65120955aee2dc7ad02d414aef7b4e2fea"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/embedding.py",
+      "archive_path": "ops/round06_publication/external_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/embedding.py",
+      "sha256": "07eff3330b5709fec463563d4ef53f857525ae85f55b8a3ab1e7c9ffb3c70ee8"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/message.py",
+      "archive_path": "ops/round06_publication/external_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/message.py",
+      "sha256": "a76bae58dbb92447d6fb05230d7db826dc9defc929706e6f2c88c067ee5918cf"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/multilayer_perceptron.py",
+      "archive_path": "ops/round06_publication/external_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/multilayer_perceptron.py",
+      "sha256": "5628a4cebadbbc493058edae808a64370ee2834fa4ccacc041f820bf9afb4d42"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/radial_basis.py",
+      "archive_path": "ops/round06_publication/external_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/radial_basis.py",
+      "sha256": "cbbbf125bdb4b64e21a4d58ddb175bde489bb7a640375847f416f137881307ca"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/update.py",
+      "archive_path": "ops/round06_publication/external_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/update.py",
+      "sha256": "65cda1be8fd5daa491779211ba37ec9c23b73e4a2da81444d21534584c0028a6"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/spectra_simulator.py",
+      "archive_path": "ops/round06_publication/external_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/spectra_simulator.py",
+      "sha256": "cb36131b7dc855cd2c528d532f4d7742fc2da757d078e8732142dbeab4f0b67e"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/architecture/model.py",
+      "archive_path": "architecture/model.py",
+      "sha256": "b61413830ac8cfb78298dda55c11a1cfb2c398c264a797016045d8fd638c7b93"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/current_state/COORDINATOR.md",
+      "archive_path": "current_state/COORDINATOR.md",
+      "sha256": "e805344e62f54e05e4bfd5871ab0e435f639b9c0fa8cc0e07b2e75e2d9372509"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/current_state/RESEARCH_RESUMPTION_20260930.md",
+      "archive_path": "current_state/RESEARCH_RESUMPTION_20260930.md",
+      "sha256": "873ee750a75e72ac90936a03c53413e6a2e72ce6025ed40bbbb7080c0d2a2b1b"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/current_state/ROUND06_PREPARATION_ACCEPTANCE.md",
+      "archive_path": "current_state/ROUND06_PREPARATION_ACCEPTANCE.md",
+      "sha256": "84e293873a01958defab29e66d02be941dccdfa8aa7fd41734230c9b6c01c811"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/current_state/ROUND06_PREPARATION_DECISION.md",
+      "archive_path": "current_state/ROUND06_PREPARATION_DECISION.md",
+      "sha256": "d8f7478f77bf660c32e75897d555b13f972e64abaac4385e2c9b44ab3e2e6458"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/current_state/history_baseline.md",
+      "archive_path": "current_state/history_baseline.md",
+      "sha256": "eed239fa9a315dd3d1d82f6119df8599995cb9df4cbc57378e9cd48849c25f8a"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/current_state/monitor.md",
+      "archive_path": "current_state/monitor.md",
+      "sha256": "9eaa7196e36e48fa4b5400bb0ec0eec65bb93fa79ae1a55ca4f519b0b6c53284"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/current_state/science_implementation.md",
+      "archive_path": "current_state/science_implementation.md",
+      "sha256": "a78e04c90bec55e2c6aa700f276b787b93203170a1d347111e4f447e93b333a8"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930/INDEPENDENT_SPLIT_VERIFICATION.json",
+      "archive_path": "dataset_audit_20260930/INDEPENDENT_SPLIT_VERIFICATION.json",
+      "sha256": "395d415f854ed6948c4d7a11c0c1d7486193bb48f23bae76834a77148cc69ae2"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930/SPLIT_MANIFEST.json",
+      "archive_path": "dataset_audit_20260930/SPLIT_MANIFEST.json",
+      "sha256": "c8ce66ddb7209005b5feebfcddfc2bc30ee81d92fe63cce20f15c4abf3a07155"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/monitoring/CHECK_20260930T235659Z.json",
+      "archive_path": "monitoring/CHECK_20260930T235659Z.json",
+      "sha256": "19e0c3182b6315040740e95b4dae91a4ba95f92e5ee0b3c2c30ccf6957c3d569"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/monitoring/SCHEDULED_ROUND06_PREPARATION_20260930T2357.json",
+      "archive_path": "monitoring/SCHEDULED_ROUND06_PREPARATION_20260930T2357.json",
+      "sha256": "4954b32f0839ad7fb81c466ef2d6fa18b140593653f203d1402f9f741e131343"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/ops/FAILED_ROUND_ARCHIVE_POLICY.md",
+      "archive_path": "ops/FAILED_ROUND_ARCHIVE_POLICY.md",
+      "sha256": "20088f451d404c83f2d73d378839540d83242cb3e48807ab2a79ab8dc3555a0a"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/ops/ROUND05_COMPLETION_PUBLICATION_RECEIPT.json",
+      "archive_path": "ops/ROUND05_COMPLETION_PUBLICATION_RECEIPT.json",
+      "sha256": "73005b2f38668a2da841aa479c9cc30cae3034b01817a744d1d5435f51778354"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/ops/download_records.py",
+      "archive_path": "ops/download_records.py",
+      "sha256": "c646bd67ac401bd0a27c491d8c40bd1012684f73364d7a953a29cf543346899d"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/ops/heartbeat_round06_preparation/AFTER.toml",
+      "archive_path": "ops/heartbeat_round06_preparation/AFTER.toml",
+      "sha256": "73fd95ca14237375ef0ddca0f388779519e0a8d35a4c065b195434c84de4699a"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/ops/heartbeat_round06_preparation/BEFORE.toml",
+      "archive_path": "ops/heartbeat_round06_preparation/BEFORE.toml",
+      "sha256": "728e153071ddda8e1f80f509a8ca6392e0ec0f749eda6baa0442255166955427"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/ops/heartbeat_round06_preparation/HEARTBEAT_ROUND06_PREPARATION.json",
+      "archive_path": "ops/heartbeat_round06_preparation/HEARTBEAT_ROUND06_PREPARATION.json",
+      "sha256": "b0094b3a1eafac54a843e7a588e65f844a109c39a2378e1eb7cd274e8e9415f4"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/ops/heartbeat_round06_preparation/UPDATE_ARGUMENTS.json",
+      "archive_path": "ops/heartbeat_round06_preparation/UPDATE_ARGUMENTS.json",
+      "sha256": "ff09cf14ac9c76949ddf5f0ee62ed75ee8b4ca132f9803331a5282dfd461ff92"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/ops/monitor.py",
+      "archive_path": "ops/monitor.py",
+      "sha256": "b21e028b6741d7522df194c6d7094c7d37b6ef07b7e6aec633691cb61859d263"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/ops/package_records.py",
+      "archive_path": "ops/package_records.py",
+      "sha256": "f27de83406c7f0a3379b1a2fdaf63ceeea50fe6084a1c3bf3aeccd2d3e7132fd"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/ops/prepare_round06_publication.py",
+      "archive_path": "ops/prepare_round06_publication.py",
+      "sha256": "800048e777fef9de6c140d3825b4471db9d5cd0384650ab3a88cbbdab3b1beb1"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/ops/publish_round06_preparation.py",
+      "archive_path": "ops/publish_round06_preparation.py",
+      "sha256": "f2f929e73daebe75dff04434832e4292a9dcca90d355e8df75ffd692739120fa"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/ops/register_cpu_stage.py",
+      "archive_path": "ops/register_cpu_stage.py",
+      "sha256": "47ba35fea821ddefa456725e5d37f595294d2911c85626e039528aedd3b739e2"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/ops/register_run.py",
+      "archive_path": "ops/register_run.py",
+      "sha256": "2ee480a01cfcb4b1f5acd84323c679cf27a90b142387f097d2d563d29e06aa37"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/ops/round06_publication/README.md",
+      "archive_path": "ops/round06_publication/README.md",
+      "sha256": "99d98cc0e715c1ee2d93c17d9b33adda6d556a5682989fcfd0af811609deea1b"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/ops/ssh_proxy.py",
+      "archive_path": "ops/ssh_proxy.py",
+      "sha256": "df0f75d49904b1170be0af14764ce995bfcc8daf308c34678ae37d7e33082461"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/BUFFER_ROUNDTRIP_DIAGNOSIS.json",
+      "archive_path": "round05_scratch_preparation/BUFFER_ROUNDTRIP_DIAGNOSIS.json",
+      "sha256": "e07c2b2c41d66f8a550816d66ff9e98dcaa00230b2e1bc5d2696f74881cf9d4a"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/CPU_PREFLIGHT.json",
+      "archive_path": "round05_scratch_preparation/CPU_PREFLIGHT.json",
+      "sha256": "71d6e7fc61e4f36dc0763171f6c5ec32d327ceb60db510f6ac0c228c79373a1f"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/ENVIRONMENT.json",
+      "archive_path": "round05_scratch_preparation/ENVIRONMENT.json",
+      "sha256": "57c2f536b2af90baf8816a0924be5a7511e88ba0f35fbeda5b55e95fdf2540a9"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/FROZEN_MANIFEST.json",
+      "archive_path": "round05_scratch_preparation/FROZEN_MANIFEST.json",
+      "sha256": "66269e04d73943bec48a6331c3ca45a9efcc12045e962fe897da6196af97c5e1"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/GPU_IDENTITY_DIAGNOSTIC.json",
+      "archive_path": "round05_scratch_preparation/GPU_IDENTITY_DIAGNOSTIC.json",
+      "sha256": "4221233ca22bb3cf0fdfb2091a20ae500d72c4ddf5fc4aec0e44277307b3d92c"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/GPU_IDENTITY_DIAGNOSTIC_REVIEW.json",
+      "archive_path": "round05_scratch_preparation/GPU_IDENTITY_DIAGNOSTIC_REVIEW.json",
+      "sha256": "1b0dc69bfc44fd700d5804dcf931ef0cb95ac352f612769cd2e565f678b67146"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/GPU_PREFLIGHT.json",
+      "archive_path": "round05_scratch_preparation/GPU_PREFLIGHT.json",
+      "sha256": "c0a62e24963ed3158f48524fff3f77fae5bce98b91144962b16bb839bcca99a9"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/GPU_PREFLIGHT_REVIEW.json",
+      "archive_path": "round05_scratch_preparation/GPU_PREFLIGHT_REVIEW.json",
+      "sha256": "4071eca0211395858f472473abc3891298dc822878e1a76adf248026f5e2c1f5"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/HISTORICAL_NONREPETITION.md",
+      "archive_path": "round05_scratch_preparation/HISTORICAL_NONREPETITION.md",
+      "sha256": "2e79980cb4040a4449892424c5f6c017f80c2a83856125f5c17d241946a31c07"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/IDENTITY_CHECK_AMENDMENT_DECISION.json",
+      "archive_path": "round05_scratch_preparation/IDENTITY_CHECK_AMENDMENT_DECISION.json",
+      "sha256": "234b0ea52edec20bccc703d7ef96429c3ab2705f9da214b7cbde46e2c0e4825a"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/IDENTITY_CHECK_AMENDMENT_PROPOSAL.md",
+      "archive_path": "round05_scratch_preparation/IDENTITY_CHECK_AMENDMENT_PROPOSAL.md",
+      "sha256": "74625972cca0912400d10cc81d7db98b640dec566f3e25d004e7e01c6cd6ad00"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/IDENTITY_DIAGNOSTIC_REVIEW.json",
+      "archive_path": "round05_scratch_preparation/IDENTITY_DIAGNOSTIC_REVIEW.json",
+      "sha256": "5196d474d540afafbcf70d7becdfd033d6683a046a317806afd23fa3b0ca2dc8"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/INDEPENDENT_GATE_CHECKS.json",
+      "archive_path": "round05_scratch_preparation/INDEPENDENT_GATE_CHECKS.json",
+      "sha256": "e17bed460c3e33a69ffc968fd2104762fe968f87d069fa1bb9f27c72ffef189c"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/INDEPENDENT_READER_CHECKS.json",
+      "archive_path": "round05_scratch_preparation/INDEPENDENT_READER_CHECKS.json",
+      "sha256": "fe18f4af85811327298a1f1163897ce7c230e84df6189658af49b2d08136ff17"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/IO_CONTINUITY.json",
+      "archive_path": "round05_scratch_preparation/IO_CONTINUITY.json",
+      "sha256": "f0b3af59de54885c849db25b31e72083e70a9fc03cd64ca337cff5e2d7067382"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/IO_CONTINUITY_CHECKS.json",
+      "archive_path": "round05_scratch_preparation/IO_CONTINUITY_CHECKS.json",
+      "sha256": "9368c40972d72a661e06b482a43c1adeacab3b5685b040cdc278fd7200b350b6"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/IO_CONTINUITY_REVIEW.json",
+      "archive_path": "round05_scratch_preparation/IO_CONTINUITY_REVIEW.json",
+      "sha256": "876e2ea4aec2e401f52b616b25d4881f81f41a636d437ab82880b7f4aa38a70f"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/PRODUCTION_AUTHORIZATION_TEMPLATE.json",
+      "archive_path": "round05_scratch_preparation/PRODUCTION_AUTHORIZATION_TEMPLATE.json",
+      "sha256": "c2abc2628f30a58b65b74a32eacc02843b547ccd7f02bb9929c25660810c5c2e"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/PROTOCOL.md",
+      "archive_path": "round05_scratch_preparation/PROTOCOL.md",
+      "sha256": "99fa4eba9788436c1cc83b300835e115f86aea1428945fa8547656c498566356"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/PROTOCOL_PROPOSAL.md",
+      "archive_path": "round05_scratch_preparation/PROTOCOL_PROPOSAL.md",
+      "sha256": "4e6b4aa4bef6f51e3595718e3e6b34bd527bbfc32d7a2ed9f823080d322d2b08"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/READER_CHECKS.json",
+      "archive_path": "round05_scratch_preparation/READER_CHECKS.json",
+      "sha256": "4712269cdeb3768091da720ceab828af8ed6e4ee0a790a88c5c823a0b2e55a9d"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/RETRY01_SOURCE_READINESS.json",
+      "archive_path": "round05_scratch_preparation/RETRY01_SOURCE_READINESS.json",
+      "sha256": "ac1cfbcd4809a131215a8ddf9f670fe0fa237d8a81042edea337c19be1ec016a"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/ROUND05_PREPARATION_DECISION.md",
+      "archive_path": "round05_scratch_preparation/ROUND05_PREPARATION_DECISION.md",
+      "sha256": "a7c0c6f14dd400c359c1ec7a9637f81bc2733056052d2dda0380a241f06e7223"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/TECHNICAL_PREFLIGHT_PLAN.md",
+      "archive_path": "round05_scratch_preparation/TECHNICAL_PREFLIGHT_PLAN.md",
+      "sha256": "d0e8a2c842487490f064b5a437e1a2ce76be14aa704404288301e20a9a019e5b"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/TECHNICAL_SOURCE_REVIEW.json",
+      "archive_path": "round05_scratch_preparation/TECHNICAL_SOURCE_REVIEW.json",
+      "sha256": "01d59c9d0e5aa1908188894b54402c2eb280ff73c10ec911eccc583db71b2efa"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/TECHNICAL_SOURCE_REVIEW_RETRY01.json",
+      "archive_path": "round05_scratch_preparation/TECHNICAL_SOURCE_REVIEW_RETRY01.json",
+      "sha256": "d3a1cc9ec7fc771d2546cd53e61ae04b6f8bc61c44b10fd24e67b279c0ceab8e"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/TRAIN_READER_REVIEW.json",
+      "archive_path": "round05_scratch_preparation/TRAIN_READER_REVIEW.json",
+      "sha256": "1b7a4ca182c0c28494d6f9b4e452563c4e98c8e2c9655501635c393187858689"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/TRAIN_STATISTICS.json",
+      "archive_path": "round05_scratch_preparation/TRAIN_STATISTICS.json",
+      "sha256": "d3d0ed5af2646959be0abcb9cebb50d7cdb2ef7fb70d7e073fe12a8b697953ae"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/TRAIN_STATISTICS_AUDIT.json",
+      "archive_path": "round05_scratch_preparation/TRAIN_STATISTICS_AUDIT.json",
+      "sha256": "f93e32e63aaa12dc8f81f079e2b96f0d03a5fc5a9235ee98c01ff6fe9e435e02"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/TRAIN_STATISTICS_REVIEW.json",
+      "archive_path": "round05_scratch_preparation/TRAIN_STATISTICS_REVIEW.json",
+      "sha256": "b4cabcd8f2128b87ec6b77e57b1ad9c0c3965e543df696918fc1ce57e1a4364b"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/buffer_roundtrip_diagnosis.py",
+      "archive_path": "round05_scratch_preparation/buffer_roundtrip_diagnosis.py",
+      "sha256": "52704ada39fc5fcff359fb57f02ceeda85eae9366233ae65fe8669831b1d7fc0"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/common.py",
+      "archive_path": "round05_scratch_preparation/common.py",
+      "sha256": "50a1ef987cbc635b3b5692364281498e66587b112d5573c765fea360470038cd"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/config.json",
+      "archive_path": "round05_scratch_preparation/config.json",
+      "sha256": "9b1d3d866077d7f971ac03a25435f007d84fc6ee8fe1fa8136b232974c03ec9c"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/cpu_preflight.py",
+      "archive_path": "round05_scratch_preparation/cpu_preflight.py",
+      "sha256": "745adce0eb432f007bcc18d00d2d9c06a063e3e8d04099b14adb5066229828a8"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/execution_gate.py",
+      "archive_path": "round05_scratch_preparation/execution_gate.py",
+      "sha256": "4585431fc9289b93719a2de50bc63ccc84a4d6992586e6f3e09d40a388e48e9d"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/freeze_preparation.py",
+      "archive_path": "round05_scratch_preparation/freeze_preparation.py",
+      "sha256": "b39a61e5c14117767f18ca96eb624e4f05edfc6acfee1db1cb7e2ba1e25e00d6"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/fresh_model.py",
+      "archive_path": "round05_scratch_preparation/fresh_model.py",
+      "sha256": "16ec3eb14eeafa3265ba0f35abf4ff174a2a20f155b408ed133635fa73a8c314"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/gpu_identity_diagnostic.py",
+      "archive_path": "round05_scratch_preparation/gpu_identity_diagnostic.py",
+      "sha256": "60f61f33b0de66a994f218dac0bc75d39a8f60be33140a0c46d1d5a67f8fdaab"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/gpu_preflight.py",
+      "archive_path": "round05_scratch_preparation/gpu_preflight.py",
+      "sha256": "0f3ff7d8886809e73fca8e44a9fe50cd3d73eea058e638f7892b8e785de9a887"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/gpu_preflight_retry01.py",
+      "archive_path": "round05_scratch_preparation/gpu_preflight_retry01.py",
+      "sha256": "c863b74fb66936361a09734d90fe85eee3e2adbd4d850dcc447e770b9a74b7b7"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/independent_gate_checks.py",
+      "archive_path": "round05_scratch_preparation/independent_gate_checks.py",
+      "sha256": "fe5d5756cdd755da0e89d75fba67cc22d37d3fc8494541d5f8c4629905ea6926"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/independent_io_continuity.py",
+      "archive_path": "round05_scratch_preparation/independent_io_continuity.py",
+      "sha256": "ead199501de254c6380c96f53172610ea4e8f9fe575a0f117f622d574bf89c5f"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/independent_reader_checks.py",
+      "archive_path": "round05_scratch_preparation/independent_reader_checks.py",
+      "sha256": "f160207430b5886755210ac3cafc07145aa4b78006ee99c9a20d638f82478f5c"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/launch.py",
+      "archive_path": "round05_scratch_preparation/launch.py",
+      "sha256": "e7a915af16cb448316f3ef89773e832f8fa4a1d170c84bf02eacd7360a28794b"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/metrics.py",
+      "archive_path": "round05_scratch_preparation/metrics.py",
+      "sha256": "1465cc964aea7bd0e06616be3cf8f862e876c7c57d9df3103e81e57817761bdc"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/model_config.json",
+      "archive_path": "round05_scratch_preparation/model_config.json",
+      "sha256": "ff24143918e722d34a126b172f7d311c2a673a21c6756c89077fa05b05d6592f"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/partition_data.py",
+      "archive_path": "round05_scratch_preparation/partition_data.py",
+      "sha256": "9aaa08bb8878803cc42961d336345d5fa53f5aad30d8cfdf135d0fd35dd6757d"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/predictor.py",
+      "archive_path": "round05_scratch_preparation/predictor.py",
+      "sha256": "5b4801a4851c01f035fa7d1f05b9e2817318acfe155ae611e57f3425dfc407e6"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/SNAPSHOT.json",
+      "archive_path": "round05_scratch_preparation/preflight_history/gpu_attempt01/SNAPSHOT.json",
+      "sha256": "0f9fd724861c905582524f071c310d73d0e161abcef75c7b9c15aaad63e94efe"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/io_continuity/training_executed.py",
+      "archive_path": "round05_scratch_preparation/preflight_history/io_continuity/training_executed.py",
+      "sha256": "17d2bb266704bb4a747d3b11b3ff0789f68e2bc5835230a45220d93a3f0bca76"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/prepare_train_statistics.py",
+      "archive_path": "round05_scratch_preparation/prepare_train_statistics.py",
+      "sha256": "ecab67351bbf0227609aa30117001853556731960573fdbc04761cef250db207"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/reader_checks.py",
+      "archive_path": "round05_scratch_preparation/reader_checks.py",
+      "sha256": "549e0086d5747e4d2642c1fc5fb265c06791ed98223bf46bdc327cfeb1799a30"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/resources.py",
+      "archive_path": "round05_scratch_preparation/resources.py",
+      "sha256": "0e86e15d8be5c1e0e94bf8f85eea56a121e3aa493cb9c262e9248727b5beb918"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/run_gpu_identity_diagnostic.py",
+      "archive_path": "round05_scratch_preparation/run_gpu_identity_diagnostic.py",
+      "sha256": "87e0c98a3ba029c1182772bc76e0658ac36f2462e463aa95fb4eae0dd690c499"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/run_gpu_preflight.py",
+      "archive_path": "round05_scratch_preparation/run_gpu_preflight.py",
+      "sha256": "49bf9fe58ff72aac13bf2b5449ff9b320d2b0d51c653acceb14384741e9d2eea"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/run_gpu_preflight_retry01.py",
+      "archive_path": "round05_scratch_preparation/run_gpu_preflight_retry01.py",
+      "sha256": "c3cedde6b63c75d1b220b7a6fe2e2a0dbc36ccf8d1ab55f72b9d3f6c45410ba8"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/run_statistics.py",
+      "archive_path": "round05_scratch_preparation/run_statistics.py",
+      "sha256": "05f3d0dcce091c50faf9c7c234ffab0d863fa188bf685511c83d5eff49bc617f"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/runtime.py",
+      "archive_path": "round05_scratch_preparation/runtime.py",
+      "sha256": "fb54c5073e261455ef43036f3d1f65bdaf89714fc9ddc690ec0ec3a773074f94"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/train.py",
+      "archive_path": "round05_scratch_preparation/train.py",
+      "sha256": "5d8fe3e9c6a30fdd942a89171169994d097f237bfa71105b9129e933017750c3"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/training.py",
+      "archive_path": "round05_scratch_preparation/training.py",
+      "sha256": "c0147d25cf2a2b6cd0956a57bfcab069657618bc22712efa29feb1b6a9533cdd"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/CPU_PREFLIGHT.json",
+      "archive_path": "round06_objective_preparation/CPU_PREFLIGHT.json",
+      "sha256": "02c268678eb4b6293258ec99020d4f7f16c6d9f3244ccf122ea4ebae7a6e8bd9"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/CPU_PREFLIGHT_REVIEW.json",
+      "archive_path": "round06_objective_preparation/CPU_PREFLIGHT_REVIEW.json",
+      "sha256": "9cb76884bb5bd189ea1e9d090ce9db83b396654e6e497c7932c5f776b31d088f"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/CPU_SOURCE_REVIEW.json",
+      "archive_path": "round06_objective_preparation/CPU_SOURCE_REVIEW.json",
+      "sha256": "b0c291527e83b69e85cda5a00d8478f104dcdd4c7e64b4750d747c27590bd55c"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/ENVIRONMENT.json",
+      "archive_path": "round06_objective_preparation/ENVIRONMENT.json",
+      "sha256": "57c2f536b2af90baf8816a0924be5a7511e88ba0f35fbeda5b55e95fdf2540a9"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/FROZEN_MANIFEST.json",
+      "archive_path": "round06_objective_preparation/FROZEN_MANIFEST.json",
+      "sha256": "4f1908d8f83c7a4622a8aadb511305da93465f8e29af3203327981c3c739d52b"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/GPU_PREFLIGHT.json",
+      "archive_path": "round06_objective_preparation/GPU_PREFLIGHT.json",
+      "sha256": "cdb0520de4b80a3618114ad02ed61a34a071cf02701f0dbfd62168efcf6d2aad"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/GPU_PREFLIGHT_REVIEW.json",
+      "archive_path": "round06_objective_preparation/GPU_PREFLIGHT_REVIEW.json",
+      "sha256": "fc39d7e2b915717e074b4eb99c1971a447f72d13b4bfe642eae583633eedfee0"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/GPU_UPDATE_PROGRESS.json",
+      "archive_path": "round06_objective_preparation/GPU_UPDATE_PROGRESS.json",
+      "sha256": "4ddeb29614ef284bd503f51f0d82c427a4368f2966e129134036b0fafb04434b"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/INDEPENDENT_FINAL_PREPARATION_CHECKS.json",
+      "archive_path": "round06_objective_preparation/INDEPENDENT_FINAL_PREPARATION_CHECKS.json",
+      "sha256": "257a67a2f9b936b7498e9cc41374d77d260c4a40efd6524ade2f832e9caf1c74"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/INDEPENDENT_FINAL_PREPARATION_CHECKS_01.log",
+      "archive_path": "round06_objective_preparation/INDEPENDENT_FINAL_PREPARATION_CHECKS_01.log",
+      "sha256": "3758e11103eb39b51677c8a8b5155fd17f742cf054b72d189ead15f18a6fc0c4"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/INDEPENDENT_FINAL_PREPARATION_CHECKS_02.log",
+      "archive_path": "round06_objective_preparation/INDEPENDENT_FINAL_PREPARATION_CHECKS_02.log",
+      "sha256": "395737b27942bcbb9f9620a87c9200ccf0ac6cdf42856ba1ad9d91764a7d2eb0"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/INDEPENDENT_GATE_CHECKS.json",
+      "archive_path": "round06_objective_preparation/INDEPENDENT_GATE_CHECKS.json",
+      "sha256": "60aa32905289a8a01fd612fad431fc0488c57f464b5854a06b14f172a8595649"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/INDEPENDENT_GATE_CHECKS_01.log",
+      "archive_path": "round06_objective_preparation/INDEPENDENT_GATE_CHECKS_01.log",
+      "sha256": "919e6d1911cb368433645cb6392b950ef22f6b723a2cf595408386c95f611fe6"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/INDEPENDENT_PREFLIGHT_RESULT_CHECKS.json",
+      "archive_path": "round06_objective_preparation/INDEPENDENT_PREFLIGHT_RESULT_CHECKS.json",
+      "sha256": "543ed23016a156fd82b1d5c8e904150d3857f473f8b39b874a64892ccba1bd57"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/INDEPENDENT_PREFLIGHT_RESULT_CHECKS_01.log",
+      "archive_path": "round06_objective_preparation/INDEPENDENT_PREFLIGHT_RESULT_CHECKS_01.log",
+      "sha256": "5c06a17cec34cca65331a2b74b56bf24b5af78243ac4fbf40d63e8c4d0852cf5"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/INDEPENDENT_PREPARATION_REVIEW.json",
+      "archive_path": "round06_objective_preparation/INDEPENDENT_PREPARATION_REVIEW.json",
+      "sha256": "8d2dd32e954f533bdcdf298693b7d2c457eef5fb123824c3eeaddf026e33a986"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/INDEPENDENT_PREPARATION_REVIEW.md",
+      "archive_path": "round06_objective_preparation/INDEPENDENT_PREPARATION_REVIEW.md",
+      "sha256": "d7446a31f56cb7025c653843552d8fcdc0f0da498a1f9d7f9701d97fcad15c11"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/INDEPENDENT_PROPOSAL_REVIEW.json",
+      "archive_path": "round06_objective_preparation/INDEPENDENT_PROPOSAL_REVIEW.json",
+      "sha256": "a1617eaea6574b36f5e39fa9b5bb738c7a2ba91083c373217e2c51d25b992225"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/INDEPENDENT_PROPOSAL_REVIEW.md",
+      "archive_path": "round06_objective_preparation/INDEPENDENT_PROPOSAL_REVIEW.md",
+      "sha256": "2d84d9be45d605cfab929298d126af91912968f368baf3965bf119f9eae9016c"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/INDEPENDENT_REVIEW_MANIFEST.json",
+      "archive_path": "round06_objective_preparation/INDEPENDENT_REVIEW_MANIFEST.json",
+      "sha256": "cc6421bd2bbfab9894f71853d20a44577b9381d136d4e9178ded9d210e87032d"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/INDEPENDENT_REVIEW_STATUS.md",
+      "archive_path": "round06_objective_preparation/INDEPENDENT_REVIEW_STATUS.md",
+      "sha256": "eed239fa9a315dd3d1d82f6119df8599995cb9df4cbc57378e9cd48849c25f8a"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/PREPARATION_ARCHIVE_HANDOFF.md",
+      "archive_path": "round06_objective_preparation/PREPARATION_ARCHIVE_HANDOFF.md",
+      "sha256": "197cac04617afc12f47d50343ba93266b349e8f592bdc50931fc08ca133a1004"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/PREPARATION_REPORT.md",
+      "archive_path": "round06_objective_preparation/PREPARATION_REPORT.md",
+      "sha256": "ad403888349872ff911d380b70be1feb93fff2351a4d5fe1a16c56e9a5a12925"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/PREPARATION_STATUS.md",
+      "archive_path": "round06_objective_preparation/PREPARATION_STATUS.md",
+      "sha256": "bbd590a1ae81a112603b4f91cc28047778bd3507a2abba7cd5132512637bc9ed"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/PRODUCTION_AUTHORIZATION_TEMPLATE.json",
+      "archive_path": "round06_objective_preparation/PRODUCTION_AUTHORIZATION_TEMPLATE.json",
+      "sha256": "39d5260e1c45d6810efc5e547fbc53ce12ea2b741cb9b40b526a4996e05d65db"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/PROPOSAL_HANDOFF.md",
+      "archive_path": "round06_objective_preparation/PROPOSAL_HANDOFF.md",
+      "sha256": "dc4b7ea0f563ca7acdbacedb54d0a55bc90aff75508d57ef87f8b95c73f3ae26"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/PROPOSAL_MANIFEST.json",
+      "archive_path": "round06_objective_preparation/PROPOSAL_MANIFEST.json",
+      "sha256": "248c0845c04e70e9ae7083a04784f2709c96fc3720da1a967895bae3a18ac76f"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/PROPOSED_SETTINGS.json",
+      "archive_path": "round06_objective_preparation/PROPOSED_SETTINGS.json",
+      "sha256": "0238de653981e94105d9937ad65dd4a8b26a7f3659cbac00012fb3ef24c40047"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/PROTOCOL.md",
+      "archive_path": "round06_objective_preparation/PROTOCOL.md",
+      "sha256": "25b6384e44f2bbeb1d6e302500c8c49387eeff2d18e1a4ba94f415bde5fee07d"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/PROTOCOL_PROPOSAL.md",
+      "archive_path": "round06_objective_preparation/PROTOCOL_PROPOSAL.md",
+      "sha256": "aea5c76f422fb7cca286cd84f7bafaff230e2aa29b2ed3068fe7e4573f3245b6"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/ROUND06_PREPARATION_DECISION.md",
+      "archive_path": "round06_objective_preparation/ROUND06_PREPARATION_DECISION.md",
+      "sha256": "d8f7478f77bf660c32e75897d555b13f972e64abaac4385e2c9b44ab3e2e6458"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/SOURCE_LINEAGE.json",
+      "archive_path": "round06_objective_preparation/SOURCE_LINEAGE.json",
+      "sha256": "454ee6189e2435b36dabc005c3fa4d6c77252fff12778c7960794b46feef68e8"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/TECHNICAL_PREFLIGHT_PLAN.md",
+      "archive_path": "round06_objective_preparation/TECHNICAL_PREFLIGHT_PLAN.md",
+      "sha256": "15a147a541e3a3a7eaf9be0cf562086996d1de298922ec5432d29d41e719585b"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/TECHNICAL_SOURCE_REVIEW.json",
+      "archive_path": "round06_objective_preparation/TECHNICAL_SOURCE_REVIEW.json",
+      "sha256": "fbf76a414d89a459cf5fa3c956544a698b1f564c856622c107fa99b6dc592605"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/TRAIN_STATISTICS.json",
+      "archive_path": "round06_objective_preparation/TRAIN_STATISTICS.json",
+      "sha256": "d3d0ed5af2646959be0abcb9cebb50d7cdb2ef7fb70d7e073fe12a8b697953ae"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/common.py",
+      "archive_path": "round06_objective_preparation/common.py",
+      "sha256": "50a1ef987cbc635b3b5692364281498e66587b112d5573c765fea360470038cd"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/config.json",
+      "archive_path": "round06_objective_preparation/config.json",
+      "sha256": "072189823f3334e8bee8b6a468442f7d0331d1b65bf6e4bd3a0cb50053e87b23"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/draft01/PROPOSAL_MANIFEST.json",
+      "archive_path": "round06_objective_preparation/draft01/PROPOSAL_MANIFEST.json",
+      "sha256": "4e7ca9506c35d2681ed2750f92e91a1857669eb68c9dec9e54a7581fd27bde19"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/draft01/PROPOSED_SETTINGS.json",
+      "archive_path": "round06_objective_preparation/draft01/PROPOSED_SETTINGS.json",
+      "sha256": "0238de653981e94105d9937ad65dd4a8b26a7f3659cbac00012fb3ef24c40047"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/draft01/PROTOCOL_PROPOSAL.md",
+      "archive_path": "round06_objective_preparation/draft01/PROTOCOL_PROPOSAL.md",
+      "sha256": "ba97c03468eb6dbbd843bd3d9e6fa61d22155c906c2560be1cb5e67c818043f0"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/execution_gate.py",
+      "archive_path": "round06_objective_preparation/execution_gate.py",
+      "sha256": "e0e03333f9f31cbb48a8b59812d12a4f07ba49c032dca3d33e30796ea626829c"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/freeze_preparation.py",
+      "archive_path": "round06_objective_preparation/freeze_preparation.py",
+      "sha256": "f00f64394efcd279c48b66ed8b83c0fc9fbf9f8e97785781b18cccd953b437af"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/fresh_model.py",
+      "archive_path": "round06_objective_preparation/fresh_model.py",
+      "sha256": "16ec3eb14eeafa3265ba0f35abf4ff174a2a20f155b408ed133635fa73a8c314"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/gpu_preflight.py",
+      "archive_path": "round06_objective_preparation/gpu_preflight.py",
+      "sha256": "61e06872bdefe45bee44ee52beecf03144440d89eb6572f10021387973045bcb"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/independent_final_preparation_checks.py",
+      "archive_path": "round06_objective_preparation/independent_final_preparation_checks.py",
+      "sha256": "684c5bfcd1d200ab26e9280926bca593677e8ec7cebc001f2576bf240f3a16d5"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/independent_gate_checks.py",
+      "archive_path": "round06_objective_preparation/independent_gate_checks.py",
+      "sha256": "334accea8382ec5208459782cb73f59ecfba98afbf7f00e0399f4dda2352a26f"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/independent_preflight_result_checks.py",
+      "archive_path": "round06_objective_preparation/independent_preflight_result_checks.py",
+      "sha256": "aabbd15210c718c2f056bbf502ff05d34bc3d280396e7b4c0ffb7e0c957b5172"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/launch.py",
+      "archive_path": "round06_objective_preparation/launch.py",
+      "sha256": "d49ade9238f942dbbf09aea1f454ae0fed2628f11a9ac4c08f7b9b656f137811"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/metrics.py",
+      "archive_path": "round06_objective_preparation/metrics.py",
+      "sha256": "1465cc964aea7bd0e06616be3cf8f862e876c7c57d9df3103e81e57817761bdc"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/model_config.json",
+      "archive_path": "round06_objective_preparation/model_config.json",
+      "sha256": "ff24143918e722d34a126b172f7d311c2a673a21c6756c89077fa05b05d6592f"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/objective.py",
+      "archive_path": "round06_objective_preparation/objective.py",
+      "sha256": "a24c809d7e031332e5daba8ad0dbe82bf7cdf1acfc6d4bec923f9e4fc4ae3469"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/ops/FREEZE_RECEIPT.json",
+      "archive_path": "round06_objective_preparation/ops/FREEZE_RECEIPT.json",
+      "sha256": "486139471f4349d2fabbd9cb1ed4b1216f475d82a15cbe9ef46ad508ffed0b3d"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/ops/GPU_PRELAUNCH_GUARD_FAILURE.md",
+      "archive_path": "round06_objective_preparation/ops/GPU_PRELAUNCH_GUARD_FAILURE.md",
+      "sha256": "6d165cfe6eb8cf5fd40e58e2578a38197081becb82f42d08823b5226260ed82f"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/ops/cpu_synthetic_01.log",
+      "archive_path": "round06_objective_preparation/ops/cpu_synthetic_01.log",
+      "sha256": "6deda14aef401790d9613460f9e664d11e744b731f9e4770557826aa0b8c257b"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/ops/gpu_preflight_attempt/COMPLETE.json",
+      "archive_path": "round06_objective_preparation/ops/gpu_preflight_attempt/COMPLETE.json",
+      "sha256": "ecfe67939ff7c2cf9b5a7b6d49db259e97e6d97af46adba8c4f07f76f890bb0d"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/ops/gpu_preflight_attempt/GPU_ADMISSION.xml",
+      "archive_path": "round06_objective_preparation/ops/gpu_preflight_attempt/GPU_ADMISSION.xml",
+      "sha256": "cf387b699f11f6a87481e693808f3bdecc8cf23aed0ceaee177ead91eb2f55ee"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/ops/gpu_preflight_attempt/LAUNCH_RECEIPT.json",
+      "archive_path": "round06_objective_preparation/ops/gpu_preflight_attempt/LAUNCH_RECEIPT.json",
+      "sha256": "8aa9032604fb960f0aa28433f208694b641de233a23135877d42687e30179cbe"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/ops/gpu_preflight_attempt/MONITOR_REGISTRATION.json",
+      "archive_path": "round06_objective_preparation/ops/gpu_preflight_attempt/MONITOR_REGISTRATION.json",
+      "sha256": "fd43aebd79ecbcfdcb4f9144a55085ce5266bb6df595034215f802127a8b8ea6"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/ops/gpu_preflight_attempt/REGISTRATION_TOOL.log",
+      "archive_path": "round06_objective_preparation/ops/gpu_preflight_attempt/REGISTRATION_TOOL.log",
+      "sha256": "fd43aebd79ecbcfdcb4f9144a55085ce5266bb6df595034215f802127a8b8ea6"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/ops/gpu_preflight_attempt/stage.log",
+      "archive_path": "round06_objective_preparation/ops/gpu_preflight_attempt/stage.log",
+      "sha256": "a21634cf8c04742003c02a8f527522ecabab893b29a3d846e4b8c7e78e38c6da"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/partition_data.py",
+      "archive_path": "round06_objective_preparation/partition_data.py",
+      "sha256": "9aaa08bb8878803cc42961d336345d5fa53f5aad30d8cfdf135d0fd35dd6757d"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/predictor.py",
+      "archive_path": "round06_objective_preparation/predictor.py",
+      "sha256": "569acc33b314504ff69df4a00f046c32480ea8894d346f256d4f6d8afba33371"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/preflight_helpers.py",
+      "archive_path": "round06_objective_preparation/preflight_helpers.py",
+      "sha256": "f92c3a3ae455b55aaf8307014c5abbb16c851c32bdaceffc47fe5f2feff82d1b"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/resources.py",
+      "archive_path": "round06_objective_preparation/resources.py",
+      "sha256": "0e86e15d8be5c1e0e94bf8f85eea56a121e3aa493cb9c262e9248727b5beb918"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/reviewer_history/final_check_01/independent_final_preparation_checks.py",
+      "archive_path": "round06_objective_preparation/reviewer_history/final_check_01/independent_final_preparation_checks.py",
+      "sha256": "3a417133e22a5ff5c7d43da6443f8d6a78ddab09369cd3ae179760ce811aef23"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/run_gpu_preflight.py",
+      "archive_path": "round06_objective_preparation/run_gpu_preflight.py",
+      "sha256": "fa6e91e4019b97406734b30f42067253131416d0a5301840576882e5bb219cb5"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/runtime.py",
+      "archive_path": "round06_objective_preparation/runtime.py",
+      "sha256": "fb54c5073e261455ef43036f3d1f65bdaf89714fc9ddc690ec0ec3a773074f94"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/synthetic_checks.py",
+      "archive_path": "round06_objective_preparation/synthetic_checks.py",
+      "sha256": "b8897e29969ae4e92eb3c8aef76130aa1be6d7e43ff01b76793b6bbd15a1bc73"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/train.py",
+      "archive_path": "round06_objective_preparation/train.py",
+      "sha256": "c63f5f3b1da7257ce217b19d28fe0c3df15e63a57a51770f75c370f1b9cc8877"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/training.py",
+      "archive_path": "round06_objective_preparation/training.py",
+      "sha256": "821fae3660f82026f53bbb267e2f12b431da4963935c5ec63e6fbd607867fc2b"
+    }
+  ],
+  "instructions": "Restore bytes to original absolute paths in an isolated compatible environment. The full 134-source closure and ten supplement members are copied explicitly; restore bytes at original server paths. Source references to private_checkpoint_opaque_hashes, raw archives, indices or predictions never authorize payload copying. Private preflight states must not initialize production. Earlier full split/failure and deferred-QC records remain inherited from parent f75a23c and its ancestors. No production authority is included."
+}

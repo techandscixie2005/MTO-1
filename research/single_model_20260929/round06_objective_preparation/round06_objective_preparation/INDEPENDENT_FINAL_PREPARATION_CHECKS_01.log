@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/independent_final_preparation_checks.py", line 110, in <module>
+    main()
+  File "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/independent_final_preparation_checks.py", line 74, in main
+    assert all(source.get(path) == digest for path, digest in record.get(field, {}).items()), name
+AssertionError: INDEPENDENT_GATE_CHECKS.json

@@ -1,0 +1,16 @@
+{
+  "additional_model_inference": false,
+  "additional_optimizer_updates": 0,
+  "all_other_ast_nodes_unchanged": true,
+  "changed_functions": [
+    "atomic_copy",
+    "atomic_arrays"
+  ],
+  "exact_changes": "Append parent-directory open/fsync/finally-close after each existing os.replace.",
+  "executed_sha256": "17d2bb266704bb4a747d3b11b3ff0789f68e2bc5835230a45220d93a3f0bca76",
+  "final_sha256": "c0147d25cf2a2b6cd0956a57bfcab069657618bc22712efa29feb1b6a9533cdd",
+  "mapping_sha256": "f0b3af59de54885c849db25b31e72083e70a9fc03cd64ca337cff5e2d7067382",
+  "passed": true,
+  "reviewer_source_sha256": "ead199501de254c6380c96f53172610ea4e8f9fe575a0f117f622d574bf89c5f",
+  "targets_or_checkpoint_tensors_read": false
+}

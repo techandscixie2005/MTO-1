@@ -1,0 +1,21 @@
+{
+  "blocking_findings": [],
+  "existing_synthetic_receipt_sha256": "4712269cdeb3768091da720ceab828af8ed6e4ee0a790a88c5c823a0b2e55a9d",
+  "independent_synthetic_receipt_sha256": "fe18f4af85811327298a1f1163897ce7c230e84df6189658af49b2d08136ff17",
+  "independent_synthetic_source_sha256": "f160207430b5886755210ac3cafc07145aa4b78006ee99c9a20d638f82478f5c",
+  "markdown_sha256": "bb5f50216d183e3c70e03abba6183b3b31e244b8aa47b3e1274e2656c4feadc6",
+  "operational_wrapper_sha256": "05f3d0dcce091c50faf9c7c234ffab0d863fa188bf685511c83d5eff49bc617f",
+  "passed": true,
+  "phase": "train_statistics_preparation",
+  "production_statistics_executed_by_reviewer": false,
+  "reviewed_utc": "2026-09-30T08:45:02.419298+00:00",
+  "scope": "CPU-only new TRAIN statistics; no model fitting, validation values, test values, or prediction scoring",
+  "source_hashes": {
+    "common.py": "50a1ef987cbc635b3b5692364281498e66587b112d5573c765fea360470038cd",
+    "partition_data.py": "9aaa08bb8878803cc42961d336345d5fa53f5aad30d8cfdf135d0fd35dd6757d",
+    "prepare_train_statistics.py": "ecab67351bbf0227609aa30117001853556731960573fdbc04761cef250db207",
+    "reader_checks.py": "549e0086d5747e4d2642c1fc5fb265c06791ed98223bf46bdc327cfeb1799a30"
+  },
+  "source_inspection_and_synthetic_checks_only": true,
+  "split_manifest_sha256": "c8ce66ddb7209005b5feebfcddfc2bc30ee81d92fe63cce20f15c4abf3a07155"
+}
