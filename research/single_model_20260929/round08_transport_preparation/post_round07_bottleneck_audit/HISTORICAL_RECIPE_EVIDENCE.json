@@ -1,0 +1,1695 @@
+{
+  "format": "read_only_historical_recipe_audit_v1",
+  "scope": "Fixed five-campaign config/history ledger, named code and published aggregate reports only.",
+  "not_performed": [
+    "array decoding",
+    "checkpoint loading",
+    "model construction or inference",
+    "new fitting or scoring",
+    "test-target access"
+  ],
+  "config_count": 23,
+  "records": [
+    {
+      "campaign": "qm9s_full_EA_20260925",
+      "run": "detanet_reference",
+      "config": {
+        "seed": 11,
+        "model": "detanet",
+        "states": 10,
+        "mto_channels": 16,
+        "query_dim": 32,
+        "router_hidden": 128,
+        "head_hidden": 128,
+        "initial_energy_min_eV": 2.0,
+        "initial_energy_max_eV": 13.0,
+        "sigma_eV": 0.2,
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "batch_size": 64,
+        "max_epochs": 1000,
+        "min_epochs": 200,
+        "early_patience": 150,
+        "plateau_patience": 50,
+        "min_lr": 1e-06,
+        "grad_clip": 5.0,
+        "loss_weights": [
+          1.0,
+          1.0
+        ],
+        "dtype": "float32",
+        "amp": false,
+        "tf32": false,
+        "energy_initialization": "train_state_means",
+        "optimizer": "Adam_AMSGrad",
+        "num_threads": 2,
+        "checkpoint_seconds": 600,
+        "name": "detanet_reference",
+        "gpu": 0
+      },
+      "history_rows": 259,
+      "last_record": {
+        "epoch": 259,
+        "steps": 487179,
+        "best_epoch": 107,
+        "best_val": 0.5765265817953161,
+        "lr": 0.00025,
+        "train": [
+          0.1024597366433819,
+          0.02241621600836732,
+          0.08004352065284322
+        ],
+        "val": [
+          0.6445497507254521,
+          0.03690206500858452,
+          0.6076476854226777
+        ]
+      },
+      "observed_markers": {
+        "FIT_COMPLETE.json": {
+          "event": "FIT_COMPLETE",
+          "epochs": 259,
+          "best_epoch": 107,
+          "best_val": 0.5765265817953161,
+          "steps": 487179,
+          "parameters": {
+            "total": 1408872,
+            "backbone": 1371840
+          },
+          "reason": "early_stop"
+        }
+      }
+    },
+    {
+      "campaign": "qm9s_full_EA_20260925",
+      "run": "mto_batch128",
+      "config": {
+        "seed": 11,
+        "model": "mto",
+        "states": 10,
+        "mto_channels": 16,
+        "query_dim": 32,
+        "router_hidden": 128,
+        "head_hidden": 128,
+        "initial_energy_min_eV": 2.0,
+        "initial_energy_max_eV": 13.0,
+        "sigma_eV": 0.2,
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "batch_size": 128,
+        "max_epochs": 1000,
+        "min_epochs": 200,
+        "early_patience": 150,
+        "plateau_patience": 50,
+        "min_lr": 1e-06,
+        "grad_clip": 5.0,
+        "loss_weights": [
+          1.0,
+          1.0
+        ],
+        "dtype": "float32",
+        "amp": false,
+        "tf32": false,
+        "energy_initialization": "train_state_means",
+        "optimizer": "Adam_AMSGrad",
+        "num_threads": 2,
+        "checkpoint_seconds": 600,
+        "name": "mto_batch128",
+        "gpu": 6
+      },
+      "history_rows": 236,
+      "last_record": {
+        "epoch": 236,
+        "steps": 222076,
+        "best_epoch": 33,
+        "best_val": 0.53043719986189,
+        "lr": 0.000125,
+        "train": [
+          0.09047347941088006,
+          0.02057994927214767,
+          0.06989353020698269
+        ],
+        "val": [
+          0.6446407277392229,
+          0.03059604895032882,
+          0.6140446782718331
+        ]
+      },
+      "observed_markers": {
+        "FIT_COMPLETE.json": {
+          "event": "FIT_COMPLETE",
+          "epochs": 236,
+          "best_epoch": 33,
+          "best_val": 0.53043719986189,
+          "steps": 222076,
+          "parameters": {
+            "total": 1552092,
+            "backbone": 1371840
+          },
+          "reason": "early_stop"
+        }
+      }
+    },
+    {
+      "campaign": "qm9s_full_EA_20260925",
+      "run": "mto_channels32",
+      "config": {
+        "seed": 11,
+        "model": "mto",
+        "states": 10,
+        "mto_channels": 32,
+        "query_dim": 32,
+        "router_hidden": 128,
+        "head_hidden": 128,
+        "initial_energy_min_eV": 2.0,
+        "initial_energy_max_eV": 13.0,
+        "sigma_eV": 0.2,
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "batch_size": 64,
+        "max_epochs": 1000,
+        "min_epochs": 200,
+        "early_patience": 150,
+        "plateau_patience": 50,
+        "min_lr": 1e-06,
+        "grad_clip": 5.0,
+        "loss_weights": [
+          1.0,
+          1.0
+        ],
+        "dtype": "float32",
+        "amp": false,
+        "tf32": false,
+        "energy_initialization": "train_state_means",
+        "optimizer": "Adam_AMSGrad",
+        "num_threads": 2,
+        "checkpoint_seconds": 600,
+        "name": "mto_channels32",
+        "gpu": 5
+      },
+      "history_rows": 244,
+      "last_record": {
+        "epoch": 244,
+        "steps": 458964,
+        "best_epoch": 92,
+        "best_val": 0.5318217367031886,
+        "lr": 0.00025,
+        "train": [
+          0.07213579715387777,
+          0.017164820848540995,
+          0.05497097630642011
+        ],
+        "val": [
+          0.6126510756407317,
+          0.028181835674718936,
+          0.5844692406881151
+        ]
+      },
+      "observed_markers": {
+        "FIT_COMPLETE.json": {
+          "event": "FIT_COMPLETE",
+          "epochs": 244,
+          "best_epoch": 92,
+          "best_val": 0.5318217367031886,
+          "steps": 458964,
+          "parameters": {
+            "total": 1783820,
+            "backbone": 1371840
+          },
+          "reason": "early_stop"
+        }
+      }
+    },
+    {
+      "campaign": "qm9s_full_EA_20260925",
+      "run": "mto_lr3e3",
+      "config": {
+        "seed": 11,
+        "model": "mto",
+        "states": 10,
+        "mto_channels": 16,
+        "query_dim": 32,
+        "router_hidden": 128,
+        "head_hidden": 128,
+        "initial_energy_min_eV": 2.0,
+        "initial_energy_max_eV": 13.0,
+        "sigma_eV": 0.2,
+        "lr": 0.003,
+        "weight_decay": 0.0,
+        "batch_size": 64,
+        "max_epochs": 1000,
+        "min_epochs": 200,
+        "early_patience": 150,
+        "plateau_patience": 50,
+        "min_lr": 1e-06,
+        "grad_clip": 5.0,
+        "loss_weights": [
+          1.0,
+          1.0
+        ],
+        "dtype": "float32",
+        "amp": false,
+        "tf32": false,
+        "energy_initialization": "train_state_means",
+        "optimizer": "Adam_AMSGrad",
+        "num_threads": 2,
+        "checkpoint_seconds": 600,
+        "name": "mto_lr3e3",
+        "gpu": 4
+      },
+      "history_rows": 227,
+      "last_record": {
+        "epoch": 227,
+        "steps": 426987,
+        "best_epoch": 75,
+        "best_val": 0.5399122191445399,
+        "lr": 0.00075,
+        "train": [
+          0.10158648428505486,
+          0.02072981605040463,
+          0.08085666814590936
+        ],
+        "val": [
+          0.6083101789429984,
+          0.029202190962445404,
+          0.5791079868929421
+        ]
+      },
+      "observed_markers": {
+        "FIT_COMPLETE.json": {
+          "event": "FIT_COMPLETE",
+          "epochs": 227,
+          "best_epoch": 75,
+          "best_val": 0.5399122191445399,
+          "steps": 426987,
+          "parameters": {
+            "total": 1552092,
+            "backbone": 1371840
+          },
+          "reason": "early_stop"
+        }
+      }
+    },
+    {
+      "campaign": "qm9s_full_EA_20260925",
+      "run": "mto_lr3e4",
+      "config": {
+        "seed": 11,
+        "model": "mto",
+        "states": 10,
+        "mto_channels": 16,
+        "query_dim": 32,
+        "router_hidden": 128,
+        "head_hidden": 128,
+        "initial_energy_min_eV": 2.0,
+        "initial_energy_max_eV": 13.0,
+        "sigma_eV": 0.2,
+        "lr": 0.0003,
+        "weight_decay": 0.0,
+        "batch_size": 64,
+        "max_epochs": 1000,
+        "min_epochs": 200,
+        "early_patience": 150,
+        "plateau_patience": 50,
+        "min_lr": 1e-06,
+        "grad_clip": 5.0,
+        "loss_weights": [
+          1.0,
+          1.0
+        ],
+        "dtype": "float32",
+        "amp": false,
+        "tf32": false,
+        "energy_initialization": "train_state_means",
+        "optimizer": "Adam_AMSGrad",
+        "num_threads": 2,
+        "checkpoint_seconds": 600,
+        "name": "mto_lr3e4",
+        "gpu": 2
+      },
+      "history_rows": 226,
+      "last_record": {
+        "epoch": 226,
+        "steps": 425106,
+        "best_epoch": 23,
+        "best_val": 0.5378911513751615,
+        "lr": 3.75e-05,
+        "train": [
+          0.10626533491145658,
+          0.022403171187310274,
+          0.08386216374836665
+        ],
+        "val": [
+          0.6547845662299866,
+          0.03158960433695226,
+          0.6231949613581437
+        ]
+      },
+      "observed_markers": {
+        "FIT_COMPLETE.json": {
+          "event": "FIT_COMPLETE",
+          "epochs": 226,
+          "best_epoch": 23,
+          "best_val": 0.5378911513751615,
+          "steps": 425106,
+          "parameters": {
+            "total": 1552092,
+            "backbone": 1371840
+          },
+          "reason": "early_stop"
+        }
+      }
+    },
+    {
+      "campaign": "qm9s_full_EA_20260925",
+      "run": "mto_reference",
+      "config": {
+        "seed": 11,
+        "model": "mto",
+        "states": 10,
+        "mto_channels": 16,
+        "query_dim": 32,
+        "router_hidden": 128,
+        "head_hidden": 128,
+        "initial_energy_min_eV": 2.0,
+        "initial_energy_max_eV": 13.0,
+        "sigma_eV": 0.2,
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "batch_size": 64,
+        "max_epochs": 1000,
+        "min_epochs": 200,
+        "early_patience": 150,
+        "plateau_patience": 50,
+        "min_lr": 1e-06,
+        "grad_clip": 5.0,
+        "loss_weights": [
+          1.0,
+          1.0
+        ],
+        "dtype": "float32",
+        "amp": false,
+        "tf32": false,
+        "energy_initialization": "train_state_means",
+        "optimizer": "Adam_AMSGrad",
+        "num_threads": 2,
+        "checkpoint_seconds": 600,
+        "name": "mto_reference",
+        "gpu": 1
+      },
+      "history_rows": 248,
+      "last_record": {
+        "epoch": 248,
+        "steps": 466488,
+        "best_epoch": 45,
+        "best_val": 0.5233464622939735,
+        "lr": 0.000125,
+        "train": [
+          0.08537688636069363,
+          0.019240808247102892,
+          0.06613607814523968
+        ],
+        "val": [
+          0.6480131884588298,
+          0.029555952784332585,
+          0.6184572359776019
+        ]
+      },
+      "observed_markers": {
+        "FIT_COMPLETE.json": {
+          "event": "FIT_COMPLETE",
+          "epochs": 248,
+          "best_epoch": 45,
+          "best_val": 0.5233464622939735,
+          "steps": 466488,
+          "parameters": {
+            "total": 1552092,
+            "backbone": 1371840
+          },
+          "reason": "early_stop"
+        }
+      }
+    },
+    {
+      "campaign": "qm9s_full_EA_20260925",
+      "run": "mto_seed23",
+      "config": {
+        "seed": 23,
+        "model": "mto",
+        "states": 10,
+        "mto_channels": 16,
+        "query_dim": 32,
+        "router_hidden": 128,
+        "head_hidden": 128,
+        "initial_energy_min_eV": 2.0,
+        "initial_energy_max_eV": 13.0,
+        "sigma_eV": 0.2,
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "batch_size": 64,
+        "max_epochs": 1000,
+        "min_epochs": 200,
+        "early_patience": 150,
+        "plateau_patience": 50,
+        "min_lr": 1e-06,
+        "grad_clip": 5.0,
+        "loss_weights": [
+          1.0,
+          1.0
+        ],
+        "dtype": "float32",
+        "amp": false,
+        "tf32": false,
+        "energy_initialization": "train_state_means",
+        "optimizer": "Adam_AMSGrad",
+        "num_threads": 2,
+        "checkpoint_seconds": 600,
+        "name": "mto_seed23",
+        "gpu": 7
+      },
+      "history_rows": 194,
+      "last_record": {
+        "epoch": 194,
+        "steps": 364914,
+        "best_epoch": 64,
+        "best_val": 0.5468941284017651,
+        "lr": 0.00025,
+        "train": [
+          0.08599887958293165,
+          0.01940740768501983,
+          0.06659147192114169
+        ],
+        "val": [
+          0.6218255127827779,
+          0.030397673424153924,
+          0.5914278400539817
+        ]
+      },
+      "observed_markers": {
+        "FAILED.json": {}
+      }
+    },
+    {
+      "campaign": "qm9s_eta_Ef_20260926",
+      "run": "detanet_ef",
+      "config": {
+        "name": "detanet_ef",
+        "model": "detanet_ef",
+        "seed": 11,
+        "gpu": 6,
+        "states": 10,
+        "scalar_outsize": 20,
+        "target_order": "E_eV[1:10], original_oscillator_strength[1:10]",
+        "loss": "official metrics.l2loss over valid raw 20-dimensional targets",
+        "label_scaling": "none",
+        "optimizer": "Adam_AMSGrad",
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "batch_size": 64,
+        "max_steps": 1000000,
+        "validate_every_steps": 50,
+        "stop_loss": 1e-05,
+        "stop_loss_rule": "both mean training MSE since previous validation and full validation MSE at or below threshold",
+        "scheduler": "ReduceLROnPlateau",
+        "plateau_patience": 50,
+        "plateau_patience_unit": "validation checks",
+        "lr_factor": 0.5,
+        "plateau_threshold": 0.0001,
+        "plateau_threshold_mode": "rel",
+        "min_lr": 1e-06,
+        "best_metric": "full validation raw E-f MSE",
+        "grad_clip": null,
+        "dtype": "float32",
+        "amp": false,
+        "tf32": false,
+        "num_threads": 2,
+        "checkpoint_seconds": 600,
+        "epoch_interpretation": "optimizer updates, consistent with official Trainer step printed as Epoch; this is a documented interpretation of ambiguous paper terminology",
+        "no_mto_early_stopping": true,
+        "authorization_record": "reports/detanet_confirmation.json"
+      },
+      "history_rows": 19855,
+      "last_record": {
+        "epoch": 527.7779651863237,
+        "steps": 992750,
+        "best_epoch": 527.5918491130406,
+        "best_val": 0.008476116082927296,
+        "lr": 1e-06,
+        "train": [
+          0.007384860974186588,
+          0.012595047704283015,
+          0.0021746742440901614
+        ],
+        "val": [
+          0.008476981912474854,
+          0.014694612052398257,
+          0.0022593517725514505
+        ]
+      },
+      "observed_markers": {}
+    },
+    {
+      "campaign": "qm9s_eta_Ef_20260926",
+      "run": "mto_eta0",
+      "config": {
+        "seed": 11,
+        "model": "mto",
+        "states": 10,
+        "mto_channels": 16,
+        "query_dim": 32,
+        "router_hidden": 128,
+        "head_hidden": 128,
+        "initial_energy_min_eV": 2.0,
+        "initial_energy_max_eV": 13.0,
+        "sigma_eV": 0.2,
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "batch_size": 64,
+        "max_epochs": 1000,
+        "min_epochs": 200,
+        "early_patience": 150,
+        "plateau_patience": 50,
+        "min_lr": 1e-06,
+        "grad_clip": 5.0,
+        "loss_weights": [
+          1.0,
+          1.0
+        ],
+        "dtype": "float32",
+        "amp": false,
+        "tf32": false,
+        "energy_initialization": "train_state_means",
+        "optimizer": "Adam_AMSGrad",
+        "num_threads": 2,
+        "checkpoint_seconds": 600,
+        "name": "mto_eta0",
+        "gpu": 1,
+        "eta": 0.0
+      },
+      "history_rows": 236,
+      "last_record": {
+        "epoch": 236,
+        "steps": 443916,
+        "best_epoch": 33,
+        "best_val": 0.17222687388978386,
+        "lr": 0.000125,
+        "train": [
+          0.024165569463473383,
+          0.012802237842438906,
+          0.011363331621034476,
+          0.8067605300803639
+        ],
+        "val": [
+          0.21236581113963937,
+          0.024329228179026177,
+          0.18803658296061318,
+          0.7318124910902912
+        ]
+      },
+      "observed_markers": {
+        "FIT_COMPLETE.json": {
+          "event": "FIT_COMPLETE",
+          "epochs": 236,
+          "best_epoch": 33,
+          "best_val": 0.17222687388978386,
+          "steps": 443916,
+          "parameters": {
+            "total": 1552092,
+            "backbone": 1371840
+          },
+          "reason": "early_stop"
+        }
+      }
+    },
+    {
+      "campaign": "qm9s_eta_Ef_20260926",
+      "run": "mto_eta01",
+      "config": {
+        "seed": 11,
+        "model": "mto",
+        "states": 10,
+        "mto_channels": 16,
+        "query_dim": 32,
+        "router_hidden": 128,
+        "head_hidden": 128,
+        "initial_energy_min_eV": 2.0,
+        "initial_energy_max_eV": 13.0,
+        "sigma_eV": 0.2,
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "batch_size": 64,
+        "max_epochs": 1000,
+        "min_epochs": 200,
+        "early_patience": 150,
+        "plateau_patience": 50,
+        "min_lr": 1e-06,
+        "grad_clip": 5.0,
+        "loss_weights": [
+          1.0,
+          1.0
+        ],
+        "dtype": "float32",
+        "amp": false,
+        "tf32": false,
+        "energy_initialization": "train_state_means",
+        "optimizer": "Adam_AMSGrad",
+        "num_threads": 2,
+        "checkpoint_seconds": 600,
+        "name": "mto_eta01",
+        "gpu": 2,
+        "eta": 0.1
+      },
+      "history_rows": 236,
+      "last_record": {
+        "epoch": 236,
+        "steps": 443916,
+        "best_epoch": 33,
+        "best_val": 0.21760165351541894,
+        "lr": 0.000125,
+        "train": [
+          0.03340026316254839,
+          0.013436199157732429,
+          0.011618960893872614,
+          0.08345103110943351
+        ],
+        "val": [
+          0.26198086791184005,
+          0.02498546086704164,
+          0.1924316943262353,
+          0.445637127185631
+        ]
+      },
+      "observed_markers": {
+        "FIT_COMPLETE.json": {
+          "event": "FIT_COMPLETE",
+          "epochs": 236,
+          "best_epoch": 33,
+          "best_val": 0.21760165351541894,
+          "steps": 443916,
+          "parameters": {
+            "total": 1552092,
+            "backbone": 1371840
+          },
+          "reason": "early_stop"
+        }
+      }
+    },
+    {
+      "campaign": "qm9s_eta_Ef_20260926",
+      "run": "mto_eta1",
+      "config": {
+        "seed": 11,
+        "model": "mto",
+        "states": 10,
+        "mto_channels": 16,
+        "query_dim": 32,
+        "router_hidden": 128,
+        "head_hidden": 128,
+        "initial_energy_min_eV": 2.0,
+        "initial_energy_max_eV": 13.0,
+        "sigma_eV": 0.2,
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "batch_size": 64,
+        "max_epochs": 1000,
+        "min_epochs": 200,
+        "early_patience": 150,
+        "plateau_patience": 50,
+        "min_lr": 1e-06,
+        "grad_clip": 5.0,
+        "loss_weights": [
+          1.0,
+          1.0
+        ],
+        "dtype": "float32",
+        "amp": false,
+        "tf32": false,
+        "energy_initialization": "train_state_means",
+        "optimizer": "Adam_AMSGrad",
+        "num_threads": 2,
+        "checkpoint_seconds": 600,
+        "name": "mto_eta1",
+        "gpu": 4,
+        "eta": 1.0
+      },
+      "history_rows": 228,
+      "last_record": {
+        "epoch": 228,
+        "steps": 428868,
+        "best_epoch": 25,
+        "best_val": 0.5430853101858079,
+        "lr": 0.000125,
+        "train": [
+          0.08892359748311073,
+          0.01996137909297149,
+          0.013727242324994504,
+          0.05523497606514473
+        ],
+        "val": [
+          0.6363460448395875,
+          0.030275437447114008,
+          0.18581527501852826,
+          0.42025533237394513
+        ]
+      },
+      "observed_markers": {
+        "FIT_COMPLETE.json": {
+          "event": "FIT_COMPLETE",
+          "epochs": 228,
+          "best_epoch": 25,
+          "best_val": 0.5430853101858079,
+          "steps": 428868,
+          "parameters": {
+            "total": 1552092,
+            "backbone": 1371840
+          },
+          "reason": "early_stop"
+        }
+      }
+    },
+    {
+      "campaign": "qm9s_pouter_trace_20260927",
+      "run": "G1",
+      "config": {
+        "seed": 11,
+        "model": "mto",
+        "states": 10,
+        "mto_channels": 16,
+        "query_dim": 32,
+        "router_hidden": 128,
+        "head_hidden": 128,
+        "initial_energy_min_eV": 2.0,
+        "initial_energy_max_eV": 13.0,
+        "sigma_eV": 0.2,
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "batch_size": 64,
+        "max_epochs": 1000,
+        "min_epochs": 200,
+        "early_patience": 150,
+        "plateau_patience": 50,
+        "min_lr": 1e-06,
+        "grad_clip": 5.0,
+        "loss_weights": [
+          1.0,
+          1.0
+        ],
+        "dtype": "float32",
+        "amp": false,
+        "tf32": false,
+        "energy_initialization": "train_state_means",
+        "optimizer": "Adam_AMSGrad",
+        "num_threads": 2,
+        "checkpoint_seconds": 600,
+        "name": "G1",
+        "gpu": 1,
+        "eta": 1,
+        "architecture": "original",
+        "supervise_E": true
+      },
+      "history_rows": 148,
+      "last_record": {
+        "epoch": 148,
+        "steps": 278388,
+        "best_epoch": 25,
+        "best_val": 0.5394373684720368,
+        "lr": 0.00025,
+        "train": [
+          0.0998461329754609,
+          0.02115357932995442,
+          0.016296198391636662,
+          0.062396355253869815
+        ],
+        "val": [
+          0.6113437265915461,
+          0.03194108511778968,
+          0.1761463431141671,
+          0.40325629835958937
+        ]
+      },
+      "observed_markers": {}
+    },
+    {
+      "campaign": "qm9s_pouter_trace_20260927",
+      "run": "G2",
+      "config": {
+        "seed": 11,
+        "model": "mto",
+        "states": 10,
+        "mto_channels": 16,
+        "query_dim": 32,
+        "router_hidden": 128,
+        "head_hidden": 128,
+        "initial_energy_min_eV": 2.0,
+        "initial_energy_max_eV": 13.0,
+        "sigma_eV": 0.2,
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "batch_size": 64,
+        "max_epochs": 1000,
+        "min_epochs": 200,
+        "early_patience": 150,
+        "plateau_patience": 50,
+        "min_lr": 1e-06,
+        "grad_clip": 5.0,
+        "loss_weights": [
+          1.0,
+          1.0
+        ],
+        "dtype": "float32",
+        "amp": false,
+        "tf32": false,
+        "energy_initialization": "train_state_means",
+        "optimizer": "Adam_AMSGrad",
+        "num_threads": 2,
+        "checkpoint_seconds": 600,
+        "name": "G2",
+        "gpu": 2,
+        "eta": 0,
+        "architecture": "original",
+        "supervise_E": false
+      },
+      "history_rows": 144,
+      "last_record": {
+        "epoch": 144,
+        "steps": 270864,
+        "best_epoch": 26,
+        "best_val": 0.15823148925112565,
+        "lr": 0.00025,
+        "train": [
+          0.014460426869363696,
+          0.0,
+          0.014460426869363696,
+          0.0
+        ],
+        "val": [
+          0.18956651664086882,
+          0.0,
+          0.18956651664086882,
+          0.0
+        ]
+      },
+      "observed_markers": {}
+    },
+    {
+      "campaign": "qm9s_pouter_trace_20260927",
+      "run": "G3",
+      "config": {
+        "seed": 11,
+        "model": "mto",
+        "states": 10,
+        "mto_channels": 16,
+        "query_dim": 32,
+        "router_hidden": 128,
+        "head_hidden": 128,
+        "initial_energy_min_eV": 2.0,
+        "initial_energy_max_eV": 13.0,
+        "sigma_eV": 0.2,
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "batch_size": 64,
+        "max_epochs": 1000,
+        "min_epochs": 200,
+        "early_patience": 150,
+        "plateau_patience": 50,
+        "min_lr": 1e-06,
+        "grad_clip": 5.0,
+        "loss_weights": [
+          1.0,
+          1.0
+        ],
+        "dtype": "float32",
+        "amp": false,
+        "tf32": false,
+        "energy_initialization": "train_state_means",
+        "optimizer": "Adam_AMSGrad",
+        "num_threads": 2,
+        "checkpoint_seconds": 600,
+        "name": "G3",
+        "gpu": 4,
+        "eta": 1,
+        "architecture": "p_outer",
+        "supervise_E": true
+      },
+      "history_rows": 152,
+      "last_record": {
+        "epoch": 152,
+        "steps": 285912,
+        "best_epoch": 136,
+        "best_val": 0.5602372282017786,
+        "lr": 0.001,
+        "train": [
+          0.22051279019265851,
+          0.029165339421283264,
+          0.05132675241439226,
+          0.140020698356983
+        ],
+        "val": [
+          0.5700372027006472,
+          0.03594969496946652,
+          0.15879172031443667,
+          0.37529578741674396
+        ]
+      },
+      "observed_markers": {}
+    },
+    {
+      "campaign": "qm9s_pouter_trace_20260927",
+      "run": "G4",
+      "config": {
+        "seed": 11,
+        "model": "mto",
+        "states": 10,
+        "mto_channels": 16,
+        "query_dim": 32,
+        "router_hidden": 128,
+        "head_hidden": 128,
+        "initial_energy_min_eV": 2.0,
+        "initial_energy_max_eV": 13.0,
+        "sigma_eV": 0.2,
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "batch_size": 64,
+        "max_epochs": 1000,
+        "min_epochs": 200,
+        "early_patience": 150,
+        "plateau_patience": 50,
+        "min_lr": 1e-06,
+        "grad_clip": 5.0,
+        "loss_weights": [
+          1.0,
+          1.0
+        ],
+        "dtype": "float32",
+        "amp": false,
+        "tf32": false,
+        "energy_initialization": "train_state_means",
+        "optimizer": "Adam_AMSGrad",
+        "num_threads": 2,
+        "checkpoint_seconds": 600,
+        "name": "G4",
+        "gpu": 6,
+        "eta": 0,
+        "architecture": "p_outer",
+        "supervise_E": false
+      },
+      "history_rows": 152,
+      "last_record": {
+        "epoch": 152,
+        "steps": 285912,
+        "best_epoch": 97,
+        "best_val": 0.15279604696492896,
+        "lr": 0.0005,
+        "train": [
+          0.016944427920595088,
+          0.0,
+          0.016944427920595088,
+          0.0
+        ],
+        "val": [
+          0.16999660287472504,
+          0.0,
+          0.16999660287472504,
+          0.0
+        ]
+      },
+      "observed_markers": {}
+    },
+    {
+      "campaign": "qm9s_pouter_trace_wE_20260928",
+      "run": "G1",
+      "config": {
+        "seed": 11,
+        "model": "mto",
+        "states": 10,
+        "mto_channels": 16,
+        "query_dim": 32,
+        "router_hidden": 128,
+        "head_hidden": 128,
+        "initial_energy_min_eV": 2.0,
+        "initial_energy_max_eV": 13.0,
+        "sigma_eV": 0.2,
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "batch_size": 64,
+        "max_epochs": 1000,
+        "min_epochs": 200,
+        "early_patience": 150,
+        "plateau_patience": 50,
+        "min_lr": 1e-06,
+        "grad_clip": 5.0,
+        "loss_weights": [
+          1.0,
+          1.0
+        ],
+        "dtype": "float32",
+        "amp": false,
+        "tf32": false,
+        "energy_initialization": "train_state_means",
+        "optimizer": "Adam_AMSGrad",
+        "num_threads": 2,
+        "checkpoint_seconds": 600,
+        "name": "G1",
+        "gpu": 1,
+        "eta": 1,
+        "architecture": "original",
+        "supervise_E": true,
+        "trace_weight_E2": true
+      },
+      "history_rows": 224,
+      "last_record": {
+        "epoch": 224,
+        "steps": 421344,
+        "best_epoch": 25,
+        "best_val": 0.49931499663313594,
+        "lr": 0.000125,
+        "train": [
+          0.0859997322597778,
+          0.01950657426047152,
+          0.013305485241469808,
+          0.05318767275783647
+        ],
+        "val": [
+          0.6211253918023156,
+          0.029704991541970035,
+          0.16140418765147646,
+          0.43001621260886913
+        ]
+      },
+      "observed_markers": {}
+    },
+    {
+      "campaign": "qm9s_pouter_trace_wE_20260928",
+      "run": "G2",
+      "config": {
+        "seed": 11,
+        "model": "mto",
+        "states": 10,
+        "mto_channels": 16,
+        "query_dim": 32,
+        "router_hidden": 128,
+        "head_hidden": 128,
+        "initial_energy_min_eV": 2.0,
+        "initial_energy_max_eV": 13.0,
+        "sigma_eV": 0.2,
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "batch_size": 64,
+        "max_epochs": 1000,
+        "min_epochs": 200,
+        "early_patience": 150,
+        "plateau_patience": 50,
+        "min_lr": 1e-06,
+        "grad_clip": 5.0,
+        "loss_weights": [
+          1.0,
+          1.0
+        ],
+        "dtype": "float32",
+        "amp": false,
+        "tf32": false,
+        "energy_initialization": "train_state_means",
+        "optimizer": "Adam_AMSGrad",
+        "num_threads": 2,
+        "checkpoint_seconds": 600,
+        "name": "G2",
+        "gpu": 2,
+        "eta": 0,
+        "architecture": "original",
+        "supervise_E": false,
+        "trace_weight_E2": true
+      },
+      "history_rows": 220,
+      "last_record": {
+        "epoch": 220,
+        "steps": 413820,
+        "best_epoch": 17,
+        "best_val": 0.13521439129458265,
+        "lr": 0.000125,
+        "train": [
+          0.011737152864485404,
+          0.0,
+          0.011737152864485404,
+          0.0
+        ],
+        "val": [
+          0.17339630103596235,
+          0.0,
+          0.17339630103596235,
+          0.0
+        ]
+      },
+      "observed_markers": {
+        "FIT_COMPLETE.json": {
+          "event": "FIT_COMPLETE",
+          "epochs": 220,
+          "best_epoch": 17,
+          "best_val": 0.13521439129458265,
+          "steps": 413820,
+          "parameters": {
+            "total": 1552092,
+            "backbone": 1371840
+          },
+          "reason": "early_stop"
+        }
+      }
+    },
+    {
+      "campaign": "qm9s_pouter_trace_wE_20260928",
+      "run": "G3",
+      "config": {
+        "seed": 11,
+        "model": "mto",
+        "states": 10,
+        "mto_channels": 16,
+        "query_dim": 32,
+        "router_hidden": 128,
+        "head_hidden": 128,
+        "initial_energy_min_eV": 2.0,
+        "initial_energy_max_eV": 13.0,
+        "sigma_eV": 0.2,
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "batch_size": 64,
+        "max_epochs": 1000,
+        "min_epochs": 200,
+        "early_patience": 150,
+        "plateau_patience": 50,
+        "min_lr": 1e-06,
+        "grad_clip": 5.0,
+        "loss_weights": [
+          1.0,
+          1.0
+        ],
+        "dtype": "float32",
+        "amp": false,
+        "tf32": false,
+        "energy_initialization": "train_state_means",
+        "optimizer": "Adam_AMSGrad",
+        "num_threads": 2,
+        "checkpoint_seconds": 600,
+        "name": "G3",
+        "gpu": 4,
+        "eta": 1,
+        "architecture": "p_outer",
+        "supervise_E": true,
+        "trace_weight_E2": true
+      },
+      "history_rows": 219,
+      "last_record": {
+        "epoch": 219,
+        "steps": 411939,
+        "best_epoch": 152,
+        "best_val": 0.5453405554890811,
+        "lr": 0.0005,
+        "train": [
+          0.13587471682900695,
+          0.023729608059833256,
+          0.02729449419345818,
+          0.08485061457571552
+        ],
+        "val": [
+          0.5617592026204575,
+          0.031878702153069795,
+          0.1412137283595636,
+          0.38866677210782413
+        ]
+      },
+      "observed_markers": {}
+    },
+    {
+      "campaign": "qm9s_pouter_trace_wE_20260928",
+      "run": "G4",
+      "config": {
+        "seed": 11,
+        "model": "mto",
+        "states": 10,
+        "mto_channels": 16,
+        "query_dim": 32,
+        "router_hidden": 128,
+        "head_hidden": 128,
+        "initial_energy_min_eV": 2.0,
+        "initial_energy_max_eV": 13.0,
+        "sigma_eV": 0.2,
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "batch_size": 64,
+        "max_epochs": 1000,
+        "min_epochs": 200,
+        "early_patience": 150,
+        "plateau_patience": 50,
+        "min_lr": 1e-06,
+        "grad_clip": 5.0,
+        "loss_weights": [
+          1.0,
+          1.0
+        ],
+        "dtype": "float32",
+        "amp": false,
+        "tf32": false,
+        "energy_initialization": "train_state_means",
+        "optimizer": "Adam_AMSGrad",
+        "num_threads": 2,
+        "checkpoint_seconds": 600,
+        "name": "G4",
+        "gpu": 6,
+        "eta": 0,
+        "architecture": "p_outer",
+        "supervise_E": false,
+        "trace_weight_E2": true
+      },
+      "history_rows": 214,
+      "last_record": {
+        "epoch": 214,
+        "steps": 402534,
+        "best_epoch": 62,
+        "best_val": 0.13485268768421232,
+        "lr": 0.00025,
+        "train": [
+          0.014941086708160044,
+          0.0,
+          0.014941086708160044,
+          0.0
+        ],
+        "val": [
+          0.24932866671682297,
+          0.0,
+          0.24932866671682297,
+          0.0
+        ]
+      },
+      "observed_markers": {
+        "FIT_COMPLETE.json": {
+          "event": "FIT_COMPLETE",
+          "epochs": 214,
+          "best_epoch": 62,
+          "best_val": 0.13485268768421232,
+          "steps": 402534,
+          "parameters": {
+            "total": 1537419,
+            "backbone": 1371840
+          },
+          "reason": "early_stop"
+        }
+      }
+    },
+    {
+      "campaign": "qm9s_chan64_20260928",
+      "run": "G1",
+      "config": {
+        "seed": 11,
+        "model": "mto",
+        "states": 10,
+        "mto_channels": 64,
+        "query_dim": 32,
+        "router_hidden": 128,
+        "head_hidden": 128,
+        "initial_energy_min_eV": 2.0,
+        "initial_energy_max_eV": 13.0,
+        "sigma_eV": 0.2,
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "batch_size": 64,
+        "max_epochs": 1000,
+        "min_epochs": 200,
+        "early_patience": 150,
+        "plateau_patience": 50,
+        "min_lr": 1e-06,
+        "grad_clip": 5.0,
+        "loss_weights": [
+          1.0,
+          1.0
+        ],
+        "dtype": "float32",
+        "amp": false,
+        "tf32": false,
+        "energy_initialization": "train_state_means",
+        "optimizer": "Adam_AMSGrad",
+        "num_threads": 2,
+        "checkpoint_seconds": 600,
+        "name": "G1",
+        "gpu": 1,
+        "eta": 1,
+        "architecture": "original",
+        "supervise_E": true,
+        "trace_weight_E2": true
+      },
+      "history_rows": 227,
+      "last_record": {
+        "epoch": 227,
+        "steps": 426987,
+        "best_epoch": 75,
+        "best_val": 0.4876234199502958,
+        "lr": 0.00025,
+        "train": [
+          0.056188487226042805,
+          0.01416086262381942,
+          0.007892596849463723,
+          0.034135027752759665
+        ],
+        "val": [
+          0.548992939536314,
+          0.025165077627614482,
+          0.14081215250467136,
+          0.38301570940402824
+        ]
+      },
+      "observed_markers": {
+        "FIT_COMPLETE.json": {
+          "event": "FIT_COMPLETE",
+          "epochs": 227,
+          "best_epoch": 75,
+          "best_val": 0.4876234199502958,
+          "steps": 426987,
+          "parameters": {
+            "total": 3451500,
+            "backbone": 1371840
+          },
+          "reason": "early_stop"
+        }
+      }
+    },
+    {
+      "campaign": "qm9s_chan64_20260928",
+      "run": "G2",
+      "config": {
+        "seed": 11,
+        "model": "mto",
+        "states": 10,
+        "mto_channels": 64,
+        "query_dim": 32,
+        "router_hidden": 128,
+        "head_hidden": 128,
+        "initial_energy_min_eV": 2.0,
+        "initial_energy_max_eV": 13.0,
+        "sigma_eV": 0.2,
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "batch_size": 64,
+        "max_epochs": 1000,
+        "min_epochs": 200,
+        "early_patience": 150,
+        "plateau_patience": 50,
+        "min_lr": 1e-06,
+        "grad_clip": 5.0,
+        "loss_weights": [
+          1.0,
+          1.0
+        ],
+        "dtype": "float32",
+        "amp": false,
+        "tf32": false,
+        "energy_initialization": "train_state_means",
+        "optimizer": "Adam_AMSGrad",
+        "num_threads": 2,
+        "checkpoint_seconds": 600,
+        "name": "G2",
+        "gpu": 2,
+        "eta": 0,
+        "architecture": "original",
+        "supervise_E": false,
+        "trace_weight_E2": true
+      },
+      "history_rows": 214,
+      "last_record": {
+        "epoch": 214,
+        "steps": 402534,
+        "best_epoch": 41,
+        "best_val": 0.12957936948799922,
+        "lr": 0.000125,
+        "train": [
+          0.006765687727026917,
+          0.0,
+          0.006765687727026917,
+          0.0
+        ],
+        "val": [
+          0.15428715001099702,
+          0.0,
+          0.15428715001099702,
+          0.0
+        ]
+      },
+      "observed_markers": {
+        "ADMIN_STOPPED.json": {
+          "event": "ADMIN_STOPPED",
+          "reason": "G2 validation plateau after epoch41; third LR reduction at194 delays natural stop to at least244; native-f deployable score unavailable for unsupervised E"
+        }
+      }
+    },
+    {
+      "campaign": "qm9s_chan64_20260928",
+      "run": "G3",
+      "config": {
+        "seed": 11,
+        "model": "mto",
+        "states": 10,
+        "mto_channels": 64,
+        "query_dim": 32,
+        "router_hidden": 128,
+        "head_hidden": 128,
+        "initial_energy_min_eV": 2.0,
+        "initial_energy_max_eV": 13.0,
+        "sigma_eV": 0.2,
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "batch_size": 64,
+        "max_epochs": 1000,
+        "min_epochs": 200,
+        "early_patience": 150,
+        "plateau_patience": 50,
+        "min_lr": 1e-06,
+        "grad_clip": 5.0,
+        "loss_weights": [
+          1.0,
+          1.0
+        ],
+        "dtype": "float32",
+        "amp": false,
+        "tf32": false,
+        "energy_initialization": "train_state_means",
+        "optimizer": "Adam_AMSGrad",
+        "num_threads": 2,
+        "checkpoint_seconds": 600,
+        "name": "G3",
+        "gpu": 4,
+        "eta": 1,
+        "architecture": "p_outer",
+        "supervise_E": true,
+        "trace_weight_E2": true
+      },
+      "history_rows": 326,
+      "last_record": {
+        "epoch": 326,
+        "steps": 613206,
+        "best_epoch": 174,
+        "best_val": 0.5248532128786919,
+        "lr": 0.00025,
+        "train": [
+          0.09487944208243396,
+          0.0197962032667641,
+          0.01766122432669292,
+          0.05742201448897693
+        ],
+        "val": [
+          0.5555794001374458,
+          0.027215123372701266,
+          0.13770433567684995,
+          0.39065994108789454
+        ]
+      },
+      "observed_markers": {
+        "FIT_COMPLETE.json": {
+          "event": "FIT_COMPLETE",
+          "epochs": 326,
+          "best_epoch": 174,
+          "best_val": 0.5248532128786919,
+          "steps": 613206,
+          "parameters": {
+            "total": 3393195,
+            "backbone": 1371840
+          },
+          "reason": "early_stop"
+        }
+      }
+    },
+    {
+      "campaign": "qm9s_chan64_20260928",
+      "run": "G4",
+      "config": {
+        "seed": 11,
+        "model": "mto",
+        "states": 10,
+        "mto_channels": 64,
+        "query_dim": 32,
+        "router_hidden": 128,
+        "head_hidden": 128,
+        "initial_energy_min_eV": 2.0,
+        "initial_energy_max_eV": 13.0,
+        "sigma_eV": 0.2,
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "batch_size": 64,
+        "max_epochs": 1000,
+        "min_epochs": 200,
+        "early_patience": 150,
+        "plateau_patience": 50,
+        "min_lr": 1e-06,
+        "grad_clip": 5.0,
+        "loss_weights": [
+          1.0,
+          1.0
+        ],
+        "dtype": "float32",
+        "amp": false,
+        "tf32": false,
+        "energy_initialization": "train_state_means",
+        "optimizer": "Adam_AMSGrad",
+        "num_threads": 2,
+        "checkpoint_seconds": 600,
+        "name": "G4",
+        "gpu": 6,
+        "eta": 0,
+        "architecture": "p_outer",
+        "supervise_E": false,
+        "trace_weight_E2": true
+      },
+      "history_rows": 223,
+      "last_record": {
+        "epoch": 223,
+        "steps": 419463,
+        "best_epoch": 71,
+        "best_val": 0.13636913722659028,
+        "lr": 0.00025,
+        "train": [
+          0.011859809120415225,
+          0.0,
+          0.011859809120415225,
+          0.0
+        ],
+        "val": [
+          0.15803421417325333,
+          0.0,
+          0.15803421417325333,
+          0.0
+        ]
+      },
+      "observed_markers": {
+        "FIT_COMPLETE.json": {
+          "event": "FIT_COMPLETE",
+          "epochs": 223,
+          "best_epoch": 71,
+          "best_val": 0.13636913722659028,
+          "steps": 419463,
+          "parameters": {
+            "total": 3393195,
+            "backbone": 1371840
+          },
+          "reason": "early_stop"
+        }
+      }
+    }
+  ],
+  "all_inspected_config_weight_decay_zero": true,
+  "source_and_input_hashes": {
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/configs/detanet_reference.json": "3ddbdcc993978a35ed4b8d142b077e6f397abfd27fbe2215619dfdeb4d06e43c",
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/runs/detanet_reference/history.jsonl": "2f9bcee37f049b59ccb500ce7a279b2900e47f5d47d81a1dec7e26faa6c74dea",
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/runs/detanet_reference/FIT_COMPLETE.json": "49817ad92ba538f4e2d91e8669652769ec724b25c1b2ab4886ea11c43d1c5df4",
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/configs/mto_batch128.json": "dc73ed58bcd5469cfbc004e83ad56f0aaf23f4085f56c3a052d868ec3bfde4f5",
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/runs/mto_batch128/history.jsonl": "d49fb50162869889fa3461c5eb021fd8bc74491ff40cbe85d5495805e719968c",
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/runs/mto_batch128/FIT_COMPLETE.json": "db93ca86c481250fa990b39fc45181ff92d5c82d44781e982e0cfccbe495f394",
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/configs/mto_channels32.json": "25d86a429d0911262318bd696755297c7483d3077ae8137f21c812289eb35a33",
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/runs/mto_channels32/history.jsonl": "1fd65ff8699628ec1e3fe9b7987bd7eb333ea5cd1ae4ae2f5839d23a9d82fe07",
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/runs/mto_channels32/FIT_COMPLETE.json": "0406f5611197e6bb39d417683ef912edb36cd68a678afed9422d6067da4a7670",
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/configs/mto_lr3e3.json": "336d5a3e037382499303cdf498f9636ec218cb1db724b71aa5e0aa7b404920d7",
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/runs/mto_lr3e3/history.jsonl": "98dc197c512f01c6e8bea7c3c9bf9553c9ddeea8f2facf7c4eb12ebbd88b00d2",
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/runs/mto_lr3e3/FIT_COMPLETE.json": "d1c6988478d6dd1ba53342100d9e77f68d4ac1ae2a003ed238e7b0826f279abb",
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/configs/mto_lr3e4.json": "1c4ea5cbddafbdc31e3fbbef5d886a64d85ed991bb64a7da9e01bce6076bcfea",
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/runs/mto_lr3e4/history.jsonl": "32ef8143d6868123b82d3cac55676fea6e9dea58dcc099e661fedcc2f87736e0",
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/runs/mto_lr3e4/FIT_COMPLETE.json": "55ebb62c8404a399712fceefb42a423570a868f37a04ed9b4a135178a969d1c0",
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/configs/mto_reference.json": "96621b5e7e03dad0ad2acfab0f8b575bd794f8347588fadb93081486e69ebbcd",
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/runs/mto_reference/history.jsonl": "37992ec9ef9024f1c0b3ebee05dbd8b5b210ad24096463f2d5d671a960c2b41e",
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/runs/mto_reference/FIT_COMPLETE.json": "5eb61a5a4f015061d7f57bd57c1346192b205703a3ddd0e0da4afd0f4bb46f93",
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/configs/mto_seed23.json": "7ca9f8ddeee6eb67e9da268e48d269c081224d2dd5b5e8f05a8bc0c7c8fe2609",
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/runs/mto_seed23/history.jsonl": "f0b9d9a6260e0ee5f15edf22e402bf7ce04e60cf63b51d50abd56c9830bb5e10",
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/runs/mto_seed23/FAILED.json": "d7c7665a43a0472e477a303fd3715f7ac6b55a87a636807f4dfafd1dcf1d37bc",
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/models_ea.py": "b47d50b8b32313d1c3e1f19f3e64e6f02ce42e91736e6da00f896f68965250b0",
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/train_ea.py": "7c7b4d49db539566abd8c76da6fe3b7eabf96eaac3ac495997c5f074a49085dd",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/configs/detanet_ef.json": "c884a041e004204c3c8853c48b7594028e4b06b7f924e1a4c03f0bf57b3b1d61",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/detanet_ef/history.jsonl": "dfc43c53efe7dd029aa47e243527f7ed6e0d6ec4081750d5b5011a6fdd855fcf",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/configs/mto_eta0.json": "e1b823aa48f491b7e0eaa8cc106fa712e6ba3e3256d36e23f091af6d9c07bdf9",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta0/history.jsonl": "57f2f6e7d53f52b733c15e30aff74d9687710237517be347bc96a76823c83769",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta0/FIT_COMPLETE.json": "8cd2fee40bc13f2ef8d6057798ac3f0508052a0d54b8a32cf1c592727ddfd970",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/configs/mto_eta01.json": "3fafd2944e002fae4154cab66ff9cf2cb69c9c051fb47286aac154b2060cdab7",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta01/history.jsonl": "261a6fb17d1ecd75dfc09977c9635e07410289947839a119a53b58491d0bc93c",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta01/FIT_COMPLETE.json": "acaff60b053a29351c7fcb3affec12dff2a53b4c25fc027059d75b5a9032f2af",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/configs/mto_eta1.json": "940b45eed0daffb8be112c7a05c4537269140dc6b90e9124a9f22f2509fc5412",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta1/history.jsonl": "496a4f222038b02c6907bb7ce583142449a5c50d30048b64600015735e8f3fdd",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/runs/mto_eta1/FIT_COMPLETE.json": "b10fd257d1a41d7563039ceb8e6460b68565861736dc178e0c1dbe735f596152",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/model_factory.py": "37ebb9884b3851ae7401232319be5611159e83b588a65236d732d862b7b3fbf9",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/objective.py": "c19dcb4da5d971c6ddc3d08269d6adc63afd6e327957a0f497c4fb43e6b9de8e",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/trainer.py": "78b9f6739540fd38b11cdbd216b5d3394db7b1cac6d653fe37e115630b7dc966",
+    "/home/inspur/MTO-1/experiments/qm9s_pouter_trace_20260927/configs/G1.json": "16b2d8f5c9e269dc261cb61d396108e21d509c02e6f30b257991fa9153afbeeb",
+    "/home/inspur/MTO-1/experiments/qm9s_pouter_trace_20260927/runs/G1/history.jsonl": "d46f1e9184ec561df81ce322f002b54db6d2d1a9622e0c9ce380ac4e485ace39",
+    "/home/inspur/MTO-1/experiments/qm9s_pouter_trace_20260927/configs/G2.json": "306e5a4057eee491b83ffaea33b3704a74f8d30fbab76e6076de498c26ccc470",
+    "/home/inspur/MTO-1/experiments/qm9s_pouter_trace_20260927/runs/G2/history.jsonl": "21bc53e83130ddfa40332c8ee80d76bce22a708e63f59a6a31202d194a8d3a30",
+    "/home/inspur/MTO-1/experiments/qm9s_pouter_trace_20260927/configs/G3.json": "fb969182d915a6a60e6b6c07872867015b4c175b4684717ea1771d166668ea01",
+    "/home/inspur/MTO-1/experiments/qm9s_pouter_trace_20260927/runs/G3/history.jsonl": "03c17dfc31fc627a59cb06d9e442c96c83da6959130315897afabe94d7fe6acc",
+    "/home/inspur/MTO-1/experiments/qm9s_pouter_trace_20260927/configs/G4.json": "97f13e18ce894b4128a8d70f2340771a73a893cf299304d98ece04c99329f30f",
+    "/home/inspur/MTO-1/experiments/qm9s_pouter_trace_20260927/runs/G4/history.jsonl": "febea9718e7ba2904949f02ff8bbae97909e61cf6c4dd95ec1040e61cd5ce7b7",
+    "/home/inspur/MTO-1/experiments/qm9s_pouter_trace_20260927/model_factory.py": "1eba0633cfc065bd01d941d217c0104d63aa8ab07a04c64743861f159dd6f4d6",
+    "/home/inspur/MTO-1/experiments/qm9s_pouter_trace_20260927/objective.py": "6cbac1905df18d35cee0e5c962fbc7518c79c58baafdd35afa3faf0da3868667",
+    "/home/inspur/MTO-1/experiments/qm9s_pouter_trace_20260927/trainer.py": "2c4ede70b146e16fd295e94d62876f97d2483176f27e1035aa795198a3be771c",
+    "/home/inspur/MTO-1/experiments/qm9s_pouter_trace_wE_20260928/configs/G1.json": "e718e499e8e39885be24dddfed6a574f36c7732b42251305d13754a82a6fb91e",
+    "/home/inspur/MTO-1/experiments/qm9s_pouter_trace_wE_20260928/runs/G1/history.jsonl": "12c4da293eac32596a9b13da596c5a6cce842a420f7011fe37dc0559e01a9541",
+    "/home/inspur/MTO-1/experiments/qm9s_pouter_trace_wE_20260928/configs/G2.json": "2bc2afa23e466541932e2697cae87a46432bb111d089dd5bb131dc36c6687aa0",
+    "/home/inspur/MTO-1/experiments/qm9s_pouter_trace_wE_20260928/runs/G2/history.jsonl": "3acd5e27508e323b53b779634ce3cfc6a3a1a9e926f0cb211c16d8cfd962dc65",
+    "/home/inspur/MTO-1/experiments/qm9s_pouter_trace_wE_20260928/runs/G2/FIT_COMPLETE.json": "c1bce04c223b8fa82fbea47f9acb93a5cddb2da94dcfcf37fba27f226bb2207c",
+    "/home/inspur/MTO-1/experiments/qm9s_pouter_trace_wE_20260928/configs/G3.json": "807cd3da1ccc2d6dafae2d098d3ec93800dbb2e99b4483ea730e2764f1e5738d",
+    "/home/inspur/MTO-1/experiments/qm9s_pouter_trace_wE_20260928/runs/G3/history.jsonl": "bd1b57f3e139a0fad296d742f8760795c4cc43e6db1511796bbd24d1fd3a1daf",
+    "/home/inspur/MTO-1/experiments/qm9s_pouter_trace_wE_20260928/configs/G4.json": "f8c49eaf2bdeb6c34a8e50190f070799866f54c7455ed3c93d5c031c944443e8",
+    "/home/inspur/MTO-1/experiments/qm9s_pouter_trace_wE_20260928/runs/G4/history.jsonl": "382a3a356a1e07a74a756fb93051a67db6575e33c2455fbb1d7ad987b82ba34e",
+    "/home/inspur/MTO-1/experiments/qm9s_pouter_trace_wE_20260928/runs/G4/FIT_COMPLETE.json": "7a1cc9a670689f64c63419f3b4589a526677bcf26c7dc680ef26048c673126bc",
+    "/home/inspur/MTO-1/experiments/qm9s_pouter_trace_wE_20260928/model_factory.py": "1eba0633cfc065bd01d941d217c0104d63aa8ab07a04c64743861f159dd6f4d6",
+    "/home/inspur/MTO-1/experiments/qm9s_pouter_trace_wE_20260928/objective.py": "6de50ddaa5edc1f7fc232a67ad212827cfbf3430eef48537a502e463e6a5c131",
+    "/home/inspur/MTO-1/experiments/qm9s_pouter_trace_wE_20260928/trainer.py": "7e9b8248455bb1c27ca7080c827c7fc4affcd36ba001e1e4049490f09b417349",
+    "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/configs/G1.json": "5cf899eec31cc3a7316e406a68911b2a23768a62fcf34cb168d4b1229809cc78",
+    "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/runs/G1/history.jsonl": "0092192ba8183d19bd408ecb5c153f2a18287d1cfde61cd92dd2b65a332b136e",
+    "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/runs/G1/FIT_COMPLETE.json": "a24e6b48043a68c0dc22584528ed4024e8c9b02ba950fc8784ad76872b8c0330",
+    "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/configs/G2.json": "df3c022aa1cccc0d8b62c7ef9ae0111855bc09686863e8569eba62275888a452",
+    "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/runs/G2/history.jsonl": "8156205f77d5d71f69c1366dcbe3737c1370d767619aca946d4054a2b694ec34",
+    "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/runs/G2/ADMIN_STOPPED.json": "ce5ac336fdc05d1121b5b01a4fdc1bde017080ddb7c10d3dcfc4d811d66014a2",
+    "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/configs/G3.json": "afe3612c0795ef18eb39835f866c4af66ccebfe698a2cb6653ae08db58ec25ea",
+    "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/runs/G3/history.jsonl": "3dc55e757eaeadd0dc06de18b7139aa14a0ccb6f00eeb24b33caf11b8a55db06",
+    "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/runs/G3/FIT_COMPLETE.json": "319cb32bce7bfde222d9bd98e2c734ecdb4b0a029396a9165eb02e16afb38130",
+    "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/configs/G4.json": "96f254a903ed697eb405a16210efd45bc6d7aced016686c9cb458578eb4abbad",
+    "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/runs/G4/history.jsonl": "6796cdb5ef223bbc2c675d54ff6c4d1c2e43ead8cc62857f0dc59e3502e606a1",
+    "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/runs/G4/FIT_COMPLETE.json": "84b1049e8edda4c738dc95576482b9fc35ff69a366abba179eb9bc17ed774abc",
+    "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/model_factory.py": "f05a879645a17222f63fb224459728be0a8e6fbfc3fc165d6d3c8bd4b231fa88",
+    "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/objective.py": "6de50ddaa5edc1f7fc232a67ad212827cfbf3430eef48537a502e463e6a5c131",
+    "/home/inspur/MTO-1/experiments/qm9s_chan64_20260928/trainer.py": "7e9b8248455bb1c27ca7080c827c7fc4affcd36ba001e1e4049490f09b417349",
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/upstream/models.py": "a8d7bf8a8d89839f687a773f59f02b2a5d75abd6f47a59406e9eb3d1a40f4771",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/models.py": "a8d7bf8a8d89839f687a773f59f02b2a5d75abd6f47a59406e9eb3d1a40f4771",
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/upstream/vendor/detanet_model/detanet.py": "4083382f2d615d1573b9dbc2d2c456d00f9895d4dae144b6c62b26feff6eebcd",
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/upstream/vendor/detanet_model/modules/message.py": "a76bae58dbb92447d6fb05230d7db826dc9defc929706e6f2c88c067ee5918cf",
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/upstream/vendor/detanet_model/modules/update.py": "65cda1be8fd5daa491779211ba37ec9c23b73e4a2da81444d21534584c0028a6",
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/upstream/vendor/detanet_model/modules/edge_attention.py": "48a69aa9a83cfe225f8e55eeea4bab65120955aee2dc7ad02d414aef7b4e2fea",
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/reports/selection_before_test.json": "40807b4a84e16b900dc0fcb764b213778e465ea2f86702a1ffe563deb90e389f",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/chan64_campaign_completion/CAMPAIGN_REPORT.md": "da01ab2916aba09306f485c1f78ab49f39b5b7d623e14d163b03d986dbcf9241",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/chan64_campaign_completion/CAMPAIGN_AUDIT.json": "413c548d1ea9243e25b64953dfd46a0416c6a52e5087290bee0c62222108f78e",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/config.json": "9ecb34590a64e389edbc455dbd22293593ce6c6e01c7d10b90b9cb5f6ec35048",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/PROTOCOL.md": "9be3d271f86afac91a2b20957b4edee86bad6a14b0bd9058c564254ad8b151b2",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/completion_receipts/PAIRED_COMPLETION_REPORT.md": "69a24f33f3aea5642ff53eb674d658335448d7666e37eb893811aa5861556620",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/eta0_seed_replication/PROTOCOL.md": "ceacc1d992aec0604f9b31b0fa0c71e2fe3303fbb417da72be115e04973473e8",
+    "/home/inspur/MTO-1/research/oscillator_r2_20260928/eta0_seed_replication/completion_receipts/SEED_FAMILY_SCIENTIFIC_CLOSEOUT.md": "0031fc71c9a48088e9fd73d1b6dd896be948fb42431db1eea32be5df2015a787",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/completion/CONTROL_REPEAT_CONTEXT.md": "f49ae5790f12837f91ce85a02b8439a550168ff805c0e78e573f7185b2a07abe",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/completion/ROUND07_RESULTS.json": "0314d0252de7e2f93e5ecd3df1be5a3f675fab540c8fea658b4b3a5231f21209"
+  },
+  "reader_sha256": "6cee8c34e1eeec5b0b9fc4ae1b8a2fc82c7ae29175874dc438c81920eee2528e",
+  "limitations": [
+    "Bounded inventory, not a repository-wide proof of absent trials.",
+    "History losses retain their original campaign definitions; they are not new predictive metrics.",
+    "Missing completion markers in this exact list do not establish whether a historical worker is active.",
+    "No historical test value was extracted or recomputed by this reader."
+  ]
+}

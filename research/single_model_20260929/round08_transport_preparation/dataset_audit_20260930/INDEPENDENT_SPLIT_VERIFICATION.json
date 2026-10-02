@@ -1,0 +1,72 @@
+{
+  "all_rows_once": true,
+  "ambiguity_mask_exactly_reconstructed": true,
+  "ambiguous_rows": 278,
+  "assignment_exactly_reconstructed": true,
+  "candidate_failures": 0,
+  "claim": "Zero overlap under the fixed conservative identity rules; no absolute identity proof or external fresh holdout claim.",
+  "component_labels_exactly_reconstructed": true,
+  "components": 114572,
+  "corpus_audit_sha256": "644b6e6d5e2c7af1b2a6f234715a8d5acdaed9d596f746eba9f897c539f45a1c",
+  "counts": {
+    "test": 6686,
+    "train": 120355,
+    "val": 6686
+  },
+  "decoded_dataset_members": [
+    "ids.npy",
+    "z.npy",
+    "pos.npy"
+  ],
+  "duration_seconds": 68.97221040725708,
+  "environment": {
+    "numpy": "2.2.6",
+    "python": "3.10.19",
+    "rdkit": "2025.09.4",
+    "scipy": "1.15.3"
+  },
+  "geometry_pairs_cross_partition": 0,
+  "geometry_pairs_reconstructed": 83,
+  "independent_reconstruction": true,
+  "old_exposure_intersections": {
+    "test": {
+      "old_inner_calibration": 1138,
+      "old_inner_fit": 4851,
+      "old_test": 336,
+      "old_train": 5989,
+      "old_val": 361
+    },
+    "train": {
+      "old_inner_calibration": 21721,
+      "old_inner_fit": 86598,
+      "old_test": 6032,
+      "old_train": 108319,
+      "old_val": 6004
+    },
+    "val": {
+      "old_inner_calibration": 1212,
+      "old_inner_fit": 4835,
+      "old_test": 318,
+      "old_train": 6047,
+      "old_val": 321
+    }
+  },
+  "old_split_hash_unchanged": true,
+  "original_and_heavy_formula_keys_cross_partition": 0,
+  "passed": true,
+  "private_array_and_identity_hashes_verified": true,
+  "private_input_hashes": {
+    "component_index.npy": "483d373c5ace2e00f9123f73f7068a05221a2e1bb14ba1333f6b91cd1d4352a4",
+    "ids.npy": "059aeb452f3e8128a82a21f1fa5b755ffb84ec5376b7a27f3677e34254adbd18",
+    "test_indices.npy": "c5c65be9219a4c8c3d797dd19bde006b25459e2d5e50d425a32737ef6cad3692",
+    "train_indices.npy": "8ff3ca690cf63051701d66c3dd438228457bc3b4d7b92fa5511bd943de1176cc",
+    "train_only_mask.npy": "7911c116f1f7091f39ac817e4a825c728acd081d05aaa53bb6d68cb5bfafb8b4",
+    "val_indices.npy": "be13afee03e4e72418b3979040c765cd94ee02c8a1b220cc87d83e08d7d239fb"
+  },
+  "reviewer_source_sha256": "a6459215c4ff2973aff12ca51d8caaa9c36601c5815f44f294118b97a9b4c847",
+  "source_manifest_sha256": "2bcd4d256179ad99f6b88b34f50bba1a99facc9389a6438535662410c6783a38",
+  "split_manifest_sha256": "c8ce66ddb7209005b5feebfcddfc2bc30ee81d92fe63cce20f15c4abf3a07155",
+  "target_members_decoded": [],
+  "train_only_rows": 278,
+  "training_authorized_by_this_verification": false
+}

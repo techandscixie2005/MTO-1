@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "actual_decoder_rows_and_fields_match_ledger": true,
+    "only_selected_numeric_blocks_with_full_array_load_blocked": true,
+    "source_hash_mismatch_rejected_before_numeric_access": true,
+    "ten_invalid_requests_rejected_before_archive_open": true,
+    "test_and_unapproved_validation_reject_before_files": true
+  },
+  "forbidden_numeric_rows_decoded": 0,
+  "numeric_rows_decoded_synthetic": 3,
+  "passed": true,
+  "real_data_or_model_read": false,
+  "source_hashes": {
+    "common.py": "50a1ef987cbc635b3b5692364281498e66587b112d5573c765fea360470038cd",
+    "partition_data.py": "9aaa08bb8878803cc42961d336345d5fa53f5aad30d8cfdf135d0fd35dd6757d",
+    "prepare_train_statistics.py": "ecab67351bbf0227609aa30117001853556731960573fdbc04761cef250db207",
+    "reader_checks.py": "549e0086d5747e4d2642c1fc5fb265c06791ed98223bf46bdc327cfeb1799a30"
+  },
+  "synthetic_only": true
+}

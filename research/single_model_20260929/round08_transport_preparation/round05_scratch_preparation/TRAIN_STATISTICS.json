@@ -1,0 +1,38 @@
+{
+  "E_state_mean": [
+    5.42177000955504,
+    5.999371908105184,
+    6.361922313156887,
+    6.65430373229192,
+    6.883560822566586,
+    7.075375543184728,
+    7.2417322579037675,
+    7.386510818827682,
+    7.519440486062192,
+    7.639785766274799
+  ],
+  "definitions": {
+    "f_variance": "pooled population ddof0",
+    "n_ref": "median TRAIN atom count",
+    "quantiles": "pooled TRAIN raw f, including zeros, NumPy linear quantile",
+    "sA2": "mean(sum_ij A_ij^2)",
+    "sE2": "mean((E - TRAIN per-state mean)^2)"
+  },
+  "dtype": "float64 raw-label reduction",
+  "f_mean": 0.0233510717460845,
+  "f_variance": 0.0025089892829484074,
+  "molecules": 120355,
+  "n_ref": 18.0,
+  "printed_f_zeros": 22585,
+  "q90": 0.0549,
+  "q99": 0.2406,
+  "sA2": 0.13245475393297818,
+  "sE2": 0.5376833706691944,
+  "split_manifest_sha256": "c8ce66ddb7209005b5feebfcddfc2bc30ee81d92fe63cce20f15c4abf3a07155",
+  "train_ids_sha256": "4735199997b1636458eb1eeeb151b4f198f4a3397c4e6f8a91cc19b41ae257ff",
+  "train_indices_sha256": "3a45ef8d8878106644668f6a49e9333c9a95711c73c41c75cf9c206be056b2ea",
+  "training_target_note": "The original FP32 dataset E/A arrays are used in fitting; statistics use raw FP64 labels.",
+  "valid_A": 1203550,
+  "valid_E": 1203550,
+  "valid_f": 1203550
+}

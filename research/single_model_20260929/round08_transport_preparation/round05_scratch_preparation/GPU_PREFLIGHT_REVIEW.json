@@ -1,0 +1,30 @@
+{
+  "accuracy_evidence": false,
+  "admission_sha256": "5284a9b1eb899766b17e5bfab45f925200379123ec9c41a9ea1858f59500045e",
+  "blocking_findings": [],
+  "current_source_hashes_verified": 52,
+  "exact_rng_order_and_shared_M_identity": true,
+  "executed_optimizer_updates": 12,
+  "geometry_checkpoint_load_forward_numeric_pass": true,
+  "launch_receipt_sha256": "f363c2dfb14bd7cc56dd3018333fe4bb4c163705769b6d1fccfdeccb55f2da50",
+  "limitations": [
+    "Full GPU forward/export agreement uses the explicitly amended numerical bound, not bitwise equality.",
+    "The 128-row fixture does not prove worst-case full-epoch memory or bitwise full training trajectories.",
+    "TRAIN diagnostic losses are engineering checks; lambda and recipe were not adjusted."
+  ],
+  "loss_replay_max_abs": 0.0,
+  "model_replay_max_abs": 1.1920928955078125e-07,
+  "model_states_server_only": true,
+  "optimizer_replay_max_abs": 2.9802322387695312e-08,
+  "passed": true,
+  "phase": "completed_bounded_gpu_preflight_review",
+  "preflight_sha256": "c0a62e24963ed3158f48524fff3f77fae5bce98b91144962b16bb839bcca99a9",
+  "production_fit_authorized": false,
+  "registration_sha256": "ecbe435d0c3aef9a7fe23a3b26e5c52835ff12167529fb7d76ccd9f4bc2708da",
+  "review_basis": "Source/receipt/hash/owned-process/admission and aggregate numeric checks only; no repeated inference, fitting, target decoding or checkpoint tensor loading by reviewer. Checkpoint files were opaque-hashed on server only.",
+  "root_amendment_sha256": "234b0ea52edec20bccc703d7ef96429c3ab2705f9da214b7cbde46e2c0e4825a",
+  "technical_source_review_sha256": "d3a1cc9ec7fc771d2546cd53e61ae04b6f8bc61c44b10fd24e67b279c0ceab8e",
+  "terminal_receipt_sha256": "76451ab4b63c513a84b869c616dcc515a2acc3c1654076669842093c17575749",
+  "unique_train_molecules": 128,
+  "validation_test_numeric_rows": 0
+}

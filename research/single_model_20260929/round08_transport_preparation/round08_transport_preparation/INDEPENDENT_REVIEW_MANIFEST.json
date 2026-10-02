@@ -1,0 +1,18 @@
+{
+  "archive_rule": "Only explicit files and final source_hashes; private hash references are provenance only and must never be resolved into archive members.",
+  "files": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/FROZEN_MANIFEST.json": "de058a68305fe66df2bc3a16243d4121b9561d8990f303564b26a6a47b6b5146",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/INDEPENDENT_FINAL_PREPARATION_CHECKS.json": "de99af7aab445d21f6d2065a591dc9b5ba7ebfd3059447e64043cd98ba8cbe7d",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/INDEPENDENT_FINAL_PREPARATION_CHECKS_01.log": "704e8a001c534660e844c3abadf92e8ceef97b87d8b85d14c217f1d0e59bc853",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/INDEPENDENT_PREPARATION_REVIEW.json": "87de2d873f2a24033a2f646ac825f26abbbae7eadbd5305a723fbb6a17093e8b",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/INDEPENDENT_PREPARATION_REVIEW.md": "a2ae9bc0022de5fabc94f7da0cc874d93b7ff38ad36211b13bd21a47af0b2927",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/PREPARATION_REPORT.md": "edf708c8530f51d1447cdbb68971c19d42c157e4f749f91a804fb34da6999eb1",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/independent_final_preparation_checks.py": "6e01273b52c21dc5ad6620081d2a857ba2465d66c4553bcccf84f63c56cf53c3",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/ops/FREEZE_RECEIPT.json": "224ed97c4bcb0dc5b0af058070721ea358b5fdacb10b520cdc3820917d2f00cf",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/ops/freeze_01.log": "7479c4bdfd927bf04a3e582745ffd697363168e5dd60e20dc60842b79156172e"
+  },
+  "independent_review_sha256": "87de2d873f2a24033a2f646ac825f26abbbae7eadbd5305a723fbb6a17093e8b",
+  "phase": "preparation_only",
+  "production_execution_authorized": false,
+  "source_manifest_sha256": "de058a68305fe66df2bc3a16243d4121b9561d8990f303564b26a6a47b6b5146"
+}

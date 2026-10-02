@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "stage": "metadata_only_preparation_freeze",
+  "exit_code": 0,
+  "frozen_manifest_sha256": "de058a68305fe66df2bc3a16243d4121b9561d8990f303564b26a6a47b6b5146",
+  "source_files": 258,
+  "working_directory": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation",
+  "command": [
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/bin/python",
+    "freeze_preparation.py"
+  ],
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "PYTHONUNBUFFERED": "1"
+  },
+  "model_inference": false,
+  "target_numeric_decoding": false,
+  "optimizer_updates": 0,
+  "production_authorized": false,
+  "stdout": "{'files': 258, 'manifest_sha256': 'de058a68305fe66df2bc3a16243d4121b9561d8990f303564b26a6a47b6b5146'}",
+  "source_sha256": "17e612ef183ad8d46f26cd9d1463fec3e098a936d678598c271c00ab84eae872",
+  "log_sha256": "7479c4bdfd927bf04a3e582745ffd697363168e5dd60e20dc60842b79156172e"
+}

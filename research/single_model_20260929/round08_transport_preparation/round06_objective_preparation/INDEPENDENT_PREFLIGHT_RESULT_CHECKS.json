@@ -1,0 +1,31 @@
+{
+  "exact_six_updates_and_first128_TRAIN_verified": true,
+  "fixed_replay_tolerances_and_exact_RNG_order_passed": true,
+  "input_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/CPU_PREFLIGHT_REVIEW.json": "9cb76884bb5bd189ea1e9d090ce9db83b396654e6e497c7932c5f776b31d088f",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/GPU_PREFLIGHT.json": "cdb0520de4b80a3618114ad02ed61a34a071cf02701f0dbfd62168efcf6d2aad",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/GPU_UPDATE_PROGRESS.json": "4ddeb29614ef284bd503f51f0d82c427a4368f2966e129134036b0fafb04434b",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/TECHNICAL_SOURCE_REVIEW.json": "fbf76a414d89a459cf5fa3c956544a698b1f564c856622c107fa99b6dc592605",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/independent_preflight_result_checks.py": "aabbd15210c718c2f056bbf502ff05d34bc3d280396e7b4c0ffb7e0c957b5172",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/ops/GPU_PRELAUNCH_GUARD_FAILURE.md": "6d165cfe6eb8cf5fd40e58e2578a38197081becb82f42d08823b5226260ed82f",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/ops/gpu_preflight_attempt/COMPLETE.json": "ecfe67939ff7c2cf9b5a7b6d49db259e97e6d97af46adba8c4f07f76f890bb0d",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/ops/gpu_preflight_attempt/GPU_ADMISSION.xml": "cf387b699f11f6a87481e693808f3bdecc8cf23aed0ceaee177ead91eb2f55ee",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/ops/gpu_preflight_attempt/LAUNCH_RECEIPT.json": "8aa9032604fb960f0aa28433f208694b641de233a23135877d42687e30179cbe",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/ops/gpu_preflight_attempt/REGISTRATION_TOOL.log": "fd43aebd79ecbcfdcb4f9144a55085ce5266bb6df595034215f802127a8b8ea6",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/ops/gpu_preflight_attempt/stage.log": "a21634cf8c04742003c02a8f527522ecabab893b29a3d846e4b8c7e78e38c6da"
+  },
+  "no_data_tensor_decode_or_model_inference_by_reviewer": true,
+  "owned_registration_admission_and_exit0_verified": true,
+  "passed": true,
+  "phase": "completed_six_update_receipt_review",
+  "prelaunch_missing_mirror_preserved_zero_updates": true,
+  "private_checkpoint_opaque_hashes_only": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/private_preflight/raw_f_after_update1.pt": "a49f6e1a4d1ad65ee05b7fd71162d937975fca57e41269b83bbd1566f90b6206",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/private_preflight/raw_f_geometry_fixture.pt": "33017ef6c8d487287e9487734394d5b0280a0ecd9084aad7bac8a607d585cce2",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/private_preflight/trace_control_after_update1.pt": "d67af4aec28db4e3af365e8fbfc26cd2fecb137ceebd169a3a5eb12b6fd82716",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/private_preflight/trace_control_geometry_fixture.pt": "0894c09a073e2d6a387907dfdb9ac478ac70135c258b192d69cb4226ec03ba96"
+  },
+  "production_fit_authorized": false,
+  "same_fixture_as_round05": true,
+  "source_bindings_verified": 116
+}

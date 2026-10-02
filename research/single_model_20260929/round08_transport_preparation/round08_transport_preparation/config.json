@@ -1,0 +1,50 @@
+{
+  "round": "round08_backbone_tensor_transport",
+  "arms": {
+    "original": {
+      "mode": "original"
+    },
+    "local": {
+      "mode": "local"
+    },
+    "neighbor": {
+      "mode": "neighbor"
+    }
+  },
+  "seed": 11,
+  "order_seed": 11,
+  "epochs": 60,
+  "batch_size": 64,
+  "optimizer": "Adam_AMSGrad",
+  "lr": 0.001,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "eps": 1E-08,
+  "weight_decay": 0.0,
+  "grad_clip": 5.0,
+  "scheduler": null,
+  "num_threads": 2,
+  "dtype": "float32",
+  "amp": false,
+  "tf32": false,
+  "objective": "Original LE + Ls, unchanged PSD decoder",
+  "selection": "minimum pooled validation raw-f SSE, epoch0 eligible, earliest exact tie",
+  "validation_molecules": 6686,
+  "train_molecules": 120355,
+  "test_access": false,
+  "historical_weights": false,
+  "promotion_delta_r2": 0.003,
+  "retained_v2_reference_r2": 0.44716940136585204,
+  "promotion_comparators": [
+    "contemporaneous selected original",
+    "contemporaneous selected local",
+    "retained v2 reference"
+  ],
+  "transport_blocks": [
+    2,
+    3
+  ],
+  "transport_active_parameters": 768
+}

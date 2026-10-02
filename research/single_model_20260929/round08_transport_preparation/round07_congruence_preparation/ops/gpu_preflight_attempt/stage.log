@@ -1,0 +1,1071 @@
+{"update": 1, "arm": "original", "loss": 9.175848960876465, "preclip_norm": 19.808944702148438}
+{"update": 2, "arm": "original", "loss": 3.4571750164031982, "preclip_norm": 13.696919441223145}
+{"update": 3, "arm": "original", "loss": 3.4571750164031982, "preclip_norm": 13.696919441223145}
+{"update": 4, "arm": "scalar", "loss": 9.175848960876465, "preclip_norm": 19.80894660949707}
+{"update": 5, "arm": "scalar", "loss": 3.4571609497070312, "preclip_norm": 13.696918487548828}
+{"update": 6, "arm": "scalar", "loss": 3.4571609497070312, "preclip_norm": 13.696918487548828}
+{"update": 7, "arm": "tensor", "loss": 9.175848960876465, "preclip_norm": 19.80894660949707}
+{"update": 8, "arm": "tensor", "loss": 3.4571609497070312, "preclip_norm": 13.696918487548828}
+{"update": 9, "arm": "tensor", "loss": 3.4571609497070312, "preclip_norm": 13.696918487548828}
+{
+  "passed": true,
+  "train_indices_sha256": "5d7fef6953e9ae587d0524bee67f60ccc4504f3eb7b7a19f5d3b51f74dddb3a7",
+  "train_ids_sha256": "949f9dd1d26282c1a5dc132d07386a3df2160af6a591cda09fb2938f1af56ea9",
+  "unique_train_molecules": 128,
+  "actual_decode_ledger": [
+    {
+      "archive": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/dataset.npz",
+      "archive_sha256": "be8fadca203429575d70642b617730592693be40858dca7189c098a671596330",
+      "field": "ids",
+      "partition": "train",
+      "numeric_rows": 128,
+      "numeric_global_indices_sha256": "5d7fef6953e9ae587d0524bee67f60ccc4504f3eb7b7a19f5d3b51f74dddb3a7",
+      "numeric_decode_blocks": 15,
+      "is_target_or_mask": false,
+      "shape": [
+        128
+      ],
+      "dtype": "int64"
+    },
+    {
+      "archive": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/dataset.npz",
+      "archive_sha256": "be8fadca203429575d70642b617730592693be40858dca7189c098a671596330",
+      "field": "z",
+      "partition": "train",
+      "numeric_rows": 128,
+      "numeric_global_indices_sha256": "5d7fef6953e9ae587d0524bee67f60ccc4504f3eb7b7a19f5d3b51f74dddb3a7",
+      "numeric_decode_blocks": 15,
+      "is_target_or_mask": false,
+      "shape": [
+        128,
+        29
+      ],
+      "dtype": "int64"
+    },
+    {
+      "archive": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/dataset.npz",
+      "archive_sha256": "be8fadca203429575d70642b617730592693be40858dca7189c098a671596330",
+      "field": "pos",
+      "partition": "train",
+      "numeric_rows": 128,
+      "numeric_global_indices_sha256": "5d7fef6953e9ae587d0524bee67f60ccc4504f3eb7b7a19f5d3b51f74dddb3a7",
+      "numeric_decode_blocks": 15,
+      "is_target_or_mask": false,
+      "shape": [
+        128,
+        29,
+        3
+      ],
+      "dtype": "float32"
+    },
+    {
+      "archive": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/dataset.npz",
+      "archive_sha256": "be8fadca203429575d70642b617730592693be40858dca7189c098a671596330",
+      "field": "edge",
+      "partition": "train",
+      "numeric_rows": 128,
+      "numeric_global_indices_sha256": "5d7fef6953e9ae587d0524bee67f60ccc4504f3eb7b7a19f5d3b51f74dddb3a7",
+      "numeric_decode_blocks": 15,
+      "is_target_or_mask": false,
+      "shape": [
+        128,
+        2,
+        732
+      ],
+      "dtype": "int16"
+    },
+    {
+      "archive": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/dataset.npz",
+      "archive_sha256": "be8fadca203429575d70642b617730592693be40858dca7189c098a671596330",
+      "field": "E",
+      "partition": "train",
+      "numeric_rows": 128,
+      "numeric_global_indices_sha256": "5d7fef6953e9ae587d0524bee67f60ccc4504f3eb7b7a19f5d3b51f74dddb3a7",
+      "numeric_decode_blocks": 15,
+      "is_target_or_mask": true,
+      "shape": [
+        128,
+        10
+      ],
+      "dtype": "float32"
+    },
+    {
+      "archive": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/dataset.npz",
+      "archive_sha256": "be8fadca203429575d70642b617730592693be40858dca7189c098a671596330",
+      "field": "A",
+      "partition": "train",
+      "numeric_rows": 128,
+      "numeric_global_indices_sha256": "5d7fef6953e9ae587d0524bee67f60ccc4504f3eb7b7a19f5d3b51f74dddb3a7",
+      "numeric_decode_blocks": 15,
+      "is_target_or_mask": true,
+      "shape": [
+        128,
+        10,
+        3,
+        3
+      ],
+      "dtype": "float32"
+    },
+    {
+      "archive": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/raw_labels.npz",
+      "archive_sha256": "621dc8723fb6dc96681851a26e4f52fcb7747a4778e57a249a75d22f3af4c632",
+      "field": "ids",
+      "partition": "train",
+      "numeric_rows": 128,
+      "numeric_global_indices_sha256": "5d7fef6953e9ae587d0524bee67f60ccc4504f3eb7b7a19f5d3b51f74dddb3a7",
+      "numeric_decode_blocks": 15,
+      "is_target_or_mask": false,
+      "shape": [
+        128
+      ],
+      "dtype": "int64"
+    },
+    {
+      "archive": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/raw_labels.npz",
+      "archive_sha256": "621dc8723fb6dc96681851a26e4f52fcb7747a4778e57a249a75d22f3af4c632",
+      "field": "f",
+      "partition": "train",
+      "numeric_rows": 128,
+      "numeric_global_indices_sha256": "5d7fef6953e9ae587d0524bee67f60ccc4504f3eb7b7a19f5d3b51f74dddb3a7",
+      "numeric_decode_blocks": 15,
+      "is_target_or_mask": true,
+      "shape": [
+        128,
+        10
+      ],
+      "dtype": "float64"
+    },
+    {
+      "archive": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/raw_labels.npz",
+      "archive_sha256": "621dc8723fb6dc96681851a26e4f52fcb7747a4778e57a249a75d22f3af4c632",
+      "field": "mask_E",
+      "partition": "train",
+      "numeric_rows": 128,
+      "numeric_global_indices_sha256": "5d7fef6953e9ae587d0524bee67f60ccc4504f3eb7b7a19f5d3b51f74dddb3a7",
+      "numeric_decode_blocks": 15,
+      "is_target_or_mask": true,
+      "shape": [
+        128,
+        10
+      ],
+      "dtype": "bool"
+    },
+    {
+      "archive": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/raw_labels.npz",
+      "archive_sha256": "621dc8723fb6dc96681851a26e4f52fcb7747a4778e57a249a75d22f3af4c632",
+      "field": "mask_A",
+      "partition": "train",
+      "numeric_rows": 128,
+      "numeric_global_indices_sha256": "5d7fef6953e9ae587d0524bee67f60ccc4504f3eb7b7a19f5d3b51f74dddb3a7",
+      "numeric_decode_blocks": 15,
+      "is_target_or_mask": true,
+      "shape": [
+        128,
+        10
+      ],
+      "dtype": "bool"
+    },
+    {
+      "archive": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/raw_labels.npz",
+      "archive_sha256": "621dc8723fb6dc96681851a26e4f52fcb7747a4778e57a249a75d22f3af4c632",
+      "field": "mask_f",
+      "partition": "train",
+      "numeric_rows": 128,
+      "numeric_global_indices_sha256": "5d7fef6953e9ae587d0524bee67f60ccc4504f3eb7b7a19f5d3b51f74dddb3a7",
+      "numeric_decode_blocks": 15,
+      "is_target_or_mask": true,
+      "shape": [
+        128,
+        10
+      ],
+      "dtype": "bool"
+    },
+    {
+      "archive": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/data/raw_labels.npz",
+      "archive_sha256": "621dc8723fb6dc96681851a26e4f52fcb7747a4778e57a249a75d22f3af4c632",
+      "field": "E",
+      "partition": "train",
+      "numeric_rows": 128,
+      "numeric_global_indices_sha256": "5d7fef6953e9ae587d0524bee67f60ccc4504f3eb7b7a19f5d3b51f74dddb3a7",
+      "numeric_decode_blocks": 15,
+      "is_target_or_mask": true,
+      "shape": [
+        128,
+        10
+      ],
+      "dtype": "float64"
+    }
+  ],
+  "validation_test_numeric_rows": 0,
+  "executed_optimizer_updates": 9,
+  "arms": {
+    "original": {
+      "initial_base_tensor_sha256": "231dfaf3ffc8056e851ddac34e941fa34eee3af0f7ff9687ecab6d24d6fa1cd2",
+      "fixture_order_sha256": "5d7fef6953e9ae587d0524bee67f60ccc4504f3eb7b7a19f5d3b51f74dddb3a7",
+      "updates": 3,
+      "gradient_audits": [
+        {
+          "preupdate_losses": {
+            "total": 9.175848960876465,
+            "energy": 8.585359573364258,
+            "trace": 0.5904890894889832,
+            "decorrelation": 0.9305991530418396,
+            "base": 9.175848960876465
+          },
+          "direct_trace_E_gradient_l2": 0.0,
+          "direct_trace_A_gradient_l2": 0.16692146326240323,
+          "term_parameter_gradient_l2": {
+            "energy": 19.78722391437521,
+            "trace": 0.9904436330535257
+          },
+          "preclip_branch_gradient_l2": {
+            "base_gradient_l2": 19.80894534403165,
+            "gate_gradient_l2": 0.0
+          },
+          "readout_diagnostics": {
+            "raw_M_norm_min": 0.01725916936993599,
+            "raw_M_norm_max": 0.19047975540161133,
+            "raw_M_norm_mean": 0.07781112194061279,
+            "A_relative_update_mean": 0.0,
+            "A_relative_update_max": 0.0,
+            "strength_zero_count": 0,
+            "strength_ratio_nonzero_count": 640,
+            "strength_ratio_nonzero_sum": 640.0,
+            "strength_ratio_nonzero_min": 1.0,
+            "strength_ratio_nonzero_max": 1.0,
+            "b_min": 0.0,
+            "b_max": 0.0,
+            "b_mean": 0.0,
+            "q_min": 0.3333333134651184,
+            "q_max": 0.3333333432674408,
+            "q_mean": 0.3333333134651184,
+            "gate_input0_min": 0.0,
+            "gate_input0_max": 2.5649492740631104,
+            "gate_input1_min": 0.0,
+            "gate_input1_max": 1.7917594909667969,
+            "gate_input2_min": 0.0,
+            "gate_input2_max": 1.0986123085021973,
+            "gate_input3_min": 0.0,
+            "gate_input3_max": 1.0986123085021973,
+            "gate_input4_min": 0.0,
+            "gate_input4_max": 0.0,
+            "gate_input5_min": 0.2497376948595047,
+            "gate_input5_max": 0.25049126148223877,
+            "gate_input6_min": 0.42768046259880066,
+            "gate_input6_max": 0.511555016040802,
+            "gate_input7_min": 0.12523487210273743,
+            "gate_input7_max": 0.1544918715953827,
+            "gate_input8_min": 0.3333333134651184,
+            "gate_input8_max": 0.3333333432674408
+          },
+          "coefficient_or_LR_adjusted": false
+        },
+        {
+          "preupdate_losses": {
+            "total": 3.4571750164031982,
+            "energy": 2.7790708541870117,
+            "trace": 0.6781041622161865,
+            "decorrelation": 0.9559526443481445,
+            "base": 3.4571750164031982
+          },
+          "direct_trace_E_gradient_l2": 0.0,
+          "direct_trace_A_gradient_l2": 0.17887699444938873,
+          "term_parameter_gradient_l2": {
+            "energy": 13.689844912429937,
+            "trace": 0.643725162618361
+          },
+          "preclip_branch_gradient_l2": {
+            "base_gradient_l2": 13.696919098801695,
+            "gate_gradient_l2": 0.0
+          },
+          "readout_diagnostics": {
+            "raw_M_norm_min": 0.052871979773044586,
+            "raw_M_norm_max": 0.34187400341033936,
+            "raw_M_norm_mean": 0.15797320008277893,
+            "A_relative_update_mean": 0.0,
+            "A_relative_update_max": 0.0,
+            "strength_zero_count": 0,
+            "strength_ratio_nonzero_count": 640,
+            "strength_ratio_nonzero_sum": 640.0,
+            "strength_ratio_nonzero_min": 1.0,
+            "strength_ratio_nonzero_max": 1.0,
+            "b_min": 0.0,
+            "b_max": 0.0,
+            "b_mean": 0.0,
+            "q_min": 0.3333333134651184,
+            "q_max": 0.3333333432674408,
+            "q_mean": 0.3333333134651184,
+            "gate_input0_min": 1.0986123085021973,
+            "gate_input0_max": 2.5649492740631104,
+            "gate_input1_min": 1.0986123085021973,
+            "gate_input1_max": 1.7917594909667969,
+            "gate_input2_min": 0.0,
+            "gate_input2_max": 1.0986123085021973,
+            "gate_input3_min": 0.0,
+            "gate_input3_max": 1.0986123085021973,
+            "gate_input4_min": 0.0,
+            "gate_input4_max": 0.0,
+            "gate_input5_min": 0.2524031102657318,
+            "gate_input5_max": 0.2528610825538635,
+            "gate_input6_min": 0.4769798219203949,
+            "gate_input6_max": 0.5447348356246948,
+            "gate_input7_min": 0.14372552931308746,
+            "gate_input7_max": 0.1679167002439499,
+            "gate_input8_min": 0.3333333134651184,
+            "gate_input8_max": 0.3333333432674408
+          },
+          "coefficient_or_LR_adjusted": false
+        },
+        {
+          "preupdate_losses": {
+            "total": 3.4571750164031982,
+            "energy": 2.7790708541870117,
+            "trace": 0.6781041622161865,
+            "decorrelation": 0.9559526443481445,
+            "base": 3.4571750164031982
+          },
+          "direct_trace_E_gradient_l2": 0.0,
+          "direct_trace_A_gradient_l2": 0.17887699446285119,
+          "term_parameter_gradient_l2": {
+            "energy": 13.68984489195965,
+            "trace": 0.6437251528690572
+          },
+          "preclip_branch_gradient_l2": {
+            "base_gradient_l2": 13.696919079297613,
+            "gate_gradient_l2": 0.0
+          },
+          "readout_diagnostics": {
+            "raw_M_norm_min": 0.052871979773044586,
+            "raw_M_norm_max": 0.34187400341033936,
+            "raw_M_norm_mean": 0.15797321498394012,
+            "A_relative_update_mean": 0.0,
+            "A_relative_update_max": 0.0,
+            "strength_zero_count": 0,
+            "strength_ratio_nonzero_count": 640,
+            "strength_ratio_nonzero_sum": 640.0,
+            "strength_ratio_nonzero_min": 1.0,
+            "strength_ratio_nonzero_max": 1.0,
+            "b_min": 0.0,
+            "b_max": 0.0,
+            "b_mean": 0.0,
+            "q_min": 0.3333333134651184,
+            "q_max": 0.3333333432674408,
+            "q_mean": 0.3333333134651184,
+            "gate_input0_min": 1.0986123085021973,
+            "gate_input0_max": 2.5649492740631104,
+            "gate_input1_min": 1.0986123085021973,
+            "gate_input1_max": 1.7917594909667969,
+            "gate_input2_min": 0.0,
+            "gate_input2_max": 1.0986123085021973,
+            "gate_input3_min": 0.0,
+            "gate_input3_max": 1.0986123085021973,
+            "gate_input4_min": 0.0,
+            "gate_input4_max": 0.0,
+            "gate_input5_min": 0.2524031102657318,
+            "gate_input5_max": 0.2528610825538635,
+            "gate_input6_min": 0.4769798219203949,
+            "gate_input6_max": 0.5447348356246948,
+            "gate_input7_min": 0.14372552931308746,
+            "gate_input7_max": 0.1679167002439499,
+            "gate_input8_min": 0.3333333134651184,
+            "gate_input8_max": 0.3333333432674408
+          },
+          "coefficient_or_LR_adjusted": false
+        }
+      ],
+      "update_losses": [
+        {
+          "total": 9.175848960876465,
+          "energy": 8.585359573364258,
+          "trace": 0.5904890894889832,
+          "decorrelation": 0.9305991530418396,
+          "base": 9.175848960876465
+        },
+        {
+          "total": 3.4571750164031982,
+          "energy": 2.7790708541870117,
+          "trace": 0.6781041622161865,
+          "decorrelation": 0.9559526443481445,
+          "base": 3.4571750164031982
+        },
+        {
+          "total": 3.4571750164031982,
+          "energy": 2.7790708541870117,
+          "trace": 0.6781041622161865,
+          "decorrelation": 0.9559526443481445,
+          "base": 3.4571750164031982
+        }
+      ],
+      "preclip_norms": [
+        19.808944702148438,
+        13.696919441223145,
+        13.696919441223145
+      ],
+      "clipped": [
+        true,
+        true,
+        true
+      ],
+      "model_replay_max_abs": 1.1920928955078125e-07,
+      "optimizer_replay_max_abs": 1.4901161193847656e-08,
+      "loss_replay_abs": 0.0,
+      "rng_and_order_exact_before_and_after_replay": true,
+      "three_updates_seconds": 3.1892595291137695,
+      "peak_allocated_bytes": 664600576,
+      "initial_output_errors": {
+        "E_max_abs": 4.76837158203125e-07,
+        "A_max_abs": 1.1368683772161603e-13,
+        "native_f_max_abs": 7.759914273652857e-10,
+        "E_A_bitwise_equal": false
+      },
+      "geometry_checkpoint_output_errors": {
+        "E_max_abs": 0.0,
+        "A_max_abs": 5.587935447692871e-09,
+        "native_f_max_abs": 2.7278521125967403e-09,
+        "E_A_bitwise_equal": false
+      },
+      "geometry_checkpoint_load_forward_numerical_pass": true,
+      "checkpoint_sha256": "86ac9e31b81bb49083cdf53e7fcc2854a7e50e16897978669d7a8bf1c7a4cbe3",
+      "geometry_checkpoint_sha256": "2927ac26f595cb36a5efb64bceed3c27b90914b3cbe4c49c98dbd27b6cfe4b70"
+    },
+    "scalar": {
+      "initial_base_tensor_sha256": "231dfaf3ffc8056e851ddac34e941fa34eee3af0f7ff9687ecab6d24d6fa1cd2",
+      "fixture_order_sha256": "5d7fef6953e9ae587d0524bee67f60ccc4504f3eb7b7a19f5d3b51f74dddb3a7",
+      "updates": 3,
+      "gradient_audits": [
+        {
+          "preupdate_losses": {
+            "total": 9.175848960876465,
+            "energy": 8.585359573364258,
+            "trace": 0.5904890894889832,
+            "decorrelation": 0.9305991530418396,
+            "base": 9.175848960876465
+          },
+          "direct_trace_E_gradient_l2": 0.0,
+          "direct_trace_A_gradient_l2": 0.16692146324304774,
+          "term_parameter_gradient_l2": {
+            "energy": 19.787223983449223,
+            "trace": 0.9904728058398793
+          },
+          "preclip_branch_gradient_l2": {
+            "base_gradient_l2": 19.80894541581394,
+            "gate_gradient_l2": 0.007600899515910498
+          },
+          "readout_diagnostics": {
+            "raw_M_norm_min": 0.01725916936993599,
+            "raw_M_norm_max": 0.19047975540161133,
+            "raw_M_norm_mean": 0.07781112194061279,
+            "A_relative_update_mean": 0.0,
+            "A_relative_update_max": 0.0,
+            "strength_zero_count": 0,
+            "strength_ratio_nonzero_count": 640,
+            "strength_ratio_nonzero_sum": 640.0,
+            "strength_ratio_nonzero_min": 1.0,
+            "strength_ratio_nonzero_max": 1.0,
+            "b_min": 0.0,
+            "b_max": 0.0,
+            "b_mean": 0.0,
+            "q_min": 0.3333333134651184,
+            "q_max": 0.3333333432674408,
+            "q_mean": 0.3333333134651184,
+            "gate_input0_min": 0.0,
+            "gate_input0_max": 2.5649492740631104,
+            "gate_input1_min": 0.0,
+            "gate_input1_max": 1.7917594909667969,
+            "gate_input2_min": 0.0,
+            "gate_input2_max": 1.0986123085021973,
+            "gate_input3_min": 0.0,
+            "gate_input3_max": 1.0986123085021973,
+            "gate_input4_min": 0.0,
+            "gate_input4_max": 0.0,
+            "gate_input5_min": 0.2497376948595047,
+            "gate_input5_max": 0.25049126148223877,
+            "gate_input6_min": 0.42768046259880066,
+            "gate_input6_max": 0.511555016040802,
+            "gate_input7_min": 0.12523487210273743,
+            "gate_input7_max": 0.1544918715953827,
+            "gate_input8_min": 0.3333333134651184,
+            "gate_input8_max": 0.3333333432674408
+          },
+          "coefficient_or_LR_adjusted": false
+        },
+        {
+          "preupdate_losses": {
+            "total": 3.4571609497070312,
+            "energy": 2.7790708541870117,
+            "trace": 0.6780901551246643,
+            "decorrelation": 0.9559527039527893,
+            "base": 3.4571609497070312
+          },
+          "direct_trace_E_gradient_l2": 5.753699593572339e-09,
+          "direct_trace_A_gradient_l2": 0.17887514448045125,
+          "term_parameter_gradient_l2": {
+            "energy": 13.689844859142788,
+            "trace": 0.643692863703987
+          },
+          "preclip_branch_gradient_l2": {
+            "base_gradient_l2": 13.69691716382302,
+            "gate_gradient_l2": 0.005007741827423097
+          },
+          "readout_diagnostics": {
+            "raw_M_norm_min": 0.052871979773044586,
+            "raw_M_norm_max": 0.34187400341033936,
+            "raw_M_norm_mean": 0.15797320008277893,
+            "A_relative_update_mean": 0.0006720242090523243,
+            "A_relative_update_max": 0.0008476065704599023,
+            "strength_zero_count": 0,
+            "strength_ratio_nonzero_count": 640,
+            "strength_ratio_nonzero_sum": 640.4301147460938,
+            "strength_ratio_nonzero_min": 1.000518560409546,
+            "strength_ratio_nonzero_max": 1.0008476972579956,
+            "b_min": 0.0007778893341310322,
+            "b_max": 0.0012708563590422273,
+            "b_mean": 0.0010078594787046313,
+            "q_min": 0.3333333134651184,
+            "q_max": 0.3333333432674408,
+            "q_mean": 0.3333333134651184,
+            "gate_input0_min": 1.0986123085021973,
+            "gate_input0_max": 2.5649492740631104,
+            "gate_input1_min": 1.0986123085021973,
+            "gate_input1_max": 1.7917594909667969,
+            "gate_input2_min": 0.0,
+            "gate_input2_max": 1.0986123085021973,
+            "gate_input3_min": 0.0,
+            "gate_input3_max": 1.0986123085021973,
+            "gate_input4_min": 0.0,
+            "gate_input4_max": 0.0,
+            "gate_input5_min": 0.2524031102657318,
+            "gate_input5_max": 0.2528610825538635,
+            "gate_input6_min": 0.4769798219203949,
+            "gate_input6_max": 0.5447348356246948,
+            "gate_input7_min": 0.14372551441192627,
+            "gate_input7_max": 0.1679167002439499,
+            "gate_input8_min": 0.3333333134651184,
+            "gate_input8_max": 0.3333333432674408
+          },
+          "coefficient_or_LR_adjusted": false
+        },
+        {
+          "preupdate_losses": {
+            "total": 3.4571609497070312,
+            "energy": 2.7790708541870117,
+            "trace": 0.6780901551246643,
+            "decorrelation": 0.9559526443481445,
+            "base": 3.4571609497070312
+          },
+          "direct_trace_E_gradient_l2": 5.75369963734923e-09,
+          "direct_trace_A_gradient_l2": 0.1788751444515724,
+          "term_parameter_gradient_l2": {
+            "energy": 13.689845013734846,
+            "trace": 0.643692881648853
+          },
+          "preclip_branch_gradient_l2": {
+            "base_gradient_l2": 13.696917344228117,
+            "gate_gradient_l2": 0.005007741827390651
+          },
+          "readout_diagnostics": {
+            "raw_M_norm_min": 0.05287197604775429,
+            "raw_M_norm_max": 0.34187400341033936,
+            "raw_M_norm_mean": 0.15797320008277893,
+            "A_relative_update_mean": 0.0006720242090523243,
+            "A_relative_update_max": 0.0008476065704599023,
+            "strength_zero_count": 0,
+            "strength_ratio_nonzero_count": 640,
+            "strength_ratio_nonzero_sum": 640.4301147460938,
+            "strength_ratio_nonzero_min": 1.000518560409546,
+            "strength_ratio_nonzero_max": 1.0008476972579956,
+            "b_min": 0.0007778893341310322,
+            "b_max": 0.0012708563590422273,
+            "b_mean": 0.0010078594787046313,
+            "q_min": 0.3333333134651184,
+            "q_max": 0.3333333432674408,
+            "q_mean": 0.3333333134651184,
+            "gate_input0_min": 1.0986123085021973,
+            "gate_input0_max": 2.5649492740631104,
+            "gate_input1_min": 1.0986123085021973,
+            "gate_input1_max": 1.7917594909667969,
+            "gate_input2_min": 0.0,
+            "gate_input2_max": 1.0986123085021973,
+            "gate_input3_min": 0.0,
+            "gate_input3_max": 1.0986123085021973,
+            "gate_input4_min": 0.0,
+            "gate_input4_max": 0.0,
+            "gate_input5_min": 0.2524031102657318,
+            "gate_input5_max": 0.2528610825538635,
+            "gate_input6_min": 0.4769798517227173,
+            "gate_input6_max": 0.5447348356246948,
+            "gate_input7_min": 0.14372552931308746,
+            "gate_input7_max": 0.1679167002439499,
+            "gate_input8_min": 0.3333333134651184,
+            "gate_input8_max": 0.3333333432674408
+          },
+          "coefficient_or_LR_adjusted": false
+        }
+      ],
+      "update_losses": [
+        {
+          "total": 9.175848960876465,
+          "energy": 8.585359573364258,
+          "trace": 0.5904890894889832,
+          "decorrelation": 0.9305991530418396,
+          "base": 9.175848960876465
+        },
+        {
+          "total": 3.4571609497070312,
+          "energy": 2.7790708541870117,
+          "trace": 0.6780901551246643,
+          "decorrelation": 0.9559527039527893,
+          "base": 3.4571609497070312
+        },
+        {
+          "total": 3.4571609497070312,
+          "energy": 2.7790708541870117,
+          "trace": 0.6780901551246643,
+          "decorrelation": 0.9559526443481445,
+          "base": 3.4571609497070312
+        }
+      ],
+      "preclip_norms": [
+        19.80894660949707,
+        13.696918487548828,
+        13.696918487548828
+      ],
+      "clipped": [
+        true,
+        true,
+        true
+      ],
+      "model_replay_max_abs": 1.1920928955078125e-07,
+      "optimizer_replay_max_abs": 1.4901161193847656e-08,
+      "loss_replay_abs": 0.0,
+      "rng_and_order_exact_before_and_after_replay": true,
+      "three_updates_seconds": 2.4829154014587402,
+      "peak_allocated_bytes": 668135424,
+      "initial_output_errors": {
+        "E_max_abs": 9.5367431640625e-07,
+        "A_max_abs": 1.7053025658242404e-13,
+        "native_f_max_abs": 1.5294491419876044e-09,
+        "E_A_bitwise_equal": false
+      },
+      "geometry_checkpoint_output_errors": {
+        "E_max_abs": 0.0,
+        "A_max_abs": 1.1368683772161603e-13,
+        "native_f_max_abs": 0.0,
+        "E_A_bitwise_equal": false
+      },
+      "geometry_checkpoint_load_forward_numerical_pass": true,
+      "checkpoint_sha256": "aa6e6afc5506bca4a30e095a418ade6b6d8907419da717e062ab9f754baa633a",
+      "geometry_checkpoint_sha256": "5d503e9ed4a1a8fb164b19e6652d7cbd5038d7ce745d02946457be4245c8ad51"
+    },
+    "tensor": {
+      "initial_base_tensor_sha256": "231dfaf3ffc8056e851ddac34e941fa34eee3af0f7ff9687ecab6d24d6fa1cd2",
+      "fixture_order_sha256": "5d7fef6953e9ae587d0524bee67f60ccc4504f3eb7b7a19f5d3b51f74dddb3a7",
+      "updates": 3,
+      "gradient_audits": [
+        {
+          "preupdate_losses": {
+            "total": 9.175848960876465,
+            "energy": 8.585359573364258,
+            "trace": 0.5904890894889832,
+            "decorrelation": 0.9305991530418396,
+            "base": 9.175848960876465
+          },
+          "direct_trace_E_gradient_l2": 0.0,
+          "direct_trace_A_gradient_l2": 0.16692146322304152,
+          "term_parameter_gradient_l2": {
+            "energy": 19.787223866723753,
+            "trace": 0.9904728156158695
+          },
+          "preclip_branch_gradient_l2": {
+            "base_gradient_l2": 19.80894529573494,
+            "gate_gradient_l2": 0.0076008996490558025
+          },
+          "readout_diagnostics": {
+            "raw_M_norm_min": 0.01725916936993599,
+            "raw_M_norm_max": 0.19047978520393372,
+            "raw_M_norm_mean": 0.07781112194061279,
+            "A_relative_update_mean": 0.0,
+            "A_relative_update_max": 0.0,
+            "strength_zero_count": 0,
+            "strength_ratio_nonzero_count": 640,
+            "strength_ratio_nonzero_sum": 640.0,
+            "strength_ratio_nonzero_min": 1.0,
+            "strength_ratio_nonzero_max": 1.0,
+            "b_min": 0.0,
+            "b_max": 0.0,
+            "b_mean": 0.0,
+            "q_min": 0.3333333134651184,
+            "q_max": 0.3333333432674408,
+            "q_mean": 0.3333333134651184,
+            "gate_input0_min": 0.0,
+            "gate_input0_max": 2.5649492740631104,
+            "gate_input1_min": 0.0,
+            "gate_input1_max": 1.7917594909667969,
+            "gate_input2_min": 0.0,
+            "gate_input2_max": 1.0986123085021973,
+            "gate_input3_min": 0.0,
+            "gate_input3_max": 1.0986123085021973,
+            "gate_input4_min": 0.0,
+            "gate_input4_max": 0.0,
+            "gate_input5_min": 0.2497376948595047,
+            "gate_input5_max": 0.25049126148223877,
+            "gate_input6_min": 0.42768046259880066,
+            "gate_input6_max": 0.511555016040802,
+            "gate_input7_min": 0.12523487210273743,
+            "gate_input7_max": 0.1544918715953827,
+            "gate_input8_min": 0.3333333134651184,
+            "gate_input8_max": 0.3333333432674408
+          },
+          "coefficient_or_LR_adjusted": false
+        },
+        {
+          "preupdate_losses": {
+            "total": 3.4571609497070312,
+            "energy": 2.7790708541870117,
+            "trace": 0.6780901551246643,
+            "decorrelation": 0.9559526443481445,
+            "base": 3.4571609497070312
+          },
+          "direct_trace_E_gradient_l2": 5.753700215793383e-09,
+          "direct_trace_A_gradient_l2": 0.17887514445360736,
+          "term_parameter_gradient_l2": {
+            "energy": 13.689844948086145,
+            "trace": 0.6436928932294248
+          },
+          "preclip_branch_gradient_l2": {
+            "base_gradient_l2": 13.696917264762536,
+            "gate_gradient_l2": 0.005007742318153732
+          },
+          "readout_diagnostics": {
+            "raw_M_norm_min": 0.052871979773044586,
+            "raw_M_norm_max": 0.34187400341033936,
+            "raw_M_norm_mean": 0.15797320008277893,
+            "A_relative_update_mean": 0.0006720200181007385,
+            "A_relative_update_max": 0.0008474579080939293,
+            "strength_zero_count": 0,
+            "strength_ratio_nonzero_count": 640,
+            "strength_ratio_nonzero_sum": 640.4301147460938,
+            "strength_ratio_nonzero_min": 1.0005184412002563,
+            "strength_ratio_nonzero_max": 1.000847578048706,
+            "b_min": 0.0007778892759233713,
+            "b_max": 0.0012708563590422273,
+            "b_mean": 0.0010078594787046313,
+            "q_min": 0.3333333134651184,
+            "q_max": 0.3333333432674408,
+            "q_mean": 0.3333333134651184,
+            "gate_input0_min": 1.0986123085021973,
+            "gate_input0_max": 2.5649492740631104,
+            "gate_input1_min": 1.0986123085021973,
+            "gate_input1_max": 1.7917594909667969,
+            "gate_input2_min": 0.0,
+            "gate_input2_max": 1.0986123085021973,
+            "gate_input3_min": 0.0,
+            "gate_input3_max": 1.0986123085021973,
+            "gate_input4_min": 0.0,
+            "gate_input4_max": 0.0,
+            "gate_input5_min": 0.2524031102657318,
+            "gate_input5_max": 0.2528610825538635,
+            "gate_input6_min": 0.4769798219203949,
+            "gate_input6_max": 0.5447348356246948,
+            "gate_input7_min": 0.14372552931308746,
+            "gate_input7_max": 0.1679167002439499,
+            "gate_input8_min": 0.3333333134651184,
+            "gate_input8_max": 0.3333333432674408
+          },
+          "coefficient_or_LR_adjusted": false
+        },
+        {
+          "preupdate_losses": {
+            "total": 3.4571609497070312,
+            "energy": 2.7790708541870117,
+            "trace": 0.6780901551246643,
+            "decorrelation": 0.9559526443481445,
+            "base": 3.4571609497070312
+          },
+          "direct_trace_E_gradient_l2": 5.7537002264666026e-09,
+          "direct_trace_A_gradient_l2": 0.1788751444671747,
+          "term_parameter_gradient_l2": {
+            "energy": 13.689844899699127,
+            "trace": 0.6436928747806262
+          },
+          "preclip_branch_gradient_l2": {
+            "base_gradient_l2": 13.696917273224516,
+            "gate_gradient_l2": 0.005007742325690786
+          },
+          "readout_diagnostics": {
+            "raw_M_norm_min": 0.052871983498334885,
+            "raw_M_norm_max": 0.34187403321266174,
+            "raw_M_norm_mean": 0.15797320008277893,
+            "A_relative_update_mean": 0.0006720199598930776,
+            "A_relative_update_max": 0.0008474579080939293,
+            "strength_zero_count": 0,
+            "strength_ratio_nonzero_count": 640,
+            "strength_ratio_nonzero_sum": 640.4301147460938,
+            "strength_ratio_nonzero_min": 1.0005184412002563,
+            "strength_ratio_nonzero_max": 1.000847578048706,
+            "b_min": 0.0007778892759233713,
+            "b_max": 0.0012708563590422273,
+            "b_mean": 0.0010078594787046313,
+            "q_min": 0.3333333134651184,
+            "q_max": 0.3333333432674408,
+            "q_mean": 0.3333333134651184,
+            "gate_input0_min": 1.0986123085021973,
+            "gate_input0_max": 2.5649492740631104,
+            "gate_input1_min": 1.0986123085021973,
+            "gate_input1_max": 1.7917594909667969,
+            "gate_input2_min": 0.0,
+            "gate_input2_max": 1.0986123085021973,
+            "gate_input3_min": 0.0,
+            "gate_input3_max": 1.0986123085021973,
+            "gate_input4_min": 0.0,
+            "gate_input4_max": 0.0,
+            "gate_input5_min": 0.2524031102657318,
+            "gate_input5_max": 0.2528610825538635,
+            "gate_input6_min": 0.4769798517227173,
+            "gate_input6_max": 0.5447348356246948,
+            "gate_input7_min": 0.14372554421424866,
+            "gate_input7_max": 0.1679167002439499,
+            "gate_input8_min": 0.3333333134651184,
+            "gate_input8_max": 0.3333333432674408
+          },
+          "coefficient_or_LR_adjusted": false
+        }
+      ],
+      "update_losses": [
+        {
+          "total": 9.175848960876465,
+          "energy": 8.585359573364258,
+          "trace": 0.5904890894889832,
+          "decorrelation": 0.9305991530418396,
+          "base": 9.175848960876465
+        },
+        {
+          "total": 3.4571609497070312,
+          "energy": 2.7790708541870117,
+          "trace": 0.6780901551246643,
+          "decorrelation": 0.9559526443481445,
+          "base": 3.4571609497070312
+        },
+        {
+          "total": 3.4571609497070312,
+          "energy": 2.7790708541870117,
+          "trace": 0.6780901551246643,
+          "decorrelation": 0.9559526443481445,
+          "base": 3.4571609497070312
+        }
+      ],
+      "preclip_norms": [
+        19.80894660949707,
+        13.696918487548828,
+        13.696918487548828
+      ],
+      "clipped": [
+        true,
+        true,
+        true
+      ],
+      "model_replay_max_abs": 1.1920928955078125e-07,
+      "optimizer_replay_max_abs": 1.4901161193847656e-08,
+      "loss_replay_abs": 0.0,
+      "rng_and_order_exact_before_and_after_replay": true,
+      "three_updates_seconds": 2.4881908893585205,
+      "peak_allocated_bytes": 668203520,
+      "initial_output_errors": {
+        "E_max_abs": 4.76837158203125e-07,
+        "A_max_abs": 9.313225746154785e-09,
+        "native_f_max_abs": 3.833712106451892e-09,
+        "E_A_bitwise_equal": false
+      },
+      "geometry_checkpoint_output_errors": {
+        "E_max_abs": 0.0,
+        "A_max_abs": 3.725290298461914e-09,
+        "native_f_max_abs": 1.668208640670521e-09,
+        "E_A_bitwise_equal": false
+      },
+      "geometry_checkpoint_load_forward_numerical_pass": true,
+      "checkpoint_sha256": "e36f9b966c1231d8068cc53ff172ce07d2f568f76f5cda5ef7a1dea0a293e8c3",
+      "geometry_checkpoint_sha256": "1f95bdb61cd2187797fe60c3064a3e92e7fa0a6de10f2d2910f41668992593aa"
+    }
+  },
+  "device_uuid_environment": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+  "resume_tolerances": {
+    "model_optimizer_atol": 2e-06,
+    "model_optimizer_rtol": 1e-05,
+    "loss_atol": 1e-06,
+    "loss_rtol": 1e-05
+  },
+  "preflight_states_are_never_production_initialization": true,
+  "source_hashes": {
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/models_ea.py": "b47d50b8b32313d1c3e1f19f3e64e6f02ce42e91736e6da00f896f68965250b0",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/models.py": "a8d7bf8a8d89839f687a773f59f02b2a5d75abd6f47a59406e9eb3d1a40f4771",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/__init__.py": "8fe70f55031182c1d0012945907181ecc85278f7849599e15e3a16939fae67f1",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/constant.py": "1c3a8f9058ba6890c2f6730241136b35a552235b41f812288ce9cbdcc42ec856",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/detanet.py": "4083382f2d615d1573b9dbc2d2c456d00f9895d4dae144b6c62b26feff6eebcd",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/metrics.py": "677630dd1b97c7474c2f8a4cdda81d7e0f2a56a12dfd4b02bbb869329af4fec2",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/model_loader.py": "85507209b15efea567e686f4d99cf3be53dbf3779607d4b33e295d52c44505b3",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/__init__.py": "032b99150e38283d3695b394175d792c370be7dbbe38b58b94971143de9446de",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/acts.py": "6bcd255ac95b33e6ef6a982d87c8dd6b39c2f1a41996f2425c5ada1f0fe8256c",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/block.py": "38eb81b385fded74ac4ff3950ee2cbe6e7c7e7cc0873ec57ede64ef758460e35",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/edge_attention.py": "48a69aa9a83cfe225f8e55eeea4bab65120955aee2dc7ad02d414aef7b4e2fea",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/embedding.py": "07eff3330b5709fec463563d4ef53f857525ae85f55b8a3ab1e7c9ffb3c70ee8",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/message.py": "a76bae58dbb92447d6fb05230d7db826dc9defc929706e6f2c88c067ee5918cf",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/multilayer_perceptron.py": "5628a4cebadbbc493058edae808a64370ee2834fa4ccacc041f820bf9afb4d42",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/radial_basis.py": "cbbbf125bdb4b64e21a4d58ddb175bde489bb7a640375847f416f137881307ca",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/update.py": "65cda1be8fd5daa491779211ba37ec9c23b73e4a2da81444d21534584c0028a6",
+    "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/spectra_simulator.py": "cb36131b7dc855cd2c528d532f4d7742fc2da757d078e8732142dbeab4f0b67e",
+    "/home/inspur/MTO-1/research/single_model_20260929/architecture/model.py": "b61413830ac8cfb78298dda55c11a1cfb2c398c264a797016045d8fd638c7b93",
+    "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930/INDEPENDENT_SPLIT_VERIFICATION.json": "395d415f854ed6948c4d7a11c0c1d7486193bb48f23bae76834a77148cc69ae2",
+    "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930/SPLIT_MANIFEST.json": "c8ce66ddb7209005b5feebfcddfc2bc30ee81d92fe63cce20f15c4abf3a07155",
+    "/home/inspur/MTO-1/research/single_model_20260929/ops/monitor.py": "b21e028b6741d7522df194c6d7094c7d37b6ef07b7e6aec633691cb61859d263",
+    "/home/inspur/MTO-1/research/single_model_20260929/ops/register_cpu_stage.py": "47ba35fea821ddefa456725e5d37f595294d2911c85626e039528aedd3b739e2",
+    "/home/inspur/MTO-1/research/single_model_20260929/ops/register_run.py": "2ee480a01cfcb4b1f5acd84323c679cf27a90b142387f097d2d563d29e06aa37",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/BUFFER_ROUNDTRIP_DIAGNOSIS.json": "e07c2b2c41d66f8a550816d66ff9e98dcaa00230b2e1bc5d2696f74881cf9d4a",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/CPU_PREFLIGHT.json": "71d6e7fc61e4f36dc0763171f6c5ec32d327ceb60db510f6ac0c228c79373a1f",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/ENVIRONMENT.json": "57c2f536b2af90baf8816a0924be5a7511e88ba0f35fbeda5b55e95fdf2540a9",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/FROZEN_MANIFEST.json": "66269e04d73943bec48a6331c3ca45a9efcc12045e962fe897da6196af97c5e1",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/GPU_IDENTITY_DIAGNOSTIC.json": "4221233ca22bb3cf0fdfb2091a20ae500d72c4ddf5fc4aec0e44277307b3d92c",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/GPU_IDENTITY_DIAGNOSTIC_REVIEW.json": "1b0dc69bfc44fd700d5804dcf931ef0cb95ac352f612769cd2e565f678b67146",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/GPU_PREFLIGHT.json": "c0a62e24963ed3158f48524fff3f77fae5bce98b91144962b16bb839bcca99a9",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/GPU_PREFLIGHT_REVIEW.json": "4071eca0211395858f472473abc3891298dc822878e1a76adf248026f5e2c1f5",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/HISTORICAL_NONREPETITION.md": "2e79980cb4040a4449892424c5f6c017f80c2a83856125f5c17d241946a31c07",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/IDENTITY_CHECK_AMENDMENT_DECISION.json": "234b0ea52edec20bccc703d7ef96429c3ab2705f9da214b7cbde46e2c0e4825a",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/IDENTITY_CHECK_AMENDMENT_PROPOSAL.md": "74625972cca0912400d10cc81d7db98b640dec566f3e25d004e7e01c6cd6ad00",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/IDENTITY_DIAGNOSTIC_REVIEW.json": "5196d474d540afafbcf70d7becdfd033d6683a046a317806afd23fa3b0ca2dc8",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/INDEPENDENT_GATE_CHECKS.json": "e17bed460c3e33a69ffc968fd2104762fe968f87d069fa1bb9f27c72ffef189c",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/INDEPENDENT_READER_CHECKS.json": "fe18f4af85811327298a1f1163897ce7c230e84df6189658af49b2d08136ff17",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/IO_CONTINUITY.json": "f0b3af59de54885c849db25b31e72083e70a9fc03cd64ca337cff5e2d7067382",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/IO_CONTINUITY_CHECKS.json": "9368c40972d72a661e06b482a43c1adeacab3b5685b040cdc278fd7200b350b6",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/IO_CONTINUITY_REVIEW.json": "876e2ea4aec2e401f52b616b25d4881f81f41a636d437ab82880b7f4aa38a70f",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/PRODUCTION_AUTHORIZATION_TEMPLATE.json": "c2abc2628f30a58b65b74a32eacc02843b547ccd7f02bb9929c25660810c5c2e",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/PROTOCOL.md": "99fa4eba9788436c1cc83b300835e115f86aea1428945fa8547656c498566356",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/PROTOCOL_PROPOSAL.md": "4e6b4aa4bef6f51e3595718e3e6b34bd527bbfc32d7a2ed9f823080d322d2b08",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/READER_CHECKS.json": "4712269cdeb3768091da720ceab828af8ed6e4ee0a790a88c5c823a0b2e55a9d",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/RETRY01_SOURCE_READINESS.json": "ac1cfbcd4809a131215a8ddf9f670fe0fa237d8a81042edea337c19be1ec016a",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/ROUND05_PREPARATION_DECISION.md": "a7c0c6f14dd400c359c1ec7a9637f81bc2733056052d2dda0380a241f06e7223",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/TECHNICAL_PREFLIGHT_PLAN.md": "d0e8a2c842487490f064b5a437e1a2ce76be14aa704404288301e20a9a019e5b",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/TECHNICAL_SOURCE_REVIEW.json": "01d59c9d0e5aa1908188894b54402c2eb280ff73c10ec911eccc583db71b2efa",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/TECHNICAL_SOURCE_REVIEW_RETRY01.json": "d3a1cc9ec7fc771d2546cd53e61ae04b6f8bc61c44b10fd24e67b279c0ceab8e",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/TRAIN_READER_REVIEW.json": "1b7a4ca182c0c28494d6f9b4e452563c4e98c8e2c9655501635c393187858689",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/TRAIN_STATISTICS.json": "d3d0ed5af2646959be0abcb9cebb50d7cdb2ef7fb70d7e073fe12a8b697953ae",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/TRAIN_STATISTICS_AUDIT.json": "f93e32e63aaa12dc8f81f079e2b96f0d03a5fc5a9235ee98c01ff6fe9e435e02",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/TRAIN_STATISTICS_REVIEW.json": "b4cabcd8f2128b87ec6b77e57b1ad9c0c3965e543df696918fc1ce57e1a4364b",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/buffer_roundtrip_diagnosis.py": "52704ada39fc5fcff359fb57f02ceeda85eae9366233ae65fe8669831b1d7fc0",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/common.py": "50a1ef987cbc635b3b5692364281498e66587b112d5573c765fea360470038cd",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/config.json": "9b1d3d866077d7f971ac03a25435f007d84fc6ee8fe1fa8136b232974c03ec9c",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/cpu_preflight.py": "745adce0eb432f007bcc18d00d2d9c06a063e3e8d04099b14adb5066229828a8",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/execution_gate.py": "4585431fc9289b93719a2de50bc63ccc84a4d6992586e6f3e09d40a388e48e9d",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/freeze_preparation.py": "b39a61e5c14117767f18ca96eb624e4f05edfc6acfee1db1cb7e2ba1e25e00d6",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/fresh_model.py": "16ec3eb14eeafa3265ba0f35abf4ff174a2a20f155b408ed133635fa73a8c314",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/gpu_identity_diagnostic.py": "60f61f33b0de66a994f218dac0bc75d39a8f60be33140a0c46d1d5a67f8fdaab",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/gpu_preflight.py": "0f3ff7d8886809e73fca8e44a9fe50cd3d73eea058e638f7892b8e785de9a887",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/gpu_preflight_retry01.py": "c863b74fb66936361a09734d90fe85eee3e2adbd4d850dcc447e770b9a74b7b7",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/independent_gate_checks.py": "fe5d5756cdd755da0e89d75fba67cc22d37d3fc8494541d5f8c4629905ea6926",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/independent_io_continuity.py": "ead199501de254c6380c96f53172610ea4e8f9fe575a0f117f622d574bf89c5f",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/independent_reader_checks.py": "f160207430b5886755210ac3cafc07145aa4b78006ee99c9a20d638f82478f5c",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/launch.py": "e7a915af16cb448316f3ef89773e832f8fa4a1d170c84bf02eacd7360a28794b",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/metrics.py": "1465cc964aea7bd0e06616be3cf8f862e876c7c57d9df3103e81e57817761bdc",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/model_config.json": "ff24143918e722d34a126b172f7d311c2a673a21c6756c89077fa05b05d6592f",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/partition_data.py": "9aaa08bb8878803cc42961d336345d5fa53f5aad30d8cfdf135d0fd35dd6757d",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/predictor.py": "5b4801a4851c01f035fa7d1f05b9e2817318acfe155ae611e57f3425dfc407e6",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/SNAPSHOT.json": "0f9fd724861c905582524f071c310d73d0e161abcef75c7b9c15aaad63e94efe",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/io_continuity/training_executed.py": "17d2bb266704bb4a747d3b11b3ff0789f68e2bc5835230a45220d93a3f0bca76",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/prepare_train_statistics.py": "ecab67351bbf0227609aa30117001853556731960573fdbc04761cef250db207",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/reader_checks.py": "549e0086d5747e4d2642c1fc5fb265c06791ed98223bf46bdc327cfeb1799a30",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/resources.py": "0e86e15d8be5c1e0e94bf8f85eea56a121e3aa493cb9c262e9248727b5beb918",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/run_gpu_identity_diagnostic.py": "87e0c98a3ba029c1182772bc76e0658ac36f2462e463aa95fb4eae0dd690c499",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/run_gpu_preflight.py": "49bf9fe58ff72aac13bf2b5449ff9b320d2b0d51c653acceb14384741e9d2eea",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/run_gpu_preflight_retry01.py": "c3cedde6b63c75d1b220b7a6fe2e2a0dbc36ccf8d1ab55f72b9d3f6c45410ba8",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/run_statistics.py": "05f3d0dcce091c50faf9c7c234ffab0d863fa188bf685511c83d5eff49bc617f",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/runtime.py": "fb54c5073e261455ef43036f3d1f65bdaf89714fc9ddc690ec0ec3a773074f94",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/train.py": "5d8fe3e9c6a30fdd942a89171169994d097f237bfa71105b9129e933017750c3",
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/training.py": "c0147d25cf2a2b6cd0956a57bfcab069657618bc22712efa29feb1b6a9533cdd",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/CPU_PREFLIGHT.json": "02c268678eb4b6293258ec99020d4f7f16c6d9f3244ccf122ea4ebae7a6e8bd9",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/CPU_PREFLIGHT_REVIEW.json": "9cb76884bb5bd189ea1e9d090ce9db83b396654e6e497c7932c5f776b31d088f",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/CPU_SOURCE_REVIEW.json": "b0c291527e83b69e85cda5a00d8478f104dcdd4c7e64b4750d747c27590bd55c",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/ENVIRONMENT.json": "57c2f536b2af90baf8816a0924be5a7511e88ba0f35fbeda5b55e95fdf2540a9",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/FROZEN_MANIFEST.json": "4f1908d8f83c7a4622a8aadb511305da93465f8e29af3203327981c3c739d52b",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/GPU_PREFLIGHT.json": "cdb0520de4b80a3618114ad02ed61a34a071cf02701f0dbfd62168efcf6d2aad",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/GPU_PREFLIGHT_REVIEW.json": "fc39d7e2b915717e074b4eb99c1971a447f72d13b4bfe642eae583633eedfee0",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/GPU_UPDATE_PROGRESS.json": "4ddeb29614ef284bd503f51f0d82c427a4368f2966e129134036b0fafb04434b",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/INDEPENDENT_GATE_CHECKS.json": "60aa32905289a8a01fd612fad431fc0488c57f464b5854a06b14f172a8595649",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/INDEPENDENT_GATE_CHECKS_01.log": "919e6d1911cb368433645cb6392b950ef22f6b723a2cf595408386c95f611fe6",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/INDEPENDENT_PREFLIGHT_RESULT_CHECKS.json": "543ed23016a156fd82b1d5c8e904150d3857f473f8b39b874a64892ccba1bd57",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/INDEPENDENT_PREFLIGHT_RESULT_CHECKS_01.log": "5c06a17cec34cca65331a2b74b56bf24b5af78243ac4fbf40d63e8c4d0852cf5",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/INDEPENDENT_PROPOSAL_REVIEW.json": "a1617eaea6574b36f5e39fa9b5bb738c7a2ba91083c373217e2c51d25b992225",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/INDEPENDENT_PROPOSAL_REVIEW.md": "2d84d9be45d605cfab929298d126af91912968f368baf3965bf119f9eae9016c",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/PRODUCTION_AUTHORIZATION_TEMPLATE.json": "39d5260e1c45d6810efc5e547fbc53ce12ea2b741cb9b40b526a4996e05d65db",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/PROPOSAL_MANIFEST.json": "248c0845c04e70e9ae7083a04784f2709c96fc3720da1a967895bae3a18ac76f",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/PROPOSED_SETTINGS.json": "0238de653981e94105d9937ad65dd4a8b26a7f3659cbac00012fb3ef24c40047",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/PROTOCOL.md": "25b6384e44f2bbeb1d6e302500c8c49387eeff2d18e1a4ba94f415bde5fee07d",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/PROTOCOL_PROPOSAL.md": "aea5c76f422fb7cca286cd84f7bafaff230e2aa29b2ed3068fe7e4573f3245b6",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/ROUND06_PREPARATION_DECISION.md": "d8f7478f77bf660c32e75897d555b13f972e64abaac4385e2c9b44ab3e2e6458",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/SOURCE_LINEAGE.json": "454ee6189e2435b36dabc005c3fa4d6c77252fff12778c7960794b46feef68e8",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/TECHNICAL_PREFLIGHT_PLAN.md": "15a147a541e3a3a7eaf9be0cf562086996d1de298922ec5432d29d41e719585b",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/TECHNICAL_SOURCE_REVIEW.json": "fbf76a414d89a459cf5fa3c956544a698b1f564c856622c107fa99b6dc592605",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/TRAIN_STATISTICS.json": "d3d0ed5af2646959be0abcb9cebb50d7cdb2ef7fb70d7e073fe12a8b697953ae",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/common.py": "50a1ef987cbc635b3b5692364281498e66587b112d5573c765fea360470038cd",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/config.json": "072189823f3334e8bee8b6a468442f7d0331d1b65bf6e4bd3a0cb50053e87b23",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/execution_gate.py": "e0e03333f9f31cbb48a8b59812d12a4f07ba49c032dca3d33e30796ea626829c",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/freeze_preparation.py": "f00f64394efcd279c48b66ed8b83c0fc9fbf9f8e97785781b18cccd953b437af",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/fresh_model.py": "16ec3eb14eeafa3265ba0f35abf4ff174a2a20f155b408ed133635fa73a8c314",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/gpu_preflight.py": "61e06872bdefe45bee44ee52beecf03144440d89eb6572f10021387973045bcb",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/independent_gate_checks.py": "334accea8382ec5208459782cb73f59ecfba98afbf7f00e0399f4dda2352a26f",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/independent_preflight_result_checks.py": "aabbd15210c718c2f056bbf502ff05d34bc3d280396e7b4c0ffb7e0c957b5172",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/launch.py": "d49ade9238f942dbbf09aea1f454ae0fed2628f11a9ac4c08f7b9b656f137811",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/metrics.py": "1465cc964aea7bd0e06616be3cf8f862e876c7c57d9df3103e81e57817761bdc",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/model_config.json": "ff24143918e722d34a126b172f7d311c2a673a21c6756c89077fa05b05d6592f",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/objective.py": "a24c809d7e031332e5daba8ad0dbe82bf7cdf1acfc6d4bec923f9e4fc4ae3469",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/ops/GPU_PRELAUNCH_GUARD_FAILURE.md": "6d165cfe6eb8cf5fd40e58e2578a38197081becb82f42d08823b5226260ed82f",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/ops/cpu_synthetic_01.log": "6deda14aef401790d9613460f9e664d11e744b731f9e4770557826aa0b8c257b",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/ops/gpu_preflight_attempt/COMPLETE.json": "ecfe67939ff7c2cf9b5a7b6d49db259e97e6d97af46adba8c4f07f76f890bb0d",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/ops/gpu_preflight_attempt/GPU_ADMISSION.xml": "cf387b699f11f6a87481e693808f3bdecc8cf23aed0ceaee177ead91eb2f55ee",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/ops/gpu_preflight_attempt/LAUNCH_RECEIPT.json": "8aa9032604fb960f0aa28433f208694b641de233a23135877d42687e30179cbe",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/ops/gpu_preflight_attempt/REGISTRATION_TOOL.log": "fd43aebd79ecbcfdcb4f9144a55085ce5266bb6df595034215f802127a8b8ea6",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/ops/gpu_preflight_attempt/stage.log": "a21634cf8c04742003c02a8f527522ecabab893b29a3d846e4b8c7e78e38c6da",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/partition_data.py": "9aaa08bb8878803cc42961d336345d5fa53f5aad30d8cfdf135d0fd35dd6757d",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/predictor.py": "569acc33b314504ff69df4a00f046c32480ea8894d346f256d4f6d8afba33371",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/preflight_helpers.py": "f92c3a3ae455b55aaf8307014c5abbb16c851c32bdaceffc47fe5f2feff82d1b",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/resources.py": "0e86e15d8be5c1e0e94bf8f85eea56a121e3aa493cb9c262e9248727b5beb918",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/run_gpu_preflight.py": "fa6e91e4019b97406734b30f42067253131416d0a5301840576882e5bb219cb5",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/runtime.py": "fb54c5073e261455ef43036f3d1f65bdaf89714fc9ddc690ec0ec3a773074f94",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/synthetic_checks.py": "b8897e29969ae4e92eb3c8aef76130aa1be6d7e43ff01b76793b6bbd15a1bc73",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/train.py": "c63f5f3b1da7257ce217b19d28fe0c3df15e63a57a51770f75c370f1b9cc8877",
+    "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/training.py": "821fae3660f82026f53bbb267e2f12b431da4963935c5ec63e6fbd607867fc2b",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/CPU_PREFLIGHT.json": "b5f7da4fad6f27f6b93e204d561594f9040946c46a3d6c5e48fbeb70f59ef777",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/CPU_PREFLIGHT_REVIEW.json": "27cb7fc4025de1595399549bcf359cb5da83a97f3f035b4bd1a379e5ed881a8c",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/CPU_SOURCE_REVIEW.json": "329aace63fdf520ad850f3bfe93b142fe119fd793f9422feafbdedf60823700b",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/ENVIRONMENT.json": "57c2f536b2af90baf8816a0924be5a7511e88ba0f35fbeda5b55e95fdf2540a9",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/INDEPENDENT_GATE_CHECKS.json": "e9b328e6dad04acf407df931444b801db2ea5f6f6a5ad5be07f817f2bdc75fed",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/INDEPENDENT_PROPOSAL_REVIEW.json": "33c8dae6f55d3c641cddd60270f7ffddad740695bbf524fb2d1c9e78b99df5c4",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/INDEPENDENT_PROPOSAL_REVIEW.md": "2bce01b973bae4a61725d65581fd39ce6f8537d7442ac17f70bb610f3dd37862",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/PROPOSAL_MANIFEST.json": "3acc754a065a083330a4e6498ffebc755d7c4a57584bb2956a0c0eda994aed12",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/PROPOSED_SETTINGS.json": "62cec5d56832674a81e61b333e311455f17e2c563f901cb45cd726f57c2ad169",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/PROTOCOL_PROPOSAL.md": "9a6431b8aa0f6a697fcc79c1b4106ee357de2a90996c0072f6345ead79c6dfe6",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/ROUND07_PREPARATION_DECISION.md": "637a3cd3006d3f5b84f8ca5314b6213b0bc3017dffeeafb7ed51c2a4c594c60b",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/TECHNICAL_PREFLIGHT_PLAN.md": "92aec35ddd53a159a792611c5a3f28cea91950370238b5bbc4ea27bb38836946",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/TRAIN_STATISTICS.json": "d3d0ed5af2646959be0abcb9cebb50d7cdb2ef7fb70d7e073fe12a8b697953ae",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/common.py": "50a1ef987cbc635b3b5692364281498e66587b112d5573c765fea360470038cd",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/config.json": "50ea8e4fa61b18411e1d6af7695b384f5a2ba36a501b38856a587e2b4d6b0f15",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/congruence.py": "896293596a7b3325f07598ef88d1698a4abbfc9b5f4b1fa03fe413961cf4f8e1",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/execution_gate.py": "f93ee9a7e01f0580243812d503bfdf93fa5d0ede10522d2f8f9d5d55c6eabcbf",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/fresh_model.py": "061c00ea9b0c5c45c08195e4c0d4c4308b0574faeb0c2bf15c13be741df92031",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/gpu_preflight.py": "e21d7936ef9e7592b48b3865bd35ae866f42de8cca073afee48296996e108692",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/independent_gate_checks.py": "a51c5ca404065b707d448d0cf101c2ea828d1e226fc944fd5956cb69057c8693",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/metrics.py": "1465cc964aea7bd0e06616be3cf8f862e876c7c57d9df3103e81e57817761bdc",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/model_config.json": "ff24143918e722d34a126b172f7d311c2a673a21c6756c89077fa05b05d6592f",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/ops/INDEPENDENT_GATE_CHECKS_01.log": "56cdba8bf9645b0f4094f9ce43f461399b39a981993e071d558f7285ceb19c3b",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/ops/cpu_synthetic_01.log": "2d4d33faa4f2aaf7a9dcabae1bca5ee546b080d9c546e3b3c458c044bc098a29",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/partition_data.py": "9aaa08bb8878803cc42961d336345d5fa53f5aad30d8cfdf135d0fd35dd6757d",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/predictor.py": "e660e495145b546afebb658172d5f257a608628b63186af402d4dc9b24619bd3",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/preflight_helpers.py": "d474df1d76ed6d08b465ad1925fd8a202b9c337fdbc7cff515cb583b472da971",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/resources.py": "0e86e15d8be5c1e0e94bf8f85eea56a121e3aa493cb9c262e9248727b5beb918",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/run_gpu_preflight.py": "47bb918ce8e1829362b2cedcde5ad47d5ecae0a84a950febacc1a1a85f5dc437",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/runtime.py": "fb54c5073e261455ef43036f3d1f65bdaf89714fc9ddc690ec0ec3a773074f94",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/synthetic_checks.py": "ca6068ca37007e3ec244a9f458b283df2fb7ef4155c0684a265e09e36d6030f4",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/train.py": "10e8ae49c9af485ffddb513c95c404382d88dde8635f797a4fc4804af59ef040",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/training.py": "fa6ffe50a93d61ef8cbd908196d6c98bafea88970c7df25089c5960a5f491580"
+  },
+  "technical_review_sha256": "5dff6ce331d9cb7cb5f17d54e0d6968b9317e2a4653cc1c2c8821d774a489f82",
+  "root_preparation_decision_sha256": "637a3cd3006d3f5b84f8ca5314b6213b0bc3017dffeeafb7ed51c2a4c594c60b",
+  "seconds": 20.022565603256226
+}

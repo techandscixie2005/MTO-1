@@ -1,0 +1,32 @@
+# Independent review: upstream tensor-transport proposal
+
+**PASS for proposal quality and source/history consistency.** This is not implementation readiness or execution authorization. No numerical preflight, model, target/prediction array, checkpoint tensor, optimizer update or TEST evaluation was run by this review. Root must choose whether to pursue this question.
+
+Reviewed final audit b1e8237f0f3488244336412a103ffe01e1d8a2f335b4ce3cccc30eb3ff0e74da, proposal5b5bed1529acb13e9bf8b55786302b43a754601659d67a5643751613f0c8ce9b and reference-manifest a619659a345cb6ca182e5c3778b3a4818dae5021e7ac5cb8b18b5d909f86e334. All22 named text references and both document byte lengths/hashes were checked against the server. The independent historical ledger and its exact92-source/config/aggregate references are separately bound in `../post_round07_bottleneck_audit/AUDIT_MANIFEST.json`.
+
+## What is established
+
+1. **The path is genuinely different from prior readout work.** Original `Message.forward` receives S/radial/harmonics/index without T. Existing T persists locally and affects later edge coefficients through invariant contractions into S. The proposed direct neighbor-T term therefore adds an explicit dependency. It does not prove that real molecular targets are currently indistinguishable or that this restriction causes false-bright errors.
+2. **The orientation and symmetry argument are consistent with the source.** Code aggregates into `j=index[1]`, even though query/key/value naming is unconventional. Neighbor uses T_i, local uses T_j, both before the block update. All irreps use a common global basis; invariant scalar gating, common-per-magnetic-component theta and same-irrep sums commute with O(3). Relative geometry and the preserved edge indexing support translation/permutation behavior. No electronic phase, NTO, TDDFT-response or degeneracy claim follows.
+3. **The control is useful but not exhaustive.** Two blocks×three irreps×128 channels gives768 added trainable parameters in each modified arm. Local matches insertion sites, scalar edge inputs, averaging, parameter count and zero initialization. It does not match activation statistics, perturbation norm, function class or spatial support. The experiment would test this complete transport construction against this local residual, not pure angular expressivity in isolation.
+4. **Initialization and the stated failure risks are honest.** Theta0 nests the old algebra; its derivative is the corresponding gated tensor mean. Some symmetric/zero features can still give zero gradients. New-path gradients into original features begin zero and become live as theta moves. Degree averaging/tanh bounds coefficients, not the relative residual or global gradient. The proposal requires future fixed-fixture liveness/parity checks and fixed diagnostics without tuning a scale after seeing them.
+
+## Historical novelty and competing interpretation
+
+Earlier completed channels32, LR.0003/.003 and batch128 trials used full LE+LA and adaptive scheduling; reference joint loss was lower than those alternatives. Channel64 G1 additionally used E²-weighted trace and Q supervision; all four channel64 configs used that trace weighting. G2/G4's oracle-energy diagnostics are not native single-model evidence. The100-epoch.373493 result was a changed direct-f head/objective/initialization/schedule. Thus “width or LR was never tried” is false, while “no matched explicit tensor-transport experiment was found in the audited ledger” is supported.
+
+All23 inspected early configs use WD0; the shared core remains128 features/three blocks/dropout0. No clean depth or conventional weight-decay/dropout contrast was found in this bounded set. That is not global absence evidence. Generalization/optimization remains a plausible alternative to a representational limitation. A single prespecified regularizer could be a different defensible question, but this review recommends keeping the proposed transport question isolated rather than combining them.
+
+## Matched protocol and allocation
+
+The proposed original/local/neighbor contrast preserves original MTO/PSD/LE+Ls, the v2 partition and TRAIN statistics, seed/order11, all labels, batch64, fixed60 epochs/112860 updates, Adam AMSGrad LR.001/WD0/clip5 and the native-f selection/evaluation contract. Dormant F stays disabled; no congruence, calibration, new QC supervision or altered labels enters. New theta construction must leave original tensor initialization and data RNG unchanged. One common implementation should serve all unintended loss/evaluation/diagnostic paths. One final geometry checkpoint includes the exact transport mode and contract.
+
+The neighbor allocation gate is correctly three-sided: selected R² must exceed both current original and local controls by.003 and exceed retained Round05.44716940136585204 by.003. A better control is reportable but not evidence for neighbor transport. Report fixed60, per-state, energy and true/false-bright tails alongside selected results. No alternative checkpoint or score-based extension is permitted if the gate fails.
+
+The large original-control spread across Rounds05–07 is explicit. A.003 screening rule does not resolve training-run variability or reused-validation selection. Any broader claim needs the separately authorized seed23/37 complete paired contrasts, individual checkpoints and no prediction averaging. Conditional component bootstrap cannot replace that evidence. TEST remains sealed and the historically exposed v2 partition is not external confirmation.
+
+## Remaining gates and decision
+
+No blocking document finding remains. Recommend this **one narrow upstream contrast** for root consideration; do not describe it as a proven route to.60. Future preparation must independently verify the exact branch/receiver/degree mathematics, O(3)/permutation, synthetic nonlocal dependence, parameter/schema/initial RNG parity, live gradients, one-file inference, masks and atomic recovery. Numerical tolerances must be fixed before execution. The proposed nine discarded TRAIN updates, memory/runtime estimate and three production fits have not been executed or authorized by these documents.
+
+Read-only audit and proposal are complete. Preserve the closed Round07 archive and its703c2cd7 publication. Preparation, its reviewed D-first publication and later production each require the appropriate separate root decision; this review grants none of them.

@@ -1,0 +1,31 @@
+{
+  "exact_nine_updates_and_first128_TRAIN_verified": true,
+  "fixed_replay_tolerances_and_exact_RNG_order_passed": true,
+  "input_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/CPU_PREFLIGHT_REVIEW.json": "27cb7fc4025de1595399549bcf359cb5da83a97f3f035b4bd1a379e5ed881a8c",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/GPU_PREFLIGHT.json": "24e891e92c8c670361f406363153c5a39719106416108bcfc9b56813598296b6",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/GPU_UPDATE_PROGRESS.json": "75bfe314a6b4d2b768870a5fa5297d37d7fc0e139dcb4ef71b1aa385ebdc0b19",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/TECHNICAL_SOURCE_REVIEW.json": "5dff6ce331d9cb7cb5f17d54e0d6968b9317e2a4653cc1c2c8821d774a489f82",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/independent_preflight_result_checks.py": "6b1421b3596d0f2894af8f9abc112092c1dcdf98d3ce5eafbf090c422f57e4cf",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/ops/gpu_preflight_attempt/COMPLETE.json": "e19ac28e45c70c048d70e7c0e4607e9ce77c0259d4d1654bf6c0429bdb40e21f",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/ops/gpu_preflight_attempt/GPU_ADMISSION.xml": "13dbb46f756e522eb269f3bb8ee228915941dd2152a99062842dda52f83049f1",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/ops/gpu_preflight_attempt/LAUNCH_RECEIPT.json": "7ff9d1e55cf828f06a5f7223615ee79b5901dacba2131fc31bb624088f159b45",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/ops/gpu_preflight_attempt/REGISTRATION_TOOL.log": "553fd4923d8da33a5d4edb4897621cfbf167e5f160793b667a02dd5bb164d979",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/ops/gpu_preflight_attempt/stage.log": "5d779ea9692737aa7fd461fc88096e912dcd5516e7ef567496c7534c61ed4927"
+  },
+  "no_data_tensor_decode_or_model_inference_by_reviewer": true,
+  "owned_registration_admission_and_exit0_verified": true,
+  "passed": true,
+  "phase": "completed_nine_update_receipt_review",
+  "private_checkpoint_opaque_hashes_only": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/private_preflight/original_after_update1.pt": "86ac9e31b81bb49083cdf53e7fcc2854a7e50e16897978669d7a8bf1c7a4cbe3",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/private_preflight/original_geometry_fixture.pt": "2927ac26f595cb36a5efb64bceed3c27b90914b3cbe4c49c98dbd27b6cfe4b70",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/private_preflight/scalar_after_update1.pt": "aa6e6afc5506bca4a30e095a418ade6b6d8907419da717e062ab9f754baa633a",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/private_preflight/scalar_geometry_fixture.pt": "5d503e9ed4a1a8fb164b19e6652d7cbd5038d7ce745d02946457be4245c8ad51",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/private_preflight/tensor_after_update1.pt": "e36f9b966c1231d8068cc53ff172ce07d2f568f76f5cda5ef7a1dea0a293e8c3",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/private_preflight/tensor_geometry_fixture.pt": "1f95bdb61cd2187797fe60c3064a3e92e7fa0a6de10f2d2910f41668992593aa"
+  },
+  "production_fit_authorized": false,
+  "same_fixture_as_round05": true,
+  "source_bindings_verified": 168
+}
