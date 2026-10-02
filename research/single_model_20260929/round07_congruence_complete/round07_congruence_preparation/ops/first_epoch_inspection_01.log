@@ -1,0 +1,144 @@
+{
+  "passed": true,
+  "checked_unix": 1790899604.4349918,
+  "scope": "read_only_committed_checkpoint_metadata",
+  "script_sha256": "f09cfd8ff7720c596d9187d1bcd64afce639f346ce527beb828ad5e929114fc9",
+  "manifest_sha256": "68c052e909d0fcbe1671084edf7de1968f81f8f5e333bbfc2431fe3181c8c203",
+  "authorization_sha256": "dfb6a5fe356e30da37260830f8032fe7892f2749bb0afc30b6daf277652afaaa",
+  "arms": {
+    "original": {
+      "observed_identity": {
+        "pid": 1591761,
+        "start_ticks": 1274697650,
+        "uid": 1000,
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation",
+        "argv_sha256": "f779edd0cbb835704e70f89042fc60c5c14e7e115df7bd229bcde98208c443cd",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "process_state": "R"
+      },
+      "launch_receipt_sha256": "049d686de214f248cd48d41f0f9d12cb8bda8a9762eb6ba49c93817aac74597e",
+      "observed_completed_epoch": 1,
+      "committed_steps": 1881,
+      "read_last_checkpoint_sha256": "13596b3e82d43be7d88449b881a0083370a68d3c59a1bd42b9482d8bf076efc4",
+      "read_last_checkpoint_bytes": 25235512,
+      "optimizer_state_entries": 135,
+      "optimizer_step_values": [
+        1881
+      ],
+      "rng_keys": [
+        "cuda",
+        "numpy",
+        "order",
+        "python",
+        "torch"
+      ],
+      "best": {
+        "epoch": 1,
+        "sse": 147.04799154937217,
+        "r2": 0.16201737084455436,
+        "checkpoint": "selected/epoch_001_1790899497583182694.pt",
+        "predictions": "selected/predictions_001_1790899497583182694.npz",
+        "predictions_sha256": "c1fb9b8dda6871926cc45dce5a759dc8f5ba88dc11fbd2a1870601efc9de30ca",
+        "checkpoint_sha256": "cb8609d7504f5cd7895c88367e5de8fe803d8d1dac6680b4669515dae4ebbdc9"
+      },
+      "first_epoch_seconds": 170.54569029808044,
+      "epoch0_r2": -0.06655042332710992,
+      "first_epoch_r2": 0.16201737084455436,
+      "all_observed_order_hashes_match": true,
+      "data_access_sha256": "e586c57d2f7576d3c407f4d053d0995f62ad46d68e6b07247986ae9366a41b9c",
+      "train_and_validation_ledgers_match_exact_partitions": true,
+      "test_numeric_rows": 0
+    },
+    "scalar": {
+      "observed_identity": {
+        "pid": 1591766,
+        "start_ticks": 1274697673,
+        "uid": 1000,
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation",
+        "argv_sha256": "9d20af3cbb7d7e544aaf641d1fa67b1682e82e0d4cb750bf4d23ad3972ddec8d",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "process_state": "R"
+      },
+      "launch_receipt_sha256": "c86434e189978523a0360a6493167ecfebf4e92e9abc16a82bc75d7eb472c9d5",
+      "observed_completed_epoch": 1,
+      "committed_steps": 1881,
+      "read_last_checkpoint_sha256": "bb4e9d93fc9dea51505266f5b3d5279f413f04c36fb1f12e46f790dbb95a1cfa",
+      "read_last_checkpoint_bytes": 25242072,
+      "optimizer_state_entries": 139,
+      "optimizer_step_values": [
+        1881
+      ],
+      "rng_keys": [
+        "cuda",
+        "numpy",
+        "order",
+        "python",
+        "torch"
+      ],
+      "best": {
+        "epoch": 1,
+        "sse": 141.88873685240122,
+        "r2": 0.19141842399663833,
+        "checkpoint": "selected/epoch_001_1790899511252827150.pt",
+        "predictions": "selected/predictions_001_1790899511252827150.npz",
+        "predictions_sha256": "95e92db21eb3c8e2710b4e30e3af21fa536faff7fd882387843fc3cc2234960d",
+        "checkpoint_sha256": "80f89900a6b072fbdaa1680a9ffd5f83421961115d99d48ca61b85874d27513a"
+      },
+      "first_epoch_seconds": 183.00560998916626,
+      "epoch0_r2": -0.06655042341441253,
+      "first_epoch_r2": 0.19141842399663833,
+      "all_observed_order_hashes_match": true,
+      "data_access_sha256": "e586c57d2f7576d3c407f4d053d0995f62ad46d68e6b07247986ae9366a41b9c",
+      "train_and_validation_ledgers_match_exact_partitions": true,
+      "test_numeric_rows": 0
+    },
+    "tensor": {
+      "observed_identity": {
+        "pid": 1591771,
+        "start_ticks": 1274697696,
+        "uid": 1000,
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation",
+        "argv_sha256": "b10f613f0355bfbca09d84070cdcc6cfd36937bafe443b74a7eaeb3392116caa",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "process_state": "S"
+      },
+      "launch_receipt_sha256": "8b7aa9dff23c2c8e5bf30b8cac85937e131122c3c38881b751cdbd4083ab124b",
+      "observed_completed_epoch": 1,
+      "committed_steps": 1881,
+      "read_last_checkpoint_sha256": "be959fcee7f5b01f269f274b2b25802ee4599e453555dc469fe8b1142e729ace",
+      "read_last_checkpoint_bytes": 25242072,
+      "optimizer_state_entries": 139,
+      "optimizer_step_values": [
+        1881
+      ],
+      "rng_keys": [
+        "cuda",
+        "numpy",
+        "order",
+        "python",
+        "torch"
+      ],
+      "best": {
+        "epoch": 1,
+        "sse": 142.60322325258946,
+        "r2": 0.18734677918315223,
+        "checkpoint": "selected/epoch_001_1790899502243285885.pt",
+        "predictions": "selected/predictions_001_1790899502243285885.npz",
+        "predictions_sha256": "a0936e762095cc056073b22a851656e4a713afb7402f5fe4fa874b80eeaa2d1d",
+        "checkpoint_sha256": "0e4e437d117a3ab5747b9ed049c2d6f457eebb7e5ef3b6fcfb3d3ed2e97b561a"
+      },
+      "first_epoch_seconds": 174.5150465965271,
+      "epoch0_r2": -0.06655042323064886,
+      "first_epoch_r2": 0.18734677918315223,
+      "all_observed_order_hashes_match": true,
+      "data_access_sha256": "e586c57d2f7576d3c407f4d053d0995f62ad46d68e6b07247986ae9366a41b9c",
+      "train_and_validation_ledgers_match_exact_partitions": true,
+      "test_numeric_rows": 0
+    }
+  },
+  "model_constructed": false,
+  "model_inference": false,
+  "raw_target_arrays_opened": false,
+  "checkpoint_tensors_loaded_on_cpu_only": true,
+  "production_files_modified": false
+}

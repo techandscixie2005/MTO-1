@@ -1,0 +1,68 @@
+{
+  "analysis_input_hashes_independently_rechecked": 41,
+  "conditional_component_intervals_exclude_seed_selection_uncertainty": true,
+  "input_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/TERMINAL_ANALYSIS_SOURCE_REVIEW.json": "e49dd50440c7892f2251c3580ac1dd52251c70962e1f715e4a5ae93870822ae9",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/completion/ANALYSIS_RECEIPT.json": "62f584dacafe9f0599f95f40c6d8d706f47a89a83c7011330378c509efb0d851",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/completion/INDEPENDENT_TERMINAL_METADATA.json": "b827a9749e70d302139aff296de22bb2d5624525c651b3c2d2af5ad39d2fe129",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/completion/ROUND07_RESULTS.json": "0314d0252de7e2f93e5ecd3df1be5a3f675fab540c8fea658b4b3a5231f21209",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/independent_terminal_results.py": "aecfe6edecdcb0a9d1b8b015ad9aad3159efef5a2fadd2600329ae1847a88607"
+  },
+  "no_new_seed_or_extension_or_TEST_authorized": true,
+  "no_repeated_inference_or_saved_array_reduction": true,
+  "passed": true,
+  "private_inputs_hashed_opaquely_only_never_decoded": true,
+  "scope": "independent_source_receipt_and_aggregate_result_review",
+  "selected_pair_tradeoffs": {
+    "scalar_minus_original": {
+      "MAE_delta": 0.00024669277625724573,
+      "energy_RMSE_delta": -0.003196514791254365,
+      "false_bright_SSE_delta": 0.09640461554258906,
+      "improved_state_SSE": [
+        1,
+        4,
+        5,
+        7,
+        8,
+        9
+      ],
+      "pooled_r2_delta": 0.02023493137464283,
+      "q90_RMSE_delta": -0.0036225607769213852,
+      "q99_RMSE_delta": -0.011834499223056849
+    },
+    "tensor_minus_original": {
+      "MAE_delta": 0.0012047695085610002,
+      "energy_RMSE_delta": 0.002879951288111471,
+      "false_bright_SSE_delta": -3.25822201771644,
+      "improved_state_SSE": [
+        4,
+        5,
+        7,
+        8,
+        9
+      ],
+      "pooled_r2_delta": 0.009651095292197875,
+      "q90_RMSE_delta": -0.0012325511715701315,
+      "q99_RMSE_delta": 0.0021880000540193956
+    },
+    "tensor_minus_scalar": {
+      "MAE_delta": 0.0009580767323037545,
+      "energy_RMSE_delta": 0.006076466079365836,
+      "false_bright_SSE_delta": -3.354626633259029,
+      "improved_state_SSE": [
+        10,
+        5,
+        7
+      ],
+      "pooled_r2_delta": -0.010583836082444953,
+      "q90_RMSE_delta": 0.0023900096053512537,
+      "q99_RMSE_delta": 0.014022499277076245
+    }
+  },
+  "tensor_selected_delta_r2_vs_controls": {
+    "original": 0.009651095292197875,
+    "scalar": -0.010583836082444953
+  },
+  "tensor_selected_delta_r2_vs_retained_reference": -0.028414224809777844,
+  "triple_allocation_gate_passed": false
+}

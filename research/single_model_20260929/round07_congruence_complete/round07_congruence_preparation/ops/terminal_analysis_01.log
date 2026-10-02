@@ -1,0 +1,94 @@
+{
+  "gate": {
+    "threshold": 0.003,
+    "candidate": "tensor",
+    "candidate_delta_r2_vs_contemporaneous_original": 0.009651095292197875,
+    "candidate_delta_r2_vs_contemporaneous_scalar": -0.010583836082444953,
+    "candidate_delta_r2_vs_retained_reference": -0.028414224809777844,
+    "passes_original_comparison": true,
+    "passes_scalar_comparison": false,
+    "passes_retained_reference_comparison": false,
+    "passed": false,
+    "eligible_arms": [],
+    "automatic_extension_authorized": false,
+    "automatic_seed_allocation_authorized": false,
+    "better_control_policy": "Report the best control descriptively; no tensor claim or automatic control-specific allocation."
+  },
+  "comparisons": {
+    "selected_best": {
+      "tensor_minus_original": {
+        "candidate": "tensor",
+        "control": "original",
+        "delta_r2": 0.009651095292197875,
+        "descriptive_percentile_interval": [
+          -0.01766789622839935,
+          0.03306561339208799
+        ]
+      },
+      "tensor_minus_scalar": {
+        "candidate": "tensor",
+        "control": "scalar",
+        "delta_r2": -0.010583836082444953,
+        "descriptive_percentile_interval": [
+          -0.03525582757779587,
+          0.014707498068901667
+        ]
+      },
+      "scalar_minus_original": {
+        "candidate": "scalar",
+        "control": "original",
+        "delta_r2": 0.02023493137464283,
+        "descriptive_percentile_interval": [
+          -0.00895314505019748,
+          0.04898369124523403
+        ]
+      }
+    },
+    "fixed60": {
+      "tensor_minus_original": {
+        "candidate": "tensor",
+        "control": "original",
+        "delta_r2": -0.05675655329079421,
+        "descriptive_percentile_interval": [
+          -0.09565407431272643,
+          -0.01843422063615668
+        ]
+      },
+      "tensor_minus_scalar": {
+        "candidate": "tensor",
+        "control": "scalar",
+        "delta_r2": -0.06599853390879529,
+        "descriptive_percentile_interval": [
+          -0.12087813968172544,
+          -0.01899822183753101
+        ]
+      },
+      "scalar_minus_original": {
+        "candidate": "scalar",
+        "control": "original",
+        "delta_r2": 0.009241980618001078,
+        "descriptive_percentile_interval": [
+          -0.018770161440859516,
+          0.03836928883716016
+        ]
+      }
+    }
+  },
+  "reference_deltas": {
+    "selected_best": {
+      "original": -0.03806532010197572,
+      "scalar": -0.01783038872733289,
+      "tensor": -0.028414224809777844
+    },
+    "fixed60": {
+      "original": -0.06263616702994879,
+      "scalar": -0.05339418641194771,
+      "tensor": -0.119392720320743
+    }
+  },
+  "output_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/completion/ROUND07_RESULTS.json": "0314d0252de7e2f93e5ecd3df1be5a3f675fab540c8fea658b4b3a5231f21209",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/completion/ALIGNED_VALIDATION_AND_TRAIN_CURVES.svg": "0f64b4bc195d3e53fa13084fb9584a5cc6bfe14c8a656ca6548f03ab6a4310bd",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/completion/GATE_AND_READOUT_TRAJECTORIES.svg": "7cf5f0a198762bae0a846c6229de84fe8f0e55704d468a3a6b5e438e8140fe17"
+  }
+}

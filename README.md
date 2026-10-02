@@ -4,11 +4,21 @@
 
 **QM9S v2 当前验证参考为原始 MTO（seed 11、epoch 45），pooled raw-f R² = 0.447169；目标 0.60 尚未达到。** 部署使用一个几何输入模型、一个自包含 checkpoint，不平均多个模型或 checkpoint 的预测。
 
-### Round07 准备已接受：共享 PSD 合同变换对照
+### Round07 完成：共享 PSD 合同变换对照
 
-原始 / 标量 / 张量三组的准备已通过独立审查并由协调者接受，冻结 **185 项源码、依赖及审计记录**。固定合成检查与 **9 次一次性 TRAIN 技术更新**已完成；技术 checkpoint 不用于正式训练初始化。准备仅完成限定范围的工程验证，**没有新增验证或 TEST 准确率结果，正式训练仍须另行绑定授权**。当前验证参考与 0.60 目标不变。
+原始 / 标量 / 张量三组按冻结设置完成 **60 epoch / 112,860 次更新**，使用共同全新初始化、TRAIN 统计和原 LE+Ls；全部 66,860 个有效验证标签均保留，包括零值。
 
-两种修改共用 177 参数门控及九个不变量输入，比较共同标量缩放与共享张量合同变换；原始 LE+Ls、初始化和训练设置固定。该对照不识别物理偏振方向，也不证明两种修改的输出表达能力相同。[冻结协议](research/single_model_20260929/round07_congruence_preparation/round07_congruence_preparation/PROTOCOL.md)、[准备报告](research/single_model_20260929/round07_congruence_preparation/round07_congruence_preparation/PREPARATION_REPORT.md)、[独立准备审查](research/single_model_20260929/round07_congruence_preparation/round07_congruence_preparation/INDEPENDENT_PREPARATION_REVIEW.md)和[准备接受决定](research/single_model_20260929/round07_congruence_preparation/current_state/ROUND07_PREPARATION_ACCEPTANCE.md)。
+| 单模型 | 验证选中 epoch | 选中 checkpoint 的 pooled raw-f R² | 固定 epoch 60 R² |
+|---|---:|---:|---:|
+| 原始 MTO | 52 | 0.409104081 | 0.3845332 |
+| 共同标量缩放 | 49 | 0.429339013 | 0.3937752 |
+| 共享张量合同变换 | 34 | 0.418755177 | 0.3277767 |
+
+张量组比同期原始对照高 **0.009651**，但比标量对照低 **0.010584**，比保留的 Round05 epoch45 参考低 **0.028414**，未通过同时超过三个参考各 **+0.003 R²** 的冻结门槛。**关闭本轮，保留 v2 参考 0.447169401；不延长、不调整系数/边界、不追加确认种子。** 标量是本轮最强模型，但未替换保留参考；不进行预测平均。
+
+张量组降低误报亮态 SSE，但对两个同期对照的 MAE、能量误差及 q99 误差变差。门控活跃且出现各向异性上下文，不代表已识别物理跃迁方向或因果机制。选中 checkpoint 的配对分子组件 bootstrap 区间跨零；固定 epoch60 的张量比较区间低于两个对照。它们仅描述复用验证集上的条件不确定性，不包含训练/种子不确定性或独立确认。完整逐态、亮尾、门控和轨迹证据见[Round07 报告](research/single_model_20260929/round07_congruence_complete/round07_congruence_preparation/completion/ROUND07_REPORT.md)、[精确复现命令](research/single_model_20260929/round07_congruence_complete/round07_congruence_preparation/completion/ROUND07_REPRODUCE.md)、[独立科学审查](research/single_model_20260929/round07_congruence_complete/round07_congruence_preparation/completion/INDEPENDENT_SCIENTIFIC_REVIEW.md)和[最终决定](research/single_model_20260929/round07_congruence_complete/current_state/ROUND07_DECISION.md)。**TEST 仍封存，0.60 目标未达到。**
+
+185 项源码、依赖及审计记录与九次一次性 TRAIN 技术更新保留在[准备协议](research/single_model_20260929/round07_congruence_preparation/round07_congruence_preparation/PROTOCOL.md)、[准备报告](research/single_model_20260929/round07_congruence_preparation/round07_congruence_preparation/PREPARATION_REPORT.md)、[准备独立审查](research/single_model_20260929/round07_congruence_preparation/round07_congruence_preparation/INDEPENDENT_PREPARATION_REVIEW.md)和[准备接受决定](research/single_model_20260929/round07_congruence_preparation/current_state/ROUND07_PREPARATION_ACCEPTANCE.md)。发布后仅获准基于现有源码与汇总记录开展只读瓶颈审计和下一方案设计；没有新目标解码、推理、实现、优化器更新或训练授权。
 
 ### Round06 完成：原始 PSD 的损失函数对照
 
@@ -23,7 +33,7 @@ raw-f 候选比同期对照高 **0.017231**，但比保留的 Round05 原始 MTO
 
 配对分子组件 bootstrap 区间跨零，且仅针对复用验证集和已选 checkpoint，不包含训练/种子不确定性。同 seed11 原始对照与 Round05 存在明显差异；执行图及并发工作量不同，但原因未确定，不能把控制组波动当作独立确认或物理机制。[重复对照的比较边界](research/single_model_20260929/round06_objective_complete/round06_objective_preparation/completion/CONTROL_REPEAT_CONTEXT.md)。**TEST 仍封存，没有本轮 TEST 评分或独立种子确认，0.60 目标未达到。**
 
-准备期的 134 文件源闭包、6 次一次性 TRAIN 技术更新及失败记录保留在[冻结协议](research/single_model_20260929/round06_objective_preparation/round06_objective_preparation/PROTOCOL.md)、[准备报告](research/single_model_20260929/round06_objective_preparation/round06_objective_preparation/PREPARATION_REPORT.md)、[准备独立审查](research/single_model_20260929/round06_objective_preparation/round06_objective_preparation/INDEPENDENT_PREPARATION_REVIEW.md)和[准备接受决定](research/single_model_20260929/round06_objective_preparation/current_state/ROUND06_PREPARATION_ACCEPTANCE.md)。后续 Round07 共享 PSD 合同变换的工程准备已完成、通过独立审查并获接受；正式训练仍等待单独授权。
+准备期的 134 文件源闭包、6 次一次性 TRAIN 技术更新及失败记录保留在[冻结协议](research/single_model_20260929/round06_objective_preparation/round06_objective_preparation/PROTOCOL.md)、[准备报告](research/single_model_20260929/round06_objective_preparation/round06_objective_preparation/PREPARATION_REPORT.md)、[准备独立审查](research/single_model_20260929/round06_objective_preparation/round06_objective_preparation/INDEPENDENT_PREPARATION_REVIEW.md)和[准备接受决定](research/single_model_20260929/round06_objective_preparation/current_state/ROUND06_PREPARATION_ACCEPTANCE.md)。后续 Round07 共享 PSD 合同变换已按单独授权完成训练并关闭，结果见上节。
 
 ### Round05 完成：新划分上的四组从头训练
 
@@ -76,7 +86,7 @@ Round04 的拟合误差下降，但验证表现未改善；不能据此认定所
 - 旧划分保留的服务器 checkpoint：`/home/inspur/MTO-1/research/single_model_20260929/baselines/calibrated_eta0.pt`；SHA256：`bcb0e51d8d877983abd02ab768892a8f8f8d3dfe0f73f4ec43d30c21c16b3db9`。
 - 推理仅需元素与几何及其派生图；配置、训练归一化与固定校准均包含在一个 checkpoint 中，不需量子化学标签。校准只改 f，输出 E/A 一般不再严格重构该 f；这不是已识别的物理响应算符。
 - 新版 QM9S v2 分子组划分已按固定 seed 20260930 生成并通过独立重建核验：TRAIN / VALID / TEST 为 **120,355 / 6,686 / 6,686**，在已审计的保守分组规则下无跨分区重叠；278 个身份含糊样本仅进入 TRAIN。[划分协议与限制](research/single_model_20260929/round05_scratch_preparation/dataset_audit_20260930/BENCHMARK_V2_REPORT.md)。这是历史暴露数据的新分区，不是独立外部新数据；必须全新初始化并仅使用新 TRAIN 统计，新 TEST 目标保持封存，不得用其调参。外部 UV–Vis 数据的方法兼容性与分子重叠仍待审计。
-- Round05 已按独立绑定授权完成并关闭；共同设置为 seed 11、60 epoch、原 LE+Ls 和学习率 0.001。原始准备失败、工程修订及独立审查保留在[冻结协议](research/single_model_20260929/round05_scratch_preparation/round05_scratch_preparation/PROTOCOL.md)、[准备报告](research/single_model_20260929/round05_scratch_preparation/round05_scratch_preparation/PREPARATION_REPORT.md)和[准备独立审查](research/single_model_20260929/round05_scratch_preparation/round05_scratch_preparation/INDEPENDENT_PREPARATION_REVIEW.md)中。Round06 损失对照也已完成并关闭，未通过双参考门槛；后续 Round07 共享 PSD 合同变换准备已接受，正式训练及 TEST 评分仍未获授权；尚不能将本轮结果解释为已确立的因果机制。
+- Round05 已按独立绑定授权完成并关闭；共同设置为 seed 11、60 epoch、原 LE+Ls 和学习率 0.001。原始准备失败、工程修订及独立审查保留在[冻结协议](research/single_model_20260929/round05_scratch_preparation/round05_scratch_preparation/PROTOCOL.md)、[准备报告](research/single_model_20260929/round05_scratch_preparation/round05_scratch_preparation/PREPARATION_REPORT.md)和[准备独立审查](research/single_model_20260929/round05_scratch_preparation/round05_scratch_preparation/INDEPENDENT_PREPARATION_REVIEW.md)中。Round06 损失对照也已完成并关闭，未通过双参考门槛；后续 Round07 共享 PSD 合同变换也已完成并关闭；下一阶段仅限只读瓶颈审计和方案设计，没有新训练或 TEST 评分授权。尚不能将这些结果解释为已确立的因果机制。
 - 当前研究发布只包含轻量源码、设置、日志、汇总结果及审计记录，先下载到 `D:\MTO\archives\` 校验，再提交。此次不新增模型权重、优化器、原始数据、成员/预测数组、缓存或凭据；下面旧归档中已有的历史文件保持原样。
 
 ## 历史项目与运行文档

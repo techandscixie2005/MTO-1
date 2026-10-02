@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "scope": "read_only_first_epoch_inspector_source_continuity",
+  "source_sha256": "f09cfd8ff7720c596d9187d1bcd64afce639f346ce527beb828ad5e929114fc9",
+  "previous_source_sha256": "4a2499f3550c005eb1b9951f1a3577764d9126ec42bbe1aaa436a12c40e75bb9",
+  "production_authorization_sha256": "dfb6a5fe356e30da37260830f8032fe7892f2749bb0afc30b6daf277652afaaa",
+  "exact_changes": [
+    "arm tuple trace_control/raw_f becomes original/scalar/tensor",
+    "round06_resumable_v1 becomes round07_resumable_v1"
+  ],
+  "local_server_source_bytes_match": true,
+  "existing_source_syntax_valid": true,
+  "checkpoint_or_data_access_by_reviewer": false,
+  "model_inference_by_reviewer": false,
+  "inspector_scope": "CPU-deserialize one committed last.pt snapshot per arm, including model/optimizer tensors, for metadata/optimizer/RNG/order/source/ledger checks; opaque prediction/best hashes only; no model construction, inference or raw target arrays. Existing output refusal prevents repeat.",
+  "preserved_guards": [
+    "Empty CUDA and two-thread environment",
+    "Exact production authorization and full source closure",
+    "All three histories committed epoch>=1",
+    "Original owned active process identity and one launch attempt",
+    "No prior completed inspection output",
+    "All validation counts66860 and exact partition ledgers, no TEST rows"
+  ],
+  "production_fit_sources_modified": false,
+  "new_fit_or_inference_authorized_by_review": false
+}

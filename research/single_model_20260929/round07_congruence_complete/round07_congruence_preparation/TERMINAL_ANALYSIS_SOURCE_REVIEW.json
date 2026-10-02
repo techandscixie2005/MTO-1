@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "scope": "round07_terminal_saved_validation_analysis_source_only",
+  "source_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/terminal_analysis.py": "39bf90ec8d1657fbebc363f2c2093c3566972f8373508520f8a8b5029b6a2953",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/TERMINAL_ANALYSIS_CONFIG.json": "0c25499f4633c8ef8d4cbd86e93f4532657588355eb6e695a4eb4cf7f840d1e7"
+  },
+  "local_server_bytes_match": true,
+  "no_model_checkpoint_or_prediction_arrays_read_by_reviewer": true,
+  "planned_execution": "Single CPU saved-output analysis; six committed validation arrays and CPU checkpoint payloads, no model construction/inference or raw dataset/test targets. Identity-component metadata only for bootstrap grouping.",
+  "checks": [
+    "Unchanged185-source production authority and terminal60/112860/history/order/initial/config bindings",
+    "Earliest pooled-SSE selection and exact selected/fixed60 checkpoint/prediction hashes",
+    "Geometry export tensors equal selected state, stored buffer fingerprint format, exact readout mode/contract; no new buffer reconstruction claim",
+    "Saved optimizer group/betas/eps/AMSGrad/LR/WD and RNG categories; dormant right-F across six checkpoint states; original177parameter gate matches initialization",
+    "All66860 labels and ten states, true bright tails and complete true/predicted q99 bins",
+    "FP64 saved native-f pooled/per-state/tail metrics, identical truth/masks across six sets",
+    "Seed20260930/2000 paired component bootstrap resamples pooled SST; tensor-original/tensor-scalar/scalar-original at selected/fixed60",
+    "Published retained aggregate only, no reference inference or false paired interval",
+    "Triple+.003 tensor gate versus both current controls and retained.447169401; no automatic scalar/seed allocation",
+    "Gate/b/q/ratio/gradient diagnostics copied from trajectory logs, within-epoch movement distinguished from initialization distance",
+    "Completed-analysis refusal; all input/source/output hashes recorded and unchanged"
+  ],
+  "interpretation_limits": [
+    "Conditional selected-checkpoint reused-validation bootstrap excludes checkpoint selection, seed variability and fresh holdout uncertainty.",
+    "Active gates/latent anisotropy do not identify physical tensors or establish a directional mechanism.",
+    "Range extrema do not quantify saturation prevalence; TRAIN records are pre-update trajectory aggregates, not fixed-checkpoint generalization gaps.",
+    "Same declared seed/order does not guarantee identical CUDA trajectories or independently confirm results."
+  ],
+  "new_fit_test_or_extension_authorized": false
+}

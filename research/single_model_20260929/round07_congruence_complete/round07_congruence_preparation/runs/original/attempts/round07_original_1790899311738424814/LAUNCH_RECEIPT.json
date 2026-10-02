@@ -1,0 +1,35 @@
+{
+  "arm": "original",
+  "attempt": "round07_original_1790899311738424814",
+  "authorization_sha256": "dfb6a5fe356e30da37260830f8032fe7892f2749bb0afc30b6daf277652afaaa",
+  "command": [
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/bin/python",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/train.py",
+    "--arm",
+    "original",
+    "--authorization",
+    "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/PRODUCTION_EXECUTION_AUTHORIZATION.json"
+  ],
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+    "MKL_NUM_THREADS": "2",
+    "OMP_NUM_THREADS": "2",
+    "PYTHONUNBUFFERED": "1"
+  },
+  "gpu": 1,
+  "gpu_uuid": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+  "identity": {
+    "argv_sha256": "f779edd0cbb835704e70f89042fc60c5c14e7e115df7bd229bcde98208c443cd",
+    "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+    "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation",
+    "pid": 1591761,
+    "process_state": "R",
+    "start_ticks": 1274697650,
+    "uid": 1000
+  },
+  "manifest_sha256": "68c052e909d0fcbe1671084edf7de1968f81f8f5e333bbfc2431fe3181c8c203",
+  "publication_sha256": "ce3f342916bb6ecb6a76516bc8da8b64fc1c9839f406dcd9e852c6c12185d6c0",
+  "registration_returncode": 0,
+  "review_sha256": "e3ae0804141dc37fdbcb3797411a301e75dabe223eea4005d0c043197f423826",
+  "started_unix": 1790899311.7414887
+}

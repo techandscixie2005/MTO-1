@@ -1,0 +1,22 @@
+{
+  "verified_at_utc": "2026-10-02T00:10:23.237660+00:00",
+  "passed": true,
+  "id": "qm9s-e-a",
+  "status": "ACTIVE",
+  "rrule": "FREQ=HOURLY;INTERVAL=4",
+  "target_thread_id": "01a0edd8-8c03-75d1-aeb0-953f11af6433",
+  "only_prompt_and_updated_at_changed": true,
+  "updated_using_app_tool": true,
+  "matching_active_heartbeat_count": 1,
+  "before_sha256": "eff0cd419d91e625c6f694c50d3904b3322c7574328b080ec05d13c1e0c47995",
+  "after_sha256": "6f2b51c22f5673459db9d2c68cbf0cf298ad01230b7d01e1cc675585e81dd8fe",
+  "authorization_sha256": "dfb6a5fe356e30da37260830f8032fe7892f2749bb0afc30b6daf277652afaaa",
+  "startup_receipt_sha256": "b7d0cb125e06f17f18edf2e1a05f7d1744fae96eeaa3b9e49ffd8f059eae7e6c",
+  "active_owned_arms": [
+    "original",
+    "scalar",
+    "tensor"
+  ],
+  "fixed_epochs": 60,
+  "no_extension_seed_or_test_authority": true
+}

@@ -1,0 +1,20 @@
+{
+  "authorized": true,
+  "scope": "round07_three_arm_60epoch_fit",
+  "frozen_manifest_sha256": "68c052e909d0fcbe1671084edf7de1968f81f8f5e333bbfc2431fe3181c8c203",
+  "independent_review_sha256": "e3ae0804141dc37fdbcb3797411a301e75dabe223eea4005d0c043197f423826",
+  "publication_receipt": "/home/inspur/MTO-1/research/single_model_20260929/ops/ROUND07_PREPARATION_PUBLICATION_RECEIPT.json",
+  "publication_receipt_sha256": "ce3f342916bb6ecb6a76516bc8da8b64fc1c9839f406dcd9e852c6c12185d6c0",
+  "split_manifest_sha256": "c8ce66ddb7209005b5feebfcddfc2bc30ee81d92fe63cce20f15c4abf3a07155",
+  "independent_split_verification_sha256": "395d415f854ed6948c4d7a11c0c1d7486193bb48f23bae76834a77148cc69ae2",
+  "epochs": 60,
+  "arms": [
+    "original",
+    "scalar",
+    "tensor"
+  ],
+  "test_access": false,
+  "historical_weights": false,
+  "decision_owner": "root",
+  "conditions": "Exact frozen original/scalar/tensor60epoch protocol; fresh GPU1/2/4 health/UUID admission, exclusive shared locks and owned registration. Science sole executor. No TEST scoring, extra seed, extension, averaging, technical-state reuse or silent fallback. Preserve resumable checkpoints; diagnose owned failures before explicit recovery."
+}
