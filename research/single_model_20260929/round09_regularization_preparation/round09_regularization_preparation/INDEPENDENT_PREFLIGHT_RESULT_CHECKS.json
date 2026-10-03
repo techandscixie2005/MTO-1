@@ -1,0 +1,42 @@
+{
+  "exact_six_updates_and_first128_TRAIN_verified": true,
+  "fixed_replay_tolerances_and_exact_RNG_order_passed": true,
+  "input_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/GPU_PREFLIGHT.json": "c0a62e24963ed3158f48524fff3f77fae5bce98b91144962b16bb839bcca99a9",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/CPU_PREFLIGHT.json": "dfca79770fa451a64e08bd936b80294301829d527a10e60a48ccfe0e98d854c5",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/CPU_PREFLIGHT_REVIEW.json": "c2147eb3be3b14ccf7a6fcbc9645f295058d78fd33223306494ed4e95f0e214a",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/GPU_PREFLIGHT.json": "a32a7fe8759e1ca171c6dee2efca91374c5f1e749e5a95235cacb6682add77ac",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/GPU_UPDATE_PROGRESS.json": "71e8f20316e6819ef2476191722449be057e5459c7608cc715875489f34e2888",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/INDEPENDENT_ADMISSION_FAILURE_REVIEW.json": "b1b9e4014df4b2352b47277cc826cdbb10911e76dbc00e23fdf59b749794eb88",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/PARAMETER_ROSTER.json": "290bd6dc4c635c90fc387202230a4af0b7758b38bad0a3570018e05510fb3943",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/RESOURCE_RETRY_CONTINUITY.json": "d718c5934aa14e743351e6b8ec15b82b47e4d1e839107544d6cd8fe2860e9aae",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/RESOURCE_RETRY_SELECTION.json": "df385dc7f33c4e4d83bf9326ab1c56c15d16f0faaeb39fc755e2ce8c0be4387f",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/RESOURCE_RETRY_SOURCE_REVIEW.json": "a62e9a8e95a249866395fa1f3f3d989900574bd6bdb181546fa223690231362c",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/ROUND09_RESOURCE_RETRY_DECISION.md": "673bcc503705fe6063e14f02d3573738d82a12907f18e730d41d760c7ae277e8",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/TECHNICAL_SOURCE_REVIEW.json": "5c4b82c015ec2b5abc475fbaa846757f7eb5b3fc9e0bc00991bacef0175ed457",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/admission01_preserved/MANIFEST.json": "ab9c820e719b241021879d786a5b78f04d95f103fe0e941344ea7e4592529e65",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/independent_preflight_result_checks.py": "390484bbbc7a83fd0cece7d50e9f392b5fc95bf2021bd81f513dfcf8794802ed",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/ops/gpu_preflight_attempt_retry01/COMPLETE.json": "0a05022d6bdad5d29493b416d9f146b7d657757ddd156ff24d0c3bb2d9a2d909",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/ops/gpu_preflight_attempt_retry01/GPU_ADMISSION.xml": "986f6cc6e2258700d28abe3d1460f65cd72bdecedc445c280d69e9007b98f8ad",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/ops/gpu_preflight_attempt_retry01/LAUNCH_RECEIPT.json": "13f2dc6ec15051d8308dc1b5b15e4400e9fe4c4ea211dbf69579842e7697e2a3",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/ops/gpu_preflight_attempt_retry01/REGISTRATION_TOOL.log": "d844863d16723cf6316f8f3961f6f2a3ad4d9c29876a3d05790e26dd4c6a2845",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/ops/gpu_preflight_attempt_retry01/stage.log": "c5f84c2ce5ab115cb8329704b12a797c4db688f9dfeb66b4c68c880adf4f2af6"
+  },
+  "no_data_tensor_decode_or_model_inference_by_reviewer": true,
+  "original_scientific_source_and_six_update_budget_unchanged": true,
+  "owned_registration_admission_and_exit0_verified": true,
+  "passed": true,
+  "phase": "completed_six_update_receipt_and_resource_retry_review",
+  "preserved_original_admission_evidence_verified": true,
+  "private_checkpoint_opaque_hashes_only": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/private_preflight/coupled_l2_after_update1.pt": "c62d590193747f222a9cad391aa37bc1c19dcbfe93393437574e1aa86d4376b9",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/private_preflight/coupled_l2_geometry_fixture.pt": "8bca20d80002002e723ae42a961c05290e84af1b5da9cf5e518adf578eb52e8b",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/private_preflight/zero_decay_after_update1.pt": "473af784e49d768ae60c47ccdac0db80b41d76e44c5dbe327e5ad732267deb4e",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/private_preflight/zero_decay_geometry_fixture.pt": "4bfc7483c97515174f8775bcb6ae5803b4792eeb8d02a04032b9570df4731452"
+  },
+  "production_fit_authorized": false,
+  "registered_entry_before_updates_and_terminal_child_absence_verified": true,
+  "resource_retry_binding_and_GPU4_admission_verified": true,
+  "same_fixture_as_round05": true,
+  "source_bindings_verified": 311
+}

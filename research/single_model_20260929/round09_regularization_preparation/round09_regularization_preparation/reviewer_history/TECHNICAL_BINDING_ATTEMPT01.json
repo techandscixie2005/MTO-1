@@ -1,0 +1,13 @@
+{
+  "GPU_execution_or_model_update": false,
+  "correction": "Mirror exact missing helper/dependencies, then repeat metadata hash verification only; no scientific source or tolerance change.",
+  "created_unix": 1791030722.697286,
+  "error": "FileNotFoundError before source binding completed",
+  "expected_sha256": "6b62c9f041de9f0e54ec54e48cb97a8c6189a074ef22c762551fa95a70902b84",
+  "local_review_status": "Pending only; local premature rename by shell after remote error was reversed before approval notice.",
+  "missing_server_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/registered_entry.py",
+  "passed": false,
+  "pending_review_sha256": "5c4b82c015ec2b5abc475fbaa846757f7eb5b3fc9e0bc00991bacef0175ed457",
+  "phase": "metadata_only_source_binding",
+  "review_finalized_on_server": false
+}

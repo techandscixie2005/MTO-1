@@ -1,0 +1,16 @@
+{
+  "scope": "round09_resource_retry01_selection_only",
+  "ordered_allowed_gpus": [4, 6, 2, 1],
+  "selected_gpu": 4,
+  "selected_gpu_uuid": "GPU-e212aefc-f1d6-cc7a-5594-e87abeaf1184",
+  "selection_reason": "First apparently healthy and available GPU in root's ordered set, according to the fresh independent inventory; final admission remains under exclusive shared lock.",
+  "inventory_path": "/home/inspur/MTO-1/research/single_model_20260929/monitoring/CHECK_20261003T160554Z.json",
+  "inventory_sha256": "6f8c8f4c74c992d59e428b466d1a54b27a24315a4054b935520154048f739059",
+  "inventory_observed_utc": "2026-10-03T16:05:53.550107+00:00",
+  "selected_observed_memory_mib": 10,
+  "selected_observed_utilization_percent": 0,
+  "is_reservation_or_admission": false,
+  "automatic_fallback": false,
+  "scientific_settings_changed": false,
+  "root_resource_retry_decision_sha256": "673bcc503705fe6063e14f02d3573738d82a12907f18e730d41d760c7ae277e8"
+}

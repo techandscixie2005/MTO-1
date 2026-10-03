@@ -1,0 +1,20 @@
+{
+  "changed_buffers": [
+    {
+      "buffer": "mto.n_ref",
+      "max_abs_difference": 0.0,
+      "native_dtype": "torch.float64",
+      "roundtrip_dtype": "torch.float32"
+    }
+  ],
+  "current_source_sha256": "745adce0eb432f007bcc18d00d2d9c06a063e3e8d04099b14adb5066229828a8",
+  "diagnostic_source_sha256": "52704ada39fc5fcff359fb57f02ceeda85eae9366233ae65fe8669831b1d7fc0",
+  "initial_attempt_log_sha256": "c227b491fc8a78d779a737e2eeb8728a32cbabe78605391cf19f8eb5f5c781f2",
+  "initial_attempt_source_sha256": "f9bbf13df44f8b06e3289b10ba76a2a9572f8ed6ed311d333e817b99d39334af",
+  "model_inference": false,
+  "model_updates": 0,
+  "passed": true,
+  "purpose": "Diagnose engineering fixture dtype roundtrip only",
+  "real_geometry_or_target_arrays_read": false,
+  "repair": "Fresh native-dtype model receives only hand-set adapter tensors; strict checkpoint checks/tolerances unchanged."
+}

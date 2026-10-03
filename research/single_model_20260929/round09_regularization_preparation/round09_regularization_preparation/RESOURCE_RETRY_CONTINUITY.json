@@ -1,0 +1,35 @@
+{
+  "scope": "round09_resource_retry01_no_scientific_change",
+  "original_technical_review_sha256": "5c4b82c015ec2b5abc475fbaa846757f7eb5b3fc9e0bc00991bacef0175ed457",
+  "root_resource_retry_decision_sha256": "673bcc503705fe6063e14f02d3573738d82a12907f18e730d41d760c7ae277e8",
+  "unchanged_sources": {
+    "gpu_preflight.py": "eea97776ff96ebc2cccbc9d2384e5d8c73e7a9f68a764ae0d8b30715b673bde0",
+    "registered_entry.py": "6b62c9f041de9f0e54ec54e48cb97a8c6189a074ef22c762551fa95a70902b84",
+    "resources.py": "0e86e15d8be5c1e0e94bf8f85eea56a121e3aa493cb9c262e9248727b5beb918",
+    "training.py": "cf4daf72ccd130afbe05e5baaf1e2c77a3b9518a2cf526e9e73a8012378aadc5",
+    "runtime.py": "98155e4b9d3788b1a9b8bee2d4add3c74bb6b55ca9ae750f82349e3e7a2a6ee5",
+    "regularization.py": "22a8b43f9d6257ff8d27b596754f87effbf1ffee041d90dbd0a353064de287dd",
+    "config.json": "85adb76ff33c3839ffd260900827b0507d87041ed5c0bda83f40d16086f61306",
+    "PARAMETER_ROSTER.json": "290bd6dc4c635c90fc387202230a4af0b7758b38bad0a3570018e05510fb3943",
+    "CPU_PREFLIGHT.json": "dfca79770fa451a64e08bd936b80294301829d527a10e60a48ccfe0e98d854c5",
+    "TECHNICAL_PREFLIGHT_PLAN.md": "3fca9d8308ce21b93a020973f5e634a6b8f12c369e1e64e08741a0999374c4f7"
+  },
+  "new_operational_files": {
+    "run_gpu_preflight_retry01.py": "a9a43baf12f3f6f836afb4ddc2068be8f79a930c7da9561d05a67a401454dbdb",
+    "resource_retry_entry.py": "56d048e1cda8e536b184d8123b437006b58db836d87d475f95ac3ad16c7dd2dc",
+    "RESOURCE_RETRY_SELECTION.json": "df385dc7f33c4e4d83bf9326ab1c56c15d16f0faaeb39fc755e2ce8c0be4387f"
+  },
+  "old_failed_attempt": "ops/gpu_preflight_attempt",
+  "new_attempt": "ops/gpu_preflight_attempt_retry01",
+  "new_registry_id": "round09_technical_preflight_retry01",
+  "scientific_child": "gpu_preflight.py",
+  "scientific_result_path": "GPU_PREFLIGHT.json",
+  "private_output_path": "private_preflight",
+  "numerical_source_changed": false,
+  "CPU_or_roster_repeat": false,
+  "scientific_updates_before_retry": 0,
+  "planned_total_discarded_updates": 6,
+  "fresh_locked_admission_required": true,
+  "original_attempt_empty_and_preserved": true,
+  "original_failed_snapshot_sha256": "ab9c820e719b241021879d786a5b78f04d95f103fe0e941344ea7e4592529e65"
+}

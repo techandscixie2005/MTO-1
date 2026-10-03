@@ -1,0 +1,48 @@
+{
+  "format": "independent_read_only_bottleneck_audit_closure_v1",
+  "phase": "proposal_only_await_root_decision",
+  "files": {
+    "bottleneck_audit_20261002/INFORMATION_FLOW_AUDIT.md": {
+      "sha256": "b1e8237f0f3488244336412a103ffe01e1d8a2f335b4ce3cccc30eb3ff0e74da",
+      "bytes": 12173
+    },
+    "bottleneck_audit_20261002/TRANSPORT_PROPOSAL.md": {
+      "sha256": "5b5bed1529acb13e9bf8b55786302b43a754601659d67a5643751613f0c8ce9b",
+      "bytes": 11867
+    },
+    "bottleneck_audit_20261002/REFERENCE_MANIFEST.json": {
+      "sha256": "a619659a345cb6ca182e5c3778b3a4818dae5021e7ac5cb8b18b5d909f86e334",
+      "bytes": 7259
+    },
+    "bottleneck_audit_20261002/INDEPENDENT_PROPOSAL_REVIEW.md": {
+      "sha256": "e0306885f8459b75a660e4cae6b4436a9701f234dbcd2e3d57989a017bb51b72",
+      "bytes": 6464
+    },
+    "bottleneck_audit_20261002/INDEPENDENT_PROPOSAL_REVIEW.json": {
+      "sha256": "5e7c206e2d33c1a8ce3ab0c7cb9f55daae5ae6785f23f747ba011b08a9850747",
+      "bytes": 6429
+    },
+    "post_round07_bottleneck_audit/AUDIT_MANIFEST.json": {
+      "sha256": "0ed827e3072e38b545b2f29a6f49ed1dc919f5652ba3d631b9a2b7f02133a99c",
+      "bytes": 631
+    },
+    "post_round07_bottleneck_audit/HISTORICAL_CAPACITY_AUDIT.md": {
+      "sha256": "1c82eaddc1678f64c195fe69b37ade6d874482b995c2cab365315c1fbb8843e1",
+      "bytes": 12567
+    },
+    "post_round07_bottleneck_audit/HISTORICAL_RECIPE_EVIDENCE.json": {
+      "sha256": "840e5c55eac1806f65187bc3cd55ec2c5d7bd6d3d4f12856308cc9f2d8925b81",
+      "bytes": 55800
+    },
+    "post_round07_bottleneck_audit/read_history_metadata.py": {
+      "sha256": "6cee8c34e1eeec5b0b9fc4ae1b8a2fc82c7ae29175874dc438c81920eee2528e",
+      "bytes": 4845
+    },
+    "post_round07_bottleneck_audit/HISTORY_METADATA_READER.log": {
+      "sha256": "fce123d2973f41a8db2dd7384e7c84fb212f85e7dc1466e4c20ce0220aaebc85",
+      "bytes": 236
+    }
+  },
+  "input_reference_hashes_are_not_archive_payload_allowlists": true,
+  "no_execution_authority": true
+}

@@ -1,0 +1,36 @@
+{
+  "all360_sources_and16_supplement_members_verified": true,
+  "blocking_findings": [],
+  "content_utf8_hash_size_private_path_and_secret_checks_passed": true,
+  "exact_metadata_extension_exceptions": {
+    "ops/round09_publication/external_sources/host/MTO-1/experiments/qm9s_full_EA_20260925/env/pyvenv.cfg": "a4383b41b2b61afd0d1b76c26c48a32d7924913483682a2bce8026e2e341aad5",
+    "round08_transport_preparation/ops/cpu_synthetic_01.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "round08_transport_preparation/ops/cpu_synthetic_01.pid": "6361ef35651f2204f1c13123f9afbcd84c01980072811c7ef8c3b67f1cc1114f"
+  },
+  "explicit_allowlist_only_no_opaque_reference_expansion": true,
+  "external_source_copies_verified": 20,
+  "independent_readme_approved": true,
+  "independent_review_sha256": "08d0c6e804d50b019f027b05282fbb1168d3c7ec59aa0e59b6068ddf0e5225cb",
+  "inventory_sha256": "47d1f919ae037bfed674dfe2309dfec7ae5a408aa0ed8d155a1c92df561ab5fe",
+  "new_readme_links_match_inventory": [
+    "research/single_model_20260929/round09_regularization_preparation/round09_regularization_preparation/PROTOCOL.md",
+    "research/single_model_20260929/round09_regularization_preparation/round09_regularization_preparation/PREPARATION_REPORT.md",
+    "research/single_model_20260929/round09_regularization_preparation/round09_regularization_preparation/INDEPENDENT_PREPARATION_REVIEW.md",
+    "research/single_model_20260929/round09_regularization_preparation/current_state/ROUND09_PREPARATION_ACCEPTANCE.md"
+  ],
+  "original_proposal_manifest_unchanged": true,
+  "passed": true,
+  "prepare_script_sha256": "679fccc2be40beab29210234fe42df764571c92199cc67ae28e6aee9fe55ebd7",
+  "preserved_admission_retry_and_reviewer_corrections": true,
+  "production_execution_authorized": false,
+  "publication_semantics": "D-first verified download then separate index; exact README modification plus new archive only; parent5a3b0e0b; atomic non-force both refs and remote blob verification",
+  "publisher_script_sha256": "82405657d89857a50f3d882016c46de8af61b384a808d8c18aa1bc04e92be355",
+  "readme_sha256": "f43065ab0c5626764d6e50bd48429e58134e65a0b69cc1a2a11b865a05b607a8",
+  "record_bytes": 5724715,
+  "record_count": 400,
+  "review_supplement_sha256": "947d7d8415772d044010ffba81ea5544d491fbe2355d79ca11c7904652cd9d27",
+  "root_acceptance_sha256": "b17e073cae2b285c00099e0ca2262398f0c986a4fb6ca96b7a3291f2ad7ac393",
+  "scientific_checks_or_updates_repeated": false,
+  "scope": "round09_exact_lightweight_source_inventory_and_readme_review",
+  "source_manifest_sha256": "52e815958178f2eeb691a2f185eb37e4b54276d867c08061c58ef1eff653c930"
+}

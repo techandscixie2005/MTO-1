@@ -1,0 +1,30 @@
+{
+  "files": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/FROZEN_MANIFEST.json": "52e815958178f2eeb691a2f185eb37e4b54276d867c08061c58ef1eff653c930",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/INDEPENDENT_FINAL_PREPARATION_CHECKS.json": "1734e4d1a063705a4042ccea203f0c43df8fe7f4b841c8f3eb4e769f57598716",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/INDEPENDENT_FINAL_PREPARATION_CHECKS_01.log": "d2677d2c39031a16f5414d70b7e4de78f1b6f82185701d0db804bf6a83241cbd",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/INDEPENDENT_FINAL_PREPARATION_CHECKS_02.log": "0d81ae882c880c4d07de9eb6bdbd5232e942f64246f5f2644731b22294a35051",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/INDEPENDENT_PREPARATION_REVIEW.json": "08d0c6e804d50b019f027b05282fbb1168d3c7ec59aa0e59b6068ddf0e5225cb",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/INDEPENDENT_PREPARATION_REVIEW.md": "f8c554c683adf901fdde0216b47680374dba3f16c804c5bba8b3686ce64fbbd1",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/PREPARATION_REPORT.md": "ef3869c133a7f13dc5a1143ac78b057597527a8ab05b7ec1f66e0b40df4cdf9e",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/PROTOCOL.md": "ffa1b4878aab1072d8891b7acd71372b7c5e00925b665728ede2c07a7947d3a2",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/RUNNER_HANDOFF.md": "0c8b98b0c9f926bf3cee79c51c2db77d37e3a0e13f4da4647e6d0eef90911db2",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/SOURCE_LINEAGE.json": "4159cba1c4f73ebb64827657140ef20fd6f14002237fa6596da28f3eeeb0311f",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/independent_final_preparation_checks.py": "69219bf923c8fa7d39fca5debc8a990bb1ea7d46501a28e1ce0c8866fd00237d",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/ops/FREEZE_01.log": "842342ccfec154bd4876d183a8963ab2575667b608a739322e43067808d225f6",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/ops/FREEZE_RECEIPT.json": "a6541cabb76f89db01ff5b8246f3e6518cf7f994056cfaffad85691ddd88761a",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/reviewer_history/final_check_case01/CORRECTION.json": "d34411438f873985f382daa9514e98105ce5b9ccb160e07f37ae9375b2ec76f9",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/reviewer_history/final_check_case01/INDEPENDENT_FINAL_PREPARATION_CHECKS_01.log": "d2677d2c39031a16f5414d70b7e4de78f1b6f82185701d0db804bf6a83241cbd",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/reviewer_history/final_check_case01/independent_final_preparation_checks.py": "62631564a99e1ce00ba007beaf752719be85e950e676503f9cdddaef5cfa5fb9"
+  },
+  "independent_review_sha256": "08d0c6e804d50b019f027b05282fbb1168d3c7ec59aa0e59b6068ddf0e5225cb",
+  "notes": [
+    "All360 sealed sources are explicit inherited closure; private opaque references must not be expanded.",
+    "Includes first reviewer filename-error source/log and corrected final checks without altering the seal."
+  ],
+  "original_proposal_manifest_preserved_sha256": "1ddee16f0ad545a2a1b25ef9c09c955902fb75bc6ffbcefe1467b1c889ac2e37",
+  "phase": "independent_round09_preparation_review_publication_supplement",
+  "private_arrays_or_checkpoints_included": false,
+  "production_authorized": false,
+  "source_manifest_sha256": "52e815958178f2eeb691a2f185eb37e4b54276d867c08061c58ef1eff653c930"
+}

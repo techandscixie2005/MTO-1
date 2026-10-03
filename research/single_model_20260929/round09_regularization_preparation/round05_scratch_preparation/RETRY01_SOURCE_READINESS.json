@@ -1,0 +1,31 @@
+{
+  "confirmed": [
+    "Same first 128 TRAIN rows, two unique batches, 12 total discarded updates; root amendment required before TRAIN access.",
+    "Separate retry01 scripts, review, owned attempt and private artifacts preserve previous failures and bindings.",
+    "Exact fresh tensor hashes and shared-M F/CG identity retained; new full-forward/export bound is explicitly a post-diagnostic amendment.",
+    "Actual production objective_and_diagnostics is used in the existing step calls, preserving original LE+Ls and lambda penalty.",
+    "Production launcher remains gated before target access; failed/completed runs are handled without signals to unrelated jobs."
+  ],
+  "execution_authorized": false,
+  "findings": [],
+  "passed": true,
+  "phase": "draft_source_readiness_only",
+  "production_preparation_final_pass": false,
+  "remaining": [
+    "Root records the exact engineering amendment.",
+    "Independent hash-bound retry01 technical source review including that amendment.",
+    "Owned resource-admitted 12-update fixture and independent result review.",
+    "Final freezer selects and binds retry01 technical receipt/scripts and amendment/diagnostic records; final protocol states online TRAIN log semantics.",
+    "Final preparation source closure/review, D-first archive/publication, then separate bound production decision."
+  ],
+  "review_basis": "Manual independent source review; original technical/diagnostic receipts remain unchanged. No new inference, target read, optimizer update or numerical test was performed for this review.",
+  "source_hashes": {
+    "IDENTITY_CHECK_AMENDMENT_PROPOSAL.md": "74625972cca0912400d10cc81d7db98b640dec566f3e25d004e7e01c6cd6ad00",
+    "gpu_preflight_retry01.py": "c863b74fb66936361a09734d90fe85eee3e2adbd4d850dcc447e770b9a74b7b7",
+    "launch.py": "e7a915af16cb448316f3ef89773e832f8fa4a1d170c84bf02eacd7360a28794b",
+    "metrics.py": "1465cc964aea7bd0e06616be3cf8f862e876c7c57d9df3103e81e57817761bdc",
+    "resources.py": "0e86e15d8be5c1e0e94bf8f85eea56a121e3aa493cb9c262e9248727b5beb918",
+    "run_gpu_preflight_retry01.py": "c3cedde6b63c75d1b220b7a6fe2e2a0dbc36ccf8d1ab55f72b9d3f6c45410ba8",
+    "training.py": "17d2bb266704bb4a747d3b11b3ff0789f68e2bc5835230a45220d93a3f0bca76"
+  }
+}

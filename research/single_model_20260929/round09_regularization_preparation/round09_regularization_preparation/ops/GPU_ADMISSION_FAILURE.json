@@ -1,0 +1,20 @@
+{
+  "scope": "resource_admission_failure_before_scientific_child",
+  "observed_unix": 1791030939.2545867,
+  "wrapper_exit_code": 1,
+  "wrapper_pid": 1863309,
+  "rejected_check": "physicalGPU1 memory_used <1000MiB",
+  "resource_snapshot_sha256": "08dfcff650aad749d3a6e35e63b41fc530d47c1adbfa27b80ad6d6ff21ad9f59",
+  "wrapper_log_sha256": "a679410b99a0df404a43b65bc6a219089e5030b41d5d9b271daa9939af91710c",
+  "wrapper_receipt_sha256": "f4d639c66561c200cd34395a4bebede74a532b5427a0a4e50dcfcebc8f069adc",
+  "attempt_directory_exists": true,
+  "attempt_files": [],
+  "private_preflight_exists": false,
+  "gpu_preflight_exists": false,
+  "gpu_update_progress_exists": false,
+  "scientific_child_launched": false,
+  "optimizer_updates": 0,
+  "TRAIN_VAL_TEST_numeric_rows_decoded": 0,
+  "unrelated_processes_signaled": false,
+  "automatic_retry_or_fallback": false
+}

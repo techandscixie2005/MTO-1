@@ -1,0 +1,47 @@
+{
+  "array_or_model_access_by_review": false,
+  "blocking_findings": [],
+  "fit_authorized": false,
+  "historical_novelty_claim_limited_to_audited_records": true,
+  "implementation_authorized": false,
+  "locally_verified_reference_hashes": {
+    "base_model_math": "b61413830ac8cfb78298dda55c11a1cfb2c398c264a797016045d8fd638c7b93",
+    "historical_nonrepetition": "2e79980cb4040a4449892424c5f6c017f80c2a83856125f5c17d241946a31c07",
+    "round05_completion_publication_receipt_sha256": "73005b2f38668a2da841aa479c9cc30cae3034b01817a744d1d5435f51778354",
+    "round05_results": "bf6920dd8c883460ecb83db3e44ec3debe98152a3f1521c869a5102b4203eb24",
+    "train_statistics": "d3d0ed5af2646959be0abcb9cebb50d7cdb2ef7fb70d7e073fe12a8b697953ae"
+  },
+  "normalization_and_dtype_distinctions_explicit": true,
+  "objective_formula_and_gradients_correct": true,
+  "paired_fresh_initialization_and_order_contract": true,
+  "passed": true,
+  "phase": "scientific_proposal_review_only",
+  "promotion_requires_matched_control_and_incumbent": true,
+  "proposal_manifest_sha256": "248c0845c04e70e9ae7083a04784f2709c96fc3720da1a967895bae3a18ac76f",
+  "protocol_sha256": "aea5c76f422fb7cca286cd84f7bafaff230e2aa29b2ed3068fe7e4573f3245b6",
+  "reference_pins": {
+    "base_model_math": "b61413830ac8cfb78298dda55c11a1cfb2c398c264a797016045d8fd638c7b93",
+    "historical_nonrepetition": "2e79980cb4040a4449892424c5f6c017f80c2a83856125f5c17d241946a31c07",
+    "round05_completed_commit": "f75a23c394c73262605b908f7eb280061e52901c",
+    "round05_completion_publication_receipt_sha256": "73005b2f38668a2da841aa479c9cc30cae3034b01817a744d1d5435f51778354",
+    "round05_frozen_manifest": "66269e04d73943bec48a6331c3ca45a9efcc12045e962fe897da6196af97c5e1",
+    "round05_results": "bf6920dd8c883460ecb83db3e44ec3debe98152a3f1521c869a5102b4203eb24",
+    "split_manifest": "c8ce66ddb7209005b5feebfcddfc2bc30ee81d92fe63cce20f15c4abf3a07155",
+    "split_verification": "395d415f854ed6948c4d7a11c0c1d7486193bb48f23bae76834a77148cc69ae2",
+    "train_statistics": "d3d0ed5af2646959be0abcb9cebb50d7cdb2ef7fb70d7e073fe12a8b697953ae"
+  },
+  "review_markdown_sha256": "2d84d9be45d605cfab929298d126af91912968f368baf3965bf119f9eae9016c",
+  "root_preparation_decision_pending": true,
+  "same_model_budget_and_no_new_QC_inputs": true,
+  "scientific_tests_executed": false,
+  "settings_sha256": "0238de653981e94105d9937ad65dd4a8b26a7f3659cbac00012fb3ef24c40047",
+  "source_files_reviewed": [
+    "architecture/model.py: base_loss and original PSD/softplus decoder",
+    "round05_scratch_preparation/fresh_model.py",
+    "round05_scratch_preparation/metrics.py",
+    "round05_scratch_preparation/HISTORICAL_NONREPETITION.md",
+    "round05_scratch_preparation/TRAIN_STATISTICS.json"
+  ],
+  "technical_updates_authorized": false,
+  "unchanged_control_mask_semantics_explicit": true
+}

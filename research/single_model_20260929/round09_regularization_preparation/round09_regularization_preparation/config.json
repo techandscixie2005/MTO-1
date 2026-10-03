@@ -1,0 +1,44 @@
+{
+  "round": "round09_original_coupled_decay",
+  "arms": {
+    "zero_decay": {
+      "weight_decay": 0.0,
+      "mode": "original"
+    },
+    "coupled_l2": {
+      "weight_decay": 0.0001,
+      "mode": "original"
+    }
+  },
+  "seed": 11,
+  "order_seed": 11,
+  "epochs": 60,
+  "batch_size": 64,
+  "optimizer": "Adam_AMSGrad",
+  "lr": 0.001,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "eps": 1E-08,
+  "grad_clip": 5.0,
+  "scheduler": null,
+  "num_threads": 2,
+  "dtype": "float32",
+  "amp": false,
+  "tf32": false,
+  "objective": "Original LE + Ls, unchanged PSD decoder",
+  "selection": "minimum pooled validation raw-f SSE, epoch0 eligible, earliest exact tie",
+  "validation_molecules": 6686,
+  "train_molecules": 120355,
+  "test_access": false,
+  "historical_weights": false,
+  "promotion_delta_r2": 0.003,
+  "retained_v2_reference_r2": 0.44716940136585204,
+  "promotion_comparators": [
+    "contemporaneous selected zero_decay",
+    "retained v2 reference"
+  ],
+  "parameter_roster": "PARAMETER_ROSTER.json",
+  "diagnostic_norm_floor": 1E-12
+}

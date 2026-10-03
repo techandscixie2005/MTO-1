@@ -1,0 +1,20 @@
+{
+  "verified_at_utc": "2026-10-03T20:15:35.136204+00:00",
+  "passed": true,
+  "id": "qm9s-e-a",
+  "status": "ACTIVE",
+  "rrule": "FREQ=HOURLY;INTERVAL=4",
+  "target_thread_id": "01a0edd8-8c03-75d1-aeb0-953f11af6433",
+  "only_prompt_and_updated_at_changed": true,
+  "updated_using_app_tool": true,
+  "matching_active_heartbeat_count": 1,
+  "before_sha256": "67224f4a526cc1180ffa5a20fd924e6e8d9c63eb9df8eb4542ee98f0a6e405b8",
+  "after_sha256": "b3ab99433be2aca507cac8197513a9c17f70e61f81d3637debb7dfd0d3b5d94e",
+  "root_preparation_acceptance_sha256": "b17e073cae2b285c00099e0ca2262398f0c986a4fb6ca96b7a3291f2ad7ac393",
+  "monitor_receipt_sha256": "c8ed1b50e5317854e7eeaebc40d0e416116424adc36ae3f23e4c9d2f7ef5d3a7",
+  "production_authorized": false,
+  "completed_discarded_train_updates": 6,
+  "publication_in_progress": true,
+  "no_repeat_numerical_stages": true,
+  "no_extension_seed_or_test_authority": true
+}

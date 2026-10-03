@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "synthetic_only": true,
+  "checks": [
+    "valid_synthetic_binding_passes",
+    "missing_authority_rejected",
+    "reject_authority_authorized",
+    "reject_authority_scope",
+    "reject_authority_frozen_manifest_sha256",
+    "reject_authority_split_manifest_sha256",
+    "reject_authority_independent_split_verification_sha256",
+    "reject_authority_epochs",
+    "reject_authority_arms",
+    "reject_authority_test_access",
+    "reject_authority_historical_weights",
+    "reject_authority_independent_review_sha256",
+    "reject_authority_publication_receipt_sha256",
+    "reject_reversed_arm_order",
+    "reject_previous_round_scope",
+    "reject_publication_remote_verified",
+    "reject_publication_download_before_stage_before_commit_push",
+    "reject_publication_frozen_manifest_sha256",
+    "reject_publication_independent_review_sha256",
+    "changed_source_rejected",
+    "review_closure_mismatch_rejected",
+    "entry_rejects_before_scientific_imports_or_run_artifacts"
+  ],
+  "checks_count": 22,
+  "real_data_or_model_access": false,
+  "production_execution": false,
+  "optimizer_updates": 0,
+  "source_hashes": {
+    "common.py": "50a1ef987cbc635b3b5692364281498e66587b112d5573c765fea360470038cd",
+    "execution_gate.py": "c73dfbb9abb494ad6bc95b5f5e13312ae34a1e9a7ab6dd1cf7c5b75d96dfde0c",
+    "train.py": "93567911e630deff04a9f4e069e9dc9191a3761f552b6bbc87b0a051af05263e",
+    "independent_gate_checks.py": "e274065f69ee2c04e3c5a6ba2a4045019af41dac6799f18ea8d79afe52ed1baf"
+  }
+}

@@ -1,0 +1,2000 @@
+{
+  "files": [
+    {
+      "original_absolute_path": "/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/nn/utils/clip_grad.py",
+      "archive_path": "ops/round09_publication/external_sources/host/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/nn/utils/clip_grad.py",
+      "sha256": "a0cc48b76d4f3efb7a4266eb8e4c25a5dfad4972b609a9d56c4c3fe58afe28c9"
+    },
+    {
+      "original_absolute_path": "/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/optim/adam.py",
+      "archive_path": "ops/round09_publication/external_sources/host/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/optim/adam.py",
+      "sha256": "bed22e29e5525e91329616ed8b9267afb77217e6eb1e5ac61e6ffff5d8384758"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/models_ea.py",
+      "archive_path": "ops/round09_publication/external_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/models_ea.py",
+      "sha256": "b47d50b8b32313d1c3e1f19f3e64e6f02ce42e91736e6da00f896f68965250b0"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/models.py",
+      "archive_path": "ops/round09_publication/external_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/models.py",
+      "sha256": "a8d7bf8a8d89839f687a773f59f02b2a5d75abd6f47a59406e9eb3d1a40f4771"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/__init__.py",
+      "archive_path": "ops/round09_publication/external_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/__init__.py",
+      "sha256": "8fe70f55031182c1d0012945907181ecc85278f7849599e15e3a16939fae67f1"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/constant.py",
+      "archive_path": "ops/round09_publication/external_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/constant.py",
+      "sha256": "1c3a8f9058ba6890c2f6730241136b35a552235b41f812288ce9cbdcc42ec856"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/detanet.py",
+      "archive_path": "ops/round09_publication/external_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/detanet.py",
+      "sha256": "4083382f2d615d1573b9dbc2d2c456d00f9895d4dae144b6c62b26feff6eebcd"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/metrics.py",
+      "archive_path": "ops/round09_publication/external_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/metrics.py",
+      "sha256": "677630dd1b97c7474c2f8a4cdda81d7e0f2a56a12dfd4b02bbb869329af4fec2"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/model_loader.py",
+      "archive_path": "ops/round09_publication/external_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/model_loader.py",
+      "sha256": "85507209b15efea567e686f4d99cf3be53dbf3779607d4b33e295d52c44505b3"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/__init__.py",
+      "archive_path": "ops/round09_publication/external_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/__init__.py",
+      "sha256": "032b99150e38283d3695b394175d792c370be7dbbe38b58b94971143de9446de"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/acts.py",
+      "archive_path": "ops/round09_publication/external_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/acts.py",
+      "sha256": "6bcd255ac95b33e6ef6a982d87c8dd6b39c2f1a41996f2425c5ada1f0fe8256c"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/block.py",
+      "archive_path": "ops/round09_publication/external_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/block.py",
+      "sha256": "38eb81b385fded74ac4ff3950ee2cbe6e7c7e7cc0873ec57ede64ef758460e35"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/edge_attention.py",
+      "archive_path": "ops/round09_publication/external_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/edge_attention.py",
+      "sha256": "48a69aa9a83cfe225f8e55eeea4bab65120955aee2dc7ad02d414aef7b4e2fea"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/embedding.py",
+      "archive_path": "ops/round09_publication/external_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/embedding.py",
+      "sha256": "07eff3330b5709fec463563d4ef53f857525ae85f55b8a3ab1e7c9ffb3c70ee8"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/message.py",
+      "archive_path": "ops/round09_publication/external_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/message.py",
+      "sha256": "a76bae58dbb92447d6fb05230d7db826dc9defc929706e6f2c88c067ee5918cf"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/multilayer_perceptron.py",
+      "archive_path": "ops/round09_publication/external_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/multilayer_perceptron.py",
+      "sha256": "5628a4cebadbbc493058edae808a64370ee2834fa4ccacc041f820bf9afb4d42"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/radial_basis.py",
+      "archive_path": "ops/round09_publication/external_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/radial_basis.py",
+      "sha256": "cbbbf125bdb4b64e21a4d58ddb175bde489bb7a640375847f416f137881307ca"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/update.py",
+      "archive_path": "ops/round09_publication/external_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/update.py",
+      "sha256": "65cda1be8fd5daa491779211ba37ec9c23b73e4a2da81444d21534584c0028a6"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/spectra_simulator.py",
+      "archive_path": "ops/round09_publication/external_sources/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/spectra_simulator.py",
+      "sha256": "cb36131b7dc855cd2c528d532f4d7742fc2da757d078e8732142dbeab4f0b67e"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/pyvenv.cfg",
+      "archive_path": "ops/round09_publication/external_sources/host/MTO-1/experiments/qm9s_full_EA_20260925/env/pyvenv.cfg",
+      "sha256": "a4383b41b2b61afd0d1b76c26c48a32d7924913483682a2bce8026e2e341aad5"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/architecture/model.py",
+      "archive_path": "architecture/model.py",
+      "sha256": "b61413830ac8cfb78298dda55c11a1cfb2c398c264a797016045d8fd638c7b93"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/bottleneck_audit_20261002/INDEPENDENT_PROPOSAL_REVIEW.json",
+      "archive_path": "bottleneck_audit_20261002/INDEPENDENT_PROPOSAL_REVIEW.json",
+      "sha256": "5e7c206e2d33c1a8ce3ab0c7cb9f55daae5ae6785f23f747ba011b08a9850747"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/bottleneck_audit_20261002/INDEPENDENT_PROPOSAL_REVIEW.md",
+      "archive_path": "bottleneck_audit_20261002/INDEPENDENT_PROPOSAL_REVIEW.md",
+      "sha256": "e0306885f8459b75a660e4cae6b4436a9701f234dbcd2e3d57989a017bb51b72"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/bottleneck_audit_20261002/INDEPENDENT_REVIEW_MANIFEST.json",
+      "archive_path": "bottleneck_audit_20261002/INDEPENDENT_REVIEW_MANIFEST.json",
+      "sha256": "5ba90e8fe798b9cb4f05d26f7065d669aa17e93025bc87d6a97dca7a687131b6"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/bottleneck_audit_20261002/INFORMATION_FLOW_AUDIT.md",
+      "archive_path": "bottleneck_audit_20261002/INFORMATION_FLOW_AUDIT.md",
+      "sha256": "b1e8237f0f3488244336412a103ffe01e1d8a2f335b4ce3cccc30eb3ff0e74da"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/bottleneck_audit_20261002/REFERENCE_MANIFEST.json",
+      "archive_path": "bottleneck_audit_20261002/REFERENCE_MANIFEST.json",
+      "sha256": "a619659a345cb6ca182e5c3778b3a4818dae5021e7ac5cb8b18b5d909f86e334"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/bottleneck_audit_20261002/TRANSPORT_PROPOSAL.md",
+      "archive_path": "bottleneck_audit_20261002/TRANSPORT_PROPOSAL.md",
+      "sha256": "5b5bed1529acb13e9bf8b55786302b43a754601659d67a5643751613f0c8ce9b"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/current_state/COORDINATOR.md",
+      "archive_path": "current_state/COORDINATOR.md",
+      "sha256": "842f883fae78171cb563d087b2a3b873e10eb46a1b87175223f18904298952d3"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/current_state/RESEARCH_RESUMPTION_20260930.md",
+      "archive_path": "current_state/RESEARCH_RESUMPTION_20260930.md",
+      "sha256": "873ee750a75e72ac90936a03c53413e6a2e72ce6025ed40bbbb7080c0d2a2b1b"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/current_state/ROUND08_DECISION.md",
+      "archive_path": "current_state/ROUND08_DECISION.md",
+      "sha256": "1099239c16237f85c185b02ebbb24b2c41f7812a10e4c018d5c35a5a68d3028d"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/current_state/ROUND09_PREPARATION_ACCEPTANCE.md",
+      "archive_path": "current_state/ROUND09_PREPARATION_ACCEPTANCE.md",
+      "sha256": "b17e073cae2b285c00099e0ca2262398f0c986a4fb6ca96b7a3291f2ad7ac393"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/current_state/ROUND09_PREPARATION_DECISION.md",
+      "archive_path": "current_state/ROUND09_PREPARATION_DECISION.md",
+      "sha256": "6b10b8b5a7d75e6a5c46537f8c8b9d126dcc2694d7cfec687e31f120c038d139"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/current_state/ROUND09_RESOURCE_RETRY_DECISION.md",
+      "archive_path": "current_state/ROUND09_RESOURCE_RETRY_DECISION.md",
+      "sha256": "673bcc503705fe6063e14f02d3573738d82a12907f18e730d41d760c7ae277e8"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/current_state/history_baseline.md",
+      "archive_path": "current_state/history_baseline.md",
+      "sha256": "8068fdea6d626247731127fee7385eb962026f42ca8f73ea973d543d5a7ca298"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/current_state/monitor.md",
+      "archive_path": "current_state/monitor.md",
+      "sha256": "453913e5f332d91650acd7ac82936e9d336df6b0f48c01034a475e6a1a51273d"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/current_state/science_implementation.md",
+      "archive_path": "current_state/science_implementation.md",
+      "sha256": "d516eff688d0034090ecf043b3ad02c5f923ea57039648720b005a16b22ce7c4"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930/INDEPENDENT_SPLIT_VERIFICATION.json",
+      "archive_path": "dataset_audit_20260930/INDEPENDENT_SPLIT_VERIFICATION.json",
+      "sha256": "395d415f854ed6948c4d7a11c0c1d7486193bb48f23bae76834a77148cc69ae2"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930/SPLIT_MANIFEST.json",
+      "archive_path": "dataset_audit_20260930/SPLIT_MANIFEST.json",
+      "sha256": "c8ce66ddb7209005b5feebfcddfc2bc30ee81d92fe63cce20f15c4abf3a07155"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/monitoring/CHECK_20261003T160554Z.json",
+      "archive_path": "monitoring/CHECK_20261003T160554Z.json",
+      "sha256": "6f8c8f4c74c992d59e428b466d1a54b27a24315a4054b935520154048f739059"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/monitoring/CHECK_20261003T200001Z.json",
+      "archive_path": "monitoring/CHECK_20261003T200001Z.json",
+      "sha256": "d5e9317e623b52cc1ef21b8d53140ec982587f3c3b143a258940e334d1d8a69e"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/monitoring/CHECK_20261003T201107Z.json",
+      "archive_path": "monitoring/CHECK_20261003T201107Z.json",
+      "sha256": "6a3253a8f6718a7d54c52ba9ffa7a50dc22d4f72bdfcbd6047e0221e701618e1"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/monitoring/SCHEDULED_ROUND09_ACCEPTED_20261003T2007.json",
+      "archive_path": "monitoring/SCHEDULED_ROUND09_ACCEPTED_20261003T2007.json",
+      "sha256": "c8ed1b50e5317854e7eeaebc40d0e416116424adc36ae3f23e4c9d2f7ef5d3a7"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/monitoring/SCHEDULED_ROUND09_RESOURCE_RETRY_20261003T1606.json",
+      "archive_path": "monitoring/SCHEDULED_ROUND09_RESOURCE_RETRY_20261003T1606.json",
+      "sha256": "120940140bb17d3811127a3a9719831569a41d0fa93d9012e09951fd2fc14141"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/ops/FAILED_ROUND_ARCHIVE_POLICY.md",
+      "archive_path": "ops/FAILED_ROUND_ARCHIVE_POLICY.md",
+      "sha256": "20088f451d404c83f2d73d378839540d83242cb3e48807ab2a79ab8dc3555a0a"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/ops/ROUND08_COMPLETION_PUBLICATION_RECEIPT.json",
+      "archive_path": "ops/ROUND08_COMPLETION_PUBLICATION_RECEIPT.json",
+      "sha256": "6904509dc04e01ba383de940a0172a935d77d5efb719b0017bcd5abceb6904d5"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/ops/download_records.py",
+      "archive_path": "ops/download_records.py",
+      "sha256": "c646bd67ac401bd0a27c491d8c40bd1012684f73364d7a953a29cf543346899d"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/ops/heartbeat_round09_accepted/AFTER.toml",
+      "archive_path": "ops/heartbeat_round09_accepted/AFTER.toml",
+      "sha256": "b3ab99433be2aca507cac8197513a9c17f70e61f81d3637debb7dfd0d3b5d94e"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/ops/heartbeat_round09_accepted/BEFORE.toml",
+      "archive_path": "ops/heartbeat_round09_accepted/BEFORE.toml",
+      "sha256": "67224f4a526cc1180ffa5a20fd924e6e8d9c63eb9df8eb4542ee98f0a6e405b8"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/ops/heartbeat_round09_accepted/HEARTBEAT_ROUND09_ACCEPTED.json",
+      "archive_path": "ops/heartbeat_round09_accepted/HEARTBEAT_ROUND09_ACCEPTED.json",
+      "sha256": "4c8a2efaa5bf0560897f0baeefa0263027fbace905da830bc0a839ea5417659a"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/ops/heartbeat_round09_accepted/UPDATE_ARGUMENTS.json",
+      "archive_path": "ops/heartbeat_round09_accepted/UPDATE_ARGUMENTS.json",
+      "sha256": "1ed9319fda0d41b5e10461b5d489c39a6a9317ecd8d9adebb49c91d804b27519"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/ops/monitor.py",
+      "archive_path": "ops/monitor.py",
+      "sha256": "b21e028b6741d7522df194c6d7094c7d37b6ef07b7e6aec633691cb61859d263"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/ops/package_records.py",
+      "archive_path": "ops/package_records.py",
+      "sha256": "f27de83406c7f0a3379b1a2fdaf63ceeea50fe6084a1c3bf3aeccd2d3e7132fd"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/ops/prepare_round09_publication.py",
+      "archive_path": "ops/prepare_round09_publication.py",
+      "sha256": "679fccc2be40beab29210234fe42df764571c92199cc67ae28e6aee9fe55ebd7"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/ops/publish_round09_preparation.py",
+      "archive_path": "ops/publish_round09_preparation.py",
+      "sha256": "82405657d89857a50f3d882016c46de8af61b384a808d8c18aa1bc04e92be355"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/ops/register_cpu_stage.py",
+      "archive_path": "ops/register_cpu_stage.py",
+      "sha256": "47ba35fea821ddefa456725e5d37f595294d2911c85626e039528aedd3b739e2"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/ops/register_run.py",
+      "archive_path": "ops/register_run.py",
+      "sha256": "2ee480a01cfcb4b1f5acd84323c679cf27a90b142387f097d2d563d29e06aa37"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/ops/round09_publication/README.md",
+      "archive_path": "ops/round09_publication/README.md",
+      "sha256": "f43065ab0c5626764d6e50bd48429e58134e65a0b69cc1a2a11b865a05b607a8"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/ops/ssh_proxy.py",
+      "archive_path": "ops/ssh_proxy.py",
+      "sha256": "df0f75d49904b1170be0af14764ce995bfcc8daf308c34678ae37d7e33082461"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/post_round07_bottleneck_audit/AUDIT_MANIFEST.json",
+      "archive_path": "post_round07_bottleneck_audit/AUDIT_MANIFEST.json",
+      "sha256": "0ed827e3072e38b545b2f29a6f49ed1dc919f5652ba3d631b9a2b7f02133a99c"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/post_round07_bottleneck_audit/HISTORICAL_CAPACITY_AUDIT.md",
+      "archive_path": "post_round07_bottleneck_audit/HISTORICAL_CAPACITY_AUDIT.md",
+      "sha256": "1c82eaddc1678f64c195fe69b37ade6d874482b995c2cab365315c1fbb8843e1"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/post_round07_bottleneck_audit/HISTORICAL_RECIPE_EVIDENCE.json",
+      "archive_path": "post_round07_bottleneck_audit/HISTORICAL_RECIPE_EVIDENCE.json",
+      "sha256": "840e5c55eac1806f65187bc3cd55ec2c5d7bd6d3d4f12856308cc9f2d8925b81"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/post_round07_bottleneck_audit/HISTORY_METADATA_READER.log",
+      "archive_path": "post_round07_bottleneck_audit/HISTORY_METADATA_READER.log",
+      "sha256": "fce123d2973f41a8db2dd7384e7c84fb212f85e7dc1466e4c20ce0220aaebc85"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/post_round07_bottleneck_audit/read_history_metadata.py",
+      "archive_path": "post_round07_bottleneck_audit/read_history_metadata.py",
+      "sha256": "6cee8c34e1eeec5b0b9fc4ae1b8a2fc82c7ae29175874dc438c81920eee2528e"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/BUFFER_ROUNDTRIP_DIAGNOSIS.json",
+      "archive_path": "round05_scratch_preparation/BUFFER_ROUNDTRIP_DIAGNOSIS.json",
+      "sha256": "e07c2b2c41d66f8a550816d66ff9e98dcaa00230b2e1bc5d2696f74881cf9d4a"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/CPU_PREFLIGHT.json",
+      "archive_path": "round05_scratch_preparation/CPU_PREFLIGHT.json",
+      "sha256": "71d6e7fc61e4f36dc0763171f6c5ec32d327ceb60db510f6ac0c228c79373a1f"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/ENVIRONMENT.json",
+      "archive_path": "round05_scratch_preparation/ENVIRONMENT.json",
+      "sha256": "57c2f536b2af90baf8816a0924be5a7511e88ba0f35fbeda5b55e95fdf2540a9"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/FROZEN_MANIFEST.json",
+      "archive_path": "round05_scratch_preparation/FROZEN_MANIFEST.json",
+      "sha256": "66269e04d73943bec48a6331c3ca45a9efcc12045e962fe897da6196af97c5e1"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/GPU_IDENTITY_DIAGNOSTIC.json",
+      "archive_path": "round05_scratch_preparation/GPU_IDENTITY_DIAGNOSTIC.json",
+      "sha256": "4221233ca22bb3cf0fdfb2091a20ae500d72c4ddf5fc4aec0e44277307b3d92c"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/GPU_IDENTITY_DIAGNOSTIC_REVIEW.json",
+      "archive_path": "round05_scratch_preparation/GPU_IDENTITY_DIAGNOSTIC_REVIEW.json",
+      "sha256": "1b0dc69bfc44fd700d5804dcf931ef0cb95ac352f612769cd2e565f678b67146"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/GPU_PREFLIGHT.json",
+      "archive_path": "round05_scratch_preparation/GPU_PREFLIGHT.json",
+      "sha256": "c0a62e24963ed3158f48524fff3f77fae5bce98b91144962b16bb839bcca99a9"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/GPU_PREFLIGHT_REVIEW.json",
+      "archive_path": "round05_scratch_preparation/GPU_PREFLIGHT_REVIEW.json",
+      "sha256": "4071eca0211395858f472473abc3891298dc822878e1a76adf248026f5e2c1f5"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/HISTORICAL_NONREPETITION.md",
+      "archive_path": "round05_scratch_preparation/HISTORICAL_NONREPETITION.md",
+      "sha256": "2e79980cb4040a4449892424c5f6c017f80c2a83856125f5c17d241946a31c07"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/IDENTITY_CHECK_AMENDMENT_DECISION.json",
+      "archive_path": "round05_scratch_preparation/IDENTITY_CHECK_AMENDMENT_DECISION.json",
+      "sha256": "234b0ea52edec20bccc703d7ef96429c3ab2705f9da214b7cbde46e2c0e4825a"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/IDENTITY_CHECK_AMENDMENT_PROPOSAL.md",
+      "archive_path": "round05_scratch_preparation/IDENTITY_CHECK_AMENDMENT_PROPOSAL.md",
+      "sha256": "74625972cca0912400d10cc81d7db98b640dec566f3e25d004e7e01c6cd6ad00"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/IDENTITY_DIAGNOSTIC_REVIEW.json",
+      "archive_path": "round05_scratch_preparation/IDENTITY_DIAGNOSTIC_REVIEW.json",
+      "sha256": "5196d474d540afafbcf70d7becdfd033d6683a046a317806afd23fa3b0ca2dc8"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/INDEPENDENT_GATE_CHECKS.json",
+      "archive_path": "round05_scratch_preparation/INDEPENDENT_GATE_CHECKS.json",
+      "sha256": "e17bed460c3e33a69ffc968fd2104762fe968f87d069fa1bb9f27c72ffef189c"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/INDEPENDENT_READER_CHECKS.json",
+      "archive_path": "round05_scratch_preparation/INDEPENDENT_READER_CHECKS.json",
+      "sha256": "fe18f4af85811327298a1f1163897ce7c230e84df6189658af49b2d08136ff17"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/IO_CONTINUITY.json",
+      "archive_path": "round05_scratch_preparation/IO_CONTINUITY.json",
+      "sha256": "f0b3af59de54885c849db25b31e72083e70a9fc03cd64ca337cff5e2d7067382"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/IO_CONTINUITY_CHECKS.json",
+      "archive_path": "round05_scratch_preparation/IO_CONTINUITY_CHECKS.json",
+      "sha256": "9368c40972d72a661e06b482a43c1adeacab3b5685b040cdc278fd7200b350b6"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/IO_CONTINUITY_REVIEW.json",
+      "archive_path": "round05_scratch_preparation/IO_CONTINUITY_REVIEW.json",
+      "sha256": "876e2ea4aec2e401f52b616b25d4881f81f41a636d437ab82880b7f4aa38a70f"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/PRODUCTION_AUTHORIZATION_TEMPLATE.json",
+      "archive_path": "round05_scratch_preparation/PRODUCTION_AUTHORIZATION_TEMPLATE.json",
+      "sha256": "c2abc2628f30a58b65b74a32eacc02843b547ccd7f02bb9929c25660810c5c2e"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/PROTOCOL.md",
+      "archive_path": "round05_scratch_preparation/PROTOCOL.md",
+      "sha256": "99fa4eba9788436c1cc83b300835e115f86aea1428945fa8547656c498566356"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/PROTOCOL_PROPOSAL.md",
+      "archive_path": "round05_scratch_preparation/PROTOCOL_PROPOSAL.md",
+      "sha256": "4e6b4aa4bef6f51e3595718e3e6b34bd527bbfc32d7a2ed9f823080d322d2b08"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/READER_CHECKS.json",
+      "archive_path": "round05_scratch_preparation/READER_CHECKS.json",
+      "sha256": "4712269cdeb3768091da720ceab828af8ed6e4ee0a790a88c5c823a0b2e55a9d"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/RETRY01_SOURCE_READINESS.json",
+      "archive_path": "round05_scratch_preparation/RETRY01_SOURCE_READINESS.json",
+      "sha256": "ac1cfbcd4809a131215a8ddf9f670fe0fa237d8a81042edea337c19be1ec016a"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/ROUND05_PREPARATION_DECISION.md",
+      "archive_path": "round05_scratch_preparation/ROUND05_PREPARATION_DECISION.md",
+      "sha256": "a7c0c6f14dd400c359c1ec7a9637f81bc2733056052d2dda0380a241f06e7223"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/TECHNICAL_PREFLIGHT_PLAN.md",
+      "archive_path": "round05_scratch_preparation/TECHNICAL_PREFLIGHT_PLAN.md",
+      "sha256": "d0e8a2c842487490f064b5a437e1a2ce76be14aa704404288301e20a9a019e5b"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/TECHNICAL_SOURCE_REVIEW.json",
+      "archive_path": "round05_scratch_preparation/TECHNICAL_SOURCE_REVIEW.json",
+      "sha256": "01d59c9d0e5aa1908188894b54402c2eb280ff73c10ec911eccc583db71b2efa"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/TECHNICAL_SOURCE_REVIEW_RETRY01.json",
+      "archive_path": "round05_scratch_preparation/TECHNICAL_SOURCE_REVIEW_RETRY01.json",
+      "sha256": "d3a1cc9ec7fc771d2546cd53e61ae04b6f8bc61c44b10fd24e67b279c0ceab8e"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/TRAIN_READER_REVIEW.json",
+      "archive_path": "round05_scratch_preparation/TRAIN_READER_REVIEW.json",
+      "sha256": "1b7a4ca182c0c28494d6f9b4e452563c4e98c8e2c9655501635c393187858689"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/TRAIN_STATISTICS.json",
+      "archive_path": "round05_scratch_preparation/TRAIN_STATISTICS.json",
+      "sha256": "d3d0ed5af2646959be0abcb9cebb50d7cdb2ef7fb70d7e073fe12a8b697953ae"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/TRAIN_STATISTICS_AUDIT.json",
+      "archive_path": "round05_scratch_preparation/TRAIN_STATISTICS_AUDIT.json",
+      "sha256": "f93e32e63aaa12dc8f81f079e2b96f0d03a5fc5a9235ee98c01ff6fe9e435e02"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/TRAIN_STATISTICS_REVIEW.json",
+      "archive_path": "round05_scratch_preparation/TRAIN_STATISTICS_REVIEW.json",
+      "sha256": "b4cabcd8f2128b87ec6b77e57b1ad9c0c3965e543df696918fc1ce57e1a4364b"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/buffer_roundtrip_diagnosis.py",
+      "archive_path": "round05_scratch_preparation/buffer_roundtrip_diagnosis.py",
+      "sha256": "52704ada39fc5fcff359fb57f02ceeda85eae9366233ae65fe8669831b1d7fc0"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/common.py",
+      "archive_path": "round05_scratch_preparation/common.py",
+      "sha256": "50a1ef987cbc635b3b5692364281498e66587b112d5573c765fea360470038cd"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/completion/ROUND05_RESULTS.json",
+      "archive_path": "round05_scratch_preparation/completion/ROUND05_RESULTS.json",
+      "sha256": "bf6920dd8c883460ecb83db3e44ec3debe98152a3f1521c869a5102b4203eb24"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/config.json",
+      "archive_path": "round05_scratch_preparation/config.json",
+      "sha256": "9b1d3d866077d7f971ac03a25435f007d84fc6ee8fe1fa8136b232974c03ec9c"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/cpu_preflight.py",
+      "archive_path": "round05_scratch_preparation/cpu_preflight.py",
+      "sha256": "745adce0eb432f007bcc18d00d2d9c06a063e3e8d04099b14adb5066229828a8"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/execution_gate.py",
+      "archive_path": "round05_scratch_preparation/execution_gate.py",
+      "sha256": "4585431fc9289b93719a2de50bc63ccc84a4d6992586e6f3e09d40a388e48e9d"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/freeze_preparation.py",
+      "archive_path": "round05_scratch_preparation/freeze_preparation.py",
+      "sha256": "b39a61e5c14117767f18ca96eb624e4f05edfc6acfee1db1cb7e2ba1e25e00d6"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/fresh_model.py",
+      "archive_path": "round05_scratch_preparation/fresh_model.py",
+      "sha256": "16ec3eb14eeafa3265ba0f35abf4ff174a2a20f155b408ed133635fa73a8c314"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/gpu_identity_diagnostic.py",
+      "archive_path": "round05_scratch_preparation/gpu_identity_diagnostic.py",
+      "sha256": "60f61f33b0de66a994f218dac0bc75d39a8f60be33140a0c46d1d5a67f8fdaab"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/gpu_preflight.py",
+      "archive_path": "round05_scratch_preparation/gpu_preflight.py",
+      "sha256": "0f3ff7d8886809e73fca8e44a9fe50cd3d73eea058e638f7892b8e785de9a887"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/gpu_preflight_retry01.py",
+      "archive_path": "round05_scratch_preparation/gpu_preflight_retry01.py",
+      "sha256": "c863b74fb66936361a09734d90fe85eee3e2adbd4d850dcc447e770b9a74b7b7"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/independent_gate_checks.py",
+      "archive_path": "round05_scratch_preparation/independent_gate_checks.py",
+      "sha256": "fe5d5756cdd755da0e89d75fba67cc22d37d3fc8494541d5f8c4629905ea6926"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/independent_io_continuity.py",
+      "archive_path": "round05_scratch_preparation/independent_io_continuity.py",
+      "sha256": "ead199501de254c6380c96f53172610ea4e8f9fe575a0f117f622d574bf89c5f"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/independent_reader_checks.py",
+      "archive_path": "round05_scratch_preparation/independent_reader_checks.py",
+      "sha256": "f160207430b5886755210ac3cafc07145aa4b78006ee99c9a20d638f82478f5c"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/launch.py",
+      "archive_path": "round05_scratch_preparation/launch.py",
+      "sha256": "e7a915af16cb448316f3ef89773e832f8fa4a1d170c84bf02eacd7360a28794b"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/metrics.py",
+      "archive_path": "round05_scratch_preparation/metrics.py",
+      "sha256": "1465cc964aea7bd0e06616be3cf8f862e876c7c57d9df3103e81e57817761bdc"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/model_config.json",
+      "archive_path": "round05_scratch_preparation/model_config.json",
+      "sha256": "ff24143918e722d34a126b172f7d311c2a673a21c6756c89077fa05b05d6592f"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/partition_data.py",
+      "archive_path": "round05_scratch_preparation/partition_data.py",
+      "sha256": "9aaa08bb8878803cc42961d336345d5fa53f5aad30d8cfdf135d0fd35dd6757d"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/predictor.py",
+      "archive_path": "round05_scratch_preparation/predictor.py",
+      "sha256": "5b4801a4851c01f035fa7d1f05b9e2817318acfe155ae611e57f3425dfc407e6"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/gpu_attempt01/SNAPSHOT.json",
+      "archive_path": "round05_scratch_preparation/preflight_history/gpu_attempt01/SNAPSHOT.json",
+      "sha256": "0f9fd724861c905582524f071c310d73d0e161abcef75c7b9c15aaad63e94efe"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/io_continuity/training_executed.py",
+      "archive_path": "round05_scratch_preparation/preflight_history/io_continuity/training_executed.py",
+      "sha256": "17d2bb266704bb4a747d3b11b3ff0789f68e2bc5835230a45220d93a3f0bca76"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/prepare_train_statistics.py",
+      "archive_path": "round05_scratch_preparation/prepare_train_statistics.py",
+      "sha256": "ecab67351bbf0227609aa30117001853556731960573fdbc04761cef250db207"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/reader_checks.py",
+      "archive_path": "round05_scratch_preparation/reader_checks.py",
+      "sha256": "549e0086d5747e4d2642c1fc5fb265c06791ed98223bf46bdc327cfeb1799a30"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/resources.py",
+      "archive_path": "round05_scratch_preparation/resources.py",
+      "sha256": "0e86e15d8be5c1e0e94bf8f85eea56a121e3aa493cb9c262e9248727b5beb918"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/run_gpu_identity_diagnostic.py",
+      "archive_path": "round05_scratch_preparation/run_gpu_identity_diagnostic.py",
+      "sha256": "87e0c98a3ba029c1182772bc76e0658ac36f2462e463aa95fb4eae0dd690c499"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/run_gpu_preflight.py",
+      "archive_path": "round05_scratch_preparation/run_gpu_preflight.py",
+      "sha256": "49bf9fe58ff72aac13bf2b5449ff9b320d2b0d51c653acceb14384741e9d2eea"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/run_gpu_preflight_retry01.py",
+      "archive_path": "round05_scratch_preparation/run_gpu_preflight_retry01.py",
+      "sha256": "c3cedde6b63c75d1b220b7a6fe2e2a0dbc36ccf8d1ab55f72b9d3f6c45410ba8"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/run_statistics.py",
+      "archive_path": "round05_scratch_preparation/run_statistics.py",
+      "sha256": "05f3d0dcce091c50faf9c7c234ffab0d863fa188bf685511c83d5eff49bc617f"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/runtime.py",
+      "archive_path": "round05_scratch_preparation/runtime.py",
+      "sha256": "fb54c5073e261455ef43036f3d1f65bdaf89714fc9ddc690ec0ec3a773074f94"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/train.py",
+      "archive_path": "round05_scratch_preparation/train.py",
+      "sha256": "5d8fe3e9c6a30fdd942a89171169994d097f237bfa71105b9129e933017750c3"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/training.py",
+      "archive_path": "round05_scratch_preparation/training.py",
+      "sha256": "c0147d25cf2a2b6cd0956a57bfcab069657618bc22712efa29feb1b6a9533cdd"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/CPU_PREFLIGHT.json",
+      "archive_path": "round06_objective_preparation/CPU_PREFLIGHT.json",
+      "sha256": "02c268678eb4b6293258ec99020d4f7f16c6d9f3244ccf122ea4ebae7a6e8bd9"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/CPU_PREFLIGHT_REVIEW.json",
+      "archive_path": "round06_objective_preparation/CPU_PREFLIGHT_REVIEW.json",
+      "sha256": "9cb76884bb5bd189ea1e9d090ce9db83b396654e6e497c7932c5f776b31d088f"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/CPU_SOURCE_REVIEW.json",
+      "archive_path": "round06_objective_preparation/CPU_SOURCE_REVIEW.json",
+      "sha256": "b0c291527e83b69e85cda5a00d8478f104dcdd4c7e64b4750d747c27590bd55c"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/ENVIRONMENT.json",
+      "archive_path": "round06_objective_preparation/ENVIRONMENT.json",
+      "sha256": "57c2f536b2af90baf8816a0924be5a7511e88ba0f35fbeda5b55e95fdf2540a9"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/FROZEN_MANIFEST.json",
+      "archive_path": "round06_objective_preparation/FROZEN_MANIFEST.json",
+      "sha256": "4f1908d8f83c7a4622a8aadb511305da93465f8e29af3203327981c3c739d52b"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/GPU_PREFLIGHT.json",
+      "archive_path": "round06_objective_preparation/GPU_PREFLIGHT.json",
+      "sha256": "cdb0520de4b80a3618114ad02ed61a34a071cf02701f0dbfd62168efcf6d2aad"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/GPU_PREFLIGHT_REVIEW.json",
+      "archive_path": "round06_objective_preparation/GPU_PREFLIGHT_REVIEW.json",
+      "sha256": "fc39d7e2b915717e074b4eb99c1971a447f72d13b4bfe642eae583633eedfee0"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/GPU_UPDATE_PROGRESS.json",
+      "archive_path": "round06_objective_preparation/GPU_UPDATE_PROGRESS.json",
+      "sha256": "4ddeb29614ef284bd503f51f0d82c427a4368f2966e129134036b0fafb04434b"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/INDEPENDENT_GATE_CHECKS.json",
+      "archive_path": "round06_objective_preparation/INDEPENDENT_GATE_CHECKS.json",
+      "sha256": "60aa32905289a8a01fd612fad431fc0488c57f464b5854a06b14f172a8595649"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/INDEPENDENT_GATE_CHECKS_01.log",
+      "archive_path": "round06_objective_preparation/INDEPENDENT_GATE_CHECKS_01.log",
+      "sha256": "919e6d1911cb368433645cb6392b950ef22f6b723a2cf595408386c95f611fe6"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/INDEPENDENT_PREFLIGHT_RESULT_CHECKS.json",
+      "archive_path": "round06_objective_preparation/INDEPENDENT_PREFLIGHT_RESULT_CHECKS.json",
+      "sha256": "543ed23016a156fd82b1d5c8e904150d3857f473f8b39b874a64892ccba1bd57"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/INDEPENDENT_PREFLIGHT_RESULT_CHECKS_01.log",
+      "archive_path": "round06_objective_preparation/INDEPENDENT_PREFLIGHT_RESULT_CHECKS_01.log",
+      "sha256": "5c06a17cec34cca65331a2b74b56bf24b5af78243ac4fbf40d63e8c4d0852cf5"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/INDEPENDENT_PROPOSAL_REVIEW.json",
+      "archive_path": "round06_objective_preparation/INDEPENDENT_PROPOSAL_REVIEW.json",
+      "sha256": "a1617eaea6574b36f5e39fa9b5bb738c7a2ba91083c373217e2c51d25b992225"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/INDEPENDENT_PROPOSAL_REVIEW.md",
+      "archive_path": "round06_objective_preparation/INDEPENDENT_PROPOSAL_REVIEW.md",
+      "sha256": "2d84d9be45d605cfab929298d126af91912968f368baf3965bf119f9eae9016c"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/PRODUCTION_AUTHORIZATION_TEMPLATE.json",
+      "archive_path": "round06_objective_preparation/PRODUCTION_AUTHORIZATION_TEMPLATE.json",
+      "sha256": "39d5260e1c45d6810efc5e547fbc53ce12ea2b741cb9b40b526a4996e05d65db"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/PROPOSAL_MANIFEST.json",
+      "archive_path": "round06_objective_preparation/PROPOSAL_MANIFEST.json",
+      "sha256": "248c0845c04e70e9ae7083a04784f2709c96fc3720da1a967895bae3a18ac76f"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/PROPOSED_SETTINGS.json",
+      "archive_path": "round06_objective_preparation/PROPOSED_SETTINGS.json",
+      "sha256": "0238de653981e94105d9937ad65dd4a8b26a7f3659cbac00012fb3ef24c40047"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/PROTOCOL.md",
+      "archive_path": "round06_objective_preparation/PROTOCOL.md",
+      "sha256": "25b6384e44f2bbeb1d6e302500c8c49387eeff2d18e1a4ba94f415bde5fee07d"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/PROTOCOL_PROPOSAL.md",
+      "archive_path": "round06_objective_preparation/PROTOCOL_PROPOSAL.md",
+      "sha256": "aea5c76f422fb7cca286cd84f7bafaff230e2aa29b2ed3068fe7e4573f3245b6"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/ROUND06_PREPARATION_DECISION.md",
+      "archive_path": "round06_objective_preparation/ROUND06_PREPARATION_DECISION.md",
+      "sha256": "d8f7478f77bf660c32e75897d555b13f972e64abaac4385e2c9b44ab3e2e6458"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/SOURCE_LINEAGE.json",
+      "archive_path": "round06_objective_preparation/SOURCE_LINEAGE.json",
+      "sha256": "454ee6189e2435b36dabc005c3fa4d6c77252fff12778c7960794b46feef68e8"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/TECHNICAL_PREFLIGHT_PLAN.md",
+      "archive_path": "round06_objective_preparation/TECHNICAL_PREFLIGHT_PLAN.md",
+      "sha256": "15a147a541e3a3a7eaf9be0cf562086996d1de298922ec5432d29d41e719585b"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/TECHNICAL_SOURCE_REVIEW.json",
+      "archive_path": "round06_objective_preparation/TECHNICAL_SOURCE_REVIEW.json",
+      "sha256": "fbf76a414d89a459cf5fa3c956544a698b1f564c856622c107fa99b6dc592605"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/TRAIN_STATISTICS.json",
+      "archive_path": "round06_objective_preparation/TRAIN_STATISTICS.json",
+      "sha256": "d3d0ed5af2646959be0abcb9cebb50d7cdb2ef7fb70d7e073fe12a8b697953ae"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/common.py",
+      "archive_path": "round06_objective_preparation/common.py",
+      "sha256": "50a1ef987cbc635b3b5692364281498e66587b112d5573c765fea360470038cd"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/completion/CONTROL_REPEAT_CONTEXT.md",
+      "archive_path": "round06_objective_preparation/completion/CONTROL_REPEAT_CONTEXT.md",
+      "sha256": "f49ae5790f12837f91ce85a02b8439a550168ff805c0e78e573f7185b2a07abe"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/config.json",
+      "archive_path": "round06_objective_preparation/config.json",
+      "sha256": "072189823f3334e8bee8b6a468442f7d0331d1b65bf6e4bd3a0cb50053e87b23"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/execution_gate.py",
+      "archive_path": "round06_objective_preparation/execution_gate.py",
+      "sha256": "e0e03333f9f31cbb48a8b59812d12a4f07ba49c032dca3d33e30796ea626829c"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/freeze_preparation.py",
+      "archive_path": "round06_objective_preparation/freeze_preparation.py",
+      "sha256": "f00f64394efcd279c48b66ed8b83c0fc9fbf9f8e97785781b18cccd953b437af"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/fresh_model.py",
+      "archive_path": "round06_objective_preparation/fresh_model.py",
+      "sha256": "16ec3eb14eeafa3265ba0f35abf4ff174a2a20f155b408ed133635fa73a8c314"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/gpu_preflight.py",
+      "archive_path": "round06_objective_preparation/gpu_preflight.py",
+      "sha256": "61e06872bdefe45bee44ee52beecf03144440d89eb6572f10021387973045bcb"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/independent_gate_checks.py",
+      "archive_path": "round06_objective_preparation/independent_gate_checks.py",
+      "sha256": "334accea8382ec5208459782cb73f59ecfba98afbf7f00e0399f4dda2352a26f"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/independent_preflight_result_checks.py",
+      "archive_path": "round06_objective_preparation/independent_preflight_result_checks.py",
+      "sha256": "aabbd15210c718c2f056bbf502ff05d34bc3d280396e7b4c0ffb7e0c957b5172"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/launch.py",
+      "archive_path": "round06_objective_preparation/launch.py",
+      "sha256": "d49ade9238f942dbbf09aea1f454ae0fed2628f11a9ac4c08f7b9b656f137811"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/metrics.py",
+      "archive_path": "round06_objective_preparation/metrics.py",
+      "sha256": "1465cc964aea7bd0e06616be3cf8f862e876c7c57d9df3103e81e57817761bdc"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/model_config.json",
+      "archive_path": "round06_objective_preparation/model_config.json",
+      "sha256": "ff24143918e722d34a126b172f7d311c2a673a21c6756c89077fa05b05d6592f"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/objective.py",
+      "archive_path": "round06_objective_preparation/objective.py",
+      "sha256": "a24c809d7e031332e5daba8ad0dbe82bf7cdf1acfc6d4bec923f9e4fc4ae3469"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/ops/GPU_PRELAUNCH_GUARD_FAILURE.md",
+      "archive_path": "round06_objective_preparation/ops/GPU_PRELAUNCH_GUARD_FAILURE.md",
+      "sha256": "6d165cfe6eb8cf5fd40e58e2578a38197081becb82f42d08823b5226260ed82f"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/ops/cpu_synthetic_01.log",
+      "archive_path": "round06_objective_preparation/ops/cpu_synthetic_01.log",
+      "sha256": "6deda14aef401790d9613460f9e664d11e744b731f9e4770557826aa0b8c257b"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/ops/gpu_preflight_attempt/COMPLETE.json",
+      "archive_path": "round06_objective_preparation/ops/gpu_preflight_attempt/COMPLETE.json",
+      "sha256": "ecfe67939ff7c2cf9b5a7b6d49db259e97e6d97af46adba8c4f07f76f890bb0d"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/ops/gpu_preflight_attempt/GPU_ADMISSION.xml",
+      "archive_path": "round06_objective_preparation/ops/gpu_preflight_attempt/GPU_ADMISSION.xml",
+      "sha256": "cf387b699f11f6a87481e693808f3bdecc8cf23aed0ceaee177ead91eb2f55ee"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/ops/gpu_preflight_attempt/LAUNCH_RECEIPT.json",
+      "archive_path": "round06_objective_preparation/ops/gpu_preflight_attempt/LAUNCH_RECEIPT.json",
+      "sha256": "8aa9032604fb960f0aa28433f208694b641de233a23135877d42687e30179cbe"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/ops/gpu_preflight_attempt/REGISTRATION_TOOL.log",
+      "archive_path": "round06_objective_preparation/ops/gpu_preflight_attempt/REGISTRATION_TOOL.log",
+      "sha256": "fd43aebd79ecbcfdcb4f9144a55085ce5266bb6df595034215f802127a8b8ea6"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/ops/gpu_preflight_attempt/stage.log",
+      "archive_path": "round06_objective_preparation/ops/gpu_preflight_attempt/stage.log",
+      "sha256": "a21634cf8c04742003c02a8f527522ecabab893b29a3d846e4b8c7e78e38c6da"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/partition_data.py",
+      "archive_path": "round06_objective_preparation/partition_data.py",
+      "sha256": "9aaa08bb8878803cc42961d336345d5fa53f5aad30d8cfdf135d0fd35dd6757d"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/predictor.py",
+      "archive_path": "round06_objective_preparation/predictor.py",
+      "sha256": "569acc33b314504ff69df4a00f046c32480ea8894d346f256d4f6d8afba33371"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/preflight_helpers.py",
+      "archive_path": "round06_objective_preparation/preflight_helpers.py",
+      "sha256": "f92c3a3ae455b55aaf8307014c5abbb16c851c32bdaceffc47fe5f2feff82d1b"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/resources.py",
+      "archive_path": "round06_objective_preparation/resources.py",
+      "sha256": "0e86e15d8be5c1e0e94bf8f85eea56a121e3aa493cb9c262e9248727b5beb918"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/run_gpu_preflight.py",
+      "archive_path": "round06_objective_preparation/run_gpu_preflight.py",
+      "sha256": "fa6e91e4019b97406734b30f42067253131416d0a5301840576882e5bb219cb5"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/runtime.py",
+      "archive_path": "round06_objective_preparation/runtime.py",
+      "sha256": "fb54c5073e261455ef43036f3d1f65bdaf89714fc9ddc690ec0ec3a773074f94"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/synthetic_checks.py",
+      "archive_path": "round06_objective_preparation/synthetic_checks.py",
+      "sha256": "b8897e29969ae4e92eb3c8aef76130aa1be6d7e43ff01b76793b6bbd15a1bc73"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/train.py",
+      "archive_path": "round06_objective_preparation/train.py",
+      "sha256": "c63f5f3b1da7257ce217b19d28fe0c3df15e63a57a51770f75c370f1b9cc8877"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/training.py",
+      "archive_path": "round06_objective_preparation/training.py",
+      "sha256": "821fae3660f82026f53bbb267e2f12b431da4963935c5ec63e6fbd607867fc2b"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/CPU_PREFLIGHT.json",
+      "archive_path": "round07_congruence_preparation/CPU_PREFLIGHT.json",
+      "sha256": "b5f7da4fad6f27f6b93e204d561594f9040946c46a3d6c5e48fbeb70f59ef777"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/CPU_PREFLIGHT_REVIEW.json",
+      "archive_path": "round07_congruence_preparation/CPU_PREFLIGHT_REVIEW.json",
+      "sha256": "27cb7fc4025de1595399549bcf359cb5da83a97f3f035b4bd1a379e5ed881a8c"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/CPU_SOURCE_REVIEW.json",
+      "archive_path": "round07_congruence_preparation/CPU_SOURCE_REVIEW.json",
+      "sha256": "329aace63fdf520ad850f3bfe93b142fe119fd793f9422feafbdedf60823700b"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/ENVIRONMENT.json",
+      "archive_path": "round07_congruence_preparation/ENVIRONMENT.json",
+      "sha256": "57c2f536b2af90baf8816a0924be5a7511e88ba0f35fbeda5b55e95fdf2540a9"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/FROZEN_MANIFEST.json",
+      "archive_path": "round07_congruence_preparation/FROZEN_MANIFEST.json",
+      "sha256": "68c052e909d0fcbe1671084edf7de1968f81f8f5e333bbfc2431fe3181c8c203"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/GPU_PREFLIGHT.json",
+      "archive_path": "round07_congruence_preparation/GPU_PREFLIGHT.json",
+      "sha256": "24e891e92c8c670361f406363153c5a39719106416108bcfc9b56813598296b6"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/GPU_PREFLIGHT_REVIEW.json",
+      "archive_path": "round07_congruence_preparation/GPU_PREFLIGHT_REVIEW.json",
+      "sha256": "e0a882ff6d44c9f221dbda56d46510a99dccf0105e2d3efa9afb1ff60b9a1b5b"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/GPU_UPDATE_PROGRESS.json",
+      "archive_path": "round07_congruence_preparation/GPU_UPDATE_PROGRESS.json",
+      "sha256": "75bfe314a6b4d2b768870a5fa5297d37d7fc0e139dcb4ef71b1aa385ebdc0b19"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/INDEPENDENT_GATE_CHECKS.json",
+      "archive_path": "round07_congruence_preparation/INDEPENDENT_GATE_CHECKS.json",
+      "sha256": "e9b328e6dad04acf407df931444b801db2ea5f6f6a5ad5be07f817f2bdc75fed"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/INDEPENDENT_PREFLIGHT_RESULT_CHECKS.json",
+      "archive_path": "round07_congruence_preparation/INDEPENDENT_PREFLIGHT_RESULT_CHECKS.json",
+      "sha256": "9d06b65426f56f04b2b71553cdcc8ad30c37520724748d4a9175f8000abb8a89"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/INDEPENDENT_PREFLIGHT_RESULT_CHECKS_01.log",
+      "archive_path": "round07_congruence_preparation/INDEPENDENT_PREFLIGHT_RESULT_CHECKS_01.log",
+      "sha256": "28ae740e2c99d65d4996022e63a207f953655dfaa6d97c7150ec93898ed290a7"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/INDEPENDENT_PROPOSAL_REVIEW.json",
+      "archive_path": "round07_congruence_preparation/INDEPENDENT_PROPOSAL_REVIEW.json",
+      "sha256": "33c8dae6f55d3c641cddd60270f7ffddad740695bbf524fb2d1c9e78b99df5c4"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/INDEPENDENT_PROPOSAL_REVIEW.md",
+      "archive_path": "round07_congruence_preparation/INDEPENDENT_PROPOSAL_REVIEW.md",
+      "sha256": "2bce01b973bae4a61725d65581fd39ce6f8537d7442ac17f70bb610f3dd37862"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/PRODUCTION_AUTHORIZATION_TEMPLATE.json",
+      "archive_path": "round07_congruence_preparation/PRODUCTION_AUTHORIZATION_TEMPLATE.json",
+      "sha256": "9b8f5bcd70eaa354dd8780ec4ed63f6cb277963d270ab2be6ed7bb9e1ed37492"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/PROPOSAL_MANIFEST.json",
+      "archive_path": "round07_congruence_preparation/PROPOSAL_MANIFEST.json",
+      "sha256": "3acc754a065a083330a4e6498ffebc755d7c4a57584bb2956a0c0eda994aed12"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/PROPOSED_SETTINGS.json",
+      "archive_path": "round07_congruence_preparation/PROPOSED_SETTINGS.json",
+      "sha256": "62cec5d56832674a81e61b333e311455f17e2c563f901cb45cd726f57c2ad169"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/PROTOCOL.md",
+      "archive_path": "round07_congruence_preparation/PROTOCOL.md",
+      "sha256": "ee22c436332e753de1636e3db5e6587a628f6e7925965748cd1a626abf710bda"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/PROTOCOL_PROPOSAL.md",
+      "archive_path": "round07_congruence_preparation/PROTOCOL_PROPOSAL.md",
+      "sha256": "9a6431b8aa0f6a697fcc79c1b4106ee357de2a90996c0072f6345ead79c6dfe6"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/ROUND07_PREPARATION_DECISION.md",
+      "archive_path": "round07_congruence_preparation/ROUND07_PREPARATION_DECISION.md",
+      "sha256": "637a3cd3006d3f5b84f8ca5314b6213b0bc3017dffeeafb7ed51c2a4c594c60b"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/SOURCE_LINEAGE.json",
+      "archive_path": "round07_congruence_preparation/SOURCE_LINEAGE.json",
+      "sha256": "437990ee21daeea8163f57228c064a81fccbc4cd9ed2ddf4753bbb95a00c89e0"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/TECHNICAL_PREFLIGHT_PLAN.md",
+      "archive_path": "round07_congruence_preparation/TECHNICAL_PREFLIGHT_PLAN.md",
+      "sha256": "92aec35ddd53a159a792611c5a3f28cea91950370238b5bbc4ea27bb38836946"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/TECHNICAL_SOURCE_REVIEW.json",
+      "archive_path": "round07_congruence_preparation/TECHNICAL_SOURCE_REVIEW.json",
+      "sha256": "5dff6ce331d9cb7cb5f17d54e0d6968b9317e2a4653cc1c2c8821d774a489f82"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/TRAIN_STATISTICS.json",
+      "archive_path": "round07_congruence_preparation/TRAIN_STATISTICS.json",
+      "sha256": "d3d0ed5af2646959be0abcb9cebb50d7cdb2ef7fb70d7e073fe12a8b697953ae"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/common.py",
+      "archive_path": "round07_congruence_preparation/common.py",
+      "sha256": "50a1ef987cbc635b3b5692364281498e66587b112d5573c765fea360470038cd"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/config.json",
+      "archive_path": "round07_congruence_preparation/config.json",
+      "sha256": "50ea8e4fa61b18411e1d6af7695b384f5a2ba36a501b38856a587e2b4d6b0f15"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/congruence.py",
+      "archive_path": "round07_congruence_preparation/congruence.py",
+      "sha256": "896293596a7b3325f07598ef88d1698a4abbfc9b5f4b1fa03fe413961cf4f8e1"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/execution_gate.py",
+      "archive_path": "round07_congruence_preparation/execution_gate.py",
+      "sha256": "f93ee9a7e01f0580243812d503bfdf93fa5d0ede10522d2f8f9d5d55c6eabcbf"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/freeze_preparation.py",
+      "archive_path": "round07_congruence_preparation/freeze_preparation.py",
+      "sha256": "c62bb80377eb8c7626429d16713fe48780ef6d700c6fc3618cb896754e5866d8"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/fresh_model.py",
+      "archive_path": "round07_congruence_preparation/fresh_model.py",
+      "sha256": "061c00ea9b0c5c45c08195e4c0d4c4308b0574faeb0c2bf15c13be741df92031"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/gpu_preflight.py",
+      "archive_path": "round07_congruence_preparation/gpu_preflight.py",
+      "sha256": "e21d7936ef9e7592b48b3865bd35ae866f42de8cca073afee48296996e108692"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/independent_gate_checks.py",
+      "archive_path": "round07_congruence_preparation/independent_gate_checks.py",
+      "sha256": "a51c5ca404065b707d448d0cf101c2ea828d1e226fc944fd5956cb69057c8693"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/independent_preflight_result_checks.py",
+      "archive_path": "round07_congruence_preparation/independent_preflight_result_checks.py",
+      "sha256": "6b1421b3596d0f2894af8f9abc112092c1dcdf98d3ce5eafbf090c422f57e4cf"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/launch.py",
+      "archive_path": "round07_congruence_preparation/launch.py",
+      "sha256": "46a40b17c96bf98c638e720e8931c5313f6dc4e4755ae2826462ab8c180b2abd"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/metrics.py",
+      "archive_path": "round07_congruence_preparation/metrics.py",
+      "sha256": "1465cc964aea7bd0e06616be3cf8f862e876c7c57d9df3103e81e57817761bdc"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/model_config.json",
+      "archive_path": "round07_congruence_preparation/model_config.json",
+      "sha256": "ff24143918e722d34a126b172f7d311c2a673a21c6756c89077fa05b05d6592f"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/ops/INDEPENDENT_GATE_CHECKS_01.log",
+      "archive_path": "round07_congruence_preparation/ops/INDEPENDENT_GATE_CHECKS_01.log",
+      "sha256": "56cdba8bf9645b0f4094f9ce43f461399b39a981993e071d558f7285ceb19c3b"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/ops/cpu_synthetic_01.log",
+      "archive_path": "round07_congruence_preparation/ops/cpu_synthetic_01.log",
+      "sha256": "2d4d33faa4f2aaf7a9dcabae1bca5ee546b080d9c546e3b3c458c044bc098a29"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/ops/gpu_preflight_attempt/COMPLETE.json",
+      "archive_path": "round07_congruence_preparation/ops/gpu_preflight_attempt/COMPLETE.json",
+      "sha256": "e19ac28e45c70c048d70e7c0e4607e9ce77c0259d4d1654bf6c0429bdb40e21f"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/ops/gpu_preflight_attempt/GPU_ADMISSION.xml",
+      "archive_path": "round07_congruence_preparation/ops/gpu_preflight_attempt/GPU_ADMISSION.xml",
+      "sha256": "13dbb46f756e522eb269f3bb8ee228915941dd2152a99062842dda52f83049f1"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/ops/gpu_preflight_attempt/LAUNCH_RECEIPT.json",
+      "archive_path": "round07_congruence_preparation/ops/gpu_preflight_attempt/LAUNCH_RECEIPT.json",
+      "sha256": "7ff9d1e55cf828f06a5f7223615ee79b5901dacba2131fc31bb624088f159b45"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/ops/gpu_preflight_attempt/REGISTRATION_TOOL.log",
+      "archive_path": "round07_congruence_preparation/ops/gpu_preflight_attempt/REGISTRATION_TOOL.log",
+      "sha256": "553fd4923d8da33a5d4edb4897621cfbf167e5f160793b667a02dd5bb164d979"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/ops/gpu_preflight_attempt/stage.log",
+      "archive_path": "round07_congruence_preparation/ops/gpu_preflight_attempt/stage.log",
+      "sha256": "5d779ea9692737aa7fd461fc88096e912dcd5516e7ef567496c7534c61ed4927"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/partition_data.py",
+      "archive_path": "round07_congruence_preparation/partition_data.py",
+      "sha256": "9aaa08bb8878803cc42961d336345d5fa53f5aad30d8cfdf135d0fd35dd6757d"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/predictor.py",
+      "archive_path": "round07_congruence_preparation/predictor.py",
+      "sha256": "e660e495145b546afebb658172d5f257a608628b63186af402d4dc9b24619bd3"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/preflight_helpers.py",
+      "archive_path": "round07_congruence_preparation/preflight_helpers.py",
+      "sha256": "d474df1d76ed6d08b465ad1925fd8a202b9c337fdbc7cff515cb583b472da971"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/resources.py",
+      "archive_path": "round07_congruence_preparation/resources.py",
+      "sha256": "0e86e15d8be5c1e0e94bf8f85eea56a121e3aa493cb9c262e9248727b5beb918"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/run_gpu_preflight.py",
+      "archive_path": "round07_congruence_preparation/run_gpu_preflight.py",
+      "sha256": "47bb918ce8e1829362b2cedcde5ad47d5ecae0a84a950febacc1a1a85f5dc437"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/runtime.py",
+      "archive_path": "round07_congruence_preparation/runtime.py",
+      "sha256": "fb54c5073e261455ef43036f3d1f65bdaf89714fc9ddc690ec0ec3a773074f94"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/synthetic_checks.py",
+      "archive_path": "round07_congruence_preparation/synthetic_checks.py",
+      "sha256": "ca6068ca37007e3ec244a9f458b283df2fb7ef4155c0684a265e09e36d6030f4"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/train.py",
+      "archive_path": "round07_congruence_preparation/train.py",
+      "sha256": "10e8ae49c9af485ffddb513c95c404382d88dde8635f797a4fc4804af59ef040"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/training.py",
+      "archive_path": "round07_congruence_preparation/training.py",
+      "sha256": "fa6ffe50a93d61ef8cbd908196d6c98bafea88970c7df25089c5960a5f491580"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/CPU_PREFLIGHT.json",
+      "archive_path": "round08_transport_preparation/CPU_PREFLIGHT.json",
+      "sha256": "0ac8ae7604cb60c4f06b09c8880d8cfc751f05c8ab8028ca777849161621bfbb"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/CPU_PREFLIGHT_REVIEW.json",
+      "archive_path": "round08_transport_preparation/CPU_PREFLIGHT_REVIEW.json",
+      "sha256": "cc7d482be5b1630664450be05918dbd74a65d519e5b818018ed08f6bb522da90"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/CPU_SOURCE_REVIEW.json",
+      "archive_path": "round08_transport_preparation/CPU_SOURCE_REVIEW.json",
+      "sha256": "53093efdabc392d59617b43ef40b0a562df36e3c432de6a1b0b2f718737f4c28"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/ENVIRONMENT.json",
+      "archive_path": "round08_transport_preparation/ENVIRONMENT.json",
+      "sha256": "57c2f536b2af90baf8816a0924be5a7511e88ba0f35fbeda5b55e95fdf2540a9"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/FROZEN_MANIFEST.json",
+      "archive_path": "round08_transport_preparation/FROZEN_MANIFEST.json",
+      "sha256": "de058a68305fe66df2bc3a16243d4121b9561d8990f303564b26a6a47b6b5146"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/GPU_PREFLIGHT.json",
+      "archive_path": "round08_transport_preparation/GPU_PREFLIGHT.json",
+      "sha256": "9254d560275f8c6a2d7c2e47ea249ae999a7e4855d84be81be4821174d191acf"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/GPU_PREFLIGHT_REVIEW.json",
+      "archive_path": "round08_transport_preparation/GPU_PREFLIGHT_REVIEW.json",
+      "sha256": "e9be9f22831b5bf55f09c87b05dbceb8fb8af1455964656c3f6afb54311090a4"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/GPU_UPDATE_PROGRESS.json",
+      "archive_path": "round08_transport_preparation/GPU_UPDATE_PROGRESS.json",
+      "sha256": "2694b60e2b34dae29b234038fb6605464a52be93a9b7215ecced35cf971a2d56"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/INDEPENDENT_GATE_CHECKS.json",
+      "archive_path": "round08_transport_preparation/INDEPENDENT_GATE_CHECKS.json",
+      "sha256": "5fafd221f41378679b8b0cb73d74b5e289c691f1b14e1d4fc16ad5da977b301e"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/INDEPENDENT_GATE_CHECKS_01.log",
+      "archive_path": "round08_transport_preparation/INDEPENDENT_GATE_CHECKS_01.log",
+      "sha256": "7efea7240d89e268a715a5c72846db606d9b87376f26cbb615528d7de8ba02e2"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/INDEPENDENT_PREFLIGHT_RESULT_CHECKS.json",
+      "archive_path": "round08_transport_preparation/INDEPENDENT_PREFLIGHT_RESULT_CHECKS.json",
+      "sha256": "cc0da44a5ad152a269dfebd1bce5cf0745b6e639c9a952492b7c57dd01a23894"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/INDEPENDENT_PREFLIGHT_RESULT_CHECKS_01.log",
+      "archive_path": "round08_transport_preparation/INDEPENDENT_PREFLIGHT_RESULT_CHECKS_01.log",
+      "sha256": "8109c70536093853d4fa2a98d631231d24a66cd62ece659fcef494952cebe3cc"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/INDEPENDENT_PREFLIGHT_RESULT_CHECKS_02.log",
+      "archive_path": "round08_transport_preparation/INDEPENDENT_PREFLIGHT_RESULT_CHECKS_02.log",
+      "sha256": "fae4884759248ac9025e006c1b428623ce04c992b3aec7f3fc2b39e7b947df0c"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/PRODUCTION_AUTHORIZATION_TEMPLATE.json",
+      "archive_path": "round08_transport_preparation/PRODUCTION_AUTHORIZATION_TEMPLATE.json",
+      "sha256": "51f7f562acbc9cc4850fffd958602a0a0f48a01062cb5146f6324d71f35d6b00"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/PROTOCOL.md",
+      "archive_path": "round08_transport_preparation/PROTOCOL.md",
+      "sha256": "80b8604431e4158498377ef3117de222e71eff2d298a7cb7aaef35cb084b29e9"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/PROTOCOL_PROPOSAL.md",
+      "archive_path": "round08_transport_preparation/PROTOCOL_PROPOSAL.md",
+      "sha256": "5b5bed1529acb13e9bf8b55786302b43a754601659d67a5643751613f0c8ce9b"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/REGISTRATION_BARRIER_CHECKS.json",
+      "archive_path": "round08_transport_preparation/REGISTRATION_BARRIER_CHECKS.json",
+      "sha256": "d391d40abc7385fb1abf84d8dd8cbcec2bd8df4e362f2836b1a66a558dbbec54"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/REGISTRATION_BARRIER_NOTE.md",
+      "archive_path": "round08_transport_preparation/REGISTRATION_BARRIER_NOTE.md",
+      "sha256": "d2b05bceb40f650912593dbba8b0bc7e739013e70a0cdd9d0f3f008118d3d3b4"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/REGISTRATION_BARRIER_RESULT_REVIEW.json",
+      "archive_path": "round08_transport_preparation/REGISTRATION_BARRIER_RESULT_REVIEW.json",
+      "sha256": "388dbcab57435613eadb8da03c7c6ac3cc84589155b12d523944311330d598c7"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/REGISTRATION_BARRIER_SOURCE_REVIEW.json",
+      "archive_path": "round08_transport_preparation/REGISTRATION_BARRIER_SOURCE_REVIEW.json",
+      "sha256": "2b9590777bb02fb97d885c81e15ab9124bba01a31fef5a836da6bce0af543f89"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/ROUND08_PREPARATION_DECISION.md",
+      "archive_path": "round08_transport_preparation/ROUND08_PREPARATION_DECISION.md",
+      "sha256": "a227764a9540cfa4f89dd9ed8ea48aa923d65bb4152f2e90ff734073601379a1"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/RUNNER_HANDOFF.md",
+      "archive_path": "round08_transport_preparation/RUNNER_HANDOFF.md",
+      "sha256": "f2a9bed9121b2ccc7a6a834a4aa2ba8eb950fe1424e48160ca7cdde64158711c"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/SOURCE_LINEAGE.json",
+      "archive_path": "round08_transport_preparation/SOURCE_LINEAGE.json",
+      "sha256": "6f814d423309c76c0b130452bd4e78e180b03fbfec72981856cd0c8e79286805"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/TECHNICAL_PREFLIGHT_PLAN.md",
+      "archive_path": "round08_transport_preparation/TECHNICAL_PREFLIGHT_PLAN.md",
+      "sha256": "30484b69d3dd02e93154c07b8f91c17d1ad999d84ea0bfcd4133218b5544271f"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/TECHNICAL_SOURCE_REVIEW.json",
+      "archive_path": "round08_transport_preparation/TECHNICAL_SOURCE_REVIEW.json",
+      "sha256": "0336abb2c1f9133b34fdc94f5246207f7581b3a2ca1650ef7d41f453a02f52b9"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/TRAIN_STATISTICS.json",
+      "archive_path": "round08_transport_preparation/TRAIN_STATISTICS.json",
+      "sha256": "d3d0ed5af2646959be0abcb9cebb50d7cdb2ef7fb70d7e073fe12a8b697953ae"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/common.py",
+      "archive_path": "round08_transport_preparation/common.py",
+      "sha256": "50a1ef987cbc635b3b5692364281498e66587b112d5573c765fea360470038cd"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/completion/INDEPENDENT_RESULT_CHECKS.json",
+      "archive_path": "round08_transport_preparation/completion/INDEPENDENT_RESULT_CHECKS.json",
+      "sha256": "496686c4dccbffe768b9913eb360b038b03fe23e51821bffb9950ac216df2e33"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/completion/NEXT_RESEARCH_QUESTION.md",
+      "archive_path": "round08_transport_preparation/completion/NEXT_RESEARCH_QUESTION.md",
+      "sha256": "06ab4c24577e178ca374377361058295fbedd0e7fffca9982d8862227bf0d191"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/completion/ROUND08_REPORT.md",
+      "archive_path": "round08_transport_preparation/completion/ROUND08_REPORT.md",
+      "sha256": "14a2425b492c01af8e9d0756a47ede7dbc8e68254117f0752d14f30d24057e1b"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/completion/ROUND08_RESULTS.json",
+      "archive_path": "round08_transport_preparation/completion/ROUND08_RESULTS.json",
+      "sha256": "5ba356f7e37def370d09492855378b580cf5fa5e66afb4db990d7b3a5cc0dd58"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/config.json",
+      "archive_path": "round08_transport_preparation/config.json",
+      "sha256": "0750d7a4976bf5a43618a131b60ac18bc66dab6739600c9eb51de9c7d91f2d8d"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/execution_gate.py",
+      "archive_path": "round08_transport_preparation/execution_gate.py",
+      "sha256": "9a811f2e812fc5565d51d19fc80c96f799d5d0a945fedb6e47c475d2f9eb5a87"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/freeze_preparation.py",
+      "archive_path": "round08_transport_preparation/freeze_preparation.py",
+      "sha256": "17e612ef183ad8d46f26cd9d1463fec3e098a936d678598c271c00ab84eae872"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/fresh_model.py",
+      "archive_path": "round08_transport_preparation/fresh_model.py",
+      "sha256": "93bd3aaa0e1a7980320bff1552e284266a6e72d870267a116e3c40ed2f3dccca"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/gpu_preflight.py",
+      "archive_path": "round08_transport_preparation/gpu_preflight.py",
+      "sha256": "045c56bbb3516805e9bed12c59b21743d532d7952a2a6e4083be396c63ac5175"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/independent_gate_checks.py",
+      "archive_path": "round08_transport_preparation/independent_gate_checks.py",
+      "sha256": "090ac449d245611157b55a3398dafd19a51b18dfaebdebf4b58e72cba6d71fff"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/independent_preflight_result_checks.py",
+      "archive_path": "round08_transport_preparation/independent_preflight_result_checks.py",
+      "sha256": "0e48b1c925613557957205ed8949b84646d7e58b8d6632ef526cad7720d99342"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/independent_technical_review.py",
+      "archive_path": "round08_transport_preparation/independent_technical_review.py",
+      "sha256": "82a8adb6d84e725b2d8a2f5180a0e649b7f56b563a8dfd89af00fc6380ff6659"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/launch.py",
+      "archive_path": "round08_transport_preparation/launch.py",
+      "sha256": "798cc46044929963c525ce7332af955b3a0ea929d5f4f745d7edd7ac5fadd25d"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/metrics.py",
+      "archive_path": "round08_transport_preparation/metrics.py",
+      "sha256": "1465cc964aea7bd0e06616be3cf8f862e876c7c57d9df3103e81e57817761bdc"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/model_config.json",
+      "archive_path": "round08_transport_preparation/model_config.json",
+      "sha256": "ff24143918e722d34a126b172f7d311c2a673a21c6756c89077fa05b05d6592f"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/ops/CPU_INVOCATION_NOTE.json",
+      "archive_path": "round08_transport_preparation/ops/CPU_INVOCATION_NOTE.json",
+      "sha256": "349e64beb4310dc88e312d319b5db91354a7290b366fa208761ad47ef139abe2"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/ops/FIRST_EPOCH_METADATA.json",
+      "archive_path": "round08_transport_preparation/ops/FIRST_EPOCH_METADATA.json",
+      "sha256": "c0bec70bbc704329be223b1aec39a60551e4ca2082d72f529c64eb42de14a864"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/ops/cpu_synthetic_01.exit",
+      "archive_path": "round08_transport_preparation/ops/cpu_synthetic_01.exit",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/ops/cpu_synthetic_01.log",
+      "archive_path": "round08_transport_preparation/ops/cpu_synthetic_01.log",
+      "sha256": "ede487096694ae4cb202818086a061fd808d181c3f8b7cf19be9c0c7b4b67403"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/ops/cpu_synthetic_01.pid",
+      "archive_path": "round08_transport_preparation/ops/cpu_synthetic_01.pid",
+      "sha256": "6361ef35651f2204f1c13123f9afbcd84c01980072811c7ef8c3b67f1cc1114f"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/ops/gpu_preflight_attempt/COMPLETE.json",
+      "archive_path": "round08_transport_preparation/ops/gpu_preflight_attempt/COMPLETE.json",
+      "sha256": "c4c0d5e86dd7fe8fa693bce3d52a52702db479b87f7755ac34b8c361e05f6332"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/ops/gpu_preflight_attempt/GPU_ADMISSION.xml",
+      "archive_path": "round08_transport_preparation/ops/gpu_preflight_attempt/GPU_ADMISSION.xml",
+      "sha256": "76055cfa715fecb53d71d6f523d0e65fed3dcbc856e6bcad9dc6e8ceb2928858"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/ops/gpu_preflight_attempt/LAUNCH_RECEIPT.json",
+      "archive_path": "round08_transport_preparation/ops/gpu_preflight_attempt/LAUNCH_RECEIPT.json",
+      "sha256": "942ddb317f6699072151003dad491c652baad34039462e27cf168bda42c96bb8"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/ops/gpu_preflight_attempt/REGISTRATION_TOOL.log",
+      "archive_path": "round08_transport_preparation/ops/gpu_preflight_attempt/REGISTRATION_TOOL.log",
+      "sha256": "280b727aeabcb87391f79b6f4769d0e3892bd45ee7d51af7831ee5090053d151"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/ops/gpu_preflight_attempt/stage.log",
+      "archive_path": "round08_transport_preparation/ops/gpu_preflight_attempt/stage.log",
+      "sha256": "3e5bf387fbe2de7fed0a4ff951b742d937ed584fc853efc160c0628ee8aed63a"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/ops/registration_barrier_01.log",
+      "archive_path": "round08_transport_preparation/ops/registration_barrier_01.log",
+      "sha256": "60ba596cd25243cb1246b121893bab4a38747e395817ead0c9fce671ef9e8af2"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/partition_data.py",
+      "archive_path": "round08_transport_preparation/partition_data.py",
+      "sha256": "9aaa08bb8878803cc42961d336345d5fa53f5aad30d8cfdf135d0fd35dd6757d"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/predictor.py",
+      "archive_path": "round08_transport_preparation/predictor.py",
+      "sha256": "f5129e1a41f9fe743853cd99dfbbd2bf538df793da9f1be9739de1ca8cdc1620"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/preflight_helpers.py",
+      "archive_path": "round08_transport_preparation/preflight_helpers.py",
+      "sha256": "d474df1d76ed6d08b465ad1925fd8a202b9c337fdbc7cff515cb583b472da971"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/registered_entry.py",
+      "archive_path": "round08_transport_preparation/registered_entry.py",
+      "sha256": "6b62c9f041de9f0e54ec54e48cb97a8c6189a074ef22c762551fa95a70902b84"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/registration_barrier_checks.py",
+      "archive_path": "round08_transport_preparation/registration_barrier_checks.py",
+      "sha256": "04177a7668a12022f86af63deed63009cbd5250c44757e1efd38fb4c0d571e5e"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/resources.py",
+      "archive_path": "round08_transport_preparation/resources.py",
+      "sha256": "0e86e15d8be5c1e0e94bf8f85eea56a121e3aa493cb9c262e9248727b5beb918"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/reviewer_history/identity_state_check/initial_reviewer.log",
+      "archive_path": "round08_transport_preparation/reviewer_history/identity_state_check/initial_reviewer.log",
+      "sha256": "8109c70536093853d4fa2a98d631231d24a66cd62ece659fcef494952cebe3cc"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/reviewer_history/identity_state_check/initial_reviewer.py",
+      "archive_path": "round08_transport_preparation/reviewer_history/identity_state_check/initial_reviewer.py",
+      "sha256": "517ece784e728eba330d0473e790feaa6eb82638fa344108ef6c625d2354f375"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/run_gpu_preflight.py",
+      "archive_path": "round08_transport_preparation/run_gpu_preflight.py",
+      "sha256": "ac98568441a73b8a48046214b55f5fea56e12c48560e8b770669aa2568fe1029"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/runtime.py",
+      "archive_path": "round08_transport_preparation/runtime.py",
+      "sha256": "fb54c5073e261455ef43036f3d1f65bdaf89714fc9ddc690ec0ec3a773074f94"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/synthetic_checks.py",
+      "archive_path": "round08_transport_preparation/synthetic_checks.py",
+      "sha256": "65c3e35425db5d924681a8d7fdf226920ab451afb75b3869eaea54a7213cb422"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/train.py",
+      "archive_path": "round08_transport_preparation/train.py",
+      "sha256": "033aabea171b0fcdb12019ae8aaaaa89d4831ec9509727ac39b5391308acc894"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/training.py",
+      "archive_path": "round08_transport_preparation/training.py",
+      "sha256": "6d81455173da42d90aadc0781aa0cca13ed7e7ab6478519498c50d70c7c7bc2b"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/transport.py",
+      "archive_path": "round08_transport_preparation/transport.py",
+      "sha256": "99d7983cece395a9c4c9ecb9c8d6253ca9f815da8988638c12b14533c70844b9"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/CPU_PREFLIGHT.json",
+      "archive_path": "round09_regularization_preparation/CPU_PREFLIGHT.json",
+      "sha256": "dfca79770fa451a64e08bd936b80294301829d527a10e60a48ccfe0e98d854c5"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/CPU_PREFLIGHT_REVIEW.json",
+      "archive_path": "round09_regularization_preparation/CPU_PREFLIGHT_REVIEW.json",
+      "sha256": "c2147eb3be3b14ccf7a6fcbc9645f295058d78fd33223306494ed4e95f0e214a"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/CPU_SOURCE_REVIEW.json",
+      "archive_path": "round09_regularization_preparation/CPU_SOURCE_REVIEW.json",
+      "sha256": "ca35f1c8ccfc9996032e72bab0cd7bec654290081de7e8b0951ec3973b4e21cd"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/ENVIRONMENT.json",
+      "archive_path": "round09_regularization_preparation/ENVIRONMENT.json",
+      "sha256": "57c2f536b2af90baf8816a0924be5a7511e88ba0f35fbeda5b55e95fdf2540a9"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/FROZEN_MANIFEST.json",
+      "archive_path": "round09_regularization_preparation/FROZEN_MANIFEST.json",
+      "sha256": "52e815958178f2eeb691a2f185eb37e4b54276d867c08061c58ef1eff653c930"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/GPU_PREFLIGHT.json",
+      "archive_path": "round09_regularization_preparation/GPU_PREFLIGHT.json",
+      "sha256": "a32a7fe8759e1ca171c6dee2efca91374c5f1e749e5a95235cacb6682add77ac"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/GPU_PREFLIGHT_REVIEW.json",
+      "archive_path": "round09_regularization_preparation/GPU_PREFLIGHT_REVIEW.json",
+      "sha256": "2f0342e15e41b8e3cb24c5306bd035d8728be3c154ebf5232f286da3da121555"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/GPU_UPDATE_PROGRESS.json",
+      "archive_path": "round09_regularization_preparation/GPU_UPDATE_PROGRESS.json",
+      "sha256": "71e8f20316e6819ef2476191722449be057e5459c7608cc715875489f34e2888"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/INDEPENDENT_ADMISSION_FAILURE_REVIEW.json",
+      "archive_path": "round09_regularization_preparation/INDEPENDENT_ADMISSION_FAILURE_REVIEW.json",
+      "sha256": "b1b9e4014df4b2352b47277cc826cdbb10911e76dbc00e23fdf59b749794eb88"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/INDEPENDENT_CPU_RESULT_CHECKS.json",
+      "archive_path": "round09_regularization_preparation/INDEPENDENT_CPU_RESULT_CHECKS.json",
+      "sha256": "650371d1df59d4227cdbf110853da19dbb21c12bf4697714bdc10d41c229ca18"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/INDEPENDENT_CPU_RESULT_CHECKS_01.log",
+      "archive_path": "round09_regularization_preparation/INDEPENDENT_CPU_RESULT_CHECKS_01.log",
+      "sha256": "cefa7ed078728ee35c8be82eda0e6f8a6fe185e5c003a3053e49a0f59fbe752f"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/INDEPENDENT_FINAL_PREPARATION_CHECKS.json",
+      "archive_path": "round09_regularization_preparation/INDEPENDENT_FINAL_PREPARATION_CHECKS.json",
+      "sha256": "1734e4d1a063705a4042ccea203f0c43df8fe7f4b841c8f3eb4e769f57598716"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/INDEPENDENT_FINAL_PREPARATION_CHECKS_01.log",
+      "archive_path": "round09_regularization_preparation/INDEPENDENT_FINAL_PREPARATION_CHECKS_01.log",
+      "sha256": "d2677d2c39031a16f5414d70b7e4de78f1b6f82185701d0db804bf6a83241cbd"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/INDEPENDENT_FINAL_PREPARATION_CHECKS_02.log",
+      "archive_path": "round09_regularization_preparation/INDEPENDENT_FINAL_PREPARATION_CHECKS_02.log",
+      "sha256": "0d81ae882c880c4d07de9eb6bdbd5232e942f64246f5f2644731b22294a35051"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/INDEPENDENT_GATE_CHECKS.json",
+      "archive_path": "round09_regularization_preparation/INDEPENDENT_GATE_CHECKS.json",
+      "sha256": "e19eb73e2c1bfbb1288c1b0fea75183bceae5cdddb14e6933f6ab7ecd00c0f01"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/INDEPENDENT_GATE_CHECKS_01.log",
+      "archive_path": "round09_regularization_preparation/INDEPENDENT_GATE_CHECKS_01.log",
+      "sha256": "865e80fdb6eb104d66cff93509b9bef528f3d7c9af75fec2a3ee318b381871a5"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/INDEPENDENT_PREFLIGHT_RESULT_CHECKS.json",
+      "archive_path": "round09_regularization_preparation/INDEPENDENT_PREFLIGHT_RESULT_CHECKS.json",
+      "sha256": "b184eb534987c87e54c3617a3c3f8869cdfe3b05a660771573d3bb365e88de1c"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/INDEPENDENT_PREFLIGHT_RESULT_CHECKS_01.log",
+      "archive_path": "round09_regularization_preparation/INDEPENDENT_PREFLIGHT_RESULT_CHECKS_01.log",
+      "sha256": "f0d78db3cf761962a2dc6e80d9c260f8ac1e8d1e42b052b5000bce13335aec9f"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/INDEPENDENT_PREPARATION_REVIEW.json",
+      "archive_path": "round09_regularization_preparation/INDEPENDENT_PREPARATION_REVIEW.json",
+      "sha256": "08d0c6e804d50b019f027b05282fbb1168d3c7ec59aa0e59b6068ddf0e5225cb"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/INDEPENDENT_PREPARATION_REVIEW.md",
+      "archive_path": "round09_regularization_preparation/INDEPENDENT_PREPARATION_REVIEW.md",
+      "sha256": "f8c554c683adf901fdde0216b47680374dba3f16c804c5bba8b3686ce64fbbd1"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/INDEPENDENT_PREPARATION_REVIEW_MANIFEST.json",
+      "archive_path": "round09_regularization_preparation/INDEPENDENT_PREPARATION_REVIEW_MANIFEST.json",
+      "sha256": "947d7d8415772d044010ffba81ea5544d491fbe2355d79ca11c7904652cd9d27"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/INDEPENDENT_PROPOSAL_REVIEW.json",
+      "archive_path": "round09_regularization_preparation/INDEPENDENT_PROPOSAL_REVIEW.json",
+      "sha256": "95aecb3b5f4d8b67d261fc95662710a537652c663a7b367df0fb75bd63f36c52"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/INDEPENDENT_PROPOSAL_REVIEW.md",
+      "archive_path": "round09_regularization_preparation/INDEPENDENT_PROPOSAL_REVIEW.md",
+      "sha256": "4e9eaa3648fdf12a29465628c3bdfa884c588910d6e88f4fba594b2552aed735"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/INDEPENDENT_REFERENCE_CHECKS.json",
+      "archive_path": "round09_regularization_preparation/INDEPENDENT_REFERENCE_CHECKS.json",
+      "sha256": "75e205fb5c00710c0571cb7d41023bb2691dae1dc92394b5549ddf9d90b365f4"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/INDEPENDENT_REFERENCE_CHECKS_01.log",
+      "archive_path": "round09_regularization_preparation/INDEPENDENT_REFERENCE_CHECKS_01.log",
+      "sha256": "29e64bb6e47c85d41ac2da6199bbe43ef4fc79906dadac275bf0e221954130cb"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/INDEPENDENT_REVIEW_MANIFEST.json",
+      "archive_path": "round09_regularization_preparation/INDEPENDENT_REVIEW_MANIFEST.json",
+      "sha256": "1ddee16f0ad545a2a1b25ef9c09c955902fb75bc6ffbcefe1467b1c889ac2e37"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/INDEPENDENT_REVIEW_STATUS.md",
+      "archive_path": "round09_regularization_preparation/INDEPENDENT_REVIEW_STATUS.md",
+      "sha256": "8068fdea6d626247731127fee7385eb962026f42ca8f73ea973d543d5a7ca298"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/PARAMETER_ROSTER.json",
+      "archive_path": "round09_regularization_preparation/PARAMETER_ROSTER.json",
+      "sha256": "290bd6dc4c635c90fc387202230a4af0b7758b38bad0a3570018e05510fb3943"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/PREPARATION_REPORT.md",
+      "archive_path": "round09_regularization_preparation/PREPARATION_REPORT.md",
+      "sha256": "ef3869c133a7f13dc5a1143ac78b057597527a8ab05b7ec1f66e0b40df4cdf9e"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/PREPARATION_STATUS.md",
+      "archive_path": "round09_regularization_preparation/PREPARATION_STATUS.md",
+      "sha256": "d516eff688d0034090ecf043b3ad02c5f923ea57039648720b005a16b22ce7c4"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/PRODUCTION_AUTHORIZATION_TEMPLATE.json",
+      "archive_path": "round09_regularization_preparation/PRODUCTION_AUTHORIZATION_TEMPLATE.json",
+      "sha256": "304fcbd3bf16478272cb35f96c6d3c4373122fae141ba8b0ec946ee6d125b96d"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/PROPOSAL_SETTINGS.json",
+      "archive_path": "round09_regularization_preparation/PROPOSAL_SETTINGS.json",
+      "sha256": "e81d0c9cfce235883e9c5f74d383aa4cd6298cefa7c869f9e03a519e4db11491"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/PROTOCOL.md",
+      "archive_path": "round09_regularization_preparation/PROTOCOL.md",
+      "sha256": "ffa1b4878aab1072d8891b7acd71372b7c5e00925b665728ede2c07a7947d3a2"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/PROTOCOL_PROPOSAL.md",
+      "archive_path": "round09_regularization_preparation/PROTOCOL_PROPOSAL.md",
+      "sha256": "3f45553a8a8e3d2b488f0c2b368ecb08f683d5d885885a3a549ae96f1eb46045"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/REFERENCE_MANIFEST.json",
+      "archive_path": "round09_regularization_preparation/REFERENCE_MANIFEST.json",
+      "sha256": "8585ef71f7f45f3a7f33efbbc4a99b13d2d24f2e30fe72d6f30488c866c77886"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/RESOURCE_HOLD_REPORT.md",
+      "archive_path": "round09_regularization_preparation/RESOURCE_HOLD_REPORT.md",
+      "sha256": "d5b45a76bca8ffda0aa09aa3902284e0afa0dc0c5a1c577fec695ca8c7f70107"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/RESOURCE_RETRY_CONTINUITY.json",
+      "archive_path": "round09_regularization_preparation/RESOURCE_RETRY_CONTINUITY.json",
+      "sha256": "d718c5934aa14e743351e6b8ec15b82b47e4d1e839107544d6cd8fe2860e9aae"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/RESOURCE_RETRY_SELECTION.json",
+      "archive_path": "round09_regularization_preparation/RESOURCE_RETRY_SELECTION.json",
+      "sha256": "df385dc7f33c4e4d83bf9326ab1c56c15d16f0faaeb39fc755e2ce8c0be4387f"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/RESOURCE_RETRY_SOURCE_REVIEW.json",
+      "archive_path": "round09_regularization_preparation/RESOURCE_RETRY_SOURCE_REVIEW.json",
+      "sha256": "a62e9a8e95a249866395fa1f3f3d989900574bd6bdb181546fa223690231362c"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/ROUND09_PREPARATION_DECISION.md",
+      "archive_path": "round09_regularization_preparation/ROUND09_PREPARATION_DECISION.md",
+      "sha256": "6b10b8b5a7d75e6a5c46537f8c8b9d126dcc2694d7cfec687e31f120c038d139"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/ROUND09_RESOURCE_RETRY_DECISION.md",
+      "archive_path": "round09_regularization_preparation/ROUND09_RESOURCE_RETRY_DECISION.md",
+      "sha256": "673bcc503705fe6063e14f02d3573738d82a12907f18e730d41d760c7ae277e8"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/RUNNER_HANDOFF.md",
+      "archive_path": "round09_regularization_preparation/RUNNER_HANDOFF.md",
+      "sha256": "0c8b98b0c9f926bf3cee79c51c2db77d37e3a0e13f4da4647e6d0eef90911db2"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/SOURCE_LINEAGE.json",
+      "archive_path": "round09_regularization_preparation/SOURCE_LINEAGE.json",
+      "sha256": "4159cba1c4f73ebb64827657140ef20fd6f14002237fa6596da28f3eeeb0311f"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/TECHNICAL_PREFLIGHT_PLAN.md",
+      "archive_path": "round09_regularization_preparation/TECHNICAL_PREFLIGHT_PLAN.md",
+      "sha256": "3fca9d8308ce21b93a020973f5e634a6b8f12c369e1e64e08741a0999374c4f7"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/TECHNICAL_SOURCE_REVIEW.json",
+      "archive_path": "round09_regularization_preparation/TECHNICAL_SOURCE_REVIEW.json",
+      "sha256": "5c4b82c015ec2b5abc475fbaa846757f7eb5b3fc9e0bc00991bacef0175ed457"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/TRAIN_STATISTICS.json",
+      "archive_path": "round09_regularization_preparation/TRAIN_STATISTICS.json",
+      "sha256": "d3d0ed5af2646959be0abcb9cebb50d7cdb2ef7fb70d7e073fe12a8b697953ae"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/admission01_preserved/MANIFEST.json",
+      "archive_path": "round09_regularization_preparation/admission01_preserved/MANIFEST.json",
+      "sha256": "ab9c820e719b241021879d786a5b78f04d95f103fe0e941344ea7e4592529e65"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/admission01_preserved/TECHNICAL_SOURCE_REVIEW.json",
+      "archive_path": "round09_regularization_preparation/admission01_preserved/TECHNICAL_SOURCE_REVIEW.json",
+      "sha256": "5c4b82c015ec2b5abc475fbaa846757f7eb5b3fc9e0bc00991bacef0175ed457"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/admission01_preserved/gpu_preflight.py",
+      "archive_path": "round09_regularization_preparation/admission01_preserved/gpu_preflight.py",
+      "sha256": "eea97776ff96ebc2cccbc9d2384e5d8c73e7a9f68a764ae0d8b30715b673bde0"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/admission01_preserved/ops/GPU1_REJECTED_ADMISSION_OBSERVED.xml",
+      "archive_path": "round09_regularization_preparation/admission01_preserved/ops/GPU1_REJECTED_ADMISSION_OBSERVED.xml",
+      "sha256": "08dfcff650aad749d3a6e35e63b41fc530d47c1adbfa27b80ad6d6ff21ad9f59"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/admission01_preserved/ops/GPU_ADMISSION_FAILURE.json",
+      "archive_path": "round09_regularization_preparation/admission01_preserved/ops/GPU_ADMISSION_FAILURE.json",
+      "sha256": "1bf757a0d80d2e3433705bbded9937cac131bf305d04a04feab715cb062f31fe"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/admission01_preserved/ops/GPU_WRAPPER_01.log",
+      "archive_path": "round09_regularization_preparation/admission01_preserved/ops/GPU_WRAPPER_01.log",
+      "sha256": "a679410b99a0df404a43b65bc6a219089e5030b41d5d9b271daa9939af91710c"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/admission01_preserved/ops/GPU_WRAPPER_EXECUTION_RECEIPT.json",
+      "archive_path": "round09_regularization_preparation/admission01_preserved/ops/GPU_WRAPPER_EXECUTION_RECEIPT.json",
+      "sha256": "f4d639c66561c200cd34395a4bebede74a532b5427a0a4e50dcfcebc8f069adc"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/admission01_preserved/registered_entry.py",
+      "archive_path": "round09_regularization_preparation/admission01_preserved/registered_entry.py",
+      "sha256": "6b62c9f041de9f0e54ec54e48cb97a8c6189a074ef22c762551fa95a70902b84"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/admission01_preserved/resources.py",
+      "archive_path": "round09_regularization_preparation/admission01_preserved/resources.py",
+      "sha256": "0e86e15d8be5c1e0e94bf8f85eea56a121e3aa493cb9c262e9248727b5beb918"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/admission01_preserved/run_gpu_preflight.py",
+      "archive_path": "round09_regularization_preparation/admission01_preserved/run_gpu_preflight.py",
+      "sha256": "656b5bb1f47faf81748f7c4ee268eee96cfb6cbe21625767777cd1ee2a10c166"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/common.py",
+      "archive_path": "round09_regularization_preparation/common.py",
+      "sha256": "50a1ef987cbc635b3b5692364281498e66587b112d5573c765fea360470038cd"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/config.json",
+      "archive_path": "round09_regularization_preparation/config.json",
+      "sha256": "85adb76ff33c3839ffd260900827b0507d87041ed5c0bda83f40d16086f61306"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/execution_gate.py",
+      "archive_path": "round09_regularization_preparation/execution_gate.py",
+      "sha256": "c73dfbb9abb494ad6bc95b5f5e13312ae34a1e9a7ab6dd1cf7c5b75d96dfde0c"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/freeze_preparation.py",
+      "archive_path": "round09_regularization_preparation/freeze_preparation.py",
+      "sha256": "c4afcacd2182e71bb7d2121a25966f91be8268305bd101054e0bba796c56601b"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/fresh_model.py",
+      "archive_path": "round09_regularization_preparation/fresh_model.py",
+      "sha256": "93bd3aaa0e1a7980320bff1552e284266a6e72d870267a116e3c40ed2f3dccca"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/gpu_preflight.py",
+      "archive_path": "round09_regularization_preparation/gpu_preflight.py",
+      "sha256": "eea97776ff96ebc2cccbc9d2384e5d8c73e7a9f68a764ae0d8b30715b673bde0"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/independent_cpu_result_checks.py",
+      "archive_path": "round09_regularization_preparation/independent_cpu_result_checks.py",
+      "sha256": "e8efaee80dfda5421a6108fa93db9df416c5ba4043abc80ca1fa23cbab2e9f94"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/independent_final_preparation_checks.py",
+      "archive_path": "round09_regularization_preparation/independent_final_preparation_checks.py",
+      "sha256": "69219bf923c8fa7d39fca5debc8a990bb1ea7d46501a28e1ce0c8866fd00237d"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/independent_gate_checks.py",
+      "archive_path": "round09_regularization_preparation/independent_gate_checks.py",
+      "sha256": "e274065f69ee2c04e3c5a6ba2a4045019af41dac6799f18ea8d79afe52ed1baf"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/independent_preflight_result_checks.py",
+      "archive_path": "round09_regularization_preparation/independent_preflight_result_checks.py",
+      "sha256": "390484bbbc7a83fd0cece7d50e9f392b5fc95bf2021bd81f513dfcf8794802ed"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/independent_proposal_references.py",
+      "archive_path": "round09_regularization_preparation/independent_proposal_references.py",
+      "sha256": "d4a9ebe909dfe2d0685da711f60740f130cc8c9c091037586465df10911fbcc5"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/launch.py",
+      "archive_path": "round09_regularization_preparation/launch.py",
+      "sha256": "82a762b64ab7f8a589f9b23cbab3d8181f52e33d48034240aad2dc56f2b4ee68"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/metrics.py",
+      "archive_path": "round09_regularization_preparation/metrics.py",
+      "sha256": "1465cc964aea7bd0e06616be3cf8f862e876c7c57d9df3103e81e57817761bdc"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/model_config.json",
+      "archive_path": "round09_regularization_preparation/model_config.json",
+      "sha256": "ff24143918e722d34a126b172f7d311c2a673a21c6756c89077fa05b05d6592f"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/ops/CPU_EXECUTION_RECEIPT.json",
+      "archive_path": "round09_regularization_preparation/ops/CPU_EXECUTION_RECEIPT.json",
+      "sha256": "5e707bfe632c2ffca6b2f672021a897dbecab2b15b5b9db073a4ff2ba965b0a3"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/ops/CPU_PREFLIGHT_01.log",
+      "archive_path": "round09_regularization_preparation/ops/CPU_PREFLIGHT_01.log",
+      "sha256": "711527f2da9af7a0525c6ebd8882ff77ced78473b73637691a960b5fdbf600a1"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/ops/FREEZE_01.log",
+      "archive_path": "round09_regularization_preparation/ops/FREEZE_01.log",
+      "sha256": "842342ccfec154bd4876d183a8963ab2575667b608a739322e43067808d225f6"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/ops/FREEZE_RECEIPT.json",
+      "archive_path": "round09_regularization_preparation/ops/FREEZE_RECEIPT.json",
+      "sha256": "a6541cabb76f89db01ff5b8246f3e6518cf7f994056cfaffad85691ddd88761a"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/ops/GPU1_REJECTED_ADMISSION_OBSERVED.xml",
+      "archive_path": "round09_regularization_preparation/ops/GPU1_REJECTED_ADMISSION_OBSERVED.xml",
+      "sha256": "08dfcff650aad749d3a6e35e63b41fc530d47c1adbfa27b80ad6d6ff21ad9f59"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/ops/GPU_ADMISSION_FAILURE.json",
+      "archive_path": "round09_regularization_preparation/ops/GPU_ADMISSION_FAILURE.json",
+      "sha256": "1bf757a0d80d2e3433705bbded9937cac131bf305d04a04feab715cb062f31fe"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/ops/GPU_WRAPPER_01.log",
+      "archive_path": "round09_regularization_preparation/ops/GPU_WRAPPER_01.log",
+      "sha256": "a679410b99a0df404a43b65bc6a219089e5030b41d5d9b271daa9939af91710c"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/ops/GPU_WRAPPER_EXECUTION_RECEIPT.json",
+      "archive_path": "round09_regularization_preparation/ops/GPU_WRAPPER_EXECUTION_RECEIPT.json",
+      "sha256": "f4d639c66561c200cd34395a4bebede74a532b5427a0a4e50dcfcebc8f069adc"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/ops/GPU_WRAPPER_RETRY01.log",
+      "archive_path": "round09_regularization_preparation/ops/GPU_WRAPPER_RETRY01.log",
+      "sha256": "a35bf6ab26f42c22ccb390f07b01004337f9170cdde28a408a1f919662790b22"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/ops/GPU_WRAPPER_RETRY01_EXECUTION_RECEIPT.json",
+      "archive_path": "round09_regularization_preparation/ops/GPU_WRAPPER_RETRY01_EXECUTION_RECEIPT.json",
+      "sha256": "20f3b202d24e0a642270f4e495b6887a0015f97fdce5d523961f0a1eb936e65a"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/ops/gpu_preflight_attempt_retry01/COMPLETE.json",
+      "archive_path": "round09_regularization_preparation/ops/gpu_preflight_attempt_retry01/COMPLETE.json",
+      "sha256": "0a05022d6bdad5d29493b416d9f146b7d657757ddd156ff24d0c3bb2d9a2d909"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/ops/gpu_preflight_attempt_retry01/GPU_ADMISSION.xml",
+      "archive_path": "round09_regularization_preparation/ops/gpu_preflight_attempt_retry01/GPU_ADMISSION.xml",
+      "sha256": "986f6cc6e2258700d28abe3d1460f65cd72bdecedc445c280d69e9007b98f8ad"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/ops/gpu_preflight_attempt_retry01/LAUNCH_RECEIPT.json",
+      "archive_path": "round09_regularization_preparation/ops/gpu_preflight_attempt_retry01/LAUNCH_RECEIPT.json",
+      "sha256": "13f2dc6ec15051d8308dc1b5b15e4400e9fe4c4ea211dbf69579842e7697e2a3"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/ops/gpu_preflight_attempt_retry01/REGISTRATION_TOOL.log",
+      "archive_path": "round09_regularization_preparation/ops/gpu_preflight_attempt_retry01/REGISTRATION_TOOL.log",
+      "sha256": "d844863d16723cf6316f8f3961f6f2a3ad4d9c29876a3d05790e26dd4c6a2845"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/ops/gpu_preflight_attempt_retry01/stage.log",
+      "archive_path": "round09_regularization_preparation/ops/gpu_preflight_attempt_retry01/stage.log",
+      "sha256": "c5f84c2ce5ab115cb8329704b12a797c4db688f9dfeb66b4c68c880adf4f2af6"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/partition_data.py",
+      "archive_path": "round09_regularization_preparation/partition_data.py",
+      "sha256": "9aaa08bb8878803cc42961d336345d5fa53f5aad30d8cfdf135d0fd35dd6757d"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/predictor.py",
+      "archive_path": "round09_regularization_preparation/predictor.py",
+      "sha256": "a47cd4f70f35255fb4a09269d12393fe43ecb2bf8a8da1e163291dd1a1359345"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/preflight_helpers.py",
+      "archive_path": "round09_regularization_preparation/preflight_helpers.py",
+      "sha256": "d474df1d76ed6d08b465ad1925fd8a202b9c337fdbc7cff515cb583b472da971"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/registered_entry.py",
+      "archive_path": "round09_regularization_preparation/registered_entry.py",
+      "sha256": "6b62c9f041de9f0e54ec54e48cb97a8c6189a074ef22c762551fa95a70902b84"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/regularization.py",
+      "archive_path": "round09_regularization_preparation/regularization.py",
+      "sha256": "22a8b43f9d6257ff8d27b596754f87effbf1ffee041d90dbd0a353064de287dd"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/resource_retry_entry.py",
+      "archive_path": "round09_regularization_preparation/resource_retry_entry.py",
+      "sha256": "56d048e1cda8e536b184d8123b437006b58db836d87d475f95ac3ad16c7dd2dc"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/resources.py",
+      "archive_path": "round09_regularization_preparation/resources.py",
+      "sha256": "0e86e15d8be5c1e0e94bf8f85eea56a121e3aa493cb9c262e9248727b5beb918"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/reviewer_history/TECHNICAL_BINDING_ATTEMPT01.json",
+      "archive_path": "round09_regularization_preparation/reviewer_history/TECHNICAL_BINDING_ATTEMPT01.json",
+      "sha256": "e10829d00f08ba3fee3561ce16d393109a3089108aa6d777c3864cc5ec30a008"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/reviewer_history/TECHNICAL_BINDING_ATTEMPT02.json",
+      "archive_path": "round09_regularization_preparation/reviewer_history/TECHNICAL_BINDING_ATTEMPT02.json",
+      "sha256": "9a8c00672ba8f26abd0103ac42d4a2f7a6ab40052d547df19da2d492d9c88251"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/reviewer_history/final_check_case01/CORRECTION.json",
+      "archive_path": "round09_regularization_preparation/reviewer_history/final_check_case01/CORRECTION.json",
+      "sha256": "d34411438f873985f382daa9514e98105ce5b9ccb160e07f37ae9375b2ec76f9"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/reviewer_history/final_check_case01/INDEPENDENT_FINAL_PREPARATION_CHECKS_01.log",
+      "archive_path": "round09_regularization_preparation/reviewer_history/final_check_case01/INDEPENDENT_FINAL_PREPARATION_CHECKS_01.log",
+      "sha256": "d2677d2c39031a16f5414d70b7e4de78f1b6f82185701d0db804bf6a83241cbd"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/reviewer_history/final_check_case01/independent_final_preparation_checks.py",
+      "archive_path": "round09_regularization_preparation/reviewer_history/final_check_case01/independent_final_preparation_checks.py",
+      "sha256": "62631564a99e1ce00ba007beaf752719be85e950e676503f9cdddaef5cfa5fb9"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/run_gpu_preflight.py",
+      "archive_path": "round09_regularization_preparation/run_gpu_preflight.py",
+      "sha256": "656b5bb1f47faf81748f7c4ee268eee96cfb6cbe21625767777cd1ee2a10c166"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/run_gpu_preflight_retry01.py",
+      "archive_path": "round09_regularization_preparation/run_gpu_preflight_retry01.py",
+      "sha256": "a9a43baf12f3f6f836afb4ddc2068be8f79a930c7da9561d05a67a401454dbdb"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/runtime.py",
+      "archive_path": "round09_regularization_preparation/runtime.py",
+      "sha256": "98155e4b9d3788b1a9b8bee2d4add3c74bb6b55ca9ae750f82349e3e7a2a6ee5"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/synthetic_checks.py",
+      "archive_path": "round09_regularization_preparation/synthetic_checks.py",
+      "sha256": "46271e8560a8ae5be8ca54b5d661c4feb71c4859c5eb517c55475a19274be281"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/train.py",
+      "archive_path": "round09_regularization_preparation/train.py",
+      "sha256": "93567911e630deff04a9f4e069e9dc9191a3761f552b6bbc87b0a051af05263e"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/training.py",
+      "archive_path": "round09_regularization_preparation/training.py",
+      "sha256": "cf4daf72ccd130afbe05e5baaf1e2c77a3b9518a2cf526e9e73a8012378aadc5"
+    },
+    {
+      "original_absolute_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/transport.py",
+      "archive_path": "round09_regularization_preparation/transport.py",
+      "sha256": "99d7983cece395a9c4c9ecb9c8d6253ca9f815da8988638c12b14533c70844b9"
+    }
+  ],
+  "instructions": "Restore bytes to original absolute paths in an isolated compatible environment. The full 360-source closure, sixteen distinct final supplemental members and all ten audit/proposal/history closure members (already within the source closure) are copied explicitly; restore bytes at original server paths. Source references to private_checkpoint_opaque_hashes, raw archives, indices or predictions never authorize payload copying. Private preflight states must not initialize production. Earlier full split/failure and deferred-QC records remain inherited from parent 5a3b0e0b and its ancestors. No production authority is included."
+}

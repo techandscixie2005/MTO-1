@@ -1,0 +1,5 @@
+# Registration must precede scientific execution
+
+Source review identified a race in the inherited preflight and production launchers: starting the worker before calling the registrar allowed computation even if registration failed. Round08 adds a standard-library entry process that waits on an inherited pipe before importing the scientific child. The parent releases it only after registrar exit 0, with the owned child PID and the exact review (preflight) or authorization (production) SHA. The same PID then executes the reviewed child; operating-system argv and ownership remain stable.
+
+The barrier times out after 90 seconds. Registration has a 45-second timeout. Failure closes the pipe without release; only the owned child may be terminated if it fails to exit within 10 seconds. No automatic retry occurs. The fixed synthetic barrier checks execute no model, dataset, optimizer, CUDA operation or production stage. The previous CPU scientific source/receipt/plan remain unchanged. This is operational registration hardening, with no change to equations, numerical criteria, update count or data scope.

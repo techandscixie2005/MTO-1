@@ -1,0 +1,16 @@
+{
+  "stage": "single_cpu_synthetic_01",
+  "python_child_exit_code_recorded": 0,
+  "recorded_child_exit_bytes_hex": "300a",
+  "shell_exit_line_error": "bash: line 13: exit: 0\\r: numeric argument required",
+  "interpretation": "The numerical Python child completed once with exit0 and PASS receipt; CRLF in the stdin shell exit line caused a nonzero outer SSH status. No numerical retry or source change.",
+  "outer_tool_exit_code": 1,
+  "python_child_pid_record": "1647487",
+  "command": "CUDA_VISIBLE_DEVICES= OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 PYTHONUNBUFFERED=1 /home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/bin/python synthetic_checks.py",
+  "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation",
+  "source_review_sha256": "53093efdabc392d59617b43ef40b0a562df36e3c432de6a1b0b2f718737f4c28",
+  "preflight_sha256": "0ac8ae7604cb60c4f06b09c8880d8cfc751f05c8ab8028ca777849161621bfbb",
+  "log_sha256": "ede487096694ae4cb202818086a061fd808d181c3f8b7cf19be9c0c7b4b67403",
+  "optimizer_updates": 0,
+  "numerical_stage_repeated": false
+}

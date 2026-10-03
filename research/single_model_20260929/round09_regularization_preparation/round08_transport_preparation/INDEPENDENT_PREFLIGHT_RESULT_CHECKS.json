@@ -1,0 +1,36 @@
+{
+  "exact_nine_updates_and_first128_TRAIN_verified": true,
+  "fixed_replay_tolerances_and_exact_RNG_order_passed": true,
+  "input_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/GPU_PREFLIGHT.json": "c0a62e24963ed3158f48524fff3f77fae5bce98b91144962b16bb839bcca99a9",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/CPU_PREFLIGHT_REVIEW.json": "cc7d482be5b1630664450be05918dbd74a65d519e5b818018ed08f6bb522da90",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/GPU_PREFLIGHT.json": "9254d560275f8c6a2d7c2e47ea249ae999a7e4855d84be81be4821174d191acf",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/GPU_UPDATE_PROGRESS.json": "2694b60e2b34dae29b234038fb6605464a52be93a9b7215ecced35cf971a2d56",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/REGISTRATION_BARRIER_RESULT_REVIEW.json": "388dbcab57435613eadb8da03c7c6ac3cc84589155b12d523944311330d598c7",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/TECHNICAL_SOURCE_REVIEW.json": "0336abb2c1f9133b34fdc94f5246207f7581b3a2ca1650ef7d41f453a02f52b9",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/independent_preflight_result_checks.py": "0e48b1c925613557957205ed8949b84646d7e58b8d6632ef526cad7720d99342",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/ops/gpu_preflight_attempt/COMPLETE.json": "c4c0d5e86dd7fe8fa693bce3d52a52702db479b87f7755ac34b8c361e05f6332",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/ops/gpu_preflight_attempt/GPU_ADMISSION.xml": "76055cfa715fecb53d71d6f523d0e65fed3dcbc856e6bcad9dc6e8ceb2928858",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/ops/gpu_preflight_attempt/LAUNCH_RECEIPT.json": "942ddb317f6699072151003dad491c652baad34039462e27cf168bda42c96bb8",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/ops/gpu_preflight_attempt/REGISTRATION_TOOL.log": "280b727aeabcb87391f79b6f4769d0e3892bd45ee7d51af7831ee5090053d151",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/ops/gpu_preflight_attempt/stage.log": "3e5bf387fbe2de7fed0a4ff951b742d937ed584fc853efc160c0628ee8aed63a",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/reviewer_history/identity_state_check/initial_reviewer.log": "8109c70536093853d4fa2a98d631231d24a66cd62ece659fcef494952cebe3cc",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/reviewer_history/identity_state_check/initial_reviewer.py": "517ece784e728eba330d0473e790feaa6eb82638fa344108ef6c625d2354f375"
+  },
+  "no_data_tensor_decode_or_model_inference_by_reviewer": true,
+  "owned_registration_admission_and_exit0_verified": true,
+  "passed": true,
+  "phase": "completed_nine_update_receipt_review",
+  "private_checkpoint_opaque_hashes_only": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/private_preflight/local_after_update1.pt": "2f30fb838e17d3a6f7af428015b29ff63c255779a9f50f849751e477927ac58e",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/private_preflight/local_geometry_fixture.pt": "2002bd5b8139328587a2e7f07b0d006e69086e64866b25c929f7973d0ba5fc36",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/private_preflight/neighbor_after_update1.pt": "bd9daf94f94adca50c1a9cf5cb10e1caace720ec96ea63879da0761b49c487ef",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/private_preflight/neighbor_geometry_fixture.pt": "9ba81f0180ce642a388dc29c56d2d61b97005cd6efeb47d5f4b3319d935820e9",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/private_preflight/original_after_update1.pt": "dfaea9bb60fda66600537e2db6a245b071414f0908087a71a112a3689d5d4ac6",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/private_preflight/original_geometry_fixture.pt": "76838a422d0dbc412ef3c09c7e5bdf04bc2b747c11db8c1a09d574feb0375806"
+  },
+  "production_fit_authorized": false,
+  "registered_entry_before_updates_and_terminal_child_absence_verified": true,
+  "same_fixture_as_round05": true,
+  "source_bindings_verified": 237
+}

@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/bin/python",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/run_gpu_preflight.py",
+    "--gpu",
+    "1"
+  ],
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "PYTHONUNBUFFERED": "1"
+  },
+  "wrapper_pid": 1863309,
+  "started_unix": 1791030872.7612376,
+  "seconds": 0.2481997013092041,
+  "exit_code": 1,
+  "log_sha256": "a679410b99a0df404a43b65bc6a219089e5030b41d5d9b271daa9939af91710c",
+  "technical_review_sha256": "5c4b82c015ec2b5abc475fbaa846757f7eb5b3fc9e0bc00991bacef0175ed457"
+}
