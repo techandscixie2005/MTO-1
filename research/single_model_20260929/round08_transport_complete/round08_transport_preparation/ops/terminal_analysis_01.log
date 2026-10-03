@@ -1,0 +1,94 @@
+{
+  "gate": {
+    "threshold": 0.003,
+    "candidate": "neighbor",
+    "candidate_delta_r2_vs_contemporaneous_original": 0.026332187083981218,
+    "candidate_delta_r2_vs_contemporaneous_local": 0.010044743123653554,
+    "candidate_delta_r2_vs_retained_reference": -0.003201044549479004,
+    "passes_original_comparison": true,
+    "passes_local_comparison": true,
+    "passes_retained_reference_comparison": false,
+    "passed": false,
+    "eligible_arms": [],
+    "automatic_extension_authorized": false,
+    "automatic_seed_allocation_authorized": false,
+    "better_control_policy": "Report the best control descriptively; no neighbor-transport claim or automatic control-specific allocation."
+  },
+  "comparisons": {
+    "selected_best": {
+      "neighbor_minus_original": {
+        "candidate": "neighbor",
+        "control": "original",
+        "delta_r2": 0.026332187083981218,
+        "descriptive_percentile_interval": [
+          -0.014167218501305557,
+          0.07417054839854705
+        ]
+      },
+      "neighbor_minus_local": {
+        "candidate": "neighbor",
+        "control": "local",
+        "delta_r2": 0.010044743123653554,
+        "descriptive_percentile_interval": [
+          -0.01258183479068347,
+          0.03310001056789223
+        ]
+      },
+      "local_minus_original": {
+        "candidate": "local",
+        "control": "original",
+        "delta_r2": 0.016287443960327663,
+        "descriptive_percentile_interval": [
+          -0.01305909988699116,
+          0.05157879428427388
+        ]
+      }
+    },
+    "fixed60": {
+      "neighbor_minus_original": {
+        "candidate": "neighbor",
+        "control": "original",
+        "delta_r2": 0.007910560285608659,
+        "descriptive_percentile_interval": [
+          -0.01512451229231961,
+          0.03360814067195954
+        ]
+      },
+      "neighbor_minus_local": {
+        "candidate": "neighbor",
+        "control": "local",
+        "delta_r2": 0.012779466644015192,
+        "descriptive_percentile_interval": [
+          -0.011174963045202735,
+          0.036710100128757465
+        ]
+      },
+      "local_minus_original": {
+        "candidate": "local",
+        "control": "original",
+        "delta_r2": -0.004868906358406533,
+        "descriptive_percentile_interval": [
+          -0.028042043532117207,
+          0.0177720250051624
+        ]
+      }
+    }
+  },
+  "reference_deltas": {
+    "selected_best": {
+      "original": -0.029533231633460222,
+      "local": -0.013245787673132559,
+      "neighbor": -0.003201044549479004
+    },
+    "fixed60": {
+      "original": -0.04646398990349565,
+      "local": -0.05133289626190218,
+      "neighbor": -0.03855342961788699
+    }
+  },
+  "output_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/completion/ROUND08_RESULTS.json": "5ba356f7e37def370d09492855378b580cf5fa5e66afb4db990d7b3a5cc0dd58",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/completion/ALIGNED_VALIDATION_AND_TRAIN_CURVES.svg": "7a1d4c077dae98f6f1af520881bed8b02888d3680d3c12336ab3d19e37530cdf",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/completion/TRANSPORT_TRAJECTORIES.svg": "26837119e8fabf0f4804ad658c087bc8124b88f062bd75bfcfd1ebdd4908df45"
+  }
+}

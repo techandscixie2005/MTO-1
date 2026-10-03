@@ -1,0 +1,37 @@
+{
+  "arm": "neighbor",
+  "attempt": "round08_neighbor_1790985764576199974",
+  "authorization_sha256": "8da6f43114575a73ff3e7dba918ec6ade913ada3c53d3aafb00b4e4e1534f4a6",
+  "command": [
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/bin/python",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/registered_entry.py",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/train.py",
+    "--arm",
+    "neighbor",
+    "--authorization",
+    "PRODUCTION_EXECUTION_AUTHORIZATION.json"
+  ],
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "GPU-e212aefc-f1d6-cc7a-5594-e87abeaf1184",
+    "MKL_NUM_THREADS": "2",
+    "OMP_NUM_THREADS": "2",
+    "PYTHONUNBUFFERED": "1"
+  },
+  "gpu": 4,
+  "gpu_uuid": "GPU-e212aefc-f1d6-cc7a-5594-e87abeaf1184",
+  "identity": {
+    "argv_sha256": "88047468e57d5dc615a86094be27c6b2f4e671fdf40454b42ad88e3e4b27bd1e",
+    "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+    "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation",
+    "pid": 1673201,
+    "process_state": "R",
+    "start_ticks": 1283342933,
+    "uid": 1000
+  },
+  "manifest_sha256": "de058a68305fe66df2bc3a16243d4121b9561d8990f303564b26a6a47b6b5146",
+  "publication_sha256": "44c7a8fcc94a004ab1d973be76c4c79a3ed25d46307c73e12211935e7902c8e9",
+  "registration_barrier_released": true,
+  "registration_returncode": 0,
+  "review_sha256": "87de2d873f2a24033a2f646ac825f26abbbae7eadbd5305a723fbb6a17093e8b",
+  "started_unix": 1790985764.579302
+}

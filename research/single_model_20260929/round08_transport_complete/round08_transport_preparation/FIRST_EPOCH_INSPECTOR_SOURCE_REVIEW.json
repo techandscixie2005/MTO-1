@@ -1,0 +1,26 @@
+{
+  "additional_fit_or_TEST_authorized": false,
+  "approved_execution_boundary": "Science may inspect atomic committed checkpoint CPU metadata once after every original worker has a committed epoch>=1; preserve sole output and all source/auth/identity/order/optimizer/RNG/access checks.",
+  "authorization_sha256": "8da6f43114575a73ff3e7dba918ec6ade913ada3c53d3aafb00b4e4e1534f4a6",
+  "checkpoint_tensors_loaded_only_by_science_inspector": true,
+  "exact_changes": [
+    "Arm tuple original/local/neighbor",
+    "Checkpoint format round08_resumable_v1",
+    "Require successful precompute registration barrier release"
+  ],
+  "frozen_manifest_sha256": "de058a68305fe66df2bc3a16243d4121b9561d8990f303564b26a6a47b6b5146",
+  "inherited_inspector_sha256": "f09cfd8ff7720c596d9187d1bcd64afce639f346ce527beb828ad5e929114fc9",
+  "model_construction_or_inference_authorized": false,
+  "passed": true,
+  "raw_target_array_access_authorized": false,
+  "review_method": "Exact three-replacement source equality against reviewed Round07 inspector, AST parse and sealed imported-source hashes. Inspector not executed by reviewer; no live checkpoint read.",
+  "reviewer_checkpoint_or_prediction_array_access": false,
+  "scientific_sources_changed": false,
+  "scope": "round08_first_epoch_inspector_source_continuity_only",
+  "source_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/ops/monitor.py": "b21e028b6741d7522df194c6d7094c7d37b6ef07b7e6aec633691cb61859d263",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/common.py": "50a1ef987cbc635b3b5692364281498e66587b112d5573c765fea360470038cd",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/execution_gate.py": "9a811f2e812fc5565d51d19fc80c96f799d5d0a945fedb6e47c475d2f9eb5a87",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/inspect_first_epoch.py": "e171e36cbcffd888bfb130d388e3ae8536beeb5a0d816283fe75f7ab3e62a16f"
+  }
+}

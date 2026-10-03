@@ -1,0 +1,19 @@
+{
+  "scope": "two reviewer-requested wording corrections only",
+  "created_unix": 1791001435.0186398,
+  "render_log_sha256": "e129ba2fbf5369e2ec11925e401f65f554b6ce87056cc4b313994f085298d1da",
+  "original": {
+    "report_sha256": "58c841a80524e2a72ee3fc9d40259283a5eba0965db5279ca03d2729cd7dbd08",
+    "script_sha256": "ebca6beb6f526b0eaa644228643088dc9a6cea22bcd49947382cd50ee1b5d135"
+  },
+  "final": {
+    "script_sha256": "8318c700a85c1bcb13066d87fe6023633216fdf59ed2e54b2350b62d741919b1",
+    "report_sha256": "14a2425b492c01af8e9d0756a47ede7dbc8e68254117f0752d14f30d24057e1b"
+  },
+  "changes": [
+    "Stored buffer fingerprint format, not reconstructed buffer equality, verified at terminal.",
+    "Cluster bootstrap draws keep whole sampled groups; molecule counts may vary."
+  ],
+  "numerical_analysis_repeated": false,
+  "metrics_changed": false
+}

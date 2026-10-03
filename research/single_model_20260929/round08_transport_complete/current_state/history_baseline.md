@@ -1,0 +1,19 @@
+# Independent reviewer: Round08 closed; final publication binding in progress
+
+All three original/local/neighbor runs completed the fixed 60 epochs and 112,860 updates. No new fit, extension, confirmation seed, inference or TEST access is authorized by this review. Science owns the single saved-output analysis; QC owns monitoring and later D-first publication. Root ROUND08_DECISION.md closes the fixed study and authorizes D-first reviewed publication; no further fit is authorized.
+
+Independent source/JSON/opaque-byte verification passed once: `round08_transport_preparation/completion/INDEPENDENT_TERMINAL_METADATA.json`, SHA `55dae35d28f63a53468d04d177979c718433fb30e0bb05525c6638d98a0316d8`. Source `independent_terminal_metadata.py` SHA `d01f77fb2c4c11ca56a0ce5ab7bd3b53609eac86c62a5640d96c5d0c3ff79bc7`; log `ops/independent_terminal_metadata_01.log`. All258 frozen pins, exact authorization,60 orders/112860 updates, earliest native-SSE selection,66860 valid labels, state/brightness partitions, access hashes/TEST0, one registered attempt per arm, absent PIDs and opaque checkpoint/export/prediction hashes passed. Every epoch's transport summaries consistently cover2164714 TRAIN atoms; original residual/theta stayed zero and active branches moved. This consistency is an aggregate check, not a new raw-geometry count.
+
+| Arm | Selected epoch | Selected native R² | Fixed60 native R² |
+|---|---:|---:|---:|
+| Original |36|0.4176361697323918|0.4007054114623564|
+| Local |30|0.4339236136927195|0.39583650510394985|
+| Neighbor |23|0.44396835681637303|0.40861597174796505|
+
+Neighbor gains +0.0263321871 over current original and +0.0100447431 over current local, but is -0.0032010445 below retained Round05 control45 (0.44716940136585204). The frozen triple +0.003 allocation gate fails. The one reviewed saved-array analysis and independent aggregate check passed496686c4dccbffe768b9913eb360b038b03fe23e51821bffb9950ac216df2e33. All six paired component intervals include zero; source/input/output hashes and optimizer/export content checks passed. Neighbor worsens MAE, energy and true-tail errors versus original/retained despite lower false-bright-bin SSE. Active residuals grew during full training; no dormant-branch explanation or identified physical mechanism follows. Scientific review9d685394e449b45560bb86857f762d2353daeea0d395feb6652c31fc13280ab9 is stable. Final science document/manifest bindings precede publication. After verified publication, only one original-MTO regularization proposal may be developed/reviewed; no numerical work.
+
+README exact0dddf4d2450a4fcff751c6ad354d1afc24a7921b73e3c88b343020ec145a2f98 has delegated independent content approval. QC owns wrapper/inventory/download/stage/push; reviewer verifies exact staged bytes/links. No extra root README approval is needed.
+
+Current repository main/research is a10eb9a35b26014f00138c61476b33e9070bb69b. Preparation publication receipt44c7a8fcc94a004ab1d973be76c4c79a3ed25d46307c73e12211935e7902c8e9; production authorization8da6f43114575a73ff3e7dba918ec6ade913ada3c53d3aafb00b4e4e1534f4a6; frozen258 manifestde058a68305fe66df2bc3a16243d4121b9561d8990f303564b26a6a47b6b5146. Preserve all closed snapshots and first-epoch metadata c0bec70b. New completion publication must descend current verified tip, after reviewed records are first downloaded to D:/MTO/archives/.
+
+Current best verified v2 validation checkpoint remains `/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/runs/control/geometry_best.pt`, SHA e71c63da8bb3b8214e014ca64946fecab97fbc210cb068c0b1a3eefa3bbf8f1e. Goal0.60 is unmet; v2 is a historically exposed repartition, TEST remains sealed, no fresh external or independent-seed confirmation. Retain O(3)/learned-feature interpretations only, and describe transport ratios as atom-weighted training-trajectory summaries.

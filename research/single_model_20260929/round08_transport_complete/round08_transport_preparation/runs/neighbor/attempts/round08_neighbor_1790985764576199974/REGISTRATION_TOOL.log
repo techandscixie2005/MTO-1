@@ -1,0 +1,26 @@
+{
+  "id": "round08_neighbor_1790985764576199974",
+  "registered_at_utc": "2026-10-03T00:02:44.625138+00:00",
+  "identity": {
+    "pid": 1673201,
+    "start_ticks": 1283342933,
+    "uid": 1000,
+    "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation",
+    "argv_sha256": "88047468e57d5dc615a86094be27c6b2f4e671fdf40454b42ad88e3e4b27bd1e",
+    "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+    "process_state": "S"
+  },
+  "run_dir": "round08_transport_preparation/runs/neighbor",
+  "gpu_uuid": "GPU-e212aefc-f1d6-cc7a-5594-e87abeaf1184",
+  "status_path": "round08_transport_preparation/runs/neighbor/status.json",
+  "log_path": "round08_transport_preparation/runs/neighbor/attempts/round08_neighbor_1790985764576199974/train.log",
+  "completion_path": "round08_transport_preparation/runs/neighbor/FIT_COMPLETE.json",
+  "failure_path": "round08_transport_preparation/runs/neighbor/FAILED.json",
+  "checkpoint_paths": [
+    "round08_transport_preparation/runs/neighbor/last.pt",
+    "round08_transport_preparation/runs/neighbor/best.pt"
+  ],
+  "stale_after_seconds": 28800,
+  "monitor": true,
+  "restart_policy": "coordinator_review_required"
+}

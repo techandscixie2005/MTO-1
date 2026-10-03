@@ -1,0 +1,144 @@
+{
+  "passed": true,
+  "checked_unix": 1790986075.7041628,
+  "scope": "read_only_committed_checkpoint_metadata",
+  "script_sha256": "e171e36cbcffd888bfb130d388e3ae8536beeb5a0d816283fe75f7ab3e62a16f",
+  "manifest_sha256": "de058a68305fe66df2bc3a16243d4121b9561d8990f303564b26a6a47b6b5146",
+  "authorization_sha256": "8da6f43114575a73ff3e7dba918ec6ade913ada3c53d3aafb00b4e4e1534f4a6",
+  "arms": {
+    "original": {
+      "observed_identity": {
+        "pid": 1673191,
+        "start_ticks": 1283342887,
+        "uid": 1000,
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation",
+        "argv_sha256": "cc1037374d8440ed6721844c29ee48ca1313571c69fda6abe3789cd2650180e4",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "process_state": "S"
+      },
+      "launch_receipt_sha256": "f0dad812042450aa7af601e4ed1dc9f5fd3a88cbdf1aca6177229bce09897efe",
+      "observed_completed_epoch": 1,
+      "committed_steps": 1881,
+      "read_last_checkpoint_sha256": "ec3a2bdef0b6437396c7677261cfdc0a22fc05b2b91422d9eebedc65db6bc982",
+      "read_last_checkpoint_bytes": 25245116,
+      "optimizer_state_entries": 135,
+      "optimizer_step_values": [
+        1881
+      ],
+      "rng_keys": [
+        "cuda",
+        "numpy",
+        "order",
+        "python",
+        "torch"
+      ],
+      "best": {
+        "epoch": 1,
+        "sse": 153.69056747148986,
+        "r2": 0.12416331260866265,
+        "checkpoint": "selected/epoch_001_1790985942970774494.pt",
+        "predictions": "selected/predictions_001_1790985942970774494.npz",
+        "predictions_sha256": "ead01b7f19eafb3f42b339fdb7d56a1030f7d0938c5b37762c35546ed974cfd8",
+        "checkpoint_sha256": "eb85ec828bcaf4f23510a6c3c92d4986759453094d769437b0a19ac3f591cf5f"
+      },
+      "first_epoch_seconds": 165.4693193435669,
+      "epoch0_r2": -0.0665504234073162,
+      "first_epoch_r2": 0.12416331260866265,
+      "all_observed_order_hashes_match": true,
+      "data_access_sha256": "e586c57d2f7576d3c407f4d053d0995f62ad46d68e6b07247986ae9366a41b9c",
+      "train_and_validation_ledgers_match_exact_partitions": true,
+      "test_numeric_rows": 0
+    },
+    "local": {
+      "observed_identity": {
+        "pid": 1673196,
+        "start_ticks": 1283342910,
+        "uid": 1000,
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation",
+        "argv_sha256": "56f7da523bbc9f833a1f6f7cc0f083ea1a2d5ea6f4a608617584a4f307b07957",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "process_state": "R"
+      },
+      "launch_receipt_sha256": "786e9464cb80721f0fba032884d30325a91b6fa43ee901aa9a206923b83ea6a0",
+      "observed_completed_epoch": 1,
+      "committed_steps": 1881,
+      "read_last_checkpoint_sha256": "41f16c8220082ed1bf0fecfcb550b1acb7fbd4f8c30cba7ec392e3eb85102302",
+      "read_last_checkpoint_bytes": 25256620,
+      "optimizer_state_entries": 137,
+      "optimizer_step_values": [
+        1881
+      ],
+      "rng_keys": [
+        "cuda",
+        "numpy",
+        "order",
+        "python",
+        "torch"
+      ],
+      "best": {
+        "epoch": 1,
+        "sse": 145.25179210485157,
+        "r2": 0.17225337554715203,
+        "checkpoint": "selected/epoch_001_1790985963954279680.pt",
+        "predictions": "selected/predictions_001_1790985963954279680.npz",
+        "predictions_sha256": "aed0aa402c55c38364c20a81b0b874123a9183071dcee5043a72edd4db6e5c92",
+        "checkpoint_sha256": "6da97eeebba84d9c20af4e148fa16ea867c6e4acbf7b861ce7487af10277d3b8"
+      },
+      "first_epoch_seconds": 184.84330248832703,
+      "epoch0_r2": -0.06655042347001272,
+      "first_epoch_r2": 0.17225337554715203,
+      "all_observed_order_hashes_match": true,
+      "data_access_sha256": "e586c57d2f7576d3c407f4d053d0995f62ad46d68e6b07247986ae9366a41b9c",
+      "train_and_validation_ledgers_match_exact_partitions": true,
+      "test_numeric_rows": 0
+    },
+    "neighbor": {
+      "observed_identity": {
+        "pid": 1673201,
+        "start_ticks": 1283342933,
+        "uid": 1000,
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation",
+        "argv_sha256": "88047468e57d5dc615a86094be27c6b2f4e671fdf40454b42ad88e3e4b27bd1e",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "process_state": "R"
+      },
+      "launch_receipt_sha256": "eb392e7d314acdbb649a70d99c375b56d984256624fb181a9f433d1c0eed9965",
+      "observed_completed_epoch": 1,
+      "committed_steps": 1881,
+      "read_last_checkpoint_sha256": "24bc2087c8a3e65ed0442b6a00c3b3978ff941c74211a0cbe2c3a404ba4ccb6d",
+      "read_last_checkpoint_bytes": 25256620,
+      "optimizer_state_entries": 137,
+      "optimizer_step_values": [
+        1881
+      ],
+      "rng_keys": [
+        "cuda",
+        "numpy",
+        "order",
+        "python",
+        "torch"
+      ],
+      "best": {
+        "epoch": 1,
+        "sse": 146.08992412279568,
+        "r2": 0.16747711125019737,
+        "checkpoint": "selected/epoch_001_1790985964370954859.pt",
+        "predictions": "selected/predictions_001_1790985964370954859.npz",
+        "predictions_sha256": "255cf0cf1877165f2465069478e44280d5a004a42a0681f8cbb30a6044a3b8e4",
+        "checkpoint_sha256": "94377cbfb8b409472f86a9910667a521d2a7d1e0da2a2de9a941f684b8bd89a3"
+      },
+      "first_epoch_seconds": 185.05783033370972,
+      "epoch0_r2": -0.06655042334531802,
+      "first_epoch_r2": 0.16747711125019737,
+      "all_observed_order_hashes_match": true,
+      "data_access_sha256": "e586c57d2f7576d3c407f4d053d0995f62ad46d68e6b07247986ae9366a41b9c",
+      "train_and_validation_ledgers_match_exact_partitions": true,
+      "test_numeric_rows": 0
+    }
+  },
+  "model_constructed": false,
+  "model_inference": false,
+  "raw_target_arrays_opened": false,
+  "checkpoint_tensors_loaded_on_cpu_only": true,
+  "production_files_modified": false
+}
