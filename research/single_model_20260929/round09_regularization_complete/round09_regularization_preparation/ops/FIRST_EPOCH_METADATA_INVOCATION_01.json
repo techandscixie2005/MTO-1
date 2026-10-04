@@ -1,0 +1,23 @@
+{
+  "command": [
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/bin/python",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/inspect_first_epoch.py"
+  ],
+  "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation",
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "PYTHONUNBUFFERED": "1"
+  },
+  "started_unix": 1791073046.9421084,
+  "seconds": 1.7241287231445312,
+  "pid": 2007691,
+  "exit_code": 0,
+  "source_sha256": "10c4a5a55b621a2132599dfff1085d99811b2187ace68f6770d88705bed05113",
+  "review_sha256": "47f53cd7041206ae73f9af5e7b3ef4dd63e0f9f8dcf708a684c549e20d97a57d",
+  "log_sha256": "4f0303fd9e65f474e6767b8f1318a8c56fdffa9358e2b74771e59d57968fa243",
+  "output_sha256": "94cdd437e144fa7413c81f6dbb8e6925b53e40b21b8c198ee90f8eb8cab2c253",
+  "model_inference": false,
+  "production_files_modified": false
+}

@@ -1,0 +1,28 @@
+{
+  "additional_fit_or_TEST_authorized": false,
+  "approved_execution_boundary": "Science may run the single CPU checkpoint inspection after both original workers have committed epoch>=1. Read one atomic last.pt inode, retain all source/authority/identity/order/optimizer/RNG/access checks, refuse completed output. No inference or raw target/prediction array decoding.",
+  "authorization_sha256": "fc16c206e829c345098fcd853febcd2f83c88a56c3ea92f5506c0edd67678765",
+  "checkpoint_tensors_loaded_only_by_science_inspector": true,
+  "exact_changes": [
+    "Arm tuple zero_decay/coupled_l2 and round09 checkpoint format",
+    "Expected per-arm weight_decay, exact config/roster hash,135 unique optimizer state/group members",
+    "Fixed AdamAMSGrad options including default foreach/fused and false flags",
+    "Add per-arm decay and roster hash to aggregate receipt"
+  ],
+  "frozen_manifest_sha256": "52e815958178f2eeb691a2f185eb37e4b54276d867c08061c58ef1eff653c930",
+  "inherited_inspector_sha256": "e171e36cbcffd888bfb130d388e3ae8536beeb5a0d816283fe75f7ab3e62a16f",
+  "model_construction_or_inference_authorized": false,
+  "passed": true,
+  "raw_target_array_access_authorized": false,
+  "review_method": "Exact expected source transformation against reviewed Round08 inspector, AST parse and imported sealed-source hash checks; no execution or live checkpoint read by reviewer.",
+  "reviewer_checkpoint_or_prediction_array_access": false,
+  "scientific_sources_changed": false,
+  "scope": "round09_first_epoch_inspector_source_continuity_only",
+  "source_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/ops/monitor.py": "b21e028b6741d7522df194c6d7094c7d37b6ef07b7e6aec633691cb61859d263",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/inspect_first_epoch.py": "e171e36cbcffd888bfb130d388e3ae8536beeb5a0d816283fe75f7ab3e62a16f",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/common.py": "50a1ef987cbc635b3b5692364281498e66587b112d5573c765fea360470038cd",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/execution_gate.py": "c73dfbb9abb494ad6bc95b5f5e13312ae34a1e9a7ab6dd1cf7c5b75d96dfde0c",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/inspect_first_epoch.py": "10c4a5a55b621a2132599dfff1085d99811b2187ace68f6770d88705bed05113"
+  }
+}

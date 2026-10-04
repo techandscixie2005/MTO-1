@@ -1,0 +1,28 @@
+{
+  "authorization_sha256": "fc16c206e829c345098fcd853febcd2f83c88a56c3ea92f5506c0edd67678765",
+  "authorization_unchanged": true,
+  "command": [
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/bin/python",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/launch.py",
+    "--authorization",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/PRODUCTION_EXECUTION_AUTHORIZATION.json",
+    "--arms",
+    "zero_decay",
+    "coupled_l2"
+  ],
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "MKL_NUM_THREADS": "2",
+    "OMP_NUM_THREADS": "2",
+    "PYTHONUNBUFFERED": "1"
+  },
+  "exit_code": 0,
+  "launched_receipts": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/runs/coupled_l2/attempts/round09_coupled_l2_1791072527606971050/LAUNCH_RECEIPT.json": "f93aaf851f34800d7714771b847001faa22a29e46bd40ec5ef6e6b6e06817f14",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/runs/zero_decay/attempts/round09_zero_decay_1791072527376721902/LAUNCH_RECEIPT.json": "b25c76c7366d62fc2b497c38d4d03a3f1a85b999f9fa400e97f2c90ed7a332ff"
+  },
+  "launcher_pid": 2004441,
+  "log_sha256": "a0ad2a966d9f4403c5923fa7bb40701dd738e22c4e4edb717c51ccc120c59416",
+  "seconds": 0.5371081829071045,
+  "started_unix": 1791072527.140919
+}

@@ -1,0 +1,19 @@
+{
+  "command": [
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/bin/python",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/terminal_analysis.py"
+  ],
+  "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation",
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "PYTHONUNBUFFERED": "1"
+  },
+  "started_unix": 1791087444.232271,
+  "pid": 2052784,
+  "exit_code": 0,
+  "seconds": 4.00184440612793,
+  "log_sha256": "4f24246e4ef8dafe97c66fef054b63dfa60acb2789fb982a127d35ac26775132",
+  "source_review_sha256": "41e7ae2ba01e7cf005e69da8a8b35da8c9089945f766c07017d7dc096b4c966c"
+}

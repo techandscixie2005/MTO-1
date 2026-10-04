@@ -1,0 +1,55 @@
+{
+  "analysis_input_hashes_independently_rechecked": 32,
+  "both_intervals_below_zero_conditional_on_reused_validation_and_selected_checkpoints": true,
+  "candidate_minus_retained_r2": -0.0856729391944856,
+  "dual_allocation_gate_passed": false,
+  "input_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/TERMINAL_ANALYSIS_SOURCE_REVIEW.json": "41e7ae2ba01e7cf005e69da8a8b35da8c9089945f766c07017d7dc096b4c966c",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/completion/ANALYSIS_RECEIPT.json": "11fbcc152e020c44125563bbab6b567b698ed3e93a6a3e464a3cc5c284b4a2ce",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/completion/INDEPENDENT_TERMINAL_METADATA.json": "2f98cc11e7118807df41881476df8bd022fb8b2e530e3d14129968322ebc65ee",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/completion/ROUND09_RESULTS.json": "394bc58c2e3996432b6b7f94ed74c8afa285b65ac4b85fb8d72a086b691f830f",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/independent_terminal_results.py": "7e310495026d4b2c67da78626c9f7058bcc12a50a67b09ce7882a1c6ccfbbcff",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/ops/TERMINAL_ANALYSIS_INVOCATION_01.json": "1ba6ca265d4347a15342598f64d5b0e8d21b664434039c899a5b5245a4fb742a",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/ops/terminal_analysis_01.log": "4f24246e4ef8dafe97c66fef054b63dfa60acb2789fb982a127d35ac26775132"
+  },
+  "new_numerical_work_authorized": false,
+  "no_repeated_inference_or_saved_array_reduction": true,
+  "not_seed_selection_or_fresh_generalization_uncertainty": true,
+  "passed": true,
+  "private_inputs_hashed_opaquely_never_decoded": true,
+  "scope": "independent_source_receipt_and_aggregate_arithmetic_review",
+  "tradeoffs": {
+    "fixed60": {
+      "candidate_minus_control_r2": -0.05896141395050891,
+      "conditional_interval": [
+        -0.0902030662376082,
+        -0.02838855428162637
+      ],
+      "energy_rmse_delta": 0.028275207872519664,
+      "false_bright_sse_delta": -8.80546731569741,
+      "mae_delta": 0.0018340398879514962,
+      "q90_rmse_delta": 0.012076969857993572,
+      "q99_rmse_delta": 0.034774349409923244,
+      "states_with_lower_candidate_SSE": [
+        7,
+        9
+      ]
+    },
+    "selected_best": {
+      "candidate_minus_control_r2": -0.053787156317842366,
+      "conditional_interval": [
+        -0.0967936494636048,
+        -0.00986152888775778
+      ],
+      "energy_rmse_delta": 0.027931680580925017,
+      "false_bright_sse_delta": -11.12579585609659,
+      "mae_delta": 0.0022574466664403124,
+      "q90_rmse_delta": 0.010779855544796282,
+      "q99_rmse_delta": 0.03525149069864014,
+      "states_with_lower_candidate_SSE": [
+        7,
+        9
+      ]
+    }
+  }
+}

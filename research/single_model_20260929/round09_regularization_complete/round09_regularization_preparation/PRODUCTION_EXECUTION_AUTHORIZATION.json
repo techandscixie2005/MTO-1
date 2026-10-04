@@ -1,0 +1,17 @@
+{
+  "authorized": true,
+  "scope": "round09_two_arm_60epoch_fit",
+  "frozen_manifest_sha256": "52e815958178f2eeb691a2f185eb37e4b54276d867c08061c58ef1eff653c930",
+  "independent_review_sha256": "08d0c6e804d50b019f027b05282fbb1168d3c7ec59aa0e59b6068ddf0e5225cb",
+  "publication_receipt": "/home/inspur/MTO-1/research/single_model_20260929/ops/ROUND09_PREPARATION_PUBLICATION_RECEIPT.json",
+  "publication_receipt_sha256": "440d25926c543a7a03089f8515135a124f56851ecf84e3464b20cd07561efd79",
+  "split_manifest_sha256": "c8ce66ddb7209005b5feebfcddfc2bc30ee81d92fe63cce20f15c4abf3a07155",
+  "independent_split_verification_sha256": "395d415f854ed6948c4d7a11c0c1d7486193bb48f23bae76834a77148cc69ae2",
+  "epochs": 60,
+  "arms": [
+    "zero_decay",
+    "coupled_l2"
+  ],
+  "test_access": false,
+  "historical_weights": false
+}

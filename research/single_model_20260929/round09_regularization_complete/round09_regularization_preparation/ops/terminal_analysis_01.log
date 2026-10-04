@@ -1,0 +1,53 @@
+{
+  "gate": {
+    "threshold": 0.003,
+    "candidate": "coupled_l2",
+    "candidate_delta_r2_vs_contemporaneous_zero_decay": -0.053787156317842366,
+    "candidate_delta_r2_vs_retained_reference": -0.0856729391944856,
+    "passes_zero_decay_comparison": false,
+    "passes_retained_reference_comparison": false,
+    "passed": false,
+    "eligible_arms": [],
+    "automatic_extension_authorized": false,
+    "automatic_seed_allocation_authorized": false
+  },
+  "comparisons": {
+    "selected_best": {
+      "coupled_l2_minus_zero_decay": {
+        "candidate": "coupled_l2",
+        "control": "zero_decay",
+        "delta_r2": -0.053787156317842366,
+        "descriptive_percentile_interval": [
+          -0.0967936494636048,
+          -0.00986152888775778
+        ]
+      }
+    },
+    "fixed60": {
+      "coupled_l2_minus_zero_decay": {
+        "candidate": "coupled_l2",
+        "control": "zero_decay",
+        "delta_r2": -0.05896141395050891,
+        "descriptive_percentile_interval": [
+          -0.0902030662376082,
+          -0.02838855428162637
+        ]
+      }
+    }
+  },
+  "reference_deltas": {
+    "selected_best": {
+      "zero_decay": -0.03188578287664323,
+      "coupled_l2": -0.0856729391944856
+    },
+    "fixed60": {
+      "zero_decay": -0.040145103698316253,
+      "coupled_l2": -0.09910651764882517
+    }
+  },
+  "output_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/completion/ROUND09_RESULTS.json": "394bc58c2e3996432b6b7f94ed74c8afa285b65ac4b85fb8d72a086b691f830f",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/completion/ALIGNED_VALIDATION_AND_TRAIN_CURVES.svg": "759ee332c167781a8a14f1f934cfd6acbc87ad2e30b617dac5bfa3bfe8618bd0",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/completion/REGULARIZATION_TRAJECTORIES.svg": "debeecf3446501c7fcfb39e712845a27b7a5672c20a65a922d265bd1f5079bd3"
+  }
+}

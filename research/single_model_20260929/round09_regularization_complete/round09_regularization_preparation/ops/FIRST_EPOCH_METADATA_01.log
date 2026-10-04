@@ -1,0 +1,105 @@
+{
+  "passed": true,
+  "checked_unix": 1791073048.3683224,
+  "scope": "read_only_committed_checkpoint_metadata",
+  "script_sha256": "10c4a5a55b621a2132599dfff1085d99811b2187ace68f6770d88705bed05113",
+  "manifest_sha256": "52e815958178f2eeb691a2f185eb37e4b54276d867c08061c58ef1eff653c930",
+  "authorization_sha256": "fc16c206e829c345098fcd853febcd2f83c88a56c3ea92f5506c0edd67678765",
+  "arms": {
+    "zero_decay": {
+      "observed_identity": {
+        "pid": 2004444,
+        "start_ticks": 1292019213,
+        "uid": 1000,
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation",
+        "argv_sha256": "02573f69a92c7608ad554513f8f945c2cef2d6b1927bb42446386361d394e631",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "process_state": "R"
+      },
+      "launch_receipt_sha256": "b25c76c7366d62fc2b497c38d4d03a3f1a85b999f9fa400e97f2c90ed7a332ff",
+      "observed_completed_epoch": 2,
+      "committed_steps": 3762,
+      "read_last_checkpoint_sha256": "51cea149abbc227bbcc62e655f5a8784a33d39029eb64765a5d40dae35e7c8ed",
+      "read_last_checkpoint_bytes": 25257468,
+      "optimizer_state_entries": 135,
+      "optimizer_step_values": [
+        3762
+      ],
+      "weight_decay": 0.0,
+      "parameter_roster_sha256": "290bd6dc4c635c90fc387202230a4af0b7758b38bad0a3570018e05510fb3943",
+      "rng_keys": [
+        "cuda",
+        "numpy",
+        "order",
+        "python",
+        "torch"
+      ],
+      "best": {
+        "epoch": 2,
+        "sse": 136.06326633850335,
+        "r2": 0.2246160423106881,
+        "checkpoint": "selected/epoch_002_1791072912846638376.pt",
+        "predictions": "selected/predictions_002_1791072912846638376.npz",
+        "predictions_sha256": "d2b32883f0cbc6e7238176b53a56c4d89cf8b5aa4889b641de6ebae5ccda0eed",
+        "checkpoint_sha256": "29ad56e2e0f4c69cabcc83f699995fa383135125c6e5d0635a4f36c523005b96"
+      },
+      "first_epoch_seconds": 185.99682641029358,
+      "epoch0_r2": -0.06655042337427486,
+      "first_epoch_r2": 0.1533614136431697,
+      "all_observed_order_hashes_match": true,
+      "data_access_sha256": "e586c57d2f7576d3c407f4d053d0995f62ad46d68e6b07247986ae9366a41b9c",
+      "train_and_validation_ledgers_match_exact_partitions": true,
+      "test_numeric_rows": 0
+    },
+    "coupled_l2": {
+      "observed_identity": {
+        "pid": 2004449,
+        "start_ticks": 1292019237,
+        "uid": 1000,
+        "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation",
+        "argv_sha256": "48fb13107c7b6ddcae7db7812f1ec96beeea620372eac4180e5391d6913d6afd",
+        "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+        "process_state": "R"
+      },
+      "launch_receipt_sha256": "f93aaf851f34800d7714771b847001faa22a29e46bd40ec5ef6e6b6e06817f14",
+      "observed_completed_epoch": 2,
+      "committed_steps": 3762,
+      "read_last_checkpoint_sha256": "32b8edd0cf0c5f737dd781d370b079c6637a83407850c1c41411668a1b5d5ea1",
+      "read_last_checkpoint_bytes": 25257468,
+      "optimizer_state_entries": 135,
+      "optimizer_step_values": [
+        3762
+      ],
+      "weight_decay": 0.0001,
+      "parameter_roster_sha256": "290bd6dc4c635c90fc387202230a4af0b7758b38bad0a3570018e05510fb3943",
+      "rng_keys": [
+        "cuda",
+        "numpy",
+        "order",
+        "python",
+        "torch"
+      ],
+      "best": {
+        "epoch": 2,
+        "sse": 139.4424059605969,
+        "r2": 0.2053593338376959,
+        "checkpoint": "selected/epoch_002_1791072914866795206.pt",
+        "predictions": "selected/predictions_002_1791072914866795206.npz",
+        "predictions_sha256": "c3099b1dd6184994d9cbda1b1e97df1a2b3d511d9bc6e8ae278f3802e37039c9",
+        "checkpoint_sha256": "266052a528ee7c6d6b5e7c1ecb9c13eebe00574392012805255259980e6cb4d0"
+      },
+      "first_epoch_seconds": 186.68963027000427,
+      "epoch0_r2": -0.06655042335396977,
+      "first_epoch_r2": 0.13619611290212275,
+      "all_observed_order_hashes_match": true,
+      "data_access_sha256": "e586c57d2f7576d3c407f4d053d0995f62ad46d68e6b07247986ae9366a41b9c",
+      "train_and_validation_ledgers_match_exact_partitions": true,
+      "test_numeric_rows": 0
+    }
+  },
+  "model_constructed": false,
+  "model_inference": false,
+  "raw_target_arrays_opened": false,
+  "checkpoint_tensors_loaded_on_cpu_only": true,
+  "production_files_modified": false
+}

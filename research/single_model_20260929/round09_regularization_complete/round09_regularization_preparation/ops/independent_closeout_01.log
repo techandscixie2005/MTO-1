@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/finalize_independent_closeout.py", line 57, in <module>
+    main()
+  File "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/finalize_independent_closeout.py", line 37, in main
+    assert sha(decision) == '8e09e19499c221c4d1cc03527ab4459e6bd8af6a29ee5090b2220e0b19515f7e'
+  File "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/finalize_independent_closeout.py", line 11, in sha
+    return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+  File "/usr/lib/python3.10/pathlib.py", line 1126, in read_bytes
+    with self.open(mode='rb') as f:
+  File "/usr/lib/python3.10/pathlib.py", line 1119, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+FileNotFoundError: [Errno 2] No such file or directory: '/home/inspur/MTO-1/research/single_model_20260929/current_state/ROUND09_DECISION.md'
