@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/independent_resource_selector_checks.py", line 90, in <module>
+    checks=[scenario('first_available_selected_and_lock_retained',selected=1,probes=[1]),
+  File "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/independent_resource_selector_checks.py", line 69, in scenario
+    lock,gpu,xml=wrapper.select_locked_device(out)
+  File "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/run_gpu_preflight.py", line 18, in select_locked_device
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+  File "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/independent_resource_selector_checks.py", line 49, in flock
+    gpu=fd-100; assert flags == wrapper.fcntl.LOCK_EX | wrapper.fcntl.LOCK_NB
+TypeError: unsupported operand type(s) for -: 'FakeLock' and 'int'

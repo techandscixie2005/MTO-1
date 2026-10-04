@@ -1,0 +1,13 @@
+{
+  "round": "round05_qm9s_v2_scratch_factorial",
+  "arms": {"control": {"adapter": false, "lambda": 0.0}, "adapter": {"adapter": true, "lambda": 0.0}, "decorrelation": {"adapter": false, "lambda": 0.001}, "both": {"adapter": true, "lambda": 0.001}},
+  "seed": 11, "order_seed": 11, "epochs": 60, "batch_size": 64,
+  "optimizer": "Adam_AMSGrad", "lr": 0.001, "betas": [0.9, 0.999], "eps": 1e-8,
+  "weight_decay": 0.0, "grad_clip": 5.0, "scheduler": null,
+  "num_threads": 2, "dtype": "float32", "amp": false, "tf32": false,
+  "objective": "LE + Ls + arm_lambda * normalized_raw_M_decorrelation",
+  "selection": "minimum pooled validation raw-f SSE, epoch0 eligible, earliest exact tie",
+  "validation_molecules": 6686, "train_molecules": 120355,
+  "test_access": false, "historical_weights": false,
+  "promotion_delta_r2": 0.003
+}

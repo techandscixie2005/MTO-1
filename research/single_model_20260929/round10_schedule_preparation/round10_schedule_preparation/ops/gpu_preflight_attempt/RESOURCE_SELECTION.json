@@ -1,0 +1,21 @@
+{
+  "observations": [
+    {
+      "eligible": true,
+      "gpu": 1,
+      "observed_unix": 1791117076.2298737,
+      "probe_path": "GPU1_PROBE.xml",
+      "probe_sha256": "953048e68d1e206dc26587c8a373f710453be9faf918b41d4da88830a35c84d3",
+      "uuid": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800"
+    }
+  ],
+  "ordered_allowed": [
+    1,
+    2,
+    4,
+    6
+  ],
+  "selected_gpu": 1,
+  "selected_uuid": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+  "selection_under_exclusive_lock": true
+}

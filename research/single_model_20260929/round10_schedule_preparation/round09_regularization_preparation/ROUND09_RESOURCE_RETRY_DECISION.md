@@ -1,0 +1,9 @@
+# Round09 preparation resource retry
+
+Root authorizes one distinct resource-only attempt to complete the still-unexecuted six-update TRAIN fixture. Independent admission review `b1b9e4014df4b2352b47277cc826cdbb10911e76dbc00e23fdf59b749794eb88` establishes that the original GPU1 rejection occurred before scientific child, target decoding or updates. Preserve the original empty attempt and nine-file snapshot `ab9c820e719b241021879d786a5b78f04d95f103fe0e941344ea7e4592529e65`.
+
+Choose one available healthy physical GPU from the ordered allowed set4,6,2,1 using a fresh read-only inventory, then recheck occupancy/health under its shared lock. This is explicit resource reassignment, not a scientific change. Keep the original strict admission thresholds, pre-import UUID binding and registration-before-compute barrier. Never signal unrelated jobs or use excluded GPUs0/3/7. If no allowed GPU qualifies, hold without repeated launch attempts.
+
+History must bind the exact distinct operational wrapper/entry paths and this decision before science invokes the retry. Preserve the original technical review and exact mathematical source through explicit continuity mappings; do not overwrite prior evidence. Only the device and unique attempt paths may change. CPU/roster checks must not repeat. The same first128 TRAIN rows and six discarded updates, masks, optimizer, tolerances, scientific settings and TEST restrictions remain fixed. Any actual scientific failure requires diagnosis and a new concrete recovery decision; no automatic retry.
+
+Science remains sole executor. After successful fixture completion, continue already-authorized final independent preparation review. Production still requires root acceptance, D-first publication and separate bound authority. Record resource identity and concise handoffs; preserve the existing four-hour schedule.

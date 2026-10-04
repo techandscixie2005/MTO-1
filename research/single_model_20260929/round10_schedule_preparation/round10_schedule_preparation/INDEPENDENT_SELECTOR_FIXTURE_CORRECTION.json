@@ -1,0 +1,14 @@
+{
+  "cause": "fcntl.flock accepts a file object; initial mock expected only an integer descriptor. Failed before mocked resource probe.",
+  "corrected_source_sha256": "5e88a24c0552c0f8c418907e912714cce63bfb40cc9d7f87b243945bbcae1a38",
+  "correction": "Mock accepts file object via fileno or integer descriptor. Production wrapper unchanged.",
+  "live_resource_probes": 0,
+  "model_or_data_access": false,
+  "optimizer_updates": 0,
+  "preserved": {
+    "INDEPENDENT_RESOURCE_SELECTOR_CHECKS_01.log": "d5b2a780e7e0bbabf79cef670ffe88ff7fd3cd24514355b36c65551ca374e489",
+    "independent_resource_selector_checks.py": "42d3ff5707f2f9639503cc38f1f2192bea0e8f2ac15e1ec0a81e3ed642f41158"
+  },
+  "scientific_failure": false,
+  "scope": "reviewer_stdlib_fixture_correction_only"
+}

@@ -1,0 +1,33 @@
+{
+  "scope": "metadata_freezer_name_shadowing_failure",
+  "frozen_manifest_absent": true,
+  "optimizer_updates": 0,
+  "model_inference": false,
+  "target_numeric_decoding": false,
+  "files": [
+    {
+      "original_path": "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/freeze_preparation.py",
+      "snapshot_path": "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/freeze_attempt01_preserved/freeze_preparation.py",
+      "sha256": "c9b38ac7b0d6cdc1956a584b166768d56ea07a449cfa4562258648cecaaaf05a",
+      "bytes": 12896
+    },
+    {
+      "original_path": "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/ops/FREEZE_01.log",
+      "snapshot_path": "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/freeze_attempt01_preserved/ops/FREEZE_01.log",
+      "sha256": "f8ae04245e86587bd22f5b9973c7c47509ebe0d4db41b029b3d25571f0fb8e33",
+      "bytes": 555
+    },
+    {
+      "original_path": "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/ops/FREEZE_RECEIPT.json",
+      "snapshot_path": "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/freeze_attempt01_preserved/ops/FREEZE_RECEIPT.json",
+      "sha256": "ca6d91388e9c99e164600535e01b0c4ea4c6a68da41d5e48e1b7bc4841fbc76d",
+      "bytes": 769
+    },
+    {
+      "original_path": "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/SOURCE_LINEAGE.json",
+      "snapshot_path": "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/freeze_attempt01_preserved/SOURCE_LINEAGE.json",
+      "sha256": "4f2ed71e4e6b84158b3a68ffd86bcc226d3b9faf3c6c1c95633970ccab169403",
+      "bytes": 8979
+    }
+  ]
+}

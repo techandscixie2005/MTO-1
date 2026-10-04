@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "normalization_scalar_reference_matches_statewise_and_frobenius_definitions": true,
+    "split_file_pin_mismatch_rejects_before_metadata_or_arrays": true,
+    "synthetic_id_energy_tensor_strides_decode_selected_rows_only": true,
+    "verification_wrong_split_binding_rejects_before_arrays": true
+  },
+  "passed": true,
+  "production_statistics_executed": false,
+  "real_data_or_model_read": false,
+  "source_hashes": {
+    "common.py": "50a1ef987cbc635b3b5692364281498e66587b112d5573c765fea360470038cd",
+    "independent_reader_checks.py": "f160207430b5886755210ac3cafc07145aa4b78006ee99c9a20d638f82478f5c",
+    "partition_data.py": "9aaa08bb8878803cc42961d336345d5fa53f5aad30d8cfdf135d0fd35dd6757d",
+    "prepare_train_statistics.py": "ecab67351bbf0227609aa30117001853556731960573fdbc04761cef250db207",
+    "reader_checks.py": "549e0086d5747e4d2642c1fc5fb265c06791ed98223bf46bdc327cfeb1799a30",
+    "run_statistics.py": "05f3d0dcce091c50faf9c7c234ffab0d863fa188bf685511c83d5eff49bc617f"
+  },
+  "synthetic_only": true
+}

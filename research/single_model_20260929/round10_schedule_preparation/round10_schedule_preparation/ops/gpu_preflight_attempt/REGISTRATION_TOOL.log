@@ -1,0 +1,23 @@
+{
+  "id": "round10_technical_preflight",
+  "registered_at_utc": "2026-10-04T12:31:16.279450+00:00",
+  "identity": {
+    "pid": 2139500,
+    "start_ticks": 1296474099,
+    "uid": 1000,
+    "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation",
+    "argv_sha256": "fd2ba31c49567b9e435e1ac96dfc1e7c55796cc22a1a4933fc166bb5b76af4df",
+    "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+    "process_state": "S"
+  },
+  "run_dir": "round10_schedule_preparation/ops/gpu_preflight_attempt",
+  "gpu_uuid": "GPU-b22353bd-fc06-efd3-5819-cfd3e85b3800",
+  "status_path": "round10_schedule_preparation/ops/gpu_preflight_attempt/status.json",
+  "log_path": "round10_schedule_preparation/ops/gpu_preflight_attempt/stage.log",
+  "completion_path": "round10_schedule_preparation/ops/gpu_preflight_attempt/COMPLETE.json",
+  "failure_path": "round10_schedule_preparation/ops/gpu_preflight_attempt/FAILED.json",
+  "checkpoint_paths": [],
+  "stale_after_seconds": 28800,
+  "monitor": true,
+  "restart_policy": "coordinator_review_required"
+}

@@ -1,0 +1,11 @@
+{
+  "source_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/training.py",
+  "executed_sha256": "17d2bb266704bb4a747d3b11b3ff0789f68e2bc5835230a45220d93a3f0bca76",
+  "executed_snapshot_path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/preflight_history/io_continuity/training_executed.py",
+  "final_sha256": "c0147d25cf2a2b6cd0956a57bfcab069657618bc22712efa29feb1b6a9533cdd",
+  "change": "Only atomic_arrays and atomic_copy now fsync the parent directory after rename. No model, objective, diagnostics, optimizer, step, selection or fixture code changed.",
+  "purpose": "Keep immutable prediction references and derived best copies durable before/after the completed-epoch last.pt commit.",
+  "additional_optimizer_updates": 0,
+  "additional_model_inference": false,
+  "original_preflight_receipts_unchanged": true
+}

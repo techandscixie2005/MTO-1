@@ -1,0 +1,83 @@
+{
+  "analysis_input_hashes_independently_rechecked": 41,
+  "conditional_component_intervals_exclude_seed_selection_uncertainty": true,
+  "input_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/TERMINAL_ANALYSIS_SOURCE_REVIEW.json": "46108a5b6dc3bec976871a860c44eaf5bc181758e63763439cf7591aaacd55c5",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/completion/ANALYSIS_RECEIPT.json": "8451c3a05efb9b149a8e5403f389607dc125094ef79f37ca57617e5736ab727d",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/completion/INDEPENDENT_TERMINAL_METADATA.json": "55dae35d28f63a53468d04d177979c718433fb30e0bb05525c6638d98a0316d8",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/completion/ROUND08_RESULTS.json": "5ba356f7e37def370d09492855378b580cf5fa5e66afb4db990d7b3a5cc0dd58",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/independent_terminal_results.py": "1f57d34982edf3089fcff909d66277ab36d0d0419e084dba9163aa9edf976eeb"
+  },
+  "neighbor_selected_delta_r2_vs_controls": {
+    "local": 0.010044743123653554,
+    "original": 0.026332187083981218
+  },
+  "neighbor_selected_delta_r2_vs_retained_reference": -0.003201044549479004,
+  "no_new_seed_or_extension_or_TEST_authorized": true,
+  "no_repeated_inference_or_saved_array_reduction": true,
+  "passed": true,
+  "private_inputs_hashed_opaquely_only_never_decoded": true,
+  "scope": "independent_source_receipt_and_aggregate_result_review",
+  "selected_pair_tradeoffs": {
+    "local_minus_original": {
+      "MAE_delta": 0.0003963800849464752,
+      "energy_RMSE_delta": -0.0014879755297046715,
+      "false_bright_SSE_delta": -9.043966939865335,
+      "improved_state_SSE": [
+        10,
+        6,
+        8,
+        9
+      ],
+      "pooled_r2_delta": 0.016287443960327663,
+      "q90_RMSE_delta": 0.00241892474033438,
+      "q99_RMSE_delta": 0.011838933761655374
+    },
+    "neighbor_minus_local": {
+      "MAE_delta": 3.465303864490232e-05,
+      "energy_RMSE_delta": 0.0033908854249463383,
+      "false_bright_SSE_delta": -0.3117020856296664,
+      "improved_state_SSE": [
+        1,
+        4,
+        7,
+        8,
+        9
+      ],
+      "pooled_r2_delta": 0.010044743123653554,
+      "q90_RMSE_delta": -0.0011300375945322988,
+      "q99_RMSE_delta": -0.004523153395249363
+    },
+    "neighbor_minus_original": {
+      "MAE_delta": 0.0004310331235913775,
+      "energy_RMSE_delta": 0.0019029098952416668,
+      "false_bright_SSE_delta": -9.355669025495,
+      "improved_state_SSE": [
+        10,
+        6,
+        7,
+        8,
+        9
+      ],
+      "pooled_r2_delta": 0.026332187083981218,
+      "q90_RMSE_delta": 0.0012888871458020812,
+      "q99_RMSE_delta": 0.007315780366406011
+    },
+    "neighbor_minus_retained_reference": {
+      "MAE_delta": 0.000853558117815529,
+      "energy_RMSE_delta": 0.008668021713004542,
+      "false_bright_SSE_delta": -5.082944659497077,
+      "improved_state_SSE": [
+        1,
+        10,
+        6,
+        7,
+        9
+      ],
+      "pooled_r2_delta": -0.003201044549479004,
+      "q90_RMSE_delta": 0.0025852526562506195,
+      "q99_RMSE_delta": 0.009716035563054531
+    }
+  },
+  "triple_allocation_gate_passed": false
+}

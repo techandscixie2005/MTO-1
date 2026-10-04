@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "exit_code": 0,
+  "seconds": 0.4518861770629883,
+  "command": [
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/bin/python",
+    "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/freeze_preparation.py"
+  ],
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "PYTHONUNBUFFERED": "1"
+  },
+  "log_sha256": "bcebc5bd37df69c8b3424bad700bbcfeecb4534d6c66adaeb34acf5eb2136f54",
+  "source_sha256": "c63773b4241b07a61eec0e2ede7c9594b34603b61b7f9c114016086a055d1ed4",
+  "metadata_repair_review_sha256": "a1942e3cb5551a144f7eb79007d3fc7628ed189a34cc6e0434a25391df787473",
+  "frozen_manifest_sha256": "7b4bed854c54eb9a1faabcb817b101c4bafe0f80869d7102242f1746b0c2aa2f",
+  "source_files": 458,
+  "optimizer_updates": 0,
+  "target_numeric_decoding": false,
+  "model_inference": false,
+  "production_authorized": false
+}

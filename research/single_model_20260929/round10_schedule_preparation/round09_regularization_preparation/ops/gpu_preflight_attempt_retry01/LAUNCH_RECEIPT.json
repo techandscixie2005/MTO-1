@@ -1,0 +1,41 @@
+{
+  "child_identity": {
+    "argv_sha256": "39fa51adc791bc4cb880bc27e7625b9e5bfe50e482cff529bbfa74f7fba5cf03",
+    "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+    "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation",
+    "pid": 1929399,
+    "process_state": "R",
+    "start_ticks": 1289211519,
+    "uid": 1000
+  },
+  "child_pid": 1929399,
+  "command": [
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/bin/python",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/resource_retry_entry.py",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/gpu_preflight.py"
+  ],
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "GPU-e212aefc-f1d6-cc7a-5594-e87abeaf1184",
+    "MKL_NUM_THREADS": "2",
+    "OMP_NUM_THREADS": "2",
+    "PYTHONUNBUFFERED": "1"
+  },
+  "gpu": 4,
+  "gpu_uuid": "GPU-e212aefc-f1d6-cc7a-5594-e87abeaf1184",
+  "original_technical_review_sha256": "5c4b82c015ec2b5abc475fbaa846757f7eb5b3fc9e0bc00991bacef0175ed457",
+  "registration_barrier_released": true,
+  "registration_returncode": 0,
+  "review_sha256": "a62e9a8e95a249866395fa1f3f3d989900574bd6bdb181546fa223690231362c",
+  "root_resource_retry_decision_sha256": "673bcc503705fe6063e14f02d3573738d82a12907f18e730d41d760c7ae277e8",
+  "selection_sha256": "df385dc7f33c4e4d83bf9326ab1c56c15d16f0faaeb39fc755e2ce8c0be4387f",
+  "started_unix": 1791044450.4356902,
+  "wrapper_identity": {
+    "argv_sha256": "f3ff4c277afe8df522c0c0eed48d10ddf32791242fcfa49aeac1b80ad4de7cd1",
+    "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+    "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation",
+    "pid": 1929394,
+    "process_state": "R",
+    "start_ticks": 1289211496,
+    "uid": 1000
+  }
+}

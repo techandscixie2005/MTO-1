@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "checks": [
+    "first_available_selected_and_lock_retained",
+    "locked1_busy2_then4_preserves_rejected_XML",
+    "one_pass_none_eligible_releases_all",
+    "unexpected_probe_error_stops_without_later_device",
+    "UUID_mismatch_rejected_then2_selected"
+  ],
+  "checks_count": 5,
+  "live_resource_probes": 0,
+  "model_or_data_access": false,
+  "optimizer_updates": 0,
+  "source_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/run_gpu_preflight.py": "ee1f5061d07cff74c968feba515692798127f0258ca6dec7c35361dfc728db39",
+    "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/resources.py": "0e86e15d8be5c1e0e94bf8f85eea56a121e3aa493cb9c262e9248727b5beb918",
+    "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/common.py": "50a1ef987cbc635b3b5692364281498e66587b112d5573c765fea360470038cd",
+    "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/independent_resource_selector_checks.py": "5e88a24c0552c0f8c418907e912714cce63bfb40cc9d7f87b243945bbcae1a38"
+  }
+}

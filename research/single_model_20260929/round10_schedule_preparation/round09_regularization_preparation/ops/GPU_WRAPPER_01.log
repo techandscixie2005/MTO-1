@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/run_gpu_preflight.py", line 64, in <module>
+    if __name__=='__main__':main()
+  File "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/run_gpu_preflight.py", line 21, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB);xml=admit(args.gpu);(out/'GPU_ADMISSION.xml').write_text(xml)
+  File "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/resources.py", line 11, in admit
+    assert int(gpu.findtext('fb_memory_usage/used').split()[0])<1000
+AssertionError

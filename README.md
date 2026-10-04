@@ -4,6 +4,16 @@
 
 **QM9S v2 当前验证参考为原始 MTO（seed 11、epoch 45），pooled raw-f R² = 0.447169；目标 0.60 尚未达到。** 部署使用一个几何输入模型、一个自包含 checkpoint，不平均多个模型或 checkpoint 的预测。
 
+### Round10 准备完成：固定学习率与单次阶梯降率
+
+已接受 **458 项源码、依赖及审计记录**和单独 **23 项最终准备审查补充记录**；原有15项方案闭包保留。仅完成限定范围的工程验证，尚无新的验证准确率结果。保持原始 MTO、LE+Ls、零衰减、135个原始可训练张量、Adam AMSGrad、全新初始化/顺序11及 TRAIN 统计，拟比较固定 **0.001** 与 **epoch1–30使用0.001、31–60使用0.0003**，每组预算60 epoch。
+
+每个 epoch 前按绝对值设置学习率，跨第56,430到56,431次更新和恢复边界保留优化器矩、计数器、RNG及数据顺序。两组累计学习率不同，因此这是训练配方对照，不能隔离调度形状，也不证明既有训练存在优化失败。若选中的 checkpoint 位于降率前，不能据此主张调度有效或单独追加确认种子。
+
+**七次 CPU 玩具优化器调用、六次一次性 TRAIN 全模型更新**各完成一次。GPU1技术检查仅使用前128个 TRAIN 样本；标记epoch30/31的实际更新计数是1/2，未训练30个epoch，验证与 TEST 访问均为零。保留首次元数据冻结的名称遮蔽错误、四文件快照、经审查的别名修正及单独成功记录；该修复未改变数值设置、未重跑科学阶段。技术状态不得初始化生产。
+
+详见[Round10 协议](research/single_model_20260929/round10_schedule_preparation/round10_schedule_preparation/PROTOCOL.md)、[准备报告](research/single_model_20260929/round10_schedule_preparation/round10_schedule_preparation/PREPARATION_REPORT.md)、[独立审查](research/single_model_20260929/round10_schedule_preparation/round10_schedule_preparation/INDEPENDENT_PREPARATION_REVIEW.md)和[接受决定](research/single_model_20260929/round10_schedule_preparation/current_state/ROUND10_PREPARATION_ACCEPTANCE.md)。**生产尚未启动，须在发布验证后另行取得绑定的执行授权及固定GPU1/2新准入，不自动替换设备。** 双参考各+0.003门槛不变；0.60目标未达到，TEST继续封存，不调参、不追加种子、不延长、不平均预测。
+
 ### Round09 完成：原始 MTO 的固定耦合衰减对照
 
 零衰减与 coupled Adam AMSGrad weight_decay1e-4 两组均完成 **60 epoch / 112,860 次更新**，保持原始 MTO、LE+Ls、135个可训练张量、共同全新初始化/顺序及 TRAIN 统计，保留全部 **66,860 个有效验证标签**。
@@ -19,7 +29,7 @@
 
 360项源码/依赖/审计记录、单独16项最终准备审查、原 GPU1 零更新准入拒绝及成功 GPU4 六次 TRAIN 技术更新仍保留在[准备协议](research/single_model_20260929/round09_regularization_preparation/round09_regularization_preparation/PROTOCOL.md)、[准备报告](research/single_model_20260929/round09_regularization_preparation/round09_regularization_preparation/PREPARATION_REPORT.md)、[准备独立审查](research/single_model_20260929/round09_regularization_preparation/round09_regularization_preparation/INDEPENDENT_PREPARATION_REVIEW.md)和[准备接受决定](research/single_model_20260929/round09_regularization_preparation/current_state/ROUND09_PREPARATION_ACCEPTANCE.md)。既有阶段不重复，技术状态未用于生产。
 
-发布后仅获准基于现有源码、聚合轨迹和历史试验，为原始 MTO、零衰减提出一个预先指定的学习率调度对照，配同期固定学习率组。验证后期下降不证明优化失败；须明确单一调度、初始化/顺序、预算、checkpoint 规则、参考门槛和种子确认边界。独立方案审查及单独准备决定之前，不实现、不进行新数值实验、拟合或 TEST 评分。
+后续 Round10 已按单独决定完成固定学习率/单次阶梯降率对照的限定准备并通过独立审查，详见上节；生产仍须另行绑定授权，TEST 未开放。
 
 ### Round08 完成：原始 / 局部 / 邻居张量传递
 

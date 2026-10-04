@@ -1,0 +1,156 @@
+{
+  "created_at_utc": "2026-10-02T12:16:46.575243+00:00",
+  "scope": "read_only_source_and_existing_aggregate_audit",
+  "reference_files": [
+    {
+      "path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/models_ea.py",
+      "sha256": "b47d50b8b32313d1c3e1f19f3e64e6f02ce42e91736e6da00f896f68965250b0",
+      "bytes": 3687,
+      "kind": "source_or_published_aggregate_text"
+    },
+    {
+      "path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/models.py",
+      "sha256": "a8d7bf8a8d89839f687a773f59f02b2a5d75abd6f47a59406e9eb3d1a40f4771",
+      "bytes": 10195,
+      "kind": "source_or_published_aggregate_text"
+    },
+    {
+      "path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/detanet.py",
+      "sha256": "4083382f2d615d1573b9dbc2d2c456d00f9895d4dae144b6c62b26feff6eebcd",
+      "bytes": 20754,
+      "kind": "source_or_published_aggregate_text"
+    },
+    {
+      "path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/block.py",
+      "sha256": "38eb81b385fded74ac4ff3950ee2cbe6e7c7e7cc0873ec57ede64ef758460e35",
+      "bytes": 1008,
+      "kind": "source_or_published_aggregate_text"
+    },
+    {
+      "path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/message.py",
+      "sha256": "a76bae58dbb92447d6fb05230d7db826dc9defc929706e6f2c88c067ee5918cf",
+      "bytes": 2020,
+      "kind": "source_or_published_aggregate_text"
+    },
+    {
+      "path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/edge_attention.py",
+      "sha256": "48a69aa9a83cfe225f8e55eeea4bab65120955aee2dc7ad02d414aef7b4e2fea",
+      "bytes": 2754,
+      "kind": "source_or_published_aggregate_text"
+    },
+    {
+      "path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/update.py",
+      "sha256": "65cda1be8fd5daa491779211ba37ec9c23b73e4a2da81444d21534584c0028a6",
+      "bytes": 3719,
+      "kind": "source_or_published_aggregate_text"
+    },
+    {
+      "path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/radial_basis.py",
+      "sha256": "cbbbf125bdb4b64e21a4d58ddb175bde489bb7a640375847f416f137881307ca",
+      "bytes": 4178,
+      "kind": "source_or_published_aggregate_text"
+    },
+    {
+      "path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/frozen_reference/upstream/vendor/detanet_model/modules/acts.py",
+      "sha256": "6bcd255ac95b33e6ef6a982d87c8dd6b39c2f1a41996f2425c5ada1f0fe8256c",
+      "bytes": 1889,
+      "kind": "source_or_published_aggregate_text"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/architecture/model.py",
+      "sha256": "b61413830ac8cfb78298dda55c11a1cfb2c398c264a797016045d8fd638c7b93",
+      "bytes": 6588,
+      "kind": "source_or_published_aggregate_text"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/runtime.py",
+      "sha256": "fb54c5073e261455ef43036f3d1f65bdaf89714fc9ddc690ec0ec3a773074f94",
+      "bytes": 2807,
+      "kind": "source_or_published_aggregate_text"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/partition_data.py",
+      "sha256": "9aaa08bb8878803cc42961d336345d5fa53f5aad30d8cfdf135d0fd35dd6757d",
+      "bytes": 5990,
+      "kind": "source_or_published_aggregate_text"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/completion/ROUND05_REPORT.md",
+      "sha256": "cd274f194e14e49b81b4fc1393db99f3f78cac36eb61d4ce07f138388b6d119a",
+      "bytes": 14301,
+      "kind": "source_or_published_aggregate_text"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/completion/ROUND06_REPORT.md",
+      "sha256": "bfcac33af345f897a4336758cd522c81b0b47267edc33c0799fd7a2863aa2ef9",
+      "bytes": 13383,
+      "kind": "source_or_published_aggregate_text"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/completion/CONTROL_REPEAT_CONTEXT.md",
+      "sha256": "f49ae5790f12837f91ce85a02b8439a550168ff805c0e78e573f7185b2a07abe",
+      "bytes": 3185,
+      "kind": "source_or_published_aggregate_text"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/completion/ROUND07_REPORT.md",
+      "sha256": "6c3ee0be107b468bdb6ce4fca8e35a286065e23e9e1d7ee60303d5413e1bd908",
+      "bytes": 17147,
+      "kind": "source_or_published_aggregate_text"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/HISTORICAL_NONREPETITION.md",
+      "sha256": "2e79980cb4040a4449892424c5f6c017f80c2a83856125f5c17d241946a31c07",
+      "bytes": 2925,
+      "kind": "source_or_published_aggregate_text"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/ops/ROUND07_COMPLETION_PUBLICATION_RECEIPT.json",
+      "sha256": "071f446eebdffa5b5f41a2987e44b1c91112491534d8c89a10a84a71e8d136fc",
+      "bytes": 1631,
+      "kind": "source_or_published_aggregate_text"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/post_round07_bottleneck_audit/HISTORICAL_CAPACITY_AUDIT.md",
+      "sha256": "1c82eaddc1678f64c195fe69b37ade6d874482b995c2cab365315c1fbb8843e1",
+      "bytes": 12567,
+      "kind": "independent_source_and_aggregate_history_audit"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/post_round07_bottleneck_audit/HISTORICAL_RECIPE_EVIDENCE.json",
+      "sha256": "840e5c55eac1806f65187bc3cd55ec2c5d7bd6d3d4f12856308cc9f2d8925b81",
+      "bytes": 55800,
+      "kind": "independent_source_and_aggregate_history_audit"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/post_round07_bottleneck_audit/AUDIT_MANIFEST.json",
+      "sha256": "0ed827e3072e38b545b2f29a6f49ed1dc919f5652ba3d631b9a2b7f02133a99c",
+      "bytes": 631,
+      "kind": "independent_source_and_aggregate_history_audit"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/post_round07_bottleneck_audit/read_history_metadata.py",
+      "sha256": "6cee8c34e1eeec5b0b9fc4ae1b8a2fc82c7ae29175874dc438c81920eee2528e",
+      "bytes": 4845,
+      "kind": "independent_source_and_aggregate_history_audit"
+    }
+  ],
+  "target_numeric_decoding": false,
+  "private_prediction_array_access": false,
+  "checkpoint_tensor_access": false,
+  "model_inference": false,
+  "optimizer_updates": 0,
+  "implementation_or_fit_authorized": false,
+  "historical_ledger_binding_pending": false,
+  "audit_documents": {
+    "INFORMATION_FLOW_AUDIT.md": {
+      "sha256": "b1e8237f0f3488244336412a103ffe01e1d8a2f335b4ce3cccc30eb3ff0e74da",
+      "bytes": 12173
+    },
+    "TRANSPORT_PROPOSAL.md": {
+      "sha256": "5b5bed1529acb13e9bf8b55786302b43a754601659d67a5643751613f0c8ce9b",
+      "bytes": 11867
+    }
+  },
+  "finalized_at_utc": "2026-10-02T12:20:03.939772+00:00"
+}

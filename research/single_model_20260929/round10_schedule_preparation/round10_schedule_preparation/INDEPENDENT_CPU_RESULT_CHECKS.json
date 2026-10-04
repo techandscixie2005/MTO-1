@@ -1,0 +1,24 @@
+{
+  "CPU_stage_exit_code": 0,
+  "frozen_tensor_count": 11,
+  "full_model_updates": 0,
+  "input_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/CPU_PREFLIGHT.json": "5a2506a8e0266b54b2b83a921cf7f56e5d572ea4d4aeaa48b8d7743caf888b53",
+    "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/CPU_SOURCE_REVIEW.json": "405303337b6dbc00e61b3342b3d64857c01e92b5735d50f037f0434dbdf19fda",
+    "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/PARAMETER_ROSTER.json": "3f92ccc119ed8b1d21e6752f11d1b5184139d6a0abc4d3eb8d585b67706e0588",
+    "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/ops/CPU_EXECUTION_RECEIPT.json": "0df9479def14d02b7b762b7ed2f4b4cacc826f8f322fdd6d737dc387aaa0c281",
+    "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/ops/CPU_INVOCATION.json": "1d8551cbe42b983d375d2ae4558d0c63a4c6b8813dc7763d386a21e58a222ff9",
+    "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/ops/CPU_PREFLIGHT_01.log": "27c045e38396aabf97b408e87b58cd5653208ad44cad25c354146d7f9dd39732"
+  },
+  "model_or_array_decoding": false,
+  "numerical_tests_repeated": false,
+  "parameter_numel": 1552092,
+  "parameter_tensors": 135,
+  "passed": true,
+  "scope": "independent_round10_cpu_metadata_and_roster_review",
+  "source_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/independent_cpu_result_checks.py": "b18690ae7a492a6f775a74b0d223850779614e731c2db52ac0b8958623e485a8"
+  },
+  "source_pins_verified": 398,
+  "toy_optimizer_steps": 7
+}

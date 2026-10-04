@@ -1,0 +1,46 @@
+{
+  "study": "scratch_native_vs_mto_direct_f",
+  "seed": 11,
+  "order_seed": 11,
+  "arms": [
+    "native",
+    "mto"
+  ],
+  "epochs": 100,
+  "batch_size": 64,
+  "updates_per_epoch": 1881,
+  "last_batch": 35,
+  "learning_rate_epochs_1_60": 0.001,
+  "learning_rate_epochs_61_85": 0.0003,
+  "learning_rate_epochs_86_100": 0.0001,
+  "optimizer": "Adam_AMSGrad",
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "eps": 1e-08,
+  "weight_decay": 0.0,
+  "grad_clip": 5.0,
+  "sE2": 0.5378066634062587,
+  "sf2": 0.002510981243894732,
+  "train_molecules": 120355,
+  "val_molecules": 6686,
+  "states": 10,
+  "checkpoint_seconds": 600,
+  "cpu_threads": 2,
+  "q90": 0.0546,
+  "q99": 0.2377,
+  "primary_selection": "min pooled raw-f FP64 validation SSE epochs0..100 earliest exact tie",
+  "secondary_selection": "min validation normalized E+f objective epochs0..100 earliest exact tie",
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 20260928,
+  "allow_test": false,
+  "allow_extra_epochs": false,
+  "gpu_clean": [
+    2,
+    4
+  ],
+  "gpu_guarded": [
+    5
+  ]
+}

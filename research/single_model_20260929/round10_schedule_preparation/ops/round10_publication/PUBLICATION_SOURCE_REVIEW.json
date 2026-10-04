@@ -1,0 +1,32 @@
+{
+  "all458_source_and23_supplement_members_verified": true,
+  "all_text_bytes_and_hashes_verified": true,
+  "approved_readme_sha256": "60c9ced4c8a9a540d57e988f7df3d29dc042a6a79c77c80f71bb558c41338f48",
+  "blocking_findings": [],
+  "both_metadata_freeze_attempts_and_exact_repair_preserved": true,
+  "exact_inventory_matches_reviewed_allowlist": true,
+  "expected_parent": "6e23b9d9c7eeb479b478ebb69ec061024de62455",
+  "external_restoration_copies": 24,
+  "independent_review_manifest_sha256": "e3b411f87eb6222c426020f73e4a62486c0bc3e5c4404db5f7d4b25e0398c1a2",
+  "independent_review_sha256": "17124e86a1fa555821659d6d6ec2bf7775a2c812b9462eaffc8cea2f3019d4b8",
+  "inventory_sha256": "f66f4470b60515a9d31e2b46664909db20a481e19b7787d0397dab14428c699f",
+  "no_arrays_weights_or_credentials": true,
+  "no_private_reference_expansion": true,
+  "numerical_checks_repeated": false,
+  "original15_proposal_members_preserved": true,
+  "passed": true,
+  "prepare_script_sha256": "4c031da042d60bfa16ebab10f8781959d0ea55dfdd15d4198b63d434d5256915",
+  "production_authorized": false,
+  "publisher_script_sha256": "d4942e5f338a02f14c4140c177de1e2d655a9b23e695e5ef5d35d5902f3f5a6e",
+  "readme_independently_approved": true,
+  "record_count": 506,
+  "remaining_publication_gate": "D-first verified download followed by independent staged-byte/link approval before atomic non-force push",
+  "reviewed_exceptions": [
+    "Two inherited exact path/SHA numeric PID/exit text files",
+    "One exact path/SHA pyvenv.cfg text file"
+  ],
+  "root_acceptance_sha256": "fcb45cfafff2678811cca8ee56c5dee68e0948378821703aaf8d25f7d2751a91",
+  "scope": "exact_round10_preparation_publication_inventory_and_readme",
+  "source_manifest_sha256": "7b4bed854c54eb9a1faabcb817b101c4bafe0f80869d7102242f1746b0c2aa2f",
+  "total_bytes": 7478831
+}

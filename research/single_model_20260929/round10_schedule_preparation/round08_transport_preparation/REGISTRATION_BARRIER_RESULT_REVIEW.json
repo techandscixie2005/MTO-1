@@ -1,0 +1,21 @@
+{
+  "barrier_receipt_sha256": "d391d40abc7385fb1abf84d8dd8cbcec2bd8df4e362f2836b1a66a558dbbec54",
+  "exercised_scope": "Synthetic helper subprocess success, wrong PID, wrong binding, EOF, timeout and missing environment; scientific entry was never called.",
+  "input_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/ops/registration_barrier_01.log": "60ba596cd25243cb1246b121893bab4a38747e395817ead0c9fce671ef9e8af2"
+  },
+  "passed": true,
+  "production_authorized": false,
+  "reviewer_numerical_rerun": false,
+  "scope": "round08_completed_registration_barrier_receipt_review",
+  "six_stdlib_helper_cases_pass": true,
+  "source_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/REGISTRATION_BARRIER_NOTE.md": "d2b05bceb40f650912593dbba8b0bc7e739013e70a0cdd9d0f3f008118d3d3b4",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/launch.py": "798cc46044929963c525ce7332af955b3a0ea929d5f4f745d7edd7ac5fadd25d",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/registered_entry.py": "6b62c9f041de9f0e54ec54e48cb97a8c6189a074ef22c762551fa95a70902b84",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/registration_barrier_checks.py": "04177a7668a12022f86af63deed63009cbd5250c44757e1efd38fb4c0d571e5e",
+    "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/run_gpu_preflight.py": "ac98568441a73b8a48046214b55f5fea56e12c48560e8b770669aa2568fe1029"
+  },
+  "source_only_scope": "Parent preflight/production registration and owned-child failure handling inspected, not executed against GPU or production.",
+  "source_review_sha256": "2b9590777bb02fb97d885c81e15ab9124bba01a31fef5a836da6bce0af543f89"
+}

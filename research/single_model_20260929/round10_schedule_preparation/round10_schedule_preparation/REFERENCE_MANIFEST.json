@@ -1,0 +1,252 @@
+{
+  "scope": "round10_schedule_proposal_only",
+  "created_unix": 1791101883.165559,
+  "documents": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/PROTOCOL_PROPOSAL.md": "27213a41d7270427efbc31d197995bb15d985b7b345ec590a33b0c7f443e637c",
+    "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/PROPOSAL_SETTINGS.json": "b0eaf285993dd2439b98d9f48ff9636b0df8ecf4127b32a20a0fd4434d21475c"
+  },
+  "references": [
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/current_state/ROUND09_DECISION.md",
+      "sha256": "8e09e19499c221c4d1cc03527ab4459e6bd8af6a29ee5090b2220e0b19515f7e",
+      "bytes": 2788,
+      "scope": "Existing source or aggregate metadata text only; named private payloads not opened"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/ops/ROUND09_COMPLETION_PUBLICATION_RECEIPT.json",
+      "sha256": "039677a3cdfaf5f895b1b8eb16a2e8b510462c1ae53503c07ea17c7ad16db8cd",
+      "bytes": 1635,
+      "scope": "Existing source or aggregate metadata text only; named private payloads not opened"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/FROZEN_MANIFEST.json",
+      "sha256": "52e815958178f2eeb691a2f185eb37e4b54276d867c08061c58ef1eff653c930",
+      "bytes": 72428,
+      "scope": "Existing source or aggregate metadata text only; named private payloads not opened"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/config.json",
+      "sha256": "85adb76ff33c3839ffd260900827b0507d87041ed5c0bda83f40d16086f61306",
+      "bytes": 1086,
+      "scope": "Existing source or aggregate metadata text only; named private payloads not opened"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/model_config.json",
+      "sha256": "ff24143918e722d34a126b172f7d311c2a673a21c6756c89077fa05b05d6592f",
+      "bytes": 222,
+      "scope": "Existing source or aggregate metadata text only; named private payloads not opened"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/ENVIRONMENT.json",
+      "sha256": "57c2f536b2af90baf8816a0924be5a7511e88ba0f35fbeda5b55e95fdf2540a9",
+      "bytes": 362,
+      "scope": "Existing source or aggregate metadata text only; named private payloads not opened"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/TRAIN_STATISTICS.json",
+      "sha256": "d3d0ed5af2646959be0abcb9cebb50d7cdb2ef7fb70d7e073fe12a8b697953ae",
+      "bytes": 1264,
+      "scope": "Existing source or aggregate metadata text only; named private payloads not opened"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/PARAMETER_ROSTER.json",
+      "sha256": "290bd6dc4c635c90fc387202230a4af0b7758b38bad0a3570018e05510fb3943",
+      "bytes": 79421,
+      "scope": "Existing source or aggregate metadata text only; named private payloads not opened"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/runtime.py",
+      "sha256": "98155e4b9d3788b1a9b8bee2d4add3c74bb6b55ca9ae750f82349e3e7a2a6ee5",
+      "bytes": 2986,
+      "scope": "Existing source or aggregate metadata text only; named private payloads not opened"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/training.py",
+      "sha256": "cf4daf72ccd130afbe05e5baaf1e2c77a3b9518a2cf526e9e73a8012378aadc5",
+      "bytes": 14519,
+      "scope": "Existing source or aggregate metadata text only; named private payloads not opened"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/regularization.py",
+      "sha256": "22a8b43f9d6257ff8d27b596754f87effbf1ffee041d90dbd0a353064de287dd",
+      "bytes": 4151,
+      "scope": "Existing source or aggregate metadata text only; named private payloads not opened"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/fresh_model.py",
+      "sha256": "93bd3aaa0e1a7980320bff1552e284266a6e72d870267a116e3c40ed2f3dccca",
+      "bytes": 2297,
+      "scope": "Existing source or aggregate metadata text only; named private payloads not opened"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/predictor.py",
+      "sha256": "a47cd4f70f35255fb4a09269d12393fe43ecb2bf8a8da1e163291dd1a1359345",
+      "bytes": 1439,
+      "scope": "Existing source or aggregate metadata text only; named private payloads not opened"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/partition_data.py",
+      "sha256": "9aaa08bb8878803cc42961d336345d5fa53f5aad30d8cfdf135d0fd35dd6757d",
+      "bytes": 5990,
+      "scope": "Existing source or aggregate metadata text only; named private payloads not opened"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/metrics.py",
+      "sha256": "1465cc964aea7bd0e06616be3cf8f862e876c7c57d9df3103e81e57817761bdc",
+      "bytes": 2973,
+      "scope": "Existing source or aggregate metadata text only; named private payloads not opened"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/PROTOCOL.md",
+      "sha256": "ffa1b4878aab1072d8891b7acd71372b7c5e00925b665728ede2c07a7947d3a2",
+      "bytes": 10698,
+      "scope": "Existing source or aggregate metadata text only; named private payloads not opened"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/completion/ROUND09_RESULTS.json",
+      "sha256": "394bc58c2e3996432b6b7f94ed74c8afa285b65ac4b85fb8d72a086b691f830f",
+      "bytes": 147064,
+      "scope": "Existing source or aggregate metadata text only; named private payloads not opened"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/completion/ROUND09_REPORT.md",
+      "sha256": "82b5fa057dcfdafce3eec178c86a6d6c9695b4cb52c15afc58312af1b9e866a7",
+      "bytes": 14807,
+      "scope": "Existing source or aggregate metadata text only; named private payloads not opened"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/completion/ROUND09_REPRODUCE.md",
+      "sha256": "e197f82080f2d224df6b4ba7b66ec0870c4a47a244a17d10e7df52dea33b5807",
+      "bytes": 8936,
+      "scope": "Existing source or aggregate metadata text only; named private payloads not opened"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930/SPLIT_MANIFEST.json",
+      "sha256": "c8ce66ddb7209005b5feebfcddfc2bc30ee81d92fe63cce20f15c4abf3a07155",
+      "bytes": 4408,
+      "scope": "Existing source or aggregate metadata text only; named private payloads not opened"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/dataset_audit_20260930/INDEPENDENT_SPLIT_VERIFICATION.json",
+      "sha256": "395d415f854ed6948c4d7a11c0c1d7486193bb48f23bae76834a77148cc69ae2",
+      "bytes": 2553,
+      "scope": "Existing source or aggregate metadata text only; named private payloads not opened"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/post_round07_bottleneck_audit/AUDIT_MANIFEST.json",
+      "sha256": "0ed827e3072e38b545b2f29a6f49ed1dc919f5652ba3d631b9a2b7f02133a99c",
+      "bytes": 631,
+      "scope": "Existing source or aggregate metadata text only; named private payloads not opened"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/post_round07_bottleneck_audit/HISTORICAL_CAPACITY_AUDIT.md",
+      "sha256": "1c82eaddc1678f64c195fe69b37ade6d874482b995c2cab365315c1fbb8843e1",
+      "bytes": 12567,
+      "scope": "Existing source or aggregate metadata text only; named private payloads not opened"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/post_round07_bottleneck_audit/HISTORICAL_RECIPE_EVIDENCE.json",
+      "sha256": "840e5c55eac1806f65187bc3cd55ec2c5d7bd6d3d4f12856308cc9f2d8925b81",
+      "bytes": 55800,
+      "scope": "Existing source or aggregate metadata text only; named private payloads not opened"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/post_round09_schedule_audit/SCHEDULE_HISTORY_AND_SEMANTICS.md",
+      "sha256": "1e167f292a903e1615204e91c9b41e37718ecee622ac0def53f0a6379b3f8b04",
+      "bytes": 5334,
+      "scope": "Existing source or aggregate metadata text only; named private payloads not opened"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/post_round09_schedule_audit/REFERENCE_HASHES.json",
+      "sha256": "a54f29e8ad87709da1321881eba2c7d40027486cbb9cb09cd59cfe6dcc0ba798",
+      "bytes": 2186,
+      "scope": "Existing source or aggregate metadata text only; named private payloads not opened"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/post_round09_schedule_audit/REFERENCE_CHECK.json",
+      "sha256": "5a505b135b4ce0b94a7e21285779bebbcc38e13aee29610deb7480d705e2b627",
+      "bytes": 336,
+      "scope": "Existing source or aggregate metadata text only; named private payloads not opened"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round05_scratch_preparation/completion/ROUND05_RESULTS.json",
+      "sha256": "bf6920dd8c883460ecb83db3e44ec3debe98152a3f1521c869a5102b4203eb24",
+      "bytes": 124195,
+      "scope": "Existing source or aggregate metadata text only; named private payloads not opened"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/completion/CONTROL_REPEAT_CONTEXT.md",
+      "sha256": "f49ae5790f12837f91ce85a02b8439a550168ff805c0e78e573f7185b2a07abe",
+      "bytes": 3185,
+      "scope": "Existing source or aggregate metadata text only; named private payloads not opened"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round06_objective_preparation/completion/ROUND06_RESULTS.json",
+      "sha256": "e82562e570caa25f53cd2f7ce5b7ad1324a4270129ff9d8286d1a454beeb840c",
+      "bytes": 68585,
+      "scope": "Existing source or aggregate metadata text only; named private payloads not opened"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round07_congruence_preparation/completion/ROUND07_RESULTS.json",
+      "sha256": "0314d0252de7e2f93e5ecd3df1be5a3f675fab540c8fea658b4b3a5231f21209",
+      "bytes": 125583,
+      "scope": "Existing source or aggregate metadata text only; named private payloads not opened"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/single_model_20260929/round08_transport_preparation/completion/ROUND08_RESULTS.json",
+      "sha256": "5ba356f7e37def370d09492855378b580cf5fa5e66afb4db990d7b3a5cc0dd58",
+      "bytes": 336077,
+      "scope": "Existing source or aggregate metadata text only; named private payloads not opened"
+    },
+    {
+      "path": "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/train_ea.py",
+      "sha256": "7c7b4d49db539566abd8c76da6fe3b7eabf96eaac3ac495997c5f074a49085dd",
+      "bytes": 7637,
+      "scope": "Existing source or aggregate metadata text only; named private payloads not opened"
+    },
+    {
+      "path": "/home/inspur/MTO-1/experiments/qm9s_eta_Ef_20260926/trainer.py",
+      "sha256": "78b9f6739540fd38b11cdbd216b5d3394db7b1cac6d653fe37e115630b7dc966",
+      "bytes": 9647,
+      "scope": "Existing source or aggregate metadata text only; named private payloads not opened"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/config.json",
+      "sha256": "9ecb34590a64e389edbc455dbd22293593ce6c6e01c7d10b90b9cb5f6ec35048",
+      "bytes": 1044,
+      "scope": "Existing source or aggregate metadata text only; named private payloads not opened"
+    },
+    {
+      "path": "/home/inspur/MTO-1/research/oscillator_r2_20260928/scratch_readout_comparison/PROTOCOL.md",
+      "sha256": "9be3d271f86afac91a2b20957b4edee86bad6a14b0bd9058c564254ad8b151b2",
+      "bytes": 11628,
+      "scope": "Existing source or aggregate metadata text only; named private payloads not opened"
+    },
+    {
+      "path": "/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/optim/adam.py",
+      "sha256": "bed22e29e5525e91329616ed8b9267afb77217e6eb1e5ac61e6ffff5d8384758",
+      "bytes": 32055,
+      "scope": "Existing source or aggregate metadata text only; named private payloads not opened"
+    },
+    {
+      "path": "/home/inspur/Documents/SpecGPT/envs/specgpt/lib/python3.10/site-packages/torch/nn/utils/clip_grad.py",
+      "sha256": "a0cc48b76d4f3efb7a4266eb8e4c25a5dfad4972b609a9d56c4c3fe58afe28c9",
+      "bytes": 7423,
+      "scope": "Existing source or aggregate metadata text only; named private payloads not opened"
+    }
+  ],
+  "reference_count": 38,
+  "implementation_created": false,
+  "model_constructed": false,
+  "checkpoint_tensor_access": false,
+  "target_or_prediction_array_access": false,
+  "numerical_tests_or_updates": false,
+  "production_authorized": false,
+  "preserved_initial_draft": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/proposal_history/draft01/MANIFEST.json": "0e34b37497ac090e152f420f9761eaa1d97a9c27bbf7bf4d787e20a1a8a0e106",
+    "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/proposal_history/draft01/PROPOSAL_SETTINGS.json": "13067f0f600af4ef75193eabd24bae8fb6079b82c6d5c452e34c672e2c6eeca7",
+    "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/proposal_history/draft01/PROTOCOL_PROPOSAL.md": "32a747b81d487be8f12234daf1f5afdba825ac854c0bc3a5db6831e0a474cdc7",
+    "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/proposal_history/draft01/REFERENCE_MANIFEST.json": "5804f3f5cc932661f20fea1803909269accf7b8b7e6a77039d29bda10378b0db"
+  },
+  "revision_note": "Final review clarification: preintervention selected checkpoints cannot by themselves support a schedule claim; descriptive prefix/postdrop history summaries do not change the dual gate or selector. Initial draft preserved byte-exact."
+}

@@ -1,0 +1,55 @@
+{
+  "blocking_findings": [],
+  "cpu_child_exit_code": 0,
+  "cpu_preflight_sha256": "5a2506a8e0266b54b2b83a921cf7f56e5d572ea4d4aeaa48b8d7743caf888b53",
+  "cpu_source_review_sha256": "405303337b6dbc00e61b3342b3d64857c01e92b5735d50f037f0434dbdf19fda",
+  "frozen_tensor_count": 11,
+  "full_model_optimizer_updates": 0,
+  "independent_cpu_checks_sha256": "ef9c69d93d0f9514a4b283e6587e31a015219abf9c595debb42c28e5741d0a4b",
+  "input_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/CPU_PREFLIGHT.json": "5a2506a8e0266b54b2b83a921cf7f56e5d572ea4d4aeaa48b8d7743caf888b53",
+    "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/CPU_SOURCE_REVIEW.json": "405303337b6dbc00e61b3342b3d64857c01e92b5735d50f037f0434dbdf19fda",
+    "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/INDEPENDENT_CPU_RESULT_CHECKS.json": "ef9c69d93d0f9514a4b283e6587e31a015219abf9c595debb42c28e5741d0a4b",
+    "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/INDEPENDENT_CPU_RESULT_CHECKS_01.log": "cb3ab870eef11e33bb24f98a34db0218bdbca9b966b8e1d6d35247a0749377fe",
+    "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/PARAMETER_ROSTER.json": "3f92ccc119ed8b1d21e6752f11d1b5184139d6a0abc4d3eb8d585b67706e0588",
+    "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/ops/CPU_EXECUTION_RECEIPT.json": "0df9479def14d02b7b762b7ed2f4b4cacc826f8f322fdd6d737dc387aaa0c281",
+    "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/ops/CPU_INVOCATION.json": "1d8551cbe42b983d375d2ae4558d0c63a4c6b8813dc7763d386a21e58a222ff9",
+    "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/ops/CPU_PREFLIGHT_01.log": "27c045e38396aabf97b408e87b58cd5653208ad44cad25c354146d7f9dd39732"
+  },
+  "limitations": [
+    "CPU seven-step toy validates the bounded fixture, not a full CUDA trajectory.",
+    "Reported native-f error comes from E/A parity and has no separate new threshold.",
+    "GPU six-update stage remains separately source/admission gated."
+  ],
+  "one_checkpoint_bitwise_parity_and_access": true,
+  "ordered_roster_equal_to_prior_and_unwrapped_original": true,
+  "original_masks_task_gradients_init_RNG_export_pass": true,
+  "parameter_roster_sha256": "3f92ccc119ed8b1d21e6752f11d1b5184139d6a0abc4d3eb8d585b67706e0588",
+  "passed": true,
+  "production_authorized": false,
+  "production_fractional_steps_rejected": true,
+  "real_target_or_geometry_access": false,
+  "review_method": "Source and aggregate metadata/hash/roster checks only; no repeated optimizer/model/array computation.",
+  "root_preparation_decision_sha256": "4d23e6ab826dd2f4df1f4e72939529ff823fd2210a897a0ea4ba0f5dd6494890",
+  "roster_numel": 1552092,
+  "roster_tensors": 135,
+  "schedule_metadata_rejections": 68,
+  "scope": "round10_cpu_synthetic_result_and_roster_review",
+  "source_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/independent_cpu_result_checks.py": "b18690ae7a492a6f775a74b0d223850779614e731c2db52ac0b8958623e485a8"
+  },
+  "symmetry_A_max_abs": 5.587935447692871e-09,
+  "symmetry_E_max_abs": 0.0,
+  "toy_actual_counters": [
+    1,
+    2,
+    2
+  ],
+  "toy_max_abs": 1.1102230246251565e-16,
+  "toy_optimizer_step_calls": 7,
+  "toy_schedule_labels": [
+    30,
+    31,
+    31
+  ]
+}

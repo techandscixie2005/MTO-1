@@ -1,0 +1,29 @@
+{
+  "phase": "proposal_only",
+  "implementation_authorized": false,
+  "numerical_execution_authorized": false,
+  "files": {
+    "PROTOCOL_PROPOSAL.md": "9a6431b8aa0f6a697fcc79c1b4106ee357de2a90996c0072f6345ead79c6dfe6",
+    "PROPOSED_SETTINGS.json": "62cec5d56832674a81e61b333e311455f17e2c563f901cb45cd726f57c2ad169"
+  },
+  "reference_files": {
+    "research_state/QC_DESIGN_RECOMMENDATION_20260930.md": "c503e4d91c3e90af1de3702648e2785195a9e28d95177f8ac0838472fd4abcc8",
+    "research_state/qc_response_congruence/SOURCE_RECEIPT.json": "b89691d0d887d48d9afc255706337ee2a5dfcdc3eb5b49f4d53df97fbdea43e0",
+    "research_state/qc_response_congruence/SYNTHETIC_RESULTS.json": "8a23c9de7d827ebda26868546ac0b2dac9008d2d7c086bbb10c86acf82d2c4fb",
+    "research_state/round06_objective_preparation/completion/ROUND06_RESULTS.json": "e82562e570caa25f53cd2f7ce5b7ad1324a4270129ff9d8286d1a454beeb840c",
+    "research_state/round06_objective_preparation/completion/CONTROL_REPEAT_CONTEXT.md": "f49ae5790f12837f91ce85a02b8439a550168ff805c0e78e573f7185b2a07abe",
+    "research_state/round06_objective_preparation/completion/DEFERRED_CONGRUENCE_ASSESSMENT.md": "f5b038b27478352958cdfd8fcc6d5e490bb44c1d6b1966d9977e62d3754b5ab3",
+    "research_state/round05_scratch_preparation/HISTORICAL_NONREPETITION.md": "2e79980cb4040a4449892424c5f6c017f80c2a83856125f5c17d241946a31c07",
+    "research_state/ROUND06_DECISION.md": "8f1b4e6de20024c904c90f551a677b74ac56d5b213581c07672a979b0fe03a39",
+    "research_state/round06_objective_preparation/TRAIN_STATISTICS.json": "d3d0ed5af2646959be0abcb9cebb50d7cdb2ef7fb70d7e073fe12a8b697953ae",
+    "research_state/round06_objective_preparation/FROZEN_MANIFEST.json": "4f1908d8f83c7a4622a8aadb511305da93465f8e29af3203327981c3c739d52b"
+  },
+  "reference_pins": {
+    "round06_completed_commit": "68520927333b27c48381401c8516a6709b79c40e",
+    "round06_completion_publication_receipt_sha256": "80bb3a01c2f65e08c5b7718d5bf60a3736af4572fe66f310a9dcdb46974cb889",
+    "split_manifest": "c8ce66ddb7209005b5feebfcddfc2bc30ee81d92fe63cce20f15c4abf3a07155",
+    "split_verification": "395d415f854ed6948c4d7a11c0c1d7486193bb48f23bae76834a77148cc69ae2",
+    "base_model_math": "b61413830ac8cfb78298dda55c11a1cfb2c398c264a797016045d8fd638c7b93"
+  },
+  "scope": "Documents and already published aggregate/source references only; no arrays, model/weights or numerical experiment opened/executed."
+}

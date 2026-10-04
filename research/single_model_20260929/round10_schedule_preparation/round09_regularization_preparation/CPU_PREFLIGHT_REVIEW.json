@@ -1,0 +1,44 @@
+{
+  "blocking_findings": [],
+  "cpu_child_exit_code": 0,
+  "cpu_preflight_sha256": "dfca79770fa451a64e08bd936b80294301829d527a10e60a48ccfe0e98d854c5",
+  "cpu_source_review_sha256": "ca35f1c8ccfc9996032e72bab0cd7bec654290081de7e8b0951ec3973b4e21cd",
+  "frozen_tensor_count": 11,
+  "full_model_optimizer_updates": 0,
+  "independent_cpu_checks_sha256": "650371d1df59d4227cdbf110853da19dbb21c12bf4697714bdc10d41c229ca18",
+  "input_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/CPU_PREFLIGHT.json": "dfca79770fa451a64e08bd936b80294301829d527a10e60a48ccfe0e98d854c5",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/CPU_SOURCE_REVIEW.json": "ca35f1c8ccfc9996032e72bab0cd7bec654290081de7e8b0951ec3973b4e21cd",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/INDEPENDENT_CPU_RESULT_CHECKS.json": "650371d1df59d4227cdbf110853da19dbb21c12bf4697714bdc10d41c229ca18",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/INDEPENDENT_CPU_RESULT_CHECKS_01.log": "cefa7ed078728ee35c8be82eda0e6f8a6fe185e5c003a3053e49a0f59fbe752f",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/PARAMETER_ROSTER.json": "290bd6dc4c635c90fc387202230a4af0b7758b38bad0a3570018e05510fb3943",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/ops/CPU_EXECUTION_RECEIPT.json": "5e707bfe632c2ffca6b2f672021a897dbecab2b15b5b9db073a4ff2ba965b0a3",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/ops/CPU_PREFLIGHT_01.log": "711527f2da9af7a0525c6ebd8882ff77ced78473b73637691a960b5fdbf600a1"
+  },
+  "limitations": [
+    "Five toy steps validate installed CPU Adam arithmetic; separate bounded CUDA fixture remains required.",
+    "Observed decay/task norm ratio0.0161513023 is this synthetic fixture only; no strength/group/LR changes follow.",
+    "GradNone zero-denominator probe has a large floor-regularized ratio by definition; it is not evidence of model instability or an optimizer rescaling rule."
+  ],
+  "model_initial_hash_and_task_gradients_equal": true,
+  "native_f_error_is_reported_not_separate_acceptance_threshold": true,
+  "one_checkpoint_bitwise_parity_and_access": true,
+  "original_ordered_roster_equal": true,
+  "outer_shell_status": 0,
+  "parameter_roster_sha256": "290bd6dc4c635c90fc387202230a4af0b7758b38bad0a3570018e05510fb3943",
+  "passed": true,
+  "production_authorized": false,
+  "real_target_or_geometry_access": false,
+  "review_method": "Read exact source/roster/results and independently checked metadata, hash bindings, counts and aggregate arithmetic with stdlib; no optimizer/model/array re-execution.",
+  "root_preparation_decision_sha256": "6b10b8b5a7d75e6a5c46537f8c8b9d126dcc2694d7cfec687e31f120c038d139",
+  "roster_numel": 1552092,
+  "roster_tensors": 135,
+  "scope": "round09_cpu_synthetic_result_and_roster_review",
+  "source_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/independent_cpu_result_checks.py": "e8efaee80dfda5421a6108fa93db9df416c5ba4043abc80ca1fa23cbab2e9f94"
+  },
+  "symmetry_A_max_abs": 5.587935447692871e-09,
+  "symmetry_E_max_abs": 0.0,
+  "toy_max_abs": 2.220446049250313e-16,
+  "toy_optimizer_step_calls": 5
+}

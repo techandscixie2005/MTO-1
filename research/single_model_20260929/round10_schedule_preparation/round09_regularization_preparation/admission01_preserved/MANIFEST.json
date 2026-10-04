@@ -1,0 +1,62 @@
+{
+  "scope": "preserved_pre_child_GPU1_admission_failure",
+  "files": [
+    {
+      "original_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/run_gpu_preflight.py",
+      "snapshot_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/admission01_preserved/run_gpu_preflight.py",
+      "sha256": "656b5bb1f47faf81748f7c4ee268eee96cfb6cbe21625767777cd1ee2a10c166",
+      "bytes": 5233
+    },
+    {
+      "original_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/gpu_preflight.py",
+      "snapshot_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/admission01_preserved/gpu_preflight.py",
+      "sha256": "eea97776ff96ebc2cccbc9d2384e5d8c73e7a9f68a764ae0d8b30715b673bde0",
+      "bytes": 11177
+    },
+    {
+      "original_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/resources.py",
+      "snapshot_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/admission01_preserved/resources.py",
+      "sha256": "0e86e15d8be5c1e0e94bf8f85eea56a121e3aa493cb9c262e9248727b5beb918",
+      "bytes": 1515
+    },
+    {
+      "original_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/registered_entry.py",
+      "snapshot_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/admission01_preserved/registered_entry.py",
+      "sha256": "6b62c9f041de9f0e54ec54e48cb97a8c6189a074ef22c762551fa95a70902b84",
+      "bytes": 1650
+    },
+    {
+      "original_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/TECHNICAL_SOURCE_REVIEW.json",
+      "snapshot_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/admission01_preserved/TECHNICAL_SOURCE_REVIEW.json",
+      "sha256": "5c4b82c015ec2b5abc475fbaa846757f7eb5b3fc9e0bc00991bacef0175ed457",
+      "bytes": 58738
+    },
+    {
+      "original_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/ops/GPU_WRAPPER_01.log",
+      "snapshot_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/admission01_preserved/ops/GPU_WRAPPER_01.log",
+      "sha256": "a679410b99a0df404a43b65bc6a219089e5030b41d5d9b271daa9939af91710c",
+      "bytes": 662
+    },
+    {
+      "original_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/ops/GPU_WRAPPER_EXECUTION_RECEIPT.json",
+      "snapshot_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/admission01_preserved/ops/GPU_WRAPPER_EXECUTION_RECEIPT.json",
+      "sha256": "f4d639c66561c200cd34395a4bebede74a532b5427a0a4e50dcfcebc8f069adc",
+      "bytes": 668
+    },
+    {
+      "original_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/ops/GPU_ADMISSION_FAILURE.json",
+      "snapshot_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/admission01_preserved/ops/GPU_ADMISSION_FAILURE.json",
+      "sha256": "1bf757a0d80d2e3433705bbded9937cac131bf305d04a04feab715cb062f31fe",
+      "bytes": 859
+    },
+    {
+      "original_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/ops/GPU1_REJECTED_ADMISSION_OBSERVED.xml",
+      "snapshot_path": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/admission01_preserved/ops/GPU1_REJECTED_ADMISSION_OBSERVED.xml",
+      "sha256": "08dfcff650aad749d3a6e35e63b41fc530d47c1adbfa27b80ad6d6ff21ad9f59",
+      "bytes": 18322
+    }
+  ],
+  "scientific_optimizer_updates": 0,
+  "empty_original_attempt_preserved": true,
+  "source_or_settings_changed": false
+}

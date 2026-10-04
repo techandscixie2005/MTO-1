@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/freeze_preparation.py", line 169, in <module>
+    if __name__=='__main__':main()
+  File "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/freeze_preparation.py", line 164, in main
+    'actual_discarded_optimizer_updates':6,'cpu_toy_optimizer_steps':7,'epoch_learning_rates':tables(cfg),'schedule_sha256':digest(cfg),'inherited_manifest_sha256':PREVIOUS_MANIFEST}
+TypeError: 'str' object is not callable

@@ -1,0 +1,23 @@
+{
+  "CPU_stage_exit_code": 0,
+  "frozen_tensor_count": 11,
+  "full_model_updates": 0,
+  "input_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/CPU_PREFLIGHT.json": "dfca79770fa451a64e08bd936b80294301829d527a10e60a48ccfe0e98d854c5",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/CPU_SOURCE_REVIEW.json": "ca35f1c8ccfc9996032e72bab0cd7bec654290081de7e8b0951ec3973b4e21cd",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/PARAMETER_ROSTER.json": "290bd6dc4c635c90fc387202230a4af0b7758b38bad0a3570018e05510fb3943",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/ops/CPU_EXECUTION_RECEIPT.json": "5e707bfe632c2ffca6b2f672021a897dbecab2b15b5b9db073a4ff2ba965b0a3",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/ops/CPU_PREFLIGHT_01.log": "711527f2da9af7a0525c6ebd8882ff77ced78473b73637691a960b5fdbf600a1"
+  },
+  "model_or_array_decoding": false,
+  "numerical_tests_repeated": false,
+  "parameter_numel": 1552092,
+  "parameter_tensors": 135,
+  "passed": true,
+  "scope": "independent_round09_cpu_metadata_and_roster_review",
+  "source_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/independent_cpu_result_checks.py": "e8efaee80dfda5421a6108fa93db9df416c5ba4043abc80ca1fa23cbab2e9f94"
+  },
+  "source_pins_verified": 295,
+  "toy_optimizer_steps": 5
+}

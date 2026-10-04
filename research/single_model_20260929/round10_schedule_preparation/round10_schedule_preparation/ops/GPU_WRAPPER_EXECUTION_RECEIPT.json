@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "exit_code": 0,
+  "seconds": 18.815458297729492,
+  "command": [
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/bin/python",
+    "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/run_gpu_preflight.py"
+  ],
+  "identity": {
+    "pid": 2139497,
+    "start_ticks": 1296474072,
+    "uid": 1000,
+    "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation",
+    "argv_sha256": "8c1fa239c22f20d4d7f905676380decfc026503f607a7f727ac716f3a87b0391",
+    "boot_id": "793423dc-86b6-4fb9-9a9d-e74cfa8135a3",
+    "process_state": "R"
+  },
+  "source_review_sha256": "b686396c5e766aef675b7f744b35d70700d4cc1e265765809f40c210cfd3836c",
+  "log_sha256": "46aa69e7eb597a7a16126ec686ea710395298e651da6805d4c35fd12a8717ec7",
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "PYTHONUNBUFFERED": "1"
+  },
+  "gpu_preflight_sha256": "2bf6eab787acdbd183f4f7df2ad21f33e2c3693b40a4d8e7d686f4b5eab105a1"
+}

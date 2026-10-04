@@ -1,0 +1,30 @@
+{
+  "corrected_freezer_sha256": "c63773b4241b07a61eec0e2ede7c9594b34603b61b7f9c114016086a055d1ed4",
+  "diagnosis": "Later loop digest string shadowed schedule helper; initial seal raised before manifest write.",
+  "exact_change": "One import alias and two calls only; AST parse passed.",
+  "existing_lineage_unchanged": true,
+  "input_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/SOURCE_LINEAGE.json": "4f2ed71e4e6b84158b3a68ffd86bcc226d3b9faf3c6c1c95633970ccab169403",
+    "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/TECHNICAL_SOURCE_REVIEW.json": "b686396c5e766aef675b7f744b35d70700d4cc1e265765809f40c210cfd3836c",
+    "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/freeze_attempt01_preserved/MANIFEST.json": "6b8b365847f7d6da9d5ed4fdefe9f741ea657f0b8f9332b2076db2e425a54bde",
+    "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/freeze_attempt01_preserved/SOURCE_LINEAGE.json": "4f2ed71e4e6b84158b3a68ffd86bcc226d3b9faf3c6c1c95633970ccab169403",
+    "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/freeze_attempt01_preserved/freeze_preparation.py": "c9b38ac7b0d6cdc1956a584b166768d56ea07a449cfa4562258648cecaaaf05a",
+    "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/freeze_attempt01_preserved/ops/FREEZE_01.log": "f8ae04245e86587bd22f5b9973c7c47509ebe0d4db41b029b3d25571f0fb8e33",
+    "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/freeze_attempt01_preserved/ops/FREEZE_RECEIPT.json": "ca6d91388e9c99e164600535e01b0c4ea4c6a68da41d5e48e1b7bc4841fbc76d",
+    "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/freeze_preparation.py": "c63773b4241b07a61eec0e2ede7c9594b34603b61b7f9c114016086a055d1ed4"
+  },
+  "new_scientific_setting_or_tolerance_change": false,
+  "no_model_target_or_array_decoding_by_reviewer": true,
+  "numerical_reexecution_permitted": false,
+  "numerical_source_pins_unchanged": 424,
+  "old_freezer_sha256": "c9b38ac7b0d6cdc1956a584b166768d56ea07a449cfa4562258648cecaaaf05a",
+  "one_distinct_metadata_retry_permitted": true,
+  "passed": true,
+  "preserve_failure_and_distinct_retry_receipt_required": true,
+  "production_authorized": false,
+  "root_preparation_decision_sha256": "4d23e6ab826dd2f4df1f4e72939529ff823fd2210a897a0ea4ba0f5dd6494890",
+  "scope": "round10_one_metadata_freeze_retry_only",
+  "source_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round10_schedule_preparation/independent_metadata_repair.py": "f6a2661a2012cc86ae98aaa215689964b4025d831d8f251857de771f1181e16b"
+  }
+}

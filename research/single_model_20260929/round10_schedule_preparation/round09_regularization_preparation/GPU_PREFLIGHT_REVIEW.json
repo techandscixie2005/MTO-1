@@ -1,0 +1,65 @@
+{
+  "actual_discarded_updates": 6,
+  "all_six_task_gradients_clipped": true,
+  "blocking_findings": [],
+  "coupled_term_l2_range": [
+    0.08068834569097932,
+    0.08075650807023037
+  ],
+  "decay_to_postclip_task_norm_ratio_range": [
+    0.0161376697745471,
+    0.016151303383883823
+  ],
+  "frozen_parameters_and_buffers_unchanged": true,
+  "gpu_preflight_sha256": "a32a7fe8759e1ca171c6dee2efca91374c5f1e749e5a95235cacb6682add77ac",
+  "independent_result_checks_sha256": "b184eb534987c87e54c3617a3c3f8869cdfe3b05a660771573d3bb365e88de1c",
+  "input_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/CPU_PREFLIGHT_REVIEW.json": "c2147eb3be3b14ccf7a6fcbc9645f295058d78fd33223306494ed4e95f0e214a",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/GPU_PREFLIGHT.json": "a32a7fe8759e1ca171c6dee2efca91374c5f1e749e5a95235cacb6682add77ac",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/INDEPENDENT_PREFLIGHT_RESULT_CHECKS.json": "b184eb534987c87e54c3617a3c3f8869cdfe3b05a660771573d3bb365e88de1c",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/INDEPENDENT_PREFLIGHT_RESULT_CHECKS_01.log": "f0d78db3cf761962a2dc6e80d9c260f8ac1e8d1e42b052b5000bce13335aec9f",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/PARAMETER_ROSTER.json": "290bd6dc4c635c90fc387202230a4af0b7758b38bad0a3570018e05510fb3943",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/RESOURCE_RETRY_CONTINUITY.json": "d718c5934aa14e743351e6b8ec15b82b47e4d1e839107544d6cd8fe2860e9aae",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/RESOURCE_RETRY_SELECTION.json": "df385dc7f33c4e4d83bf9326ab1c56c15d16f0faaeb39fc755e2ce8c0be4387f",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/RESOURCE_RETRY_SOURCE_REVIEW.json": "a62e9a8e95a249866395fa1f3f3d989900574bd6bdb181546fa223690231362c",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/ROUND09_RESOURCE_RETRY_DECISION.md": "673bcc503705fe6063e14f02d3573738d82a12907f18e730d41d760c7ae277e8",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/TECHNICAL_SOURCE_REVIEW.json": "5c4b82c015ec2b5abc475fbaa846757f7eb5b3fc9e0bc00991bacef0175ed457"
+  },
+  "limitations": [
+    "Six discarded updates are an engineering check, not an accuracy or regularization-benefit result.",
+    "Coupled term follows task clipping, so the effective gradient can exceed5; this matches the frozen optimizer semantics.",
+    "The approximately1.61% aggregate norm ratio cannot bound adaptive Adam parameter effects or justify retuning.",
+    "RNG/order replay is exact; model/Adam replay and GPU E/A parity use the fixed numerical tolerances, not bitwise trajectory claims."
+  ],
+  "native_f_error_reported_not_separate_threshold": true,
+  "one_checkpoint_geometry_E_A_numerical_parity_and_external_access_guard": true,
+  "optimizer_parameter_tensors": 135,
+  "original_empty_attempt_and_nine_file_failure_snapshot_preserved": true,
+  "parameter_roster_sha256": "290bd6dc4c635c90fc387202230a4af0b7758b38bad0a3570018e05510fb3943",
+  "passed": true,
+  "production_authorized": false,
+  "registration_and_owned_child_exit_zero": true,
+  "replay": {
+    "Adam_max_abs": 1.4901161193847656e-08,
+    "RNG_and_order_exact": true,
+    "fixed_combined_tolerances_passed": true,
+    "loss_max_abs": 0.0,
+    "model_max_abs": 1.1920928955078125e-07
+  },
+  "resource_device": 4,
+  "resource_retry_source_review_sha256": "a62e9a8e95a249866395fa1f3f3d989900574bd6bdb181546fa223690231362c",
+  "review_method": "Source and completed aggregate/metadata/opaque-hash review. Independent stdlib receipt checker executed once; no Torch/model/data-tensor decode, inference or numerical repeat.",
+  "root_preparation_decision_sha256": "6b10b8b5a7d75e6a5c46537f8c8b9d126dcc2694d7cfec687e31f120c038d139",
+  "root_resource_retry_decision_sha256": "673bcc503705fe6063e14f02d3573738d82a12907f18e730d41d760c7ae277e8",
+  "scope": "round09_six_update_result_and_resource_retry_review",
+  "source_bindings": {
+    "resource_retry_pins": 335,
+    "unchanged_mathematical_source_pins": 311
+  },
+  "source_hashes": {
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/independent_preflight_result_checks.py": "390484bbbc7a83fd0cece7d50e9f392b5fc95bf2021bd81f513dfcf8794802ed"
+  },
+  "technical_review_sha256": "5c4b82c015ec2b5abc475fbaa846757f7eb5b3fc9e0bc00991bacef0175ed457",
+  "unique_TRAIN_molecules": 128,
+  "validation_TEST_numeric_rows": 0
+}

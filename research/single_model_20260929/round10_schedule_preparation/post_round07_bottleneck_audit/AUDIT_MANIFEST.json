@@ -1,0 +1,11 @@
+{
+  "format": "historical_capacity_audit_manifest_v1",
+  "scope": "Read-only source/config/existing aggregate audit; no model/data numeric operations.",
+  "files": {
+    "read_history_metadata.py": "6cee8c34e1eeec5b0b9fc4ae1b8a2fc82c7ae29175874dc438c81920eee2528e",
+    "HISTORICAL_RECIPE_EVIDENCE.json": "840e5c55eac1806f65187bc3cd55ec2c5d7bd6d3d4f12856308cc9f2d8925b81",
+    "HISTORY_METADATA_READER.log": "fce123d2973f41a8db2dd7384e7c84fb212f85e7dc1466e4c20ce0220aaebc85",
+    "HISTORICAL_CAPACITY_AUDIT.md": "1c82eaddc1678f64c195fe69b37ade6d874482b995c2cab365315c1fbb8843e1"
+  },
+  "not_execution_authority": true
+}

@@ -1,0 +1,25 @@
+{
+  "command": [
+    "/home/inspur/MTO-1/experiments/qm9s_full_EA_20260925/env/bin/python",
+    "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation/synthetic_checks.py"
+  ],
+  "cwd": "/home/inspur/MTO-1/research/single_model_20260929/round09_regularization_preparation",
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "PYTHONUNBUFFERED": "1"
+  },
+  "pid": 1857554,
+  "started_unix": 1791030138.898335,
+  "seconds": 9.497774362564087,
+  "exit_code": 0,
+  "source_review_sha256": "ca35f1c8ccfc9996032e72bab0cd7bec654290081de7e8b0951ec3973b4e21cd",
+  "source_sha256": "46271e8560a8ae5be8ca54b5d661c4feb71c4859c5eb517c55475a19274be281",
+  "log_sha256": "711527f2da9af7a0525c6ebd8882ff77ced78473b73637691a960b5fdbf600a1",
+  "full_model_optimizer_updates": 0,
+  "planned_toy_optimizer_steps": 5,
+  "passed": true,
+  "cpu_preflight_sha256": "dfca79770fa451a64e08bd936b80294301829d527a10e60a48ccfe0e98d854c5",
+  "parameter_roster_sha256": "290bd6dc4c635c90fc387202230a4af0b7758b38bad0a3570018e05510fb3943"
+}
